@@ -1,0 +1,145 @@
+---
+title: 예상 Google Analytics 데이터
+description: Google Analytics 지표과 상호 작용하는 방법을 알아봅니다.
+exl-id: db9fdaaa-47a9-4095-b1f8-9b6c74c25b7c
+source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+workflow-type: tm+mt
+source-wordcount: '182'
+ht-degree: 0%
+
+---
+
+# 예상됨 [!DNL Google Analytics] 데이터
+
+을(를) 연결한 후 [!DNL Google Analytics] 통합을 통해 [!DNL Google Analytics] 지표 *즉시`Visual Report Builder`*. 을 입력하면 `Visual Report Builder`를 클릭한 경우 **[!UICONTROL Add a Metric]**, 사용자의 [!DNL Google Analytics] 프로필은 data warehouse에서 지표 바로 아래에 있는 드롭다운에 표시됩니다.
+
+다음 [!DNL Google Analytics] 통합은 *live* — 이것은 `Report Builder` 데이터 요청 [!DNL Google Analytics] *즉시* 보고서에 지표를 추가할 때. 즉, 액세스할 수 있는 지표가 있는 그대로 정의됩니다 [!DNL Google Analytics]및 이러한 값이 *창고* 다음 위치에서 [!DNL MBI] 계정 — 보고서에 시각적으로 표시됩니다.
+
+[!DNL Google Analytics] 통합 [!DNL MBI] 활용 [!DNL Google Analytics] [핵심 보고 API](https://developers.google.com/analytics/devguides/reporting/core/v3/), 및에서 다음 지표 및 차원을 지원합니다.
+
+>[!NOTE]
+>
+>예기치 않거나 비상식적인 결과를 방지하려면 사용하는 모든 차원이 `Report Builder`. 확인할 수 있습니다 [여기](https://developers.google.com/analytics/devguides/reporting/core/dimsmets).
+
+## 지원되는 지표
+
+| [!DNL MBI] 표시 이름 | [!DNL Google Analytics] 이름 / 공식 |
+| --- | --- |
+| `Page Views` | `ga:pageviews` |
+| `Total Time Spent On Page` | `ga:timeOnPage` |
+| `Bounces (One Page Visits)` | `ga:bounces` |
+| `Entrances` | `ga:entrances` |
+| `Exits` | `ga:exits` |
+| `Unique Pageviews` | `ga:uniquePageviews` |
+| `Ad Clicks` | `ga:adClicks` |
+| `Ad Cost` | `ga:adCost` |
+| `Cost per Click (CPC)` | `ga:CPC` |
+| `Cost per Thousand Impressions (CPM)` | `ga:CPM` |
+| `Click-Through Rate (CTR)` | `ga:CTR` |
+| `Impressions` | `ga:impressions` |
+| `Product Revenue` | `ga:itemRevenue` |
+| `Products Purchased` | `ga:itemQuantity` |
+| `Revenue` | `ga:transactionRevenue` |
+| `Transactions` | `ga:transactions` |
+| `Shipping Revenue` | `ga:transactionShipping` |
+| `Tax Revenue` | `ga:transactionTax` |
+| `Unique Purchases` | `ga:uniquePurchases` |
+| `Pageviews After Internal Search` | `ga:searchDepth` |
+| `Visit Duration After Internal Search` | `ga:searchDuration` |
+| `Exits After Internal Search` | `ga:searchExits` |
+| `Internal Search Refinements` | `ga:searchRefinements` |
+| `Unique Users Using Internal Search` | `ga:searchUniques` |
+| `Bounce Rate` | `ga:visitBounceRate` |
+| `Average Time on Page` | `ga:avgTimeOnPage` |
+| `Average Session Length` | `ga:avgSessionDuration` |
+| `All Goals Conversion Rate` | `ga:goalConversionRateAll` |
+| `Total Events` | `ga:totalEvents` |
+| `Unique Events` | `ga:uniqueEvents` |
+| `Event Value` | `ga:eventValue` |
+| `Average Domain Lookup Time` | `ga:avgDomainLookupTime` |
+| `Average Page Download Time` | `ga:avgPageDownloadTime` |
+| `Average Page Load Time` | `ga:avgPageLoadTime` |
+| `Transactions Per Visit` | `ga:transactionsPerVisit` |
+| `Sessions` | `ga:sessions` |
+| `Users` | `ga:users` |
+| `New Users | ga:newUsers` |
+| `Sessions Where Internal Search Used` | `ga:searchSessions` |
+| `Goal X Starts` | `ga:goal...Starts` |
+| `Goal X Completions` | `ga:goal...Completions` |
+| `Goal X Conversion Rate` | `ga:goal...ConversionRate` |
+| `Goal X Total Value` | `ga:goal...Value` |
+| `All Goal Starts` | `ga:goalStartsAll` |
+| `All Goal Completions` | `ga:goalCompletionsAll` |
+| `All Goals Conversion Rate` | `ga:goalConversionRateAll` |
+| `Total Goal Value` | `ga:goal1ValueAll` |
+
+{style=&quot;table-layout:auto&quot;}
+
+## 지원되는 Dimension
+
+| [!DNL MBI] 표시 이름 | [!DNL Google Analytics] 이름 / 공식 | 그룹 가능? |
+| --- | --- | --- |
+| `Ad Content` | `ga:adContent` | `Yes` |
+| `Ad Group` | `ga:adGroup` | `Yes` |
+| `Matched Search Query` | `ga:adMatchedQuery` | `Yes` |
+| `Placement Domain` | `ga:adPlacementDomain` | `Yes` |
+| `Placement URL` | `ga:adPlacementUrl` | `Yes` |
+| `Affiliation` | `ga:affiliation` | `Yes` |
+| `Browser` | `ga:browser` | `Yes` |
+| `Browser Version` | `ga:browserVersion` | `Yes` |
+| `Campaign` | `ga:campaign` | `Yes` |
+| `Continent` | `ga:continent` | `Yes` |
+| `Custom Variable 2` | `ga:customVarValue2` | `Yes` |
+| `Custom Variable 3` | `ga:customVarValue3` | `Yes` |
+| `Custom Variable 5` | `ga:customVarValue5` | `Yes` |
+| `Date` | `ga:date` | `No` |
+| `Day` | `ga:day` | `No` |
+| `Days Since Last Session` | `ga:daysSinceLastSession` | `Yes` |
+| `Days Since Referring Campagin` | `ga:daysToTransaction` | `Yes` |
+| `Device Category` | `ga:deviceCategory` | `Yes` |
+| `Custom Dimension 10` | `ga:dimension10` | `Yes` |
+| `Custom Dimension 12` | `ga:dimension12` | `Yes` |
+| `Custom Dimension 13` | `ga:dimension13` | `Yes` |
+| `Custom Dimension 18` | `ga:dimension18` | `Yes` |
+| `Custom Dimension 2` | `ga:dimension2` | `Yes` |
+| `Custom Dimension 20` | `ga:dimension20` | `Yes` |
+| `Custom Dimension 3` | `ga:dimension3` | `Yes` |
+| `Custom Dimension 4` | `ga:dimension4` | `Yes` |
+| `Custom Dimension 5` | `ga:dimension5` | `Yes` |
+| `Custom Dimension 8` | `ga:dimension8` | `Yes` |
+| `Custom Dimension 9` | `ga:dimension9` | `Yes` |
+| `Event Action` | `ga:eventAction` | `Yes` |
+| `Event Category` | `ga:eventCategory` | `Yes` |
+| `Event Label` | `ga:eventLabel` | `Yes` |
+| `Exit Page Path` | `ga:exitPagePath` | `Yes` |
+| `Flash Version Supported` | `ga:flashVersion` | `Yes` |
+| `Hour` | `ga:hour` | `No` |
+| `In-Market Segment` | `ga:interestInMarketCategory` | `Yes` |
+| `Language` | `ga:language` | `Yes` |
+| `Longitude` | `ga:longitude` | `No` |
+| `Medium` | `ga:medium` | `Yes` |
+| `Metro` | `ga:metro` | `Yes` |
+| `Mobile Device Branding` | `ga:mobileDeviceBranding` | `Yes` |
+| `Mobile Device Info` | `ga:mobileDeviceInfo` | `Yes` |
+| `Month` | `ga:month` | `No` |
+| `Operating System` | `ga:operatingSystem` | `Yes` |
+| `Operating System Version` | `ga:operatingSystemVersion` | `Yes` |
+| `Pages Viewed per Session` | `ga:pageDepth` | `Yes` |
+| `Page Path` | `ga:pagePath` | `Yes` |
+| `Product Category` | `ga:productCategory` | `Yes` |
+| `Product Name` | `ga:productName` | `Yes` |
+| `Referral URL` | `ga:referralPath` | `No` |
+| `Region (State)` | `ga:region` | `Yes` |
+| `Screen Colors` | `ga:screenColors` | `Yes` |
+| `Screen Resolution` | `ga:screenResolution` | `Yes` |
+| `Internal Search Category` | `ga:searchCategory` | `Yes` |
+| `Internal Search Refined Keyword(s)` | `ga:searchKeywordRefinement` | `Yes` |
+| `Internal Search Used?` | `ga:searchUsed` | `Yes` |
+| `Second Page Path` | `ga:secondPagePath` | `Yes` |
+| `Source` | `ga:source` | `Yes` |
+| `Sub-Continent` | `ga:subContinent` | `Yes` |
+| `Transaction ID` | `ga:transactionId` | `Yes` |
+| `Custom (User Defined) Value` | `ga:userDefinedValue` | `Yes` |
+| `Year` | `ga:year` | `No` |
+
+{style=&quot;table-layout:auto&quot;}

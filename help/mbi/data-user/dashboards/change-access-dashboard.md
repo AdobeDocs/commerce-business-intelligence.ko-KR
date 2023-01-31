@@ -1,0 +1,14 @@
+---
+title: 공유 대시보드에 대한 액세스 변경
+description: 공유 대시보드에 대한 액세스를 변경하는 방법을 알아봅니다.
+exl-id: 0041281a-0a3c-49f8-9a5f-39a02c3acf26
+source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+workflow-type: tm+mt
+source-wordcount: '58'
+ht-degree: 0%
+
+---
+
+# 공유 대시보드에 대한 액세스 변경
+
+대시보드에 대한 액세스는 동일한 단계를 사용하여 언제든지 변경할 수 있습니다. [처음 대시보드 공유](../../data-user/dashboards/share-dashboard-with-users.md){: target=&quot;_blank&quot;}. 에 표시되는 사용자 목록에서 `Share Dashboard` 메뉴에서 필요에 따라 사용자/조직 권한을 업데이트하고 를 클릭합니다 **[!UICONTROL Save Changes]** 를 업데이트하여
