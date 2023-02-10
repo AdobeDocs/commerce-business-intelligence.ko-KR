@@ -2,9 +2,9 @@
 title: 지표에 대한 필터 세트 만들기
 description: 저장된 필터 세트를 만들고 지표에 적용하는 방법을 알아봅니다.
 exl-id: 6ef8b67c-bebd-45eb-bca7-95832ec34fc8
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '276'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 에 여러 지표가 있는 경우 [!DNL MBI] 유사한 방식으로 필터링해야 하는 경우(예: 테스트 주문 필터링), 저장된 필터 세트를 만들어 지표에 적용할 수 있습니다. 따라서 지표를 만들거나 편집할 때 개별 필터를 추가할 필요가 없으므로 시간을 절약할 수 있습니다.
 
-다음 문서를 참조하십시오 [교육 비디오](https://support.magento.com/hc/en-us/articles/360016730151) 추가 정보
+다음 문서를 참조하십시오 [교육 비디오](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html?lang=en) 추가 정보
 
 >[!NOTE]
 >

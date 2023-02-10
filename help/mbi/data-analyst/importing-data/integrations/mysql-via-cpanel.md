@@ -2,9 +2,9 @@
 title: Campaign 패널을 통해 MySQL 연결
 description: Campaign 패널을 통해 MySQL을 연결하는 방법을 알아봅니다.
 exl-id: 90b0a0b0-8c6b-4144-95b4-f588f18616c7
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 >
 >데이터를 보호하기 위해 SSH 또는 기타 암호화 형식을 사용하는 것이 좋습니다. 이 옵션을 선택하지 않으면 직접 연결할 수 있습니다 [!DNL MBI] 참조하십시오.
 
-이 문서에서는 MySQL 데이터베이스를 [!DNL MBI] &quot;패널&quot;을 사용 중입니다. 이 프로세스를 사용하여 연결할 수도 있습니다 [!DNL Magento] 및 기타 모든 MySQL 기반 eCommerce 데이터베이스를 [!DNL MBI].
+이 문서에서는 MySQL 데이터베이스를 [!DNL MBI] &quot;패널&quot;을 사용 중입니다. 이 프로세스를 사용하여 연결할 수도 있습니다 [!DNL Adobe Commerce] 및 기타 모든 MySQL 기반 eCommerce 데이터베이스를 [!DNL MBI].
 
 1. 만들기 [!DNL MBI] 의 MySQL 사용자 `cPanel`
 1. 연결 및 사용자 정보를에 입력합니다. [!DNL MBI]
@@ -69,4 +69,4 @@ ht-degree: 0%
 
 ## 관련:
 
-* [통합 재인증](https://support.magento.com/hc/en-us/articles/360016733151)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

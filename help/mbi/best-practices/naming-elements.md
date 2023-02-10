@@ -2,7 +2,7 @@
 title: MBI에서 보고서 및 요소에 이름을 지정합니다
 description: 의 보고서 및 요소 이름 지정에 대한 우수 사례 알아보기 [!DNL MBI].
 exl-id: c662cedd-c779-4254-b04b-f3092a538c85
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 0%
@@ -101,4 +101,4 @@ ht-degree: 0%
 
 ## 포장 {#wrapup}
 
-의 초기 스타일 및 이름 지정 규칙을 설정하면 [!DNL MBI] 계정이 필요합니다. 다음 세 가지 Cs를 기억하십시오. 명확성, 일관성 및 신뢰성.
+의 초기 스타일 및 이름 지정 규칙을 설정하면 [!DNL MBI] 계정이 필요합니다. 다음 세 가지 C를 기억하십시오. 명확성, 일관성 및 신뢰성.

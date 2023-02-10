@@ -2,9 +2,9 @@
 title: 데이터 및 업데이트 정보
 description: 업데이트 주기를 확인하는 방법을 알아봅니다.
 exl-id: a4a2e487-b826-4888-baf0-9d246a8ff153
-source-git-commit: 09b6983c3e06a1f18035542dfa3b9de9ac3ceb38
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
@@ -38,8 +38,8 @@ ht-degree: 0%
 
 ## 이유는 무엇입니까?[!DNL Google ECommerce]데이터와 내 데이터베이스가 다른 데이터? {#ecommdatabase}
 
-불일치 [!DNL Google Analytics] 그리고 데이터베이스는 많은 이유로 발생할 수 있습니다. 제대로 활성화되지 않은 추적에서는 Incognito를 방문하는 사용자와 작동하지 않는 클릭 이벤트가 몇 가지 예일 수 있습니다. 매출과 주문이 제대로 되지 않으면, [이 문서 사용](https://support.magento.com/hc/en-us/articles/360016505232) 문제를 진단하기 위해
+불일치 [!DNL Google Analytics] 그리고 데이터베이스는 많은 이유로 발생할 수 있습니다. 제대로 활성화되지 않은 추적에서는 Incognito를 방문하는 사용자와 작동하지 않는 클릭 이벤트가 몇 가지 예일 수 있습니다. 매출과 주문이 제대로 되지 않으면, [이 문서 사용](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=en) 문제를 진단하기 위해
 
 ## 데이터 불일치를 해결하려면 어떻게 해야 합니까? {#datadiscrepancy}
 
-일관성 없는 데이터를 보는 것이 좌절스러운 경험이 될 수 있다는 것을 알고 있습니다. 사용 시도 [데이터 불일치 검사 목록](https://support.magento.com/hc/en-us/articles/360016731271) 또는 [데이터 내보내기 자습서](https://support.magento.com/hc/en-us/articles/360016730631) 문제를 진단하기 위해 아직 넘어지셨다면, [연락처 지원](../../guide-overview.md).
+일관성 없는 데이터를 보는 것이 좌절스러운 경험이 될 수 있다는 것을 알고 있습니다. 사용 시도 [데이터 불일치 검사 목록](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.html?lang=en) 또는 [데이터 내보내기 자습서](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=en) 문제를 진단하기 위해 아직 넘어지셨다면, [연락처 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

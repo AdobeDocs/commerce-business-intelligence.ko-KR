@@ -2,9 +2,9 @@
 title: 기본 분석 이해 및 구축
 description: 기본 분석을 이해하고 구축하는 방법을 알아봅니다.
 exl-id: 23cea7b3-2e66-40c3-b4bd-d197237782e3
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '3142'
+source-wordcount: '3153'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 **손님주문을 받나요?**
 
-*이 경우 이 테이블에 모든 고객이 포함되지 않을 수 있습니다. 연락처 [지원 팀](https://support.magento.com/hc/en-us/articles/360016503692) 고객 분석에 모든 고객이 포함되었는지 확인합니다.*
+*이 경우 이 테이블에 모든 고객이 포함되지 않을 수 있습니다. 연락처 [지원 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 고객 분석에 모든 고객이 포함되었는지 확인합니다.*
 
 *손님주문을 수락하는지 확실하지 않습니까? 을(를) 참조하십시오. [이 항목](../data-warehouse-mgr/guest-orders.md) 자세히 알아보기*
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 * **[!UICONTROL Created_at]**: 주문이 생성되거나 실행된 날짜입니다.
 * **[!UICONTROL Customer_email]**: 주문을 한 고객의 이메일 주소입니다. 고객의 고유 식별자일 수도 있습니다.
 * **[!UICONTROL Customer's lifetime number of orders]**: 열 사본이 `Customers` 테이블.
-* **[!UICONTROL Customer's order number]**: 주문과 연관된 고객의 순차적 주문 번호입니다. 예를 들어 보고 있는 행이 고객의 첫 번째 주문인 경우 이 열은 &quot;1&quot;입니다. 그러나 고객의 15번째 주문인 경우 이 열에 &quot;15&quot;가 표시됩니다. 이 차원이 `Customers` 테이블 [지원 팀](https://support.magento.com/hc/en-us/articles/360016503692) 빌드하는 데 도움이 됩니다.
+* **[!UICONTROL Customer's order number]**: 주문과 연관된 고객의 순차적 주문 번호입니다. 예를 들어 보고 있는 행이 고객의 첫 번째 주문인 경우 이 열은 &quot;1&quot;입니다. 그러나 고객의 15번째 주문인 경우 이 열에 &quot;15&quot;가 표시됩니다. 이 차원이 `Customers` 테이블 [지원 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 빌드하는 데 도움이 됩니다.
 * **[!UICONTROL Customer's order number (previous-current)]**: 에서 두 값의 연결 **[!UICONTROL Customer's order number]** 열. 아래 샘플 보고서에서 두 주문 사이의 경과 시간을 표시하는 데 사용됩니다. 예를 들어, 고객의 첫 번째 주문 일자와 두 번째 주문 일자 사이의 시간은 이 계산에서 &quot;1-2&quot;로 표시됩니다.
 * **[!UICONTROL Coupon_code]**: 각 주문에 사용된 쿠폰을 표시합니다.
 * **[!UICONTROL Seconds since previous order]**: 고객의 주문 사이의 시간(초)입니다.
@@ -86,7 +86,7 @@ ht-degree: 0%
 
 ## 마케팅 지출 테이블
 
-마케팅 비용을 분석할 때 다음을 포함할 수 있습니다 [!DNL Facebook], [!DNL Google AdWords]또는 분석 시 다른 소스를 확인할 수 있습니다. 마케팅 비용 소스가 여러 개인 경우 Adobe에 문의하십시오 [서비스 팀](https://business.adobe.com/products/magento/fully-managed-service.html) 를 참조하십시오.
+마케팅 비용을 분석할 때 다음을 포함할 수 있습니다 [!DNL Facebook], [!DNL Google AdWords]또는 분석 시 다른 소스를 확인할 수 있습니다. 마케팅 비용 소스가 여러 개인 경우 Adobe에 문의하십시오 [Managed Services 팀](https://business.adobe.com/products/magento/fully-managed-service.html) 를 참조하십시오.
 
 **Dimension**
 
@@ -535,7 +535,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->공식의 제목을 &quot;ROI&quot;로 지정하고 모든 지표를 숨길 수 있습니다. 또한 지표에서 필터를 조정하여 대체 소스 및 매체를 분석할 수 있습니다. 또한, [이 문서](../analysis/roi-ad-camp.md) 를 참조하십시오.
+>공식의 제목을 &quot;ROI&quot;로 지정하고 모든 지표를 숨길 수 있습니다. 또한 지표에서 필터를 조정하여 대체 소스 및 매체를 분석할 수 있습니다. 또한, [이 항목](../analysis/roi-ad-camp.md) 를 참조하십시오.
 
 ![ROI 1](../../assets/ROI_1.png)<!--{: width="929"}-->
 

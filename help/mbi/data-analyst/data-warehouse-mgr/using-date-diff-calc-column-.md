@@ -5,7 +5,7 @@ exl-id: 6ecab794-3466-4b3a-a929-3e56287522aa
 source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
 workflow-type: tm+mt
 source-wordcount: '262'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -24,7 +24,7 @@ A `date difference` 계산된 열을 사용하여 고객 등록과 첫 번째 �
 | **`id`** | **`timestamp_1`** | **`timestamp_2`** | **`Seconds between timestamp_2 and timestamp_1`** |
 |--- |--- |--- |--- |
 | `A` | 2015-01-01 00:00:00 | 2015-01-01 12:30:00 | 45000 |
-| `B` | 2015-01-01 08:00:00 | 2015-01-01 10:00:00 | 7200년 |
+| `B` | 2015-01-01 08:00:00 | 2015-01-01 10:00:00 | 7200 |
 
 {style=&quot;table-layout:auto&quot;}
 

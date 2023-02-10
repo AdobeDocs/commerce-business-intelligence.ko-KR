@@ -2,9 +2,9 @@
 title: 지표의 작동 테이블 변경
 description: 지표가 작업을 수행하는 데 사용하는 데이터 테이블을 변경하는 방법을 알아봅니다.
 exl-id: c7a074ca-31f4-43e5-85d9-b64dca95dc23
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '233'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,6 @@ ht-degree: 0%
 
    ![](../../assets/change-metrics-2.png)
 
-1. 새 테이블에 일치하는 열이 없으면 다음 중 하나를 수행할 수 있습니다 **데이터 테이블에서 만듭니다** 또는 [연락처 지원](../../guide-overview.md) 계산 열 또는 차원인 경우 [!DNL MBI]) 또는 **지표에서 차원 삭제**. 더 이상 필요하지 않은 차원을 삭제하려면 지표 편집기로 돌아가서 삭제할 차원을 선택하십시오 `Dimensions`.
+1. 새 테이블에 일치하는 열이 없으면 다음 중 하나를 수행할 수 있습니다 **데이터 테이블에서 만듭니다** 또는 [연락처 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 계산 열 또는 차원인 경우 [!DNL MBI]) 또는 **지표에서 차원 삭제**. 더 이상 필요하지 않은 차원을 삭제하려면 지표 편집기로 돌아가서 삭제할 차원을 선택하십시오 `Dimensions`.
 
    ![](../../assets/change-metrics-3.png)

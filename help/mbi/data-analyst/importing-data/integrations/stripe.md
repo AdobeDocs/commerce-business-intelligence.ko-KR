@@ -2,9 +2,9 @@
 title: 스트라이프 연결
 description: 비즈니스 결제 및 송장 데이터를 관리하고 추적하는 방법을 알아봅니다.
 exl-id: c038f2a9-b2bd-4e45-93f9-12d2e5077b31
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '175'
 ht-degree: 0%
 
 ---
@@ -46,4 +46,4 @@ ht-degree: 0%
 만약 당신이 좀 더 기술적인 지식이 있다면, [[!DNL Stripe] API 설명서](https://stripe.com/docs/api) 는 방법에 대한 자세한 학습을 위해 유용한 리소스일 수 있습니다. [!DNL Stripe] 는 [!DNL MBI].
 
 * [예상됨 [!DNL Stripe] 데이터](../integrations/stripe-data.md)
-* [통합 재인증](https://support.magento.com/hc/en-us/articles/360016733151)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

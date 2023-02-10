@@ -2,9 +2,9 @@
 title: 업데이트 주기 시간 단축
 description: 업데이트 주기 시간을 줄이는 방법을 알아봅니다.
 exl-id: 0b211e2d-770f-480d-a7fb-8d10e3e7272e
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '417'
 ht-degree: 0%
 
 ---
@@ -41,4 +41,4 @@ ht-degree: 0%
 
 ## 포장
 
-이러한 권장 사항을 구현한 후에도 업데이트 시간이 여전히 느린 것으로 나타나면, [지원 팀에 문의](../guide-overview.md).
+이러한 권장 사항을 구현한 후에도 업데이트 시간이 여전히 느린 것으로 나타나면, [지원 팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

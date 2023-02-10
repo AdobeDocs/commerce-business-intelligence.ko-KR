@@ -2,9 +2,9 @@
 title: SQL 쿼리 최적화
 description: SQL 쿼리를 최적화하는 방법을 알아봅니다.
 exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '828'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 SQL Report Builder을 사용하면 지정된 시간에 해당 쿼리를 쿼리하고 반복할 수 있습니다. 이 기능은 작성한 열이나 보고서를 업데이트해야 하므로 업데이트 주기가 완료될 때까지 기다리지 않고 쿼리를 수정해야 할 때 유용합니다.
 
-쿼리를 실행하기 전에 [[!DNL MBI] 비용 추정](https://support.magento.com/hc/en-us/articles/360016730391). 비용은 쿼리를 실행하는 데 필요한 시간 및 리소스 수를 고려합니다. 해당 비용이 너무 높거나 반환된 행 수가 한도를 초과하는 경우 쿼리가 실행되지 않습니다. 데이터 웨어하우스를 쿼리하기 위한 권장 사항 목록을 가져와서 가능한 가장 능률적인 쿼리를 작성하고 있습니다.
+쿼리를 실행하기 전에 [[!DNL MBI] 비용 추정](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=en). 비용은 쿼리를 실행하는 데 필요한 시간 및 리소스 수를 고려합니다. 해당 비용이 너무 높거나 반환된 행 수가 한도를 초과하는 경우 쿼리가 실행되지 않습니다. 데이터 웨어하우스를 쿼리하기 위한 권장 사항 목록을 가져와서 가능한 가장 능률적인 쿼리를 작성하고 있습니다.
 
 ## SELECT 또는 모든 열 선택 사용
 

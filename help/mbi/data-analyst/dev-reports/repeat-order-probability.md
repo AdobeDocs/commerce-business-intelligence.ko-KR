@@ -2,9 +2,9 @@
 title: 반복 주문 가능성 보고서
 description: 반복 주문 가능성 보고서를 학습하고 이해합니다.
 exl-id: 2c88b85a-7320-44ca-87a5-5b91250348ea
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '345'
 ht-degree: 0%
 
 ---
@@ -23,11 +23,11 @@ ht-degree: 0%
 
 어떤 경우에는 `order-specific` 차원을 `user-specific` 필터로 추가할 차원 `Repeat Order Probability` 차트. 이러한 경우 사용자의 첫 번째 주문 또는 최신 주문(예: 사용자의 첫 번째 주문 지역 이름)의 주문 속성을 반환합니다.
 
-이러한 새 차원을 만들려면, [연락처 지원](../../guide-overview.md).
+이러한 새 차원을 만들려면, [연락처 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
 ## 주문의 반복 확률과 다른 속성 비교
 
-다른 주문 속성에 대한 반복 구매 수를 비교하려면(예: 주문 `region`), 와 유사한 차트를 만드는 것이 좋습니다 `Users by lifetime number of orders` 주문 수를 1, 2, 3,.. 라이프타임 수로 만들고 주문 수준 필터를 추가한 사용자의 수를 보여줍니다. (즉, 사용자가 한 지역 또는 다른 지역에서 반복 구매를 하는지 여부를 표시할 수 있습니다.)
+다른 주문 속성에 대한 반복 구매 수를 비교하려면(예: 주문 `region`), 와 유사한 차트를 만드는 것이 좋습니다 `Users by lifetime number of orders` 주문 수를 1, 2, 3,.. 라이프타임 수로 만들고 주문 수준 필터를 추가한 사용자 수를 보여줍니다. (즉, 사용자가 한 지역 또는 다른 지역에서 반복 구매를 하는지 여부를 표시할 수 있습니다.)
 
 이러한 차트를 구성하는 숫자를 excel로 내보내 반복 주문 확률 비율을 계산할 수 있습니다. 고객 확률을 확인하려고 `(x)` 주문 `(x+1)` 주문, 간단히` divide the number of people who've made at least (x+1) purchases by the number of people who have made at least (x)` 구매.
 

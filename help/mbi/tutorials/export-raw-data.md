@@ -2,16 +2,16 @@
 title: 원시 데이터 내보내기
 description: 에서 레코드를 내보내는 방법을 알아봅니다. [!DNL MBI] Data Warehouse 을 통해 대시보드의 주요 기능을 자세히 확인할 수 있습니다.
 exl-id: 26decdaf-2b2c-4ca2-b3d5-0386892662e8
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '499'
 ht-degree: 0%
 
 ---
 
 # 원시 데이터 내보내기
 
-원시 데이터 내보내기를 사용하여 [!DNL MBI] Data Warehouse 을 통해 대시보드의 주요 기능을 자세히 확인할 수 있습니다. 또한 원시 데이터 내보내기를 통해 다음을 수행할 수 있습니다 [데이터 불일치 식별](https://support.magento.com/hc/en-us/articles/360016730631).
+원시 데이터 내보내기를 사용하여 [!DNL MBI] Data Warehouse 을 통해 대시보드의 주요 기능을 자세히 확인할 수 있습니다. 또한 원시 데이터 내보내기를 통해 다음을 수행할 수 있습니다 [데이터 불일치 식별](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=en).
 
 원시 데이터 내보내기를 통해 관련 지표의 정규화 해제 및 사전 집계를 통해 생성된 추가 열 및 차원에 액세스할 수 있습니다. 예, `User's first order date` 는 의 각 사용자에 대해 내보낼 수 있는 차원입니다 [!DNL MBI]를 설정하는 것이 좋습니다.
 

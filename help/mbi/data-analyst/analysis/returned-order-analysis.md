@@ -2,9 +2,9 @@
 title: 반환된 주문 분석
 description: 저장소 반환에 대한 세부 분석을 제공하는 대시보드를 설정하는 방법을 알아봅니다.
 exl-id: 6a948561-45b7-4813-9661-ab42197ca5bd
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
@@ -248,4 +248,4 @@ ht-degree: 0%
 
 모든 보고서를 컴파일한 후 대시보드에서 원하는 대로 구성할 수 있습니다. 결과는 위의 샘플 대시보드와 비슷합니다.
 
-이 분석을 작성하는 동안 질문이 있거나 Professional Services 팀을 참여하려는 경우 [연락처 지원](../../guide-overview.md).
+이 분석을 작성하는 동안 질문이 있거나 전문 서비스 팀을 참여하려는 경우 [연락처 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

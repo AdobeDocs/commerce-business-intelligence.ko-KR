@@ -2,9 +2,9 @@
 title: Pro에 대한 예상 라이프타임 값(LTV) 분석
 description: 고객의 라이프타임 가치 증가와 예상 라이프타임 가치를 이해하는 데 도움이 되는 대시보드를 설정하는 방법을 알아봅니다.
 exl-id: e353b92a-ff3b-466b-b519-4f86d054c0bc
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '323'
 ht-degree: 0%
 
 ---
@@ -153,4 +153,4 @@ ht-degree: 0%
 
 모든 보고서를 컴파일한 후 대시보드에서 원하는 대로 구성할 수 있습니다. 최종 결과는 페이지 상단에 있는 이미지와 같을 수 있습니다.
 
-이 분석을 작성하는 동안 질문이 있거나 전문 서비스 팀에 참여하려는 경우 [연락처 지원](../../guide-overview.md).
+이 분석을 작성하는 동안 질문이 있거나 전문 서비스 팀에 참여하려는 경우 [연락처 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

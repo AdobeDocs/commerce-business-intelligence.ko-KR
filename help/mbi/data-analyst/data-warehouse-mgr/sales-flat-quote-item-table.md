@@ -2,16 +2,16 @@
 title: quote_item 테이블
 description: quote_item 테이블을 사용하는 방법을 알아봅니다.
 exl-id: dad36e88-5986-4b52-8a0e-ac084fabb275
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '693'
 ht-degree: 0%
 
 ---
 
 # quote_item 테이블
 
-다음 `quote_item` 테이블 (`sales_flat_quote_item` on [!DNL Magento] 1) 장바구니에 추가한 모든 항목(장바구니가 포기 또는 구매로 변환되었는지 여부)에 대한 레코드를 포함합니다. 각 행은 하나의 장바구니 항목을 나타냅니다. 이 테이블의 잠재적 크기로 인해 60일 이상 오래된 전환되지 않은 장바구니가 있는 경우와 같이 특정 기준이 충족되는 경우 레코드를 주기적으로 삭제하는 것이 좋습니다.
+다음 `quote_item` 테이블 (`sales_flat_quote_item` M1) 1) 장바구니에 추가된 모든 항목에 대한 레코드(장바구니가 포기 또는 구매로 변환되었는지 여부)를 포함합니다. 각 행은 하나의 장바구니 항목을 나타냅니다. 이 테이블의 잠재적 크기로 인해 60일 이상 오래된 전환되지 않은 장바구니가 있는 경우와 같이 특정 기준이 충족되는 경우 레코드를 주기적으로 삭제하는 것이 좋습니다.
 
 >[!NOTE]
 >
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 `quote_item`
 
-* 가입 대상 `quote_item` 상위 구성 가능 또는 번들 SKU의 세부 정보를 단순 제품과 연결하는 새 열을 만들 수 있습니다. 다음을 수행해야 합니다 [연락처 지원](../../guide-overview.md) Data Warehouse 관리자에서 작성하는 경우 이러한 계산을 구성하는 데 도움이 됩니다.
+* 가입 대상 `quote_item` 상위 구성 가능 또는 번들 SKU의 세부 정보를 단순 제품과 연결하는 새 열을 만들 수 있습니다. 다음을 수행해야 합니다 [연락처 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) Data Warehouse 관리자에서 작성하는 경우 이러한 계산을 구성하는 데 도움이 됩니다.
    * 경로: `quote_item.parent_item_id` (다) => `quote_item.item_id` (1)
 
 `store`

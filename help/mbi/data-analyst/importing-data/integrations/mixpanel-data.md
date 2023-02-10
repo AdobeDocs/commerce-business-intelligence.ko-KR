@@ -2,9 +2,9 @@
 title: Mixpanel 데이터가 필요합니다.
 description: Mixpanel에서 로 가져올 수 있는 기본 데이터 표를 탐색합니다. [!DNL MBI] 계정이 필요합니다.
 exl-id: 87bd337a-63fa-44cf-b1fe-c2f34ca86029
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '216'
 ht-degree: 0%
 
 ---
@@ -30,4 +30,4 @@ ht-degree: 0%
 ## 관련 설명서
 
 * [연결 중 [!DNL Mixpanel]](../integrations/mixpanel.md)
-* [통합 재인증](https://support.magento.com/hc/en-us/articles/360016733151-Reauthenticating-integrations)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

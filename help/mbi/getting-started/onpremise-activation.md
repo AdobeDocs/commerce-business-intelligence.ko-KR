@@ -2,9 +2,9 @@
 title: 활성화 [!DNL MBI] 온-프레미스 구독 계정
 description: 활성화 방법에 대해 알아보기 [!DNL MBI] 온-프레미스 가입을 위한 계정.
 exl-id: 0efac7b4-2457-48c7-947a-d2776b90a1dd
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '227'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 1. 만들기 [!DNL MBI] 계정.
 
-   - 이동 [https://account.magento.com/customer/account/login](https://account.magento.com/customer/account/login)
+   - 다음 위치로 이동 [Adobe Commerce 계정 로그인](https://account.magento.com/customer/account/login)
 
    - 이동 **[!UICONTROL My Account** > **My [!DNL MBI] Instances]**.
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
    ![](../assets/create-account-2.png)
 
-   - 받은 편지함으로 이동하여 이메일 주소를 확인합니다. 이메일을 받지 않았다면 [연락처 지원](../guide-overview.md).
+   - 받은 편지함으로 이동하여 이메일 주소를 확인합니다. 이메일을 받지 않았다면 [연락처 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
    - 암호를 만듭니다.
 

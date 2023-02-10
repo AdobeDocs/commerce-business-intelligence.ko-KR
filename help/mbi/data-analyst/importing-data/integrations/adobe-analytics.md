@@ -2,9 +2,9 @@
 title: Adobe Analytics 연결
 description: 의 종단 간 고객 여정을 통합하는 방법 [!DNL Adobe Analytics] 그리고 사용자가 사용하는 eCommerce에 중점을 둡니다 [!DNL MBI].
 exl-id: 824e1ee4-6b88-42f7-b265-29330dbc4407
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 특히, [!DNL Adobe Analytics] 통합 [!DNL MBI] 는 상거래 및 Analytics 데이터 세트 결합을 시작할 수 있는 기능을 제공합니다.
 - 기존 항목에서 연결 만들기 [!DNL Adobe Analytics] 계정 [!DNL MBI].
-- 보고서 세트 1개에서 최대 25개의 지표와 차원을 선택하여 [!DNL MBI] data warehouse.
+- 한 보고서 세트에서 최대 25개의 지표와 차원을 선택하여 [!DNL MBI] data warehouse.
 - 모든 표준 사용 [!DNL MBI] 복제된 데이터를 변환, 결합 및 보고하는 기능 [!DNL Adobe Analytics] 데이터.
 
 ## 연결 사전 요구 사항

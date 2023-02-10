@@ -2,9 +2,9 @@
 title: 갱신 주기 상태 확인
 description: 업데이트 주기 상태를 확인하는 방법을 알아봅니다.
 exl-id: bd65f2bb-86c1-4e83-a132-797694ddb086
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 업데이트 주기 상태를 확인해야 하는 이유는 무엇입니까?
 
-상태 업데이트 주기를 확인하는 것은 [!DNL MBI] 계정이 필요합니다. 만약 [기대치를 충족하지 못하는 결과](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md)예: 의 일별 판매 [!DNL MBI] eCommerce 플랫폼 또는 사용자 [[!DNL Google] 전자 상거래 매출](https://support.magento.com/hc/en-us/articles/360016505232) 마지막 데이터 포인트를 확인하여 업데이트가 완료되면 문제가 해결되는지 확인할 수 있습니다.
+상태 업데이트 주기를 확인하는 것은 [!DNL MBI] 계정이 필요합니다. 만약 [기대치를 충족하지 못하는 결과](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md)예: 의 일별 판매 [!DNL MBI] eCommerce 플랫폼 또는 사용자 [[!DNL Google] 전자 상거래 매출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=en) 마지막 데이터 포인트를 확인하여 업데이트가 완료되면 문제가 해결되는지 확인할 수 있습니다.
 
 ## [!UICONTROL Read-Only] 및 [!UICONTROL Standard]** 사용자
 

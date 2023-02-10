@@ -2,9 +2,9 @@
 title: 반복 확률 감소 및 이탈 분석
 description: 주문과 고객이 언제 이탈할 것으로 예상되는지 시간 경과를 파악하고 이해합니다.
 exl-id: ea26052d-ac74-43b7-a4a6-977800d4c719
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '970'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ ht-degree: 0%
 
 두 개 이상의 제품을 제공하는 경우 특정 제품을 구매하는 고객이 다른 고객과 비교하여 시간 경과에 따라 어떻게 다르게 동작하는지 궁금해질 수 있습니다. 더 알고 싶으세요? 구매한 특정 제품을 기반으로 고객 집단에 대한 라이프타임 구매 행동을 살펴보려면 이 자습서를 확인하십시오.
 
-이 우수 사례는 다음과 같습니다 [!DNL MBI] DAS(데이터 분석 서비스) 를 참조하십시오. 귀사의 구체적인 업무 관련 질문에 대한 답변을 기대합니다! [지원 문의](../../guide-overview.md) 추가 정보.
+이 우수 사례는 다음과 같습니다 [!DNL MBI] DAS(데이터 분석 서비스) 를 참조하십시오. 귀사의 구체적인 업무 관련 질문에 대한 답변을 기대합니다! [지원 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 추가 정보.
 
 ### 관련
 

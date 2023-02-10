@@ -2,9 +2,9 @@
 title: 즉시 사용 가능한 대시보드
 description: 기본 제공 대시보드에 대해 알아보고 비즈니스에 대한 통찰력을 제공합니다.
 exl-id: fe61c92e-de87-4317-96d7-01d2a9846bf9
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '2235'
+source-wordcount: '2245'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->이러한 대시보드에 대한 액세스는 계정 유형 및 액세스 수준에 따라 다릅니다. 이러한 대시보드가 표시되지 않으면 [지원](../../guide-overview.md).
+>이러한 대시보드에 대한 액세스는 계정 유형 및 액세스 수준에 따라 다릅니다. 이러한 대시보드가 표시되지 않으면 [지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
 ## 보고서 가용성
 

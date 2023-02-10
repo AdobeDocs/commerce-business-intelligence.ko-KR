@@ -2,9 +2,9 @@
 title: SSH 터널을 통해 PostgreSQL 연결
 description: PostgreSQL 데이터베이스를 [!DNL MBI] SSH 터널을 통해
 exl-id: da610988-21c1-4f5f-b4e2-e2deb175a2aa
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '596'
 ht-degree: 0%
 
 ---
@@ -105,4 +105,4 @@ ht-degree: 0%
 
 ### 관련
 
-* [통합 재인증](https://support.magento.com/hc/en-us/articles/360016733151)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

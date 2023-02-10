@@ -2,9 +2,9 @@
 title: 데이터 연결
 description: Data Warehouse 관리자에서 동기화할 수 있는 테이블을 검색하는 방법을 알아봅니다.
 exl-id: 94beba8b-6a86-4af9-87fb-96b1cf8f8fa2
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
@@ -60,6 +60,6 @@ API를 사용하려면 기술적인 지식이 필요합니다. 작은 Ruby 또�
 * [테이블 통합](../../../best-practices/consolidating-your-tables.md)
 * [데이터베이스에 대한 액세스 제한](../../../administrator/account-management/restrict-db-access.md)
 
-**원하는 통합이 표시되지 않습니까?** 일부 통합을 활성화하여 계정에 표시해야 합니다. 원하는 경우(예: [!DNL Facebook] - 하지만 목록에 표시되지 않았습니다. [지원 티켓 제출](../../../guide-overview.md).
+**원하는 통합이 표시되지 않습니까?** 일부 통합을 활성화하여 계정에 표시해야 합니다. 원하는 경우(예: [!DNL Facebook] - 하지만 목록에 표시되지 않았습니다. [지원 티켓 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
 **통합에 대한 오류 상태가 표시되는 경우**, 패닉하지 않음 - 체크아웃 [문제 해결 섹션](https://support.magento.com/hc/en-us/sections/360003078151) 도움이 필요합니다.

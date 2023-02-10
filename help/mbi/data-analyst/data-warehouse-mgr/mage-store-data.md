@@ -2,16 +2,16 @@
 title: 상거래에 데이터 저장
 description: 데이터 생성 방법, 새 행이 핵심 상거래 테이블 중 하나에 삽입되는 정확한 원인 및 상거래 데이터베이스에 데이터를 구매하거나 계정을 만드는 등의 작업을 알아봅니다.
 exl-id: 436ecdc1-7112-4dec-9db7-1f3757a2a938
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
-source-wordcount: '963'
-ht-degree: 0%
+source-wordcount: '960'
+ht-degree: 3%
 
 ---
 
-# 데이터 저장 위치 [!DNL Magento]
+# 데이터 저장 위치 [!DNL Adobe Commerce]
 
-상거래 플랫폼은 수백 개의 표에 걸쳐 다양하고 귀중한 상거래 데이터를 기록하고 구성합니다. 이 항목에서는 데이터가 생성되는 방법, 새 행이 삽입되는 원인이 무엇인지 알아봅니다 [코어 상거래 테이블](../data-warehouse-mgr/common-mage-tables.md), 그리고 를 사용하여 구매 또는 계정을 만드는 등의 작업을 전자 상거래 데이터베이스에 기록하는 방법입니다. 이러한 개념을 설명하려면 다음 예를 참조하십시오.
+Adobe Commerce 플랫폼에서는 수백 개의 표에 다양한 중요한 상거래 데이터를 기록하고 구성합니다. 이 항목에서는 데이터가 생성되는 방법, 새 행이 삽입되는 원인이 무엇인지 알아봅니다 [코어 상거래 테이블](../data-warehouse-mgr/common-mage-tables.md), 그리고 를 사용하여 구매 또는 계정을 만드는 등의 작업을 전자 상거래 데이터베이스에 기록하는 방법입니다. 이러한 개념을 설명하려면 다음 예를 참조하십시오.
 
 `Clothes4U` 온라인 및 오프라인 사이트를 보유한 의류 소매업체입니다. 웹 사이트 뒤에서 Magento Open Source을 사용하여 데이터를 수집하고 구성합니다.
 
@@ -23,22 +23,22 @@ ht-degree: 0%
 
 | **`entity\_id`** | **`entity\_type\_id`** | **`attribute\_set\_id`** | **`sku`** | **`created\_at`** |
 |---|---|---|---|---|
-| 205년 | 4 | 8 | 바지10 | 2016/09/22 09:15:43 |
-| 206년 | 4 | 8 | 바지11 | 2016/09/22 09:18:17 |
-| 207년 | 4 | 12 | 셔츠6 | 2016/09/22 09:24:02 |
+| 205 | 4 | 8 | Pants10 | 2016/09/22 09:15:43 |
+| 206 | 4 | 8 | Pants11 | 2016/09/22 09:18:17 |
+| 207 | 4 | 12 | Shirts6 | 2016/09/22 09:24:02 |
 
 * `entity_id` - 이 키가 `catalog_product_entity` 테이블, 즉 테이블의 모든 행은 서로 다른 `entity_id`. 각 `entity_id` 이 표에서 한 제품에만 연결할 수 있으며 각 제품은 한 제품에만 연결할 수 있습니다 `entity_id`
    * 위 테이블의 맨 윗줄에 `entity_id` = 205, 는 &quot;Throwback Bellbots&quot;에 대해 만들어진 새로운 행입니다. 어디든지 `entity_id` = 205는 상거래 플랫폼에 나타나며, &quot;Throwback Bellbots&quot; 제품을 참조하게 됩니다.
 * `entity_type_id` - 상거래에 여러 가지 객체 카테고리가 있으며(예: 고객, 주소 및 제품 이름 지정) 이 열은 이 특정 행이 속하는 카테고리를 나타내는 데 사용됩니다.
-   * 다음 `catalog_product_entity` 테이블, 각 행에는 동일한 엔티티 유형이 있습니다. 제품. Magento에서 `entity_type_id` 제품의 경우 4이고, 이 때문에 생성된 3개의 새 제품 모두가 이 열에 대해 4를 반환합니다.
+   * 다음 `catalog_product_entity` 테이블, 각 행에는 동일한 엔티티 유형이 있습니다. 제품. Adobe Commerce에서 `entity_type_id` 제품의 경우 4이고, 이 때문에 생성된 3개의 새 제품 모두가 이 열에 대해 4를 반환합니다.
 * `attribute_set_id` - 속성 세트는 설명자와 동일한 제품을 식별하는 데 사용됩니다.
    * 테이블의 상위 두 행은 다음과 같습니다 `Throwback Bellbottoms` 및 `Straight Leg Jeans` 두 가지 모두 팬티입니다 이러한 제품에는 동일한 설명자(예: 이름, inseam, waistline)가 있으므로 동일한 설명자가 있습니다 `attribute_set_id`. 세 번째 항목 `V-Neck T-Shirt` 은(는) 다릅니다 `attribute_set_id` 그것은 바지와 같은 설명자들을 가지고 있지 않기 때문입니다. 셔츠에는 허리줄이나 인센스가 없습니다
-* `sku` - Magento에서 새 제품을 만들 때 사용자가 각 제품에 할당한 고유 값입니다.
+* `sku` - Adobe Commerce에서 새 제품을 만들 때 사용자가 각 제품에 할당한 고유 값입니다.
 * `created_at` - 이 열은 각 제품을 만들 때의 타임스탬프를 반환합니다
 
 ## `customer\_entity`
 
-새로운 3가지 제품을 추가한 직후 새로운 고객인 `Sammy Customer`, 방문 횟수 `Clothes4U`의 웹 사이트를 처음 방문합니다. 이후 `Clothes4U` 포함하지 않음 [게스트 주문 허용](https://support.magento.com/hc/en-us/articles/360016729951-Common-Magento-Misconceptions), `Sammy Customer` 먼저 웹 사이트에서 계정을 만들어야 합니다. 자격 증명을 입력하고 제출을 클릭하면 [`customer\_entity table`](../data-warehouse-mgr/cust-ent-table.md):
+새로운 3가지 제품을 추가한 직후 새로운 고객인 `Sammy Customer`, 방문 횟수 `Clothes4U`의 웹 사이트를 처음 방문합니다. 이후 `Clothes4U` 게스트 주문을 허용하지 않음, `Sammy Customer` 먼저 웹 사이트에서 계정을 만들어야 합니다. 자격 증명을 입력하고 제출을 클릭하면 [`customer\_entity table`](../data-warehouse-mgr/cust-ent-table.md):
 
 | **`entity id`** | **`entity type id`** | **`email`** | **`created at`** |
 |---|---|---|---|
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 | **`entity id`** | **`customer id**`**`subtotal`****`created at`** |
 |---|---|---|---|
-| 227년 | 214년 | 94.85 | 2016/09/23 15:41:39 |
+| 227 | 214 | 94.85 | 2016/09/23 15:41:39 |
 
 * `entity_id` - 이는 `sales_flat_order` 테이블.
    * Sammy Customer가 이 주문을 했을 때 위의 행이 `sales_flat_order` 테이블, 순서가 지정됨 `entity_id` = 227.
@@ -73,8 +73,8 @@ ht-degree: 0%
 
 | **`item\_id`** | **`name`** | **`product\_id`** | **`order\_id`** | **`qty\_ordered`** | **`price`** |
 |---|---|---|---|---|---|
-| 822년 | `Throwback Bellbottoms` | 205년 | 227년 | 2개 | 39.95 |
-| 823년 | `V-Neck T-Shirt` | 207년 | 227년 | 1 | 14.95 |
+| 822 | `Throwback Bellbottoms` | 205 | 227 | 2 | 39.95 |
+| 823 | `V-Neck T-Shirt` | 207 | 227 | 1 | 14.95 |
 
 * `item_id` - 이 열은 `sales_flat_order_item` 표
    * `Sammy Customer`주문에 두 개의 개별 제품이 포함되어 있으므로 이 테이블에 두 개의 라인이 생성됩니다

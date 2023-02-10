@@ -2,9 +2,9 @@
 title: SQL Report Builder 작업
 description: 결과를 로컬 데이터베이스의 데이터와 비교할 수 있도록 SQL Report Builder을 사용하여 데이터 및 지표를 감사하는 방법을 알아봅니다.
 exl-id: d1d9e099-4138-43e6-aaec-6f15ebc5c4d4
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '519'
 ht-degree: 0%
 
 ---
@@ -46,4 +46,4 @@ ht-degree: 0%
 
 ### 아직도 얼어?
 
-데이터를 감사한 후 불일치가 발견되면 [지원 문의: 데이터 불일치](https://support.magento.com/hc/en-us/articles/360016505312) 다음으로 수행할 작업에 대한 자세한 내용은 지원 문서를 참조하십시오.
+데이터를 감사한 후 불일치가 발견되면 [지원 문의: 데이터 불일치](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html?lang=en) 다음으로 수행할 작업에 대한 자세한 내용은 지원 문서를 참조하십시오.

@@ -2,9 +2,9 @@
 title: Google 전자 상거래 연결
 description: 가장 가치 있는 참조 채널에 대해 알아봅니다.
 exl-id: c80f52f3-894a-4084-8c0e-aee618ed77f5
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 0%
 ## 관련:
 
 * [예상됨 [!DNL Google ECommerce] 데이터](../integrations/google-ecommerce-data.md)
-* [통합 재인증](https://support.magento.com/hc/en-us/articles/360016733151)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
 * [설정 [!DNL Google ECommerce] 추적](https://support.google.com/analytics/answer/1009612?hl=en)
 * [가장 가치 있는 획득 소스 및 채널 살펴보기](../../analysis/most-value-source-channel.md)
 * [광고 캠페인에 대한 ROI 향상](../../analysis/roi-ad-camp.md)

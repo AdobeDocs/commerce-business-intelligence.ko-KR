@@ -2,9 +2,9 @@
 title: 엔티티 관계 다이어그램
 description: 소수의 공통 Commerce 데이터베이스 테이블 간의 관계를 시각화하는 데 도움이 되는 몇 가지 ER 다이어그램에 대해 알아봅니다.
 exl-id: de7d419f-efbe-4d0c-95a8-155a12aa93f3
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->`customer\_entity.entity\_id` 다음과 같지 않음 `sales\_flat\_order.entity\_id`. 첫 번째는 `customer\_id` 그리고 두번째는 `order\_id.` 자세한 내용은 [`entity\_id` 섹션](https://support.magento.com/hc/en-us/articles/360016729951) 우리의 _[!DNL Magento]: 일반적인 오해_ 문서.
+>`customer\_entity.entity\_id` 다음과 같지 않음 `sales\_flat\_order.entity\_id`. 첫 번째는 `customer\_id` 그리고 두번째는 `order\_id.`
 
 내 [!DNL MBI]로 설정하는 경우 이 두 테이블 사이의 경로가 아직 존재하지 않으면 다음을 수행할 수 있습니다 [경로 만들기](../data-warehouse-mgr/create-paths-calc-columns.md) Data Warehouse 탭 내에 있어야 합니다. 경로를 만들 준비가 되면 다음과 같이 정의됩니다.
 

@@ -2,9 +2,9 @@
 title: 파일 업로더 사용
 description: 모든 데이터를 단일 데이터 웨어하우스에 배치하는 방법을 알아봅니다.
 exl-id: 28db0e78-0222-431d-bbb9-6ef133686603
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1386'
+source-wordcount: '1392'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 ## 제한 및 요구 사항 {#require}
 
 1. **파일 업로드에 지원되는 유일한 형식은 다음과 같습니다 `CSV` 또는`comma separated values`**. Excel에서 작업하는 경우 다른 이름으로 저장 기능을 사용하여 파일을 저장할 수 있습니다 `.csv` 형식 지정
-1. **`CSV`파일을 사용해야 합니다.`UTF-8 encoding`**. 대부분의 경우, 이것은 문제가 되지 않을 것입니다. 파일을 업로드하는 동안 이 오류가 발생하면 [이 지원 문서를 참조하십시오.](https://support.magento.com/hc/en-us/articles/360016730591).
+1. **`CSV`파일을 사용해야 합니다.`UTF-8 encoding`**. 대부분의 경우, 이것은 문제가 되지 않을 것입니다. 파일을 업로드하는 동안 이 오류가 발생하면 [이 지원 문서를 참조하십시오.](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=en).
 1. **파일은 100MB보다 클 수 없습니다.**. 파일이 이보다 큰 경우 테이블을 청크로 분리한 다음 개별 파일로 저장합니다. 초기 파일이 로드된 후 를 사용하여 데이터를 추가할 수 있습니다.
 1. **모든 테이블에는`primary key`**. 테이블에 `primary key`또는 테이블의 각 행에 대한 고유 식별자입니다. 로 지정된 모든 열 `primary key` 다음을 수행할 수 있습니다. *절대* null입니다. A `primary key` 각 행에 숫자를 제공하는 열을 추가하는 것만큼 간단하거나, 두 열을 연결하여 고유한 값 열을 만들 수 있습니다(예: `campaign name` 및 `date`).
 

@@ -2,9 +2,9 @@
 title: Connect Google Analytics Warehouse
 description: 방문자가 사이트를 사용하는 방법, 매력적인 콘텐츠, 방문자가 사이트를 나가는 위치 등을 추적하는 방법을 알아봅니다.
 exl-id: b9879399-9e1a-4f36-b510-8426ebc83aeb
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '513'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->[!DNL Google Analytics Warehoused] is `Premium` 통합. [지원 문의](../../../guide-overview.md) 구독에 이 통합을 추가할 수 있는 경우.
+>[!DNL Google Analytics Warehoused] is `Premium` 통합. [지원 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 구독에 이 통합을 추가할 수 있는 경우.
 
 1. 로 이동합니다. `Connections` 아래의 페이지 **[!UICONTROL Admin** > **Integrations]**.
 1. 클릭 **[!UICONTROL Add a Add Integration]**, 화면 오른쪽에 있습니다.
@@ -61,8 +61,7 @@ ht-degree: 0%
 
 ## 관련 설명서
 
-* [통합 재인증](https://support.magento.com/hc/en-us/articles/360016733151)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
 * [연결 중 [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [웹 사이트 활동 및 고객 전환율 분석](../../analysis/web-act-cust-conversion.md)
 * [을 사용하여 사용자 획득 데이터 추적 [!DNL Google Analytics] 쿠키](../../analysis/google-track-user-acq.md)
-* [을 사용하여 사용자 장치 및 브라우저 데이터 추적 [!DNL Google Analytics] 쿠키](https://support.magento.com/hc/en-us/articles/360016732911)

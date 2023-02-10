@@ -2,16 +2,16 @@
 title: 사용자 이해 [!DNL MBI] 환경
 description: 작업 및 개선에 대해 알아보기 [!DNL MBI] 환경.
 exl-id: 601b5fba-da02-4cc8-96ed-147c24f326f9
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '780'
 ht-degree: 0%
 
 ---
 
 # 사용자 [!DNL MBI] 환경
 
-상거래 데이터를 분석할 때 이러한 요인과 일반적인 오해를 인식하십시오. 상거래 스키마를 올바로 사용하고 있는지 확인하는 데 도움이 필요한 경우 망설이지 마십시오 [연락처 지원](../guide-overview.md).
+상거래 데이터를 분석할 때 이러한 요인과 일반적인 오해를 인식하십시오. 상거래 스키마를 올바로 사용하고 있는지 확인하는 데 도움이 필요한 경우 망설이지 마십시오 [연락처 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
 ## [!DNL entity\_id]
 

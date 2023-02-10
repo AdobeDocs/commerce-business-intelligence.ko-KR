@@ -2,9 +2,9 @@
 title: 사용자 삭제 또는 다시 활성화
 description: 삭제 방법 알아보기 [!DNL MBI] 사용자.
 exl-id: 0590275d-3329-40fb-8be1-4a700438338d
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
@@ -24,5 +24,5 @@ ht-degree: 0%
 해당 사용자의 대시보드만 다른 사용자의 계정에 푸시해야 하는 경우 다음을 수행하십시오.
 
 1. 삭제된 사용자의 이메일 주소를 사용하여 새 사용자를 만듭니다 [!DNL MBI] 사용자.
-1. [지원 알림](../../guide-overview.md) 사용자를 만든 후. 지원에서 대시보드를 계정에 전송합니다.
+1. [지원 알림](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 사용자를 만든 후. 지원에서 대시보드를 계정에 전송합니다.
 1. 고객 지원에서 전송 알림을 받으면 사용자를 다시 삭제할 수 있습니다.

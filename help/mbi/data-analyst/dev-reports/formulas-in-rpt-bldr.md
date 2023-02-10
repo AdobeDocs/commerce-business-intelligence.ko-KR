@@ -2,9 +2,9 @@
 title: Report Builder의 공식
 description: Report Builder에서 공식을 사용하는 방법을 알아봅니다.
 exl-id: 7a0ad07a-5bcc-474f-95bc-ccc2b74073b2
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '554'
 ht-degree: 0%
 
 ---
@@ -63,4 +63,4 @@ ht-degree: 0%
 
 위의 예에서 그 수식의 `timestamp`, `groupings`, `perspectives`, 및 `filters` 입력 지표에서 상속됩니까? 수식을 사용하여 활용할 수 있습니다 `perspectives` 및 [독립 시간 옵션](../../tutorials/time-options-visual-rpt-bldr.md){: target=&quot;_blank&quot;}. 지표가 할 수 있는 것과 같습니다.
 
-공식 사용에 대한 추가 질문이 있는 경우 `Report Builder`, [연락처 지원](../../guide-overview.md).
+공식 사용에 대한 추가 질문이 있는 경우 `Report Builder`, [연락처 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

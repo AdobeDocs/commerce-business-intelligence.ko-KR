@@ -2,9 +2,9 @@
 title: 활성화 [!DNL MBI] Cloud Starter 구독 계정
 description: 활성화 방법 알아보기 [!DNL MBI] Cloud Starter 프로젝트용.
 exl-id: 172439ee-fa1d-4872-b6a9-c61a212a7cbe
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 1. 만들기 [!DNL MBI] 계정.
 
-   - 이동 [https://account.magento.com/customer/account/login](https://account.magento.com/customer/account/login)
+   - 이동 [Adobe Commerce 계정 로그인](https://account.magento.com/customer/account/login)
 
    - 이동 **[!UICONTROL My Account** > **My [!DNL MBI] Instances]**.
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 1. 전용 만들기 [!DNL MBI] 사용자.
 
-   - 에 새 사용자 만들기 [https://accounts.magento.com](https://accounts.magento.com).
+   - 에서 새 사용자 만들기 [Adobe Commerce 계정](https://accounts.magento.com).
 
    - _새 사용자가 되는 이유_ [!DNL MBI] 프로젝트에 사용자를 추가하여 계정에 전송할 새 데이터를 지속적으로 가져와야 합니다 [!DNL MBI] data warehouse. 이 사용자는 해당 연결 역할을 합니다. 이 사용자를 프로젝트에 추가합니다.
 
@@ -75,7 +75,7 @@ ht-degree: 0%
 
 1. 새 항목 추가 [!DNL MBI] `Public key` 변환 후 [!DNL MBI] 사용자가 5단계에서 생성되었습니다.
 
-   - 이동 [https://accounts.magento.cloud/](https://accounts.magento.cloud/). 계정 로그인 정보로 새로운 [!DNL MBI] 사용자가 생성되었습니다. 그런 다음 로 이동합니다. `Account Settings` 탭.
+   - 이동 [cloud Adobe Commerce 계정](https://accounts.magento.cloud/). 계정 로그인 정보로 새로운 [!DNL MBI] 사용자가 생성되었습니다. 그런 다음 로 이동합니다. `Account Settings` 탭.
 
    - 페이지를 아래로 스크롤하고 드롭다운을 확장합니다. `SSH` 키. 그런 다음 **[!UICONTROL Add a public key]**.
 

@@ -2,9 +2,9 @@
 title: 포함된 대시보드
 description: 사용자 라이프타임 매출, 반복 구매 수 등과 같은 필수 지표의 상태를 확인하여 향후 탐색을 위한 견고한 기반을 구축하는 방법을 살펴볼 수 있습니다.
 exl-id: f50fc417-e5d4-401c-9baa-cda1468196a2
-source-git-commit: 3557e6370fae637cd74550b2806847bebe61d5d3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '973'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Adobe는 서비스의 일부로서 eCommerce 및 `SaaS` 스타터 패키지. 분
 >
 >일부 대시보드의 가용성은 데이터 세트에 따라 다릅니다.
 
-문의 사항이 있거나 계정에 패키지를 추가하는 데 관심이 있는 경우 [지원 티켓](../../guide-overview.md) 도움이 필요합니다.
+문의 사항이 있거나 계정에 패키지를 추가하는 데 관심이 있는 경우 [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 도움이 필요합니다.
 
 ## 경영진 개요
 

@@ -2,10 +2,10 @@
 title: 고객 재구매 행동 분석
 description: 고객의 재구매 행동을 분석하는 방법을 알아봅니다.
 exl-id: 62666d08-5240-4f19-bf8e-e5b2d79a25c4
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 0%
+source-wordcount: '876'
+ht-degree: 1%
 
 ---
 
@@ -46,9 +46,9 @@ ht-degree: 0%
 
 | **제품 이름** | **반복 순서 확률** | **평균 주문 라이프타임 수** | **평균 라이프타임 매출** | **다음 순서로 중간시간** |
 |-----|-----|-----|-----|-----|
-| 커피양조기 1컵 | 94.98% | 7.92 | US$549.82 | 57.01일 |
-| 커피 캡슐 | 93.82% | 8.68 | US$479.98 | 63.48일 |
-| 커피콩 | 41.92% | 6.07 | US$99.82 | 27.31일 |
+| 커피양조기 1컵 | 94.98% | 7.92 | $549.82 | 57.01일 |
+| 커피 캡슐 | 93.82% | 8.68 | $479.98 | 63.48일 |
+| 커피콩 | 41.92% | 6.07 | $99.82 | 27.31일 |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -80,4 +80,4 @@ ht-degree: 0%
 
 이탈이 발생하는 이유를 확인했으면 분석을 사용하여 다음을 작성할 수 있습니다 `reactivation` campaign. 이 데이터를 사용하여 활동이 없게 된 사용자, 마지막 방문 이후 경과된 시간, 마지막 구매 내역 등을 식별할 수 있습니다. 이를 통해 고객을 다시 유도할 수 있는 실행 가능한 결정을 내릴 수 있습니다.
 
-분석에 대한 도움말은 [연락처 지원](../../guide-overview.md).
+분석에 대한 도움말은 [연락처 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

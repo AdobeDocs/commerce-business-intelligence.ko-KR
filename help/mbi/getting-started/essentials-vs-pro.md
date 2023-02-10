@@ -2,10 +2,10 @@
 title: MBI Essentials와 Pro 비교
 description: MBI Essentials와 MBI Pro이 어떻게 다른지 알아봅니다.
 exl-id: 624a6285-8497-43d9-a56d-8ae503e0e2dd
-source-git-commit: 1703e469e245629797bbe08d691d7f8e816a4019
+source-git-commit: dcd02693b3ca060ecdc47cbee189428ce157dd58
 workflow-type: tm+mt
-source-wordcount: '110'
-ht-degree: 0%
+source-wordcount: '86'
+ht-degree: 4%
 
 ---
 
@@ -22,8 +22,8 @@ ht-degree: 0%
 | `Pre-Defined Reports` | 최대 100개 | 사용자 지정 |
 | `Pre-Defined Dashboards` | 5-6 | 사용자 지정 |
 | `New Custom Report Creation` | 예 | 예 |
-| `Magento Commerce Tables` | 4-6 | 제한 없음 |
-| `Log-ins/User Accounts` | 10 | 20년 |
+| `Commerce Tables` | 4-6 | 제한 없음 |
+| `Log-ins/User Accounts` | 10 | 20 |
 | `User Permissions` | 예 | 예 |
 | `Data Warehouse Manager` | 사용할 수 없음 | 사용 가능 |
 | `Email Reports` | 예 | 예 |
@@ -152,7 +152,3 @@ ht-degree: 0%
    * `store_id`
    * `name`
 
-다음 비디오 시리즈 를 참조하여 그 사이의 차이점에 대해 자세히 알아보십시오 [!DNL MBI Essentials] 및 [!DNL MBI Pro].
-
-* [`Essentials`](https://support.magento.com/hc/en-us/articles/360005305614)
-* [`Pro`](https://support.magento.com/hc/en-us/articles/360005373453)

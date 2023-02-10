@@ -2,9 +2,9 @@
 title: 시각적 Report Builder에서 시간 옵션 사용
 description: 특정 기간 동안 보고서의 데이터를 분석하는 방법을 알아봅니다.
 exl-id: a1bb4838-f882-44b1-a29f-84b985032ceb
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1281'
+source-wordcount: '1278'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ ht-degree: 0%
 
 ## 다른 시간 범위에서 동일한 지표 비교 {#difftimerange}
 
-이 예제에서는 `Day number of the month`. 이 보고서를 만들고 Data Warehouse에 이 차원이 없는 경우, [연락처 지원](../guide-overview.md) 지원 요청.
+이 예제에서는 `Day number of the month`. 이 보고서를 만들고 Data Warehouse에 이 차원이 없는 경우, [연락처 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 지원 요청.
 
 이 카테고리에서 가장 일반적인 두 가지 예는 (1) 성장 지표(전년 또는 월 대비)와 (2) 최근 재고 또는 품목 판매 트렌드를 더 잘 이해하는 것입니다.
 
@@ -143,4 +143,3 @@ ht-degree: 0%
 
 고객이 시간이 지남에 따라 다르게 동작하므로 분석을 수행할 때 데이터에서 차이를 볼 수 있습니다. 사용자 지정 시간 옵션을 설정하면 복잡한 분석을 신속하게 생성할 수 있으므로 기록 추세를 결정하는 데이터 중심 결정을 수행할 수 있습니다.
 
-다음 문서를 참조하십시오 [교육 비디오](https://support.magento.com/hc/en-us/articles/360016730071-Training-Video-Time-Options-in-the-Visual-Report-Builder) 추가 정보

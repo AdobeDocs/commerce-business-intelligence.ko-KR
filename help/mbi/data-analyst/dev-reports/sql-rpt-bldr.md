@@ -2,9 +2,9 @@
 title: SQL Report Builder 사용
 description: SQL Report Builder 사용에 대한 세부 사항을 알아봅니다.
 exl-id: 3a485b00-c59d-4bc5-b78b-57e9e92dd9d6
-source-git-commit: 09b6983c3e06a1f18035542dfa3b9de9ac3ceb38
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1516'
+source-wordcount: '1501'
 ht-degree: 0%
 
 ---
@@ -15,15 +15,15 @@ ht-degree: 0%
 >
 >필요한 경우 [관리자 권한](../../administrator/user-management/user-management.md) SQL 차트를 만들고 편집하려면 다음을 수행하십시오. `Standard` 사용자는 이러한 차트를 대시보드에서 다시 정렬할 수 있으며 `Read-only` 사용자는 기존 차트와 동일한 경험을 하게 됩니다. 게다가, `Read-only` 사용자는 쿼리의 텍스트에 액세스할 수 없습니다.
 
-다음 문서를 참조하십시오 [교육 비디오](https://support.magento.com/hc/en-us/articles/360016730131) 추가 정보
+다음 문서를 참조하십시오 [교육 비디오](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=en) 추가 정보
 
 `SQL`또는 구조화된 쿼리 언어인 는 데이터베이스와 통신하는 데 사용되는 프로그래밍 언어입니다. in [!DNL MBI], SQL은 Data Warehouse에서 데이터를 쿼리하거나 검색하는 데 사용됩니다. 대시보드의 보고서를 살펴봅니다. 이 보고서는 백그라운드에서 실행되며 각 보고서는 SQL 쿼리를 기반으로 합니다.
 
 를 사용할 수 있습니다 [`SQL Report Builder`](../dev-reports/sql-rpt-bldr.md) 데이터 웨어하우스를 직접 쿼리하려면 결과를 보고 차트로 변환합니다. 을 사용하여 보고서 만들기를 시작할 수 있습니다 `SQL Report Builder` 으로 이동 **[!UICONTROL Report Builder** > **SQL Report Builder]**.
 
-다음 문서를 참조하십시오 [교육 비디오](https://support.magento.com/hc/en-us/articles/360016730131-Training-Video-SQL-Report-Builder) 추가 정보
+다음 문서를 참조하십시오 [교육 비디오](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=en) 추가 정보
 
-다음 `SQL Report Builder` 데이터 웨어하우스를 직접 쿼리하고 결과를 보고 차트로 빠르게 변환할 수 있습니다. SQL을 사용하여 보고서를 작성하는 데 가장 좋은 부분은 다음과 같습니다 [업데이트 주기를 기다릴 필요 없이 열을 반복할 수 있습니다](https://support.magento.com/hc/en-us/articles/360016506212) 만들 수 있습니다. 결과가 제대로 표시되지 않으면 원하는 대로 쿼리를 신속하게 편집하고 다시 실행할 수 있습니다.
+다음 `SQL Report Builder` 데이터 웨어하우스를 직접 쿼리하고 결과를 보고 차트로 빠르게 변환할 수 있습니다. SQL을 사용하여 보고서를 작성하는 데 가장 좋은 점은 업데이트 주기를 기다리지 않고 생성한 열을 반복할 필요가 없다는 것입니다. 결과가 제대로 표시되지 않으면 원하는 대로 쿼리를 신속하게 편집하고 다시 실행할 수 있습니다.
 
 이 문서에서는 `SQL Report Builder`. 방법을 알고 나면 SQL에서 시각화 자습서를 확인하거나 작성한 쿼리 중 일부를 최적화합니다.
 
@@ -131,9 +131,9 @@ SQL을 사용하여 만든 계산된 열은 업데이트 주기에 종속되지 
 
 대부분의 경우 결과의 차이는 업데이트 주기에 영향을 줄 수 있습니다. If [!DNL MBI] 는 데이터베이스에서 Data Warehouse으로 데이터를 복제하는 과정에 있으며, 동일한 쿼리를 사용해도 다른 결과를 볼 수 있습니다.
 
-연결 문제로 인해 불일치가 발생할 수도 있습니다. 로 이동합니다 `Connections` 페이지를 클릭하여 **[!DNL Manage Data** > **Connections]**)에서 확인할 수 있습니다. 해당 데이터베이스 통합에 오류가 있습니까? 그런 경우 다음을 수행해야 합니다. [통합 재인증](https://support.magento.com/hc/en-us/articles/360016733151-Reauthenticating-integrations) 다시 실행할 수 있도록
+연결 문제로 인해 불일치가 발생할 수도 있습니다. 로 이동합니다 `Connections` 페이지를 클릭하여 **[!DNL Manage Data** > **Connections]**)에서 확인할 수 있습니다. 해당 데이터베이스 통합에 오류가 있습니까? 그런 경우 다음을 수행해야 합니다. [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en) 다시 실행할 수 있도록
 
-모든 통합이 성공적으로 연결되고 업데이트 주기 중에 있지 않은 경우 다른 문제가 될 수 있습니다. 를 사용해 보십시오 [데이터 불일치 문제 해결 가이드](https://support.magento.com/hc/en-us/sections/360003074492) 지원 사이트에서 문제를 정확히 확인합니다.
+모든 통합이 성공적으로 연결되고 업데이트 주기 중에 있지 않은 경우 다른 문제가 될 수 있습니다.
 
 #### SQL 보고서를 삭제하면 내 Data Warehouse에서 기본 열도 삭제됩니까?
 

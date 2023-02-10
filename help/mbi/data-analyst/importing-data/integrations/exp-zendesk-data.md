@@ -2,9 +2,9 @@
 title: 필요한 Zendesk 데이터
 description: Zendesk 데이터에 대한 추가 설명서에 대한 링크를 포함하여 Zendesk에서 MBI로 가져올 수 있는 기본 데이터 테이블을 알아봅니다.
 exl-id: 838d8d13-e2e1-44c2-a416-f1792200ee6f
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -33,4 +33,4 @@ ht-degree: 0%
 ## 관련
 
 * [Zendesk 연결](../integrations/zendesk.md)
-* [통합 재인증](https://support.magento.com/hc/en-us/articles/360016733151-Reauthenticating-integrations)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

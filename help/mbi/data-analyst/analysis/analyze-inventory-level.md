@@ -2,16 +2,16 @@
 title: 재고 레벨 분석
 description: 재고 수준을 분석하는 방법을 알아봅니다.
 exl-id: 620156c5-7bea-4b36-84c7-e0cb4b5cc8be
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
 
 # 재고 레벨 분석
 
-이 주제에서는 현재 인벤토리에 대한 통찰력을 제공하는 대시보드를 설정하는 방법을 보여줍니다. 이 항목에는 기존 아키텍처나 새 아키텍처에 대한 클라이언트를 위한 지침이 포함되어 있습니다. 가 없는 경우 기존 아키텍처에 있습니다 **[!UICONTROL Data Warehouse Views]** 아래의 옵션 **[!UICONTROL Manage Data]** 메뉴 아래의 제품에서 사용할 수 있습니다. 기존 아키텍처를 사용하는 경우 [새로운 지원 요청](../../guide-overview.md) 그 문제를 **[!UICONTROL INVENTORY ANALYSIS]** 에서 지정된 섹션에 도달하면 _계산된 열_ 아래의 지침.
+이 주제에서는 현재 인벤토리에 대한 통찰력을 제공하는 대시보드를 설정하는 방법을 보여줍니다. 이 항목에는 기존 아키텍처나 새 아키텍처에 대한 클라이언트를 위한 지침이 포함되어 있습니다. 가 없는 경우 기존 아키텍처에 있습니다 **[!UICONTROL Data Warehouse Views]** 아래의 옵션 **[!UICONTROL Manage Data]** 메뉴 아래의 제품에서 사용할 수 있습니다. 기존 아키텍처를 사용하는 경우 [새로운 지원 요청](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 그 문제를 **[!UICONTROL INVENTORY ANALYSIS]** 에서 지정된 섹션에 도달하면 _계산된 열_ 아래의 지침.
 
 ## 추적할 열:
 
@@ -240,4 +240,4 @@ ht-degree: 0%
       [!UICONTROL Chart type]: `Table`
 
 
-이 분석을 작성하는 동안 질문이 있거나 전문 서비스 팀에 참여하려는 경우 [연락처 지원](../../guide-overview.md).
+이 분석을 작성하는 동안 질문이 있거나 전문 서비스 팀에 참여하려는 경우 [연락처 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

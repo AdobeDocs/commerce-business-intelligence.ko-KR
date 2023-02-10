@@ -2,10 +2,10 @@
 title: Google Analytics - 사용자 획득 소스 데이터 추적 개요
 description: 사용자 획득 소스별로 데이터를 세그먼트화하는 방법을 알아봅니다.
 exl-id: 2ce3e4f9-4741-4ada-b822-ec6a5ca94497
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '852'
-ht-degree: 0%
+source-wordcount: '837'
+ht-degree: 1%
 
 ---
 
@@ -70,10 +70,10 @@ SQL 데이터베이스를 사용하고 있으며 `users` 다음 구조의 표:
 | ID | 이메일 | JOIN_DATE | ACQ_SOURCE | ACQ_MEDIUM |
 |--- |--- |--- |--- |--- |
 | 1 | john@abc.com | 2012-01-24 | google | 유기 |
-| 2개 | jim@abc.com | 2012-01-24 | google | cpc |
+| 2 | jim@abc.com | 2012-01-24 | google | cpc |
 | 3 | joe@def.com | 2012-01-25 | 직접 | - |
 | 4 | jess@ghi.com | 2012-01-26 | 참조 | techcrunch.com |
-| 5개 | jen@ghi.net | 2012-01-30 | 기타 | 유기 |
+| 5 | jen@ghi.net | 2012-01-30 | 기타 | 유기 |
 | ... | ... | ... | ... | ... |
 
 우선, Adobe에서는 데이터베이스에 대해 다음 쿼리를 실행하여 각 참조 채널에서 들어오는 사용자 수를 계산할 수 있습니다.
@@ -84,8 +84,8 @@ SQL 데이터베이스를 사용하고 있으며 `users` 다음 구조의 표:
 
 | ACQ_SOURCE | USER_COUNT |
 |--- |--- |
-| google | 294년 |
-| 직접 | 156년 |
+| google | 294 |
+| 직접 | 156 |
 | 참조 | 55 |
 | 기타 | 16 |
 
@@ -93,7 +93,6 @@ SQL 데이터베이스를 사용하고 있으며 `users` 다음 구조의 표:
 
 ### 관련
 
-* **[데이터베이스에서 사용자 장치, 브라우저 및 OS 데이터 추적](https://support.magento.com/hc/en-us/articles/360016732911)**
 * **[가장 가치 있는 획득 소스 및 채널 살펴보기](../analysis/most-value-source-channel.md)**
 * **[연결 [!DNL Google Adwords] account](../importing-data/integrations/google-adwords.md)**
 * **[광고 캠페인에 대한 ROI 향상](../analysis/roi-ad-camp.md)**

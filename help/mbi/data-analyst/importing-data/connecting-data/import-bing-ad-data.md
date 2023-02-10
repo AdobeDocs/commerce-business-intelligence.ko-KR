@@ -2,9 +2,9 @@
 title: Bing 광고 비용 데이터 가져오기
 description: Bing 광고 비용 데이터를 로 가져오는 방법을 알아봅니다. [!DNL MBI] 참조하십시오.
 exl-id: c8dec4b4-74ce-41b2-a77d-403fe44e2816
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '157'
 ht-degree: 0%
 
 ---
@@ -24,4 +24,4 @@ Bing Ads 데이터를 내보내려면 Bing Ads Editor가 설치되어 있어야 
 1. 에서 `Save As` 대화 상자에서 내보내기 파일을 저장할 폴더를 클릭합니다.
 1. 에서 `File name` 상자에서 파일 내보내기 이름을 선택합니다.
 1. 클릭 **[!UICONTROL Save]**.
-1. 파일을 다운로드한 후  [연락처 지원](../../../guide-overview.md), 귀하를 대신하여 첫 번째 업로드를 수행하고 필요한 백엔드 차원을 설정합니다.
+1. 파일을 다운로드한 후  [연락처 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en), 귀하를 대신하여 첫 번째 업로드를 수행하고 필요한 백엔드 차원을 설정합니다.

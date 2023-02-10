@@ -2,9 +2,9 @@
 title: Salesforce 연결
 description: Salesforce 데이터를 통해 리드를 점수 책정 및 최적화하는 것에서부터 전환된 기회를 위한 목표에 이르는 다양한 분석을 수행하는 방법을 알아봅니다.
 exl-id: 249b2b40-8c8a-4616-9383-17690f07003d
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '166'
 ht-degree: 0%
 
 ---
@@ -36,4 +36,4 @@ ht-degree: 0%
 만약 당신이 좀 더 기술적인 지식이 있다면, [[!DNL Salesforce] API 설명서](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm) 는 Salesforce와 통합하는 방법에 대한 자세한 내용을 학습하기 위해 유용한 리소스일 수 있습니다 [!DNL MBI].
 
 * [예상됨 [!DNL Salesforce] 데이터](../integrations/salesforce-data.md)
-* [통합 재인증](https://support.magento.com/hc/en-us/articles/360016733151)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

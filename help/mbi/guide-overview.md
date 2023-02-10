@@ -5,9 +5,9 @@ breadcrumb-title: 안내서 개요
 seo-title: MBI User Guide
 seo-description: Describes how to use the MBI features used to gain insights from Adobe Commerce or Magento Open Source data.
 exl-id: f62c7a98-1b4c-4abb-9692-50ce0f3ee1fb
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '450'
 ht-degree: 0%
 
 ---
@@ -38,11 +38,11 @@ ht-degree: 0%
 
 ### 서비스 정책
 
-다음을 참조하십시오 [고객 지원 팀에서 제공하는 서비스 목록](https://support.magento.com/hc/en-us/articles/360016730811).
+다음을 참조하십시오 [고객 지원 팀에서 제공하는 서비스 목록](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
 ### 지원 티켓 제출
 
-고급 계산된 열 빌드에 도움이 필요하십니까? 장애 또는 연결 문제가 발생했습니까? 저희 지원팀에 문의하시기 바랍니다 [지원 티켓 지침](https://support.magento.com/hc/en-us/articles/360016730351). 이 지침은 Adobe이 문제를 해결하는 데 필요한 정보를 간략하게 설명합니다.
+고급 계산된 열 빌드에 도움이 필요하십니까? 장애 또는 연결 문제가 발생했습니까? 저희 지원팀에 문의하시기 바랍니다 [지원 티켓 지침] (https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 이 지침은 Adobe이 문제를 해결하는 데 필요한 정보를 간략하게 설명합니다.
 
 ## 사용 가능한 설명서
 

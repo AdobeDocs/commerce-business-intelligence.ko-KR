@@ -2,9 +2,9 @@
 title: 질적 집단 분석 만들기
 description: 질적 집단 식별, 이 분석을 작성하는 데 관심이 있는 이유 및 분석에 작성하는 방법을 알아봅니다 [!DNL MBI].
 exl-id: 113244e4-409b-4129-b3d4-7a3433539ade
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '858'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 만들기 `qualitative cohort` 의 보고서 `Report Builder` 몇 가지 작업을 수행하는 분석가 팀이 [고급 계산 열](../data-warehouse-mgr/creating-calculated-columns.md) 필요한 테이블에
 
-이러한 코드를 만들려면 [지원 티켓](../../guide-overview.md) (이 문서를 참조!) 다음은 알아야 할 사항입니다.
+이러한 코드를 만들려면 [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) (이 문서를 참조!) 다음은 알아야 할 사항입니다.
 
 * 다음 `metric` 집단 분석을 사용하여 수행할 및 집단 분석이 사용하는 테이블(예: `Revenue`, `orders` 테이블).
 

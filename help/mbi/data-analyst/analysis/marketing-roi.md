@@ -2,9 +2,9 @@
 title: 마케팅 ROI
 description: 총계 및 캠페인별로 ROI를 포함하여 채널 분석을 추적할 대시보드를 설정하는 방법을 알아봅니다.
 exl-id: 5de83998-e6cf-478d-bb6a-7a3dc77c2c0c
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '561'
 ht-degree: 0%
 
 ---
@@ -295,7 +295,7 @@ ht-degree: 0%
 
    [!UICONTROL Chart Type]: `Table`
 
-이 분석을 작성하는 동안 질문이 있거나 전문 서비스 팀에 참여하려는 경우 [연락처 지원](../../guide-overview.md).
+이 분석을 작성하는 동안 질문이 있거나 전문 서비스 팀에 참여하려는 경우 [연락처 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
 ### 관련
 

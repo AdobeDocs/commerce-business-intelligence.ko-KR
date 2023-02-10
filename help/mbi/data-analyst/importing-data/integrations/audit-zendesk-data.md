@@ -2,9 +2,9 @@
 title: 감사 Zendesk 데이터
 description: Zendesk 데이터를 내보내는 단계를 알아봅니다.
 exl-id: 3c8dcc72-3623-4c4e-a941-f431a97571e0
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 데이터 내보내기 활성화
 
-데이터 내보내기가 현재 모든 항목에 대해 활성화되어 있지 않습니다 [!DNL Zendesk] 계정. 이 기능을 활성화하려면 [지원 티켓 제출](../../../guide-overview.md), 에 대한 [!DNL Zendesk] 하위 도메인 이름.
+데이터 내보내기가 현재 모든 항목에 대해 활성화되어 있지 않습니다 [!DNL Zendesk] 계정. 이 기능을 활성화하려면 [지원 티켓 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en), 에 대한 [!DNL Zendesk] 하위 도메인 이름.
 
 >[!NOTE]
 >
@@ -36,6 +36,6 @@ ht-degree: 0%
 
    이 다운로드 링크는 적어도 3일 동안 유효합니다.
 
-이 프로세스에서는 현재 파일에 저장된 모든 정보가 들어 있는 XML 파일을 만듭니다 [!DNL Zendesk] 티켓 데이터(주석 포함), 사용자 데이터 및 계정 데이터를 포함한 계정. 이 시점에서 다음을 수행할 수 있습니다 [지원 티켓 제출](../../../guide-overview.md) (이 파일을 첨부하십시오!) 따라서 데이터를 좀 더 자세히 살펴볼 수 있습니다. 파일이 너무 큰 경우 [!DNL MBI] 팀 비아 [!DNL Dropbox] 또는 [!DNL Google Drive].
+이 프로세스에서는 현재 파일에 저장된 모든 정보가 들어 있는 XML 파일을 만듭니다 [!DNL Zendesk] 티켓 데이터(주석 포함), 사용자 데이터 및 계정 데이터를 포함한 계정. 이 시점에서 다음을 수행할 수 있습니다 [지원 티켓 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) (이 파일을 첨부하십시오!) 따라서 데이터를 좀 더 자세히 살펴볼 수 있습니다. 파일이 너무 큰 경우 [!DNL MBI] 팀 비아 [!DNL Dropbox] 또는 [!DNL Google Drive].
 
-에 대한 자세한 정보 [!DNL Zendesk] 파일 내보내기, 공식 [[!DNL Zendesk] 내보내기 설명서](https://support.zendesk.com/entries/23002207-Exporting-data-to-a-CSV-or-XML-file-Plus-and-Enterprise-).
+에 대한 자세한 정보 [!DNL Zendesk] 파일 내보내기, 공식 [[!DNL Zendesk] 내보내기 설명서](https://support.zendesk.com/hc/en-us/articles/4408886165402-Exporting-data-to-a-JSON-CSV-or-XML-file).

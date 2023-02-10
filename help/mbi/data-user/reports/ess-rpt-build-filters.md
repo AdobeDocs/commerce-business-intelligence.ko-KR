@@ -2,9 +2,9 @@
 title: 필터
 description: 필터 사용 방법을 알아봅니다.
 exl-id: eb683dfe-9a90-400a-a0c0-3dc00d1f28b5
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >보고서에는 최대 3,500개의 데이터 포인트가 있을 수 있습니다. 데이터 포인트 수를 줄이려면 필터를 사용하여 보고서를 생성하는 데 사용되는 데이터 양을 줄입니다.
 
-MBI에는 &quot;즉시 사용&quot; 또는 사용자의 요구 사항에 맞게 수정할 수 있는 다양한 필터가 포함되어 있습니다. 만들 수 있는 필터 수에는 제한이 없습니다.
+MBI에는 &quot;즉시 사용(OOTB)&quot; 또는 사용자의 요구 사항에 맞게 수정할 수 있는 다양한 필터가 포함되어 있습니다. 만들 수 있는 필터 수에는 제한이 없습니다.
 
 ## 필터를 추가하려면 다음을 수행하십시오.
 

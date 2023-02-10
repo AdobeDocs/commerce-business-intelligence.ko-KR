@@ -2,9 +2,9 @@
 title: 새 사용자 추가/편집
 description: 새 항목 추가 방법 알아보기 [!DNL MBI] 사용자 및 사용자 이름 또는 암호를 업데이트하는 방법.
 exl-id: 6b846e3d-fce0-4145-b298-9a9c57e6bd26
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,8 @@ ht-degree: 0%
    >계정의 청구 정보를 보거나, 추가하거나, 변경하려면 `Billing` 사용 권한. [권한은 사용자별로 설정됩니다](../../administrator/user-management/user-management.md) 사용자 계정이 만들어지면 필요한 경우 `Billing` 사용 권한, 계정 관리자에게 문의하십시오.
 
 1. 클릭 **[!UICONTROL Save]**.
-1. 새 사용자는 로그인 및 암호 세부 정보가 포함된 이메일을 받게 됩니다.
+
+새 사용자는 로그인 및 암호 세부 정보가 포함된 이메일을 받게 됩니다.
 
 >[!NOTE]
 >
@@ -37,4 +38,4 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->각 계정에는 계약된 라이센스 또는 사용자 수가 있습니다. 한계를 넘거나 더 알고 싶다면 [지원 티켓 제출](../../guide-overview.md).
+>각 계정에는 계약된 라이센스 또는 사용자 수가 있습니다. 한계를 넘거나 더 알고 싶다면 [지원 티켓 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

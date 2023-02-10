@@ -2,9 +2,9 @@
 title: QuickBooks 연결
 description: 영업 및 마케팅 데이터와 함께 어떻게 비즈니스를 운영할 수 있는지에 대해 학습하여 비용을 빠르고 쉽게 파악할 수 있으며, 과도한 지출 등을 파악할 수 있습니다.
 exl-id: e100c88c-af59-4185-b2a2-c8e77bfd7277
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '143'
+source-wordcount: '147'
 ht-degree: 0%
 
 ---
@@ -38,4 +38,4 @@ ht-degree: 0%
 ## 관련
 
 * [예상됨 [!DNL QuickBooks] 데이터](../integrations/quickbooks-data.md)
-* [통합 재인증](https://support.magento.com/hc/en-us/articles/360016733151)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

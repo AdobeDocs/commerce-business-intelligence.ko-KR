@@ -2,9 +2,9 @@
 title: 대시보드 전체 필터링
 description: 특정 대시보드에서 모든 보고서를 일괄적으로 편집하는 방법을 알아봅니다.
 exl-id: 379d0027-8a7a-4062-a66a-4f06c37b806c
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->저장소 필터가 전체 [!DNL MBI] 계정이 필요합니다. 대시보드에 상거래 데이터에 빌드되지 않은 보고서와 같이 필터의 영향을 받지 않는 보고서가 포함되어 있는 경우 스토어 필터가 적용되면 해당 보고서가 업데이트되지 않습니다. 다음을 수행할 수 있습니다 [연락처 지원](../../guide-overview.md) 보고서가 저장소 선택에 따라 업데이트되어야 한다고 생각되거나 계정 저장소 필터가 잘못 비활성화되었다고 생각되는 경우.
+>저장소 필터가 전체 [!DNL MBI] 계정이 필요합니다. 대시보드에 상거래 데이터에 빌드되지 않은 보고서와 같이 필터의 영향을 받지 않는 보고서가 포함되어 있는 경우 스토어 필터가 적용되면 해당 보고서가 업데이트되지 않습니다. 다음을 수행할 수 있습니다 [연락처 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 보고서가 저장소 선택에 따라 업데이트되어야 한다고 생각되거나 계정 저장소 필터가 잘못 비활성화되었다고 생각되는 경우.
 
 에서 저장소를 선택하는 경우 `Store Filter`을 지정하면 대시보드 간을 탐색할 때 필터가 선택 사항을 유지합니다. 선택 내용을 유지하면 선택할 때까지 선택한 저장소에 대한 데이터를 모든 위치에 볼 수 있습니다 `All Stores`.
 

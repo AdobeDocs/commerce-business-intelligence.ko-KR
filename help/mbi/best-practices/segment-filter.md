@@ -2,9 +2,9 @@
 title: 세그먼테이션 및 필터링을 위한 권장 데이터 Dimension
 description: 세그먼테이션 및 필터링에 대한 우수 사례에 대해 알아봅니다.
 exl-id: 66391bce-bdeb-4e9d-8089-1c796e00d91e
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '923'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 위의 차원별로 지표를 세그먼트화하는 첫 번째 단계는 데이터베이스에서 이 데이터를 추적하는지 확인하는 것입니다. 추적되지 않으면 기술 팀과 만나 이 데이터 추적을 시작하는 방법을 찾으십시오.
 
-데이터베이스에서 데이터가 추적되었음을 확인하면, [지원 팀에 문의](../guide-overview.md) 차원을 [!DNL MBI] 지표 및 차트를 사용하거나 Field Management 도구를 사용하여 [!DNL MBI].
+데이터베이스에서 데이터가 추적되었음을 확인하면, [지원 팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 차원을 [!DNL MBI] 지표 및 차트를 사용하거나 Field Management 도구를 사용하여 [!DNL MBI].
 
 ## 관련
 

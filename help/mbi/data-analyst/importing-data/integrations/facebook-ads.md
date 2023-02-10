@@ -2,9 +2,9 @@
 title: facebook 광고 연결
 description: 광고 비용 데이터를 분석하고 비용이 효과적으로 사용되고 있는지 확인하는 방법을 살펴볼 수 있습니다.
 exl-id: 219a868b-f17c-4299-9e29-94db9156c9b6
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '321'
 ht-degree: 0%
 
 ---
@@ -52,11 +52,11 @@ facebook 광고 데이터 연결 [!DNL MBI] 는 간단한 3단계 프로세스�
 
 ## 다음은 무엇입니까? {#next}
 
-추적 중인지 확인하십시오 [!DNL Facebook] 캠페인 [!DNL Google Analytics] 이에 따라 [튜토리얼](https://www.facebook.com/business/google-analytics). 이렇게 하면 `utm\_campaign` 필드 [!DNL Google Analytics] 에 대해 올바르게 채워지지 않음 [!DNL Facebook] 캠페인.
+추적 중인지 확인하십시오 [!DNL Facebook] 캠페인 [!DNL Google Analytics]. 이렇게 하면 `utm\_campaign` 필드 [!DNL Google Analytics] 에 대해 올바르게 채워지지 않음 [!DNL Facebook] 캠페인.
 
 ## 관련
 
-* [통합 재인증](https://support.magento.com/hc/en-us/articles/360016733151)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
 * [연결 [!DNL Google Adwords] account](../integrations/google-ecommerce.md)
 * [를 통해 주문 참조 소스 추적 [!DNL Google eCommerce]](../integrations/google-ecommerce.md)
 * [데이터베이스에서 사용자 참조 소스 추적](../../analysis/google-track-user-acq.md)

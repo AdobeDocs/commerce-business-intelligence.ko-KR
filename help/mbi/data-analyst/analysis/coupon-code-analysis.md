@@ -2,9 +2,9 @@
 title: 쿠폰 성능
 description: 쿠폰 성과 분석에 대해 알아봅니다.
 exl-id: f6565e33-18ee-4f85-ade0-fd361854475b
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1176'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
    * [!UICONTROL Column type]: `Same Table => CALCULATION`
    * [!UICONTROL Inputs]:
       * `A`: `coupon\_code`
-   * [!UICONTROL Datatype]: `String`
+   * [!UICONTROL Datatype]:: `String`
    * [!UICONTROL Calculation]: 케이스 `A` 이면 null입니다. `No coupon` else `Coupon` end
 
 
@@ -44,7 +44,7 @@ ht-degree: 0%
       * `A`: `customer\_id`
       * `B`: `coupon\_code`
    * [!UICONTROL Datatype]: 문자열
-   * [!UICONTROL Calculation]: `concat(A,' - ',B)`
+   * [!UICONTROL Calculation]:: `concat(A,' - ',B)`
 
 
 * **이 쿠폰이 있는 주문 수**
@@ -80,20 +80,20 @@ ht-degree: 0%
       * [!UICONTROL Column type]: `Same Table => CALCULATION`
       * [!UICONTROL Inputs]:
          * `A`: `Customer's first order included a coupon? (Coupon/No coupon)`
-      * [!UICONTROL Datatype]: `String`
+      * [!UICONTROL Datatype]:: `String`
       * [!UICONTROL Calculation]: **대/소문자 A=&#39;Coupon&#39;, &#39;Coupon 획득 고객&#39;, &#39;Non-coupon acquisition customer&#39; 종료**
    * **쿠폰이 있는 고객 주문 비율**
       * [!UICONTROL Column type]: `Same Table => CALCULATION`
       * [!UICONTROL Inputs]:
          * `A`: `User's lifetime number of coupons used`
          * `B`: `User's lifetime number of orders`
-      * [!UICONTROL Datatype]: `Decimal`
+      * [!UICONTROL Datatype]:: `Decimal`
       * [!UICONTROL Calculation]: **A가 null이거나 B가 null이거나 B=0이고 Null else A/B 종료일 경우**
    * **고객의 쿠폰 사용**
       * [!UICONTROL Column type]: `Same Table => Calculation`
       * [!UICONTROL Inputs]:
          * `A`: `Percent of customer's orders with coupon`
-      * [!UICONTROL Datatype]: `String`
+      * [!UICONTROL Datatype]:: `String`
       * [!UICONTROL Calculation]: **A가 null이면 A=0이면 null이고, A=0.5이면 &#39;주로 전체 가격&#39;이고, A=0.5이면 &#39;50/50&#39;이면 &#39;주로 전체 가격&#39;이면 A=0.5이면 &#39;주로 전체 가격&#39;이고, A>0.5에서 &#39;주로 쿠폰&#39;, &#39;대부분 정의되지 않음&#39;이 끝나는 경우 A=0이면 null이면 null입니다**
 
 
@@ -127,7 +127,7 @@ ht-degree: 0%
    * [!UICONTROL Column type]: `Same Table => CALCULATION`
    * [!UICONTROL Inputs]:
       * `A`: `Customer's first order included a coupon? (Coupon/No coupon)`
-   * [!UICONTROL Datatype]: `String`
+   * [!UICONTROL Datatype]:: `String`
    * [!UICONTROL Calculation]: **대/소문자 A=&#39;Coupon&#39;, &#39;Coupon 획득 고객&#39;, &#39;Non-coupon acquisition customer&#39; 종료**
 
 
@@ -136,7 +136,7 @@ ht-degree: 0%
    * [!UICONTROL Inputs]:
       * `A`: `User's lifetime number of coupons used`
       * `B`: `User's lifetime number of orders`
-   * [!UICONTROL Datatype]: `Decimal`
+   * [!UICONTROL Datatype]:: `Decimal`
    * [!UICONTROL Calculation]: **A가 null이거나 B가 null이거나 B=0이고 Null else A/B 종료일 경우**
 
 
@@ -144,7 +144,7 @@ ht-degree: 0%
    * [!UICONTROL Column type]: `Same Table => Calculation`
    * [!UICONTROL Inputs]:
       * `A`: `Percent of customer's orders with coupon`
-   * [!UICONTROL Datatype]: `String`
+   * [!UICONTROL Datatype]:: `String`
    * [!UICONTROL Calculation]: **A가 null이면 A=0이면 null이고, A=0.5이면 &#39;주로 전체 가격&#39;이고, A=0.5이면 &#39;50/50&#39;이면 &#39;주로 전체 가격&#39;이면 A=0.5이면 &#39;주로 전체 가격&#39;이고, A>0.5에서 &#39;주로 쿠폰&#39;, &#39;대부분 정의되지 않음&#39;이 끝나는 경우 A=0이면 null이면 null입니다**
 
 
@@ -512,4 +512,4 @@ ht-degree: 0%
 
 모든 보고서를 컴파일한 후 대시보드에서 원하는 대로 구성할 수 있습니다. 최종 결과는 페이지 상단에 있는 이미지와 같을 수 있습니다.
 
-이 분석을 작성하는 동안 질문이 있거나 전문 서비스 팀에 참여하려는 경우 [연락처 지원](../../guide-overview.md).
+이 분석을 작성하는 동안 질문이 있거나 전문 서비스 팀에 참여하려는 경우 [연락처 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

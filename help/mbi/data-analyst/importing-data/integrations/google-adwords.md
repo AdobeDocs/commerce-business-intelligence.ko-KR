@@ -2,9 +2,9 @@
 title: Google Adwords 연결
 description: 캠페인에서 획득한 사용자의 광고 비용과 CLV(고객 라이프타임 값)와 결혼하여 캠페인 ROI를 측정하는 방법을 알아봅니다.
 exl-id: db99f817-2a2e-4194-9dd2-ec2d6b27a118
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
@@ -53,10 +53,9 @@ ht-degree: 0%
 
 ## 관련
 
-* [통합 재인증](https://support.magento.com/hc/en-us/articles/360016733151)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
 * [를 통해 주문 참조 소스 추적 [!DNL Google ECommerce]](../integrations/google-ecommerce.md)
 * [데이터베이스에서 사용자 참조 소스 추적](../../analysis/google-track-user-acq.md)
-* [데이터베이스에서 사용자 장치, 브라우저 및 OS 데이터 추적](https://support.magento.com/hc/en-us/articles/360016732911)
 * [가장 가치 있는 획득 소스 및 채널 살펴보기](../../analysis/most-value-source-channel.md)
 * [광고 캠페인에 대한 ROI 향상](../../analysis/roi-ad-camp.md)
 * [어떻게 [!DNL Google Analytics] UTM 속성 작업?](../../analysis/utm-attributes.md)

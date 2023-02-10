@@ -2,9 +2,9 @@
 title: Zendesk에 대한 안내 데스크
 description: 가장 가치 있는 참조 채널에 대해 알아봅니다.
 exl-id: b6142ef2-2be8-401f-ac35-f86fc68d204e
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->이 기능은 `Pro` 새로운 아키텍처를 계획하고 사용합니다. 다음 단계에 있습니다. [새로운 아키텍처](https://support.magento.com/hc/en-us/articles/360016503052-New-Architecture-FAQ) 만약 `Data Warehouse Views` 선택 후 사용 가능한 섹션 `Manage Data` 기본 도구 모음에서 를 클릭합니다.
+>이 기능은 `Pro` 새로운 아키텍처를 계획하고 사용합니다. 새 아키텍처가 있을 경우 `Data Warehouse Views` 선택 후 사용 가능한 섹션 `Manage Data` 기본 도구 모음에서 를 클릭합니다.
 
 통합 [!DNL Zendesk] 트랜잭션 데이터베이스를 사용한 데이터는 고객이 영업 또는 고객 성공 팀과 상호 작용하는 방식과 지원 플랫폼을 활용하는 고객 유형을 보다 잘 이해할 수 있는 좋은 방법입니다. 이 문서에서는 사용자 관련 세부 보고서를 얻기 위해 대시보드를 설정하는 방법을 보여줍니다 [!DNL Zendesk] 트랜잭션 고객의 성능 및 연결
 
@@ -196,7 +196,7 @@ ht-degree: 0%
 
       * `Calculation` - `to_char(A,'D')||'. '||to_char(A,'Day')`
 
-      *`Datatype` - `String`
+      *`Datatype` – `String`
 
 
 * **`customer_entity`** 표
@@ -221,7 +221,7 @@ ht-degree: 0%
 
       * `Calculation` - `case when A>0 then 'Yes' else 'No' end`
 
-      * `Datatype` - `String`
+      * `Datatype` – `String`
 
 * **`[Zendesk] Tickets`** 표
    * 정의를 선택합니다. `Joined Column`

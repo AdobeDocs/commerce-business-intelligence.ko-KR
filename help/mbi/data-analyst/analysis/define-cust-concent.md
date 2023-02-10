@@ -2,9 +2,9 @@
 title: 고객 집중 정의
 description: 고객 기반에 총 매출이 어떻게 분산되는지를 측정하는 데 도움이 되는 대시보드를 설정하는 방법을 알아봅니다.
 exl-id: 6242019f-a6a5-48d3-b214-94acd7842e00
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '486'
 ht-degree: 0%
 
 ---
@@ -31,49 +31,49 @@ ht-degree: 0%
 
 * `Sales_flat_order/customer_entity` 표
 * (입력) `reference`
-* [!UICONTROL Column type]: - `Same table > Calculation`
-* [!UICONTROL Inputs]: - `entity_id`
+* [!UICONTROL Column type]: – `Same table > Calculation`
+* [!UICONTROL Inputs]: – `entity_id`
 * [!UICONTROL Calculation]: - **A가 null이면 대/소문자, null이면 나머지 1 종료**
-* [!UICONTROL Datatype]: - `Integer`
+* [!UICONTROL Datatype]: – `Integer`
 
 * `Customer concentration` 표(방금 업로드한 파일과 숫자입니다.) `1`)
 * 고객 수
-* [!UICONTROL Column type]: - `Many to One > Count Distinct`
+* [!UICONTROL Column type]: – `Many to One > Count Distinct`
 * 경로 - `sales_flat_order.(input) reference > Customer Concentration.Primary Key` 또는 `customer_entity.(input)reference > Customer Concentration.Primary Key`
 * 선택한 열 - `sales_flat_order.customer_email` 또는 `customer_entity.entity_id`
 
 * `customer_entity` 표
 * 고객 수
-* [!UICONTROL Column type]: - `One to Many > JOINED_COLUMN`
+* [!UICONTROL Column type]: – `One to Many > JOINED_COLUMN`
 * 경로 - `customer_entity.(input) reference > Customer Concentration. Primary Key`
 * 선택한 열 - `Number of customers`
 
 * (입력) `Ranking by customer lifetime revenue`
-* [!UICONTROL Column type]: - `Same table > Event Number`
+* [!UICONTROL Column type]: – `Same table > Event Number`
 * 이벤트 소유자 - `Number of customers`
 * 이벤트 등급 - `Customer's lifetime revenue`
 
 * 고객의 수익 백분위수
-* [!UICONTROL Column type]: - `Same table > Calculation`
-* [!UICONTROL Inputs]: - `(input) Ranking by customer lifetime revenue`, `Number of customers`
+* [!UICONTROL Column type]: – `Same table > Calculation`
+* [!UICONTROL Inputs]: – `(input) Ranking by customer lifetime revenue`, `Number of customers`
 * [!UICONTROL Calculation]: - **A가 null이면 null, 다른 경우(A/B)* 100개 끝&#x200B;**
-* [!UICONTROL Datatype]: - `Decimal`
+* [!UICONTROL Datatype]: – `Decimal`
 
 * `Sales_flat_order` 표
 * 고객 수
-* [!UICONTROL Column type]: - `One to Many > JOINED_COLUMN`
+* [!UICONTROL Column type]: – `One to Many > JOINED_COLUMN`
 * 경로 - `sales_flat_order.(input) reference > Customer Concentration.Primary Key`
 * 선택한 열 - `Number of customers`
 
 * (입력) 고객 라이프타임 수입별 등급
-* [!UICONTROL Column type]: - `Same table > Event Number`
+* [!UICONTROL Column type]: – `Same table > Event Number`
 * 이벤트 소유자 - `Number of customers`
 * 이벤트 등급 - `Customer's lifetime revenue`
 * 필터 - `Customer's order number = 1`
 
 * 고객의 수익 백분위수
-* [!UICONTROL Column type]: - `Same table > Calculation`
-* [!UICONTROL Inputs]: - `(input) Ranking by customer lifetime revenue`, `Number of customers`
+* [!UICONTROL Column type]: – `Same table > Calculation`
+* [!UICONTROL Inputs]: – `(input) Ranking by customer lifetime revenue`, `Number of customers`
 * [!UICONTROL Calculation]: - **A가 null이면 null, 다른 경우(A/B)* 100개 끝&#x200B;**
 * [!UICONTROL Datatype]: - `Decimal`
 
@@ -158,4 +158,4 @@ ht-degree: 0%
 
 모든 보고서를 컴파일한 후 대시보드에서 원하는 대로 구성할 수 있습니다. 최종 결과는 위의 샘플 대시보드와 비슷합니다.
 
-이 분석을 작성하는 동안 질문이 있거나 전문 서비스 팀에 참여하려는 경우 [연락처 지원](../../guide-overview.md).
+이 분석을 작성하는 동안 질문이 있거나 전문 서비스 팀에 참여하려는 경우 [연락처 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

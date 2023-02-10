@@ -39,9 +39,9 @@ ht-degree: 0%
 
 * **sales\_order** 표
    * `INPUT` `created\_at` (yyyy-mm-dd 00):00:00)
-      * [!UICONTROL Column type]: - `Same table > Calculation`
-      * [!UICONTROL Inputs]: - `created\_at`
-      * [!UICONTROL Datatype]: - `Datetime`
+      * [!UICONTROL Column type]: – `Same table > Calculation`
+      * [!UICONTROL Inputs]: – `created\_at`
+      * [!UICONTROL Datatype]: – `Datetime`
       * [!UICONTROL Calculation]: - ` case when A is null then null else to\_char(A, 'YYYY-MM-DD 00:00:00') end`
 
 * **소매 달력** 파일 업로드 테이블

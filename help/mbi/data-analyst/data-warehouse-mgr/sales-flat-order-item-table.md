@@ -2,16 +2,16 @@
 title: sales_order_item 테이블
 description: sales_order_item 테이블을 사용하여 작업하는 방법을 알아봅니다.
 exl-id: 5c48e985-3ba2-414b-bd1f-555b3da763bd
-source-git-commit: c0892aa046c80f90561b4a178525ef9ed05b435a
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '891'
 ht-degree: 0%
 
 ---
 
 # `sales_order_item` 표
 
-다음 `sales_order_item` 테이블 (`sales_flat_order_item` on [!DNL Magento] 1) 주문으로 구매한 모든 제품의 레코드를 포함합니다. 각 행은 고유한 `sku` 주문에 포함되어 있습니다. 특정 항목에 대해 구매한 단위 수량 `sku` 는 `qty_ordered` 필드.
+다음 `sales_order_item` 테이블 (`sales_flat_order_item` M1 1에서)에는 주문으로 구매한 모든 제품의 레코드가 포함되어 있습니다. 각 행은 고유한 `sku` 주문에 포함되어 있습니다. 특정 항목에 대해 구매한 단위 수량 `sku` 는 `qty_ordered` 필드.
 
 ## 제품 유형
 
@@ -82,7 +82,7 @@ ht-degree: 0%
 
 `sales_order_item`
 
-* 가입 대상 `sales_order_item` 상위 구성 가능 또는 번들 SKU의 세부 정보를 단순 제품과 연결하는 새 열을 만들 수 있습니다. 다음을 수행해야 합니다 [연락처 지원](../../guide-overview.md) Data Warehouse 관리자에서 작성하는 경우 이러한 계산을 구성하는 데 도움이 됩니다.
+* 가입 대상 `sales_order_item` 상위 구성 가능 또는 번들 SKU의 세부 정보를 단순 제품과 연결하는 새 열을 만들 수 있습니다. 다음을 수행해야 합니다 [연락처 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) Data Warehouse 관리자에서 작성하는 경우 이러한 계산을 구성하는 데 도움이 됩니다.
    * 경로: `sales_order_item.parent_item_id` (다) => `sales_order_item.item_id` (1)
 
 `store`

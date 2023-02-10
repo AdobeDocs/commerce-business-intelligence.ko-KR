@@ -2,9 +2,9 @@
 title: 예상 라이프타임 값(LTV) 분석(기본)
 description: 현재 고객의 라이프타임 값을 파악하고 더 많은 주문으로 라이프타임 값이 어떻게 증가할 것인지 예측하는 분석을 만드는 방법을 알아봅니다.
 exl-id: e6f02cf6-f542-4768-969c-3ec998a7caa9
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '335'
 ht-degree: 0%
 
 ---
@@ -44,8 +44,6 @@ ht-degree: 0%
 * 이 단계에서 모든 보고서를 만들고 추가합니다.
 
 ## 보고서 작성
-
-* 아직 예약하지 않았다면 체크 아웃하십시오 [이 비디오](https://fast.wistia.net/embed/iframe/24zz7wmjrt) **[!UICONTROL Visual Report Builder] 차트, 테이블 및 스칼라 값을 만들려면
 
 >[!NOTE]
 >

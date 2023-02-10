@@ -2,9 +2,9 @@
 title: Mixpanel 연결
 description: 사용자가 웹 사이트 및 앱을 탐색하고 활용하는 방법을 분석하는 방법을 알아봅니다.
 exl-id: e6a9f08f-1063-4d92-93e6-971280239fdb
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---
@@ -59,4 +59,4 @@ ht-degree: 0%
 ### 관련
 
 * [예상됨 [!DNL Mixpanel] 데이터](../integrations/mixpanel-data.md)
-* [통합 재인증](https://support.magento.com/hc/en-us/articles/360016733151)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

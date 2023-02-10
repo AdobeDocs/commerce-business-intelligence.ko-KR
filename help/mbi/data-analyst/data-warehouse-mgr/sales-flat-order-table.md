@@ -2,9 +2,9 @@
 title: sales_order 테이블
 description: sales_order 테이블을 사용하여 작업하는 방법을 알아봅니다.
 exl-id: 19a8ab88-de51-48f8-af39-ae4897834afe
-source-git-commit: 73373924b7adaffabf643b65bd290ce2d9408574
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
-source-wordcount: '1218'
+source-wordcount: '1219'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 | `customer_group_id` | 와 연결된 외부 키 `customer_group` 테이블. 가입 대상 `customer_group.customer_group_id` 주문과 연관된 고객 그룹을 확인하려면 |
 | `customer_id` | `Foreign key` 관련 `customer_entity` 테이블(고객이 등록된 경우) 가입 대상 `customer_entity.entity_id` 를 눌러 주문과 연관된 고객 속성을 결정합니다. 게스트 체크아웃을 통해 주문을 수행한 경우 이 필드는 `NULL` |
 | `entity_id` (PK) | 테이블의 고유 식별자이며, 상거래 인스턴스 내의 다른 테이블에 대한 조인에 일반적으로 사용됩니다 |
-| `increment_id` | 주문에 대한 고유 식별자 및 일반적으로 `order_id` Magento 내에서 사용할 수 있습니다. 다음 `increment_id` 과 같이 외부 소스에 대한 조인에 가장 많이 사용됩니다. [!DNL Google Ecommerce] |
+| `increment_id` | 주문에 대한 고유 식별자 및 일반적으로 `order_id` Adobe Commerce 내에서 사용할 수 있습니다. 다음 `increment_id` 과 같이 외부 소스에 대한 조인에 가장 많이 사용됩니다. [!DNL Google Ecommerce] |
 | `shipping_address_id` | 와 연결된 외부 키 `sales_order_address` 테이블. 가입 대상 `sales_order_address.entity_id` 주문과 연관된 배송 주소 상세내역을 확인하려면 |
 | `status` | 주문 상태 상거래 인스턴스에 구현된 사용자 지정 상태 뿐만 아니라 &#39;complete&#39;, &#39;processing&#39;, &#39;cancelled&#39;, &#39;revolved&#39; 등의 값을 반환할 수 있습니다. 주문이 처리되면 변경될 수 있습니다 |
 | `store_id` | `Foreign key` 관련 `store` 테이블. 가입 대상 `store`.`store_id` 주문과 연결된 상거래 스토어 보기를 확인하려면 |
