@@ -1,17 +1,17 @@
 ---
 title: 재고 레벨 분석
-description: 재고 수준을 분석하는 방법을 알아봅니다.
+description: 재고 수준을 분석하는 방법에 대해 알아봅니다.
 exl-id: 620156c5-7bea-4b36-84c7-e0cb4b5cc8be
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '291'
 ht-degree: 0%
 
 ---
 
 # 재고 레벨 분석
 
-이 주제에서는 현재 인벤토리에 대한 통찰력을 제공하는 대시보드를 설정하는 방법을 보여줍니다. 이 항목에는 기존 아키텍처나 새 아키텍처에 대한 클라이언트를 위한 지침이 포함되어 있습니다. 가 없는 경우 기존 아키텍처에 있습니다 **[!UICONTROL Data Warehouse Views]** 아래의 옵션 **[!UICONTROL Manage Data]** 메뉴 아래의 제품에서 사용할 수 있습니다. 기존 아키텍처를 사용하는 경우 [새로운 지원 요청](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 그 문제를 **[!UICONTROL INVENTORY ANALYSIS]** 에서 지정된 섹션에 도달하면 _계산된 열_ 아래의 지침.
+이 항목에서는 현재 인벤토리에 대한 통찰력을 제공하는 대시보드를 설정하는 방법을 보여 줍니다. 이 항목에는 기존 아키텍처 또는 새 아키텍처 모두에 대한 클라이언트에 대한 지침이 포함되어 있습니다. 이 없는 경우 기존 아키텍처를 사용합니다. **[!UICONTROL Data Warehouse Views]** 옵션 아래에 있는 **[!UICONTROL Manage Data]** 메뉴)를 참조하십시오. 기존 아키텍처를 사용하는 경우 [새 지원 요청](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 제목 포함 **[!UICONTROL INVENTORY ANALYSIS]** 의 지정된 섹션에 도달하면 _계산된 열_ 아래 지침.
 
 ## 추적할 열:
 
@@ -71,7 +71,7 @@ ht-degree: 0%
       * 
          [!UICONTROL Datatype]: `Decimal`
       * 정의:
-         * A가 null이거나 B가 null이면 null else round(A::decimal/(extract(current_timestamp - B)에서 epoch)::decimal/604800.0),2) 종료
+         * a가 null이거나 B가 null인 경우 다른 null은 round(A::decimal/(extract(epoch from (current_timestamp - B))::decimal/604800.0),2) 끝입니다.
 
 
 
@@ -112,13 +112,13 @@ ht-degree: 0%
       * 
          [!UICONTROL Datatype]: `Decimal`
       * 정의:
-         * A가 null이거나 B가 null이거나 B = 0.0일 때 null else round(A::decimal/B, 2) 종료
+         * A가 null이거나 B가 null이거나 B = 0.0일 때 null이거나 다른 round(A::decimal/B,2) 끝인 경우
 
 
 
 
 
-### 기존 아키텍처
+### 레거시 아키텍처
 
 * **[!UICONTROL catalog_product_entity]** 표:
    * **`Product's most recent order date`**
@@ -151,7 +151,7 @@ ht-degree: 0%
       * [!UICONTROL Filters]:
          * [A] `Ordered products we count`
    * **`Avg products sold per week (all time)`**
-      * 파일을 제출할 때 분석가가 작성합니다 **[재고 분석]** 지원 요청
+      * 파일 제출 시 분석가가 만든 항목 **[인벤토리 분석]** 지원 요청
 
 
 
@@ -183,7 +183,7 @@ ht-degree: 0%
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * 선택 [!UICONTROL column]: `Avg products sold per week (all time)`
    * **`Weeks on hand`**
-      * 파일을 제출할 때 분석가가 작성합니다 **[!UICONTROL INVENTORY ANALYSIS]** 지원 요청
+      * 파일 제출 시 분석가가 만든 항목 **[!UICONTROL INVENTORY ANALYSIS]** 지원 요청
 
 
 
@@ -194,9 +194,9 @@ ht-degree: 0%
 ### 지표 지침
 
 * **[!UICONTROL cataloginventory_stock_item]** 표:
-   * **`Inventory on hand`**: 이 지표는 다음을 수행합니다
-      * **합계** on
-      * **`qty`** 열 정렬 기준
+   * **`Inventory on hand`**: 이 지표는 다음을 수행합니다.
+      * **합계** 다음에 있음
+      * **`qty`** 정렬 기준 열
       * [없음] 열
 
 ## 보고서
@@ -221,7 +221,7 @@ ht-degree: 0%
    * [!UICONTROL Time period]: `All time`
    * 시간 간격: `None`
    * 
-      [[!UICONTROL 그룹]: `Sku`
+      [!UICONTROL 그룹 기준]: `Sku`
    * 
 
       [!UICONTROL Chart type]: `Table`
@@ -234,10 +234,10 @@ ht-degree: 0%
    * [!UICONTROL Time period]: `All time`
    * 시간 간격: `None`
    * 
-      [[!UICONTROL 그룹]: `Sku`
+      [!UICONTROL 그룹 기준]: `Sku`
    * 
 
       [!UICONTROL Chart type]: `Table`
 
 
-이 분석을 작성하는 동안 질문이 있거나 전문 서비스 팀에 참여하려는 경우 [연락처 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+이 분석을 작성하는 동안 질문이 발생하거나 Professional Services 팀의 도움을 얻고자 하는 경우 [연락처 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

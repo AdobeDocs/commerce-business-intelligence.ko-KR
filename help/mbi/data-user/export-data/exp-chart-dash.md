@@ -1,17 +1,17 @@
 ---
 title: 차트 데이터 내보내기
-description: 차트 뒤에 있는 데이터를 보는 방법을 알아봅니다.
+description: 차트 뒤에 있는 데이터를 보는 방법에 대해 알아봅니다.
 exl-id: 3c75ff3c-c4e2-4ff8-a303-6f24ccfca0ff
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '103'
 ht-degree: 0%
 
 ---
 
 # 차트 데이터 내보내기
 
-차트 뒤에 있는 데이터를 보려면 차트의 오른쪽 위 모서리에 있는 톱니바퀴 아이콘을 클릭합니다.
+차트 뒤의 데이터를 보려면 차트의 오른쪽 상단 모서리에 있는 톱니바퀴 아이콘을 클릭합니다.
 
 다음 중 하나를 선택합니다.
 
@@ -20,6 +20,6 @@ ht-degree: 0%
 - `Full Excel Export`
 - `Raw Export`
 
-을(를) 정의할 수도 있습니다 [내보내기에 포함할 테이블 및 열](../../tutorials/export-raw-data.md).
+다음을 정의할 수도 있습니다 [내보내기에 포함할 테이블 및 열](../../tutorials/export-raw-data.md).
 
-프레젠테이션이나 문서에 차트를 포함해야 하는 경우 차트의 오른쪽 상단 모서리에서 톱니바퀴 아이콘을 클릭하여 차트를 PNG, PDF 또는 SVG 형식으로 내보낼 수 있습니다. 을(를) 선택합니다 `Enlarge` 옵션을 클릭한 다음 **[!UICONTROL Download]** 내보내기를 완료합니다.
+프레젠테이션이나 문서에 차트를 포함해야 하는 경우 차트를 PNG, PDF 또는 SVG 형식의 이미지로 내보낼 수 있습니다. 차트의 오른쪽 위 모서리에 있는 톱니바퀴 아이콘을 클릭합니다. 다음 항목 선택 `Enlarge` 드롭다운에서 옵션을 선택한 다음 **[!UICONTROL Download]** 내보내기를 완료합니다.

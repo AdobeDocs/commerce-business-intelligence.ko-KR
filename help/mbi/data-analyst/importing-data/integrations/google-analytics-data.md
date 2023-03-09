@@ -1,25 +1,25 @@
 ---
 title: 예상 Google Analytics 데이터
-description: Google Analytics 지표과 상호 작용하는 방법을 알아봅니다.
+description: Google Analytics 지표와 상호 작용하는 방법을 알아봅니다.
 exl-id: db9fdaaa-47a9-4095-b1f8-9b6c74c25b7c
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '172'
 ht-degree: 0%
 
 ---
 
-# 예상됨 [!DNL Google Analytics] 데이터
+# 예상 [!DNL Google Analytics] 데이터
 
-을(를) 연결한 후 [!DNL Google Analytics] 통합을 통해 [!DNL Google Analytics] 지표 *즉시`Visual Report Builder`*. 을 입력하면 `Visual Report Builder`를 클릭한 경우 **[!UICONTROL Add a Metric]**, 사용자의 [!DNL Google Analytics] 프로필은 data warehouse에서 지표 바로 아래에 있는 드롭다운에 표시됩니다.
+을(를) 연결한 후 [!DNL Google Analytics] 통합하면 다음과 같은 기능과 상호 작용할 수 있습니다. [!DNL Google Analytics] 지표 *의 바로 뒤에`Visual Report Builder`*. 을(를) 입력하면 `Visual Report Builder`을 클릭하는 경우 **[!UICONTROL Add a Metric]**, 의 일련의 지표 [!DNL Google Analytics] 프로필이 Data Warehouse의 지표 바로 아래에 드롭다운에 표시됩니다.
 
-다음 [!DNL Google Analytics] 통합은 *live* — 이것은 `Report Builder` 데이터 요청 [!DNL Google Analytics] *즉시* 보고서에 지표를 추가할 때. 즉, 액세스할 수 있는 지표가 있는 그대로 정의됩니다 [!DNL Google Analytics]및 이러한 값이 *창고* 다음 위치에서 [!DNL MBI] 계정 — 보고서에 시각적으로 표시됩니다.
+다음 [!DNL Google Analytics] 통합: *live* — 즉, `Report Builder` 에서 데이터 요청 [!DNL Google Analytics] *즉시* 보고서에 지표를 추가하는 경우. 또한 액세스할 수 있는 지표가 있는 그대로 정의됨을 의미합니다 [!DNL Google Analytics]및 이러한 값이 아님 *창고가 되어* (으)로 [!DNL MBI] 계정 — 보고서에 시각적으로만 표시됩니다.
 
-[!DNL Google Analytics] 통합 [!DNL MBI] 활용 [!DNL Google Analytics] [핵심 보고 API](https://developers.google.com/analytics/devguides/reporting/core/v3/), 및에서 다음 지표 및 차원을 지원합니다.
+[!DNL Google Analytics] 의 통합 [!DNL MBI] 사용 [!DNL Google Analytics] [코어 보고 API](https://developers.google.com/analytics/devguides/reporting/core/v3/), 그리고 다음 지표 및 차원을 지원합니다.
 
 >[!NOTE]
 >
->예기치 않거나 비상식적인 결과를 방지하려면 사용하는 모든 차원이 `Report Builder`. 확인할 수 있습니다 [여기](https://developers.google.com/analytics/devguides/reporting/core/dimsmets).
+>예기치 않거나 중요하지 않은 결과를 방지하려면 사용하는 모든 차원이 `Report Builder`. 다음을 확인할 수 있습니다. [여기](https://ga-dev-tools.google/dimensions-metrics-explorer/).
 
 ## 지원되는 지표
 
@@ -73,11 +73,11 @@ ht-degree: 0%
 | `All Goals Conversion Rate` | `ga:goalConversionRateAll` |
 | `Total Goal Value` | `ga:goal1ValueAll` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 지원되는 Dimension
 
-| [!DNL MBI] 표시 이름 | [!DNL Google Analytics] 이름 / 공식 | 그룹 가능? |
+| [!DNL MBI] 표시 이름 | [!DNL Google Analytics] 이름 / 공식 | 그룹화할 수 있습니까? |
 | --- | --- | --- |
 | `Ad Content` | `ga:adContent` | `Yes` |
 | `Ad Group` | `ga:adGroup` | `Yes` |
@@ -142,4 +142,4 @@ ht-degree: 0%
 | `Custom (User Defined) Value` | `ga:userDefinedValue` | `Yes` |
 | `Year` | `ga:year` | `No` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

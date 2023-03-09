@@ -2,16 +2,16 @@
 title: 활성화 [!DNL MBI] 온-프레미스 구독 계정
 description: 귀하의 활성화에 대해 알아보기 [!DNL MBI] 온-프레미스 구독에 대한 계정입니다.
 exl-id: 0efac7b4-2457-48c7-947a-d2776b90a1dd
-source-git-commit: 6f018ab220f2ae573cbc9016f9efb83c27a254be
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
 
 # 활성화 [!DNL MBI] 온-프레미스 구독 계정
 
-활성화하려면 [!DNL MBI] 온-프레미스 구독의 경우 먼저 [!DNL MBI] 계정, 연결 [!DNL MBI] 상거래 데이터베이스로 이동합니다. 의 활성화에 대한 자세한 내용 `Cloud Starter` 프로젝트, 참조 [활성화 [!DNL MBI] 계정 `Cloud Starter` 구독](../getting-started/cloud-activation.md).
+활성화하려면 [!DNL MBI] 온프레미스 구독의 경우 먼저 [!DNL MBI] 계정, 연결 [!DNL MBI] 상거래 데이터베이스로 이동합니다. 의 활성화에 대한 자세한 내용 `Cloud Starter` 프로젝트, 참조 [활성화 [!DNL MBI] 계정 `Cloud Starter` 구독](../getting-started/cloud-activation.md).
 
 1. 사용자 만들기 [!DNL MBI] 계정.
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 
    ![](../assets/create-account-4.png)
 
-   - 계정을 만든 후에는 새 계정에 사용자를 추가할 수 있습니다. 이제 기술 관리자를 추가하여 다음 단계를 수행할 수 있습니다.
+   - 계정을 만든 후 사용자를 새 계정에 추가할 수 있습니다. 이제 기술 관리자를 추가하여 다음 단계를 수행할 수 있습니다.
 
    ![](../assets/create-account-5.png)
 

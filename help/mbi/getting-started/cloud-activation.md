@@ -2,9 +2,9 @@
 title: 활성화 [!DNL MBI] Cloud Starter 구독을 위한 계정
 description: 활성화 방법 알아보기 [!DNL MBI] Cloud Starter 프로젝트용
 exl-id: 172439ee-fa1d-4872-b6a9-c61a212a7cbe
-source-git-commit: 6f018ab220f2ae573cbc9016f9efb83c27a254be
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '540'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->활성화 도움말 [!DNL MBI] 대상 `Cloud Pro` 프로젝트, Adobe 계정 팀 또는 고객 기술 관리자에게 문의하십시오.
+>활성화 관련 도움말 [!DNL MBI] 대상 `Cloud Pro` 프로젝트, Adobe 계정 팀 또는 고객 기술 관리자에게 문의하십시오.
 
 1. 사용자 만들기 [!DNL MBI] 계정.
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
    - 클릭 **[!UICONTROL Create Instance]**. 이 단추가 표시되지 않으면 Adobe 계정 팀이나 고객 기술 관리자에게 문의하십시오.
 
-   - 다음 항목 선택 `Cloud Starter` 구독. 다음 항목만 있는 경우 `cloud starter` 구독 이 은(는) 자동으로 선택됩니다.
+   - 다음 항목 선택 `Cloud Starter` 구독. 다음 항목만 있는 경우 `cloud starter` 가입, 이것이 기본 선택입니다.
 
    - 클릭 **[!UICONTROL Continue]**.
 
@@ -49,13 +49,13 @@ ht-degree: 0%
 
    ![](../assets/create-account-6.png)
 
-   온보딩 흐름의 세 번째 단계에서 데이터베이스를 연결하기 전에 수집해야 하는 정보가 있습니다. 다음을 채울 것입니다. `Connect your database` 9단계의 페이지입니다.
+   온보딩 흐름의 세 번째 단계에서 데이터베이스를 연결하기 전에 몇 가지 정보를 수집합니다. 다음을 완료했습니다. `Connect your database` 9단계의 페이지입니다.
 
 1. 전용 만들기 [!DNL MBI] 사용자.
 
-   - 에서 새 사용자 만들기 [Adobe Commerce 계정](https://accounts.magento.com).
+   - 에서 사용자 만들기 [Adobe Commerce 계정](https://account.magento.com/customer/account/login).
 
-   - _왜 새 사용자입니까?_ [!DNL MBI] 은(는) 프로젝트에 추가된 사용자가 계정에 전송할 새 데이터를 계속 가져와야 합니다. [!DNL MBI] data warehouse. 이 사용자는 해당 연결 역할을 합니다. 이 사용자를 프로젝트에 추가하는 단계는 4단계에서 수행됩니다.
+   - _왜 새 사용자입니까?_ [!DNL MBI] 은(는) 프로젝트에 추가된 사용자가 계정에 전송할 새 데이터를 계속 가져와야 합니다. [!DNL MBI] Data Warehouse. 이 사용자는 해당 연결의 역할을 합니다. 이 사용자를 프로젝트에 추가하는 방법은 4단계에서 다룹니다.
 
    - 다음을 수행하는 이유 [!DNL MBI] 사용자는 추가된 사용자가 실수로 비활성화되거나 삭제되어 중지되는 것을 방지하기 위한 것입니다. [!DNL MBI] 연결.
 
@@ -75,7 +75,7 @@ ht-degree: 0%
 
 1. 새 항목 추가 [!DNL MBI] `Public key` (으)로 [!DNL MBI] 5단계에서 사용자를 만들었습니다.
 
-   - 다음으로 이동 [cloud Adobe Commerce 계정](https://accounts.magento.cloud/). 계정 로그인으로 로그인 [!DNL MBI] 사용자가 생성되었습니다. 그런 다음 로 이동합니다. `Account Settings` 탭.
+   - 다음으로 이동 [cloud Adobe Commerce 계정](https://account.magento.com/cloud/customer/login/). 새 계정 로그인 정보로 로그인 [!DNL MBI] 사용자가 생성되었습니다. 그런 다음 로 이동합니다. `Account Settings` 탭.
 
    - 페이지를 아래로 스크롤한 다음 드롭다운을 확장합니다. `SSH` 키. 그런 다음 **[!UICONTROL Add a public key]**.
 

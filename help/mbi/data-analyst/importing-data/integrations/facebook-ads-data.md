@@ -1,63 +1,63 @@
 ---
-title: facebook 광고 데이터가 필요합니다
-description: Data Warehouse에 동기화하는 것이 좋은 표에 대한 간단한 개요를 살펴보십시오
+title: 예상 Facebook 광고 데이터
+description: Data Warehouse과 동기화하는 것이 권장되는 표에 대한 간략한 개요를 알아봅니다
 exl-id: 0c8b907b-1a98-470b-bb2c-55327e88e502
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
 
-# 예상됨 [!DNL Facebook Ads] 데이터
+# 예상 [!DNL Facebook Ads] 데이터
 
 ![](../../../assets/Facebook_Logo.png)
 
-그러고 나면 [연결 [!DNL Facebook Ads] account](../integrations/facebook-ads.md)를 사용하여 다음을 수행할 수 있습니다. [Data Warehouse 관리자](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) 분석을 위한 관련 데이터 필드를 쉽게 추적할 수 있습니다.
+다음 작업을 수행한 후 [을(를) 연결했습니다. [!DNL Facebook Ads] account](../integrations/facebook-ads.md), 다음을 사용할 수 있습니다. [Data Warehouse 관리자](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) 분석을 위해 관련 데이터 필드를 쉽게 추적할 수 있습니다.
 
-이 문서에서는 Data Warehouse에 동기화하는 것이 권장되는 표에 대한 간단한 개요를 제공합니다. 하위 테이블이 많이 있으므로 전체 목록이 아닙니다. 핵심 테이블만 강조 표시합니다.
+이 문서에서는 Adobe이 Data Warehouse과 동기화할 것을 권장하는 표에 대한 간략한 개요를 제공합니다. 이 목록은 전체 목록이 아닙니다. 꽤 많은 하위 테이블이 있기 때문입니다. 핵심 테이블만 강조 표시됩니다.
 
 ## 핵심 광고 캠페인 테이블
 
-이러한 표에는 주요 광고 캠페인 구성 요소에 대한 데이터가 포함되어 있습니다.
+이러한 표에는 핵심 광고 캠페인 구성 요소에 대한 데이터가 포함되어 있습니다.
 
-### [`facebook _campaigns_ (account-id)`](https://developers.facebook.com/docs/reference/ads-api/adcampaign/)
+### [`facebook _campaigns_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-campaign-group)
 
-이 표는 페이지의 [!DNL Facebook Ads] 계정이 필요합니다. 열에는 다음이 포함됩니다 `campaign id`, `name`, `status (active/paused)`, `objective`.
+이 테이블은 의 핵심 캠페인 테이블입니다. [!DNL Facebook Ads] 계정입니다. 열은 다음과 같습니다. `campaign id`, `name`, `status (active/paused)`, `objective`.
 
 ### [`facebook _adsets_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-campaign)
 
-이 테이블 레코드는 [!DNL Facebook Ads] 에 설정 [!DNL Facebook Ads] 계정이 필요합니다. 열에는 광고가 포함됩니다 `Campaign id/name` 광고 세트가 속하는 항목, 예산 책정, 입찰 유형, 예약 및 대상 타깃팅 정보입니다.
+이 테이블 레코드는 의 핵심 테이블입니다. [!DNL Facebook Ads] 에 설정 [!DNL Facebook Ads] 계정입니다. 열에는 광고가 포함됩니다 `Campaign id/name` 광고 세트는 예산, 입찰 유형, 일정 및 대상자 타겟팅 정보에 속합니다.
 
-### [`facebook _ads_ (account-id)`](https://developers.facebook.com/docs/reference/ads-api/adgroup/)
+### [`facebook _ads_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/adgroup)
 
-이 표는 모든 광고를 [!DNL Facebook Ads] 계정이 필요합니다. 열에는 광고 세트가 속하는 광고 세트와 광고 캠페인, 광고 입찰, 광고가 사용하는 특정 광고(이미지/텍스트)에 대한 광고 타깃팅 및 참조를 포함하는 광고 정보가 포함됩니다.
+이 표는에 있는 모든 광고를 기록합니다 [!DNL Facebook Ads] 계정입니다. 열에는 광고 세트 및 해당 광고가 속한 광고 캠페인, 광고 입찰, 광고 타겟팅 및 광고가 사용하는 특정 크리에이티브(이미지/텍스트)에 대한 참조가 포함된 광고 정보가 포함됩니다.
 
-### [`facebook _adcreative_ (account-id)`](https://developers.facebook.com/docs/reference/ads-api/adcreative/)
+### [`facebook _adcreative_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-creative)
 
-이 테이블에서는 [!DNL Facebook Ads]. 여기에는 적절한 경우 광고 이름, 설명 및 관련 이미지 URL이 포함됩니다.
+이 표는에서 사용되는 크리에이티브를 기록합니다. [!DNL Facebook Ads]. 크리에이티브에는 크리에이티브 이름, 설명 및 적절한 경우 관련 이미지 URL이 포함됩니다.
 
 ## 세그먼트화된 캠페인 테이블
 
-다음 표에는 각 날에 대한 각 캠페인/설정/광고 조합, 연령, 성별 및 국가 등의 차원으로 세그먼트화된 항목이 포함되어 있습니다.
+다음 표에는 연령, 성별 및 국가와 같은 차원으로 세그먼트화된 각 날짜의 각 캠페인/세트/광고 조합에 대한 항목이 포함되어 있습니다.
 
 ### `facebook _ads insights_ (account-id)`
 
-이 표에는 노출 수, 클릭 수, 비용, cpc, cpm, cpp, ctr, 도달 범위, 소셜 도달 및 지출 등의 통계와 함께 각 날의 각 캠페인/세트/광고 조합 항목이 포함되어 있습니다.
+이 표에는 노출 횟수, 클릭 수, 비용, cpc, cpm, cpp, ctr, 도달 범위, 소셜 도달 범위 및 지출과 같은 통계와 함께 각 날의 각 캠페인/세트/광고 조합에 대한 항목이 포함되어 있습니다.
 
 ### `facebook _ads insights_ (account-id)_~\_actions`
 
-이것은 `facebook_ads_insights_{account_id}` 테이블. 여기에는 다른 캠페인을 기반으로 하는 작업에 대한 전환 데이터가 포함됩니다.
+다음은 의 하위 테이블입니다. `facebook_ads_insights_{account_id}` 테이블. 여기에는 다양한 캠페인을 기반으로 발생하는 작업에 대한 전환 데이터가 포함됩니다.
 
 ### `facebook _ads insights country_ (account-id)`
 
-이 표에는 `facebook_ads_insights_{account_id}` 표를 만들어 국가별 세그먼트화할 수 있습니다.
+이 표에는 와 동일한 정보가 포함되어 있습니다. `facebook_ads_insights_{account_id}` 국가별로 표를 작성하고 세그먼트화합니다.
 
 ### `facebook ads insights age and gender (account-id)`
 
-이 표에는 `facebook_ads_insights_{account_id}` 나이 및 성별 별로 테이블 및 세그먼트화합니다.
+이 표에는 와 동일한 정보가 포함되어 있습니다. `facebook_ads_insights_{account_id}` 나이와 성별에 따라 분류하여 표시합니다.
 
-## 관련
+## 관련 항목
 
 * [연결 중 [!DNL Facebook Ads]](../integrations/facebook-ads.md)
 * [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

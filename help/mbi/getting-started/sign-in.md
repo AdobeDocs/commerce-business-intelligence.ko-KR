@@ -2,9 +2,9 @@
 title: 액세스 권한 [!DNL MBI] 계정
 description: 에 로그인하는 방법에 대해 알아보기 [!DNL MBI] 계정입니다.
 exl-id: 3ee36e0e-f447-4be3-afc8-ccc6d3aa4f20
-source-git-commit: 6f018ab220f2ae573cbc9016f9efb83c27a254be
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '154'
 ht-degree: 0%
 
 ---
