@@ -2,10 +2,11 @@
 title: MBI Essentials와 Pro 비교
 description: MBI Essentials와 MBI Pro이 어떻게 다른지 알아봅니다.
 exl-id: 624a6285-8497-43d9-a56d-8ae503e0e2dd
-source-git-commit: dcd02693b3ca060ecdc47cbee189428ce157dd58
+redirect_to: https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/guide-overview.html?lang=en
+source-git-commit: 807ad89d38ab6c6dfb05afb3b1b9c09947633efa
 workflow-type: tm+mt
-source-wordcount: '86'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +35,7 @@ ht-degree: 4%
 | `Access to CS, AM, or Analysts` | 아니요 | 예 |
 | `Professional Services` | 사용 가능 | 사용 가능 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 >[!NOTE]
 >

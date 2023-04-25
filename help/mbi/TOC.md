@@ -2,9 +2,9 @@
 title: MBI
 description: 사용 방법 알아보기 [!DNL MBI] Adobe Commerce에 사용 가능한 기능.
 breadcrumb-title: MBI 사용 안내서
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 807ad89d38ab6c6dfb05afb3b1b9c09947633efa
 workflow-type: tm+mt
-source-wordcount: '675'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -16,10 +16,8 @@ ht-degree: 0%
 - [[!DNL MBI] 소개](getting-started/getting-started.md)
 - 시작하기 {#start}
    - [온보딩](getting-started/onboarding.md)
-   - [활성화 대상 [!DNL On-Premise]](getting-started/onpremise-activation.md)
-   - [활성화 대상 [!DNL Cloud Starter]](getting-started/cloud-activation.md)
+   - [활성화 [!DNL MBI] 계정](getting-started/onpremise-activation.md)
    - [사용자 [!DNL MBI] 계정](getting-started/sign-in.md)
-   - [MBI Essentials와 MBI Pro 비교](getting-started/essentials-vs-pro.md)
 - 관리자 {#administrator}
    - 계정 관리 {#acct-mgmt}
       - [이점 [!DNL New Architecture]](../mbi/administrator/account-management/new-architecture.md)
