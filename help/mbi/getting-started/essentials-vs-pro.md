@@ -2,20 +2,16 @@
 title: MBI Essentials와 Pro 비교
 description: MBI Essentials와 MBI Pro이 어떻게 다른지 알아봅니다.
 exl-id: 624a6285-8497-43d9-a56d-8ae503e0e2dd
-source-git-commit: f358f11586e4b7c44e9192584ea0fdeff5526287
+source-git-commit: 23177d8235987354e17cca72d753b5c4afa0dcc9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '86'
+ht-degree: 4%
 
 ---
 
 # [!DNL MBI Essentials] vs [!DNL MBI Pro]
 
->[!NOTE]
->
->이 설명서에 대한 보관 문서입니다 [!DNL MBI].
-
-다음 표에서는 Essentials 및 Pro에 포함된 내용을 설명합니다.
+다음 표에서는 기존 `Essentials` 계정 대 현재 MBI 계정. 더 이상 오퍼가 아닌 Adobe `Essentials`.
 
 |  | **`MBI Essentials`** | **`MBI Pro`** |
 |-----|-----|-----|
