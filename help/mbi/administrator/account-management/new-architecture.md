@@ -2,16 +2,16 @@
 title: 새로운 아키텍처
 description: 새로운 아키텍처로 이동하여 얻을 수 있는 이점에 대해 알아봅니다.
 exl-id: cbb10673-5704-4a90-9574-5ac114f389b9
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '397'
 ht-degree: 0%
 
 ---
 
 # 새로운 아키텍처
 
-MBI 제품 및 엔지니어링 팀은 지난 한 해 동안 가장 광범위하고 많이 요청된 개선 사항을 만드는 데 주력해 왔습니다. Adobe은 새로운 제품의 출시를 발표하게 되어 매우 기쁩니다 [!DNL MBI] 이러한 개선 사항을 실현하는 제품 아키텍처.
+[!DNL Adobe Commerce Intelligence] 제품 및 엔지니어링 팀은 지난 한 해 동안 가장 광범위하고 많이 요청된 개선 사항을 만드는 데 주력해 왔습니다. Adobe은 새로운 제품의 출시를 발표하게 되어 매우 기쁩니다 [!DNL Commerce Intelligence] 이러한 개선 사항을 실현하는 제품 아키텍처.
 
 ## 새로운 아키텍처의 이점
 
@@ -33,7 +33,7 @@ MBI 제품 및 엔지니어링 팀은 지난 한 해 동안 가장 광범위하�
 
 ### 새 아키텍처에서 계정을 재구현하는 데 필요한 시간
 
-재구현 시간은 재구축할 내용에 따라 다릅니다. Adobe은 기존 계정에서 다음 단계를 수행하여 재구현과 관련된 사항에 대한 아이디어를 얻을 것을 권장합니다.
+재구현 시간은 재구축할 내용에 따라 다릅니다. Adobe은 기존 계정에서 다음 단계를 수행하여 재구현과 관련된 사항을 파악하는 것을 권장합니다.
 
 * 핵심 보고서/대시보드 세트를 식별합니다.
 * 이러한 보고서를 작성하는 데 필요한 지표 및 차원을 식별합니다.
@@ -43,7 +43,7 @@ MBI 제품 및 엔지니어링 팀은 지난 한 해 동안 가장 광범위하�
 
 ### 도움말 보기
 
-다음 [!DNL MBI] 서비스 팀은 추가 비용으로 재구현을 수행할 수 있습니다. 다음으로 연락 [Adobe 계정 팀](../../guide-overview.md) 새 계정에서 만들기 전에 우선 순위를 지정할 대시보드/보고서 목록을 제공할 준비를 하십시오
+다음 [!DNL Adobe Commerce Intelligence] [서비스 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 은 추가 비용으로 재구현을 수행할 수 있습니다. 다음으로 연락 [Adobe 계정 팀](../../guide-overview.md#Submitting-a-Support-Ticket) 새 계정에서 만들기 전에 우선 순위를 지정할 대시보드/보고서 목록을 제공할 준비를 하십시오
 
 ### 기존 아키텍처 유지
 

@@ -2,24 +2,24 @@
 title: 시각적 Report Builder
 description: 시각적 Report Builder 사용 방법을 알아봅니다.
 exl-id: 1101f43d-e014-4df2-be21-12d90a9d8a56
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 0%
 
 ---
 
-# `Visual Report Builder`
+# [!DNL Visual Report Builder]
 
-`Visual Report Builder` 사전 정의된 지표를 기반으로 하는 빠른 보고서를 쉽게 만들 수 있습니다. 각 지표에는 보고서에 대한 데이터 세트를 정의하는 쿼리가 포함됩니다.
+[!DNL Visual Report Builder] 사전 정의된 지표를 기반으로 하는 빠른 보고서를 쉽게 만들 수 있습니다. 각 지표에는 보고서에 대한 데이터 세트를 정의하는 쿼리가 포함됩니다.
 
 다음 예에서는 간단한 보고서를 생성하고, 데이터를 추가 차원으로 그룹화하고, 날짜 및 시간 간격을 설정하고, 차트 유형을 변경하고, 보고서를 대시보드에 저장하는 방법을 보여 줍니다.
 
 ## 간단한 보고서를 만들려면 다음 작업을 수행하십시오.
 
-1. 다음에서 [!DNL MBI] 메뉴, 클릭 **[!UICONTROL Report Builder]**.
+1. 다음에서 [!DNL Commerce Intelligence] 메뉴, 클릭 **[!UICONTROL Report Builder]**.
 
-1. 아래 `Visual Report Builder`, 클릭 **[!UICONTROL Create Report]** 다음을 수행합니다.
+1. 아래 [!UICONTROL Visual Report Builder], 클릭 **[!UICONTROL Create Report]** 다음을 수행합니다.
 
    * 클릭 **[!UICONTROL Add Metric]**.
 

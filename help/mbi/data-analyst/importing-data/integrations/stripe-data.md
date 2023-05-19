@@ -1,8 +1,8 @@
 ---
 title: 예상 스트라이프 데이터
-description: 스트라이프에서 가져올 수 있는 기본 데이터 테이블을 탐색합니다. [!DNL MBI].
+description: Stripe에서 Commerce Intelligence로 가져올 수 있는 기본 데이터 테이블을 살펴봅니다.
 exl-id: 694577b2-48f9-4376-850d-acae1776afe3
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 다음 이후 [다음을 연결했습니다. [!DNL Stripe] account](../integrations/stripe.md), 다음을 사용할 수 있습니다. [Data Warehouse 관리자](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) 분석을 위해 관련 데이터 필드를 쉽게 추적할 수 있습니다.
 
-이 문서에서는 가져올 수 있는 기본 데이터 테이블에 대해 살펴봅니다. [!DNL Stripe] 대상 [!DNL MBI]. 설치가 완료되면 Data Warehouse에 다음 테이블이 만들어집니다. 각 테이블의 속성에 대해 자세히 알아보려면 테이블 이름 열의 링크를 클릭합니다.
+이 항목에서는 가져올 수 있는 기본 데이터 테이블을 살펴봅니다 [!DNL Stripe] 대상 [!DNL Commerce Intelligence]. 설치가 완료되면 Data Warehouse에 다음 테이블이 만들어집니다. 각 테이블의 속성에 대해 자세히 알아보려면 테이블 이름 열의 링크를 클릭합니다.
 
 | **테이블 이름** | **설명** |
 |-----|-----|
@@ -34,4 +34,4 @@ ht-degree: 0%
 ## 관련 항목:
 
 * [연결 중 [!DNL Stripe]](../integrations/stripe.md)
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

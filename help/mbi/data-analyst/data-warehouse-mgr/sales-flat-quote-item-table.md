@@ -2,16 +2,16 @@
 title: quote_item 테이블
 description: quote_item 테이블을 사용하여 작업하는 방법을 알아봅니다.
 exl-id: dad36e88-5986-4b52-8a0e-ac084fabb275
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '672'
 ht-degree: 0%
 
 ---
 
 # quote_item 테이블
 
-다음 `quote_item` 표 (`sales_flat_quote_item` - m1) 1)에는 장바구니에 추가된 모든 항목에 대한 레코드(장바구니가 중단되었는지 또는 구매로 전환되었는지 여부)가 포함됩니다. 각 행은 하나의 장바구니 항목을 나타냅니다. Adobe 이 테이블의 잠재적 크기 때문에 60일 이상 된 전환되지 않은 장바구니가 있는 경우와 같이 특정 기준이 충족되는 경우 레코드를 정기적으로 삭제하는 것이 좋습니다.
+다음 `quote_item` 표 (`sales_flat_quote_item` (M1)에는 장바구니에 추가된 모든 항목에 대한 레코드(장바구니가 중단되었는지 또는 구매로 변환되었는지 여부)가 포함됩니다. 각 행은 하나의 장바구니 항목을 나타냅니다. Adobe 이 테이블의 잠재적 크기 때문에 60일 이상 된 전환되지 않은 장바구니가 있는 경우와 같이 특정 기준이 충족되는 경우 레코드를 정기적으로 삭제하는 것이 좋습니다.
 
 >[!NOTE]
 >
@@ -22,7 +22,7 @@ ht-degree: 0%
 | **열 이름** | **설명** |
 |---|---|
 | `base_price` | 이후에 품목이 장바구니에 추가된 시점의 개별 제품 단가 [카탈로그 가격 규칙, 계층형 할인 및 특별 가격](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) 세금, 배송 또는 장바구니 할인이 적용되기 전에 적용됩니다. 이 값은 스토어의 기본 통화로 표시됩니다. |
-| `created_at` | 로컬에 UTC로 저장된 장바구니 항목의 생성 타임스탬프. 의 구성에 따라 [!DNL MBI], 이 타임스탬프는에서 보고 시간대로 변환될 수 있습니다. [!DNL MBI] 데이터베이스 시간대와 다릅니다. |
+| `created_at` | 로컬에 UTC로 저장된 장바구니 항목의 생성 타임스탬프. 의 구성에 따라 [!DNL Commerce Intelligence], 이 타임스탬프는에서 보고 시간대로 변환될 수 있습니다. [!DNL Commerce Intelligence] 데이터베이스 시간대와 다릅니다. |
 | `item_id` (PK) | 테이블에 대한 고유 식별자 |
 | `name` | 주문 항목의 텍스트 이름 |
 | `parent_item_id` | `Foreign key` 단순 제품을 상위 번들 또는 구성 가능한 제품과 연결합니다. 가입 대상 `quote_item.item_id` 간단한 제품과 연관된 상위 제품 속성을 확인합니다. 상위 장바구니 항목(번들 또는 구성 가능한 제품 유형)의 경우 `parent_item_id` 은(는) `NULL` |
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 `quote_item`
 
-* 가입 대상 `quote_item` 상위 구성 가능 또는 번들 SKU의 세부 정보를 간단한 제품과 연결하는 열을 만듭니다. [지원 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) Data Warehouse 관리자에서 빌드하는 경우 이러한 계산을 구성하는 데 도움이 됩니다.
+* 가입 대상 `quote_item` 상위 구성 가능 또는 번들 SKU의 세부 정보를 간단한 제품과 연결하는 열을 만듭니다. [지원 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) Data Warehouse 관리자에서 빌드하는 경우 이러한 계산을 구성하는 데 도움이 됩니다.
    * 경로: `quote_item.parent_item_id` (다) => `quote_item.item_id` (1)
 
 `store`

@@ -2,20 +2,20 @@
 title: enterprise_rma 테이블
 description: 특정 반환 요청에 대한 정보를 분석하는 방법에 대해 알아봅니다.
 exl-id: a19cbc9a-e34f-4f4e-820f-9e413d1a552d
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
 
 # enterprise_rma 테이블
 
-의 각 행 `enterprise_rma` 테이블(종종 호출됨) `magento_rma` commerce 2.x에서 이름을 사용자 지정할 수 있습니다)에는 특정 반환 요청에 대한 정보가 포함되어 있습니다.
+의 각 행 `enterprise_rma` 테이블(종종 호출됨) `magento_rma` Adobe Commerce 2.x에서 이름을 사용자 지정할 수 있습니다)에는 특정 반환 요청에 대한 정보가 포함되어 있습니다.
 
 >[!NOTE]
 >
->이 테이블은 다음 경우에 한해 상거래 계정과 함께 제공됩니다. `Enterprise Edition` 또는 `Enterprise Cloud Edition` 고객.
+>이 테이블은 다음과 같은 경우에만 Adobe Commerce 계정과 함께 제공됩니다. `Enterprise Edition` 또는 `Enterprise Cloud Edition` 고객.
 
 ## 일반 기본 열
 

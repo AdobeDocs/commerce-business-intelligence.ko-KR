@@ -2,9 +2,9 @@
 title: Google Analytics 차트 만들기
 description: Google Analytics 데이터로 차트를 만드는 방법에 대해 알아봅니다.
 exl-id: ee80fd0d-e3b1-4331-853d-3c2c11931d3f
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '165'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 (정규 표현식 구문 도움말 사용)
 
-다음을 연결한 후 [[!DNL Google Analytics] account](../../data-analyst/importing-data/integrations/google-analytics.md)에서 차트를 생성할 수 있습니다. [!DNL Google Analytics] 데이터.
+다음을 연결한 후 [[!DNL Google Analytics] account](../../data-analyst/importing-data/integrations/google-analytics.md)을 사용하여 차트를 생성할 수 있습니다. [!DNL Google Analytics] 데이터.
 
 ## 만들기 [!DNL Google Analytics] 차트
 

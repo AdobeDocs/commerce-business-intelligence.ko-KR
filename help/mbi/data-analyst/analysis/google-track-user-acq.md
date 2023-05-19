@@ -2,9 +2,9 @@
 title: Google Analytics - 사용자 획득 소스 데이터 추적 개요
 description: 사용자 확보 소스로 데이터를 세그먼트화하는 방법에 대해 알아봅니다.
 exl-id: 2ce3e4f9-4741-4ada-b822-ec6a5ca94497
-source-git-commit: ad95a03193853eebf2b695cd6f5c3cb5a9837f93
+source-git-commit: af1e3839839b4c419beabb0cc666c996ea2179d4
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '791'
 ht-degree: 1%
 
 ---
@@ -13,27 +13,27 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->아래 프로세스는 을 지원하지 않습니다. [!DNL GoogleUniversal Analytics].
+>아래 프로세스는 을 지원하지 않습니다. [!DNL Google Universal Analytics].
 
 사용자 확보 소스별로 데이터를 세그먼트화하는 기능은 마케팅 계획을 효과적으로 관리하는 데 매우 중요합니다. 신규 사용자의 획득 소스를 알면 어떤 채널이 가장 높은 수익을 내는지 알 수 있으며, 이를 통해 팀이 자신감을 가지고 마케팅 달러를 할당할 수 있습니다.
 
-데이터베이스에서 사용자 획득 소스를 아직 추적하지 않는 경우 [!DNL MBI] 시작하는 데 도움이 될 수 있습니다.
+데이터베이스에서 사용자 획득 소스를 아직 추적하지 않는 경우 [!DNL Adobe Commerce Intelligence] 시작하는 데 도움이 될 수 있습니다.
 
 ## 사용자 획득 소스 추적
 
-Adobe은 설정에 따라 참조 소스 데이터를 추적하는 두 가지 방법을 권장합니다.
+[!DNL Adobe] 는 설정에 따라 참조 소스 데이터를 추적하는 두 가지 방법을 권장합니다.
 
 ### (옵션 1) 다음을 통해 주문 참조 소스 데이터 추적 [!DNL Google Analytics E-Commerce] (포함 [!DNL Shopify] Stores)
 
-를 사용하는 경우 [!DNL Google Analytics E-Commerce] 주문 및 판매 데이터를 추적하려면 [!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md) 각 주문의 조회 소스 데이터를 동기화합니다. 이를 통해 조회 출처별로 매출 및 주문을 세그먼트화할 수 있습니다(예: `utm_source` 또는 `utm_medium`). 또한 다음을 통해 고객 확보 소스에 대한 감을 얻을 수 있습니다. [!DNL MBI] 사용자 정의 차원(예: ) `User's first order source`.
+를 사용하는 경우 [!DNL Google Analytics E-Commerce] 주문 및 판매 데이터를 추적하려면 [!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md) 각 주문의 조회 소스 데이터를 동기화합니다. 이를 통해 조회 출처별로 매출 및 주문을 세그먼트화할 수 있습니다(예: `utm_source` 또는 `utm_medium`). 또한 다음을 통해 고객 확보 소스에 대한 감을 얻을 수 있습니다. [!DNL Commerce Intelligence] 사용자 정의 차원(예: ) `User's first order source`.
 
 >[!NOTE]
 >
->Shopify 사용자** 경우: 켜기 [!DNL [Google Analytics E-Commerce] tracking in Shopify](https://help.shopify.com/en/manual/reports-and-analytics/google-analytics#ecommerce-tracking) 에 연결하기 전에 [!DNL Google Analytics E-Commerce] 계정 위치: [!DNL MBI].
+>**Shopify 사용자용**: 켜기 [!DNL [Google Analytics E-Commerce] tracking in Shopify](https://help.shopify.com/en/manual/reports-and-analytics/google-analytics#ecommerce-tracking) 에 연결하기 전에 [!DNL Google Analytics E-Commerce] 계정 위치: [!DNL Commerce Intelligence].
 
 ### (옵션 2) 저장 [!DNL Google Analytics]&#39; 데이터베이스의 획득 소스 데이터
 
-이 문서에서는 저장 방법을 설명합니다. [!DNL Google Analytics] 고객 확보 채널 정보를 자체 데이터베이스에 저장 - 즉 `source`, `medium`, `term`, `content`, `campaign`, 및 `gclid` 사용자가 웹 사이트를 처음 방문할 때 있었던 매개 변수입니다. 이러한 매개 변수에 대한 설명은 [!DNL [Google Analytics] documentation](https://support.google.com/analytics/answer/1191184?hl=en#zippy=%2Cin-this-article). 그런 다음에서 이 정보로 수행할 수 있는 강력한 마케팅 분석 중 일부를 살펴봅니다. [!DNL MBI].
+이 항목에서는 저장 방법을 설명합니다. [!DNL Google Analytics] 고객 확보 채널 정보를 자체 데이터베이스에 저장 - 즉 `source`, `medium`, `term`, `content`, `campaign`, 및 `gclid` 사용자가 웹 사이트를 처음 방문할 때 있었던 매개 변수입니다. 이러한 매개 변수에 대한 설명은 [!DNL [Google Analytics] documentation](https://support.google.com/analytics/answer/1191184?hl=en#zippy=%2Cin-this-article). 그런 다음에서 이 정보로 수행할 수 있는 강력한 마케팅 분석 중 일부를 살펴봅니다. [!DNL Commerce Intelligence].
 
 #### 왜요?
 
@@ -51,7 +51,7 @@ Adobe은 설정에 따라 참조 소스 데이터를 추적하는 두 가지 방
 
 > `100000000.12345678.1.1.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=rj metrics`
 
-문자열로 인코딩된 획득 소스 데이터가 분명히 있습니다. 이를 테스트하여 방문자의 최신 획득 소스 및 관련 캠페인 데이터인지 확인합니다. 이제 데이터를 추출하는 방법을 알아야 합니다. 다행히도, 저스틴 Cutroni는 이전에 이러한 인코딩이 어떻게 작동하는지 설명했고, 정보의 주요 비트를 추출하기 위해 일부 자바스크립트 코드를 공유했습니다.
+문자열로 인코딩된 획득 소스 데이터가 분명히 있습니다. 이를 테스트하여 방문자의 최신 획득 소스 및 관련 캠페인 데이터인지 확인합니다. 이제 데이터를 추출하는 방법을 알아야 합니다.
 
 이 코드는 [Github에서 호스팅된 PHP 라이브러리](https://github.com/RJMetrics/referral-grabber-php). 라이브러리를 사용하려면, `include` 에 대한 참조 `ReferralGrabber.php` 그런 다음
 
@@ -59,7 +59,7 @@ Adobe은 설정에 따라 참조 소스 데이터를 추적하는 두 가지 방
 
 반환된 `$data` 배열은 키의 맵입니다. `source`, `medium`, `term`, `content`, `campaign`, `gclid`및 해당 값.
 
-Adobe은 다음과 같은 테이블을 데이터베이스에 추가할 것을 권장합니다. `user_referral`, 다음과 같은 열이 있는 경우: `id INT PRIMARY KEY, user_id INT NOT NULL, source VARCHAR(255), medium VARCHAR(255), term VARCHAR(255), content VARCHAR(255), campaign VARCHAR(255), gclid VARCHAR(255)`. 사용자가 등록할 때마다 추천 정보를 가져와서 이 테이블에 저장합니다.
+[!DNL Adobe] 는 다음과 같은 테이블을 데이터베이스에 추가할 것을 권장합니다. `user_referral`, 다음과 같은 열이 있는 경우: `id INT PRIMARY KEY, user_id INT NOT NULL, source VARCHAR(255), medium VARCHAR(255), term VARCHAR(255), content VARCHAR(255), campaign VARCHAR(255), gclid VARCHAR(255)`. 사용자가 등록할 때마다 추천 정보를 가져와서 이 테이블에 저장합니다.
 
 #### 이 데이터를 사용하는 방법
 

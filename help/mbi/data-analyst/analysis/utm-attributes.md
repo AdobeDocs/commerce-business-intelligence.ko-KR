@@ -2,16 +2,16 @@
 title: Google Analytics 및 UTM 속성
 description: Google Analytics 소스 속성 프로세스에 대해 알아봅니다.
 exl-id: 48b8a3d3-f1ac-4d3f-8f65-db1245c9ae0a
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
 
-# Google Analytics 및 UTM 속성
+# [!DNL Google Analytics] 및 UTM 속성
 
-다음과 같은 작업을 수행하는 것이 중요합니다. [사용자 획득 소스 추적](../../data-analyst/analysis/google-track-user-acq.md) 끝 [성과가 가장 좋은 광고 캠페인 식별](../../data-analyst/analysis/most-value-source-channel.md). 이 문서에서는 Google Analytics 소스 속성 프로세스에 대해 살펴봅니다. 즉, 언제 어떤 정보가 기록되는지 알 수 있다.
+다음과 같은 작업을 수행하는 것이 중요합니다. [사용자 획득 소스 추적](../../data-analyst/analysis/google-track-user-acq.md) 끝 [성과가 가장 좋은 광고 캠페인 식별](../../data-analyst/analysis/most-value-source-channel.md). 이 주제에서는 다음을 살펴봅니다. [!DNL Google Analytics] 소스 속성 프로세스. 즉, 언제 어떤 정보가 기록되는지 알 수 있다.
 
 ## 속성이란 무엇입니까?
 
@@ -31,11 +31,11 @@ URL에 UTM 매개 변수가 지정되면 구문 분석되어 [!DNL Google Analyt
 
 마지막 클릭 기여도 분석은 에서 사용하는 가장 일반적인 기여도 분석 모델입니다. [!DNL Google Analytics]. 이 경우 [!DNL Google Analytics] cookie는 전환 이벤트 이전의 가장 최근 소스에 대한 UTM 매개 변수를 나타내며, 다음과 같습니다. [데이터베이스에 기록됨](../../data-analyst/analysis/google-track-user-acq.md). 다음 [!DNL Google Analytics] 쿠키는 사용자가 새 UTM 매개 변수 세트가 포함된 새 URL을 클릭하는 경우에만 이전 UTM 매개 변수를 덮어씁니다.
 
-예를 들어 를 통해 웹 사이트를 처음 방문하는 사용자를 고려하십시오. [!DNL Google Analytics][!DNL Google Analytics][!DNL Google Analytics] *유료 검색*&#x200B;를 반환한 다음 를 통해 반환 *유기 검색*, 그리고 마지막으로 *웹 사이트 직접* 또는 *이메일 링크* **UTM 매개 변수 없음** 전환 이벤트 전. 이 예에서는 [!DNL Google Analytics] cookie는 전환 전의 마지막 소스를 나타내므로 사용자의 소스가 유기적이라고 말합니다. 다음 *경로* 최종 전환 이벤트 이전의 사용자 는 무시됩니다. 대신 사용자가 UTM이 있는 이메일 링크에서 웹 사이트를 방문한 경우 [!DNL Google Analytics] 쿠키는 소스가 &quot;email&quot;이라고 합니다. 따라서 쿠키에 기존 UTM 매개 변수가 있고 사용자가 직접 을 통해 들어오는 경우 [!DNL Google Analytics] cookie는 &quot;직접&quot;이 아닌 UTM 매개 변수를 표시합니다.
+예를 들어 를 통해 웹 사이트를 처음 방문하는 사용자를 고려하십시오. [!DNL Google Analytics] *유료 검색*&#x200B;를 반환한 다음 를 통해 반환 *유기 검색*, 그리고 마지막으로 *웹 사이트 직접* 또는 *이메일 링크* **UTM 매개 변수 없음** 전환 이벤트 전. 이 예에서는 [!DNL Google Analytics] cookie는 전환 전의 마지막 소스를 나타내므로 사용자의 소스가 유기적이라고 말합니다. 다음 *경로* 최종 전환 이벤트 이전의 사용자 는 무시됩니다. 대신 사용자가 UTM이 있는 이메일 링크에서 웹 사이트를 방문한 경우 [!DNL Google Analytics] 쿠키는 소스가 &quot;email&quot;이라고 합니다. 따라서 쿠키에 기존 UTM 매개 변수가 있고 사용자가 직접 을 통해 들어오는 경우 [!DNL Google Analytics] cookie는 &quot;직접&quot;이 아닌 UTM 매개 변수를 표시합니다.
 
 >[!NOTE]
 >
->특정 사용자 [!DNL Google Analytics] 쿠키 매개 변수는 쿠키가 [만료](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage)또는 사용자가 브라우저에서 쿠키를 지우는 경우입니다.*)
+>특정 사용자 [!DNL Google Analytics] 쿠키 매개 변수는 쿠키가 [만료](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage)또는 사용자가 브라우저에서 쿠키를 지우는 경우입니다.*
 
 ### 첫 번째 클릭 속성
 
@@ -45,10 +45,10 @@ URL에 UTM 매개 변수가 지정되면 구문 분석되어 [!DNL Google Analyt
 
 [!DNL Google Analytics] 에는 네 가지 다른 속성 모델을 수행할 수 있도록 해주는 강력한 기능이 웹 인터페이스에 있습니다.
 
-* 첫 번째 클릭
-* 마지막 클릭
-* 선형(경로의 모든 소스에서 균등하게 수익 분할)
-* 가중(사용자 지정 속성)
+1. 첫 번째 클릭
+1. 마지막 클릭
+1. 선형(경로의 모든 소스에서 균등하게 수익 분할)
+1. 가중(사용자 지정 속성)
 
 이제 각 마이크로 또는 매크로 변환에 대한 속성 모델이 무엇인지 이해했으므로, 질문은 &quot;사용자 전환의 총체로 무엇을 합니까?&quot;가 됩니다.  예를 들어 GA 마지막 클릭 논리를 기반으로 기록된 UTM을 살펴봅니다.
 

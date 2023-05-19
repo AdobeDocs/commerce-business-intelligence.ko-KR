@@ -1,17 +1,17 @@
 ---
-title: 이해 [!DNL MBI] 환경
-description: 을(를) 사용하여 작업하고 개선하는 방법에 대해 알아봅니다. [!DNL MBI] 환경.
+title: 이해 [!DNL Commerce Intelligence] 환경
+description: 을(를) 사용하여 작업하고 개선하는 방법에 대해 알아봅니다. [!DNL Commerce Intelligence] 환경.
 exl-id: 601b5fba-da02-4cc8-96ed-147c24f326f9
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '755'
 ht-degree: 0%
 
 ---
 
-# 사용자 [!DNL MBI] 환경
+# 사용자 [!DNL Adobe Commerce Intelligence] 환경
 
-상거래 데이터를 분석할 때 이러한 요인과 일반적인 오해에 대해 알아두십시오. 상거래 스키마를 올바르게 사용하고 있는지 확인하는 데 도움이 필요한 경우 주저하지 말고 [연락처 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+상거래 데이터를 분석할 때 이러한 요인과 일반적인 오해에 대해 알아두십시오. 상거래 스키마를 올바르게 사용하고 있는지 확인하는 데 도움이 필요한 경우 주저하지 말고 [연락처 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## [!DNL entity\_id]
 

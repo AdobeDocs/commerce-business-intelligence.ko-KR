@@ -2,7 +2,7 @@
 title: 광고 캠페인에 대한 ROI 향상
 description: 캠페인 성과를 평가하는 몇 가지 방법에 대해 알아봅니다.
 exl-id: 4f2bf408-eeaf-4dbf-b62e-89426734640a
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '1237'
 ht-degree: 0%
@@ -11,14 +11,14 @@ ht-degree: 0%
 
 # 광고 캠페인 및 ROI
 
-MBI를 사용하면 쉽게 [광고 비용 데이터 및 매출 데이터 결합](../../data-analyst/importing-data/integrations/google-adwords.md) 을 참조하십시오. 이를 통해 ROI가 가장 높은 캠페인을 식별할 수 있습니다. 이 문서에서는 캠페인 성과를 평가하는 몇 가지 방법에 대해 알아봅니다.
+[!DNL Adobe Commerce Intelligence] 을 통해 다음을 쉽게 수행할 수 있습니다. [광고 비용 데이터 및 매출 데이터 결합](../../data-analyst/importing-data/integrations/google-adwords.md) 을 참조하십시오. 이를 통해 ROI(투자 수익률)가 가장 높은 캠페인을 식별할 수 있습니다. 이 항목에서는 캠페인 성과를 평가하는 몇 가지 다른 방법에 대해 알아봅니다.
 
 ## 전제 조건
 
 * 광고 비용 데이터 가져오기:
-   * [연결 [!DNL Google AdWords] 끝 [!DNL MBI]](../importing-data/integrations/google-adwords.md): 와 동기화됩니다. [!DNL Adwords] 지출 [!DNL MBI]
-   * [기타 광고 비용 데이터 업로드](../importing-data/connecting-data/import-offline-ad-data.md): 다음에 대한 직접 커넥터가 없는 채널에 권장됩니다. [!DNL MBI]
-   * 여러 소스에서 비용 데이터를 가져오는 경우 다음을 수행할 수 있습니다. [통합](../../best-practices/consolidating-your-tables.md) 의 데이터 [!DNL MBI]. 간단히 [지원 티켓 제출](../../guide-overview.md).
+   * [연결 [!DNL Google AdWords] 끝 [!DNL Commerce Intelligence]](../importing-data/integrations/google-adwords.md): 와 동기화됩니다. [!DNL Adwords] 지출 [!DNL Commerce Intelligence]
+   * [기타 광고 비용 데이터 업로드](../importing-data/connecting-data/import-offline-ad-data.md): 다음에 대한 직접 커넥터가 없는 채널에 권장됩니다. [!DNL Commerce Intelligence]
+   * 여러 소스에서 비용 데이터를 가져오는 경우 다음을 수행할 수 있습니다. [통합](../../best-practices/consolidating-your-tables.md) 의 데이터 [!DNL Commerce Intelligence]. 간단히 [지원 티켓 제출](../../guide-overview.md#Submitting-a-Support-Ticket).
 * [사용자 획득 채널 데이터 추적](../analysis/google-track-user-acq.md)
 
 ## 사용자 확보 캠페인
@@ -35,7 +35,7 @@ MBI를 사용하면 쉽게 [광고 비용 데이터 및 매출 데이터 결합]
 >
 >이 예제에서는 모든 캠페인 비용이 신규 사용자를 확보하기 위해 독점적으로 사용되었다고 가정합니다. 실제로 캠페인 비용은 전환되지 않은 방문, 반복 구매자 등을 획득하는 데에도 공유됩니다. 모든 비용이 신규 등록 사용자를 취득하는 데 사용된다고 가정할 경우, 결과 ROI는 최악의 경우(취득당 가장 높은 비용)를 차지합니다. 실제 ROI는 계산보다 더 높습니다.
 >
->예: 신규 사용자 10명과 반복 구매자 10명을 생성한 캠페인에 $20를 지출했다고 가정할 때 신규 사용자당 실제 비용은 $1입니다. 그러나 모든 비용이 신규 사용자를 취득하는 데 사용된다고 가정할 경우 취득당 비용은 2달러입니다.)
+>예: 신규 사용자 10명과 반복 구매자 10명을 생성한 캠페인에 $20를 지출했다고 가정할 때 신규 사용자당 실제 비용은 $1입니다. 그러나 모든 비용이 신규 사용자를 취득하는 데 사용되었다고 가정할 경우, 취득당 비용은 2달러입니다.
 
 **1. 먼저 캠페인별로 광고 비용을 세그먼트화하는 차트를 만듭니다.**
 
@@ -95,9 +95,9 @@ MBI를 사용하면 쉽게 [광고 비용 데이터 및 매출 데이터 결합]
 
 >[!NOTE]
 >
->이 예에서는 모든 캠페인 비용이 특정 제품 구매를 생성하는 데 독점적으로 사용되었다고 가정합니다. 모든 비용이 구매 생성에 사용되었다고 가정할 경우, 결과 ROI는 최악의 경우(구매당 최고 비용)를 차지합니다. 실제 ROI는 이 계산보다 더 높습니다. 예: 10명의 새 사용자와 10개의 구매를 생성한 캠페인에 $20를 지출했다고 가정할 때 구매당 실제 비용은 $1입니다. 모든 비용이 신규 사용자를 확보하는 데 사용되었다고 가정할 때 구매 당 비용은 2달러입니다.)*
+>이 예에서는 모든 캠페인 비용이 특정 제품 구매를 생성하는 데 독점적으로 사용되었다고 가정합니다. 모든 비용이 구매 생성에 사용되었다고 가정할 경우, 결과 ROI는 최악의 경우(구매당 최고 비용)를 차지합니다. 실제 ROI는 이 계산보다 더 높습니다. 예: 10명의 새 사용자와 10개의 구매를 생성한 캠페인에 $20를 지출했다고 가정할 때 구매당 실제 비용은 $1입니다. 모든 비용이 신규 사용자를 확보하는 데 들어갔다는 가정 하에 구매 당 비용은 $2이다.
 
-시작하기 전에, [지원 티켓 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 라인 항목 테이블에 다음 차원을 조인하려면(`sales\_flat\_order\_item, order\_item`):
+시작하기 전에, [지원 티켓 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 라인 항목 테이블에 다음 차원을 조인하려면(`sales\_flat\_order\_item, order\_item`):
 
 * 주문 출처(사용자 레벨에서만 조회 출처를 추적하는 경우 사용자 출처에 가입)
 * 주문 캠페인(사용자 수준에서 추천 소스만 추적하는 경우 사용자의 캠페인에 참여)

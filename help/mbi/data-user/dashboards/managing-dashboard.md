@@ -2,9 +2,9 @@
 title: 대시보드 관리
 description: 소유한 대시보드에 대한 사용자 권한을 관리하고, 더 이상 필요하지 않은 대시보드를 삭제하고, 기본 대시보드를 설정하는 방법을 알아봅니다.
 exl-id: 32c21093-2a7d-4d8e-afc0-19bd702f9b36
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 >
 >필요 [관리자 권한](../../administrator/user-management/user-management.md).
 
-위치 **[!DNL Manage Data** > **Dashboards]**, 소유한 대시보드에 대한 사용자 권한을 관리하고, 더 이상 필요하지 않은 대시보드를 삭제하고, 기본 대시보드를 설정할 수 있습니다. 이 문서에서 다룬 내용:
+위치 **[!DNL Manage Data** > **Dashboards]**, 소유한 대시보드에 대한 사용자 권한을 관리하고, 더 이상 필요하지 않은 대시보드를 삭제하고, 기본 대시보드를 설정할 수 있습니다. 이 주제에서는 다음 주제를 다룹니다.
 
 1. [대시보드 이름 변경](#rename)
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 ## 사용자 권한 관리 {#userperm}
 
-에는 세 가지 수준의 액세스 권한이 있습니다 [!DNL MBI] 대시보드 - `View`, `Edit`, 및 `None`.
+에는 세 가지 수준의 액세스 권한이 있습니다 [!DNL Commerce Intelligence] 대시보드 - `View`, `Edit`, 및 `None`.
 
 * `View` 선택한 사용자가 대시보드를 볼 수 있지만 편집할 수는 없습니다. 사용자는 표준 또는 관리자 권한이 있는 경우 다른 이름으로 저장 기능을 사용하여 차트 크기를 조정하고, 데이터를 내보내고, 차트를 자신의 대시보드에 복사할 수도 있습니다.
 

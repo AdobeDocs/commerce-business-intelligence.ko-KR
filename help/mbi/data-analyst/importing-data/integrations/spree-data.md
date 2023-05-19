@@ -1,10 +1,10 @@
 ---
 title: 예상 Spre 데이터
-description: Spree에서 로 가져올 수 있는 기본 데이터 표를 살펴봅니다. [!DNL MBI] 계정입니다.
+description: Spree에서 로 가져올 수 있는 기본 데이터 표를 살펴봅니다. [!DNL Commerce Intelligence] 계정입니다.
 exl-id: 203a2d4b-e7ad-4704-a3c1-8e22ff0bf2d6
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 다음 작업을 수행한 후 [을(를) 연결했습니다. [!DNL Spree] 스토어](../../../data-analyst/importing-data/integrations/spree.md), 다음을 사용할 수 있습니다. [Data Warehouse 관리자](../../data-warehouse-mgr/tour-dwm.md) 에서 관련 데이터 필드를 쉽게 추적하려면 [!DNL Spree] 분석을 위한 플랫폼.
 
-이 문서에서는 가져올 수 있는 기본 데이터 테이블에 대해 살펴봅니다. [!DNL Spree] 에 [!DNL MBI] 계정, 링크 포함 [추가 설명서](https://guides.spreecommerce.org/developer/addresses.html#address) 정보 [!DNL Spree] 데이터.
+이 항목에서는 가져올 수 있는 기본 데이터 테이블을 살펴봅니다 [!DNL Spree] 에 [!DNL Commerce Intelligence] 계정, 링크 포함 [추가 설명서](https://guides.spreecommerce.org/developer/addresses.html#address) 정보 [!DNL Spree] 데이터.
 
 | **테이블 이름** | **설명** |
 |-----|-----|
@@ -28,4 +28,4 @@ ht-degree: 0%
 ## 관련 항목:
 
 * [연결 중 [!DNL Spree]](../integrations/spree.md)
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

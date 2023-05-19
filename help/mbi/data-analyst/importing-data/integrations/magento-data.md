@@ -1,19 +1,19 @@
 ---
 title: 예상 상거래 데이터
-description: Commerce 사용자가 MBI로 가져오는 기본 데이터 테이블 탐색
+description: Commerce 사용자가 Commerce Intelligence로 가져오는 기본 데이터 표 살펴보기
 exl-id: b481c8fc-41b6-4094-8901-17d57f26bfc0
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '245'
 ht-degree: 0%
 
 ---
 
-# 예상 상거래 데이터
+# 예상 [!DNL Adobe Commerce] 데이터
 
-다음 작업을 수행한 후 [이(가) Commerce 스토어를 연결했습니다.](../../../data-analyst/importing-data/integrations/magento.md), Data Warehouse 관리자를 사용하여 분석을 위해 상거래 데이터베이스에서 관련 데이터 필드를 쉽게 추적할 수 있습니다.
+다음 작업을 수행한 후 [을(를) 연결했습니다. [!DNL Adobe Commerce] 스토어](../../../data-analyst/importing-data/integrations/magento.md), Data Warehouse 관리자를 사용하여 분석을 위해 상거래 데이터베이스에서 관련 데이터 필드를 쉽게 추적할 수 있습니다.
 
-이 문서에서는 Commerce 사용자가 가져오는 기본 데이터 테이블에 대해 살펴봅니다 [!DNL MBI].
+이 항목에서는 Commerce 사용자가 가져오는 기본 데이터 테이블에 대해 살펴봅니다 [!DNL Commerce Intelligence].
 
 | **테이블 이름** | **설명** |
 |-----|-----|
@@ -28,4 +28,4 @@ ht-degree: 0%
 ## 관련 항목
 
 * [연결 중 [!DNL Adobe Commerce]](../integrations/magento.md)
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

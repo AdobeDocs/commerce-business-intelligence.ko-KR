@@ -2,9 +2,9 @@
 title: 연간, 월간 및 주간 보고서
 description: 시간 경과에 따른 트렌드를 쉽게 보고 비교할 기간에 대한 관점을 변경하는 방법에 대해 알아봅니다.
 exl-id: 74cf11c3-7ce0-477f-9a28-9d782e5da3d9
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->이 문서에는 원래 아키텍처 및 새 아키텍처를 사용하는 클라이언트에 대한 지침이 포함되어 있습니다. 다음을 수행합니다. [새로운 아키텍처](../../administrator/account-management/new-architecture.md) 다음을 보유한 경우: _Data Warehouse 보기_ 선택 후 사용 가능한 섹션 `Manage Data` 기본 도구 모음에서
+>이 항목에는 원래 아키텍처와 새 아키텍처를 사용하는 클라이언트에 대한 지침이 포함되어 있습니다. 다음을 수행합니다. [새로운 아키텍처](../../administrator/account-management/new-architecture.md) 다음을 보유한 경우: [!DNL _Data Warehouse 보기_] 선택 후 사용 가능한 섹션 [!DNL Manage Data] 기본 도구 모음에서
 
-Report Builder를 사용하면 시간 경과에 따른 트렌드를 쉽게 확인하고 비교할 기간에 대한 관점을 변경할 수 있습니다. 이 문서에서는 주 단위, 월 단위 및 년 단위 분석을 위한 보고서를 만들 수 있도록 대시보드를 설정하여 더 깊이 있게 구성하는 방법을 보여 줍니다.
+Report Builder를 사용하면 시간 경과에 따른 트렌드를 쉽게 확인하고 비교할 기간에 대한 관점을 변경할 수 있습니다. 이 항목에서는 주 단위, 월 단위 및 년 단위 분석을 위한 보고서를 만들 수 있도록 대시보드를 설정하여 더 깊이 있게 구성하는 방법을 보여 줍니다.
 
 ![](../../assets/Wow__mom__yoy.png)
 
-시작하기 전에 관점을 더 자세히 살펴볼 수 있습니다 [여기](../../tutorials/using-visual-report-builder.md) 및 독립 시간 옵션 [여기](../../tutorials/time-options-visual-rpt-bldr.md).
+시작하기 전에 탐색 관점을 더 자세히 검토해야 합니다 [여기](../../tutorials/using-visual-report-builder.md) 및 독립 시간 옵션 [여기](../../tutorials/time-options-visual-rpt-bldr.md).
 
 이 분석에는 다음이 포함됩니다. [고급 계산 열](../data-warehouse-mgr/adv-calc-columns.md).
 

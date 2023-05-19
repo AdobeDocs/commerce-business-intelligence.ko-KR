@@ -2,9 +2,9 @@
 title: 데이터 차원 관리
 description: 차원이 무엇이며 지표를 기반으로 차트를 필터링하거나 세그먼트화하는 데 사용할 수 있는지 알아봅니다.
 exl-id: 143a4b1e-2e6f-438a-90e6-bdda13b39cb9
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '412'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,9 @@ ht-degree: 0%
 
 여러 지표에 한 번에 하나 이상의 차원을 추가하려면 다음을 수행하십시오.
 
-1. 기본 탐색 모음에서 다음 위치로 이동합니다. **[!UICONTROL Manage Data > Metrics]**.
+1. 다음으로 이동 **[!UICONTROL Manage Data > Metrics]**.
 
-1. 페이지 맨 위에서 을 클릭합니다. **[!UICONTROL Add Dimensions To Metric(s)]**.
+1. 클릭 **[!UICONTROL Add Dimensions To Metric(s)]**.
 
 1. 차원을 포함하는 테이블을 선택합니다.
 
@@ -39,9 +39,9 @@ ht-degree: 0%
 
 여러 지표에서 하나 이상의 차원을 삭제하려면 다음을 수행하십시오.
 
-1. 기본 탐색 모음에서 다음 위치로 이동합니다. **[!UICONTROL Data > Metrics]**.
+1. 다음으로 이동 **[!UICONTROL Data > Metrics]**.
 
-1. 페이지 맨 위에서 을 클릭합니다. **[!UICONTROL Remove Dimensions From Metric(s)]**.
+1. 클릭 **[!UICONTROL Remove Dimensions From Metric(s)]**.
 
 1. 차원을 포함하는 테이블을 선택합니다.
 
@@ -49,26 +49,26 @@ ht-degree: 0%
 
 1. 클릭 **[!UICONTROL Remove]**.
 
-1. 보고서에서 차원이 사용 중이면 경고 및 차원을 사용 중인 차트 목록이 표시됩니다. 클릭 **[!UICONTROL Delete]** 보고서를 포함하여 선택한 차원 및 모든 종속 항목을 삭제합니다.
+1. 차원이 보고서에서 사용 중인 경우 차원을 사용 중인 차트 목록과 함께 경고가 표시됩니다. 클릭 **[!UICONTROL Delete]** 보고서를 포함하여 선택한 차원 및 모든 종속 항목을 삭제합니다.
 
 ## 지표의 차원 관리
 
 **지표에 차원을 추가하려면 다음 작업을 수행하십시오.**
 
-1. 기본 탐색 모음에서 다음 위치로 이동합니다. **[!UICONTROL Data > Metrics]**.
+1. 다음으로 이동 **[!UICONTROL Data > Metrics]**.
 
 1. 클릭 **[!UICONTROL Edit]** 지표에 새 차원을 추가합니다.
 
-1. 아래 `Dimensions` 섹션, `Add a dimension` 드롭다운을 통해 추가할 차원을 선택합니다.
+1. 다음에서 `Dimensions` 섹션, `Add a dimension` 드롭다운을 통해 추가할 차원을 선택합니다.
 
 >[!NOTE]
 >
->필터링하거나 그룹화할 모든 차원은 이미 다음 위치에서 추적되어야 합니다 [!DNL MBI]. 원하는 차원을 찾지 못한 경우 를 통해 데이터베이스에서 새 데이터 열 추적을 시작해야 할 수 있습니다. [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) 페이지를 가리키도록 업데이트하는 중입니다.
+>필터링하거나 그룹화할 모든 차원은 이미 다음 위치에서 추적되어야 합니다 [!DNL Commerce Intelligence]. 원하는 차원을 찾지 못한 경우 를 통해 데이터베이스에서 새 데이터 열 추적을 시작해야 할 수 있습니다. [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) 페이지를 가리키도록 업데이트하는 중입니다.
 
 
 **지표에서 차원을 삭제하려면 다음 작업을 수행하십시오.**
 
-1. 기본 탐색 모음에서 다음 위치로 이동합니다. **[!UICONTROL Manage Data > Metrics]**.
+1. 다음으로 이동 **[!UICONTROL Manage Data > Metrics]**.
 
 1. 클릭 **[!UICONTROL Edit]** 지표에 새 차원을 추가합니다.
 
@@ -76,7 +76,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->차원을 삭제한 후에도 Data Warehouse의 테이블에 열로 존재합니다. 모든 지표에 다시 추가하고 이러한 차원을 사용하여 새 지표를 작성할 수 있습니다. 차원이 해당되는 데이터 열을 제거하려면 [!DNL MBI]를 통해 데이터 열의 추적을 해제할 수 있습니다. [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) 페이지를 가리키도록 업데이트하는 중입니다.
+>차원을 삭제한 후에도 Data Warehouse의 테이블에 열로 존재합니다. 모든 지표에 다시 추가하고 이러한 차원을 사용하여 새 지표를 작성할 수 있습니다. 차원이 해당되는 데이터 열을 제거하려면 [!DNL Commerce Intelligence]를 통해 데이터 열의 추적을 해제할 수 있습니다. [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) 페이지를 가리키도록 업데이트하는 중입니다.
 
 ## 관련 설명서
 

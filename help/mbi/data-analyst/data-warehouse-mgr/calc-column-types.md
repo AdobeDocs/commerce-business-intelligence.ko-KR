@@ -2,9 +2,9 @@
 title: 계산된 열 유형
 description: 열을 만들어 분석을 위해 데이터를 보강하고 최적화하는 방법을 알아봅니다.
 exl-id: 1af79b9e-77ff-4fc6-917a-4e6743b95035
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '710'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 0%
 
 다음 범위 내 [Data Warehouse 관리자](../data-warehouse-mgr/tour-dwm.md)열을 만들어 분석을 위해 데이터를 보강하고 최적화할 수 있습니다. [이 기능](../data-warehouse-mgr/creating-calculated-columns.md) Data Warehouse 관리자에서 테이블을 선택하고 을 클릭하여 액세스할 수 있습니다. **[!UICONTROL Create New Column]**.
 
-이 문서에서는 Data Warehouse 관리자로 만들 수 있는 열 유형에 대해 설명합니다. 또한 설명, 해당 열의 시각적 둘러보기 및 [참조 맵](#map) 열을 만드는 데 필요한 모든 입력 중. 다음 세 가지 방법으로 계산된 열을 만들 수 있습니다.
+이 항목에서는 Data Warehouse 관리자로 생성할 수 있는 열 유형에 대해 설명합니다. 또한 설명, 해당 열의 시각적 둘러보기 및 [참조 맵](#map) 열을 만드는 데 필요한 모든 입력 중. 다음 세 가지 방법으로 계산된 열을 만들 수 있습니다.
 
-* [동일한 테이블 계산 열](#sametable)
-* [일대다 계산된 열](#onetomany)
-* [다대일 계산 열](#manytoone)
+1. [동일한 테이블 계산 열](#sametable)
+1. [일대다 계산된 열](#onetomany)
+1. [다대일 계산 열](#manytoone)
 
 ## 동일한 테이블 계산 열 {#sametable}
 
@@ -85,13 +85,13 @@ Sum calculated 열은 `many` 테이블 위에 놓입니다.
 
 ### 존재함 {#exists}
 
-존재 계산 열은 다방면에 있는 레코드의 존재를 결정하는 이진 테스트입니다. 즉, 새 열은 `1` 경로가 각 테이블의 하나 이상의 행을 연결하는 경우 `0` 연결할 수 없는 경우.
+계산된 열은 다변에서 레코드의 존재를 결정하는 이진 테스트입니다. 즉, 새 열은 `1` 경로가 각 테이블의 하나 이상의 행을 연결하는 경우 `0` 연결할 수 없는 경우.
 
 이 유형의 차원은 예를 들어 고객이 특정 제품을 구매한 적이 있는지 여부를 결정할 수 있습니다. 간 조인 사용 `customers` 테이블 및 `orders` 표, 특정 제품에 대한 필터, 차원 `Customer has purchased Product X?` 빌드할 수 있습니다.
 
 ## 핸디 참조 맵 {#map}
 
-계산된 열을 만들 때 모든 입력을 기억하는 데 문제가 있는 경우, 작성 시 이 참조 맵을 근처에 보관해 보십시오.
+계산된 열을 생성할 때 모든 입력을 기억하는 데 문제가 있는 경우, 작성 시 이 참조 맵을 근처에 보관하십시오.
 
 ![](../../assets/merged_reference_map.png)
 
@@ -99,7 +99,7 @@ Sum calculated 열은 `many` 테이블 위에 놓입니다.
 
 비즈니스에 대한 질문을 분석하고 답변하는 퀘스트에서 원하는 정확한 열을 작성할 수 없는 상황이 발생할 수 있습니다.
 
-빠른 전환을 위해 Adobe은 [고급 계산 열 유형](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) Adobe 지원 팀이 빌드할 수 있는 열 종류를 안내하는 안내서입니다. 이 문서에서는 열을 만드는 데 필요한 정보(요청에 포함)도 다룹니다.
+빠른 전환을 위해 Adobe은 [고급 계산 열 유형](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) Adobe 지원 팀이 빌드할 수 있는 열 종류를 안내하는 안내서입니다. 이 항목에서는 열을 만드는 데 필요한 정보(요청에 포함)도 다룹니다.
 
 ## 관련 설명서
 

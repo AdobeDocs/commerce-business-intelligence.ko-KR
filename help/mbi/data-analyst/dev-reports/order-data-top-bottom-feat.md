@@ -2,9 +2,9 @@
 title: 위쪽/아래쪽 표시 기능을 사용하여 데이터 순서 지정
 description: 위쪽/아래쪽 표시 기능을 사용하여 데이터의 순서를 지정하는 방법을 알아봅니다.
 exl-id: d47119f4-cdc5-4fa7-a606-d4b8555a8843
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '665'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## 어떻게 사용해야 합니까? {#how}
 
-을(를) 클릭한 후 **[!UICONTROL Show Top/Bottom link]**&#x200B;을 입력하면 표시 및 정렬 매개 변수를 설정할 수 있는 창이 표시됩니다. 텍스트 상자의 숫자는 정수일 수 있습니다(예: `5`) 또는 `ALL`. 다음으로, 지표 또는 그룹별로 보고서를 정렬하도록 선택할 수 있습니다.
+다음을 클릭합니다. **[!UICONTROL Show Top/Bottom link]** 표시 및 정렬 매개변수를 설정합니다. 텍스트 상자의 숫자는 정수일 수 있습니다(예: `5`) 또는 `ALL`. 다음으로, 지표 또는 그룹별로 보고서를 정렬하도록 선택할 수 있습니다.
 
 예를 들어, 가장 많은 매출을 가져온 5개의 조회 소스를 표시하려면 다음과 같이 합니다.
 

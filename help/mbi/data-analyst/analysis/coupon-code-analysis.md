@@ -2,16 +2,16 @@
 title: 쿠폰 성능
 description: 쿠폰 성능 분석에 대해 알아보십시오.
 exl-id: f6565e33-18ee-4f85-ade0-fd361854475b
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '1173'
+source-wordcount: '1167'
 ht-degree: 0%
 
 ---
 
 # 고급 쿠폰 코드 분석
 
-비즈니스의 쿠폰 성능을 이해하는 것은 주문을 세그먼트화하고 고객을 더 잘 이해할 수있는 흥미로운 방법입니다. 이 문서에서는 쿠폰을 사용하여 획득하는 고객, 일반적인 쿠폰 사용을 수행하고 추적하는 방법을 이해하는 분석을 만드는 단계를 안내합니다.
+비즈니스의 쿠폰 성능을 이해하는 것은 주문을 세그먼트화하고 고객을 더 잘 이해할 수있는 흥미로운 방법입니다. 이 항목에서는 쿠폰을 사용하여 획득하는 고객, 일반적인 쿠폰 사용을 어떻게 수행하고 추적하는지를 이해하기 위한 분석을 만드는 단계를 안내합니다.
 
 ![](../../assets/coupon_analysis_-_analysis_library.png)<!--{: width="800" height="375"}-->
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## 시작
 
-첫 번째 단계로, 다음 열이 Data Warehouse에 동기화되어 있는지 확인해야 합니다. 그렇지 않은 경우 계속 진행하여 &quot;데이터 관리&quot; > &quot;Data Warehouse&quot;로 이동한 다음 다음을 동기화하여 추적하십시오.
+첫 번째 단계로, 다음 열이 Data Warehouse에 동기화되어 있는지 확인해야 합니다. 그렇지 않은 경우 이동하여 추적하십시오. `Manage Data` > `Data Warehouse`을 클릭하고 다음 내용을 동기화합니다.
 
 * **sales\_flat\_order** 표
 * **coupon\_code**
@@ -519,4 +519,4 @@ ht-degree: 0%
 
 모든 보고서를 컴파일한 후 원하는 대로 대시보드에서 구성할 수 있습니다. 결과는 페이지 상단에 있는 이미지와 비슷할 수 있습니다.
 
-이 분석을 작성하는 동안 질문이 발생하거나 Professional Services 팀의 도움을 얻고자 하는 경우 [연락처 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+이 분석을 작성하는 동안 질문이 발생하거나 Professional Services 팀의 도움을 얻고자 하는 경우 [연락처 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

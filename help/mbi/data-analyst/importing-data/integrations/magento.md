@@ -1,26 +1,26 @@
 ---
-title: Connect Commerce
-description: 가장 가치 있는 획득 소스 및 채널을 찾는 방법을 알아봅니다.
+title: Adobe Commerce 연결
+description: 가장 중요한 획득 소스 및 채널을 찾는 방법에 대해 알아봅니다.
 exl-id: c20e7673-9aa3-4e5e-979c-6adaa4164793
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
-source-wordcount: '103'
+source-wordcount: '100'
 ht-degree: 0%
 
 ---
 
-# Connect Commerce
+# 연결 [!DNL Adobe Commerce]
 
 >[!NOTE]
 >
->필요한 경우 [관리자 권한](../../../administrator/user-management/user-management.md).
+>필요 [관리자 권한](../../../administrator/user-management/user-management.md).
 
-비즈니스가 어떻게 수행되고 있는지 확인하거나 가장 중요한 획득 소스 및 채널을 찾으시겠습니까? 상거래 데이터에 연결 [!DNL MBI] 이 질문에 대한 답변 등을 제공할 수 있습니다.
+비즈니스의 성과를 확인하거나 가장 중요한 확보 소스 및 채널을 찾고 싶으십니까? 연결 중 [!DNL Adobe Commerce] 데이터 받는 사람 [!DNL Commerce Intelligence] 을(를) 통해 이러한 질문에 답변할 수 있습니다.
 
-상거래 데이터베이스는 MySQL을 기반으로 하므로 [!DNL MBI] 사용 [직접 연결](../integrations/mysql-via-a-direct-connection.md), [cPanel](../integrations/mysql-via-cpanel.md), 또는 [ssh 터널을 통해](../integrations/mysql-via-ssh-tunnel.md). SSH 메서드는 가장 안전하므로 권장됩니다.
+다음으로: [!DNL Adobe Commerce] 데이터베이스는 MySQL을 기반으로 하므로 [!DNL Commerce Intelligence] 다음을 통해: [직접 연결](../integrations/mysql-via-a-direct-connection.md), [[!DNL cPanel]](../integrations/mysql-via-cpanel.md), 또는 [SSH 터널을 통해](../integrations/mysql-via-ssh-tunnel.md). SSH 메서드는 가장 안전하므로 사용하는 것이 좋습니다.
 
 ## 관련 정보
 
 * [예상 상거래 데이터](../integrations/magento-data.md)
-* [세그먼테이션 및 필터링을 위한 권장 데이터 차원](../../../best-practices/segment-filter.md)
-* [가장 가치 있는 획득 소스 및 채널은 무엇입니까?](../../analysis/most-value-source-channel.md)
+* [세분화 및 필터링에 권장되는 데이터 차원](../../../best-practices/segment-filter.md)
+* [가장 중요한 확보 소스 및 채널은 무엇입니까?](../../analysis/most-value-source-channel.md)

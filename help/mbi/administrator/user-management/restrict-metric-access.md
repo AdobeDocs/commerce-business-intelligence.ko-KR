@@ -2,9 +2,9 @@
 title: 지표 액세스 제한
 description: 지표 액세스 및 제한 사항으로 작업하는 방법을 알아봅니다.
 exl-id: 88f5ca7a-8073-4968-9685-95f141b2a87f
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '238'
 ht-degree: 0%
 
 ---
@@ -19,8 +19,8 @@ ht-degree: 0%
 
 1. 다음으로 이동 **[!UICONTROL Account Settings]** > **[!UICONTROL Manage Users]**.
 1. 원하는 사용자 계정을 선택합니다.
-1. 다음 **[!UICONTROL Metrics]** 탭에는 사용 가능한 지표 목록이 표시됩니다. 사용자에게 액세스 권한을 부여할 지표를 확인하고, 사용자에게 액세스 권한이 없어야 하는 지표는 선택 취소합니다.
-1. [!DNL MBI] 변경 사항을 자동으로 저장합니다. 변경이 성공하면, [!DNL MBI] 디스플레이 **[!UICONTROL Saved!]** 을 클릭합니다.
+1. 다음 **[!UICONTROL Metrics]** 탭에는 사용 가능한 지표 목록이 표시됩니다. 사용자에게 액세스 권한을 부여할 지표를 확인하고 사용자에게 액세스 권한이 없어야 하는 지표의 선택을 해제합니다.
+1. [!DNL Adobe Commerce Intelligence] 변경 사항을 자동으로 저장합니다. 변경이 성공하면, [!DNL Commerce Intelligence] 디스플레이 **[!UICONTROL Saved!]** 을 클릭합니다.
 
 >[!NOTE]
 >
@@ -30,4 +30,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->지표를 복제하는 경우 [!DNL MBI] 는 원래 지표에 설정된 사용자 권한을 복사합니다.
+>지표를 복제하는 경우 [!DNL Commerce Intelligence] 는 원래 지표에 설정된 사용자 권한을 복사합니다.

@@ -1,22 +1,22 @@
 ---
-title: MBI Essentials와 Pro 비교
-description: MBI Essentials와 MBI Pro이 어떻게 다른지 알아봅니다.
+title: Commerce Intelligence Essentials와 Pro
+description: Commerce Intelligence Essentials가 Commerce Intelligence Pro와 어떻게 다른지 알아봅니다.
 exl-id: 624a6285-8497-43d9-a56d-8ae503e0e2dd
-source-git-commit: c403d28392d781f0e897b937d00dfe0cfe35ea4d
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
-source-wordcount: '70'
+source-wordcount: '74'
 ht-degree: 5%
 
 ---
 
-# [!DNL MBI Essentials] vs [!DNL MBI Pro]
+# [!DNL Commerce Intelligence Essentials] 및 [!DNL Commerce Intelligence Pro]
 
-다음 표에서는 기존 `Essentials` 계정 대 현재 MBI 계정. 더 이상 오퍼가 아닌 Adobe `Essentials`.
+다음 표에서는 기존 요소에 포함된 요소를 설명합니다. `Essentials` 계정과 현재 Commerce Intelligence 계정 비교. Adobe이 더 이상 오퍼 없음 `Essentials`.
 
-|  | **`MBI Essentials`** | **`MBI Pro`** |
+|  | **`Commerce Intelligence Essentials`** | **`Commerce Intelligence Pro`** |
 |-----|-----|-----|
-| `Pre-Defined Reports` | 최대 100개 | 사용자 지정 |
-| `Pre-Defined Dashboards` | 5-6 | 사용자 지정 |
+| `Pre-Defined Reports` | 최대 100개 | 사용자 정의 |
+| `Pre-Defined Dashboards` | 5-6 | 사용자 정의 |
 | `New Custom Report Creation` | 예 | 예 |
 | `Commerce Tables` | 4-6 | 제한 없음 |
 | `Log-ins/User Accounts` | 10 | 20 |

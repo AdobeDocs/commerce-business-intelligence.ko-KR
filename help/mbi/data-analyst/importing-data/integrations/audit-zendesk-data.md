@@ -2,9 +2,9 @@
 title: Zendesk 데이터 감사
 description: Zendesk 데이터를 내보내는 단계에 대해 알아봅니다.
 exl-id: 3c8dcc72-3623-4c4e-a941-f431a97571e0
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '290'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 데이터 내보내기 활성화
 
-데이터 내보내기가 현재 모든 항목에 대해 활성화되어 있지 않습니다. [!DNL Zendesk] 계정. 이 기능을 활성화하려면 [지원 티켓 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en), 사용자 이름 언급하기 [!DNL Zendesk] 하위 도메인 이름.
+데이터 내보내기가 현재 모든 항목에 대해 활성화되어 있지 않습니다. [!DNL Zendesk] 계정. 이 기능을 활성화하려면 [지원 티켓 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html), 사용자 이름 언급하기 [!DNL Zendesk] 하위 도메인 이름.
 
 >[!NOTE]
 >
@@ -36,6 +36,6 @@ ht-degree: 0%
 
    이 다운로드 링크는 최소 3일 동안 유효합니다.
 
-이 프로세스는 현재 파일에 저장된 모든 정보를 포함하는 XML 파일을 작성합니다 [!DNL Zendesk] 티켓 데이터(댓글 포함), 사용자 데이터 및 계정 데이터를 포함한 계정. 이 시점에서 다음 작업을 수행할 수 있습니다. [지원 티켓 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) (이 파일을 첨부해야 합니다!) 따라서 데이터를 자세히 살펴볼 수 있습니다. 파일이 너무 큰 경우 [!DNL MBI] 팀 via [!DNL Dropbox] 또는 [!DNL Google Drive].
+이 프로세스는 현재 파일에 저장된 모든 정보를 포함하는 XML 파일을 작성합니다 [!DNL Zendesk] 티켓 데이터(댓글 포함), 사용자 데이터 및 계정 데이터를 포함한 계정. 이 시점에서 다음 작업을 수행할 수 있습니다. [지원 티켓 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) (이 파일을 첨부해야 합니다!) 따라서 데이터를 자세히 살펴볼 수 있습니다. 파일이 너무 큰 경우 [!DNL Commerce Intelligence] 팀 via [!DNL Dropbox] 또는 [!DNL Google Drive].
 
 에 대한 자세한 내용 [!DNL Zendesk] 파일 내보내기, 공식 참조 [[!DNL Zendesk] 내보내기 설명서](https://support.zendesk.com/hc/en-us/articles/4408886165402-Exporting-data-to-a-JSON-CSV-or-XML-file).

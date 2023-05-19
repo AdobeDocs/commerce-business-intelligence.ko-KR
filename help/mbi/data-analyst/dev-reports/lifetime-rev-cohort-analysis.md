@@ -1,17 +1,17 @@
 ---
 title: 라이프타임 수익 집단 분석
-description: 의 기능 살펴보기 [!DNL MBI] 집단 분석.
+description: Commerce Intelligence 집단 분석의 힘에 대해 알아봅니다.
 exl-id: f2b55745-d364-4ba6-9857-ce9cee05c3ae
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
 
-# `Lifetime Revenue Cohort` Analysis
+# [!DNL Lifetime Revenue Cohort] Analysis
 
-에서 데이터를 보는 방법에는 여러 가지가 있습니다 [!DNL MBI]그리고 계산과 시각화만큼 해석과 이해가 중요하다는 것도 알고 있습니다. 이 문서에서는 의 기능을 살펴봅니다. [!DNL MBI] `cohort` 분석.
+에서 데이터를 보는 방법에는 여러 가지가 있습니다 [!DNL Adobe Commerce Intelligence]그리고 계산과 시각화만큼 해석과 이해가 중요하다는 것도 알고 있습니다. 이 주제에서는 의 힘에 대해 알아봅니다. [!DNL Commerce Intelligence] `cohort` 분석.
 
 ## 역할 `lifetime revenue cohort` 분석이란?
 

@@ -2,22 +2,22 @@
 title: 포함된 대시보드
 description: 사용자 라이프타임 수익, 반복 구매 횟수 등과 같은 필수 지표의 상태를 점검하여 향후 탐색을 위한 견고한 기반을 구축하는 방법에 대해 알아봅니다.
 exl-id: f50fc417-e5d4-401c-9baa-cda1468196a2
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '958'
 ht-degree: 0%
 
 ---
 
 # 포함된 대시보드
 
-Adobe 오퍼 eCommerce 및 `SaaS` 스타터 패키지 Adobe 분석가가 만든 이러한 패키지에는 데이터 세트에 대한 맞춤형 대시보드 및 보고서 세트가 포함되어 있습니다. 이러한 패키지에 포함된 분석을 통해 사용자 라이프타임 수익, 반복 구매 횟수 등과 같은 필수 지표의 상태를 확인할 수 있으므로 향후 탐색을 위한 견고한 기반을 마련할 수 있습니다.
+[!DNL Adobe] 오퍼 `eCommerce` 및 `SaaS` 스타터 패키지 Adobe 분석가가 만든 이러한 패키지에는 데이터 세트에 대한 맞춤형 대시보드 및 보고서 세트가 포함되어 있습니다. 이러한 패키지에 포함된 분석을 통해 사용자 라이프타임 수익, 반복 구매 횟수 등과 같은 필수 지표의 상태를 확인할 수 있으므로 향후 탐색을 위한 견고한 기반을 마련할 수 있습니다.
 
 >[!NOTE]
 >
 >일부 대시보드의 사용 가능 여부는 데이터 세트에 따라 다릅니다.
 
-질문이 있거나 패키지를 계정에 추가하는 데 관심이 있는 경우 [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 도와주세요.
+질문이 있거나 패키지를 계정에 추가하는 데 관심이 있는 경우 [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 도와주세요.
 
 ## 경영진 개요
 
@@ -91,7 +91,7 @@ Adobe 오퍼 eCommerce 및 `SaaS` 스타터 패키지 Adobe 분석가가 만든 
 
 ## 사용자 활동
 
-다음 `User activity` 대시보드에는 획득 소스, 인구 통계 및 평균 첫 주문 수를 포함하여 다양한 데이터로 사용자를 세그먼트화하는 차트가 포함됩니다. 또한 사용자 등록 월별 전체 평균 라이프타임 수익을 포함한 사용자 집단 분석도 포함됩니다.
+다음 `User activity` 대시보드에는 획득 소스, 인구 통계 및 평균 첫 주문 수를 포함하여 다양한 데이터로 사용자를 세그먼트화하는 차트가 포함됩니다. 사용자 등록 월별 전체 평균 라이프타임 수익을 포함한 사용자 집단 분석도 포함된다.
 
 다음 `% of cohort members who have purchased` 이 차트는 등록 시기(각 선은 사용자 집단을 나타냄)에 따른 사용자의 전환율(0에서 1 사이)을 보여 주기 때문에 중요합니다. 첫 구매일 때도 표시됩니다(예: 등록 후 1, 2, 3...월). 이는 사용자의 10%가 1개월에 활성화되었지만 이 숫자는 2, 3, 4개월에 증가하고 나중에 안정될 수 있음을 보여 줄 수 있습니다.
 

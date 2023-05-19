@@ -2,7 +2,7 @@
 title: 기본 대시보드 설정
 description: 기본 대시보드를 설정하는 방법을 알아봅니다.
 exl-id: a3fc64e3-b527-4c2c-848d-c0962cd20ff3
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
 source-wordcount: '64'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 기본 대시보드 설정
 
-기본 대시보드는 열 때 표시되는 첫 번째 대시보드입니다 [!DNL MBI].
+기본 대시보드는 열 때 표시되는 첫 번째 대시보드입니다 [!DNL Commerce Intelligence].
 
 1. 대시보드에서 을(를) 클릭합니다 **[!UICONTROL Dashboard Options]** 화면 맨 위에 있습니다.
 

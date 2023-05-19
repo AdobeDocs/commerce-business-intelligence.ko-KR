@@ -2,16 +2,16 @@
 title: 시각적 Report Builder 사용
 description: 특정 기간 동안 보고서의 데이터를 분석하는 방법에 대해 알아봅니다.
 exl-id: da97b63d-63f0-4fd6-87e3-4cac49a42acc
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 0%
 
 ---
 
-# 사용 `Visual Report Builder`
+# 사용 [!DNL Visual Report Builder]
 
-다음 [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md) 에서는 데이터를 시각적으로 탐색하여 통찰력을 도출하고 비즈니스 의사 결정을 유도하는 데 도움이 됩니다. 이 튜토리얼에서는 기본 보고서를 만드는 과정을 안내합니다.
+다음 [[!DNL Visual Report Builder]](../data-user/reports/ess-rpt-build-visual.md) 에서는 데이터를 시각적으로 탐색하여 통찰력을 도출하고 비즈니스 의사 결정을 유도하는 데 도움이 됩니다. 이 튜토리얼에서는 기본 보고서를 만드는 과정을 안내합니다.
 
 >[!NOTE]
 >
@@ -19,9 +19,9 @@ ht-degree: 0%
 
 ## 1단계: 보고서 만들기
 
-보고서 만들기를 시작하려면 다음을 클릭하십시오. **[!UICONTROL Report Builder]** 사이드바 또는 **[!UICONTROL Add Report]** 을 클릭합니다. 다음의 경우 `Report Builder` 선택 페이지가 표시되면 **[!UICONTROL Visual Report Builder]** 옵션을 선택합니다.
+보고서 만들기를 시작하려면 다음을 클릭하십시오. **[!UICONTROL Report Builder]** 사이드바 또는 **[!UICONTROL Add Report]** 을 클릭합니다. 다음의 경우 `Report Builder` 페이지가 표시되면 **[!UICONTROL Visual Report Builder]** 옵션을 선택합니다.
 
-에서 생성된 보고서를 편집하려면 `Visual Report Builder`를 클릭하고 차트의 오른쪽 위 모서리에 있는 톱니바퀴(옵션) 아이콘을 클릭한 다음 를 클릭합니다 **[!UICONTROL Edit]**.
+에서 생성된 보고서를 편집하려면 [!DNL Visual Report Builder]를 클릭하고 차트의 오른쪽 위 모서리에 있는 톱니바퀴(옵션) 아이콘을 클릭한 다음 를 클릭합니다 **[!UICONTROL Edit]**.
 
 ## 2단계: 지표 추가
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 기간에 대한 특정 날짜 범위를 설정할 때는 시작 날짜가 간격의 시작 날짜이고 종료 날짜가 간격의 종료 날짜인지 확인하십시오.
 
-예를 들어 다음 기간 중 기간 설정: `January 1st to March 1st` 및 선택 `monthly` 간격 표시 `March` 데이터 포인트로 사용되지만 `March` 제외 `March 1`. 이 경우 다음을 만들어야 합니다. `Time Period` 출처: `January 1 to March 31`.
+예를 들어 다음 기간 중 기간 설정: `January 1st` 끝 `March 1st` 및 선택 `monthly` 간격 표시 `March` 데이터 포인트로 사용되지만 `March` 제외 `March 1`. 이 경우 다음을 만들어야 합니다. `Time Period` 출처: `January 1 to March 31`.
 
 ## 5단계: `Group by` / `Segmenting the Analysis` {#groupby}
 

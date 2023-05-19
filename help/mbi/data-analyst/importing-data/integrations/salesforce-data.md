@@ -2,16 +2,16 @@
 title: 예상 Salesforce 데이터
 description: Salesforce 데이터의 지원되는 개체 및 지원되지 않는 개체에 대해 알아봅니다.
 exl-id: 6625349f-2ec0-402d-8635-889a1f29811c
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '162'
 ht-degree: 0%
 
 ---
 
 # 예상 [!DNL Salesforce] 데이터
 
-[다음 이후 [!DNL Salesforce] 설정이 완료되었습니다.](../integrations/salesforce.md), 각 쿼리 가능 테이블에 대한 테이블 [오브젝트](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm) - 명명된 항목 `sf_/\{sobject-name}` - 은(는) Data Warehouse에서 만들어집니다.
+다음 이후 [[!DNL Salesforce] 설정](../integrations/salesforce.md) 은(는) 완료 상태이며, 각 쿼리 가능 테이블에 대한 테이블입니다. [오브젝트](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm) - 명명된 항목 `sf_/\{sobject-name}` - 은(는) Data Warehouse에서 만들어집니다.
 
 >[!NOTE]
 >
@@ -48,4 +48,4 @@ ht-degree: 0%
 ## 관련 항목:
 
 * [연결 중 [!DNL Salesforce]](../integrations/salesforce.md)
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

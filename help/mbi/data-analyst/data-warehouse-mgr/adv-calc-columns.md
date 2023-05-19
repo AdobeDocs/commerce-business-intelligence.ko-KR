@@ -2,16 +2,16 @@
 title: 고급 계산 열 유형
 description: 대부분의 사용 열 사례에 대한 기본 사항을 알아봅니다. 하지만 Data Warehouse 관리자가 만들 수 있는 것보다 더 복잡한 계산된 열을 원할 수 있습니다.
 exl-id: 9871fa19-95b3-46e4-ae2d-bd7c524d12db
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '898'
 ht-degree: 4%
 
 ---
 
 # 고급 계산 열 유형
 
-만들려고 할 수 있는 많은 분석에는 **새 열** 원하는 항목 `group by` 또는 `filter by`. 다음 [계산된 열 만들기](../data-warehouse-mgr/creating-calculated-columns.md) 자습서에서는 대부분의 사용 사례에 대한 기본 사항을 다루지만 Data Warehouse 관리자가 만들 수 있는 것보다 더 복잡한 계산된 열을 원할 수 있습니다.
+만들려는 많은 분석에는 **새 열** 원하는 항목 `group by` 또는 `filter by`. 다음 [계산된 열 만들기](../data-warehouse-mgr/creating-calculated-columns.md) 자습서에서는 대부분의 사용 사례에 대한 기본 사항을 다루지만 Data Warehouse 관리자가 만들 수 있는 것보다 더 복잡한 계산된 열을 원할 수 있습니다.
 {: #top}
 
 이러한 유형의 열은 Data Warehouse 분석가 Adobe 팀에서 만들 수 있습니다. 새 계산된 열을 정의하려면 다음 정보를 제공합니다.
@@ -159,7 +159,7 @@ A **시간대 전환** 계산된 열은 특정 데이터 소스의 타임스탬�
 
 걱정하지 마세요. 여기에 나열되어 있지 않다고 해서 가능하지 않은 것은 아니다. Data Warehouse 분석가 Adobe 팀이 도움을 줄 수 있습니다.
 
-새 계산된 열을 정의하려면 [지원 티켓 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 을(를) 만드는 방법에 대해 자세히 설명합니다.
+새 계산된 열을 정의하려면 [지원 티켓 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 을(를) 만드는 방법에 대해 자세히 설명합니다.
 
 ## 관련 설명서
 

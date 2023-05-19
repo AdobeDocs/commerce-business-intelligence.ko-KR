@@ -2,7 +2,7 @@
 title: 집단 Report Builder
 description: 라이프사이클 동안 유사한 특성을 공유하는 사용자 그룹의 분석에 대해 알아봅니다.
 exl-id: d80c5389-7256-40e0-86e0-49903113f93d
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '1556'
 ht-degree: 0%
@@ -11,19 +11,19 @@ ht-degree: 0%
 
 # 집단 Report Builder
 
-사용자의 다양한 하위 집합이 시간에 따라 어떻게 행동하는지 연구하고 싶습니까? 예를 들어 프로모션 기간 동안 등록한 사용자가 등록하지 않은 사용자보다 평균 라이프타임 수익이 더 높은지 생각해 본 적이 있습니까? 답변이 다음과 같은 경우 `Yes`, 그런 다음 `Cohort Report Builder` 은(는) 완벽한 도구입니다. [!DNL MBI] 는 이 분석을 수행하고 귀하의 비즈니스와 관련이 있도록 최적화되었습니다.
+사용자의 다양한 하위 집합이 시간에 따라 어떻게 행동하는지 연구하고 싶습니까? 예를 들어 프로모션 기간 동안 등록한 사용자가 등록하지 않은 사용자보다 평균 라이프타임 수익이 더 높은지 생각해 본 적이 있습니까? 답변이 다음과 같은 경우 `Yes`, 그런 다음 `Cohort Report Builder` 은(는) 완벽한 도구입니다. [!DNL Adobe Commerce Intelligence] 는 이 분석을 수행하고 귀하의 비즈니스와 관련이 있도록 최적화되었습니다.
 
 ## 집단 분석이란? {#what}
 
 `Cohort` 분석은 생활 주기에 걸쳐 유사한 특성을 공유하는 사용자 집단의 분석으로 폭넓게 정의할 수 있다. 이를 통해 다양한 사용자 그룹 간 행동 트렌드를 식별할 수 있습니다.
 
-에 대한 보다 심층적인 입문서 `cohort` 분석, [여기 보기](https://www.cohortanalysis.com/).
+다음에 대한 심층 입문서: `cohort` 분석, 검토 [이 페이지](https://www.cohortanalysis.com/).
 
-내 [!DNL MBI] 대시보드를 사용하면 사용자를 쉽게 만들 수 있습니다. `cohorts` 를 기반으로 함 `cohort` 날짜 및 계정의 지표를 추적합니다.
+내 [!DNL Commerce Intelligence] 대시보드를 사용하면 사용자를 쉽게 만들 수 있습니다. `cohorts` 를 기반으로 함 `cohort` 날짜 및 계정의 지표를 추적합니다.
 
 ## 그렇다면 코호트 분석이 중요한 이유는 무엇입니까? {#important}
 
-위에서 언급했듯이, `cohort` 분석을 통해 다양한 사용자 그룹 간의 행동 트렌드를 식별할 수 있습니다. 특정 그룹의 행동을 확실히 이해하면 의사 결정과 지출을 조정하여 매출을 극대화할 수 있습니다. 예를 들어 라이프타임 수익 `cohort` 분석 - 이러한 종류의 분석은 여러 가지 이유로 유익하지만, 즉각적인 분석은 더 나은 고객 확보 결정입니다.
+위에서 언급했듯이, `cohort` 분석을 통해 다양한 사용자 그룹 간의 행동 트렌드를 식별할 수 있습니다. 특정 그룹의 행동을 확실히 이해하면 의사 결정과 지출을 조정하여 매출을 극대화할 수 있습니다. 예를 들어 라이프타임 수익을 가져오십시오 `cohort` 분석 - 이러한 종류의 분석은 여러 가지 이유로 유익하지만, 즉각적인 분석은 더 나은 고객 확보 결정입니다.
 
 ## 나만의 고유한 작성 방법 `cohort` 분석?
 
@@ -99,7 +99,7 @@ ht-degree: 0%
 
 #### 레거시 아키텍처 {#personalinfo}
 
-다음은 이전 버전의 `Cohort Report Builder`. 새 버전을 사용하려면 다음을 참조하십시오. [새로운 아키텍처](../../administrator/account-management/new-architecture.md) 로 마이그레이션에 대한 자세한 정보 [!DNL MBI] 새 아키텍처 계정.
+다음은 이전 버전의 `Cohort Report Builder`. 새 버전을 사용하려면 다음을 참조하십시오. [새로운 아키텍처](../../administrator/account-management/new-architecture.md) 로 마이그레이션에 대한 자세한 정보 [!DNL Commerce Intelligence] 새 아키텍처 계정.
 
 #### 나만의 고유한 작성 방법 `cohort` 분석? {#create}
 
@@ -107,7 +107,7 @@ ht-degree: 0%
 
 `Cohort` 분석 실행 중! 여기에서 누적 및 사용자별로 시간이 지남에 따라 증가하는 매출을 확인할 수 있습니다.
 
-이 섹션에서는 나만의 콘텐츠를 만드는 과정을 안내합니다 `cohort` 분석. 예제(및 프로세스를 보여 주는 애니메이션 GIF)는 [예제 섹션](#examples) 이 문서의
+이 섹션에서는 나만의 콘텐츠를 만드는 과정을 안내합니다 `cohort` 분석. 예제(및 프로세스를 보여 주는 애니메이션 GIF)는 [예제 섹션](#examples) 이 항목의 을 참조하십시오.
 
 1. 클릭 **[!UICONTROL Report Builder]** 왼쪽 탭에서 또는 **[!UICONTROL Add Report** > **Create Report]** 모든 대시보드에서
 

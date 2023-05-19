@@ -2,7 +2,7 @@
 title: 표 통합
 description: 테이블 및 데이터베이스를 통합하는 방법을 알아봅니다.
 exl-id: 6065bed3-fb84-4147-a223-92dc3e1b15a5
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 0%
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # 표 통합
 
-여러 저장소 프론트나 여러 시장에서 운영하는 경우 유사한 데이터베이스가 별도로 저장되어 있을 수 있습니다. 위치 [!DNL MBI]에서는 서로 다른 데이터베이스의 유사한 테이블을 함께 통합하기가 쉽습니다.
+여러 저장소 프론트나 여러 시장에서 운영하는 경우 유사한 데이터베이스가 별도로 저장되어 있을 수 있습니다. 위치 [!DNL Adobe Commerce Intelligence]에서는 서로 다른 데이터베이스의 유사한 테이블을 함께 통합하기가 쉽습니다.
 
-예를 들어 다음 항목이 있을 수 있습니다. `orders` 다음에 대한 테이블 `Market A`및 이와 유사한 `orders` 다음에 대한 테이블 `Market B`. [!DNL MBI] 를 사용하면 두 테이블을 통합하고 두 테이블의 합계 주문 데이터를 볼 수 있습니다 `Market A` 및 `B`를 추가하고 나면 더 자세한 정보를 제공할 수 있습니다.
+예를 들어 다음 항목이 있을 수 있습니다. `orders` 다음에 대한 테이블 `Market A`및 이와 유사한 `orders` 다음에 대한 테이블 `Market B`. [!DNL Commerce Intelligence] 를 사용하면 두 테이블을 통합하고 두 테이블의 합계 주문 데이터를 볼 수 있습니다 `Market A` 및 `B`를 추가하고 나면 더 자세한 정보를 제공할 수 있습니다.
 
 테이블 통합이 작동하려면 입력 테이블이 **비슷하게 구성되어**. 즉, 모든 입력 테이블에는 통합 테이블에 필요한 데이터 열이 포함되어야 합니다.
 
@@ -43,8 +43,8 @@ Data Warehouse의 다른 모든 테이블과 마찬가지로 열을 추가하여
 
 ## 통합 테이블 생성, 조회 또는 갱신
 
-Data Warehouse에 통합 테이블을 추가하려면 [!DNL MBI] [지원](../guide-overview.md).
+Data Warehouse에 통합 테이블을 추가하려면 [!DNL Commerce Intelligence] [지원](../guide-overview.md#Submitting-a-Support-Ticket).
 
 >[!NOTE]
 >
->통합 테이블은 `Data Warehouse Manager`, 이러한 테이블 보기 및 업데이트는 다음 작업에서만 수행할 수 있습니다. [!DNL MBI] 지원.
+>통합 테이블은 `Data Warehouse Manager`, 이러한 테이블 보기 및 업데이트는 다음 작업에서만 수행할 수 있습니다. [!DNL Commerce Intelligence] 지원.

@@ -2,9 +2,9 @@
 title: 다른 사용자로부터 차트 가져오기
 description: 다른 사용자가 소유한 차트를 편집하거나 유사한 차트를 만드는 방법에 대해 알아봅니다.
 exl-id: defcb72d-6027-4ae7-b974-e2f39773fe32
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '169'
 ht-degree: 0%
 
 ---

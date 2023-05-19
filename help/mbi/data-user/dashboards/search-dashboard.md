@@ -2,7 +2,7 @@
 title: 대시보드 검색
 description: 전역 검색 기능을 사용하여 대시보드를 찾는 방법과 다른 사용자가 소유한 대시보드를 검색하는 방법을 알아봅니다.
 exl-id: eea09ee5-e7ec-4002-8257-a35a64c900a9
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
 source-wordcount: '146'
 ht-degree: 0%
@@ -11,11 +11,11 @@ ht-degree: 0%
 
 # 대시보드 검색
 
-이 문서에서는 [`Global Search` 기능](#global) 대시보드를 찾고 을 검색하는 방법 [다른 사용자가 소유한 대시보드](#other).
+이 항목에서는 [[!DNL Global Search] 기능](#global) 대시보드를 찾고 을 검색하는 방법 [다른 사용자가 소유한 대시보드](#other).
 
 ## 글로벌 검색 {#global}
 
-다음 `Global Search` 메뉴를 통해 보려는 대시보드를 검색하고 선택할 수 있습니다.
+다음 [!DNL Global Search] 메뉴를 통해 보려는 대시보드를 검색하고 선택할 수 있습니다.
 
 * *기존 대시보드 목록을 보려면 다음과 같이 하십시오*&#x200B;을 클릭하고 대시보드를 클릭합니다.
 

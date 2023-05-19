@@ -2,7 +2,7 @@
 title: 보고서 사용
 description: 보고서 데이터를 사용하는 방법을 알아봅니다.
 exl-id: 94d4db27-0e06-4066-9c03-036b109d2d9b
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 보고서 사용
 
-에서 보고서 사용 [!DNL MBI] 비즈니스 관련 질문에 답변하는 데 도움이 되도록 작년과 비교하여 이번 달 매출을 확인하고 싶은지 또는 최신 제품에 대한 구매 비용을 알고 싶은지 등을 살펴보십시오 [!DNL Google AdWords] 캠페인.
+에서 보고서 사용 [!DNL Adobe Commerce Intelligence] 비즈니스 관련 질문에 답변하는 데 도움이 되도록 작년과 비교하여 이번 달 매출을 확인하고 싶은지 또는 최신 제품에 대한 구매 비용을 알고 싶은지 등을 살펴보십시오 [!DNL Google AdWords] 캠페인.
 
 질문에서 대답으로 이어지는 그 길은 정확히 어떤 모습일까요?
 
@@ -62,7 +62,7 @@ ht-degree: 0%
 
 이러한 두 필드는 사용자 수준(예: )에서 작성해야 합니다. `user` table)을 참조하십시오. 이를 통해 사용자에 의해 평균 분석을 정규화할 수 있습니다(즉, 이 평균 계산의 분모가 사용자 수임).
 
-여기에서 [!DNL MBI] 들어갑니다! 다음을 사용할 수 있습니다. [!DNL MBI] 위의 열을 만들 Data Warehouse. Adobe 분석가 팀에 문의하여 새 열을 만들 특정 정의를 제공하십시오. 다음을 사용할 수도 있습니다 [열 편집기](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
+여기에서 [!DNL Commerce Intelligence] 들어갑니다! 다음을 사용할 수 있습니다. [!DNL Commerce Intelligence] 위의 열을 만들 Data Warehouse. Adobe 분석가 팀에 문의하여 새 열을 만들 특정 정의를 제공하십시오. 다음을 사용할 수도 있습니다 [열 편집기](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
 
 프로덕션 서버에 불필요한 부담을 주기 때문에 이러한 계산된 데이터 필드를 데이터베이스에 직접 생성하지 않는 것이 좋습니다.
 
@@ -75,7 +75,7 @@ ht-degree: 0%
 
 _[합계 `Time between a customer's registration date and first purchase date`] / [등록 및 구매한 총 고객 수]_
 
-고객의 등록 날짜에 따라 시간 경과나 추세를 통해 이 계산을 표시하려고 합니다. 방법은 다음과 같습니다 [이 지표 만들기](../../data-user/reports/ess-manage-data-metrics.md) 위치: [!DNL MBI]:
+고객의 등록 날짜에 따라 시간 경과나 추세를 통해 이 계산을 표시하려고 합니다. 방법은 다음과 같습니다 [이 지표 만들기](../../data-user/reports/ess-manage-data-metrics.md) 위치: [!DNL Commerce Intelligence]:
 
 1. 다음으로 이동 **[!UICONTROL Data]** 및 선택 `Metrics` 탭.
 1. 클릭 **[!UICONTROL Add New Metric]** 및 선택 `user` 테이블(위에서 차원을 생성한 위치).

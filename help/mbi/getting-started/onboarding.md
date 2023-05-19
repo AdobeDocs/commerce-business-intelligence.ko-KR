@@ -1,15 +1,15 @@
 ---
-title: 온보딩
-description: 온보딩에 대해 알아봅니다.
+title: Adobe Commerce Intelligence 온보딩
+description: Adobe Commerce Intelligence 온보딩에 대해 알아봅니다.
 exl-id: e0cce957-af2c-4514-9afd-c9aaa651a4f0
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
 
-# 온보딩
+# 온보딩 [!DNL Adobe Commerce Intelligence]
 
 관련 온보딩 질문 `store` 및 `database` 설정은 보고를 올바로 설정하도록 합니다. 이러한 답변을 통해 Adobe은 스토어의 설정에 정확하게 맞는 보고서를 제공합니다.
 
@@ -29,6 +29,6 @@ ht-degree: 0%
 
 ## 데이터베이스 설정
 
-- `Database name` - 이란? *mySQL 데이터베이스 이름* 상거래 트랜잭션 데이터가 있는 위치
+- `Database name` - 이란? *이름 [!DNL MySQL] 데이터베이스* 상거래 트랜잭션 데이터가 있는 위치
 
 - `Table prefix (optional)` - Commerce 데이터베이스에 포함된 테이블 앞에 다음 문자가 추가됨(예: `store_`)? 이는 일반적으로 해당되지 않지만, 만들 수 있는 사용자 지정입니다.

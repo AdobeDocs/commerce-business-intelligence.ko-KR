@@ -2,7 +2,7 @@
 title: 여러 화면에 대시보드 표시
 description: 사무실 전체에 대시보드를 표시하는 방법에 대해 알아봅니다.
 exl-id: aabe5c8f-0809-467c-9713-099aed6926b9
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 사무실 주변의 대시보드 표시
 
-대상 [!DNL MBI] 사무실 전체에서 화면에 대시보드와 보고서를 표시하는 데 관심이 있는 사용자는 이 설정을 쉽게 활성화할 수 있는 다양한 하드웨어 옵션이 있습니다.
+대상 [!DNL Commerce Intelligence] 사무실 전체에서 화면에 대시보드와 보고서를 표시하는 데 관심이 있는 사용자는 이 설정을 쉽게 활성화할 수 있는 다양한 하드웨어 옵션이 있습니다.
 
 다음은 옵션에 필요한 권장 목록입니다.
 

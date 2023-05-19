@@ -2,9 +2,9 @@
 title: facebook 광고 연결
 description: 광고 지출 데이터를 분석하고 비용이 효과적으로 지출되는지 확인하는 방법을 알아봅니다.
 exl-id: 219a868b-f17c-4299-9e29-94db9156c9b6
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---
@@ -15,30 +15,30 @@ ht-degree: 0%
 >
 >필요 [관리자 권한](../../../administrator/user-management/user-management.md).
 
-![](../../../assets/Facebook_Logo.png)
+![](../../../assets/facebook-ads-logo.png)
 
 조사, 광고 제작, 캠페인 시작 시기 [!DNL Facebook]. 이제 광고 지출 데이터를 분석하고 비용이 효과적으로 지출되고 있는지 확인할 차례입니다. 광고 지출 데이터를 사용하여 다음과 같은 작업을 수행할 수 있습니다 [광고 비용과 고객 생애 가치(CLV)를 결합하여 캠페인 ROI를 측정합니다.](../../../data-analyst/analysis/roi-ad-camp.md) 캠페인에서 획득한 사용자 수
 
-facebook 광고 데이터를에 연결 [!DNL MBI] 는 간단한 3단계 프로세스입니다.
+연결 중 [!DNL Facebook Ad] 데이터 받는 사람 [!DNL Commerce Intelligence] 는 간단한 3단계 프로세스입니다.
 
-1. [추가 [!DNL Facebook] 의 데이터 소스로서의 [!DNL MBI]](#stepone)
-1. [허용 [!DNL MBI] 다음에 대한 액세스 권한: [!DNL Facebook Ads] 데이터](#steptwo)
+1. [추가 [!DNL Facebook] 의 데이터 소스로서의 [!DNL Commerce Intelligence]](#stepone)
+1. [허용 [!DNL Commerce Intelligence] 다음에 대한 액세스 권한: [!DNL Facebook Ads] 데이터](#steptwo)
 1. [선택 [!DNL Facebook Ads] 데이터 가져오기 계정](#stepthree)
 
-## 추가 [!DNL Facebook] 의 데이터 소스로서의 [!DNL MBI] {#stepone}
+## 추가 [!DNL Facebook] 의 데이터 소스로서의 [!DNL Commerce Intelligence] {#stepone}
 
-1. 을(를) 추가하려면 [!DNL Facebook] 계정에 통합하려면 다음 위치로 이동합니다. `Connections` 아래 페이지 **[!UICONTROL Manage Data** > **Integrations]**.
-1. 클릭 **[!UICONTROL Add Integration]**, 데이터 위의 화면 오른쪽에 있음 `Sources` 테이블.
+1. 을(를) 추가하려면 [!DNL Facebook] 에 통합 [!DNL Commerce Intelligence]계정, 다음으로 이동 `Connections` 아래 페이지 **[!UICONTROL Manage Data** > **Integrations]**.
+1. 클릭 **[!UICONTROL Add Integration]**, 오른쪽에 있습니다.
 1. 다음을 클릭합니다. [!DNL Facebook] 아이콘. 그러면 [!DNL Facebook] 인증 페이지입니다.
 1. 클릭 **[!UICONTROL Authorize]**.
 
-## 허용 [!DNL MBI] 다음에 대한 액세스 권한: [!DNL Facebook Ads] 데이터 {#steptwo}
+## 허용 [!DNL Commerce Intelligence] 다음에 대한 액세스 권한: [!DNL Facebook Ads] 데이터 {#steptwo}
 
 클릭 후 **[!DNL Facebook Authorize]**&#x200B;작은 팝업 창이 표시됩니다.
 
 ![](../../../assets/Facebook_Access_Popup.png)
 
-허용할 일련의 단계를 따릅니다. [!DNL MBI] 공개 프로필의 데이터에 액세스하려면 다음을 수행하십시오. [!DNL Facebook Ads] 및 관련 통계. 클릭 **[!UICONTROL OK]** 계속하려면 이 단계를 수행하십시오.
+허용할 일련의 단계를 따릅니다. [!DNL Commerce Intelligence] 공개 프로필의 데이터에 액세스하려면 다음을 수행하십시오. [!DNL Facebook Ads] 및 관련 통계. 클릭 **[!UICONTROL OK]** 계속하려면 이 단계를 수행하십시오.
 
 ## 선택 [!DNL Facebook Ads] 데이터 가져오기 계정 {#stepthree}
 
@@ -48,7 +48,7 @@ facebook 광고 데이터를에 연결 [!DNL MBI] 는 간단한 3단계 프로�
 
 1. 클릭 **[!UICONTROL Save Connections]**.
 
-   정상적으로 연결되면 *연결 성공!* 페이지 맨 위에 메시지가 표시됩니다.
+   정상적으로 연결되면 *연결 성공!* 메시지가 페이지 맨 위에 표시됩니다.
 
 ## 다음은 무엇입니까? {#next}
 
@@ -56,7 +56,7 @@ facebook 광고 데이터를에 연결 [!DNL MBI] 는 간단한 3단계 프로�
 
 ## 관련 항목
 
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [연결 [!DNL Google Adwords] account](../integrations/google-ecommerce.md)
 * [다음을 통해 주문 참조 소스 추적 [!DNL Google eCommerce]](../integrations/google-ecommerce.md)
 * [데이터베이스에서 사용자 조회 소스 추적](../../analysis/google-track-user-acq.md)

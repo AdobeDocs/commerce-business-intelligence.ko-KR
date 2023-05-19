@@ -2,16 +2,16 @@
 title: 매핑 테이블을 사용하여 데이터 표준화
 description: 매핑 테이블을 사용하여 작업하는 방법을 알아봅니다.
 exl-id: e452ff87-f298-43d5-acc3-af58e53bd0bc
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '743'
 ht-degree: 0%
 
 ---
 
 # 매핑 테이블을 사용하여 데이터 표준화
 
-이 그림을 그려보십시오. 현재 위치는 `Report Builder`, 빌드 a `Revenue by State` 보고서. 영역에 있습니다. 을(를) 추가하기 전까지 모든 것이 잘 진행되고 있습니다. `billing state` 보고서를 그룹화하면 다음과 같은 결과가 표시됩니다.
+다음 단계에 있다고 상상해 보십시오. `Report Builder` 빌드 a `Revenue by State` 보고서. 을(를) 추가하려고 할 때까지 모든 것이 잘 진행되고 있습니다. `billing state` 보고서를 그룹화하면 다음과 같은 결과가 표시됩니다.
 
 ![](../../assets/Messy_State_Segments.png)
 
@@ -45,9 +45,9 @@ ht-degree: 0%
 
 ![](../../assets/Mapping_table_examples.jpg)
 
-## 에서 수행해야 하는 작업 [!DNL MBI] 사용하시겠습니까? {#use}
+## 에서 수행해야 하는 작업 [!DNL Commerce Intelligence] 사용하시겠습니까? {#use}
 
-매핑 테이블 생성이 완료되면 다음을 수행해야 합니다 [파일 업로드](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) 대상 [!DNL MBI] 및 [조인된 열 만들기](../../data-analyst/data-warehouse-mgr/calc-column-types.md) 새 필드를 원하는 테이블로 재배치합니다. 파일이 Data Warehouse에 동기화된 후 이 작업을 수행할 수 있습니다.
+매핑 테이블 생성을 완료한 후에는 다음을 수행해야 합니다 [파일 업로드](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) 대상 [!DNL Commerce Intelligence] 및 [조인된 열 만들기](../../data-analyst/data-warehouse-mgr/calc-column-types.md) 새 필드를 원하는 테이블로 재배치합니다. 파일이 Data Warehouse에 동기화된 후 이 작업을 수행할 수 있습니다.
 
 이 예에서는 `mapping_state` 표 (`state_input`) 로 이동합니다. `customer_address` 조인된 열을 사용하는 테이블입니다. 이렇게 하면 정하게 그룹화할 수 있습니다. `state_input` 보고서의 열 `state` 열.
 
@@ -70,15 +70,13 @@ ht-degree: 0%
 1. 저장 후 경로가 바로 채워지지 않을 수 있습니다. 이런 경우 `Path` 을 클릭하고 만든 경로를 선택합니다.
 1. 클릭 **[!UICONTROL Save]** 열을 만듭니다.
 
-바로 그거야!
-
 ## 이제 어떻게 해야 합니까? {#wrapup}
 
 업데이트 주기가 완료되면 새로 결합된 열을 사용하여 데이터베이스의 지저분한 열 대신 데이터를 적절하게 세그먼트화할 수 있습니다. 이제 그룹화 옵션을 살펴보십시오. 더 이상 스트레스를 주지 않습니다.
 
 ![](../../assets/Clean_State_Segments.png)
 
-매핑 테이블은 Data Warehouse에서 잠재적으로 지저분한 데이터를 정리할 때 언제든지 유용합니다. 그러나 다음과 같은 다른 멋진 사용 사례에도 매핑 테이블을 사용할 수 있습니다. [mbi에서 Google Analytics 채널 복제](../data-warehouse-mgr/rep-google-analytics-channels.md).
+매핑 테이블은 Data Warehouse에서 잠재적으로 지저분한 데이터를 정리할 때 언제든지 유용합니다. 그러나 다음과 같은 다른 멋진 사용 사례에도 매핑 테이블을 사용할 수 있습니다. [복제 중 [!DNL Google Analytics channels] 위치: [!DNL Commerce Intelligence]](../data-warehouse-mgr/rep-google-analytics-channels.md).
 
 ### 관련 항목
 

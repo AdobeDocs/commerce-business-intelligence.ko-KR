@@ -1,19 +1,19 @@
 ---
 title: 예상 Zendesk 데이터
-description: Zendesk 데이터에 대한 추가 설명서에 대한 링크를 포함하여 Zendesk에서 MBI로 가져올 수 있는 기본 데이터 표에 대해 알아봅니다.
+description: Zendesk 데이터에 대한 추가 설명서 링크를 포함하여 Zendesk에서 Commerce Intelligence로 가져올 수 있는 기본 데이터 표에 대해 알아봅니다.
 exl-id: 838d8d13-e2e1-44c2-a416-f1792200ee6f
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
 
-# 예상 Zendesk 데이터
+# 예상 [!DNL Zendesk] 데이터
 
 다음 이후 [다음을 연결했습니다. [!DNL Zendesk] account](../integrations/zendesk.md), 다음을 사용할 수 있습니다. [Data Warehouse 관리자](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) 분석을 위해 관련 데이터 필드를 쉽게 추적할 수 있습니다.
 
-이 문서에서는 가져올 수 있는 기본 데이터 테이블에 대해 살펴봅니다. [!DNL Zendesk] 대상 [!DNL MBI], 다음에 대한 추가 설명서에 대한 링크 포함 [!DNL Zendesk] 데이터.
+이 항목에서는 가져올 수 있는 기본 데이터 테이블을 살펴봅니다 [!DNL Zendesk] 대상 [!DNL Adobe Commerce Intelligence], 다음에 대한 추가 설명서에 대한 링크 포함 [!DNL Zendesk] 데이터.
 
 | 테이블 이름 | 설명 |
 |-----|-----|
@@ -33,4 +33,4 @@ ht-degree: 0%
 ## 관련 항목
 
 * [Zendesk 연결하기](../integrations/zendesk.md)
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

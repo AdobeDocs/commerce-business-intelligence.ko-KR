@@ -1,23 +1,23 @@
 ---
 title: SQL 계산 열 생성 및 사용
-description: 새 MBI 아키텍처에서 고급 열을 SQL 계산 열 형태로 만드는 방법을 알아봅니다.
+description: 새로운 Adobe Commerce Intelligence 아키텍처에서 SQL 계산 열 형태로 고급 열을 만드는 방법을 알아봅니다.
 exl-id: f16e4ee4-ed73-4ddb-b701-1fe3db14346a
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
-source-wordcount: '817'
+source-wordcount: '816'
 ht-degree: 0%
 
 ---
 
 # SQL 계산 열 만들기
 
-이 항목에서는 의 목적과 용도를 간략하게 설명합니다. `Calculation` 열 유형: 를 사용하여 테이블에 추가할 수 있습니다. [Data Warehouse 관리자](../data-warehouse-mgr/tour-dwm.md). 다음은 SQL 계산의 기능, 계산 사용 이유, SQL 계산 생성 프로세스 및 두 가지 예에 대한 설명입니다.
+이 항목에서는 의 목적과 용도를 간략하게 설명합니다. `Calculation` 을 사용하여 테이블에 추가할 수 있는 열 유형입니다. [Data Warehouse 관리자](../data-warehouse-mgr/tour-dwm.md). 아래에서는 SQL 계산의 기능, 계산 사용 이유, SQL 계산 생성 프로세스에 대해 설명하고 두 가지 예를 포함합니다.
 
 **설명**
 
-과거에는 `advanced` 고객 지원 팀의 분석가만 수행할 수 있습니다. [!DNL MBI]. 이제 모든 권한이 최종 사용자의 손에 있으며 고급 열을 다음 형식으로 만들 수 있습니다. `SQL Calculation` 새 열 [!DNL MBI] 아키텍처.
+과거에는 `advanced` 고객 지원 팀의 분석가만 수행할 수 있습니다. [!DNL Adobe Commerce Intelligence]. 이제 모든 권한이 최종 사용자의 손에 있으며 고급 열을 다음 형식으로 만들 수 있습니다. `SQL Calculation` 새 열 [!DNL Commerce Intelligence] 아키텍처.
 
-다음 `Calculation` 이제 Data Warehouse 관리자에서 옵션으로 사용할 수 있는 열 유형은 PostgreSQL 논리를 사용하여 테이블의 열을 변환할 수 있는 동일한 테이블 작업입니다. 에서 사용할 수 있는 함수 및 연산자에 대한 설명서 `Calculatio`n 열 유형은 PostgreSQL 웹 사이트에서 찾을 수 있습니다. [여기](https://www.postgresql.org/docs/9.6/functions.html).
+다음 `Calculation` 이제 Data Warehouse 관리자에서 옵션으로 사용할 수 있는 열 유형은 PostgreSQL 논리를 사용하여 테이블의 열을 변환할 수 있는 동일한 테이블 작업입니다. 에서 사용할 수 있는 함수 및 연산자에 대한 설명서 `Calculation` 열 유형은 PostgreSQL 웹 사이트에서 찾을 수 있습니다. [여기](https://www.postgresql.org/docs/9.6/functions.html).
 
 로 만들 수 있는 다양한 열 `Calculation` 열은 거의 무제한이지만 대부분의 열은 아래 예에서 사용하는 IF-THEN 문과 기본 산술을 사용하여 만들 수 있습니다.
 
@@ -73,4 +73,5 @@ PostgreSQL의 의미는 한 줄에 하나씩 표시됩니다.
    * `Datetime` - yyyy-MM-dd hh:mm:ss 형식
 
 1. 클릭 **[!UICONTROL test column]**. 이렇게 하면 각 입력에 대해 5개의 테스트 값 목록이 생성되고 각 테스트 값 세트에 대해 6단계의 논리 결과가 표시됩니다. SQL의 어느 부분에서든 오류가 발생하면 적절한 오류 메시지가 반환됩니다. 모든 입력 열이 기본 필드인 경우에만 샘플 결과를 생성할 수 있습니다. 입력 열이 계산된 열인 경우 지표에 열을 추가하고 시각적 Report Builder에서 표시하여 결과를 확인해야 합니다
+
 1. 결과가 만족스러우면 다음을 클릭하십시오. **[!UICONTROL Save]**. 이 열은 을 사용할 수 있도록 설정합니다.

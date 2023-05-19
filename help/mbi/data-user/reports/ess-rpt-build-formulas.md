@@ -2,9 +2,9 @@
 title: 공식
 description: 수식 사용 방법을 알아봅니다.
 exl-id: b6432d93-739f-410c-b732-e09a278f8dae
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 0%
 
    다음을 수행합니다.
 
-   * 다음에서 `Enter your Formul` 입력 상자, 입력 `A/B`.
+   * 다음에서 `Enter your Formula` 입력 상자, 입력 `A/B`.
 
       이는 매출을 신규 고객 수로 주문한 제품별로 나눕니다.
 
@@ -71,7 +71,7 @@ ht-degree: 0%
 
    * 달력에서 날짜 범위를 선택합니다.
 
-      이 예에서는 휴가철이 11월 1일부터 12월 31일입니다.
+      이 예에서는 휴가철이 다음과 같습니다. `November 1` 에서 `December 31`.
 
    * 아래 `Select Time Interval`, 선택 `Day`.
 

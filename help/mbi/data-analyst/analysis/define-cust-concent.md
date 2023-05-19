@@ -2,16 +2,16 @@
 title: 고객 집중 정의
 description: 총 수익이 고객 기반 간에 어떻게 분배되는지 측정하는 데 도움이 되는 대시보드를 설정하는 방법을 알아봅니다.
 exl-id: 6242019f-a6a5-48d3-b214-94acd7842e00
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---
 
 # 고객 집중
 
-이 문서에서는 총 매출이 고객 기반 간에 분배되는 방식을 측정하는 데 도움이 되는 대시보드를 설정하는 방법을 보여 줍니다. 고객 중 몇 퍼센트가 몇 퍼센트의 매출에 기여하는지 파악하고 가장 좋은 시장 점유율을 위해 세그먼트화된 목록을 만들어 기여도가 높은 고객을 유지하고 있습니다.
+이 항목에서는 총 매출이 고객 기반 간에 분배되는 방식을 측정하는 데 도움이 되는 대시보드를 설정하는 방법을 보여 줍니다. 고객 중 몇 퍼센트가 몇 퍼센트의 매출에 기여하는지 파악하고 가장 좋은 시장 점유율을 위해 세그먼트화된 목록을 만들어 기여도가 높은 고객을 유지하고 있습니다.
 
 이 분석에는 다음이 포함됩니다. [고급 계산 열](../data-warehouse-mgr/adv-calc-columns.md).
 
@@ -158,4 +158,4 @@ ht-degree: 0%
 
 모든 보고서를 컴파일한 후 원하는 대로 대시보드에서 구성할 수 있습니다. 결과는 위의 샘플 대시보드와 비슷할 수 있습니다.
 
-이 분석을 작성하는 동안 질문이 발생하거나 Professional Services 팀의 도움을 얻고자 하는 경우 [연락처 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+이 분석을 작성하는 동안 질문이 발생하거나 Professional Services 팀의 도움을 얻고자 하는 경우 [연락처 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

@@ -2,16 +2,16 @@
 title: 다른 사용자와 대시보드 공유
 description: 다른 사용자와 대시보드를 공유하는 방법을 알아봅니다.
 exl-id: 6279b049-d1b2-4d40-b30b-ee8772e990f4
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '271'
 ht-degree: 0%
 
 ---
 
 # 다른 사용자와 대시보드 공유
 
-대시보드 공유는 팀이 계속 진행할 수 있도록 하고 공동 토론을 유도할 수 있는 좋은 방법입니다. 중앙 대시보드를 만들고 공유하면 제어를 유지하면서 팀에 필요한 정보를 제공할 수 있습니다. [Adobe 추천](../../best-practices/share-dashboard-best-practice.md){: 귀하가 부여한 target=&quot;_blank&quot;} `Edit` 우발적 변경을 최소화하기 위해 선택된 몇 개에 대한 권한.
+대시보드 공유는 팀이 계속 진행할 수 있도록 하고 공동 토론을 유도할 수 있는 좋은 방법입니다. 중앙 대시보드를 만들고 공유하면 제어를 유지하면서 팀에 필요한 정보를 제공할 수 있습니다. [[!DNL Adobe] 추천](../../best-practices/share-dashboard-best-practice.md){: 귀하가 부여한 target=&quot;_blank&quot;} `Edit` 우발적 변경을 최소화하기 위해 선택된 몇 개에 대한 권한.
 
 >[!NOTE]
 >
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 1. 클릭 **[!UICONTROL Share Dashboard]** 화면 맨 위에 있습니다.
 
-   의 모든 사용자 목록 [!DNL MBI] 계정이 표시됩니다.
+   의 모든 사용자 목록 [!DNL Commerce Intelligence] 계정이 표시됩니다.
 
 1. 대시보드를 공유할 사용자를 선택하려면 이름 왼쪽에 있는 상자를 선택합니다.
 

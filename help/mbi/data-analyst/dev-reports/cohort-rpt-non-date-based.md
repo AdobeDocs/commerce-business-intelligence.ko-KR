@@ -2,20 +2,20 @@
 title: 비날짜 기반 집단에 대한 집단 Report Builder
 description: 유사한 활동이나 속성으로 사용자를 그룹화하는 방법에 대해 알아봅니다.
 exl-id: c7b85ce9-113c-4ffc-855f-3d53fe2347d8
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
 
-# `Cohort Report Builder for Non-Date-Based Cohorts`
+# [!DNL Cohort Report Builder] 비 날짜 기반 집단의 경우
 
-다음 [`Cohort Report Builder`](../dev-reports/cohort-rpt-bldr.md) 은 상인들이 시간의 흐름에 따라 다양한 하위 집합이 어떻게 행동하는지를 연구하는 데 큰 도움이 되었습니다. 과거에는 `Cohort Report Builder` 은(는) 일반별로 사용자를 그룹화하도록 최적화되었습니다. `cohort date` (예: 주어진 달에 첫 번째 구매한 모든 고객 세트). 다음 `Non-Date Based Cohort` 이제 기능을 사용하여 유사한 활동이나 속성으로 사용자를 그룹화할 수 있습니다. 이 기능에 대한 몇 가지 사용 사례를 살펴보십시오.
+다음 [`Cohort Report Builder`](../dev-reports/cohort-rpt-bldr.md) 는 상인이 사용자의 다양한 하위 집합이 시간에 따라 어떻게 행동하는지 학습할 수 있도록 돕습니다. 과거에는 `Cohort Report Builder` 은(는) 일반별로 사용자를 그룹화하도록 최적화되었습니다. `cohort date` (예: 주어진 달에 첫 번째 구매한 모든 고객 세트). 다음 `Non-Date Based Cohort` 이제 기능을 사용하여 유사한 활동이나 속성으로 사용자를 그룹화할 수 있습니다. 이 기능에 대한 몇 가지 사용 사례를 살펴보십시오.
 
 ## 사용 사례
 
-이는 포괄적인 목록이 아니지만, 다음은 이 기능을 사용하여 수행할 수 있는 몇 가지 잠재적인 분석입니다.
+이것은 포괄적인 목록이 아니지만, 다음은 이 기능으로 수행할 수 있는 몇 가지 잠재적인 분석입니다.
 
 * 에서 획득한 고객의 수익 검토 [!DNL Google] 및 [!DNL Facebook]
 * 미국과 캐나다에서 첫 구매가 이루어진 고객 분석
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->기본 [!DNL Google Analytics] 지표가 과 호환되지 않음 `Cohort Report Builder`. 이 예제의 목표는 서로 다른 GA 소스를 통해 인수한 첫 번째 주문 고객의 시간 경과에 따른 매출을 확인하는 것입니다.
+>기본 [!DNL Google Analytics] 지표가 과 호환되지 않음 `Cohort Report Builder`. 이 예제의 목표는 다른 을 통해 인수한 첫 번째 주문 고객의 시간 경과에 따른 매출을 확인하는 것입니다 [!DNL Google Analytics] 소스.
 
 ### 전환 `Metric View` 끝 `Cohort`
 
@@ -49,9 +49,9 @@ ht-degree: 0%
 1. 집단 첫 번째 작업 시간 범위
 1. 집단 발생 이후의 시간 범위
 
-![집단](../../assets/2-cohort-groups.png){: width=&quot;200&quot; height=&quot;224&quot;}
+![집단](../../assets/2-cohort-groups.png)<!--{: width="200" height="224"}-->
 
-![cohort-first-action-time range](../../assets/3-cohort-first-action-time-range.png){: width=&quot;400&quot; height=&quot;554&quot;}
+!![cohort-first-action-time-range]<!--(../../assets/3-cohort-first-action-time-range.png){: width="400" height="554"}-->
 
 #### 1. 그룹화 `cohorts`
 
@@ -77,7 +77,10 @@ ht-degree: 0%
 
 ![cohort-first-action-time range](../../assets/5-cohort-first-action-time-range.png)<!--{: width="400" height="557"}-->
 
-### 기타 참고 사항
+>[!NOTE]
+>
+>[!UICONTROL Filters] 다음 간을 전환할 때 지표에 적용된 상태는 그대로 유지됩니다. `Standard` 및 `Cohort` 보기.
 
-* [!UICONTROL Filters]: 다음 간을 전환할 때 지표에 적용되는 것이 그대로 유지됩니다. `Standard` 및 `Cohort` 조회수
-* 다음을 참조하십시오 [`Perspectives`](../../data-analyst/dev-reports/cohort-rpt-bldr.md).
+### 관련 항목
+
+다음을 참조하십시오 [`Perspectives`](../../data-analyst/dev-reports/cohort-rpt-bldr.md).

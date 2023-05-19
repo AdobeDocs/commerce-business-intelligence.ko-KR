@@ -2,9 +2,9 @@
 title: 마케팅 ROI
 description: ROI를 집계하여 캠페인별로 포함하여 채널 분석을 추적하는 대시보드를 설정하는 방법에 대해 알아봅니다.
 exl-id: 5de83998-e6cf-478d-bb6a-7a3dc77c2c0c
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '540'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->이 문서에는 원래 아키텍처 및 새 아키텍처를 사용하는 클라이언트에 대한 지침이 포함되어 있습니다. 다음을 수행합니다. [새로운 아키텍처](../../administrator/account-management/new-architecture.md) 기본 도구 모음에서 &quot;데이터 관리&quot;를 선택한 후 &quot;Data Warehouse 보기&quot; 섹션을 사용할 수 있는 경우.
+>이 항목에는 원래 아키텍처와 새 아키텍처를 사용하는 클라이언트에 대한 지침이 포함되어 있습니다. 다음을 수행합니다. [새로운 아키텍처](../../administrator/account-management/new-architecture.md) 기본 도구 모음에서 &quot;데이터 관리&quot;를 선택한 후 &quot;Data Warehouse 보기&quot; 섹션을 사용할 수 있는 경우.
 
-온라인 광고에 돈을 지출하는 경우, 이 지출에 대한 수익을 추적하고 향후 투자에 대한 데이터 중심의 결정을 내리기를 원할 수 있습니다. 이 문서에서는 집계별 및 캠페인별로 ROI를 포함하여 채널 분석을 추적하는 대시보드를 설정하는 방법을 보여 줍니다.
+온라인 광고에 돈을 지출하는 경우, 이 지출에 대한 수익을 추적하고 향후 투자에 대한 데이터 중심의 결정을 내리기를 원할 수 있습니다. 이 항목에서는 캠페인별로 ROI를 포함하여 채널 분석을 추적하는 대시보드를 설정하는 방법을 보여 줍니다.
 
 ![](../../assets/Marketing_dashboard_example.png)
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 통합 테이블
 
-**원본 아키텍처:** 다양한 소스에서 지출을 통합하려면 다음을 수행합니다. [!DNL Facebook Ads] 또는 [!DNL Google Adwords]), Adobe은 **통합 테이블** 광고 지출의 전체. 이 단계를 수행하려면 분석가가 필요합니다. 없으시다면, [지원 요청 제출](../../guide-overview.md) 제목 포함 `[MARKETING ROI ANALYSIS]`및 분석가가 이 테이블을 만듭니다.
+**원본 아키텍처:** 다음과 같은 다양한 소스에서 지출을 통합하기 위해 [!DNL Facebook Ads] 또는 [!DNL Google Adwords], Adobe은 **통합 테이블** 광고 지출의 전체. 이 단계를 수행하려면 분석가가 필요합니다. 없으시다면, [지원 요청 제출](../../guide-overview.md#Submitting-a-Support-Ticket) 제목 포함 `[MARKETING ROI ANALYSIS]`및 분석가가 이 테이블을 만듭니다.
 
 **새로운 아키텍처:** 다음에서 예제를 따를 수 있습니다. [이 분석 라이브러리](../../data-analyst/data-warehouse-mgr/create-dw-views.md) 주제. 이제 통합 테이블을 새 아키텍처에 대한 Data Warehouse 보기 라고 합니다.
 
@@ -32,11 +32,7 @@ ht-degree: 0%
 생성할 열
 
 * **`Consolidated Digital Ad Spend`** 표
-* **`Campaign name`** 는 분석가가 의 일부로 만듭니다. **[마케팅 ROI 분석]** 티켓
-
->[!NOTE]
->
->새로운 아키텍처 차이점에 대해서는 위를 참조하십시오.
+* **`Campaign name`** 은 Adobe 분석가가 의 일부로 만듭니다. **[마케팅 ROI 분석]** 티켓
 
 **원본 및 새로운 아키텍처:**
 
@@ -63,7 +59,6 @@ ht-degree: 0%
       * 선택 [!UICONTROL table]: `ecommerce####`
       * 선택 [!UICONTROL column]: `source`
       * [!UICONTROL Path]: sales_flat_order.increment_id = ecommerce#####.transactionId ^
-
 
 
 
@@ -295,7 +290,7 @@ ht-degree: 0%
 
    [!UICONTROL Chart Type]: `Table`
 
-이 분석을 작성하는 동안 질문이 발생하거나 Professional Services 팀의 도움을 얻고자 하는 경우 [연락처 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+이 분석을 작성하는 동안 질문이 발생하거나 Professional Services 팀의 도움을 얻고자 하는 경우 [연락처 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ### 관련 항목
 

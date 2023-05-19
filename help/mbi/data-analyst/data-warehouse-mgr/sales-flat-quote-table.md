@@ -2,7 +2,7 @@
 title: 견적 테이블
 description: Quote 표로 작업하는 방법을 알아봅니다.
 exl-id: 3a1e9239-33a7-429e-bfc8-628c68701710
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '605'
 ht-degree: 0%
@@ -24,7 +24,7 @@ ht-degree: 0%
 | `base_currency_code` | 캡처된 모든 값에 대한 통화 `base_*` 필드 (즉, `base_grand_total`, `base_subtotal`등). 이는 일반적으로 상거래 저장소의 기본 통화를 반영합니다 |
 | `base_grand_total` | 모든 세금, 배송 및 할인이 적용된 후 장바구니에 대해 고객에게 견적된 최종 가격입니다. 정확한 계산은 사용자 정의가 가능하지만 일반적으로 `base_grand_total` 다음과 같이 계산됩니다. `base_subtotal` + `base_tax_amount` + `base_shipping_amount` + `base_discount_amount` - `base_gift_cards_amount` - `base_customer_balance_amount` |
 | `base_subtotal` | 장바구니에 포함된 모든 항목의 총 상품 가치. 세금, 배송, 할인 등은 포함되지 않습니다 |
-| `created_at` | UTC로 로컬에 저장된 장바구니의 생성 타임스탬프. 의 구성에 따라 [!DNL MBI], 이 타임스탬프는에서 보고 시간대로 변환될 수 있습니다. [!DNL MBI] 데이터베이스 시간대와 다릅니다. |
+| `created_at` | UTC로 로컬에 저장된 장바구니의 생성 타임스탬프. 의 구성에 따라 [!DNL Commerce Intelligence], 이 타임스탬프는에서 보고 시간대로 변환될 수 있습니다. [!DNL Commerce Intelligence] 데이터베이스 시간대와 다릅니다. |
 | `customer_email` | 장바구니를 만든 고객의 이메일 주소 |
 | `customer_id` | `Foreign key` 과(와) 연계됨 `customer_entity` 테이블(고객이 등록된 경우). 가입 대상 `customer_entity.entity_id` 장바구니를 만든 사용자와 연결된 고객 속성을 확인합니다. 장바구니가 게스트 체크아웃을 통해 만들어진 경우 이 필드는 다음과 같습니다. `NULL` |
 | `entity_id` (PK) | 테이블에 대한 고유 식별자로, Commerce 인스턴스 내의 다른 테이블에 대한 조인에 일반적으로 사용됩니다. |

@@ -2,16 +2,16 @@
 title: 대시보드 전체 필터링
 description: 특정 대시보드에 있는 모든 보고서를 일괄 편집하는 방법을 알아봅니다.
 exl-id: 379d0027-8a7a-4062-a66a-4f06c37b806c
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
 
 # 대시보드 전체 필터링
 
-대시보드 전체 필터링을 사용하면 특정 대시보드에 있는 모든 보고서를 일괄 편집할 수 있습니다. 서로 다른 기간 동안 또는 서로 다른 스토어에 대해 동일한 분석을 빠르게 볼 수 있습니다. 점포별로 전년도, 월, 주의 실적을 쉽게 비교할 수 있다. 또한 새로 시작한 캠페인을 수용하도록 전체 대시보드를 업데이트할 수 있습니다.
+대시보드 전체 필터링을 사용하면 특정 대시보드에 있는 모든 보고서를 일괄 편집할 수 있습니다. 서로 다른 기간 동안 또는 서로 다른 스토어에 대해 동일한 분석을 빠르게 볼 수 있습니다. 점포별로 전년도, 월, 주의 실적을 쉽게 비교할 수 있다. 새로 시작한 캠페인을 수용하도록 전체 대시보드를 업데이트할 수 있습니다.
 
 ## 날짜 필터
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->저장소 필터가 전체에 대해 활성화되거나 비활성화됩니다. [!DNL MBI] 계정입니다. 대시보드에 필터의 영향을 받지 않는 보고서(예: Commerce data()에 작성되지 않은 보고서)가 포함되어 있는 경우 스토어 필터가 적용되면 해당 보고서가 업데이트되지 않습니다. 다음을 수행할 수 있습니다. [연락처 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 저장소 선택에 따라 보고서를 업데이트해야 하거나 계정 저장소 필터가 잘못 비활성화된 경우.
+>저장소 필터가 전체에 대해 활성화되거나 비활성화됩니다. [!DNL Commerce Intelligence] 계정입니다. 대시보드에 필터의 영향을 받지 않는 보고서(예: 에 빌드되지 않은 보고서)가 포함된 경우 [!DNL Adobe Commerce] data), 저장소 필터가 적용될 때 이러한 보고서가 업데이트되지 않습니다. 다음을 수행할 수 있습니다. [연락처 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 저장소 선택에 따라 보고서를 업데이트해야 하거나 계정 저장소 필터가 잘못 비활성화된 경우.
 
 다음에서 스토어를 선택할 때: `Store Filter`, 대시보드 사이를 이동할 때 필터가 선택 사항을 유지합니다. 선택을 유지하면 선택하기 전까지 선택한 저장소의 데이터를 어디에서나 볼 수 있습니다 `All Stores`.
 

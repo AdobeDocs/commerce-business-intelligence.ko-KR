@@ -2,7 +2,7 @@
 title: 반복 확률 감소 및 이탈 분석
 description: 주문 간 시간 경과 방법과 고객의 이탈 예상 시기를 알아보고 이해합니다.
 exl-id: ea26052d-ac74-43b7-a4a6-977800d4c719
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 0%
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 ## 오늘의 예
 
-일반적인 전자 상거래 비즈니스에 대한 반복 확률 감소에 대해 살펴보십시오.
+전형적인 전자 상거래 사업의 반복적인 확률 감소를 보라.
 
 ![주문 이후 주어진 개월 동안 초기 반복 주문 확률 반복 주문 확률.](../../assets/Order_probability_reports.png)
 
@@ -76,7 +76,7 @@ ht-degree: 0%
 
 두 개 이상의 제품을 제공하는 경우 특정 제품을 구매하는 고객이 다른 고객과 비교하여 시간이 지남에 따라 어떻게 다르게 동작하는지 궁금할 수 있습니다. 자세히 알아보시겠습니까? 이 자습서를 통해 구입한 특정 제품을 기반으로 고객 집단의 라이프타임 구매 행동을 살펴볼 수 있습니다.
 
-이 모범 사례는에서 제공합니다. [!DNL MBI] DAS(데이터 분석 서비스). [지원 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 추가 정보.
+이 모범 사례는에서 제공합니다. [!DNL Adobe Commerce Intelligence] DAS(데이터 분석 서비스). [지원 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 추가 정보.
 
 ### 관련 항목
 

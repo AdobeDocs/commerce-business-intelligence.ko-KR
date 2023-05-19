@@ -2,7 +2,7 @@
 title: eCommerce 데이터 서식 지정 및 가져오기
 description: eCommerce 데이터를 업로드하는 데 사용할 이상적인 데이터 형식에 대해 알아봅니다.
 exl-id: 7b910f78-9a5a-4d5d-a8b7-1b0b76304afe
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 데이터 서식 지정 및 가져오기
 
-현재 다음에서 지원하지 않는 통합을 사용하는 경우: [!DNL MBI], 여전히 다음을 사용할 수 있습니다 [파일 업로드 기능](using-file-uploader.md) 을 클릭하여 데이터를 Data Warehouse으로 가져옵니다. 이 문서에서는 eCommerce 데이터를 업로드하는 데 사용되는 이상적인 데이터 형식을 다룹니다.
+현재 다음에서 지원하지 않는 통합을 사용하는 경우: [!DNL Adobe Commerce Intelligence], 여전히 다음을 사용할 수 있습니다 [파일 업로드 기능](using-file-uploader.md) 을 클릭하여 데이터를 Data Warehouse으로 가져옵니다. 이 주제에서는 전자 상거래 데이터를 업로드하는 데 사용할 이상적인 데이터 형식을 다룹니다.
 
 ## `Orders` 표
 

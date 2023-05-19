@@ -2,9 +2,9 @@
 title: 쿠폰 코드 분석(기본)
 description: 귀하의 사업의 쿠폰 성과에 대해 알아보는 것은 주문을 세분화하고 고객 습관을 더 잘 이해하는 흥미로운 방법입니다.
 exl-id: 0d486259-b210-42ae-8f79-cd91cc15c2c2
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 귀하의 비즈니스의 쿠폰 성과를 이해하는 것은 주문을 세분화하고 고객 습관을 더 잘 이해할 수있는 흥미로운 방법입니다.
 
-이 문서에서는 쿠폰을 획득한 고객이 어떻게 성과를 내는지 이해하고, 트렌드를 확인하고, 개별 쿠폰 코드 사용을 추적하는 데 필요한 이러한 분석을 만드는 데 필요한 단계를 설명합니다.
+이 항목에서는 쿠폰을 구입한 고객이 수행하는 방법을 이해하고, 추세를 확인하고, 개별 쿠폰 코드 사용을 추적하는 데 필요한 이러한 분석을 만드는 데 필요한 단계를 설명합니다.
 
 ![](../../assets/coupon_analysis_dash_720.png)<!--{: width="807" height="471"}-->
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 먼저, 쿠폰 코드를 추적하는 방법에 대한 참고 사항. 고객이 주문에 쿠폰을 적용하면 다음 세 가지 상황이 발생합니다.
 
-* 할인은 다음에 반영됩니다. `base_grand_total` 금액(본인) `Revenue` MBI의 지표)
+* 할인은 다음에 반영됩니다. `base_grand_total` 금액(본인) `Revenue` Commerce Intelligence의 지표)
 * 쿠폰 코드는 `coupon_code` 필드. 이 필드가 NULL(비어 있음)이면 주문에 연결된 쿠폰이 없습니다.
 * 할인된 금액은에 저장됩니다. `base_discount_amount`. 구성에 따라 이 값이 음수 또는 양수로 표시될 수 있습니다.
 

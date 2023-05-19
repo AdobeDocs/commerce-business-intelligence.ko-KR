@@ -2,9 +2,9 @@
 title: 빌드[!DNL Google ECommerce]치수
 description: 전자 상거래 데이터를 주문 및 고객 데이터와 연결하는 차원을 빌드하는 방법을 알아봅니다.
 exl-id: f8a557ae-01d7-4886-8a1c-c0f245c7bc49
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '983'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 0%
 >
 >필요 [관리자 권한](../../administrator/user-management/user-management.md).
 
-이제 완료되었으니 [연결 중[!DNL Google ECommerce]account](../../data-analyst/importing-data/integrations/google-ecommerce.md), 의 해당 데이터로 무엇을 할 수 있습니까? [!DNL MBI]? 이 문서에서는 eCommerce 데이터를 주문 및 고객 데이터와 연결하는 차원을 빌드하는 방법을 안내합니다.
+이제 완료되었으니 [연결 중[!DNL Google ECommerce] account](../../data-analyst/importing-data/integrations/google-ecommerce.md), 의 해당 데이터로 무엇을 할 수 있습니까? [!DNL Commerce Intelligence]? 이 항목에서는 전자 상거래 데이터를 주문 및 고객 데이터와 연결하는 차원을 빌드하는 방법을 설명합니다.
 
-다루는 차원은 다음과 같은 분석을 빌드할 수 있는 기능을 제공합니다 [마케팅 채널 및 캠페인에 대한 중요한 질문에 답변합니다.](../../data-analyst/analysis/most-value-source-channel.md). 각 소스에서 발생하는 매출의 비율은 얼마입니까? facebook에서 인수한 고객의 라이프타임 값을 의 값과 어떻게 비교합니까? [!DNL Google]?
+다루는 차원은 다음과 같은 분석을 빌드할 수 있는 기능을 제공합니다 [마케팅 채널 및 캠페인에 대한 중요한 질문에 답변합니다.](../../data-analyst/analysis/most-value-source-channel.md). 각 소스에서 발생하는 매출의 비율은 얼마입니까? 라이프타임 값 [!DNL Facebook] 후천적 고객은 다음에서 후천적 고객과 비교합니다. [!DNL Google]?
 
 ## 사전 요구 사항 및 개요
 
-이 문서에서 차원을 만들려면 [!DNL Google ECommerce] 테이블, `orders` 테이블 및 `customers` 테이블. 그 테이블들은 [Data Warehouse에 동기화됨](../../data-analyst/data-warehouse-mgr/tour-dwm.md) 차원을 빌드하기 전에. 동기화된 표는 `Synced Tables` 의 섹션 `Data Warehouse Manager`.
+이 항목에서 차원을 생성하려면 [!DNL Google ECommerce] 테이블, `orders` 테이블 및 `customers` 테이블. 그 테이블들은 [Data Warehouse에 동기화됨](../../data-analyst/data-warehouse-mgr/tour-dwm.md) 차원을 빌드하기 전에. 동기화된 표는 `Synced Tables` 의 섹션 `Data Warehouse Manager`.
 
 다음은 새로 고침이 필요한 경우 테이블과 열을 동기화하는 방법을 간략하게 살펴보겠습니다.
 
@@ -121,12 +121,12 @@ ht-degree: 0%
 
 차원 만들기를 완료했습니다. 즉, 이제 다양한 채널 및 캠페인의 성과를 추적하는 강력한 분석을 만들 수 있습니다. 다음 사항을 기억하십시오. **새 열은 다음 업데이트가 완료될 때까지 사용할 수 없습니다.**.
 
-이 문서에서는 더 인기 있는 차원 중 일부를 다루지만, 무한합니다. 자신만의 차원을 만들어 보거나 다른 옵션을 탐색하는 데 도움이 필요하면 언제든지 알려 주십시오. 
+이 주제에서는 더 인기 있는 차원 중 일부를 다루지만, 무한합니다. 자신만의 차원을 만들어 보거나 다른 옵션을 탐색하는 데 도움이 필요하면 언제든지 알려 주십시오. 
 
-### 꼼짝도 못하겠어! 뭐가 다르죠? {#stuck}
+### 추가 참고 사항
 
-**`Orders`표 #1:** 생성 시 `Order's [!DNL Google Analytics]` 중간 `campaign` 차원, 차이점은 단계 12에서 선택한 열입니다. 이 예에서 열은 `Source`.
+**`Orders`테이블 #1**: 를 만들 때 `Order's [!DNL Google Analytics]` 중간 `campaign` 차원, 차이점은 단계 12에서 선택한 열입니다. 이 예에서 열은 `Source`.
 
-**`Customers`표:** 생성 시 `Customer's first order's [!DNL Google Analytics]` 중간 `campaign` 차원, 차이점은 5단계에서 선택한 열입니다. 이 예에서 열은 `Order's [!DNL Google Analytics]` 소스.
+**`Customers`표**: 를 만들 때 `Customer's first order's [!DNL Google Analytics]` 중간 `campaign` 차원, 차이점은 5단계에서 선택한 열입니다. 이 예에서 열은 `Order's [!DNL Google Analytics]` 소스.
 
-**`Orders`표 #2:** 가입 시 `Customer's first order's [!DNL Google Analytics]` 중간 `campaign` 열 대상 `orders` 표에서 차이점은 5단계에서 선택한 열입니다. 이 예에서 열은 `Customer's first order's [!DNL Google Analytics]` 소스.
+**`Orders`테이블 #2**: 가입 시 `Customer's first order's [!DNL Google Analytics]` 중간 `campaign` 열 대상 `orders` 표에서 차이점은 5단계에서 선택한 열입니다. 이 예에서 열은 `Customer's first order's [!DNL Google Analytics]` 소스.

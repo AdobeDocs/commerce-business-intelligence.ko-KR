@@ -2,22 +2,22 @@
 title: 엔티티 관계 다이어그램
 description: 소수의 공통 Commerce 데이터베이스 테이블 간의 관계를 시각화하는 데 도움이 되는 몇 가지 ER 다이어그램에 대해 알아봅니다.
 exl-id: de7d419f-efbe-4d0c-95a8-155a12aa93f3
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
 
 # 엔티티 관계 다이어그램
 
-(이)란? **[!UICONTROL entity relationship (ER) diagram]**? An `ER` 다이어그램은 데이터베이스 내의 테이블과 테이블의 상호 관계를 시각화하는 것입니다. 이 문서에는 소수의 일반 상거래 데이터베이스 테이블 간의 관계를 시각화하는 데 도움이 되는 몇 가지 ER 다이어그램이 포함되어 있습니다.
+(이)란? **[!UICONTROL entity relationship (ER) diagram]**? An [!UICONTROL ER] 다이어그램은 데이터베이스 내의 테이블과 테이블의 상호 관계를 시각화하는 것입니다. 이 주제에는 몇 가지가 포함되어 있습니다 [!UICONTROL ER] 몇 가지 일반적인 Adobe Commerce 데이터베이스 테이블 간의 관계를 시각화하는 데 도움이 되는 다이어그램입니다.
 
 >[!NOTE]
 >
->이 문서 전체에서 **가입**, **관계**, 및 **경로**. 이 단어는 모두 두 테이블이 연결되는 방식을 설명하는 데 사용됩니다.
+>이 항목 전체에서 다음 단어가 표시됩니다 **가입**, **관계**, 및 **경로**. 이 단어는 모두 두 테이블이 연결되는 방식을 설명하는 데 사용됩니다.
 
-## 코어 상거래 `ER` 다이어그램
+## 코어 상거래 [!UICONTROL ER] 다이어그램
 
 ![4_DB_Chart](../../assets/4_DB_Chart.png)
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 >
 >`customer\_entity.entity\_id` 다음과 같지 않음 `sales\_flat\_order.entity\_id`. 첫 번째는 로 생각할 수 있습니다. `customer\_id` 그리고 두 번째는 `order\_id.`
 
-다음 범위 내 [!DNL MBI], 이 두 테이블 간의 경로가 없는 경우 [경로 만들기](../data-warehouse-mgr/create-paths-calc-columns.md) Data Warehouse 탭 내에서 경로를 만들 준비가 되면 다음과 같이 정의됩니다.
+다음 범위 내 [!DNL Commerce Intelligence], 이 두 테이블 간의 경로가 없는 경우 [경로 만들기](../data-warehouse-mgr/create-paths-calc-columns.md) Data Warehouse 탭 내에서 경로를 만들 준비가 되면 다음과 같이 정의됩니다.
 
 ![](../../assets/SFO___CE_path.png)
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 한 주문에 여러 항목이 포함될 수 있습니다. 이 두 테이블 간의 관계는 다음과 같습니다 `sales\_flat\_order.entity\_id = sales\_flat\_order\_item.order\_id`.
 
-다음 범위 내 [!DNL MBI], 이 두 테이블 간의 경로가 없는 경우 [경로 만들기](../data-warehouse-mgr/create-paths-calc-columns.md) Data Warehouse 탭 내에서 경로를 만들 준비가 되면 다음과 같이 정의됩니다.
+다음 범위 내 [!DNL Commerce Intelligence], 이 두 테이블 간의 경로가 없는 경우 [경로 만들기](../data-warehouse-mgr/create-paths-calc-columns.md) Data Warehouse 탭에서 클릭합니다. 경로를 만들 준비가 되면 아래에 표시된 대로 경로를 정의합니다.
 
 ![](../../assets/SFOI___SFO_path.png)
 
@@ -55,6 +55,6 @@ ht-degree: 0%
 
 하나의 제품은 여러 가지 물건을 구매할 수 있습니다. 이 두 테이블 간의 관계는 다음과 같습니다 `catalog\_product\_entity.entity\_id = sales\_flat\_order\_item.product`.
 
-다음 범위 내 [!DNL MBI], 이 두 테이블 간의 경로가 없는 경우 [경로 만들기](../data-warehouse-mgr/create-paths-calc-columns.md) Data Warehouse 탭 내에서 경로를 만들 준비가 되면 다음과 같이 정의됩니다.
+다음 범위 내 [!DNL Commerce Intelligence], 이 두 테이블 간의 경로가 없는 경우 [경로 만들기](../data-warehouse-mgr/create-paths-calc-columns.md) Data Warehouse 탭 내에서 경로를 만들 준비가 되면 아래에 표시된 대로 경로를 정의합니다.
 
 ![](../../assets/SFOI___CPE_path.png)

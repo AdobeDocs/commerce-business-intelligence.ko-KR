@@ -2,7 +2,7 @@
 title: 반복 주문 확률 보고서
 description: 반복 주문 확률 보고서를 학습하고 이해합니다.
 exl-id: 2c88b85a-7320-44ca-87a5-5b91250348ea
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ## 은(는) 언제 입니까? `Incremental Event Probability` 관점을 사용할 수 있습니까?
 
-다음 `incremental event probability` 관점은 필터가 모든 주문에 대해 동일한 차원을 사용하는 경우(예: `gender`, 사용자의 `age` 또는 사용자의 `source`)
+다음 `incremental event probability` 관점은 필터가 모든 주문에 대해 동일한 차원을 사용하는 경우(예: `gender`, 사용자의 `age` 또는 사용자의 `source`).
 
 이는 이 관점이 이라는 차원에 의존하기 때문입니다 `User's order number` 세그먼테이션의 경우, 사용자의 구매(예: John의 첫 번째, 두 번째 및 세 번째 주문)에 번호를 매깁니다.
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 경우에 따라 다음을 실행할 수 있습니다. `order-specific` 차원 대상: `user-specific` 에서 필터로 추가할 차원 `Repeat Order Probability` 차트. 이러한 경우 사용자의 1차 주문 또는 최근 주문의 주문 속성(예: 사용자의 1차 지역 이름)을 반환합니다.
 
-이러한 새 차원을 만들려면 [연락처 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+이러한 새 차원을 만들려면 [연락처 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## 다른 속성을 가진 주문 반복 확률 비교
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ### 예:
 
-|  |  |
+| 범주 | 값 |
 |---|---|
 | 라이프타임 동안 1회 구입한 고객 수 | `90` |
 | 일생 동안 2회 구입한 고객 수 | `30` |

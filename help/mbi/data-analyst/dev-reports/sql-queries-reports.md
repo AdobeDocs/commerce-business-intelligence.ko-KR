@@ -1,19 +1,19 @@
 ---
-title: SQL 쿼리 번역 [!DNL MBI] 보고서
-description: 에서 사용하는 계산된 열, 지표로 SQL 쿼리를 변환하는 방법에 대해 알아봅니다. [!DNL MBI].
+title: SQL 쿼리를 Commerce Intelligence 보고서로 번역
+description: Commerce Intelligence에서 사용하는 계산된 열, 지표로 SQL 쿼리를 변환하는 방법에 대해 알아봅니다.
 exl-id: b3e3905f-6952-4f15-a582-bf892a971fae
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 0%
 
 ---
 
-# MBI에서 SQL 쿼리 번역
+# Commerce Intelligence에서 SQL 쿼리 번역
 
-SQL 쿼리를 [계산된 열](../data-warehouse-mgr/creating-calculated-columns.md), [지표](../../data-user/reports/ess-manage-data-metrics.md), 및 [보고서](../../tutorials/using-visual-report-builder.md) 다음에서 을 사용합니다. [!DNL MBI]? SQL 사용자가 많은 경우 SQL이 변환되는 방식을 이해합니다. [!DNL MBI] 을(를) 통해 보다 스마트한 작업 수행 [Data Warehouse 관리자](../data-warehouse-mgr/tour-dwm.md) 및 를 최대한 활용하십시오. [!DNL MBI] 플랫폼.
+SQL 쿼리를 [계산된 열](../data-warehouse-mgr/creating-calculated-columns.md), [지표](../../data-user/reports/ess-manage-data-metrics.md), 및 [보고서](../../tutorials/using-visual-report-builder.md) 다음에서 을 사용합니다. [!DNL Commerce Intelligence]? SQL 사용자가 많은 경우 SQL이 변환되는 방식을 이해합니다. [!DNL Commerce Intelligence] 을(를) 통해 보다 스마트한 작업 수행 [Data Warehouse 관리자](../data-warehouse-mgr/tour-dwm.md) 및 를 최대한 활용하십시오. [!DNL Commerce Intelligence] 플랫폼.
 
-이 문서의 끝에 **변환 행렬** SQL 쿼리 절 및 [!DNL MBI] 요소.
+이 항목의 끝에 **변환 행렬** SQL 쿼리 절 및 [!DNL Commerce Intelligence] 요소.
 
 일반 쿼리를 보고 시작하십시오.
 
@@ -32,7 +32,7 @@ SQL 쿼리를 [계산된 열](../data-warehouse-mgr/creating-calculated-columns.
 
 ## 집계 함수
 
-집계 함수(예: `count`, `sum`, `average`, `max`, `min`쿼리에서 의 형식을 가져옵니다. **지표 집계** 또는 **열 집계** 위치: [!DNL MBI]. 구별 요인은 응집을 수행하기 위해 가입이 필요한지 여부이다.
+집계 함수(예: `count`, `sum`, `average`, `max`, `min`쿼리에서 의 형식을 가져옵니다. **지표 집계** 또는 **열 집계** 위치: [!DNL Commerce Intelligence]. 구별 요인은 응집을 수행하기 위해 가입이 필요한지 여부이다.
 
 위의 각 예제를 참조하십시오.
 
@@ -40,7 +40,7 @@ SQL 쿼리를 [계산된 열](../data-warehouse-mgr/creating-calculated-columns.
 
 집계할 때 지표가 필요합니다 `within a single table`. 예를 들어 `SUM(b)` 위의 쿼리의 집계 함수는 열 합계를 나타내는 지표로 표시될 가능성이 높습니다 `B`. 
 
-이(가) `Total Revenue` 지표는에서 정의할 수 있습니다. [!DNL MBI]. 번역할 아래 쿼리를 참조하십시오.
+이(가) `Total Revenue` 지표는에서 정의할 수 있습니다. [!DNL Commerce Intelligence]. 번역할 아래 쿼리를 참조하십시오.
 
 |  |  |
 |--- |--- |
@@ -51,7 +51,7 @@ SQL 쿼리를 [계산된 열](../data-warehouse-mgr/creating-calculated-columns.
 | `email NOT LIKE '%@magento.com'` | 지표 `filter` |
 | `AND created_at < X`<br><br>`AND created_at >= Y` | 지표 `timestamp` (및 보고 `time range`) |
 
-을 클릭하여 지표 빌더로 이동 **[!UICONTROL Manage Data** > **&#x200B;지표&#x200B;**> **새 지표 만들기]**, 먼저 적절한 을(를) 선택해야 합니다. `source` 테이블, 이 경우 `orders` 테이블. 그런 다음 지표가 아래와 같이 설정됩니다.
+을 클릭하여 지표 빌더로 이동합니다. **[!UICONTROL Manage Data** > **&#x200B;지표&#x200B;**> **새 지표 만들기]**, 먼저 적절한 을(를) 선택해야 합니다. `source` 테이블, 이 경우 `orders` 테이블. 그런 다음 지표가 아래와 같이 설정됩니다.
 
 ![지표 집계](../../assets/Metric_aggregation.png)
 
@@ -71,7 +71,7 @@ SQL 쿼리를 [계산된 열](../data-warehouse-mgr/creating-calculated-columns.
 | `ON c.customer_id = o.customer_id` | 경로 |
 | `WHERE o.status = 'success'` | 집계 필터 |
 
-에서 설정 중 [!DNL MBI] 를 사용하려면 Data Warehouse 관리자 를 사용하여 `orders` 및 `customers` 테이블을 만든 다음 라는 열을 만듭니다. `Customer LTV` 고객 테이블에서.
+에서 설정 중 [!DNL Commerce Intelligence] 를 사용하려면 Data Warehouse 관리자 를 사용하여 `orders` 및 `customers` 테이블을 만든 다음 라는 열을 만듭니다. `Customer LTV` 고객 테이블에서.
 
 다음 사이에 새 경로를 설정하는 방법 살펴보기 `customers` 및 `orders`. 최종 목표는 의 새 집계된 열을 만드는 것입니다. `customers` 테이블을 참조하려면 먼저 `customers` Data Warehouse에서 테이블을 만든 다음 **[!UICONTROL Create a Column** > **&#x200B;정의 선택&#x200B;**> **합계]**.
 
@@ -83,9 +83,9 @@ SQL 쿼리를 [계산된 열](../data-warehouse-mgr/creating-calculated-columns.
 
 >[!NOTE]
 >
->위치 [!DNL MBI], a *경로* 와 같음 `Join` SQL에서.
+>위치 [!DNL Commerce Intelligence], a `path` 와 같음 `Join` SQL에서.
 
-경로가 저장되면 다음을 만들도록 모두 설정됩니다. `Customer LTV` 열! 아래를 살펴보십시오.
+경로가 저장되면 다음을 만들 수 있습니다 `Customer LTV` 열! 아래를 참조하십시오.
 
 ![](../../assets/Customer_LTV.gif)
 
@@ -95,11 +95,11 @@ SQL 쿼리를 [계산된 열](../data-warehouse-mgr/creating-calculated-columns.
 >
 >후자의 경우 새 계산된 열을 작성할 때마다 다음을 수행해야 합니다 [기존 지표에 차원 추가](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 를 로 사용하기 전에 `filter` 또는 `group by`.
 
-다음을 참조하십시오 [계산된 열 만들기](../data-warehouse-mgr/creating-calculated-columns.md) Data Warehouse 관리자와 함께 사용할 수 있습니다.
+다음을 참조하십시오 [계산된 열 만들기](../data-warehouse-mgr/creating-calculated-columns.md) Data Warehouse 관리자 사용.
 
 ## `Group By` 절
 
-`Group By` 쿼리의 함수는에 자주 표시됩니다. [!DNL MBI] 시각적 보고서를 세그먼트화하거나 필터링하는 데 사용되는 열입니다. 예를 들어 을 다시 방문하겠습니다. `Total Revenue` 이전에 탐색한 쿼리이지만 이번에는 다음을 기준으로 매출을 세그먼트화합니다. `coupon\_code` 어떤 쿠폰이 가장 많은 매출을 창출하고 있는지 더 잘 이해하려면.
+`Group By` 쿼리의 함수는에 자주 표시됩니다. [!DNL Commerce Intelligence] 시각적 보고서를 세그먼트화하거나 필터링하는 데 사용되는 열입니다. 예를 들어 을 다시 방문하겠습니다. `Total Revenue` 이전에 탐색한 쿼리이지만 이번에는 다음을 기준으로 매출을 세그먼트화합니다. `coupon\_code` 어떤 쿠폰이 가장 많은 매출을 창출하고 있는지 더 잘 이해하려면.
 
 아래 쿼리로 시작하십시오.
 
@@ -149,10 +149,10 @@ SQL 쿼리를 [계산된 열](../data-warehouse-mgr/creating-calculated-columns.
 
 ## 요약
 
-SQL 사용자가 많은 경우 쿼리가 번역되는 방식을 고려하십시오. [!DNL MBI] 를 사용하여 계산된 열, 지표 및 보고서를 작성할 수 있습니다.
+SQL 사용자가 많은 경우 쿼리가 번역되는 방식을 고려하십시오. [!DNL Commerce Intelligence] 를 사용하여 계산된 열, 지표 및 보고서를 작성할 수 있습니다.
 
-빠른 참조를 위해 아래 표를 확인하십시오. SQL 절의 동등한 항목이 표시됩니다. [!DNL MBI] 요소 및 쿼리에서 사용하는 방법에 따라 두 개 이상의 요소에 매핑하는 방법을 설명합니다.
+빠른 참조를 위해 아래 표를 확인하십시오. SQL 절의 동등한 항목이 표시됩니다. [!DNL Commerce Intelligence] 요소 및 쿼리에서 사용하는 방법에 따라 두 개 이상의 요소에 매핑하는 방법을 설명합니다.
 
-## MBI 요소
+## Commerce Intelligence 요소
 
 |**`SQL Clause`**|**`Metric`**|**`Filter`**|**`Report group by`**|**`Report time frame`**|**`Path`**|**`Calculated column inputs`**|**`Source table`**| |—|—|—|—|—|—|—| |`SELECT`|X|-|X|-|X|-| |`FROM`|-|-|-|-|-|X| |`WHERE`|-|-|-|-|-| |`WHERE` (시간 요소 포함)|-|-|X|-|-|-| |`JOIN...ON`|-|X|-|X|-| |`GROUP BY`|-|X|-|-|-|

@@ -2,22 +2,22 @@
 title: 웹 사이트 활동 및 고객 전환율 분석
 description: 페이지 보기 수, 세션 및 사용자를 포함하여 웹 사이트 활동 및 시간에 따른 고객 전환율을 추적하는 대시보드를 설정하는 방법에 대해 알아봅니다.
 exl-id: 2b57d5b3-3bbf-4ec9-86a6-9fa850c1c459
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '744'
 ht-degree: 0%
 
 ---
 
 # 웹 사이트 활동 분석
 
-[!DNL MBI] 를 사용하면 광고 비용 데이터를 나머지 데이터와 쉽게 통합할 수 있습니다. 이를 통해 웹 사이트 활동을 이해할 수 있을 뿐만 아니라, 등록된 사용자가 되거나 구매하는 웹 사이트 방문자의 비율을 도출할 수 있습니다.
+[!DNL Adobe Commerce Intelligence] 를 사용하면 광고 비용 데이터를 나머지 데이터와 쉽게 통합할 수 있습니다. 이를 통해 웹 사이트 활동을 이해할 수 있을 뿐만 아니라, 등록된 사용자가 되거나 구매하는 웹 사이트 방문자의 비율을 도출할 수 있습니다.
 
-이 문서에서는 페이지 보기 수, 세션 및 사용자를 포함하여 웹 사이트 활동 및 시간에 따른 고객 전환율을 추적하는 대시보드를 설정하는 방법을 보여 줍니다.
+이 항목에서는 페이지 보기 수, 세션 및 사용자를 포함하여 웹 사이트 활동 및 시간에 따른 고객 전환율을 추적하는 대시보드를 설정하는 방법을 보여 줍니다.
 
 ## 전제 조건
 
-**광고 비용 데이터 가져오기** - 연결 [!DNL [Google AdWords]](../importing-data/integrations/google-adwords.md) 끝 [!DNL MBI] - 이렇게 하면 [!DNL AdWords] MBI에서 시간을 보내십시오.
+**광고 비용 데이터 가져오기** - 연결 [!DNL [Google AdWords]](../importing-data/integrations/google-adwords.md) 끝 [!DNL Adobe Commerce Intelligence] - 이렇게 하면 [!DNL AdWords] commerce Intelligence에서 지출.
 
 **사용자 획득 채널 데이터 추적** - 을 묶습니다. [!DNL Google AdWords] 데이터베이스의 특정 주문에 대한 데이터입니다. [사용자 획득 추적](../analysis/google-track-user-acq.md) 경유 [!DNL Google Analytics E-commerce]. 이렇게 하면 각 주문을 utm 소스 및 미디어와 연결할 수 있습니다.
 
@@ -103,4 +103,4 @@ ht-degree: 0%
 
 이제 웹 트래픽 및 전환율의 데이터에 액세스할 수 있으므로 이를 활용하여 사이트로 트래픽을 유도하는 데 가장 적합한 사이트를 선정할 수 있습니다. 또는 라이프타임 값이 높은 고객을 확보하는 데 가장 효과적인 캠페인은 무엇입니까?
 
-광고 지출과 마케팅 전략을 조정할 때 의 결과를 계속 추적할 수 있습니다. [!DNL MBI], 이 대시보드를 반복하여 회사의 변화하는 우선 순위를 충족합니다.
+광고 지출과 마케팅 전략을 조정할 때 의 결과를 계속 추적할 수 있습니다. [!DNL Commerce Intelligence], 이 대시보드를 반복하여 회사의 변화하는 우선 순위를 충족합니다.

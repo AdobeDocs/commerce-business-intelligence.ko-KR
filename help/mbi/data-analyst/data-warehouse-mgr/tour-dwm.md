@@ -2,9 +2,9 @@
 title: Data Warehouse 관리자
 description: 테이블 및 열 동기화 설정을 관리하고, 테이블의 스키마를 드릴다운하며, 보고서에 사용할 계산된 열을 만드는 방법에 대해 알아봅니다.
 exl-id: b9577919-0db0-47f1-a426-1abe48443ac0
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: c4094e780f83255846520d18f4d0806b1dd9a9ef
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1240'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 >
 >필요 [관리자 권한](../../administrator/user-management/user-management.md)
 
-Data Warehouse 관리자, 클릭 **[!UICONTROL Manage Data > Data Warehouse]** 사이드바에서 의 포털입니다. [!DNL MBI] Data Warehouse. Data Warehouse 관리자를 사용하여 테이블 및 열 동기화 설정을 관리하고, 테이블의 스키마를 드릴다운하며, 보고서에 사용할 계산된 열을 만들 수 있습니다.
+Data Warehouse 관리자, 클릭 **[!UICONTROL Manage Data > Data Warehouse]**: 의 포털입니다. [!DNL Adobe Commerce Intelligence] Data Warehouse. Data Warehouse 관리자를 사용하여 테이블 및 열 동기화 설정을 관리하고, 테이블의 스키마를 드릴다운하며, 보고서에 사용할 계산된 열을 만들 수 있습니다.
 
-이 문서에서는 다음 사항을 다룹니다.
+이 주제에서는 다음 주제를 다룹니다.
 
 * [학습 방법](#learning)
 * [표 및 열 동기화](#syncing)
@@ -39,7 +39,7 @@ Data Warehouse 관리자, 클릭 **[!UICONTROL Manage Data > Data Warehouse]** �
 찾고 있는 테이블이 `All Tables` 목록이요? 다음과 같은 몇 가지 가능한 이유가 있습니다.
 
 * 데이터 소스가 아직 추가되지 않았습니다.
-* 데이터 소스는 데이터베이스이고 [!DNL MBI] 만든 사용자에게 액세스 권한이 없습니다. 이 경우 사용자 또는 데이터베이스 관리자가 액세스 권한을 부여해야 합니다.
+* 데이터 소스는 데이터베이스이고 [!DNL Commerce Intelligence] 만든 사용자에게 액세스 권한이 없습니다. 이 경우 사용자 또는 데이터베이스 관리자가 액세스 권한을 부여해야 합니다.
 * 데이터 소스 또는 테이블이 최근에 추가되었으며 아직 동기화되지 않았습니다
 
 ## 표 및 열 동기화 {#syncing}
@@ -61,7 +61,7 @@ Data Warehouse 관리자는 데이터 소스를 쉽게 보고 관리할 수 있�
    데이터베이스에서 직접 가져온 테이블을 동기화하는 경우 다음과 같을 수 있습니다. `Primary Keys` 은(는) 표시되지 않을 수 있습니다. 이 경우 데이터베이스 관리자에게 문의하여 기본 키를 테이블에 추가하도록 요청하십시오.
 1. 완료되면 다음을 클릭합니다. ![단추](../../assets/button.png) 단추를 클릭합니다.
 
-A *성공!* 메시지가 나타나고 상태가 (으)로 변경됨 `Pending` 을 선택합니다. 다음 전체 업데이트가 완료되면 새로 동기화된 테이블 및 열을 보고서에서 사용할 수 있습니다. 새로 설정할 수도 있습니다 [복제 메서드](./cfg-replication-methods.md) 초기 동기화 후.
+A *성공!* 메시지가 표시되고 상태가 다음으로 변경됩니다. `Pending` 을 선택합니다. 다음 전체 업데이트가 완료되면 새로 동기화된 테이블 및 열을 보고서에서 사용할 수 있습니다. 새로 설정할 수도 있습니다 [복제 메서드](./cfg-replication-methods.md) 초기 동기화 후.
 
 전체 프로세스를 간략하게 살펴보겠습니다.
 
@@ -119,6 +119,6 @@ Data Warehouse에 동기화할 테이블 및 열을 선택할 수 있는 것처�
 
 ## 요약
 
-이 튜토리얼은 많은 내용을 다룹니다. 이제 데이터베이스의 정의, 데이터 구성 방법, 테이블의 상호 관계 및 Data Warehouse 관리자를 사용하여 수행할 수 있는 작업에 대해 확실히 이해할 수 있어야 합니다.
+이 기사는 많은 자료를 다루었다. 이제 데이터베이스의 정의, 데이터 구성 방법, 테이블의 상호 관계 및 Data Warehouse 관리자를 사용하여 수행할 수 있는 작업에 대해 확실히 이해할 수 있어야 합니다.
 
-훌륭합니다! 다음의 방법으로 새로운 지식을 테스트하십시오. [계산된 열 만들기](../data-warehouse-mgr/creating-calculated-columns.md) 또는 [몇 가지 흥미로운 보고서 만들기](../../tutorials/using-visual-report-builder.md).
+다음 방법으로 지식을 테스트하십시오. [계산된 열 만들기](../data-warehouse-mgr/creating-calculated-columns.md) 또는 [몇 가지 흥미로운 보고서 만들기](../../tutorials/using-visual-report-builder.md).

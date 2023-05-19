@@ -1,19 +1,19 @@
 ---
 title: 일반 상거래 테이블
-description: 다음과 같은 몇 가지 일반적인 표에 대해 알아봅니다. [!DNL MBI] 고객은 를 사용합니다.
+description: 다음과 같은 몇 가지 일반적인 표에 대해 알아봅니다. [!DNL Commerce Intelligence] 고객은 를 사용합니다.
 exl-id: 8b316130-55c6-4771-ae6e-97ac605fc6cc
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
 
 # 일반 상거래 테이블
 
-상거래 인스턴스를 처음 연결하는 시기 [[!DNL MBI]](../importing-data/integrations/magento.md), [!DNL MBI] 는 초기 대시보드 및 보고서 세트를 구성하기 위해 일부 상거래 테이블(일반적으로 4~6개 테이블)의 데이터를 자동으로 복제합니다. 시작점은 훌륭하지만 대부분의 스토어 인스턴스는 수백 개의 추가 테이블을 생성하지 않더라도 수십 개의 테이블을 생성하여 비즈니스 성능에 대한 중요한 통찰력을 제공할 수 있습니다.
+을(를) 처음 연결할 때 [!DNL Adobe Commerce] 인스턴스 대상 [[!DNL Adobe Commerce Intelligence]](../importing-data/integrations/magento.md), [!DNL Commerce Intelligence] 는 일부 상거래 테이블(일반적으로 4~6개 테이블)의 데이터를 자동으로 복제하여 초기 대시보드 및 보고서 세트를 구성합니다. 시작점은 훌륭하지만 대부분의 스토어 인스턴스는 수백 개의 추가 테이블을 생성하지 않더라도 수십 개의 테이블을 생성하여 비즈니스 성능에 대한 중요한 통찰력을 제공할 수 있습니다.
 
-다음은 다음과 같은 몇 가지 일반적인 표의 목록입니다. [!DNL MBI] 고객은 를 사용합니다. 이후 [상거래 인스턴스를 MBI에 연결](../../data-analyst/importing-data/integrations/magento.md), 다음을 사용할 수 있습니다. [Data Warehouse 관리자](../../data-analyst/data-warehouse-mgr/tour-dwm.md) 관련 데이터 필드를 추적할 수 있습니다.
+다음은 다음과 같은 몇 가지 일반적인 표의 목록입니다. [!DNL Commerce Intelligence] 고객은 를 사용합니다. 이후 [상거래 인스턴스를 Commerce Intelligence에 연결](../../data-analyst/importing-data/integrations/magento.md), 다음을 사용할 수 있습니다. [Data Warehouse 관리자](../../data-analyst/data-warehouse-mgr/tour-dwm.md) 관련 데이터 필드를 추적할 수 있습니다.
 
 | 테이블 이름 | 설명 |
 |---|---|

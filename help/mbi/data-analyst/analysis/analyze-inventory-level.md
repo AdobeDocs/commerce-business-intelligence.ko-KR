@@ -2,16 +2,16 @@
 title: 재고 레벨 분석
 description: 재고 수준을 분석하는 방법에 대해 알아봅니다.
 exl-id: 620156c5-7bea-4b36-84c7-e0cb4b5cc8be
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
 
 # 재고 레벨 분석
 
-이 항목에서는 현재 인벤토리에 대한 통찰력을 제공하는 대시보드를 설정하는 방법을 보여 줍니다. 이 항목에는 기존 아키텍처 또는 새 아키텍처 모두에 대한 클라이언트에 대한 지침이 포함되어 있습니다. 이 없는 경우 기존 아키텍처를 사용합니다. **[!UICONTROL Data Warehouse Views]** 옵션 아래에 있는 **[!UICONTROL Manage Data]** 메뉴)를 참조하십시오. 기존 아키텍처를 사용하는 경우 [새 지원 요청](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 제목 포함 **[!UICONTROL INVENTORY ANALYSIS]** 의 지정된 섹션에 도달하면 _계산된 열_ 아래 지침.
+이 항목에서는 현재 인벤토리에 대한 통찰력을 제공하고 기존 아키텍처 또는 새 아키텍처 모두의 클라이언트에 대한 지침을 포함하는 대시보드를 설정하는 방법을 보여 줍니다. 이 없는 경우 기존 아키텍처를 사용합니다. **[!UICONTROL Data Warehouse Views]** 옵션 아래에 있는 **[!UICONTROL Manage Data]** 메뉴 아래의 제품에서 사용할 수 있습니다. 기존 아키텍처를 사용하는 경우 [새 지원 요청](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 제목 포함 **[!UICONTROL INVENTORY ANALYSIS]** 의 지정된 섹션에 도달하면 _계산된 열_ 아래 지침.
 
 ## 추적할 열:
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ## 계산된 열:
 
-### 새로운 아키텍처
++++ 새로운 아키텍처
 
 * **[!UICONTROL catalog_product_entity]** 표:
    * **`Product's most recent order date`**
@@ -118,7 +118,8 @@ ht-degree: 0%
 
 
 
-### 레거시 아키텍처
++++
++++ 레거시 아키텍처
 
 * **[!UICONTROL catalog_product_entity]** 표:
    * **`Product's most recent order date`**
@@ -189,6 +190,8 @@ ht-degree: 0%
 
 
 
++++
+
 ## 지표
 
 ### 지표 지침
@@ -240,4 +243,4 @@ ht-degree: 0%
       [!UICONTROL Chart type]: `Table`
 
 
-이 분석을 작성하는 동안 질문이 발생하거나 Professional Services 팀의 도움을 얻고자 하는 경우 [연락처 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+이 분석을 작성하는 동안 질문이 발생하거나 Professional Services 팀의 도움을 얻고자 하는 경우 [연락처 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

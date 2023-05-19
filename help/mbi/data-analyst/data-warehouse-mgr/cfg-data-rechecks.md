@@ -2,31 +2,32 @@
 title: 데이터 검사 구성
 description: 변경 가능한 값으로 데이터 열을 구성하는 방법에 대해 알아봅니다.
 exl-id: c31ef32e-ba5a-4902-b632-fbab551cc632
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
 
 # 데이터 검사 구성
 
-데이터베이스 테이블에는 변경 가능한 값이 있는 데이터 열이 있을 수 있습니다. 예를 들어, `orders`) 테이블에 라는 열이 있을 수 있습니다. `status`. 주문이 데이터베이스에 처음 기록되면 상태 열에 값이 포함될 수 있습니다 _보류 중_. 주문은에서 복제됩니다. [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) 함께 `pending` 값.
+데이터베이스 테이블에는 변경 가능한 값이 있는 데이터 열이 있을 수 있습니다. 예를 들어, `orders` 테이블 이름이 인 열이 있을 수 있습니다. `status`. 주문이 데이터베이스에 처음 기록되면 상태 열에 값이 포함될 수 있습니다 _보류 중_. 주문은에서 복제됩니다. [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) 함께 `pending` 값.
 
-하지만 주문 상태는 변경될 수 있습니다. 항상 `pending` 상태. 결국에는 다음과 같이 될 수 있습니다. `complete` 또는 `cancelled`. Data Warehouse이 이 변경 사항을 동기화하도록 하려면 열에 새 값을 다시 선택해야 합니다.
+항상 다음에 있지는 않지만 주문 상태는 변경될 수 있습니다. `pending` 상태. 결국에는 다음과 같이 될 수 있습니다. `complete` 또는 `cancelled`. Data Warehouse이 이 변경 사항을 동기화하도록 하려면 열에 새 값을 다시 선택해야 합니다.
 
 이것이 과 어떻게 일치합니까? [복제 메서드](../data-warehouse-mgr/cfg-replication-methods.md) 그게 논의됐나요? 재검사 처리는 선택한 복제 방법에 따라 달라집니다. 다음 `Modified\_At` 재검사를 구성하지 않아도 되므로 복제 방법은 변경 값을 처리하는 데 가장 적합합니다. 다음 `Auto-Incrementing Primary Key` 및 `Primary Key Batch Monitoring` 메서드를 사용하려면 구성을 다시 확인해야 합니다.
 
 이러한 방법 중 하나를 사용하는 경우 변경 가능한 열에 다시 확인하도록 플래그를 지정해야 합니다. 세 가지 방법으로 이 작업을 수행할 수 있습니다.
 
-* 다시 검사할 업데이트 플래그 열의 일부로 실행되는 감사 프로세스입니다.
+1. 다시 검사할 업데이트 플래그 열의 일부로 실행되는 감사 프로세스입니다.
 
    >[!NOTE]
    >
    >Auditor는 샘플링 프로세스에 의존하며 변화하는 열을 즉시 포착하지 못할 수 있습니다.
 
-* Data Warehouse 관리자에서 열 옆에 있는 확인란을 선택하고 **[!UICONTROL Set Recheck Frequency]**&#x200B;을 클릭하고 변경 사항을 확인해야 할 적절한 시간 간격을 선택합니다.
-* 의 멤버 [!DNL MBI] Data Warehouse 팀은 Data Warehouse에서 다시 확인할 열을 수동으로 표시할 수 있습니다. 변경할 수 있는 열이 있는 경우 팀에 문의하여 재검사를 요청하십시오. 요청에 빈도와 함께 열 목록을 포함하십시오.
+1. Data Warehouse 관리자에서 열 옆에 있는 확인란을 선택하고 **[!UICONTROL Set Recheck Frequency]**&#x200B;을 클릭하고 변경 사항을 확인해야 할 적절한 시간 간격을 선택합니다.
+
+1. 의 멤버 [!DNL Adobe Commerce Intelligence] Data Warehouse 팀은 Data Warehouse에서 다시 확인할 열을 수동으로 표시할 수 있습니다. 변경할 수 있는 열이 있는 경우 팀에 문의하여 재검사를 요청하십시오. 요청에 빈도와 함께 열 목록을 포함하십시오.
 
 ## 빈도 다시 확인 {#frequency}
 
@@ -55,7 +56,7 @@ ht-degree: 0%
 
 가끔 볼 수 있습니다 `Paused` 다음에서 `Changes?` 열. 이 값은 테이블이 [복제 방법](../../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md) 이(가) (으)로 설정됨 `Paused`.
 
-Adobe은 이러한 열을 검토하여 업데이트를 최적화하고 변경 가능한 열을 다시 확인하는 것이 좋습니다. Adobe 데이터가 변경되는 빈도를 고려할 때 열에 대한 재확인 빈도가 높은 경우 업데이트를 최적화하기 위해 열을 줄이는 것이 좋습니다.
+[!DNL Adobe] 에서는 이러한 열을 검토하여 업데이트를 최적화하고 변경 가능한 열을 다시 확인하는 것이 좋습니다. Adobe 데이터가 변경되는 빈도를 고려할 때 열에 대한 재확인 빈도가 높은 경우 업데이트를 최적화하기 위해 열을 줄이는 것이 좋습니다.
 
 질문이 있거나 현재 복제 방법 또는 재검사에 대해 문의하려면 당사에 문의하십시오.
 

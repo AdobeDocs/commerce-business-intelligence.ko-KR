@@ -2,9 +2,9 @@
 title: 지표 만들기
 description: 지표를 사용하여 차트를 만드는 방법을 알아봅니다.
 exl-id: d4c25546-3c51-4d32-b9d8-c424ec103be5
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '612'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 >
 >필요 [관리자 권한](../../administrator/user-management/user-management.md).
 
-즉, 지표는 측정입니다. SQL 및 데이터베이스 구조에서 지표는 변수 기간에 대한 저장된 쿼리와 같습니다.
+지표는 측정입니다. SQL 및 데이터베이스 구조에서 지표는 변수 기간에 대한 저장된 쿼리와 같습니다.
 
-위치 [!DNL MBI], 지표를 사용하여 다음을 수행할 수 있습니다. [차트 만들기](../../data-user/reports/ess-rpt-build-visual.md). (예: 지표) `revenue` 는 총 주문 수입니다. 지표 `average customer revenue per order` 은 평균 고객이 주문당 소비하는 금액입니다.
+위치 [!DNL Commerce Intelligence], 지표를 사용하여 다음을 수행할 수 있습니다. [차트 만들기](../../data-user/reports/ess-rpt-build-visual.md). (예: 지표) `revenue` 는 총 주문 수입니다. 지표 `average customer revenue per order` 은 평균 고객이 주문당 소비하는 금액입니다.
 
 보고서에서 사용할 경우 지정된 기간 동안 지표를 분석할 수 있으며 [필터링 또는 분할](../../best-practices/segment-filter.md) 다른 카테고리별로. 성별로 그룹화된 평균 고객 매출을 분석해 보십시오. 이 경우 `average customer revenue per order` 는 지표이고 성별은 그룹입니다.
 
@@ -68,7 +68,7 @@ ht-degree: 0%
 
 다음 [`Dimensions`](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) 섹션에는 필터링 또는 그룹화에 사용 가능한 모든 데이터 차원이 표시됩니다. 기본적으로 사용 가능한 모든 데이터 열은 차원으로 나열됩니다. 예를 계속 진행하여 조회 출처별로 매출을 세그먼트화하려는 경우 여기에서 세그먼트화할 수 있습니다.
 
-사용 가능한 모든 데이터 열을 차원으로 나열하는 것 외에도 [!DNL MBI] 그룹화할 수 있는 열을 추측합니다. *보고서에서 데이터를 세그먼트화하거나 그룹화하려면*, 열은 그룹화할 수 있는 것으로 표시해야 합니다.
+사용 가능한 모든 데이터 열을 차원으로 나열하는 것 외에도 [!DNL Commerce Intelligence] 그룹화할 수 있는 열을 추측합니다. *보고서에서 데이터를 세그먼트화하거나 그룹화하려면*, 열은 그룹화할 수 있는 것으로 표시해야 합니다.
 
 ## 마무리 중 {#finish}
 

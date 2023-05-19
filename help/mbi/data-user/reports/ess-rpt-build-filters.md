@@ -2,9 +2,9 @@
 title: 필터
 description: 필터를 사용하는 방법을 알아봅니다.
 exl-id: eb683dfe-9a90-400a-a0c0-3dc00d1f28b5
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >보고서에는 최대 3,500개의 데이터 포인트가 포함될 수 있습니다. 데이터 포인트 수를 줄이려면 필터를 사용하여 보고서를 생성하는 데 사용되는 데이터의 양을 줄이십시오.
 
-MBI에는 &quot;즉시 사용 가능한(OOTB)&quot;을 사용하거나 필요에 맞게 수정할 수 있는 다양한 필터가 포함되어 있습니다. 만들 수 있는 필터 수에는 제한이 없습니다.
+[!DNL Adobe Commerce Intelligence] 에는 &quot;즉시 사용 가능한(OOTB)&quot;을 사용하거나 필요에 맞게 수정할 수 있는 다양한 필터가 포함되어 있습니다. 만들 수 있는 필터 수에는 제한이 없습니다.
 
 ## 필터를 추가하려면 다음 작업을 수행하십시오.
 

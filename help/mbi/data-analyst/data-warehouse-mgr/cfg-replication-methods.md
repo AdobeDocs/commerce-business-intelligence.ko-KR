@@ -2,28 +2,28 @@
 title: 복제 방법 구성
 description: 표를 구성하는 방법과 표 데이터가 작동하는 방식을 통해 표에 가장 적합한 복제 방법을 선택할 수 있습니다.
 exl-id: 83895c48-a6ec-4b01-9890-164e0b21dcbc
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '1413'
+source-wordcount: '1414'
 ht-degree: 0%
 
 ---
 
 # 복제 방법 구성
 
-`Replication` 방법 및 [재확인](../data-warehouse-mgr/cfg-data-rechecks.md) 데이터베이스 테이블에서 새 데이터 또는 업데이트된 데이터를 식별하는 데 사용됩니다. 이러한 매개 변수를 올바르게 설정하는 것은 데이터의 정확성과 최적화된 업데이트 시간을 모두 보장하는 데 중요합니다. 이 문서에서는 복제 방법을 중점적으로 다룹니다.
+`Replication` 방법 및 [재확인](../data-warehouse-mgr/cfg-data-rechecks.md) 데이터베이스 테이블에서 새 데이터 또는 업데이트된 데이터를 식별하는 데 사용됩니다. 이러한 매개 변수를 올바르게 설정하는 것은 데이터의 정확성과 최적화된 업데이트 시간을 모두 보장하는 데 중요합니다. 이 항목에서는 복제 방법을 중점적으로 다룹니다.
 
-새 테이블이 Data Warehouse 관리자에서 동기화되면 테이블에 대해 복제 방법이 자동으로 선택됩니다. 다양한 복제 방법, 표의 구성 방법 및 표 데이터의 작동 방식을 이해하면 표에 가장 적합한 복제 방법을 선택할 수 있습니다.
+새 테이블이 동기화되는 경우 [Data Warehouse 관리자](../data-warehouse-mgr/tour-dwm.md)즉, 테이블에 대해 복제 방법이 자동으로 선택됩니다. 다양한 복제 방법, 표의 구성 방법 및 표 데이터의 작동 방식을 이해하면 표에 가장 적합한 복제 방법을 선택할 수 있습니다.
 
 ## 복제 방법이란 무엇입니까?
 
 `Replication` 메서드는 세 개의 그룹으로 나뉩니다. `Incremental`, `Full Table`, 및 `Paused`.
 
-[**[!UICONTROL Incremental Replication]**](#incremental) 는 다음을 의미합니다. [!DNL MBI] 모든 복제 시도 시 신규 또는 업데이트된 데이터만 복제합니다. Adobe 이러한 메서드는 지연을 크게 줄이므로 가능하면 이를 사용하는 것이 좋습니다.
+[**[!UICONTROL Incremental Replication]**](#incremental) 는 다음을 의미합니다. [!DNL Commerce Intelligence] 모든 복제 시도 시 신규 또는 업데이트된 데이터만 복제합니다. Adobe 이러한 메서드는 지연을 크게 줄이므로 가능하면 이를 사용하는 것이 좋습니다.
 
-[**[!UICONTROL Full Table Replication]**](#fulltable) 는 다음을 의미합니다. [!DNL MBI] 모든 복제 시도 시 표의 전체 내용을 복제합니다. 복제되는 데이터의 양이 너무 많기 때문에 이러한 메서드는 지연 및 업데이트 시간을 늘릴 수 있습니다. Adobe 테이블에 타임스탬프가 지정된 열이나 날짜/시간 열이 포함되어 있는 경우 증분 메서드를 대신 사용하는 것이 좋습니다.
+[**[!UICONTROL Full Table Replication]**](#fulltable) 는 다음을 의미합니다. [!DNL Commerce Intelligence] 모든 복제 시도 시 표의 전체 내용을 복제합니다. 복제되는 데이터의 양이 너무 많기 때문에 이러한 메서드는 지연 및 업데이트 시간을 늘릴 수 있습니다. Adobe 테이블에 타임스탬프가 지정된 열이나 날짜/시간 열이 포함되어 있는 경우 증분 메서드를 대신 사용하는 것이 좋습니다.
 
-**[!UICONTROL Paused]** 테이블에 대한 복제가 중지 또는 일시 중지되었음을 나타냅니다. [!DNL MBI] 는 업데이트 주기 동안 새 데이터나 업데이트된 데이터를 확인하지 않습니다. 즉, 이 항목을 복제 방법으로 가진 테이블에서 데이터가 복제되지 않습니다.
+**[!UICONTROL Paused]** 테이블에 대한 복제가 중지 또는 일시 중지되었음을 나타냅니다. [!DNL Commerce Intelligence] 는 업데이트 주기 동안 새 데이터나 업데이트된 데이터를 확인하지 않습니다. 즉, 이 항목을 복제 방법으로 가진 테이블에서 데이터가 복제되지 않습니다.
 
 ## 증분 복제 방법 {#incremental}
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 이러한 기준 외에도 Adobe은 **색인화** 다음 `datetime` 다음에 사용된 열 `Modified At` 복제를 통해 복제 속도를 최적화할 수 있습니다.
 
-업데이트가 실행되면 값이 인 행을 검색하여 새 데이터나 변경된 데이터를 식별합니다 `datetime` 가장 최근 업데이트 후에 발생한 열입니다. 새 행이 검색되면 Data Warehouse에 복제됩니다. Data Warehouse에 행이 있는 경우 현재 데이터베이스 값으로 덮어쓰기됩니다.
+업데이트가 실행되면 값이 인 행을 검색하여 새 데이터나 변경된 데이터를 식별합니다 `datetime` 가장 최근 업데이트 후에 발생한 열입니다. 새 행이 검색되면 Data Warehouse에 복제됩니다. 에 행이 있는 경우 [Data Warehouse 관리자](../data-warehouse-mgr/tour-dwm.md): 현재 데이터베이스 값으로 덮어쓰여집니다.
 
 예를 들어 테이블에는 라는 열이 있을 수 있습니다. `modified\_at` 데이터가 마지막으로 변경된 시간을 나타냅니다. 가장 최근 업데이트가 화요일 12시에 실행된 경우 업데이트는 `modified\_at` 화요일 정오보다 큰 값. 화요일 정오 이후에 생성되거나 수정된 모든 검색된 행은 Data Warehouse에 복제됩니다.
 
@@ -74,7 +74,7 @@ ht-degree: 0%
 
 `Full table` 복제는 새 행이 발견될 때마다 전체 테이블을 새로 고칩니다. 새 행이 있다고 가정할 때 모든 업데이트 중에 모든 데이터를 다시 처리해야 하므로 이 방법은 가장 효율성이 낮은 복제 방법입니다.
 
-새 행은 동기화 프로세스가 시작될 때 데이터베이스를 쿼리하고 행 수를 계산하여 감지됩니다. 로컬 데이터베이스에 보다 많은 행이 포함된 경우 [!DNL MBI]그런 다음 테이블이 새로 고쳐집니다. 행 수가 동일한 경우 또는 [!DNL MBI] 다음 포함 *기타* 로컬 데이터베이스보다 행이 많으면 테이블을 건너뜁니다.
+새 행은 동기화 프로세스가 시작될 때 데이터베이스를 쿼리하고 행 수를 계산하여 감지됩니다. 로컬 데이터베이스에 보다 많은 행이 포함된 경우 [!DNL Commerce Intelligence]그런 다음 테이블이 새로 고쳐집니다. 행 수가 동일한 경우 또는 [!DNL Commerce Intelligence] 다음 포함 *기타* 로컬 데이터베이스보다 행이 많으면 테이블을 건너뜁니다.
 
 이는 다음과 같은 중요한 사항을 발생시킵니다. **`Full Table`다음 경우에는 복제가 호환되지 않습니다.**
 
@@ -104,15 +104,15 @@ ht-degree: 0%
 1. Data Warehouse 관리자에서 테이블을 선택합니다. `Synced Tables` 테이블의 스키마를 표시할 목록입니다.
 1. 현재 복제 방법은 표 이름 아래에 나열되어 있습니다. 변경하려면 링크를 클릭합니다.
 1. 표시되는 팝업에서 다음 중 하나 옆에 있는 라디오 단추를 클릭합니다. `Incremental` 또는 `Full Table` 복제 - 복제 유형을 선택합니다.
-1. 그런 다음 **[!UICONTROL Replication Method]** 드롭다운을 통해 방법 선택(예: `Paused` 또는 `Modified At`.
+1. 그런 다음 **[!UICONTROL Replication Method]** 드롭다운을 클릭하여 방법을 선택합니다. 예를 들어, `Paused` 또는 `Modified At`.
 
    >[!NOTE]
    >
-   >**일부 증분 메서드를 사용하려면 를 설정해야 합니다.`Replication Key`**. [!DNL MBI] 은 이 키를 사용하여 다음 업데이트 주기가 시작되는 위치를 결정합니다.
+   >**일부 증분 메서드를 사용하려면 를 설정해야 합니다.`Replication Key`**. [!DNL Commerce Intelligence] 은 이 키를 사용하여 다음 업데이트 주기가 시작되는 위치를 결정합니다.
    >
    >예를 들어 `modified at` 을 위한 메서드 `orders` 테이블, 다음을 설정해야 합니다. `date column` 를 복제 키로 사용합니다. 복제 키에 대한 몇 가지 옵션이 있을 수 있지만 `created at`또는 주문이 생성된 시간입니다. 마지막 업데이트 주기가 2015년 12월 1일에 중지된 경우 00:10:00, 다음 사이클은 `created at` 이 날짜 이후입니다.
 
-1. 완료되면 다음을 클릭: **[!UICONTROL Save]**.
+1. 완료되면 다음을 클릭하십시오. **[!UICONTROL Save]**.
 
 전체 프로세스를 살펴봅니다.
 

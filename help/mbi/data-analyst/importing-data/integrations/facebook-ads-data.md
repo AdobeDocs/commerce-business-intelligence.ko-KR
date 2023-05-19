@@ -2,20 +2,18 @@
 title: 예상 Facebook 광고 데이터
 description: Data Warehouse과 동기화하는 것이 권장되는 표에 대한 간략한 개요를 알아봅니다
 exl-id: 0c8b907b-1a98-470b-bb2c-55327e88e502
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '329'
 ht-degree: 0%
 
 ---
 
 # 예상 [!DNL Facebook Ads] 데이터
 
-![](../../../assets/Facebook_Logo.png)
-
 다음 작업을 수행한 후 [을(를) 연결했습니다. [!DNL Facebook Ads] account](../integrations/facebook-ads.md), 다음을 사용할 수 있습니다. [Data Warehouse 관리자](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) 분석을 위해 관련 데이터 필드를 쉽게 추적할 수 있습니다.
 
-이 문서에서는 Adobe이 Data Warehouse과 동기화할 것을 권장하는 표에 대한 간략한 개요를 제공합니다. 이 목록은 전체 목록이 아닙니다. 꽤 많은 하위 테이블이 있기 때문입니다. 핵심 테이블만 강조 표시됩니다.
+이 항목에서는 Adobe이 Data Warehouse과 동기화할 것을 권장하는 표에 대한 간략한 개요를 제공합니다. 하위 테이블이 상당히 많기 때문에 핵심 테이블만 강조 표시됩니다.
 
 ## 핵심 광고 캠페인 테이블
 
@@ -60,4 +58,4 @@ ht-degree: 0%
 ## 관련 항목
 
 * [연결 중 [!DNL Facebook Ads]](../integrations/facebook-ads.md)
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

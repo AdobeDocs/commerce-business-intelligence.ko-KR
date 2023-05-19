@@ -2,9 +2,9 @@
 title: Google Analytics의 UTM 추적
 description: Google Analytics의 UTM 추적(태깅)에 대한 모범 사례에 대해 알아봅니다.
 exl-id: 70bfd855-3b3f-469b-99bc-deb8251904b7
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '454'
 ht-degree: 0%
 
 ---

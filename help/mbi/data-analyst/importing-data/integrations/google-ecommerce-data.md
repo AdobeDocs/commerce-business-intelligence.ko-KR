@@ -2,7 +2,7 @@
 title: 예상[!DNL Google ECommerce]데이터
 description: Google Commerce와 공유하는 데이터 유형을 알아봅니다.
 exl-id: 8e5d8863-f003-4c38-95c5-660bcbff48da
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 예상[!DNL Google ECommerce] 데이터
 
-다음 이후 [!DNL Google ECommerce] 계정이 정상적으로 연결되었습니다. [!DNL MBI], 시스템은 제목이 있는 테이블로 데이터 가져오기를 시작합니다 `ecommerce`. 이 테이블은 각 트랜잭션에 대한 데이터 행을 기록합니다. 여기에는 다음과 같은 주문 수준 데이터 열이 포함됩니다.
+다음 이후 [!DNL Google ECommerce] 계정이 정상적으로 연결되었습니다. [!DNL Commerce Intelligence], 시스템은 제목이 있는 테이블로 데이터 가져오기를 시작합니다 `ecommerce`. 이 테이블은 각 트랜잭션에 대한 데이터 행을 기록합니다. 여기에는 다음과 같은 주문 수준 데이터 열이 포함됩니다.
 
 | 열 이름 | 설명 |
 |-----|-----|

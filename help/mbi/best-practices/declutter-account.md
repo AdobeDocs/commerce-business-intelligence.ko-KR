@@ -1,25 +1,25 @@
 ---
-title: 내 콘텐츠 제거 [!DNL MBI] 계정
-description: 다음을 정리하는 방법 알아보기 [!DNL MBI] 계정입니다.
+title: 내 콘텐츠 제거 [!DNL Commerce Intelligence] 계정
+description: 다음을 정리하는 방법 알아보기 [!DNL Commerce Intelligence] 계정입니다.
 exl-id: 5fcdac2d-41ca-4011-b646-a699d9ecc6e4
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
 
-# 정리 [!DNL MBI] 계정
+# 정리 [!DNL Adobe Commerce Intelligence] 계정
 
-다음을 수행했는지 여부 [!DNL MBI] 6개월 또는 6년 동안 깔끔한 계정을 유지하는 것은 조직이 플랫폼을 최대한 활용하는 데 가장 중요합니다. 시간이 지남에 따라 더 이상 필요하지 않은 사용자, 대시보드, 보고서, 지표 및 열이 있는 것이 당연합니다. 일회용으로 보고서를 만들어 놓고 잊어버렸거나 회사에서 나간 사용자가 계정을 비활성화한 적이 없을 수 있습니다.
+다음을 수행했는지 여부 [!DNL Commerce Intelligence] 6개월 또는 6년 동안 깔끔한 계정을 유지하는 것은 조직이 플랫폼을 최대한 활용하는 데 가장 중요합니다. 시간이 지남에 따라 더 이상 필요하지 않은 사용자, 대시보드, 보고서, 지표 및 열이 있는 것이 당연합니다. 일회용으로 보고서를 만들어 놓고 잊어버렸거나 회사에서 나간 사용자가 계정을 비활성화한 적이 없을 수 있습니다.
 
-포함 [모든 요소에 대해 표준화되고 명확한 이름 지정](../best-practices/naming-elements.md)의 ) [!DNL MBI] 계정, 아래 계정 감사 단계는 사용자의 어수선하고 불필요한 분석을 줄이는 데 도움이 됩니다. 한 가지 추가 이점은 다음과 같습니다 [잠재적으로 더 빠른 업데이트 주기](../best-practices/reduce-update-cycle-time.md).
+포함 [모든 요소에 대해 표준화되고 명확한 이름 지정](../best-practices/naming-elements.md)의 ) [!DNL Commerce Intelligence] 계정, 아래 계정 감사 단계는 사용자의 어수선하고 불필요한 분석을 줄이는 데 도움이 됩니다. 한 가지 추가 이점은 다음과 같습니다 [잠재적으로 더 빠른 업데이트 주기](../best-practices/reduce-update-cycle-time.md).
 
 ## 1단계: 비활성 사용자 식별
 
-계정을 정리하는 첫 번째 단계는 회사를 떠났거나 더 이상 사용하지 않는 사람과 같은 비활성 사용자의 계정을 비활성화하는 것입니다 [!DNL MBI] 현재 역할로 전환됩니다.
+계정을 정리하는 첫 번째 단계는 회사를 떠났거나 더 이상 사용하지 않는 사람과 같은 비활성 사용자의 계정을 비활성화하는 것입니다 [!DNL Commerce Intelligence] 현재 역할로 전환됩니다.
 
-상단 탐색 막대의 오른쪽 상단 모서리에서 회사 이름을 클릭한 다음 을(를) 선택하여 이 작업을 수행할 수 있습니다 **[!UICONTROL Manage Users]**. 그런 다음 비활성화할 사용자를 선택하고 **[!UICONTROL Deactivate User]**.
+이렇게 하려면 오른쪽 상단의 탐색 모음에서 회사 이름을 클릭한 다음 을 선택합니다. **[!UICONTROL Manage Users]**. 그런 다음 비활성화할 사용자를 선택하고 **[!UICONTROL Deactivate User]**.
 
 >[!NOTE]
 >
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->사용자를 비활성화하면 해당 사용자가 만든 차트, 대시보드 및 기타 자산이 제거됩니다. 이러한 에셋을 유지하려면 [!DNL MBI] [지원](../guide-overview.md) 팀을 만든 후 사용자를 비활성화하십시오. 지원을 통해 이러한 에셋을 다른 사용자에게 전송할 수 있습니다.
+>사용자를 비활성화하면 해당 사용자가 만든 차트, 대시보드 및 기타 자산이 제거됩니다. 이러한 에셋을 유지하려면 [!DNL Commerce Intelligence] [지원](../guide-overview.md#Submitting-a-Support-Ticket) 팀을 만든 후 사용자를 비활성화하십시오. 지원을 통해 이러한 에셋을 다른 사용자에게 전송할 수 있습니다.
 
 ### 사용자 다시 활성화
 
@@ -89,7 +89,7 @@ ht-degree: 0%
 1. 지표에 대한 종속 보고서 목록을 생성하려면 로 이동합니다. **[!DNL Manage Data]**&#x200B;을 선택한 다음 클릭 을 선택합니다. **[!UICONTROL Metrics]**.
 1. 클릭 **[!UICONTROL Edit]** 를 클릭합니다.
 1. 페이지 하단에 라는 섹션이 표시됩니다. **[!UICONTROL Dependent Charts]**. 링크를 클릭하여 이 지표에 대한 종속 보고서 목록을 생성합니다.
-1. 시스템이 검사를 완료한 후, [!DNL MBI] 이 지표를 사용하는 대시보드, 보고서 및 사용자 목록을 표시합니다.
+1. 시스템이 검사를 완료한 후, [!DNL Commerce Intelligence] 이 지표를 사용하는 대시보드, 보고서 및 사용자 목록을 표시합니다.
 
 ![](../../mbi/assets/report_dependecies.png)
 
@@ -99,7 +99,7 @@ ht-degree: 0%
 
 마지막 단계는 Data Warehouse에서 현재 동기화 중인 열을 평가하는 것입니다. 열 동기화를 해제하면 계정이 더 이상 사용되지 않을 뿐만 아니라 업데이트 시간도 줄어들 수 있습니다.
 
-이 작업을 진행하려면 다음으로 연락하십시오. [!DNL MBI] [지원](../guide-overview.md). 지원 팀은 SQL 보고서를 제외하고 사용자의 대시보드에서 사용되지 않고 전자 메일 요약에 사용되지 않는 모든 열을 포함하는 보고서를 만들 수 있습니다. 그런 다음 Data Warehouse 관리자를 통해 이 보고서를 동기화 해제할 열을 선택하는 안내서로 사용할 수 있습니다.
+이 작업을 진행하려면 다음으로 연락하십시오. [!DNL Commerce Intelligence] [지원](../guide-overview.md#Submitting-a-Support-Ticket). 지원 팀은 SQL 보고서를 제외하고 사용자의 대시보드에서 사용되지 않고 전자 메일 요약에 사용되지 않는 모든 열을 포함하는 보고서를 만들 수 있습니다. 그런 다음 Data Warehouse 관리자를 통해 이 보고서를 동기화 해제할 열을 선택하는 안내서로 사용할 수 있습니다.
 
 >[!NOTE]
 >
@@ -122,4 +122,4 @@ ht-degree: 0%
 
 ## 요약
 
-바로 그거야! 사용자 [!DNL MBI] 이제 계정을 더 깔끔하게 정리하고 팀과 함께 탐색할 수 있습니다.
+사용자 [!DNL Commerce Intelligence] 이제 계정을 더 깔끔하게 정리하고 팀과 함께 탐색할 수 있습니다.

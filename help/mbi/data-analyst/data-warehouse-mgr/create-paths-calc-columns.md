@@ -2,9 +2,9 @@
 title: 계산된 열의 경로 만들기 또는 삭제
 description: 열을 만드는 테이블이 정보를 가져오는 테이블과 어떻게 관련이 있는지 설명하는 경로를 정의하는 방법을 알아봅니다.
 exl-id: 734a8046-8058-4f03-93a2-8d59b9be6d2d
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1019'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 1. 데이터베이스의 테이블이 서로 관련되는 방식
 1. 이 관계를 정의하는 기본 및 외래 키
 
-이 정보를 알고 있으면 이 문서의 지침에 따라 경로를 쉽게 만들 수 있습니다. 이러한 개념에 대한 개요는 잘 모르겠지만 조직의 기술 전문가에게 문의하거나 Adobe 지원 팀에 문의할 수 있습니다.
+이 정보를 알고 있으면 이 항목의 지침에 따라 경로를 쉽게 만들 수 있습니다. 귀사의 기술 전문가에게 문의하거나 [전문 서비스 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## 테이블 관계 및 주요 유형에 대한 새로 고침 {#refresher}
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 {style="table-layout:auto"}
 
-두 테이블 간의 관계가 이해되면 이 관계를 사용하여 한 테이블에서 다른 테이블로 정보를 가져오기 위해 만들어야 하는 경로를 결정할 수 있습니다. 이 다음 단계에서는 테이블 관계를 용이하게 하는 기본 및 외래 키를 알아야 합니다.
+두 테이블 간의 관계를 이해하면 이 함수를 사용하여 한 테이블에서 다른 테이블로 정보를 가져오기 위해 만들어야 하는 경로를 결정할 수 있습니다. 이 다음 단계에서는 테이블 관계를 용이하게 하는 기본 및 외래 키를 알아야 합니다.
 
 ### 기본 및 외래 키 {#keys}
 
@@ -59,7 +59,7 @@ Data Warehouse에서 열을 만들 때 한 테이블에서 다른 테이블로 �
 1. 클릭 **[!UICONTROL Data > Data Warehouse]**.
 1. 테이블 목록에서 열을 만들 테이블을 클릭합니다. 이 예에서는 다음과 같습니다 `customers` 테이블.
 1. 테이블 스키마가 표시됩니다. 클릭 **[!UICONTROL Create New Column]**.
-1. 열에 이름을 지정합니다(예: ). `Customer's orders`.
+1. 열에 이름을 지정하십시오(예: ). `Customer's orders`.
 1. 열에 대한 정의를 선택합니다. 다음을 확인하십시오. [계산된 열 안내서](../data-warehouse-mgr/creating-calculated-columns.md) 편리한 치트 시트요.
 1. 다음에서 [!UICONTROL Select table and column] 드롭다운에서 **[!UICONTROL Create new path]** 옵션을 선택합니다.
 
@@ -75,20 +75,23 @@ Data Warehouse에서 열을 만들 때 한 테이블에서 다른 테이블로 �
 
 ### 경로 생성의 제한 사항 {#limits}
 
-* **[!DNL MBI]기본/외래 키 관계를 추측할 수 없음**. 계정에 잘못된 데이터를 도입하지 않으려는 경우 경로를 수동으로 만들어야 합니다.
-* **현재, 경로는 두 개의 서로 다른 테이블 사이에만 지정할 수 있습니다**. 다시 만들려는 논리에 두 개 이상의 테이블이 포함됩니까? 그런 다음 (1) 열을 먼저 중간 테이블에 연결한 다음 &quot;최종 대상&quot; 테이블에 연결하거나 (2) Adobe 팀과 상의하여 목표에 대한 최상의 접근 방법을 찾는 것이 적절할 수 있습니다.
+* **[!DNL Commerce Intelligence]기본/외래 키 관계를 추측할 수 없음**. 계정에 잘못된 데이터를 도입하지 않으려는 경우 경로를 수동으로 만들어야 합니다.
+
+* **현재, 경로는 두 개의 서로 다른 테이블 사이에만 지정할 수 있습니다**. 다시 만들려는 논리에 두 개 이상의 테이블이 포함됩니까? 그런 다음 (1) 열을 먼저 중간 테이블에 연결한 다음 &quot;최종 대상&quot; 테이블에 연결하거나 (2) [전문 서비스 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 목표에 대한 최상의 접근 방법을 찾을 수 있습니다.
+
 * **열은 한 번에 하나의 경로에 대한 외래 키 참조만 될 수 있습니다.**. 예를 들어 다음과 같습니다. `order_items.order_id` 포인트 대상 `orders.id`, 그런 다음 `order_items.order_id` 다른 항목을 가리킬 수 없습니다.
+
 * **`Many-to-many`경로는 기술적으로 생성될 수 있지만 어느 한쪽이 진실도 아니기 때문에 종종 잘못된 데이터를 생성합니다 `one-to-many` 외래 키**. 이러한 경로에 가장 적합한 접근 방법은 항상 원하는 특정 분석에 따라 다릅니다. 최상의 솔루션을 확인하려면 RJ 분석팀에 문의하십시오.
 
 위의 제한 사항 중 하나 이상으로 인해 계산된 열을 만들 수 없는 경우 지원 센터에 현재 사용 중인 열에 대한 설명을 문의하십시오
 
 ## 계산된 열 경로 삭제 {#delete}
 
-Data Warehouse에서 잘못된 경로를 생성했습니까? 아니면 봄맞이 대청소를 좀 하고 있어서 정리하고 싶은 거 아니야? 계정에서 경로를 삭제해야 하는 경우 [Adobe 지원 분석가에게 티켓 보내기](../../guide-overview.md). **경로의 이름을 포함해야 합니다.**
+Data Warehouse에서 잘못된 경로를 생성했습니까? 아니면 봄맞이 대청소를 좀 하고 있어서 정리하고 싶은 거 아니야? 계정에서 경로를 삭제해야 하는 경우 [Adobe 지원 분석가에게 티켓 보내기](../../guide-overview.md#Submitting-a-Support-Ticket). **경로의 이름을 포함해야 합니다.**
 
 ## 요약 {#wrapup}
 
-이제 Data Warehouse에서 계산된 열에 대한 경로를 쉽게 만들 수 있습니다. 특정 경로에 대해 여전히 확실하지 않은 경우 언제든지 을(를) 클릭할 수 있습니다 **[!UICONTROL Support]** (으)로 [!DNL MBI] 도움을 받을 계정.
+이제 Data Warehouse에서 계산된 열에 대한 경로를 쉽게 만들 수 있습니다. 특정 경로에 대해 여전히 확실하지 않은 경우 언제든지 을(를) 클릭할 수 있습니다 **[!UICONTROL Support]** (으)로 [!DNL Commerce Intelligence] 도움을 받을 계정.
 
 ## 관련 항목
 

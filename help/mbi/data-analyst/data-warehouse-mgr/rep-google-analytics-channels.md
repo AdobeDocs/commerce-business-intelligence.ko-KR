@@ -2,30 +2,30 @@
 title: 획득 소스를 사용하여 Google Analytics 채널 복제
 description: 획득 소스를 사용하여 Google Analytics 채널을 복제하는 방법에 대해 알아봅니다.
 exl-id: e7248fe4-94db-4cdf-8f58-1f65061a207d
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '698'
 ht-degree: 0%
 
 ---
 
-# 획득 소스를 사용하는 Google Analytics
+# [!DNL Google Analytics] 획득 소스 사용
 
 ## 채널이란? {#channels}
 
-다양한 트래픽이 어떻게 작동하는지 확인하고 트렌드를 관찰하기 위한 사용자 지정 세그먼트 작성은 용으로 가장 강력한 사용 중 하나입니다  [!DNL Google Analytics ]. 에 기본적으로 존재하는 세그먼트의 한 클래스 [!DNL Google Analytics ] 은(는) `Channels`. 채널은 사람들이 사이트를 방문하는 일반적인 방법의 그룹입니다.  [!DNL Google Analytics ] 는 소셜 미디어, 클릭당 과금, 이메일 또는 참조 링크 등 사용자를 획득하는 다양한 방법을 자동으로 정렬하고 버킷 또는 채널로 번들로 묶습니다.
+다양한 트래픽이 어떻게 작동하는지 확인하고 트렌드를 관찰하기 위한 사용자 지정 세그먼트 작성은 용으로 가장 강력한 사용 중 하나입니다 [!DNL Google Analytics]. 에 기본적으로 존재하는 세그먼트의 한 클래스 [!DNL Google Analytics] 은(는) `Channels`. 채널은 사람들이 사이트를 방문하는 일반적인 방법의 그룹입니다.  [!DNL Google Analytics] 는 소셜 미디어, 클릭당 과금, 이메일 또는 참조 링크 등 사용자를 획득하는 다양한 방법을 자동으로 정렬하고 버킷 또는 채널로 번들로 묶습니다.
 
-## 왜 안 보이나요 `channels` MBI에서? {#nochannels}
+## 왜 안 보이나요 `channels` Commerce Intelligence의 {#nochannels}
 
-`Channels` 는 데이터의 간단한 집계 버킷입니다. 획득을 채널 버킷으로 정렬하기 위해 Google은 획득의 조합인 특정 매개 변수를 사용하여 고유한 규칙 및 정의를 설정합니다 [소스](https://support.google.com/analytics/answer/1033173?hl=en) (트래픽의 출처) 및 획득 [Medium](https://support.google.com/analytics/answer/6099206?hl=en) (소스의 일반 범주).
+`Channels` 는 데이터의 간단한 집계 버킷입니다. 획득을 채널 버킷으로 정렬하려면 [!DNL Google] acquisition의 조합이라는 특정 매개 변수를 사용하여 고유한 규칙 및 정의를 설정합니다. [소스](https://support.google.com/analytics/answer/1033173?hl=en) (트래픽의 출처) 및 획득 [Medium](https://support.google.com/analytics/answer/6099206?hl=en) (소스의 일반 범주).
 
-이러한 버킷을 사용하면 트래픽이 발생하는 위치를 이해하는 데 도움이 될 수 있지만, 이 데이터는 채널별로 태그가 지정되지 않고 소스 및 미디어의 조합으로 태그가 지정됩니다. Google은 채널 정보를 두 개의 개별 데이터 포인트로 보내기 때문에 채널 그룹화가에 자동으로 표시되지 않습니다 [!DNL MBI].
+이러한 버킷을 사용하면 트래픽이 발생하는 위치를 이해하는 데 도움이 될 수 있지만, 이 데이터는 채널별로 태그가 지정되지 않고 소스 및 미디어의 조합으로 태그가 지정됩니다. 이유 [!DNL Google] 채널 정보를에 두 개의 개별 데이터 포인트로 전송합니다. 채널 그룹화는에 자동으로 표시되지 않습니다. [!DNL Commerce Intelligence].
 
 ## 기본 채널 그룹화는 무엇입니까? 어떻게 만들어집니까?
 
-기본적으로 Google에서는 8개의 서로 다른 채널을 설정합니다. 규칙을 만드는 방법을 결정하는 규칙을 살펴봅니다.
+기본적으로, [!DNL Google] 8개의 다른 채널을 설정합니다. 채널을 만드는 방법을 결정하는 규칙은 아래에 나와 있습니다.
 
-| 채널 | 뭔데? | 어떻게 생성됩니까? |
+| **채널** | **뭔데?** | **어떻게 생성됩니까?** |
 |---|---|---|
 | 직접 | 사이트로 직접 들어오는 모든 사용자. | 소스 = `Direct`<br>AND Medium = `(not set); OR Medium = (none)` |
 | 유기 검색 | 무급 검색 엔진에서 유기적으로 순위가 매겨진 트래픽. | 중간 = `organic` |
@@ -44,13 +44,13 @@ ht-degree: 0%
 
 1. **사용[!DNL Google ECommerce]통합**
 
-   [활성화되면](../importing-data/integrations/google-ecommerce.md), 다음을 확인합니다. [동기화](../{{ site.baseurl }}/data-analyst/data-warehouse-mgr/tour-dwm.html#syncing) **중간** 및 **소스** Data Warehouse의 필드. 이 작업이 완료되면 중간 및 소스 획득 데이터를 Data Warehouse으로 가져옵니다.
+   [활성화된 경우](../importing-data/integrations/google-ecommerce.md), 다음을 확인합니다. [동기화](../{{ site.baseurl }}/data-analyst/data-warehouse-mgr/tour-dwm.html#syncing) **중간** 및 **소스** Data Warehouse의 필드. 이 작업이 완료되면 중간 및 소스 획득 데이터를 Data Warehouse으로 가져옵니다.
 
 1. **Google 채널 그룹화 매핑 업로드**
 
-   시간을 절약하기 위해 Commerce는 기본 그룹화가 매핑된 테이블을 파일로 이미 만들었습니다. [다운로드](../../assets/ga-channel-mapping.csv).
+   Adobe Commerce은 다음과 같은 작업을 수행할 수 있는 파일로 매핑된 기본 그룹화를 사용하는 표를 만듭니다. [다운로드](../../assets/ga-channel-mapping.csv).
 
-   Google Analytics 전문가이고 자체 채널을 만든 경우 파일을 로 업로드하기 전에 매핑 테이블에 특정 규칙을 추가할 수 있습니다 [!DNL MBI].
+   다음과 같은 경우 [!DNL Google Analytics] pro를 실행하고 자체 채널을 만든 다음에는 파일을 업로드하기 전에 매핑 테이블에 특정 규칙을 추가할 수 있습니다 [!DNL Commerce Intelligence].
 
    Data Warehouse에 다음으로 가져오기 [파일 업로드](../importing-data/connecting-data/using-file-uploader.md).
 
@@ -58,13 +58,13 @@ ht-degree: 0%
 
 1. **다음 사이에 관계 설정[!DNL Google ECommerce]및 매핑 파일 업로드**
 
-   다음 두 항목 간에 관계를 설정하려면[!DNL Google ECommerce]그리고 매핑 테이블, [지원 요청 제출](../../guide-overview.md) 데이터 분석가 팀에 문의하고 이 문서를 참조하십시오. 분석가는 라는 새 계산된 열을 만듭니다. **채널** ECommerce 테이블에서 **전체 업데이트 주기 이후**, 이 열은 필터 또는 그룹 기준에서 사용할 준비가 되었습니다.
+   다음 두 항목 간에 관계를 설정하려면[!DNL Google ECommerce] 그리고 매핑 테이블, [지원 요청 제출](../../guide-overview.md#Submitting-a-Support-Ticket) 데이터 분석가 팀에 문의하고 이 항목을 참조하십시오. 분석가는 라는 새 계산된 열을 만듭니다. **채널** ECommerce 테이블에서 **전체 업데이트 주기 이후**, 이 열은 다음에서 사용할 준비가 되었습니다. `Filter` 또는 `Group by`.
 
-축하합니다! 이제 Data Warehouse에 Google Analytics 채널 그룹화가 있으므로 새로운 관점에서 데이터를 분석할 수 있습니다.
+이제 다음을 보유하게 되었습니다. [!DNL Google Analytics Channel] Data Warehouse에 그룹화를 포함합니다. 즉, 새로운 관점에서 데이터를 분석할 수 있습니다.
 
 ![채널별 주문 수 지표 세그먼트화](../../assets/GA_Channel_Gif.gif)
 
-이 예에서는 다음을 단순하게 세그먼트화했습니다. **주문 수** 지표 기준 **채널**. 이제 차례입니다. 새 열을 테스트하고 Google Analytics 채널 데이터에서 식별할 수 있는 트렌드를 확인하십시오!
+이 예에서는 를 세그먼트화하는 간단한 작업을 시작했습니다. **주문 수** 지표 기준 **채널**. 새 열을 테스트하여 여기에서 식별할 수 있는 트렌드를 확인합니다. [!DNL Google Analytics Channel] 데이터!
 
 ## 관련 설명서
 

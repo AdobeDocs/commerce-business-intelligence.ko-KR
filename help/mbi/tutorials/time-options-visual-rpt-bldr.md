@@ -2,16 +2,16 @@
 title: 시각적 Report Builder에서 시간 옵션 사용
 description: 특정 기간 동안 보고서의 데이터를 분석하는 방법에 대해 알아봅니다.
 exl-id: a1bb4838-f882-44b1-a29f-84b985032ceb
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1267'
 ht-degree: 0%
 
 ---
 
-# 사용 `Time` 의 옵션 `Visual Report Builder`
+# 사용 [!DNL Time] 의 옵션 [!DNL Visual Report Builder]
 
-의 기능 중 하나 `Visual Report Builder` 은(는) 전역입니다. `Time Range` 및 `Interval` 설정. 이러한 설정을 사용하여 특정 기간 동안 보고서의 데이터를 분석할 수 있습니다.
+의 기능 중 하나 [!DNL Visual Report Builder] 은(는) 전역입니다. `Time Range` 및 `Interval` 설정. 이러한 설정을 사용하여 특정 기간 동안 보고서의 데이터를 분석할 수 있습니다.
 
 그러나 일부 분석의 경우 동일한 보고서에서 서로 다른 시간 범위 또는 시간 간격을 고려해야 할 수 있습니다. 거기가 바로 `Time` 옵션이 제공됩니다. 사용 방법에 대한 더 나은 아이디어를 제공하기 위해 `Time` 보고서의 옵션에서 이 자습서는 다음 사용 사례를 다룹니다.
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 * [한 지표에 독립적인 시간 간격 제공](#independenttimeinterval)
 * [서로 다른 시간 범위에서 동일한 지표 비교](#difftimerange)
 
-이 주제에서 설명한 샘플 보고서 중 일부를 따라 수행하려면 다음을 엽니다. [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md) 계속하기 전에.
+이 주제에서 설명한 샘플 보고서 중 일부를 따라 수행하려면 다음을 엽니다. [[!DNL Visual Report Builder]](../data-user/reports/ess-rpt-build-visual.md) 계속하기 전에.
 
 ## 타임스탬프가 없는 지표 분석 {#notimestamp}
 
@@ -64,7 +64,7 @@ ht-degree: 0%
 
 ## 서로 다른 시간 범위에서 동일한 지표 비교 {#difftimerange}
 
-이 예에서는 이라는 사용자 정의 차원을 사용합니다. `Day number of the month`. 이 보고서를 만들려고 하는데 Data Warehouse에 이 차원이 없는 경우 [연락처 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 도움이 필요하신가요?
+이 예에서는 이라는 사용자 정의 차원을 사용합니다. `Day number of the month`. 이 보고서를 만들려고 하는데 Data Warehouse에 이 차원이 없는 경우 [연락처 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 도움이 필요하신가요?
 
 이 범주에서 가장 일반적인 두 가지 예는 (1) 성장 지표 (전년 대비 또는 전월 대비 매출)를 비교하는 것과 (2) 최근 재고 또는 품목 판매 트렌드를 더 잘 이해하는 것입니다.
 

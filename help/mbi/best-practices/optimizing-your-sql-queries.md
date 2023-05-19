@@ -2,18 +2,18 @@
 title: SQL 쿼리 최적화
 description: SQL 쿼리를 최적화하는 방법을 알아봅니다.
 exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '779'
 ht-degree: 0%
 
 ---
 
 # SQL 쿼리 최적화
 
-SQL Report Builder을 사용하면 지정된 시간에 해당 쿼리를 쿼리하고 반복할 수 있습니다. 이 기능은 작성한 열이나 보고서를 업데이트해야 한다는 사실을 인식하기 전에 업데이트 주기가 끝날 때까지 기다리지 않고 쿼리를 수정해야 할 때 유용합니다.
+다음 [!DNL SQL Report Builder] 을(를) 사용하면 언제든지 해당 쿼리를 쿼리하고 반복할 수 있습니다. 이 기능은 작성한 열이나 보고서를 업데이트해야 한다는 사실을 인식하기 전에 업데이트 주기가 끝날 때까지 기다리지 않고 쿼리를 수정해야 할 때 유용합니다.
 
-쿼리를 실행하기 전에, [[!DNL MBI] 예상 비용](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=en). 비용은 쿼리를 실행하는 데 필요한 시간과 리소스 수를 고려합니다. 해당 비용이 너무 높거나 반환된 행 수가 MBI 제한을 초과하는 경우 쿼리가 실패합니다. 가능한 가장 간소화된 쿼리를 작성할 수 있도록 Data Warehouse을 쿼리하려면 Adobe은 다음 사항을 권장합니다.
+쿼리를 실행하기 전에, [[!DNL Commerce Intelligence] 예상 비용](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html). 비용은 쿼리를 실행하는 데 필요한 시간과 리소스 수를 고려합니다. 그 비용이 너무 높거나 반환된 행의 수를 초과하는 경우 [!DNL Commerce Intelligence] 제한, 쿼리가 실패합니다. 쿼리 [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md)를 사용하면 최대한 간소화된 쿼리를 작성할 수 있으므로, Adobe은 다음을 권장합니다.
 
 ## SELECT 사용 또는 모든 열 선택
 

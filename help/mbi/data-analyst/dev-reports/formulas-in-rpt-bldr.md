@@ -2,16 +2,16 @@
 title: Report Builder의 공식
 description: Report Builder에서 수식을 사용하는 방법을 알아봅니다.
 exl-id: 7a0ad07a-5bcc-474f-95bc-ccc2b74073b2
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
 
 # 의 공식 `Report Builder`
 
-다음에서 [`Report Builder`](../../tutorials/using-visual-report-builder.md)를 사용하여 강력한 시각화를 만들 수 있습니다. [정의된 지표](../../data-user/reports/ess-manage-data-metrics.md) 계정에서. 이러한 지표를 수식에 결합하면 데이터에서 추가적인 통찰력을 얻을 수 있습니다. 이 문서에서는 다음에서 수식을 사용하는 방법을 자세히 설명합니다. `Report Builder` 뛰어들자!
+다음에서 [`Report Builder`](../../tutorials/using-visual-report-builder.md)를 사용하여 강력한 시각화를 만들 수 있습니다. [정의된 지표](../../data-user/reports/ess-manage-data-metrics.md) 계정에서. 이러한 지표를 수식에 결합하면 데이터에서 추가적인 통찰력을 얻을 수 있습니다. 이 항목에서는 다음에서 공식을 사용하는 방법을 설명합니다. `Report Builder` 뛰어들자!
 
 ## (이)란? `formula`? {#what}
 
@@ -63,4 +63,4 @@ ht-degree: 0%
 
 위의 예에서 공식이 `timestamp`, `groupings`, `perspectives`, 및 `filters` 입력 지표에서 상속됩니까? 수식을 사용하여 `perspectives` 및 [독립 시간 옵션](../../tutorials/time-options-visual-rpt-bldr.md){: target=&quot;_blank&quot;}. 지표와 마찬가지로
 
-에서 수식 사용에 대한 추가 질문이 있는 경우 `Report Builder`, [연락처 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+에서 수식 사용에 대한 추가 질문이 있는 경우 `Report Builder`, [연락처 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

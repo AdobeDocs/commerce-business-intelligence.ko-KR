@@ -2,9 +2,9 @@
 title: customer_entity 테이블
 description: 등록된 모든 계정의 레코드에 액세스하는 방법을 알아봅니다.
 exl-id: 24bf0e66-eea0-45ea-8ce6-4ff99b678201
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 다음 `customer_entity` 테이블에는 등록된 모든 계정의 기록이 들어 있습니다. 구매 완료 여부와 관계없이 계정에 등록하면 계정이 등록된 것으로 간주됩니다. 각 행은 해당 계정에 의해 식별되는 하나의 등록된 고유 계정에 해당합니다. `entity_id`.
 
-이 표에는 게스트 체크아웃을 통해 주문한 고객의 기록이 들어 있지 않습니다. 스토어에서 게스트 체크아웃을 수락하는 경우 [계정 방법 알아보기](../data-warehouse-mgr/guest-orders.md) 그러한 고객을 위한 것입니다.
+이 표에는 게스트 체크아웃을 통해 주문한 고객의 기록이 들어 있지 않습니다. 스토어에서 게스트 체크아웃을 수락하는 경우 [게스트 주문 처리 방법](../data-warehouse-mgr/guest-orders.md) 주문을위한.
 
 ## 공통 열
 
 | **열 이름** | **설명** |
 |---|---|
-| `created_at` | 계정의 등록 날짜에 해당하는 타임스탬프가 UTC로 로컬에 저장됩니다. 의 구성에 따라 [!DNL MBI], 이 타임스탬프는에서 보고 시간대로 변환될 수 있습니다. [!DNL MBI] 데이터베이스 시간대와 다릅니다. |
+| `created_at` | 계정의 등록 날짜에 해당하는 타임스탬프가 UTC로 로컬에 저장됩니다. 의 구성에 따라 [!DNL Commerce Intelligence], 이 타임스탬프는에서 보고 시간대로 변환될 수 있습니다. [!DNL Commerce Intelligence] 데이터베이스 시간대와 다릅니다. |
 | `email` | 계정과 연결된 이메일 주소 |
 | `entity_id` (PK) | 테이블에 대한 고유 식별자로, 조인 시 일반적으로 사용됩니다. `customer_id` 인스턴스 내의 다른 테이블에서 |
 | `group_id` | 와(과) 연결된 외래 키 `customer_group` 테이블. 가입 대상 `customer_group.customer_group_id` 등록된 계정과 연계된 고객 그룹 확인 |

@@ -1,19 +1,19 @@
 ---
 title: 질적 집단 분석 만들기
-description: 질적 집단은 무엇이며, 이 분석을 작성하는 데 관심이 있는 이유와 이러한 집단을 만들 수 있는 방법을 알아봅니다 [!DNL MBI].
+description: 질적 집단이 무엇인지, 이 분석을 빌드하는 데 관심이 있을 수 있는 이유와 Commerce Intelligence에서 이를 생성하는 방법에 대해 알아봅니다.
 exl-id: 113244e4-409b-4129-b3d4-7a3433539ade
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '840'
 ht-degree: 0%
 
 ---
 
 # 만들기 `Qualitative Cohort Analysis`
 
-어떻게 하는지 아세요? [!DNL Adwords]-획득한 고객 세그먼트는 유기 검색(organic search)을 통해 획득한 고객보다 LTV가 증가합니다. 공연을 해 볼 생각은 없었나요? `cohort` 동일한 보고서에서 서로 다른 고객 세그먼트를 나란히 분석합니까? 있는 경우 `qualitative cohort analysis` 는 이러한 질문에 답변하는 데 도움이 됩니다.
+어떻게 하는지 아세요? [!DNL Google Adwords]-획득한 고객 세그먼트는 유기 검색(organic search)을 통해 획득한 고객보다 LTV가 증가합니다. 공연을 해 볼 생각은 없었나요? `cohort` 동일한 보고서에서 서로 다른 고객 세그먼트를 나란히 분석합니까? 있는 경우 `qualitative cohort analysis` 는 이러한 질문에 답변하는 데 도움이 됩니다.
 
-이 문서에서는 질적 집단에 대해, 이 분석을 빌드하는 데 관심을 가질 수 있는 이유 및 이를 작성하는 방법에 대해 설명합니다 [!DNL MBI].
+이 주제에서는 질적 집단에 대해 알아보고, 이 분석을 빌드하는 데 관심을 가질 수 있는 이유와 이를 작성하는 방법에 대해 설명합니다 [!DNL Commerce Intelligence].
 
 ## 이란? `qualitative cohorts`그나저나? {#whatare}
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 다음을 참조하십시오 [집단 분석](https://www.cohortanalysis.com/).
 
-가장 `cohort` 에서 분석 [!DNL MBI] 공통 날짜(예: 주어진 달에 첫 번째 구매한 모든 고객 집합)로 사용자를 함께 그룹화합니다. A `qualitative cohort` 는 약간 다릅니다. 시간 기반이 아닌 특성으로 정의된 사용자 그룹입니다. 예를 들면 다음과 같습니다.
+가장 `cohort` 에서 분석 [!DNL Commerce Intelligence] 공통 날짜(예: 주어진 달에 첫 번째 구매한 모든 고객 집합)로 사용자를 함께 그룹화합니다. A `qualitative cohort` 는 약간 다릅니다. 시간 기반이 아닌 특성으로 정의된 사용자 그룹입니다. 예를 들면 다음과 같습니다.
 
 * 광고 캠페인에서 획득한 모든 사용자 세트
 * 첫 구매에 쿠폰이 포함된(또는 포함되지 않은) 모든 사용자 세트
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 만들기 `qualitative cohort` 보고서 위치: `Report Builder` Adobe 분석팀이 다음을 생성합니다. [고급 계산 열](../data-warehouse-mgr/creating-calculated-columns.md) 필요한 테이블에.
 
-빌드하려면 [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) (그리고 이 문서를 참조하십시오!) 다음은 알고 있어야 하는 사항입니다.
+빌드하려면 [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) (그리고 이 문서를 참조하십시오!) 다음은 알고 있어야 하는 사항입니다.
 
 * 다음 `metric` 및 사용하는 테이블을 사용하여 집단 분석을 수행하려고 합니다(예: `Revenue`, 빌드 날짜: `orders` table)을 참조하십시오.
 

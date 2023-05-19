@@ -2,9 +2,9 @@
 title: 시각적 Report Builder의 시각화 옵션
 description: 시각적 Report Builder에서 시각화 옵션을 사용하는 방법에 대해 알아봅니다.
 exl-id: e42a004e-28e3-4484-bb5a-b58c810b23e0
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: '1533'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 주어진 데이터 세트에 대해 올바른 시각화를 선택하는 것은 분석 프로세스의 중요한 부분입니다. 모든 데이터 집합에는 이야기할 스토리가 있지만, 해당 스토리의 효과는 시각적 영향과 가독성에 의해 강조됩니다.
 
-다음 [!DNL MBI] `Visual Report Builder` 에서는 각각 고유한 장점과 사용 사례를 가진 12개의 고유한 시각화 옵션을 제공합니다. 이 문서에서는 의 다양한 시각화 옵션에 대해 설명합니다. [!DNL MBI]필요한 보고서 구성(해당하는 경우) 및 사용 사례의 예를 포함합니다. MBI에서는 다음 시각화를 사용할 수 있습니다.
+다음 [!DNL Commerce Intelligence] [!DNL Visual Report Builder] 에서는 각각 고유한 장점과 사용 사례를 가진 12개의 고유한 시각화 옵션을 제공합니다. 이 항목에서는 의 다양한 시각화 옵션에 대해 설명합니다. [!DNL Commerce Intelligence]필요한 보고서 구성(해당하는 경우) 및 사용 사례의 예를 포함합니다. 에서 다음 시각화를 사용할 수 있습니다 [!DNL Commerce Intelligence]:
 
 * `Scalar`
 * `Table`

@@ -1,21 +1,21 @@
 ---
 title: MailChimp 데이터 가져오기
-description: MailChimp 데이터를 로 가져오는 방법 알아보기 [!DNL MBI].
+description: MailChimp 데이터를 로 가져오는 방법 알아보기 [!DNL Commerce Intelligence].
 exl-id: 5595c6a6-5476-4a0e-a493-ddc32161894e
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '263'
 ht-degree: 0%
 
 ---
 
-# 가져오기 `MailChimp` 데이터
+# 가져오기 [!DNL Mailchimp] 데이터
 
-캠페인 활동을 종합적으로 파악하려면 다음을 가져올 수 있습니다. `MailChimp` 캠페인 데이터를에 이메일 보내기 [!DNL MBI]. 가져오기를 완료하려면 각각에 대해 다음 작업을 수행해야 합니다 `MailChimp` 보유한 캠페인:
+캠페인 활동을 종합적으로 파악하려면 다음을 가져올 수 있습니다. [!DNL Mailchimp] 캠페인 데이터를에 이메일 보내기 [!DNL Commerce Intelligence]. 가져오기를 완료하려면 각각에 대해 다음 작업을 수행해야 합니다 [!DNL Mailchimp] 보유한 캠페인:
 
 ## 열기 데이터 내보내기 {#opens}
 
-1. 에 로그인한 후 `MailChimp`로 이동합니다. `Campaigns` 탭.
+1. 에 로그인한 후 [!DNL Mailchimp]로 이동합니다. `Campaigns` 탭.
 
    ![mailchimp 1 가져오기](../../../assets/import-mailchimp-1.png)
 
@@ -55,7 +55,7 @@ ht-degree: 0%
 
 ## 보낸 데이터 내보내기 {#sent}
 
-1. 로 이동합니다. `Campaigns` MailChimp 탭
+1. 로 이동합니다. `Campaigns` 탭 / [!DNL Mailchimp].
 
 1. 클릭 **[!UICONTROL View Report]** 캠페인 이름 옆에 있습니다.
 
@@ -69,8 +69,8 @@ ht-degree: 0%
 
    ![mailchimp 9 가져오기](../../../assets/import-mailchimp-9.png)
 
-## 업로드할 파일 준비 [!DNL MBI] {#upload}
+## 업로드할 파일 준비 [!DNL Commerce Intelligence] {#upload}
 
-각 파일 - `Opens`, `Clicks`, 및 `Sent` - 을(를) (으)로 업로드해야 합니다. [!DNL MBI] 별도의 파일로 사용할 수 있습니다. Adobe은 다음과 같은 명명 규칙을 사용하여 파일 이름을 지정할 것을 권장합니다. `MailChimp\_ACTION\_DATE`. 바꾸기 `ACTION` 포함 `Open`, `Click`, 또는 `Sent`, 및 바꾸기 `DATE` (내보내는 날짜 포함)
+각 파일 - `Opens`, `Clicks`, 및 `Sent` - 을(를) (으)로 업로드해야 합니다. [!DNL Commerce Intelligence] 별도의 파일로 사용할 수 있습니다. Adobe은 다음과 같은 명명 규칙을 사용하여 파일 이름을 지정할 것을 권장합니다. `MailChimp\_ACTION\_DATE`. 바꾸기 `ACTION` 포함 `Open`, `Click`, 또는 `Sent`, 및 바꾸기 `DATE` (내보내는 날짜 포함)
 
 파일을 업로드할 준비가 되면 [`File Upload` 기능](../connecting-data/using-file-uploader.md) 데이터를 Data Warehouse으로 가져오기

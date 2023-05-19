@@ -2,16 +2,16 @@
 title: 기본 분석 이해 및 구축
 description: 기본 분석을 이해하고 빌드하는 방법을 알아봅니다.
 exl-id: 23cea7b3-2e66-40c3-b4bd-d197237782e3
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '3117'
+source-wordcount: '3113'
 ht-degree: 0%
 
 ---
 
 # 기본 분석
 
-를 잘 알고 있으면 [!DNL MBI] 플랫폼을 사용하고 도구에 대한 기본 사항을 알고 있으면 보고서 작성을 시작할 수 있습니다. 가장 일반적인 질문 중 하나는 &quot;무엇을 봐야 합니까?&quot;입니다.
+를 잘 알고 있으면 [!DNL Adobe Commerce Intelligence] 플랫폼을 사용하고 도구에 대한 기본 사항을 알고 있으면 보고서 작성을 시작할 수 있습니다. 가장 일반적인 질문 중 하나는 &quot;무엇을 봐야 합니까?&quot;입니다.
 
 아래 정보에서는 유용한 정보를 찾을 수 있는 몇 가지 일반적인 지표와 보고서에 대해 간략히 설명합니다. 이러한 보고서 중 일부는 계정 내에 있으므로, 중복을 만들지 않도록 계정 내에 있는 지표 및 보고서를 검토해야 합니다.
 
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 **손님 주문도 받으시나요?**
 
-*이 경우 이 테이블에 모든 고객이 포함되지 않을 수 있습니다. 다음으로 문의: [지원 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 고객 분석에 모든 고객이 포함되도록 합니다.*
+*이 경우 이 테이블에 모든 고객이 포함되지 않을 수 있습니다. 다음으로 문의: [지원 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 고객 분석에 모든 고객이 포함되도록 합니다.*
 
 *손님 주문을 수락하는지 확실하지 않으세요? 을(를) 참조하십시오 [이 항목](../data-warehouse-mgr/guest-orders.md) 자세히 알아보기!*
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 * **[!UICONTROL Created_at]**: 주문이 생성되거나 주문된 날짜입니다.
 * **[!UICONTROL Customer_email]**: 주문한 고객의 이메일 주소입니다. 고객의 고유 식별자일 수도 있습니다.
 * **[!UICONTROL Customer's lifetime number of orders]**: 다음에 대한 동일한 이름을 가진 열의 사본 `Customers` 테이블.
-* **[!UICONTROL Customer's order number]**: 주문과 연결된 고객의 순차적 주문 번호입니다. 예를 들어 표시되는 행이 고객의 첫 번째 주문인 경우 이 열은 &quot;1&quot;이지만, 고객의 15번째 주문인 경우 이 열에는 이 주문에 대한 &quot;15&quot;가 표시됩니다. 이 차원이 다음에 없는 경우 `Customers` 테이블, [지원 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 제작에 도움이 될 것입니다.
+* **[!UICONTROL Customer's order number]**: 주문과 연결된 고객의 순차적 주문 번호입니다. 예를 들어 표시되는 행이 고객의 첫 번째 주문인 경우 이 열은 &quot;1&quot;이지만, 고객의 15번째 주문인 경우 이 열에는 이 주문에 대한 &quot;15&quot;가 표시됩니다. 이 차원이 다음에 없는 경우 `Customers` 테이블, [지원 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 제작에 도움이 될 것입니다.
 * **[!UICONTROL Customer's order number (previous-current)]**: 의 두 값 연결 **[!UICONTROL Customer's order number]** 열. 이 메서드는 아래 샘플 보고서에서 두 주문 간의 경과 시간을 표시하는 데 사용됩니다. 예를 들어, 고객의 첫 번째 주문 일자와 두 번째 주문 일자 사이의 시간은 이 계산과 함께 &quot;1-2&quot;로 표시됩니다.
 * **[!UICONTROL Coupon_code]**: 각 주문에 사용된 쿠폰을 표시합니다.
 * **[!UICONTROL Seconds since previous order]**: 고객 주문 사이의 시간(초)입니다.

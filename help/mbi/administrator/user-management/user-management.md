@@ -1,27 +1,27 @@
 ---
-title: 사용자 및 권한 관리
-description: 을(를) 관리하는 방법 알아보기 [!DNL MBI] 사용자.
+title: Adobe Commerce 사용자 및 권한 관리
+description: Commerce Intelligence 사용자를 관리하는 방법을 알아봅니다.
 exl-id: 2a5eeabb-3c13-4ca1-b845-ed255b389c9f
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
 
 # 사용자 권한 관리
 
-MBI는 조직 전체에서 신뢰할 수 있는 단일 소스입니다. 각 사용자에게는 다음과 같은 작업을 수행할 수 있는 자체 대시보드 세트가 있습니다 [다른 사용자와 공유](../../data-user/dashboards/share-dashboard-with-users.md).
+[!DNL Adobe Commerce Intelligence] 는 조직 전체에서 신뢰할 수 있는 단일 소스입니다. 각 사용자에게는 다음과 같은 작업을 수행할 수 있는 자체 대시보드 세트가 있습니다 [다른 사용자와 공유](../../data-user/dashboards/share-dashboard-with-users.md).
 
 ## 사용자 권한 수준
 
-위치 [!DNL MBI]에는 계정을 만들 때 선택되는 세 가지 일반 권한 수준이 사용자에게 적용됩니다.
+위치 [!DNL Commerce Intelligence]에는 계정을 만들 때 선택되는 세 가지 일반 권한 수준이 사용자에게 적용됩니다.
 
 * `Admin`
 * `Standard`
 * `Read-Only`
 
-이러한 권한을 통해 사용자는 특정 작업을 수행하거나 특정 [!DNL MBI]. 다음은 MBI에서 각 권한 수준이 수행할 수 있는 작업의 표입니다.
+이러한 권한을 통해 사용자는 특정 작업을 수행하거나 특정 [!DNL Commerce Intelligence]. 다음은 각 권한 수준에서 수행할 수 있는 작업입니다 [!DNL Commerce Intelligence]:
 
 |  | `Admin` | `Standard` | `Read Only` |
 | -----|-----|-----|----|
@@ -52,7 +52,7 @@ MBI는 조직 전체에서 신뢰할 수 있는 단일 소스입니다. 각 사�
 >
 >**[!UICONTROL Standard] _사용자는 추가 권한 설정으로 청구에 액세스할 수 있습니다._
 >
->**[!UICONTROL Read-Only]** 사용자는 만 할 수 있습니다. _보기_ 공유된 대시보드: 의 항목을 만들거나 편집할 수 없습니다. [!DNL MBI]또한 새 대시보드를 검색하고 계정에 추가할 수 없습니다. Adobe은 특정 대시보드 세트를 와 공유할 것을 권장합니다 **[!UICONTROL Read-Only]** 귀하 또는 귀하의 팀의 다른 멤버가 유지 관리하는 사용자. 대시보드 세트를 복제하지 마십시오.
+>**[!UICONTROL Read-Only]** 사용자는 만 할 수 있습니다. _보기_ 공유된 대시보드: 의 항목을 만들거나 편집할 수 없습니다. [!DNL Commerce Intelligence]또한 새 대시보드를 검색하고 계정에 추가할 수 없습니다. Adobe은 특정 대시보드 세트를 와 공유할 것을 권장합니다 **[!UICONTROL Read-Only]** 귀하 또는 귀하의 팀의 다른 멤버가 유지 관리하는 사용자. 대시보드 세트를 복제하지 마십시오.
 
 ## 추가 권한: 청구 및 기술 {#billingtech}
 
@@ -70,6 +70,6 @@ MBI는 조직 전체에서 신뢰할 수 있는 단일 소스입니다. 각 사�
 
 `Technical` 사용자에게 이에 대한 권한이 없습니다. 이 설정은 조직 내의 기술 담당자를 표시합니다. 이러한 사용자는 기술 관련 질문이 있는 경우 Adobe으로 문의할 수 있습니다.
 
-`Admin` 을 클릭하여 새 사용자를 자신의 계정에 추가할 수 있습니다. **[!UICONTROL Account Settings]** > **[!UICONTROL Create Users]** 프롬프트에 따라 을 클릭합니다. 사용자가에 생성된 후 [!DNL MBI]을(를) 초대하는 행운의 사용자에게 계정 설정 프로세스를 완료하는 방법에 대한 이메일 지침이 전송됩니다.
+`Admin` 을 클릭하여 새 사용자를 자신의 계정에 추가할 수 있습니다. **[!UICONTROL Account Settings]** > **[!UICONTROL Create Users]** 프롬프트에 따라 을 클릭합니다. 사용자가에 생성된 후 [!DNL Commerce Intelligence]을(를) 초대하는 행운의 사용자에게 계정 설정 프로세스를 완료하는 방법에 대한 이메일 지침이 전송됩니다.
 
 언제든지, `Admins` 을 클릭하여 계정의 모든 사용자를 볼 수 있습니다. **[!UICONTROL Account Settings]** > **[!UICONTROL Manage Users]**. 이 페이지에는 사용자의 권한과 액세스 가능한 지표 및 대시보드가 표시됩니다.

@@ -2,7 +2,7 @@
 title: 파일 업로더 사용
 description: 모든 데이터를 단일 Data Warehouse에 넣는 방법을 알아봅니다.
 exl-id: 28db0e78-0222-431d-bbb9-6ef133686603
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 0%
@@ -15,14 +15,14 @@ ht-degree: 0%
 >
 >필요 [관리자 권한](../../../administrator/user-management/user-management.md).
 
-[!DNL MBI] 는 시각화 기능 때문만이 아니라 모든 데이터를 단일 Data Warehouse에 넣을 수 있는 기능을 제공하므로 강력합니다. 데이터베이스와 통합 외부에 있는 데이터도 가져올 수 있습니다 [!DNL MBI] Data Warehouse 관리자에서 파일 업로드 도구를 사용합니다.
+[!DNL Adobe Commerce Intelligence] 는 시각화 기능 때문만이 아니라 모든 데이터를 단일 Data Warehouse에 넣을 수 있는 기능을 제공하므로 강력합니다. 데이터베이스와 통합 외부에 있는 데이터도 가져올 수 있습니다 [!DNL Commerce Intelligence] Data Warehouse 관리자에서 파일 업로드 도구를 사용합니다.
 
 광고 캠페인을 예로 사용하십시오. 온라인 및 오프라인 캠페인을 모두 실행하는 경우 온라인 통합의 데이터만 분석하는 경우에는 전체 상황을 파악할 수 없습니다. 오프라인 캠페인 데이터가 포함된 스프레드시트를 업로드하면 두 데이터 세트를 모두 분석하고 캠페인 성과를 보다 강력하게 이해할 수 있습니다.
 
 ## 제한 사항 및 요구 사항 {#require}
 
 1. **파일 업로드에 대해 지원되는 유일한 형식은 입니다. `CSV` 또는`comma separated values`**. Excel에서 작업하는 경우 다른 이름으로 저장 기능을 사용하여 파일을 저장할 수 있습니다 `.csv` 포맷.
-1. **`CSV`파일은 다음을 사용해야 합니다.`UTF-8 encoding`**. 대부분의 경우, 이것은 문제가 아닙니다. 파일을 업로드하는 동안 이 오류가 발생하는 경우 [이 지원 문서 참조](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=en).
+1. **`CSV`파일은 다음을 사용해야 합니다.`UTF-8 encoding`**. 대부분의 경우, 이것은 문제가 아닙니다. 파일을 업로드하는 동안 이 오류가 발생하는 경우 [이 지원 문서 참조](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html).
 1. **파일은 100MB보다 클 수 없습니다.**. 파일이 이보다 큰 경우 테이블을 청크로 분리하여 개별 파일로 저장합니다. 초기 파일이 로드된 후 데이터를 추가할 수 있습니다.
 1. **모든 테이블에`primary key`**. 테이블로 사용할 수 있는 열이 하나 이상 있어야 합니다. `primary key`또는 테이블의 각 행에 대한 고유 식별자입니다. 로 지정된 모든 열 `primary key` can *절대 안 함* null입니다. A `primary key` 각 행에 숫자를 제공하는 열을 추가하는 것처럼 간단하거나 연결된 두 개의 열이 고유한 값의 열을 만들 수 있습니다(예: `campaign name` 및 `date`).
 
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 ## 업로드할 데이터 서식 지정 {#formatting}
 
-데이터를에 업로드하기 전에 [!DNL MBI]이 섹션의 지침에 따라 형식이 지정되었는지 확인합니다.
+데이터를에 업로드하기 전에 [!DNL Commerce Intelligence]이 섹션의 지침에 따라 형식이 지정되었는지 확인합니다.
 
 ### 머리글 행 {#header}
 
@@ -77,7 +77,7 @@ ZIP 코드 및 ID와 같은 파일의 일부 값은 0으로 시작되거나 끝�
 
 ## 데이터 업로드 중 {#uploading}
 
-이제 스프레드시트의 형식이 올바르고 [!DNL MBI]-friendly, Data Warehouse에 추가합니다.
+이제 스프레드시트의 형식이 올바르고 [!DNL Commerce Intelligence]-friendly, Data Warehouse에 추가합니다.
 
 1. 시작하려면 다음으로 이동 **[!UICONTROL Data** > **File Uploads]**.
 
@@ -85,7 +85,7 @@ ZIP 코드 및 ID와 같은 파일의 일부 값은 0으로 시작되거나 끝�
 
 1. 클릭 **[!UICONTROL Choose File]** 파일을 선택합니다. 클릭 **[!UICONTROL Open]** 업로드 시작.
 
-   업로드가 완료된 후 열 목록 [!DNL MBI] 을(를) 파일에서 찾았습니다.
+   업로드가 완료된 후 열 목록 [!DNL Commerce Intelligence] 을(를) 파일에서 찾았습니다.
 
 1. 열 이름과 데이터 유형이 올바른지 확인합니다. 특히 날짜 열이 숫자가 아닌 날짜로 읽히는지 확인합니다.
 
@@ -111,7 +111,7 @@ A *성공!* 테이블이 저장된 후 화면 상단에 메시지가 나타납�
 
 ## 기존 테이블에 데이터 업데이트 또는 추가 {#appending}
 
-이미 업로드한 파일에 추가할 새로운 데이터가 있습니까? 문제 없음 - 데이터를 쉽게 업데이트하고 추가할 수 있습니다. [!DNL MBI].
+이미 업로드한 파일에 추가할 새로운 데이터가 있습니까? 문제 없음 - 데이터를 쉽게 업데이트하고 추가할 수 있습니다. [!DNL Commerce Intelligence].
 
 1. 시작하려면 다음으로 이동 **[!UICONTROL Manage Data** > **File Uploads]**.
 
@@ -121,7 +121,7 @@ A *성공!* 테이블이 저장된 후 화면 상단에 메시지가 나타납�
 
 1. 드롭다운을 사용하여 중복 행을 처리하는 옵션을 선택합니다.
 
-   |  |  |
+   | 옵션 | 설명 |
    |---|---|
    | `Overwrite old row with new row` | 기존 테이블과 새 파일 모두에서 행에 동일한 기본 키가 있는 경우 기존 데이터를 새 데이터로 덮어씁니다. 시간이 지남에 따라 값이 변경되는 열(예: 상태 열)에 사용하는 방법입니다. 기존 데이터를 덮어쓰고 새 데이터로 업데이트합니다. 기존 표에 기본 키가 없는 행은 새 행으로 추가됩니다. |
    | `Retain old row; discard new row` | 이렇게 하면 기존 테이블과 새 파일 모두에서 행에 동일한 기본 키가 있는 경우 새 데이터가 무시됩니다. |
@@ -131,7 +131,7 @@ A *성공!* 테이블이 저장된 후 화면 상단에 메시지가 나타납�
 
 1. 클릭 **[!UICONTROL Open]** 업로드 시작.
 
-   업로드가 완료되면, [!DNL MBI] 는 파일에서 데이터 구조의 유효성을 검사합니다. A *성공!* 테이블이 저장된 후 화면 상단에 메시지가 나타납니다.
+   업로드가 완료되면, [!DNL Commerce Intelligence] 는 파일에서 데이터 구조의 유효성을 검사합니다. A *성공!* 테이블이 저장된 후 화면 상단에 메시지가 나타납니다.
 
 ## 데이터 가용성 {#availability}
 
@@ -139,9 +139,9 @@ A *성공!* 테이블이 저장된 후 화면 상단에 메시지가 나타납�
 
 ## 요약 {#wrapup}
 
-이 문서에서는 데이터 가져오기를 사용하는 기본 사항만 다뤘지만 보다 고급 작업을 수행해야 할 수 있습니다. 금융, 전자 상거래, 광고 지출 및 기타 유형의 데이터 형식 지정 및 가져오기에 대한 지침은 관련 문서를 확인하십시오.
+이 항목에서는 데이터 가져오기를 사용하는 기본 사항만 다루지만 보다 고급 작업을 수행할 수도 있습니다. 금융, 전자 상거래, 광고 지출 및 기타 유형의 데이터 형식 지정 및 가져오기에 대한 지침은 관련 문서를 확인하십시오.
 
-또한 파일 업로드는 데이터를 로 가져오는 유일한 방법이 아닙니다 [!DNL MBI]. 다음 [데이터 가져오기 API](https://developer.adobe.com/commerce/services/reporting/import-api/) 함수를 사용하면 임의의 데이터를 [!DNL MBI] Data Warehouse.
+또한 파일 업로드는 데이터를 로 가져오는 유일한 방법이 아닙니다 [!DNL Commerce Intelligence]. 다음 [데이터 가져오기 API](https://developer.adobe.com/commerce/services/reporting/import-api/) 함수를 사용하면 임의의 데이터를 [!DNL Commerce Intelligence] Data Warehouse.
 
 ## 관련 항목 {#related}
 

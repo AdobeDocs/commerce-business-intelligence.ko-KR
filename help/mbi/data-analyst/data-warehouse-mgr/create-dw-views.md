@@ -2,9 +2,9 @@
 title: Data Warehouse 보기 만들기 및 사용
 description: 기존 테이블을 수정하여 새 웨어하우스된 테이블을 만들거나 SQL을 사용하여 여러 테이블을 함께 연결하거나 통합하는 방법에 대해 알아봅니다.
 exl-id: 5aa571c9-7f38-462c-8f1b-76a826c9dc55
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '1064'
+source-wordcount: '1071'
 ht-degree: 9%
 
 ---
@@ -36,6 +36,7 @@ SQL에 익숙하다면 이러한 통합 예는 모두 `UNION` 함수를 사용�
 1. 기존 보기를 관찰하는 경우 **[!UICONTROL New Data Warehouse View]** 을 눌러 빈 쿼리 창을 엽니다. 빈 쿼리 창이 이미 열려 있는 경우 다음 단계로 진행합니다.
 1. 을(를) 입력하여 보기의 이름을 지정합니다. `View Name` 필드. 여기에 제공된 이름은 Data Warehouse에서 보기의 표시 이름을 결정합니다. `View names` 소문자, 숫자 및 밑줄(_)로 제한됩니다. 다른 문자는 사용할 수 없습니다.
 1. 제목이 있는 창에 쿼리를 입력합니다. `Select Query`표준 PostgreSQL 구문을 사용합니다.
+
    >[!NOTE]
    >
    >쿼리에서 특정 열 이름을 참조해야 합니다. 사용 `*`모든 열을 선택하는 문자는 허용되지 않습니다.
@@ -76,7 +77,7 @@ SQL에 익숙하다면 이러한 통합 예는 모두 `UNION` 함수를 사용�
 | 4 | aaa | 110 | 2017-06-08 00:00:00 | 6000 | 10 |
 | 5 | ccc | 5 | 2017-07-06 00:00:00 | 300 | 1.2 |
 
-두 항목을 모두 포함하는 단일 광고 지출 테이블을 만들려면 [!DNL Facebook] 및 [!DNL AdWords] 캠페인을 사용하려면 SQL 쿼리를 작성하고 `UNION ALL` 함수. A `UNION ALL` 문은 각 쿼리의 결과를 단일 출력에 추가하면서 서로 다른 여러 SQL 쿼리를 결합하는 데 가장 많이 사용됩니다.
+두 항목을 모두 포함하는 단일 광고 지출 테이블을 만들려면 [!DNL Facebook] 및 [!DNL Google AdWords] 캠페인을 사용하려면 SQL 쿼리를 작성하고 `UNION ALL` 함수. A `UNION ALL` 문은 각 쿼리의 결과를 단일 출력에 추가하면서 서로 다른 여러 SQL 쿼리를 결합하는 데 가장 많이 사용됩니다.
 
 에는 몇 가지 요구 사항이 있습니다. `UNION` PostgreSQL에 요약된 언급할 가치가 있는 명령문 [설명서](https://www.postgresql.org/docs/8.3/queries-union.html):
 
@@ -129,11 +130,11 @@ SQL에 익숙하다면 이러한 통합 예는 모두 `UNION` 함수를 사용�
 | **5** | [!DNL Facebook] | 2017-07-06 00:00:00 | ccc | 1.2 | 300 | 5 |
 | **5** | [!DNL Google AdWords] | 2017-07-10 00:00:00 | fff | 28.5 | 10200 | 280 |
 
-이제 각 광고 소스에 대해 별도의 마케팅 지표 세트를 만드는 대신, 위의 표를 사용하여 단일 지표 세트만 만들어 모든 광고를 캡처할 수 있습니다.
+각 광고 소스에 대해 별도의 마케팅 지표 세트를 만드는 대신 위의 표를 사용하여 단일 지표 세트만 만들어 모든 광고를 캡처할 수 있습니다.
 
 **추가 도움말을 찾고 계십니까?**
 
-SQL 작성 및 생성 `Data Warehouse Views` 이 기술 지원에는 포함되어 있지 않습니다. 그러나 서비스 팀은 보기 만들기에 대한 지원을 제공합니다. 특정 분석을 위해 새 데이터베이스를 사용하여 기존 데이터베이스를 마이그레이션하고 단일 Data Warehouse 보기를 만드는 모든 작업에 대해 지원 팀이 도움을 줄 수 있습니다.
+SQL 작성 및 생성 `Data Warehouse Views` 이 기술 지원에는 포함되어 있지 않습니다. 그러나 [서비스 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 는 보기 만들기에 대한 지원을 제공합니다. 특정 분석을 위해 새 데이터베이스를 사용하여 기존 데이터베이스를 마이그레이션하고 단일 Data Warehouse 보기를 만드는 모든 작업에 대해 지원 팀이 도움을 줄 수 있습니다.
 
 일반적으로 새 항목 만들기 `Data Warehouse View` 2~3개의 유사 구조 테이블을 통합하려면 5시간의 서비스 시간이 필요하며, 이는 약 1,250달러의 작업 비용으로 해석됩니다. 그러나 필요한 예상 투자를 늘릴 수 있는 몇 가지 일반적인 요소는 다음과 같습니다.
 

@@ -2,16 +2,16 @@
 title: Google Analytics - 데이터베이스에서 사용자 장치 및 브라우저 데이터 추적
 description: 모바일 장치를 통해 실제로 로그인하는 사용자 수와 해당 사용자의 라이프타임 값에 영향을 미치는 방법에 대해 알아봅니다.
 exl-id: 57b1bc45-b139-4370-86ea-2fbd021aa14d
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '430'
 ht-degree: 0%
 
 ---
 
 # [!UICONTROL Google Analytics] 추적
 
-포함 [!UICONTROL Google Analytics] 다음을 수행할 수 있습니다. [참조 소스 정보 저장](../analysis/google-track-user-acq.md) 를 통해 가장 중요한 사용자의 출처를 파악할 수 있습니다. 이 항목에서는 사용자가 작업 중인 플랫폼(예: 장치 또는 브라우저)에 대해 알아봅니다. 이를 통해 모바일 장치를 통해 실제로 로그인하는 사용자 수와 해당 사용자의 라이프타임 값에 미치는 영향을 파악할 수 있습니다.
+포함 [!UICONTROL Google Analytics] 다음을 수행할 수 있습니다. [참조 소스 정보 저장](../analysis/google-track-user-acq.md) 를 통해 가장 중요한 사용자의 출처를 파악할 수 있습니다. 이 항목에서는 사용자가 작업 중인 플랫폼(예: 장치 또는 브라우저)에 대해 설명합니다. 이를 통해 모바일 장치를 통해 실제로 로그인하는 사용자 수와 해당 사용자의 라이프타임 값에 미치는 영향을 파악할 수 있습니다.
 
 ## 사용자 장치 및 브라우저 데이터 저장
 
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 ### 이 데이터를 언제 기록해야 합니까?
 
-Adobe은 라는 새 필드를 추가할 것을 권장합니다. `Platform` 또는 `User-Agent` (으)로 `Customers` 및 `Orders` 사용자가 만들어지거나 주문이 들어갈 때마다 이 정보를 저장하는 데이터베이스 테이블입니다. SQL 데이터베이스를 사용하는 경우 이 필드는 `VARCHAR(255)`. 
+[!DNL Adobe] (이)라는 새 필드를 추가할 것을 권장합니다. `Platform` 또는 `User-Agent` (으)로 `Customers` 및 `Orders` 사용자가 만들어지거나 주문이 들어갈 때마다 이 정보를 저장하는 데이터베이스 테이블입니다. SQL 데이터베이스를 사용하는 경우 이 필드는 `VARCHAR(255)`. 
 
 >[!NOTE]
 >

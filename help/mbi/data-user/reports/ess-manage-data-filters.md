@@ -2,18 +2,18 @@
 title: 지표에 대한 필터 세트 만들기
 description: 저장된 필터 세트를 만들고 이를 지표에 적용하는 방법을 알아봅니다.
 exl-id: 6ef8b67c-bebd-45eb-bca7-95832ec34fc8
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
 
 # 필터 세트 만들기
 
-에 여러 지표가 있는 경우 [!DNL MBI] 유사한 방식으로 필터링해야 하는 경우(예: 테스트 주문 필터링), 저장된 필터 세트를 생성하고 지표에 적용할 수 있습니다. 이렇게 하면 지표를 만들거나 편집할 때 개별 필터를 추가할 필요가 없어 시간을 절약할 수 있습니다.
+에 여러 지표가 있는 경우 [!DNL Commerce Intelligence] 유사한 방식으로 필터링해야 하는 경우(예: 테스트 주문 필터링), 저장된 필터 세트를 생성하고 지표에 적용할 수 있습니다. 이렇게 하면 지표를 만들거나 편집할 때 개별 필터를 추가할 필요가 없어 시간을 절약할 수 있습니다.
 
-다음을 참조하십시오. [교육 비디오](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html?lang=en) 자세히 알아보십시오.
+다음을 참조하십시오. [교육 비디오](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html) 추가 정보.
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 1. 필터 논리를 확인하고 괄호와 연산자가 올바르게 입력되었는지 확인합니다. 예: `\[A\] AND \[B\]; (\[A\] OR \[B\]) AND \[C\]`.
 
-   잘못된 필터는 종종 간의 데이터 불일치의 원인입니다. [!DNL MBI] 보고서와 예상 결과를 표시합니다.
+   잘못된 필터는 종종 간의 데이터 불일치의 원인입니다. [!DNL Commerce Intelligence] 보고서 및 예상 결과.
 
 1. 저장 `Filter Set`.
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->`Filter Sets` 의 계산된 열에도 적용할 수 있습니다. [!DNL MBI]. 에서 만든 데이터 차원에 필터 세트를 적용하도록 요청할 수 있습니다. [!DNL MBI] 를 통해 고객 지원에 문의합니다.
+>`Filter Sets` 의 계산된 열에도 적용할 수 있습니다. [!DNL Commerce Intelligence]. 에서 만든 데이터 차원에 필터 세트를 적용하도록 요청할 수 있습니다. [!DNL Commerce Intelligence] 를 통해 고객 지원에 문의합니다.
 
 ## 관련 항목
 

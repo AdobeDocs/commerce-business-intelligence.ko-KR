@@ -1,25 +1,25 @@
 ---
-title: Commerce에 데이터 저장
-description: 데이터가 생성되는 방법, 새 행이 삽입되는 원인 및 작업을 상거래 데이터베이스에 기록하는 방법을 알아봅니다.
+title: Adobe Commerce에 데이터 저장
+description: 데이터가 생성되는 방법, 새 행이 삽입되는 원인 및 Adobe Commerce 데이터베이스에 작업이 기록되는 방법에 대해 알아봅니다.
 exl-id: 436ecdc1-7112-4dec-9db7-1f3757a2a938
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '928'
 ht-degree: 3%
 
 ---
 
 # 데이터 저장 [!DNL Adobe Commerce]
 
-Adobe Commerce 플랫폼은 수백 개의 테이블에 걸쳐 중요한 다양한 상거래 데이터를 기록하고 구성합니다. 이 항목에서는 다음을 설명합니다.
+다음 [!DNL Adobe Commerce] 플랫폼은 수백 개의 테이블에 걸쳐 중요한 다양한 상거래 데이터를 기록하고 구성합니다. 이 항목에서는 다음을 설명합니다.
 
 * 데이터 생성 방법
-* 정확히 어떤 이유로 새 행이 다음 중 하나에 삽입됨 [Core Commerce 표](../data-warehouse-mgr/common-mage-tables.md)
-* 구매 또는 계정 생성과 같은 작업을 상거래 데이터베이스에 기록하는 방법
+* 새 행이 다음 중 하나에 삽입되는 이유 [Core Commerce 표](../data-warehouse-mgr/common-mage-tables.md)
+* 구매 또는 계정 생성과 같은 작업을 [!DNL Adobe Commerce] 데이터베이스
 
-이러한 개념을 설명하려면 다음 예를 참조하십시오.
+이러한 개념에 대해 논의하려면 다음 예를 참조하십시오.
 
-`Clothes4U` 은 온라인과 오프라인 기능을 모두 갖춘 의류 소매업체입니다. 웹 사이트 뒤의 Magento Open Source을 사용하여 데이터를 수집하고 구성합니다.
+`Clothes4U` 은 온라인 및 오프라인 매장 모두를 갖춘 의류 소매업체입니다. 다음을 사용합니다 [!DNL Magento Open Source] 웹 사이트 뒤쪽에서 데이터를 수집하고 구성합니다.
 
 ## `catalog\_product\_entity`
 
@@ -57,7 +57,7 @@ Adobe Commerce 플랫폼은 수백 개의 테이블에 걸쳐 중요한 다양�
 * `email` - 이 필드는 새 고객이 계정을 만들 때 입력하는 이메일로 채워집니다.
 * `created_at` - 이 열은 각 사용자가 가입한 시점의 타임스탬프를 반환합니다.
 
-## `sales\_flat\_order (or Sales\_order` commerce 2.0 이상이 있는 경우)
+## `sales\_flat\_order (or Sales\_order` 다음을 보유한 경우 [!DNL Adobe Commerce 2.x]
 
 계정 생성이 완료되고 `Sammy Customer` 구매를 시작할 준비가 되었습니다. 웹 사이트에서 고객은 `Throwback Bellbottoms` 및 1 `V-Neck T-Shirt` 장바구니에. 선택에 만족하면 고객이 체크아웃으로 이동하여 주문을 제출하고 [판매 플랫 주문 테이블](../data-warehouse-mgr/sales-flat-order-table.md):
 
@@ -73,7 +73,9 @@ Adobe Commerce 플랫폼은 수백 개의 테이블에 걸쳐 중요한 다양�
    * &#39;트로우백 벨바텀&#39;과 &#39;브이넥 티셔츠&#39; 두 켤레의 가격은 총 94.85달러였다
 * `created_at` - 이 열은 각 순서가 생성된 시기에 대한 타임스탬프를 반환합니다.
 
-## `sales\_flat\_order\_item ( or Sales\_order\_item` commerce 2.0 이상이 있는 경우)
+## `sales\_flat\_order\_item ( or Sales\_order\_item`
+
+(Commerce 2.0 이상이 있는 경우)
 
 의 단일 행 외에도 `Sales\_flat\_order` 테이블, 조건 `Sammy Customer` 주문을 제출하면 해당 주문의 각 고유 항목에 대한 행이 [`sales\_flat\_order\_item` 표](../data-warehouse-mgr/sales-flat-order-item-table.md):
 

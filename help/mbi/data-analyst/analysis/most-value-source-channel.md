@@ -2,9 +2,9 @@
 title: 가장 중요한 마케팅 소스 및 채널 식별
 description: 가장 중요한 마케팅 채널을 파악하는 데 사용할 수 있는 몇 가지 보고서에 대해 알아봅니다.
 exl-id: 8d25bc80-ea60-47db-b01b-04a23a24c14d
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '978'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 대상을 조사하고, 캠페인을 만들고, 몇 가지 마케팅 채널에 투자했습니다. 이제 시간이 좀 지났는데, 그 채널들은 어떻게 수행하고 있습니까? 어떤 채널에서 가장 새로운 사용자를 확보했습니까? 전체 매출에 가장 많은 기여를 한 소스는 무엇입니까?
 
-포함 [!DNL MBI]에 해당하는지 여부에 관계없이 조회 소스별로 매출과 사용자를 쉽게 세그먼트화할 수 있습니다. [!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en) 또는 사용자 지정 데이터 필드입니다. 이 세그먼테이션을 사용하면 가장 성과가 좋은 채널을 찾아 마케팅 예산을 더 잘 투자할 수 있습니다.
+포함 [!DNL Adobe Commerce Intelligence]에 해당하는지 여부에 관계없이 조회 소스별로 매출과 사용자를 쉽게 세그먼트화할 수 있습니다. [!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en) 또는 사용자 지정 데이터 필드입니다. 이 세그먼테이션을 사용하면 가장 성과가 좋은 채널을 찾아 마케팅 예산을 더 잘 투자할 수 있습니다.
 
-이 문서에서는 가장 가치 있는 마케팅 채널을 검색하는 데 사용할 수 있는 몇 가지 보고서에 대해 알아봅니다.
+이 주제에서는 가장 가치 있는 마케팅 채널을 파악하는 데 사용할 수 있는 몇 가지 보고서에 대해 알아봅니다.
 
 * [소스별 새 사용자](#newusersbysource)
 * [사용자 소스별 평균 라이프타임 수익](#avglifetimerev)
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## 전제 조건 {#prereqs}
 
-이 문서에서 분석을 작성하려면 마케팅 획득/참조 소스 데이터에 액세스해야 합니다. 아직 추적하지 않으셨다면 다음을 가져오셔야 합니다. [다음에서 조회 소스 데이터 주문 [!DNL Google ECommerce]](../importing-data/integrations/google-ecommerce.md) 대상 [!DNL MBI] 계속하기 전에 또한 사용자 디바이스 정보를 분석에 추가하면 추천에서 사용 중인 기술을 확인할 수 있습니다.
+이 주제에서 분석을 작성하려면 마케팅 획득/참조 소스 데이터에 액세스해야 합니다. 아직 추적하지 않으셨다면 다음을 가져오셔야 합니다. [다음에서 조회 소스 데이터 주문 [!DNL Google ECommerce]](../importing-data/integrations/google-ecommerce.md) 대상 [!DNL Adobe Commerce Intelligence] 계속하기 전에 또한 사용자 장치 정보를 분석에 추가하면 추천에서 사용 중인 기술을 확인할 수 있습니다.
 
 ## 소스별 새 사용자 {#newusersbysource}
 
@@ -111,7 +111,7 @@ Report Builder에서 이 보고서를 만들려면 `Revenue by user registration
 
 ## 요약 {#wrapup}
 
-이 기사는 고객 확보 및 마케팅 채널의 가치를 분석하는 데 사용할 수 있는 몇 가지 분석에 대해 언급했지만, 이는 빙산의 일각에 불과합니다.
+이 주제는 획득 및 마케팅 채널의 가치를 분석하는 데 사용할 수 있는 몇 가지 분석에 대해 언급했지만, 이는 빙산의 일각에 불과합니다.
 
 ## 관련 항목 {#related}
 

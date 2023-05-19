@@ -2,30 +2,30 @@
 title: 최신성, 빈도, 통화(RFM) 분석
 description: 최신성, 빈도 및 통화 등급으로 고객을 분류할 수 있는 대시보드를 설정하는 방법에 대해 알아봅니다.
 exl-id: 8f0f08fd-710b-4810-9faf-3d0c3cc0a25d
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '527'
 ht-degree: 0%
 
 ---
 
 # RFM 분석
 
-이 문서에서는 최신성, 빈도 및 통화 순위별로 고객을 세그먼트화할 수 있는 대시보드를 설정하는 방법을 보여 줍니다. RFM 분석은 고객 행동을 고려한 마케팅 기법으로서, 전달을 위한 세그멘테이션을 결정하는 데 도움이 됩니다. 이는 다음 세 가지 측면을 설명합니다.
+이 항목에서는 최신성, 빈도 및 통화 순위별로 고객을 세그먼트화할 수 있는 대시보드를 설정하는 방법을 보여 줍니다. RFM 분석은 고객 행동을 고려한 마케팅 기법으로서, 전달을 위한 세그멘테이션을 결정하는 데 도움이 됩니다. 이는 다음 세 가지 측면을 설명합니다.
 
-* 최근 고객이 스토어에서 구매한 시간의 최신성
-* 고객으로부터 구매하는 빈도
-* 고객이 지출하는 금액의 통화
+1. 최근 고객이 스토어에서 구매한 시간의 최신성
+1. 고객으로부터 구매하는 빈도
+1. 고객이 지출하는 금액의 통화
 
 ![](../../assets/blobid0.png)
 
-다음과 같은 경우에만 RFM 분석을 구성할 수 있습니다. [!DNL MBI] Pro는 새 아키텍처를 계획합니다(예를 들어 &quot;데이터 관리&quot; 메뉴 아래에 &quot;Data Warehouse 보기&quot; 옵션이 있는 경우). 이러한 열은 &quot;데이터 관리 > Data Warehouse&quot; 페이지에서 만들 수 있습니다. 자세한 지침은 아래에 나와 있습니다.
+다음과 같은 경우에만 RFM 분석을 구성할 수 있습니다. [!DNL Adobe Commerce Intelligence] 새 아키텍처에 대한 Pro 플랜(예: `Data Warehouse Views` 옵션 아래에 있는 `Manage Data` 메뉴)를 참조하십시오. 이러한 열은 **[!DNL Manage Data > Data Warehouse]** 페이지를 가리키도록 업데이트하는 중입니다. 자세한 지침은 아래에 나와 있습니다.
 
 ## 시작
 
 먼저 값이 1인 기본 키만 포함된 파일을 업로드해야 합니다. 이를 통해 분석에 필요한 몇 가지 계산된 열을 만들 수 있습니다.
 
-사용할 수 있습니다. [도움말 센터 문서](../importing-data/connecting-data/using-file-uploader.md) 및 아래 이미지를 참조하여 파일 형식을 지정하십시오.
+사용할 수 있습니다. [기사](../importing-data/connecting-data/using-file-uploader.md) 및 아래 이미지를 참조하여 파일 형식을 지정하십시오.
 
 ## 계산된 열
 
@@ -180,7 +180,9 @@ ht-degree: 0%
 
 새 지표가 없습니다!
 
-**참고**: 다음을 확인합니다. [새 열을 지표에 차원으로 추가](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 새 보고서를 작성하기 전에
+>[!NOTE]
+>
+>다음을 확인하십시오. [새 열을 지표에 차원으로 추가](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 새 보고서를 작성하기 전에
 
 ## 보고서
 

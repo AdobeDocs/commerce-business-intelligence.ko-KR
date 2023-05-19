@@ -2,16 +2,16 @@
 title: 순차적 비교 계산 열
 description: 순차적 비교 계산 열의 목적과 용도에 대해 알아봅니다.
 exl-id: 625062b4-f05d-42aa-94c3-729b39c7d728
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '401'
-ht-degree: 1%
+source-wordcount: '397'
+ht-degree: 2%
 
 ---
 
 # 순차적 비교 계산 열
 
-이 항목에서는 의 목적과 용도를 간략하게 설명합니다. `Sequential Comparison` 계산된 열에서 사용할 수 있음 **[!DNL Manage Data > Data Warehouse]** 페이지를 가리키도록 업데이트하는 중입니다. 아래는 그것이 하는 일에 대한 설명이며, 그 다음은 예시, 그리고 그것을 만드는 역학이다.
+이 항목에서는 의 목적과 용도를 간략하게 설명합니다. `Sequential Comparison` 계산된 열에서 사용할 수 있음 **[!DNL Manage Data > Data Warehouse]** 페이지를 가리키도록 업데이트하는 중입니다. 아래는 그것이 하는 일에 대한 설명이며, 그 뒤에 예제와 그것을 만드는 역학이 이어진다.
 
 **설명**
 
@@ -39,17 +39,25 @@ ht-degree: 1%
 
 을(를) 만들려면 **이벤트 번호** 열:
 
-1. 다음 위치로 이동 **[!DNL Manage Data** > **Data Warehouse]** 페이지를 가리키도록 업데이트하는 중입니다.
+1. 다음 위치로 이동 **[!DNL Manage Data > Data Warehouse]** 페이지를 가리키도록 업데이트하는 중입니다.
+
 1. 이 열을 생성할 테이블로 이동합니다.
-1. 클릭 **[!UICONTROL Create New Column]** 화면 오른쪽 상단에 있습니다.
+
+1. 클릭 **[!UICONTROL Create New Column]** 오른쪽 상단 모서리입니다.
+
 1. 선택 `Same Table` (으)로 `Definition Type` 비교하려는 열이 동일한 테이블에 없는 경우 열을 재배치해야 할 수 있습니다.
+
 1. 선택 `SEQUENTIAL_COMPARISON` (으)로 `Column Definition Equation`.
+
 1. 위에서 설명한 대로 입력을 선택합니다.
    - `Event Owner`
    - `Event Date`
    - `Value to Compare`
-1. 행이 고려되지 않도록 제외하기 위해 필터를 추가할 수도 있습니다. 제외된 행에 이 열에 대한 NULL 값이 있습니다.
-1. 페이지 상단에 열 이름을 입력하고 클릭 **[!UICONTROL Save]**.
+
+1. 행이 고려되지 않도록 제외하기 위해 필터를 추가할 수도 있습니다. 제외된 행에는 `NULL` 이 열의 값입니다.
+
+1. 페이지 상단에 열 이름을 입력하고 를 클릭합니다. **[!UICONTROL Save]**.
+
 1. 열을 사용할 수 있습니다. *즉시*.
 
 ![초](../../assets/SEC_new.png)
