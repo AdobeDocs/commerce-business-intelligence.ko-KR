@@ -34,17 +34,17 @@ ht-degree: 0%
 
 **Dimension**
 
-* **[!UICONTROL Entity_id]**: 각 고객에 대한 고유 식별자. 이는 고유 고객 번호 또는 고객 이메일 주소일 수도 있으며 주문 테이블에 대한 참조 키로 작동해야 합니다.
+* **[!UICONTROL Entity_id]**: 각 고객에 대 한 고유 식별자입니다. 이는 고유 고객 수 또는 고객 이메일 주소인 수 있으며 주문 테이블에 대 한 참조 키 역할을 합니다.
 * **[!UICONTROL Created_at]**: 고객 계정이 생성되어 데이터베이스에 추가된 날짜입니다.
 * **[!UICONTROL Customer's lifetime revenue]**: 고객이 생성한 총 라이프타임 매출입니다.
 * **[!UICONTROL Customer's first 30-day revenue]**: 고객이 처음 30일 동안 생성한 총 매출액.
 * **[!UICONTROL Customer's lifetime number of orders]**: 고객이 라이프타임 동안 수행한 주문 수
-* **[!UICONTROL Customer's lifetime number of coupons]**: 고객이 라이프타임 동안 사용한 총 쿠폰 수입니다.
-* **[!UICONTROL Customer's first order date]**: 고객의 첫 번째 주문 날짜입니다. 고객이 생성 시 주문을 하지 않은 경우 이는 created_at 날짜와 다를 수 있습니다.
+* **[!UICONTROL Customer's lifetime number of coupons]**: 고객이 생애에 사용 하는 총 쿠폰 수입니다.
+* **[!UICONTROL Customer's first order date]**: 고객의 첫 번째 주문 날짜입니다. 고객이 주문을 작성 하는 시점에 주문 하지 않은 경우 created_at 날짜와 다를 수 있습니다.
 
-**손님 주문도 받으시나요?**
+**게스트 주문을 수락 합니까?**
 
-*이 경우 이 테이블에 모든 고객이 포함되지 않을 수 있습니다. 다음으로 문의: [지원 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 고객 분석에 모든 고객이 포함되도록 합니다.*
+*이 경우이 테이블에 일부 고객이 포함 되지 않을 수 있습니다. [고객 분석에 모든 고객이 포함 되는지 확인 하려면 지원 팀 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 에 문의 하십시오.*
 
 *손님 주문을 수락하는지 확실하지 않으세요? 을(를) 참조하십시오 [이 항목](../data-warehouse-mgr/guest-orders.md) 자세히 알아보기!*
 
@@ -58,10 +58,10 @@ ht-degree: 0%
 * **[!UICONTROL Created_at]**: 주문이 생성되거나 주문된 날짜입니다.
 * **[!UICONTROL Customer_email]**: 주문한 고객의 이메일 주소입니다. 고객의 고유 식별자일 수도 있습니다.
 * **[!UICONTROL Customer's lifetime number of orders]**: 다음에 대한 동일한 이름을 가진 열의 사본 `Customers` 테이블.
-* **[!UICONTROL Customer's order number]**: 주문과 연결된 고객의 순차적 주문 번호입니다. 예를 들어 표시되는 행이 고객의 첫 번째 주문인 경우 이 열은 &quot;1&quot;이지만, 고객의 15번째 주문인 경우 이 열에는 이 주문에 대한 &quot;15&quot;가 표시됩니다. 이 차원이 다음에 없는 경우 `Customers` 테이블, [지원 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 제작에 도움이 될 것입니다.
-* **[!UICONTROL Customer's order number (previous-current)]**: 의 두 값 연결 **[!UICONTROL Customer's order number]** 열. 이 메서드는 아래 샘플 보고서에서 두 주문 간의 경과 시간을 표시하는 데 사용됩니다. 예를 들어, 고객의 첫 번째 주문 일자와 두 번째 주문 일자 사이의 시간은 이 계산과 함께 &quot;1-2&quot;로 표시됩니다.
-* **[!UICONTROL Coupon_code]**: 각 주문에 사용된 쿠폰을 표시합니다.
-* **[!UICONTROL Seconds since previous order]**: 고객 주문 사이의 시간(초)입니다.
+* **[!UICONTROL Customer's order number]**: 주문에 연결 된 고객의 순차적인 주문 번호입니다. 예를 들어, 찾고 있는 행이 고객의 첫 번째 주문 인 경우,이 열은 &quot;1&quot;입니다. 그러나 고객이 고객의 15 번째 주문 인 경우이 열에는이 주문에 대해 &quot;15&quot;가 표시 됩니다. 이 차원가 표에 없으면 `Customers` 지원 팀 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 에 게 문의 [ 하 여 빌드 하십시오.
+* **[!UICONTROL Customer's order number (previous-current)]**: 열에 있는 **[!UICONTROL Customer's order number]** 두 값의 연결. 다음 샘플 보고서에 사용 되어 두 주문 간의 경과 시간을 표시 합니다. 예를 들어, 고객의 첫 번째 주문 날짜와 두 번째 주문 날짜 사이의 시간은이 계산으로 &quot;1-2&quot;로 표시 됩니다.
+* **[!UICONTROL Coupon_code]**: 각 주문에 사용 된 쿠폰을 표시 합니다.
+* **[!UICONTROL Seconds since previous order]**: 고객 주문 간의 시간 (초)입니다.
 
 ## 주문 항목 테이블
 
@@ -97,22 +97,22 @@ ht-degree: 0%
 * **[!UICONTROL Campaign]**: 총 클릭 수입니다. 위치 [!DNL Facebook], 이는 의 campaign_name 열입니다. `facebook_ads_insights_####` 테이블. 위치 [!DNL Google AdWords], 이는 의 캠페인 열입니다. `campaigns####` 테이블.
 * **[!UICONTROL Date]**: 특정 캠페인에 대해 활동(지출, 클릭 수 또는 노출 수)이 발생한 시간 및 날짜입니다. 위치 [!DNL Facebook], 다음과 같습니다. `date_start` 열의 `facebook_ads_insights_####` 테이블. 위치 [!DNL Google AdWords], 이는 의 날짜 열입니다. `campaigns####` 테이블.
 * **[!UICONTROL Customer's first order's source]**: 고객의 첫 번째 주문에서 발생한 주문의 출처입니다. 먼저 이름이 인 열이 있는지 확인합니다. `customer's first order's source` 계정에서. 이 열이 표시되지 않는 경우 다음 지침을 사용하여 원하는 열을 만들 수 있습니다.
-* **[!UICONTROL Customer's first order's medium]**: 고객의 첫 번째 주문에서 중간 정도의 주문입니다. 먼저 이름이 인 열이 있는지 확인합니다. `customer's first order's source` 계정에서. 이 열이 표시되지 않는 경우 다음 지침을 사용하여 원하는 열을 만들 수 있습니다.
-* **[!UICONTROL Customer's first order's campaign]**: 고객의 첫 번째 주문에서 발생한 주문의 캠페인입니다. 먼저 이름이 인 열이 있는지 확인합니다. `customer's first order's source` 계정에서. 이 열이 표시되지 않는 경우 다음 지침을 사용하여 원하는 열을 만들 수 있습니다.
+* **[!UICONTROL Customer's first order's medium]**: 고객의 첫 번째 주문에서 중간 정도의 주문입니다. 먼저 계정에 이름이 지정 `customer's first order's source` 된 열이 있는지 확인 합니다. 이 열이 표시 되지 않으면 이러한 지침을 사용 하 여 원하는 열을 만들 수 있습니다.
+* **[!UICONTROL Customer's first order's campaign]**: 고객의 첫 주문에서 주문 캠페인입니다. 먼저 이름이 인 열이 있는지 확인합니다. `customer's first order's source` 계정에서. 이 열이 표시되지 않는 경우 다음 지침을 사용하여 원하는 열을 만들 수 있습니다.
 
 ## 일반적인 보고서 및 지표
 
 다음은 유용하다고 판단될 수 있는 보고서 및 지표의 몇 가지 일반적인 예입니다.
 
-* [고객 분석](#customeranalytics)
-* [주문 분석](#orderanalytics)
-* [마케팅 지출 분석](#mktgspendanalytics)
+* [고객 Analytics](#customeranalytics)
+* [주문 Analytics](#orderanalytics)
+* [마케팅 지출 Analytics](#mktgspendanalytics)
 
 ## 고객 분석 {#customeranalytics}
 
-### 새 사용자
+### 새로 만들기 사용자
 
-* **설명**: 주어진 기간 동안 새로 획득한 총 사용자 수 카운트입니다. `New Users` 다음과다름: `Unique Customers`, 이유 `New Users` 은 서비스와 함께 계정이 생성된 타임스탬프를 갖습니다(고객이 반드시 주문을 했다는 의미는 아님). `Unique Customers` 최소 한 개 이상 주문했습니다.
+* **설명** : 지정 된 기간 동안 새로 획득 한 총 사용자의 수입니다. `New Users` 다음과다름: `Unique Customers`, 이유 `New Users` 은 서비스와 함께 계정이 생성된 타임스탬프를 갖습니다(고객이 반드시 주문을 했다는 의미는 아님). `Unique Customers` 최소 한 개 이상 주문했습니다.
 * **지표 정의**: 이 지표는 다음을 수행합니다. **카운트** / `entity_id` 출처: `customer_entity` 테이블 정렬 기준 `created_at`.
 * **보고서 예**: 지난 달에 생성된 새 사용자 수
    * **[!UICONTROL Metric]**: `New Users`
@@ -176,9 +176,9 @@ ht-degree: 0%
 
    ![주문별 상위 25개 고객](../../assets/Top_25_customers_by_lifetime_orders.png)<!--{: width="929"}-->
 
-### 라이프타임 매출별 상위 고객
+### 생애 별 우수 고객 매출
 
-* **설명**: 라이프타임 매출을 기반으로 하는 상위 고객 목록입니다.
+* **설명** : 생애 매출을 기반으로 한 우수 고객 목록입니다.
 * **사용된 지표**: `Average Lifetime Revenue`
 * **보고서 예**: 라이프타임 수입별 상위 25개 고객
    * **[!UICONTROL Metric]**: `Average Lifetime Revenue`
@@ -250,20 +250,20 @@ ht-degree: 0%
 
 ### 평균 고객 생애 수익
 
-* **설명**: 고객이 라이프타임 동안 창출한 평균 매출액입니다.
-* **지표 설명**: 이 지표는 다음을 수행합니다 **평균** / `Customer's Lifetime Revenue` 의 열 `customer_entity` 를 기반으로 한 테이블 `created_at`.
-* **보고서 설명**: 고객 생애 수익의 전체 평균
+* **설명** : 고객이 생애를 통해 생성 한 매출의 평균 금액입니다.
+* **지표 설명** :이 지표는 `created_at` 에 따라 테이블에서 `customer_entity` 열의 평균 **`Customer's Lifetime Revenue` 을 수행** 합니다.
+* **보고서 설명** : 고객 생애의 전체 시간 평균 매출
    * **[!UICONTROL Metric]**: `Average Customer Lifetime Revenue`
    * **[!UICONTROL Time Range]**: `All Time`
    * **[!UICONTROL Time Interval]**: `None`
 
 ![고객 생애 수익](../../assets/Avd_customer_lifetime_revenue_.png)<!--{: width="929"}-->
 
-## Order analytics {#orderanalytics}
+## 주문 분석 {#orderanalytics}
 
-### 매출
+### 수익
 
-* **설명**: 수익 지표는 선택한 기간 동안 얻은 총 수익을 표시합니다.
+* **설명** : 매출 지표는 선택한 기간에 대 한 총 획득 매출를 표시 합니다.
 * 이 지표는 다음을 수행합니다. **sum** / `grand_total` 출처: `sales_flat_order` 테이블 정렬 기준 `created_at`.
 * **보고서 예**: 월별 수입, 연간
    * **[!UICONTROL Metric]**: `Revenue`
@@ -331,7 +331,7 @@ ht-degree: 0%
 
 * **설명**: 일정 기간 동안 수행한 주문의 평균 값을 추적합니다. 이 지표를 사용하여 마케팅, 제품 제공 및/또는 비즈니스의 기타 변경 사항의 결과로 평균 주문 가격(AOV)이 변동하는 방식을 신속하게 파악할 수 있습니다.
 * **지표 정의**: 이 지표는 다음을 수행합니다 **평균** / `grand_total` 출처: `sales_flat_order` 테이블 정렬 기준 `created_at`.
-* **보고서 예**: AOV와 이전 연도 비교, YTD
+* **보고서 예** : AOV vs 이전 연도, YTD
    * **[!UICONTROL Metric]**: `Average order value`
    * **[!UICONTROL Time Range]**: `1 Year Ago to 1 Month Ago`
    * **[!UICONTROL Time Interval]**: `By Month`
@@ -343,13 +343,13 @@ ht-degree: 0%
 
 * **설명**: 이 보고서는 프로모션 또는 쿠폰을 제공할 때 판매되는 제품에 대한 통찰력을 제공합니다.
 * **사용된 지표**: 주문한 제품
-* **보고서 예**: 쿠폰과 함께 가장 많이 구매한 제품
+* **보고서 예** : 쿠폰을 사용 하 여 가장 많이 구매한 제품
    * **[!UICONTROL Metric]**: `Products ordered`
    * **[!UICONTROL Filter]**: `Order's coupon_code Is Not \[NULL\]`
    * **[!UICONTROL Time Range]**: `All-Time`
    * **[!UICONTROL Time Interval]**: `None`
    * **[!UICONTROL Group By**]: `name` (또는 `SKU`또는 기타 제품 식별자)
-   * **[!UICONTROL Show top/bottom]**: 주문한 제품별로 정렬된 상위 25개
+   * **[!UICONTROL Show top/bottom]**: 주문한 제품 별로 정렬 된 상위 25
 
    ![쿠폰이 포함된 제품](../../assets/prod_coupons_pic.png)<!--{: width="929"}-->
 
@@ -390,9 +390,9 @@ ht-degree: 0%
 
 ### 광고 노출 횟수 및 광고 클릭 수
 
-* **설명**: 광고 지출 분석 외에도 광고 노출 횟수 및 광고 클릭을 분석할 수 있습니다.
-* **지표 정의**: 이 지표는 의 노출 횟수(또는 클릭 수) 열에 대한 합계를 수행합니다. `Marketing Spend` 날짜 열을 기준으로 정렬된 테이블.
-* **보고서 예**: 일별 노출 횟수 및 광고 클릭 수 추가
+* **설명** : 광고 지출 분석 외에 광고 노출 횟수와 광고 클릭 수를 분석할 수 있습니다.
+* **지표 정의** :이 지표는 날짜 열을 기준으로 정렬 된 테이블의 `Marketing Spend` 노출 수 (또는 클릭) 열에 대 한 합계를 수행 합니다.
+* **보고서 예** : 일 단위로 노출 횟수 및 광고 클릭 수 추가
    * **[!UICONTROL Metric A]**: `Ad impressions`
    * **[!UICONTROL Metric B]**: `Ad clicks`
    * **[!UICONTROL Time Range]**: `1 Year Ago to 3 Months Ago`
@@ -409,12 +409,12 @@ ht-degree: 0%
    * **[!UICONTROL Time Range]**:`All-Time`
    * **[!UICONTROL Time Interval]**: `None`
    * **[!UICONTROL Formula]**: `B/A`
-   * 다음 항목 선택 `%` 옵션을 선택합니다.
+   * 옵션을 `%` 선택 합니다.
    * **[!UICONTROL Group By]**: `campaign`
 
 >[!NOTE]
 >
->다음을 수행할 수 있습니다. **제목** 공식 `CTR`, 및 **숨기기** 모든 지표.
+>수식을 제목 **으로 `CTR` 표시 하 고** 모든 지표 숨기기 **수** 있습니다.
 
 ![CTR](../../assets/CTR.png)<!--{: width="929"}-->
 
@@ -477,10 +477,10 @@ ht-degree: 0%
    * **[!UICONTROL Time Range]**: `All-Time`
    * **[!UICONTROL Time Interval]**: `None`
    * **[!UICONTROL Formula]**: `B/A`
-   * 다음 항목 선택 `currency` 옵션
+   * 옵션을 선택 합니다 `currency` .
    * **[!UICONTROL Group By]**:
-      * 지표의 경우 `A`, 선택 `Customer's first order's campaign`
-      * 지표의 경우 `B`, 선택 `campaign`
+      * 지표 `A` 의 경우를 선택 합니다. `Customer's first order's campaign`
+      * 지표 `B` 의 경우를 선택 합니다. `campaign`
 
    ![새 사용자.](../../assets/New_Users_Last_Month.png)
 
@@ -497,9 +497,9 @@ ht-degree: 0%
 * **설명**: 각 캠페인으로 획득한 고객 수를 분석하는 것과 함께 이러한 고객의 평균 라이프타임 수익을 분석할 수 있습니다. 이를 통해 다음을 식별할 수 있습니다.
    * 특정 캠페인이 많은 고객을 유도하지만 해당 고객은 라이프타임 가치가 낮습니다.
    * 특정 캠페인이 적은 양의 고객을 유치하지만 해당 고객은 높은 라이프타임 값을 갖습니다.
-* **보고서 예**: 먼저 를 추가합니다. `New customers` 지표. 그런 다음 를 추가합니다. `Average lifetime revenue` 지표. 원하는 시간대를 선택하고 `interval` 다음으로: `None`. 마지막으로 `group by` 옵션 as`Customer's first order's campaign`.
+* **보고서 예**: 먼저 를 추가합니다. `New customers` 지표. 그런 다음 를 추가합니다. `Average lifetime revenue` 지표. 원하는 시간대를 선택 하 고 as `None` 를 선택 `interval` 합니다. 마지막으로 다음 옵션 `Customer's first order's campaign` 을 선택 `group by` 합니다.
    * **[!UICONTROL Metric A]**: `New Customers`
-   * **[!UICONTROL Filter A]**: `Customer's first order's source` &#39;%google%&#39;과(와) 유사
+   * **[!UICONTROL Filter A]**: `Customer's first order's source` LIKE &#39;% google% &#39;
    * **[!UICONTROL Filter B]**: `Customer's first order's medium IN ppc`
    * **[!UICONTROL Metric B]**: `Average lifetime revenue`
    * **[!UICONTROL Filter A]**: `Customer's first order's source` &#39;%google%&#39;과(와) 유사
@@ -516,7 +516,7 @@ ht-degree: 0%
 
 ### 투자 수익률(ROI)
 
-* **설명**: 캠페인별로 ROI를 계산하는 한 가지 방법은 캠페인을 통해 수행한 모든 주문을 분석하는 것입니다. 그러나 대체 방법은 캠페인을 통해 획득한 고객의 라이프타임 값을 분석하는 것입니다. ROI를 분석하려면 지출 데이터와 트랜잭션 데이터에서 캠페인 이름이 일관되게 유지되어야 합니다. 다음 보고서를 만들고 캠페인 이름이 일치하지 않아 ROI 값이 없는 경우 [UTM 태깅](../../best-practices/utm-tagging-google.md) 을 구현했습니다.
+* **설명**: 캠페인별로 ROI를 계산하는 한 가지 방법은 캠페인을 통해 수행한 모든 주문을 분석하는 것입니다. 그러나 대체 방법은 캠페인을 통해 획득한 고객의 라이프타임 값을 분석하는 것입니다. ROI를 분석하려면 지출 데이터와 트랜잭션 데이터에서 캠페인 이름이 일관되게 유지되어야 합니다. 다음 보고서를 만들 때 캠페인 이름이 일치 하지 않아 ROI 값이 없는 경우, 구현 된 [ utm 태그 지정 ](../../best-practices/utm-tagging-google.md) 확인 해야 할 수 있습니다.
 * **보고서 예**: 캠페인별 ROI
    * **[!UICONTROL Metric A]**: `New Customers`
    * **[!UICONTROL Filter A]**: `Customer's first order's source` &#39;%google%&#39;과(와) 유사
