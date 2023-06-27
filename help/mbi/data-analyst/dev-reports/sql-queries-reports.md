@@ -2,7 +2,7 @@
 title: SQL 쿼리를 Commerce Intelligence 보고서로 번역
 description: Commerce Intelligence에서 사용하는 계산된 열, 지표로 SQL 쿼리를 변환하는 방법에 대해 알아봅니다.
 exl-id: b3e3905f-6952-4f15-a582-bf892a971fae
-source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
+source-git-commit: fa65bd909495d4d73cabbc264e9a47b3e0a0da3b
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 0%
@@ -17,7 +17,7 @@ SQL 쿼리를 [계산된 열](../data-warehouse-mgr/creating-calculated-columns.
 
 일반 쿼리를 보고 시작하십시오.
 
-|  |  |
+| | |
 |--- |--- |
 | `SELECT` |  |
 | `a,` | 보고서 `group by` |
@@ -42,7 +42,7 @@ SQL 쿼리를 [계산된 열](../data-warehouse-mgr/creating-calculated-columns.
 
 이(가) `Total Revenue` 지표는에서 정의할 수 있습니다. [!DNL Commerce Intelligence]. 번역할 아래 쿼리를 참조하십시오.
 
-|  |  |
+| | |
 |--- |--- |
 | `SELECT` |  |
 | `SUM(order_total) as "Total Revenue"` | `Metric operation` (열) |
@@ -63,7 +63,7 @@ SQL 쿼리를 [계산된 열](../data-warehouse-mgr/creating-calculated-columns.
 
 |  |  |
 |--- |--- |
-| `Select` |  |
+| `Select` | |
 | `c.customer_id` | 집계 소유자 |
 | `SUM(o.order_total) as "Customer LTV"` | 집계 작업(열) |
 | `FROM customers c` | 집계 소유자 테이블 |
@@ -103,7 +103,7 @@ SQL 쿼리를 [계산된 열](../data-warehouse-mgr/creating-calculated-columns.
 
 아래 쿼리로 시작하십시오.
 
-|  |  |
+| | |
 |--- |--- |
 | `SELECT coupon_code,` | 보고서 `group by` |
 | `SUM(order_total) as "Total Revenue"` | `Metric operation`(열) |
@@ -132,7 +132,7 @@ SQL 쿼리를 [계산된 열](../data-warehouse-mgr/creating-calculated-columns.
 
 한 걸음 물러서서 의 전체 쿼리를 살펴보십시오. `Average order value`:
 
-|  |  |
+| | |
 |--- |--- |
 | `SELECT` |  |
 | `SUM(order_total) as "Total Revenue"` | 지표 `operation` (열) |
@@ -155,4 +155,11 @@ SQL 사용자가 많은 경우 쿼리가 번역되는 방식을 고려하십시�
 
 ## Commerce Intelligence 요소
 
-|**`SQL Clause`**|**`Metric`**|**`Filter`**|**`Report group by`**|**`Report time frame`**|**`Path`**|**`Calculated column inputs`**|**`Source table`**| |—|—|—|—|—|—|—| |`SELECT`|X|-|X|-|X|-| |`FROM`|-|-|-|-|-|X| |`WHERE`|-|-|-|-|-| |`WHERE` (시간 요소 포함)|-|-|X|-|-|-| |`JOIN...ON`|-|X|-|X|-| |`GROUP BY`|-|X|-|-|-|
+| **`SQL Clause`** | **`Metric`** | **`Filter`** | **`Report group by`** | **`Report time frame`** | **`Path`** | **`Calculated column inputs`** | **`Source table`** |
+|---|---|---|---|---|---|---|---|
+| `SELECT` | X | - | X | - | - | X | - |
+| `FROM` | - | - | - | - | - | - | X |
+| `WHERE` | - | X | - | - | - | - | - |
+| `WHERE` (시간 요소 포함) | - | - | - | X | - | - | - |
+| `JOIN...ON` | - | X | - | - | X | X | - |
+| `GROUP BY` | - | - | X | - | - | - | - |
