@@ -2,7 +2,9 @@
 title: 새로운 아키텍처
 description: 새로운 아키텍처로 이동하여 얻을 수 있는 이점에 대해 알아봅니다.
 exl-id: cbb10673-5704-4a90-9574-5ac114f389b9
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Import/Export
+source-git-commit: ddda796c9f32d22b1d679fc245eb11b92cd491cf
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 0%

@@ -2,7 +2,9 @@
 title: 게스트 주문
 description: 게스트 주문이 데이터에 미치는 영향 및 의 게스트 주문에 대해 올바르게 고려해야 하는 옵션에 대해 알아봅니다. [!DNL Commerce Intelligence] Data Warehouse.
 exl-id: cd5120ca-454c-4cf4-acb4-3aebe06cdc9a
-source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 0%
@@ -21,13 +23,13 @@ ht-degree: 0%
 
 * **모든 고객이 등록된 경우** 그리고 손님 주문은 허용되지 않습니다. 이것은 의 모든 레코드가 `orders` 테이블에 있는 값은 `customer\_id` 열. 결과적으로 모든 주문은 `customers` 테이블.
 
-   ![](../../assets/guest-orders-4.png)
+  ![](../../assets/guest-orders-4.png)
 
 * **게스트 주문이 허용되는 경우**&#x200B;즉, 일부 주문은 `customer\_id` 열. 등록된 고객에게만 `customer\_id` 의 열 `orders` 테이블. 등록되지 않은 고객은 `NULL` (또는 비어 있음) 이 열의 값입니다. 따라서 모든 주문 레코드에 와 일치하는 레코드가 `customers` 테이블.
 
-   >[!NOTE]
-   >
-   >주문을 한 고유한 개인을 식별하려면 옆에 다른 고유한 사용자 속성이 있어야 합니다 `customer\_id` 주문에 첨부되었습니다. 일반적으로 고객의 이메일 주소가 사용됩니다.
+  >[!NOTE]
+  >
+  >주문을 한 고유한 개인을 식별하려면 옆에 다른 고유한 사용자 속성이 있어야 합니다 `customer\_id` 주문에 첨부되었습니다. 일반적으로 고객의 이메일 주소가 사용됩니다.
 
 ## Data Warehouse 설정에서 게스트 주문을 처리하는 방법
 

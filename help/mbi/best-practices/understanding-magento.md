@@ -2,7 +2,9 @@
 title: 이해 [!DNL Commerce Intelligence] 환경
 description: 을(를) 사용하여 작업하고 개선하는 방법에 대해 알아봅니다. [!DNL Commerce Intelligence] 환경.
 exl-id: 601b5fba-da02-4cc8-96ed-147c24f326f9
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Warehouse Manager
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 0%
@@ -19,7 +21,7 @@ ht-degree: 0%
 
 예를 들어, `sales\_order` 테이블은 고유한 순서입니다. 이 테이블의 기본 키를 호출합니다. `entity\_id`. 이 열은 다음과 같이 생각할 수 있습니다. `order\_id`. 별도의 테이블에서, `customer\_entity`, 각 행은 고유한 고객을 나타냅니다. 이 테이블의 기본 키도 호출됩니다. `entity\_id`로 생각할 수 있습니다. `customer\_id`.
 
-그 테이블들, `sales\_order.entity\_id` 다음과 같지 않음 `customer\_entity.entity\_id`. 이 값은 가 포함된 모든 테이블 집합에 대해 true입니다. `entity\_id`: `table\_A.entity\_id` 다음과 같지 않음 `table\_B.entity\_id`.
+그 테이블들, `sales\_order.entity\_id` 다음과 같지 않음 `customer\_entity.entity\_id`. 이 값은 가 포함된 모든 테이블 집합에 대해 true입니다. `entity\_id`: `table\_A.entity\_id` 다음과 같지 않음 `table\_B.entity\_id`.
 
 ## [!DNL Guest orders]
 

@@ -2,7 +2,9 @@
 title: 새 Adobe Commerce Intelligence 사용자 추가
 description: 새 항목 추가 방법 알아보기 [!DNL Commerce Intelligence] 사용자 및 사용자 이름 또는 암호를 업데이트하는 방법.
 exl-id: 6b846e3d-fce0-4145-b298-9a9c57e6bd26
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, User
+feature: User Management
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 0%

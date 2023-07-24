@@ -2,7 +2,9 @@
 title: Data Warehouse 관리자
 description: 테이블 및 열 동기화 설정을 관리하고, 테이블의 스키마를 드릴다운하며, 보고서에 사용할 계산된 열을 만드는 방법에 대해 알아봅니다.
 exl-id: b9577919-0db0-47f1-a426-1abe48443ac0
-source-git-commit: c4094e780f83255846520d18f4d0806b1dd9a9ef
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '1240'
 ht-degree: 0%

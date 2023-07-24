@@ -2,7 +2,9 @@
 title: 고객 집중 정의
 description: 총 수익이 고객 기반 간에 어떻게 분배되는지 측정하는 데 도움이 되는 대시보드를 설정하는 방법을 알아봅니다.
 exl-id: 6242019f-a6a5-48d3-b214-94acd7842e00
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Warehouse Manager, Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '470'
 ht-degree: 0%
@@ -99,17 +101,16 @@ ht-degree: 0%
 * [!UICONTROL Filter]: `Customer's revenue percentile IS NOT NULL`
 
 * 
-   [!UICONTROL 그룹 기준]: `Independent`
+  [!UICONTROL 그룹 기준]: `Independent`
 * 지표 `A`: `Total customer lifetime revenue by percentile`
 * 지표 `B`: `Total customer lifetime revenue (ungrouped)`
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Customer's revenue percentile`
 * 위쪽/아래쪽 표시: `100% of Customer's revenue percentile Name`
 * 
-
-   [!UICONTROL Chart type]: `Line`
+  [!UICONTROL Chart type]: `Line`
 
 * **상위 10% 농도**
 * [!UICONTROL Filter]: `Customer's revenue percentile <= 10`
@@ -117,13 +118,12 @@ ht-degree: 0%
 * 지표 `A`: `Total customer lifetime revenue`
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * 차트 숨기기
 * 
-   [!UICONTROL 그룹 기준]: `Email`
+  [!UICONTROL 그룹 기준]: `Email`
 * 
-
-   [!UICONTROL Chart type]: `Table`
+  [!UICONTROL Chart type]: `Table`
 
 * **단 한 번의 구매로 하위 50% 농도**
 
@@ -134,13 +134,12 @@ ht-degree: 0%
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * 차트 숨기기
 * 
-   [!UICONTROL 그룹 기준]: `Email`
+  [!UICONTROL 그룹 기준]: `Email`
 * 
-
-   [!UICONTROL Chart type]: `Table`
+  [!UICONTROL Chart type]: `Table`
 
 * **하위 10% 농도**
 * [!UICONTROL Filter]: `Customer's revenue percentile > 90`
@@ -148,13 +147,12 @@ ht-degree: 0%
 * 지표 `A`: `Total customer lifetime revenue`
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * 차트 숨기기
 * 
-   [!UICONTROL 그룹 기준]: `Email`
+  [!UICONTROL 그룹 기준]: `Email`
 * 
-
-   [!UICONTROL Chart type]: `Table`
+  [!UICONTROL Chart type]: `Table`
 
 모든 보고서를 컴파일한 후 원하는 대로 대시보드에서 구성할 수 있습니다. 결과는 위의 샘플 대시보드와 비슷할 수 있습니다.
 

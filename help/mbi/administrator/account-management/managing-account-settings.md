@@ -2,7 +2,9 @@
 title: 계정 설정 관리
 description: Data Warehouse에 대한 계정 설정을 사용자 지정하는 방법을 알아봅니다.
 exl-id: 847d51b1-287e-4c14-b64e-0bd9bfcccedc
-source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
+role: Admin, User
+feature: Accounts
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 0%

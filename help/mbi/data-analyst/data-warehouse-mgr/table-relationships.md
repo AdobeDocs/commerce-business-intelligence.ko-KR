@@ -2,7 +2,9 @@
 title: 테이블 관계 이해 및 평가
 description: 한 테이블에서 다른 테이블의 엔티티에 속할 수 있는 발생 횟수를 이해하는 방법에 대해 알아봅니다.
 exl-id: e7256f46-879a-41da-9919-b700f2691013
-source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 0%
@@ -120,7 +122,7 @@ Data Warehouse 내에 있는 주어진 테이블 쌍의 관계를 평가하는 �
 다음 중 하나가 참이면 관계는 다음과 같습니다. `many-to-many`:
 
 * `Non-primary key` 열은 두 테이블을 연결하는 데 사용됩니다.
-   ![](../../assets/many-to-many1.png)
+  ![](../../assets/many-to-many1.png)
 * 복합 부품 `primary key` 는 두 테이블을 연결하는 데 사용됩니다.
 
 ![](../../assets/many-to-mnay2.png)

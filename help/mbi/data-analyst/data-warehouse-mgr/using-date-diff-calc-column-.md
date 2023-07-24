@@ -2,7 +2,9 @@
 title: 날짜 차이 계산 열 사용
 description: 날짜 차이 계산 열의 목적과 용도에 대해 알아봅니다.
 exl-id: 6ecab794-3466-4b3a-a929-3e56287522aa
-source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 2%

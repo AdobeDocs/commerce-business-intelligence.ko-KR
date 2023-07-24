@@ -2,7 +2,9 @@
 title: Enterprise_Rma_Item_Entity 테이블
 description: 요청된 반품에서 특정 항목에 대한 정보를 분석하는 방법에 대해 알아봅니다.
 exl-id: aa71cb3f-3e0b-4b6b-b4cc-dad103f79c51
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 0%
@@ -64,4 +66,4 @@ ht-degree: 0%
 * 에 조인된 열 만들기  `enterprise_rma_item_entity` 다음 조인을 통한 테이블:
 
 * Commerce 1.x: `enterprise_rma_item_entity.order_item_id ` (다) => `sales_flat_order_item.item_id` (1)
-* Commerce 2.x: `magento_rma_item_entity.order_item_id ` (다) => `sales_order_item.item_id` (1)
+* Commerce 2.x: `magento_rma_item_entity.order_item_id ` (다) => `sales_order_item.item_id` (1)

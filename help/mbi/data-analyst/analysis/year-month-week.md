@@ -2,7 +2,9 @@
 title: 연간, 월간 및 주간 보고서
 description: 시간 경과에 따른 트렌드를 쉽게 보고 비교할 기간에 대한 관점을 변경하는 방법에 대해 알아봅니다.
 exl-id: 74cf11c3-7ce0-477f-9a28-9d782e5da3d9
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin, Data Architect, Data Engineer, Leader, User
+feature: Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%
@@ -39,8 +41,7 @@ Report Builder를 사용하면 시간 경과에 따른 트렌드를 쉽게 확�
    * `created_at (day of the month)`&lt; [!UICONTROL Calculation]: **to_char(A, &#39;dd&#39;)**
    * `created_at (day of the week)` [!UICONTROL Calculation]: **to_char(A, &#39;d-Day&#39;)**
    * **`created_at (hour of the day)` [!UICONTROL Calculation]: **to_char(A, &#39;hh24&#39;)**
-
-      ![](../../assets/new-arch-create-calc.png)
+     ![](../../assets/new-arch-create-calc.png)
 
 ## 지표
 
@@ -64,10 +65,10 @@ Report Builder를 사용하면 시간 경과에 따른 트렌드를 쉽게 확�
 * 지표 `B`: `Last year`
 * [!UICONTROL Time period]: `1 year ago to 0 years ago`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `created_at (month-day)`
 * 
-   [!UICONTROL Chart Type]: `Line`
+  [!UICONTROL Chart Type]: `Line`
 
 * **Mo 차트**
    * [!UICONTROL Metric]: `Number of orders`
@@ -81,10 +82,10 @@ Report Builder를 사용하면 시간 경과에 따른 트렌드를 쉽게 확�
 * 지표 `B`: 지난 달*
 * [!UICONTROL Time period]: 1개월 전부터 0개월 전
 * 
-   [!UICONTROL Interval]: None
+  [!UICONTROL Interval]: None
 * [!UICONTROL Group by]: `created_at (day of month)`
 * 
-   [!UICONTROL Chart Type]: Line
+  [!UICONTROL Chart Type]: Line
 
 * **WoW 차트**
    * [!UICONTROL Metric]: `Number of orders`
@@ -98,10 +99,10 @@ Report Builder를 사용하면 시간 경과에 따른 트렌드를 쉽게 확�
 * 지표 `B`: `Last week`
 * [!UICONTROL Time period]: `1 week ago to 0 weeks ago`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `created_at (day of week)`
 * 
-   [!UICONTROL Chart Type]: `Line`
+  [!UICONTROL Chart Type]: `Line`
 
 * **차트**
    * [!UICONTROL Metric]: `Number of orders`
@@ -115,9 +116,9 @@ Report Builder를 사용하면 시간 경과에 따른 트렌드를 쉽게 확�
 * 지표 B: `Yesterday`
 * [!UICONTROL Time period]: `1 day ago to 0 days ago`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `created_at (hour of day)`
 * 
-   [!UICONTROL Chart Type]: `Line`
+  [!UICONTROL Chart Type]: `Line`
 
 모든 보고서를 컴파일한 후 원하는 대로 대시보드에서 구성할 수 있습니다. 결과는 이 페이지 상단에 있는 이미지와 비슷할 수 있습니다.

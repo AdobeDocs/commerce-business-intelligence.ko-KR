@@ -2,7 +2,9 @@
 title: 세그먼테이션 및 필터링에 대한 권장 데이터 Dimension
 description: 세분화 및 필터링 모범 사례에 대해 알아봅니다.
 exl-id: 66391bce-bdeb-4e9d-8089-1c796e00d91e
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Integration, Data Import/Export, Data Warehouse Manager
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '909'
 ht-degree: 0%

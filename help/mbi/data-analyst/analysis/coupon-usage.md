@@ -2,7 +2,9 @@
 title: 쿠폰 사용 분석
 description: 고객 확보 및 유지에 대한 쿠폰 사용을 분석하는 방법에 대해 알아봅니다.
 exl-id: d4d1393f-1695-43f2-980a-84525f84031e
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin, User
+feature: Data Warehouse Manager, Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '1141'
 ht-degree: 2%

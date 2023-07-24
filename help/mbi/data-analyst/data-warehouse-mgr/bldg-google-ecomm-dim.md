@@ -1,8 +1,10 @@
 ---
-title: 빌드[!DNL Google ECommerce]치수
+title: 빌드[!DNL Google ECommerce] 치수
 description: 전자 상거래 데이터를 주문 및 고객 데이터와 연결하는 차원을 빌드하는 방법을 알아봅니다.
 exl-id: f8a557ae-01d7-4886-8a1c-c0f245c7bc49
-source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Integration, Data Warehouse Manager
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '983'
 ht-degree: 0%

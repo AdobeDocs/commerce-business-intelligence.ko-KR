@@ -2,7 +2,9 @@
 title: 고객 이탈 정의
 description: 트랜잭션 고객에 대한 이탈을 정의하는 데 도움이 되는 대시보드를 설정하는 방법에 대해 알아봅니다.
 exl-id: fea8f7e9-c84c-4d49-a657-8b75140c113a
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Warehouse Manager, Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 0%
@@ -68,29 +70,27 @@ ht-degree: 0%
 
 * [!UICONTROL Formula]: 초기 반복 순서 확률
 * 
-   [!UICONTROL 공식]: `A/B`
+  [!UICONTROL 공식]: `A/B`
 * 
-
-   [!UICONTROL Format]: `Percent`
+  [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * 
-
-   [!UICONTROL Chart type]: `Scalar`
+  [!UICONTROL Chart type]: `Scalar`
 
 * **주문 이후 주어진 개월 반복 주문 확률**
 * 지표 A: 이전 주문 이후 매월 주문 반복(숨기기)
 * [!UICONTROL Metric]: `Number of orders`
 * 
-   [!UICONTROL Perspective]: `Cumulative`
+  [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
 * 지표 B: 주문 이후 개월별 마지막 주문(숨기기)
 * [!UICONTROL Metric]: `Number of orders`
 * 
-   [!UICONTROL Perspective]: `Cumulative`
+  [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
 * 지표 C: 모든 시간 반복 주문 (숨기기)
@@ -98,33 +98,29 @@ ht-degree: 0%
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
 * 
-
-   [!UICONTROL 그룹 기준]: `Independent`
+  [!UICONTROL 그룹 기준]: `Independent`
 
 * 지표 D: 역대 마지막 주문 수(숨기기)
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
 * 
-
-   [!UICONTROL 그룹 기준]: `Independent`
+  [!UICONTROL 그룹 기준]: `Independent`
 
 * [!UICONTROL Formula]: 초기 반복 순서 확률
 * 
-   [!UICONTROL 공식]: `(C-A)/(C+D-A-B)`
+  [!UICONTROL 공식]: `(C-A)/(C+D-A-B)`
 * 
-
-   [!UICONTROL Format]: `Percent`
+  [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Months since previous order`
 * Show top.bottom: 카테고리 이름별로 정렬된 상위 24개 카테고리
 
 * 
-
-   [!UICONTROL Chart type]: `Line`
+  [!UICONTROL Chart type]: `Line`
 
 초기 반복 주문 확률 보고서는 총 반복 주문 / 총 주문 수를 나타냅니다. 모든 주문은 반복 주문을 할 수 있는 기회입니다. 반복 주문 수는 실제로 실행되는 주문의 하위 집합입니다.
 

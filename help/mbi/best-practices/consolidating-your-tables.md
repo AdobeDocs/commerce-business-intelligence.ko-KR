@@ -2,7 +2,9 @@
 title: 표 통합
 description: 테이블 및 데이터베이스를 통합하는 방법을 알아봅니다.
 exl-id: 6065bed3-fb84-4147-a223-92dc3e1b15a5
-source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
+role: Admin, User
+feature: Commerce Tables, Data Integration
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 0%

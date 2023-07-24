@@ -2,7 +2,9 @@
 title: 상거래 이탈
 description: 상거래 이탈률을 생성하고 분석하는 방법에 대해 알아봅니다.
 exl-id: 8775cf0a-114d-4b48-8bd2-fc1700c59a12
-source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Warehouse Manager, Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 2%
@@ -55,9 +57,9 @@ ht-degree: 2%
 * **새 고객(마지막 주문 날짜별)**
    * 카운트된 고객
 
-   >[!NOTE]
-   >
-   >이 지표는 사용자 계정에 있을 수 있습니다.
+  >[!NOTE]
+  >
+  >이 지표는 사용자 계정에 있을 수 있습니다.
 
 * 다음에서 **`customer_entity`** 표
 * 이 지표는 다음을 수행합니다. **카운트**
@@ -75,7 +77,7 @@ ht-degree: 2%
    * [!UICONTROL Metric]: 새 고객(첫 번째 주문 날짜별)
    * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
    * 
-      [!UICONTROL Perspective]: `Cumulative`
+     [!UICONTROL Perspective]: `Cumulative`
    * [!UICONTROL Metric]: `New customers (by last order date)`
    * [!UICONTROL Filter]:
    * 고객의 마지막 주문 날짜 이후 경과한 시간(초) >= [이탈한 고객에 대한 자체 정의된 컷오프&#x200B;]**`^`**
@@ -84,11 +86,10 @@ ht-degree: 2%
    * [!UICONTROL Metric]: `New customers (by last order date)`
    * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
    * 
-      [!UICONTROL Perspective]: Cumulative
+     [!UICONTROL Perspective]: Cumulative
    * [!UICONTROL Formula]: `(B / ((A + B) - C)`
    * 
-
-      [!UICONTROL Format]: Percentage
+     [!UICONTROL Format]: Percentage
 
 * *지표 `A`:`New customers cumulative`*
 * *지표 `B`:`Churned customers by last order date`*

@@ -2,7 +2,9 @@
 title: Commerce Intelligence의 이름 보고서 및 요소
 description: 에서 보고서 및 요소의 이름을 지정하는 모범 사례에 대해 알아봅니다. [!DNL Commerce Intelligence].
 exl-id: c662cedd-c779-4254-b04b-f3092a538c85
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin, User
+feature: Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 0%
@@ -11,7 +13,7 @@ ht-degree: 0%
 
 # 보고서 및 요소 이름 지정
 
-에서 빌드를 시작하기 전에[!DNL Adobe Commerce Intelligence], Adobe이 성공에 대한 몇 가지 비밀을 공유하려고 합니다. 지표, 필터 등을 만드는 방법을 아는 것은 중요하지만, 필요한 것을 찾을 수 없거나 모호한 경우 모든 작업이 무용지물이 될 수 있습니다.
+에서 빌드를 시작하기 전에 [!DNL Adobe Commerce Intelligence], Adobe이 성공에 대한 몇 가지 비밀을 공유하려고 합니다. 지표, 필터 등을 만드는 방법을 아는 것은 중요하지만, 필요한 것을 찾을 수 없거나 모호한 경우 모든 작업이 무용지물이 될 수 있습니다.
 
 ## 명명법이 중요한 이유 {#why}
 

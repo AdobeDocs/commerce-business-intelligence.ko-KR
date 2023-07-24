@@ -2,7 +2,9 @@
 title: Adobe Commerce Intelligence 사용자 삭제 또는 재활성화
 description: 삭제 방법 알아보기 [!DNL Commerce Intelligence] 사용자.
 exl-id: 0590275d-3329-40fb-8be1-4a700438338d
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, User
+feature: User Management
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 0%

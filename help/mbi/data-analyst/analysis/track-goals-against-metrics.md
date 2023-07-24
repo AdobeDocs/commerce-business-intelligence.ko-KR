@@ -2,7 +2,9 @@
 title: 지표에 대한 목표 추적
 description: 매출, 신규 등록된 사용자, 시간 경과에 따른 주문 등 실제 데이터에 대해 비즈니스 목표를 추적하는 데 도움이 되는 대시보드를 설정하는 방법에 대해 알아봅니다.
 exl-id: 9d621f40-f9c2-4310-bd96-a46ab7159930
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin, User
+feature: Data Warehouse Manager, Reports, Dashboards, Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 0%
@@ -54,51 +56,46 @@ ht-degree: 0%
 * **목표 달성을 위해 남은 수익**
 * 지표 `A`: `Revenue`
 * 
-
-   [!UICONTROL 지표]: `Revenue`
+  [!UICONTROL 지표]: `Revenue`
 
 * 지표 `B`: `Target Revenue`
 * [!UICONTROL Metric]: `Monthly Revenue Target`
 
 * [!UICONTROL Formula]: `Revenue left to achieve target`
 * 
-   [!UICONTROL 공식]: `(B-A)`
+  [!UICONTROL 공식]: `(B-A)`
 * 
-
-   [!UICONTROL Format]: `Number`
+  [!UICONTROL Format]: `Number`
 
 * [!UICONTROL Time period]: (원하는 적절한 기간)
 * 
-   [!UICONTROL Interval]: `Month`
+  [!UICONTROL Interval]: `Month`
 * 
-
-   [!UICONTROL 차트 유형]: `Scalar`
+  [!UICONTROL 차트 유형]: `Scalar`
 
 * **매출 목표**
 * 지표 `A`: `Revenue`
 * 
-
-   [!UICONTROL 지표]: `Revenue`
+  [!UICONTROL 지표]: `Revenue`
 
 * 지표 `B`: `Target Revenue`
 * [!UICONTROL Metric]: `Monthly Revenue Target`
 
 * 지표 `C`: `Revenue (amount change since previous year)` (숨기기)
 * 
-   [!UICONTROL 지표]: `Revenue`
+  [!UICONTROL 지표]: `Revenue`
 * [!UICONTROL Perspective]: `Amount change vs. Previous year`
 
 * [!UICONTROL Formula]: (작년 이번 달)
 * 
-   [!UICONTROL 공식]: `(A-C)`
+  [!UICONTROL 공식]: `(A-C)`
 * 
-
-   [!UICONTROL Format]: `Currency`
+  [!UICONTROL Format]: `Currency`
 
 * 끄기 `Multiple Y-Axes`
 * [!UICONTROL Time period]: (원하는 관련 기간)*
 * 
-   [!UICONTROL Interval]: `Month`
+  [!UICONTROL Interval]: `Month`
 * [!UICONTROL Chart Type]: `Line Chart`
 
 매출 목표에 대한 위의 보고서를 완료하면 주문, 등록된 계정 또는 목표 파일 업로드에 포함한 다른 모든 값에 대한 동일한 보고서를 생성할 수 있습니다.

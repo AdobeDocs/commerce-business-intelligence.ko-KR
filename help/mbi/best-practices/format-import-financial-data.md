@@ -2,7 +2,9 @@
 title: 재무 데이터 서식 지정 및 가져오기
 description: 재무 데이터의 형식을 지정하고 가져오는 방법을 알아봅니다.
 exl-id: cdbed262-7cf1-4fd6-ad5a-c44d26dffba7
-source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Integration, Data Import/Export, Data Warehouse Manager
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 0%

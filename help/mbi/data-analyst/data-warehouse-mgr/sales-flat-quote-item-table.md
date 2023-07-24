@@ -2,7 +2,9 @@
 title: quote_item 테이블
 description: quote_item 테이블을 사용하여 작업하는 방법을 알아봅니다.
 exl-id: dad36e88-5986-4b52-8a0e-ac084fabb275
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 0%
@@ -51,8 +53,8 @@ ht-degree: 0%
 
 | **지표 이름** | **설명** | **구성** |
 |---|---|---|
-| `Number of abandoned cart items` | 특정 &quot;포기&quot; 조건을 충족하는 장바구니에 추가된 항목의 총 수량 | `Operation: Sum`<br/>`Operand: qty`<br/>`Timestamp: Cart creation date`<br>필터:<br><br>- \[`A`\] `Cart is active? (1/0)` = 1<br>- \[`B`\] `Seconds since cart creation` > x이고, 여기서 &quot;x&quot;는 장바구니가 생성된 후 장바구니가 포기한 것으로 간주되는 경과 시간(초)에 해당합니다 |
-| `Abandoned cart item value` | 특정 &quot;포기&quot; 조건을 충족하는 장바구니와 관련된 총 매출의 합계 | `Operation: Sum`<br>`Operand: Cart item total value (qty * base_price)`<br>`Timestamp:` `Cart creation date`<br>필터:<br><br>- \[`A`\] `Cart is active? (1/0)` = 1<br>- \[`B`\] `Seconds since cart creation` > x이고, 여기서 &quot;x&quot;는 장바구니가 생성된 후 장바구니가 포기한 것으로 간주되는 경과 시간(초)에 해당합니다 |
+| `Number of abandoned cart items` | 특정 &quot;포기&quot; 조건을 충족하는 장바구니에 추가된 항목의 총 수량 | `Operation: Sum`<br/>`Operand: qty`<br/>`Timestamp: Cart creation date`<br>필터:<br><br>- \[`A`\] `Cart is active? (1/0)` = 1<br>- \[`B`\] `Seconds since cart creation` > x이고, 여기서 &quot;x&quot;는 장바구니가 생성된 후 장바구니가 포기한 것으로 간주되는 경과 시간(초)에 해당합니다 |
+| `Abandoned cart item value` | 특정 &quot;포기&quot; 조건을 충족하는 장바구니와 관련된 총 매출의 합계 | `Operation: Sum`<br>`Operand: Cart item total value (qty * base_price)`<br>`Timestamp:` `Cart creation date`<br>필터:<br><br>- \[`A`\] `Cart is active? (1/0)` = 1<br>- \[`B`\] `Seconds since cart creation` > x이고, 여기서 &quot;x&quot;는 장바구니가 생성된 후 장바구니가 포기한 것으로 간주되는 경과 시간(초)에 해당합니다 |
 
 {style="table-layout:auto"}
 

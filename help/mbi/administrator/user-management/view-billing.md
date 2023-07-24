@@ -1,7 +1,9 @@
 ---
 title: 청구 정보 보기
 description: 청구 정보를 업데이트하는 방법을 알아봅니다.
-source-git-commit: c3014c03e7ba8faeb88758821d672f664fc6bf22
+role: Admin, User
+feature: User Management
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '46'
 ht-degree: 0%

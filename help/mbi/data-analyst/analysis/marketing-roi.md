@@ -2,7 +2,9 @@
 title: 마케팅 ROI
 description: ROI를 집계하여 캠페인별로 포함하여 채널 분석을 추적하는 대시보드를 설정하는 방법에 대해 알아봅니다.
 exl-id: 5de83998-e6cf-478d-bb6a-7a3dc77c2c0c
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin,  User
+feature: Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 0%
@@ -41,26 +43,25 @@ ht-degree: 0%
       * 정의 선택: `Joined Column`
       * [!UICONTROL Create Path]:
       * 
-         [!UICONTROL Many]: `sales_flat_order.increment_id`
+        [!UICONTROL Many]: `sales_flat_order.increment_id`
       * 
-
-         [!UICONTROL One]: `ecommerce####.transaction_id`
+        [!UICONTROL One]: `ecommerce####.transaction_id`
 
       * 선택 [!UICONTROL table]: `ecommerce####`
       * 선택 [!UICONTROL column]: `campaign`
       * [!UICONTROL Path]: `sales_flat_order.increment_id = ecommerce#####.transactionID`
+
    * **`Order's GA medium`**
       * 정의 선택: 조인된 열
       * 선택 [!UICONTROL table]: `ecommerce####`
       * 선택 [!UICONTROL column]: `medium`
       * [!UICONTROL Path]: sales_flat_order.increment_id = ecommerce#####.transactionId
+
    * **`Order's GA source`**
       * 정의 선택: 조인된 열
       * 선택 [!UICONTROL table]: `ecommerce####`
       * 선택 [!UICONTROL column]: `source`
       * [!UICONTROL Path]: sales_flat_order.increment_id = ecommerce#####.transactionId ^
-
-
 
 * **`customer_entity`** 표
 * **`Customer's first order GA campaign`**
@@ -141,10 +142,9 @@ ht-degree: 0%
 * 지표 `A`: 광고 지출
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL 간격]: `None`
+  [!UICONTROL 간격]: `None`
 * 
-
-   [!UICONTROL Chart Type]: `Scalar`
+  [!UICONTROL Chart Type]: `Scalar`
 
 * **고객 확보 광고(항상)**
    * [!UICONTROL Metric]: `New customers`
@@ -158,10 +158,9 @@ ht-degree: 0%
 * 지표 `A`: `Ad customer acquisitions`
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL 간격]: `None`
+  [!UICONTROL 간격]: `None`
 * 
-
-   [!UICONTROL Chart Type]: `Scalar`
+  [!UICONTROL Chart Type]: `Scalar`
 
 * **광고 ROI**
    * [!UICONTROL Metric]: 광고 지출
@@ -173,6 +172,7 @@ ht-degree: 0%
       * `User's first order's source LIKE %fb%`
       * `User's first order's medium IN cpc, ppc`
       * 필터 논리: ([`A`] 또는 [`B`] 또는 [`C`]) 및 [`D`]
+
    * [!UICONTROL Metric]: 평균 라이프타임 수익
    * [!UICONTROL Filters]:
       * `User's first order's source LIKE %google%`
@@ -180,12 +180,10 @@ ht-degree: 0%
       * `User's first order's source LIKE %fb%`
       * `User's first order's medium IN cpc, ppc`
       * 필터 논리: ([`A`] 또는 [`B`] 또는 [`C`]) 및 [`D`]
+
    * [!UICONTROL Formula]: `((C - (A / B)) / (A / B))`
    * 
-
-      [!UICONTROL Format]: `Percentage`
-
-
+     [!UICONTROL Format]: `Percentage`
 
 * 지표 `A`: `Ad Spend (hide)`
 * 지표 `B`: `Ad customer acquisitions (hide)`
@@ -193,23 +191,20 @@ ht-degree: 0%
 * [!UICONTROL Formula]: `Ads ROI`
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL 간격]: `None`
+  [!UICONTROL 간격]: `None`
 * 
-
-   [!UICONTROL Chart Type]: `Scalar`
+  [!UICONTROL Chart Type]: `Scalar`
 
 * **ga medium별 주문**
    * 
-
-      [!UICONTROL 지표]: `Orders`
+     [!UICONTROL 지표]: `Orders`
 
 * 지표 `A`: `Orders`
 * [!UICONTROL Time period]: `All time`
 * [!UICONTROL Interval]: `By Month`
 * [!UICONTROL Group by]: `Order's medium`
 * 
-
-   [!UICONTROL Chart Type]: `Area`
+  [!UICONTROL Chart Type]: `Area`
 
 * **캠페인별 광고 ROI**
    * [!UICONTROL Metric]: `Ad Spend`
@@ -221,6 +216,7 @@ ht-degree: 0%
       * `User's first order's source LIKE %fb%`
       * `User's first order's medium IN cpc, ppc`
       * 필터 논리: ([`A`] 또는 [`B`] 또는 [`C`]) 및 [`D`]
+
    * [!UICONTROL Metric]: 평균 라이프타임 수익
    * [!UICONTROL Filters]:
       * `User's first order's source LIKE %google%`
@@ -228,6 +224,7 @@ ht-degree: 0%
       * `User's first order's source LIKE %fb%`
       * `User's first order's medium IN cpc, ppc`
       * 필터 논리: ([`A`] 또는 [`B`] 또는 [`C`]) 및 [`D`]
+
    * [!UICONTROL Metric]: 평균 라이프타임 주문 수
    * [!UICONTROL Filters]:
       * `User's first order's source LIKE %google%`
@@ -235,20 +232,18 @@ ht-degree: 0%
       * `User's first order's source LIKE %fb%`
       * `User's first order's medium IN cpc, ppc`
       * 필터 논리: ([`A`] 또는 [`B`] 또는 [`C`]) 및 [`D`]
+
    * [!UICONTROL Formula]: `(A / B)`
    * 
-
-      [!UICONTROL Format]: `Currency`
+     [!UICONTROL Format]: `Currency`
 
    * [!UICONTROL Formula]: `(C - (A / B))`
    * 
-
-      [!UICONTROL Format]: `Currency`
+     [!UICONTROL Format]: `Currency`
 
    * [!UICONTROL Formula]: `((C - (A / B)) / (A / B))`
    * 
-
-      [!UICONTROL Format]: `Percentage`
+     [!UICONTROL Format]: `Percentage`
 
    * [!UICONTROL Metric]: `Ad Clicks`
 
@@ -256,39 +251,33 @@ ht-degree: 0%
 
    * [!UICONTROL Formula]: `(H / I)`
    * 
-
-      [!UICONTROL Format]: `Percentage`
+     [!UICONTROL Format]: `Percentage`
 
    * [!UICONTROL Formula]: `(A / H)`
    * 
-
-      [!UICONTROL Format]: `Currency`
-
-
-
+     [!UICONTROL Format]: `Currency`
 
 * 지표 `A`: `Ad Spend` (숨기기)
 * 지표 `B`: `Ad customer acquisitions`
 * 지표 `C`: `Average LTV`
 * 지표 `D`: `Average lifetime # of orders`
 * 
-   [!UICONTROL 공식]: `CAC`
+  [!UICONTROL 공식]: `CAC`
 * [!UICONTROL Formula]: `Avg return`
 * [!UICONTROL Formula]: `Ads ROI`
 * 지표 `H`: `adClicks`
 * 지표 `I`: `Impressions`
 * 
-   [!UICONTROL 공식]: `CTR`
+  [!UICONTROL 공식]: `CTR`
 * 
-   [!UICONTROL 공식]: `CPC`
+  [!UICONTROL 공식]: `CPC`
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL 간격]: `None`
+  [!UICONTROL 간격]: `None`
 * 
-   [!UICONTROL 그룹 기준]: `campaign` (비광고 지출 테이블 지표에 &#39;고객 첫 번째 주문&#39; 캠페인 사용)
+  [!UICONTROL 그룹 기준]: `campaign` (비광고 지출 테이블 지표에 &#39;고객 첫 번째 주문&#39; 캠페인 사용)
 * 
-
-   [!UICONTROL Chart Type]: `Table`
+  [!UICONTROL Chart Type]: `Table`
 
 이 분석을 작성하는 동안 질문이 발생하거나 Professional Services 팀의 도움을 얻고자 하는 경우 [연락처 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 

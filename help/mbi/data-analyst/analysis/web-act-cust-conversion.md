@@ -2,7 +2,9 @@
 title: 웹 사이트 활동 및 고객 전환율 분석
 description: 페이지 보기 수, 세션 및 사용자를 포함하여 웹 사이트 활동 및 시간에 따른 고객 전환율을 추적하는 대시보드를 설정하는 방법에 대해 알아봅니다.
 exl-id: 2b57d5b3-3bbf-4ec9-86a6-9fa850c1c459
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin, User
+feature: Reports, Data Integration
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '744'
 ht-degree: 0%

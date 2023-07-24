@@ -2,7 +2,9 @@
 title: 매핑 테이블을 사용하여 데이터 표준화
 description: 매핑 테이블을 사용하여 작업하는 방법을 알아봅니다.
 exl-id: e452ff87-f298-43d5-acc3-af58e53bd0bc
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 0%
@@ -64,7 +66,7 @@ ht-degree: 0%
    * 다음에서 `One` 측면을 선택하고 `mapping` 테이블 및 `Primary key` 열. 이 경우 다음을 선택합니다. `state_input` 의 열 `mapping_state` 테이블.
    * 다음은 경로의 모양입니다.
 
-      ![](../../assets/State_Mapping_Path.png)
+     ![](../../assets/State_Mapping_Path.png)
 
 1. 완료되면 다음을 클릭: **[!UICONTROL Save]** 을 클릭하여 경로를 만듭니다.
 1. 저장 후 경로가 바로 채워지지 않을 수 있습니다. 이런 경우 `Path` 을 클릭하고 만든 경로를 선택합니다.

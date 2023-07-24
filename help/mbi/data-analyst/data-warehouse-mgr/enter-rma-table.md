@@ -2,7 +2,9 @@
 title: enterprise_rma 테이블
 description: 특정 반환 요청에 대한 정보를 분석하는 방법에 대해 알아봅니다.
 exl-id: a19cbc9a-e34f-4f4e-820f-9e413d1a552d
-source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 0%
@@ -44,10 +46,10 @@ ht-degree: 0%
 
 | **지표 이름** | **설명** | **구성** |
 |---|---|---|
-| `Number of returns` | 요청한 반환 횟수입니다. | `Operation` 열: `entity id`<br>`Operation`: `Count`<br>`Timestamp` 열: `date requested` |
-| `Total returned amount` | 반환된 총 금액. | `Operation `열: `Return's total value`<br>`Operation`: Sum<br>`Timestamp` 열: 요청한 날짜 |
-| `Average returned amount` | 반환된 평균 금액입니다. | `Operation`` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp` 열: `date requested` |
-| `Average time to return` | 주문에서 반환까지의 평균 시간. | `Operation` 열: 주문 생성일과 반환 요청 날짜 사이의 초<br>`Operation`: `Average`<br>`Timestamp` 열: `date requested` |
+| `Number of returns` | 요청한 반환 횟수입니다. | `Operation` 열: `entity id`<br>`Operation`: `Count`<br>`Timestamp` 열: `date requested` |
+| `Total returned amount` | 반환된 총 금액. | `Operation `열: `Return's total value`<br>`Operation`: Sum<br>`Timestamp` 열: 요청한 날짜 |
+| `Average returned amount` | 반환된 평균 금액입니다. | `Operation`` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp` 열: `date requested` |
+| `Average time to return` | 주문에서 반환까지의 평균 시간. | `Operation` 열: 주문 생성일과 반환 요청 날짜 사이의 초<br>`Operation`: `Average`<br>`Timestamp` 열: `date requested` |
 
 {style="table-layout:auto"}
 

@@ -2,7 +2,9 @@
 title: Adobe Commerce에 데이터 저장
 description: 데이터가 생성되는 방법, 새 행이 삽입되는 원인 및 Adobe Commerce 데이터베이스에 작업이 기록되는 방법에 대해 알아봅니다.
 exl-id: 436ecdc1-7112-4dec-9db7-1f3757a2a938
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '928'
 ht-degree: 3%
@@ -61,7 +63,7 @@ ht-degree: 3%
 
 계정 생성이 완료되고 `Sammy Customer` 구매를 시작할 준비가 되었습니다. 웹 사이트에서 고객은 `Throwback Bellbottoms` 및 1 `V-Neck T-Shirt` 장바구니에. 선택에 만족하면 고객이 체크아웃으로 이동하여 주문을 제출하고 [판매 플랫 주문 테이블](../data-warehouse-mgr/sales-flat-order-table.md):
 
-| **`entity id`** | **`customer id**`**`subtotal`****`created at`** |
+| **`entity id`** | **`customer id**` | **`subtotal`** | **`created at`** |
 |---|---|---|---|
 | 227 | 214 | 94.85 | 2016/09/23 15:41:39 |
 

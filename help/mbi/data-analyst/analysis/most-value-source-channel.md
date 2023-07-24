@@ -2,7 +2,9 @@
 title: 가장 중요한 마케팅 소스 및 채널 식별
 description: 가장 중요한 마케팅 채널을 파악하는 데 사용할 수 있는 몇 가지 보고서에 대해 알아봅니다.
 exl-id: 8d25bc80-ea60-47db-b01b-04a23a24c14d
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Warehouse Manager, Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '978'
 ht-degree: 0%

@@ -2,7 +2,7 @@
 title: Mixpanel의 데이터 유효성 검사
 description: Mixpanel 내에서 직접 사용할 수 있는 모든 동일한 데이터를 동기화했는지 확인하는 방법에 대해 알아봅니다.
 exl-id: d18ce954-26fe-4440-ad8b-4f266c007b2f
-source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
+source-git-commit: 903e839e8bd8a4e7b6d21b6a7ebcae49f2dfe6e4
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 날짜 [!DNL Adobe Commerce Intelligence] 을(를) 처음 연결하는 경우 [!DNL Mixpanel] 데이터, 계정 관리자 또는 분석가는 데이터 내보내기를 요청할 수 있습니다. [!DNL Mixpanel] 유효성 검사 목적으로 이렇게 하면 내에서 직접 사용할 수 있는 모든 동일한 데이터를 동기화했는지 확인할 수 있습니다 [!DNL Mixpanel].
 
-## 데이터 내보내기 프로세스: `Events`
+## 데이터 내보내기 프로세스: `Events`
 
 1. 다음을 방문하십시오. `Segmentation` 섹션 및 보기 `Your Top Events`.
 
