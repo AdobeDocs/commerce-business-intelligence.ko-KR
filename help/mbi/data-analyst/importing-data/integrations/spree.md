@@ -2,7 +2,9 @@
 title: 연속 연결
 description: 비즈니스의 성과를 확인하거나 가장 중요한 획득 소스 및 채널을 찾는 방법에 대해 알아봅니다.
 exl-id: d443e6ca-04b0-4090-a3be-14db71819356
-source-git-commit: 96e1da59c2f366bdb948ddf907340f7fd8636741
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 0%

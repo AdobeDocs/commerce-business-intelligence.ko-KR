@@ -2,7 +2,9 @@
 title: 지표 만들기
 description: 지표를 사용하여 차트를 만드는 방법을 알아봅니다.
 exl-id: d4c25546-3c51-4d32-b9d8-c424ec103be5
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 0%
@@ -45,12 +47,12 @@ ht-degree: 0%
       * `Median` - 이 작업은 데이터 열 값의 중앙값을 계산합니다.
       * `First and Third Quartiles` - 이 연산은 데이터 열 값의 25번째 및 75번째 백분위수를 각각 계산합니다.
       * `Tenth and Ninetieth Percentiles` - 이 작업은 데이터 열 값의 10번째 및 90번째 백분위수를 각각 계산합니다.
+
    * 작업을 수행할 열을 선택합니다. 예를 들어 총 매출을 찾으려면 `order total` 열.
 
-      기존 지표를 편집하는 경우 [지표의 작업 테이블 변경](../../data-analyst/data-warehouse-mgr/change-metric-op-table.md) 이 섹션에서 참조할 수 있습니다.
+     기존 지표를 편집하는 경우 [지표의 작업 테이블 변경](../../data-analyst/data-warehouse-mgr/change-metric-op-table.md) 이 섹션에서 참조할 수 있습니다.
 
    * 지표의 트렌드를 분석하는 데 사용할 수 있는 날짜 차원을 선택합니다. 예를 들어, `order date`.
-
 
 ## 필터 추가 {#filters}
 

@@ -2,7 +2,9 @@
 title: 웨어하우징 된 Google Analytics 연결
 description: 방문자가 사이트를 사용하는 방법, 매력적인 콘텐츠, 방문자가 종료하는 위치 등을 추적하는 방법에 대해 알아봅니다.
 exl-id: b9879399-9e1a-4f36-b510-8426ebc83aeb
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 0%

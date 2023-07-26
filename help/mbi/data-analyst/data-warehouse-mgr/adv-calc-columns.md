@@ -2,9 +2,9 @@
 title: 고급 계산 열 유형
 description: 대부분의 사용 열 사례에 대한 기본 사항을 알아봅니다. 하지만 Data Warehouse 관리자가 만들 수 있는 것보다 더 복잡한 계산된 열을 원할 수 있습니다.
 exl-id: 9871fa19-95b3-46e4-ae2d-bd7c524d12db
-role: Data Architect, Data Engineer, User
+role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '898'
 ht-degree: 4%

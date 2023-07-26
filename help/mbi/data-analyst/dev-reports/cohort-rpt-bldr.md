@@ -2,7 +2,9 @@
 title: 집단 Report Builder
 description: 라이프사이클 동안 유사한 특성을 공유하는 사용자 그룹의 분석에 대해 알아봅니다.
 exl-id: d80c5389-7256-40e0-86e0-49903113f93d
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '1556'
 ht-degree: 0%
@@ -181,7 +183,7 @@ ht-degree: 0%
 
 ### 나는 평균적으로 사용자가 라이프타임 동안 다른 시점에서 얼마나 많은 주문을 하는지 알고 싶다.
 
-!![Average number of orders users make at different points in their lifetimes](../../assets/cohort2.gif
+(../../assets/cohort2.gif
 
 이 예에서는 다음을 분석했습니다. `Number of orders` 지표, 집단을 그룹별로 `customer's first order date`, 및 (에 정의된) 가장 최근 8개 집단 포함 `Time Period` 메뉴)를 사용하십시오. 각 집단에 대한 평균 주문 수를 보려면 `perspective` 끝 `Average Value per Cohort Member`.
 

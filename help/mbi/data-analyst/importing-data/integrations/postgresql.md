@@ -2,7 +2,9 @@
 title: SSH 터널을 통해 PostgreSQL 연결
 description: SSH 터널을 통해 PostgreSQL 데이터베이스를 Commerce Intelligence에 연결하는 방법을 알아봅니다.
 exl-id: da610988-21c1-4f5f-b4e2-e2deb175a2aa
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 0%
@@ -15,8 +17,8 @@ ht-degree: 0%
 
 1. [검색 [!DNL Commerce Intelligence] 공개 키](#retrieve)
 1. [에 대한 액세스 허용 [!DNL Commerce Intelligence] IP 주소](#allowlist)
-1. [만들기 [!DNL Linux] 사용자 [!DNL Commerce Intelligence] ](#linux)
-1. [만들기 [!DNL PostgreSQL] 사용자 [!DNL Commerce Intelligence] ](#postgres)
+1. [만들기 [!DNL Linux] 사용자 [!DNL Commerce Intelligence]](#linux)
+1. [만들기 [!DNL PostgreSQL] 사용자 [!DNL Commerce Intelligence]](#postgres)
 1. [에 연결 및 사용자 정보 입력 [!DNL Commerce Intelligence]](#finish)
 
 ## 검색 중 [!DNL Commerce Intelligence] [!DNL public key] {#retrieve}

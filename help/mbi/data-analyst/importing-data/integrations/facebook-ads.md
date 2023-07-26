@@ -2,7 +2,9 @@
 title: facebook 광고 연결
 description: 광고 지출 데이터를 분석하고 비용이 효과적으로 지출되는지 확인하는 방법을 알아봅니다.
 exl-id: 219a868b-f17c-4299-9e29-94db9156c9b6
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 0%
@@ -48,7 +50,7 @@ ht-degree: 0%
 
 1. 클릭 **[!UICONTROL Save Connections]**.
 
-   정상적으로 연결되면 *연결 성공!* 페이지 맨 위에 메시지가 표시됩니다.
+   정상적으로 연결되면 *연결 성공!* 메시지가 페이지 맨 위에 표시됩니다.
 
 ## 다음은 무엇입니까? {#next}
 

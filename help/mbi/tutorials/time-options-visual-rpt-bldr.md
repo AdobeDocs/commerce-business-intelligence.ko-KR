@@ -2,7 +2,9 @@
 title: 시각적 Report Builder에서 시간 옵션 사용
 description: 특정 기간 동안 보고서의 데이터를 분석하는 방법에 대해 알아봅니다.
 exl-id: a1bb4838-f882-44b1-a29f-84b985032ceb
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '1267'
 ht-degree: 0%
@@ -82,6 +84,7 @@ ht-degree: 0%
    * `Time Interval`: 다음으로 설정 `None`.
 
    * `Time Range`: 다음으로 설정 `From 14 Months Ago To 13 Months Ago` 을(를) 처음 클릭하여 **[!UICONTROL Custom]** 그러면 **[!UICONTROL Moving Range]**. 메뉴 상단에 있는 필드와 드롭다운을 사용하여 범위를 설정합니다. 이 설정을 사용하면 이전 달과 이전 연도의 매출을 볼 수 있습니다.
+
    지표가 보고서에서 사라지더라도 걱정하지 마십시오. 독립적인 시간 옵션을 설정하면 보고서에서 지표를 자동으로 숨깁니다. 다시 표시하려면 다음을 클릭합니다. **[!UICONTROL Show]** 지표 옆에 있습니다.
 
    ![](../assets/Different_Time_Ranges.gif)
@@ -95,8 +98,6 @@ ht-degree: 0%
    ![](../assets/TO4.png)
 
    * 지표 이름을 변경합니다. 이 예에서 첫 번째 지표는 입니다. `Revenue - 2015` 두 번째는 `Revenue - 2014`.
-
-
 
 사용자 지정의 또 다른 일반적인 사용 `Time Options` 는 공급 주를 결정하는 것입니다. 특히 휴가철이나 특별 프로모션 기간에는 마지막 주, 월, 이전 프로모션 기간 동안 판매된 품목을 고려하여 정보에 입각한 구매 결정을 내릴 수 있습니다.
 
@@ -129,13 +130,13 @@ ht-degree: 0%
 * 의 경우 `last 7 days time period`, 입력 `D / A` 다음에서 `Formula` 필드.
 * 의 경우 `last 28 days time period`, 입력 `D / (B/4)` 다음에서 `Formula` 필드.
 
-   >[!NOTE]
-   >
-   >여기에서 선택한 시간 범위를 정규화하는 것이 중요합니다. 이 예에서는 28일을 4주로 나눕니다. 수식에 다른 논리를 적용해야 할 수도 있습니다.
+  >[!NOTE]
+  >
+  >여기에서 선택한 시간 범위를 정규화하는 것이 중요합니다. 이 예에서는 28일을 4주로 나눕니다. 수식에 다른 논리를 적용해야 할 수도 있습니다.
 
 * 의 경우 `last promo period`, 입력 `D / C` 다음에서 `Formula` 필드.
 
-   ![](../assets/Different_Time_Ranges_2.png)
+  ![](../assets/Different_Time_Ranges_2.png)
 
 * 마지막으로 지표를 숨기고 를 추가하여 보고서를 사용자 지정합니다. `SKU` 또는 다음과 같은 보고서와 유사한 차원 `Group By`.
 

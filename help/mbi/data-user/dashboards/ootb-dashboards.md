@@ -2,7 +2,9 @@
 title: 포함된 대시보드
 description: 사용자 라이프타임 수익, 반복 구매 횟수 등과 같은 필수 지표의 상태를 점검하여 향후 탐색을 위한 견고한 기반을 구축하는 방법에 대해 알아봅니다.
 exl-id: f50fc417-e5d4-401c-9baa-cda1468196a2
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Dashboards
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 0%

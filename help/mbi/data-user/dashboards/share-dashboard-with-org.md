@@ -2,7 +2,9 @@
 title: 조직 전체에서 대시보드 공유
 description: 모든 사용자가 의 필수 비즈니스 대시보드에 액세스할 수 있도록 하는 방법에 대해 알아봅니다. [!DNL Commerce Intelligence].
 exl-id: 5afa8c3c-1673-4350-babf-3e4657292871
-source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Dashboards
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '126'
 ht-degree: 0%

@@ -2,7 +2,9 @@
 title: 예상 Salesforce 데이터
 description: Salesforce 데이터의 지원되는 개체 및 지원되지 않는 개체에 대해 알아봅니다.
 exl-id: 6625349f-2ec0-402d-8635-889a1f29811c
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 0%

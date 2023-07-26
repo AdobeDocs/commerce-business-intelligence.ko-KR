@@ -2,7 +2,9 @@
 title: 공식
 description: 수식 사용 방법을 알아봅니다.
 exl-id: b6432d93-739f-410c-b732-e09a278f8dae
-source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 0%
@@ -49,7 +51,7 @@ ht-degree: 0%
 
    * 다음에서 `Enter your Formula` 입력 상자, 입력 `A/B`.
 
-      이는 매출을 신규 고객 수로 주문한 제품별로 나눕니다.
+     이는 매출을 신규 고객 수로 주문한 제품별로 나눕니다.
 
    * 설정 `Select format` 끝 `123Number`.
 
@@ -71,11 +73,11 @@ ht-degree: 0%
 
    * 달력에서 날짜 범위를 선택합니다.
 
-      이 예에서는 휴가철이 다음과 같습니다. `November 1` 에서 `December 31`.
+     이 예에서는 휴가철이 다음과 같습니다. `November 1` 에서 `December 31`.
 
    * 아래 `Select Time Interval`, 선택 `Day`.
 
-      ![고정 날짜 범위](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-fixed-date-range.png)
+     ![고정 날짜 범위](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-fixed-date-range.png)
 
    * 완료되면 다음을 클릭하십시오. **[!UICONTROL Apply]**.
 

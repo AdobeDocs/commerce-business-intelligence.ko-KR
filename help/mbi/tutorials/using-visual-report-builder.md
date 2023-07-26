@@ -2,7 +2,9 @@
 title: 시각적 Report Builder 사용
 description: 특정 기간 동안 보고서의 데이터를 분석하는 방법에 대해 알아봅니다.
 exl-id: da97b63d-63f0-4fd6-87e3-4cac49a42acc
-source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 0%
@@ -117,7 +119,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->을(를) 추가하면 `group by` 차원을 선택하거나 새 시각화를 선택하거나 시간 간격을 조정한 다음 숫자(`scalar`). 다음 번에 대시보드에서 보고서를 열 때는 이러한 조정 내용이 유지되지 않으며 시간 범위만 유지됩니다.
+>을(를) 추가하면 `group by` 차원을 선택하거나 새 시각화를 선택하거나 시간 간격을 조정한 다음 숫자(`scalar`). 다음 번에 대시보드에서 보고서를 열 때는 이러한 조정이 유지되지 않으며 시간 범위만 유지됩니다.
 
 보고서에서 시간 옵션을 사용하는 방법에 대한 자세한 내용은 다음을 참조하십시오. [튜토리얼](../tutorials/time-options-visual-rpt-bldr.md).
 

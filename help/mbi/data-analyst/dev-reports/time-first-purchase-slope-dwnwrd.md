@@ -2,7 +2,9 @@
 title: 첫 구매까지의 평균 시간 보고서
 description: 평균 최초 구매 시간 보고서를 사용하는 방법을 알아봅니다.
 exl-id: c18734ce-0ae0-4e84-b9d0-eb2c21a5c3a5
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports
+source-git-commit: 330832e2668024b00edb2b7c49b92bb042bd004a
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 0%

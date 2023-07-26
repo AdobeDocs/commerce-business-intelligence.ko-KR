@@ -2,7 +2,9 @@
 title: 차트 데이터 정보
 description: 시각적 Report Builder에서 시각화 옵션을 사용하는 방법에 대해 알아봅니다.
 exl-id: 865efc8b-1e1a-4033-9e42-cbd03b220260
-source-git-commit: af1e3839839b4c419beabb0cc666c996ea2179d4
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '55'
 ht-degree: 0%

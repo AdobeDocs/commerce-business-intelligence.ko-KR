@@ -2,7 +2,9 @@
 title: Mixpanel 연결
 description: 사용자가 웹 사이트 및 앱을 탐색하고 사용하는 방법을 분석하는 방법에 대해 알아봅니다.
 exl-id: e6a9f08f-1063-4d92-93e6-971280239fdb
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 0%
@@ -58,7 +60,7 @@ ht-degree: 0%
 1. 다음을 복사합니다. `API Key` 및 `Secret` 대상: [!DNL Mixpanel] 의 자격 증명 페이지 [!DNL Commerce Intelligence].
 1. 클릭 **[!UICONTROL Connect to Mixpanel]** 설치를 완료합니다.
 
-정상적으로 연결되면 _성공!_ 메시지가 페이지 맨 위에 표시됩니다.
+정상적으로 연결되면 _성공!_ 페이지 맨 위에 메시지가 표시됩니다.
 
 ### 관련 항목
 

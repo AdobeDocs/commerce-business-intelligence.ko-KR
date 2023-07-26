@@ -2,7 +2,9 @@
 title: 예상 Facebook 광고 데이터
 description: Data Warehouse과 동기화하는 것이 권장되는 표에 대한 간략한 개요를 알아봅니다
 exl-id: 0c8b907b-1a98-470b-bb2c-55327e88e502
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 0%

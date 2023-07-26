@@ -2,7 +2,9 @@
 title: 대시보드 그룹 사용
 description: 대시보드를 더 잘 구성할 수 있도록 하는 방법을 알아봅니다.
 exl-id: e48b7345-62d0-4898-997e-3c3c02040ad3
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Dashboards
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 0%

@@ -2,7 +2,9 @@
 title: 연결 중 [!DNL MySQL] SSH 터널 사용
 description: 연결 방법 알아보기 [!DNL MySQL] SSH 터널을 통해
 exl-id: 6b691a6a-9542-4e47-9b1d-d6d3c3dac357
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '611'
 ht-degree: 0%
@@ -106,7 +108,7 @@ ht-degree: 0%
 * `Port`: [!DNL MySQL] 서버의 포트(기본적으로 3306)
 * `Host` 기본적으로 localhost입니다. 일반적으로 의 바인드 주소 값입니다. [!DNL MySQL] 서버 - 기본적으로 `127.0.0.1 (localhost)`로컬 네트워크 주소일 수도 있습니다(예: `192.168.0.1`) 또는 서버의 공용 IP 주소입니다.
 
-   값은 다음에서 찾을 수 있습니다. `my.cnf` 파일(위치: `/etc/my.cnf`)를 나타내는 줄 아래에 `\[mysqld\]`. 해당 파일에서 바인드 주소 줄이 주석 처리되면 외부 연결 시도로부터 서버가 보호됩니다.
+  값은 다음에서 찾을 수 있습니다. `my.cnf` 파일(위치: `/etc/my.cnf`)를 나타내는 줄 아래에 `\[mysqld\]`. 해당 파일에서 바인드 주소 줄이 주석 처리되면 외부 연결 시도로부터 서버가 보호됩니다.
 
 다음에서 `SSH Connection` 섹션:
 

@@ -2,7 +2,9 @@
 title: 파일 업로더 사용
 description: 모든 데이터를 단일 Data Warehouse에 넣는 방법을 알아봅니다.
 exl-id: 28db0e78-0222-431d-bbb9-6ef133686603
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 0%

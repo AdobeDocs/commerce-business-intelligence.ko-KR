@@ -2,7 +2,9 @@
 title: 대시보드 관리
 description: 소유한 대시보드에 대한 사용자 권한을 관리하고, 더 이상 필요하지 않은 대시보드를 삭제하고, 기본 대시보드를 설정하는 방법을 알아봅니다.
 exl-id: 32c21093-2a7d-4d8e-afc0-19bd702f9b36
-source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Dashboards
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 0%

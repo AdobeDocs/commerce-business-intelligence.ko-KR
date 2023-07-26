@@ -2,7 +2,9 @@
 title: 통합을 사용하여 외부 데이터 연결
 description: 다양한 외부 데이터 소스를 연결하는 데 사용할 수 있는 사용 가능한 통합에 대해 알아봅니다. [!DNL Commerce Intelligence].
 exl-id: b80f6f77-15f7-4d20-83fe-c6d758f9b0f8
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 0%

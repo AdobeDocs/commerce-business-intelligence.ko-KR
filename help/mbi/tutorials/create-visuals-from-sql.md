@@ -2,7 +2,9 @@
 title: SQL 쿼리에서 시각화 만들기
 description: SQL Report Builder에서 사용되는 용어에 익숙해지고 SQL 시각화를 작성하는 데 필요한 견고한 기반을 제공하는 방법에 대해 알아봅니다.
 exl-id: 9b9bc205-5b64-4e64-8d23-057072e5dd72
-source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
+role: Admin, Data Architect, Data Engineer, Leader, User
+feature: SQL Report Builder, Data Warehouse Manager, Reports, Data Integration
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%

@@ -2,7 +2,9 @@
 title: 지표에 대한 필터 세트 만들기
 description: 저장된 필터 세트를 만들고 이를 지표에 적용하는 방법을 알아봅니다.
 exl-id: 6ef8b67c-bebd-45eb-bca7-95832ec34fc8
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 0%
@@ -37,7 +39,7 @@ ht-degree: 0%
 
 1. 필터 논리를 확인하고 괄호와 연산자가 올바르게 입력되었는지 확인합니다. 예: `\[A\] AND \[B\]; (\[A\] OR \[B\]) AND \[C\]`.
 
-   잘못된 필터는 종종 간의 데이터 불일치의 원인입니다. [!DNL Commerce Intelligence] 보고서 및 예상 결과.
+   잘못된 필터는 종종 간의 데이터 불일치의 원인입니다. [!DNL Commerce Intelligence] 보고서와 예상 결과를 표시합니다.
 
 1. 저장 `Filter Set`.
 

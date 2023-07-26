@@ -2,7 +2,9 @@
 title: 위쪽/아래쪽 표시 기능을 사용하여 데이터 순서 지정
 description: 위쪽/아래쪽 표시 기능을 사용하여 데이터의 순서를 지정하는 방법을 알아봅니다.
 exl-id: d47119f4-cdc5-4fa7-a606-d4b8555a8843
-source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 0%

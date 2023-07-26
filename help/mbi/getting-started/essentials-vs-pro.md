@@ -2,7 +2,9 @@
 title: Commerce Intelligence Essentials와 Pro
 description: Commerce Intelligence Essentials가 Commerce Intelligence Pro와 어떻게 다른지 알아봅니다.
 exl-id: 624a6285-8497-43d9-a56d-8ae503e0e2dd
-source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
+role: Admin, Data Architect, Data Engineer, Leader, User
+feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '74'
 ht-degree: 5%
@@ -13,7 +15,7 @@ ht-degree: 5%
 
 다음 표에서는 기존 요소에 포함된 요소를 설명합니다. `Essentials` 계정과 현재 Commerce Intelligence 계정 비교. Adobe이 더 이상 오퍼 없음 `Essentials`.
 
-|  | **`Commerce Intelligence Essentials`** | **`Commerce Intelligence Pro`** |
+|   | **`Commerce Intelligence Essentials`** | **`Commerce Intelligence Pro`** |
 |-----|-----|-----|
 | `Pre-Defined Reports` | 최대 100개 | 사용자 정의 |
 | `Pre-Defined Dashboards` | 5-6 | 사용자 정의 |

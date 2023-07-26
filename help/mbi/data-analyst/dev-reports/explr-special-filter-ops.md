@@ -2,7 +2,9 @@
 title: 특수 필터 연산자
 description: 보고서를 만들거나 지표를 만들 때 필터에 사용되는 몇 가지 특수 연산자에 대해 알아봅니다.
 exl-id: 12837490-b9ca-4040-bb71-8988b5dde485
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 0%

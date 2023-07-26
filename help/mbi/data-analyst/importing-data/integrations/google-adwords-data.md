@@ -2,7 +2,9 @@
 title: 예상 Google Adwords 데이터
 description: Data Warehouse 관리자를 사용하여 분석을 위한 관련 데이터 필드를 쉽게 추적하는 방법에 대해 알아봅니다.
 exl-id: b0085683-7bb1-4da2-b343-4309e4796f0c
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 0%

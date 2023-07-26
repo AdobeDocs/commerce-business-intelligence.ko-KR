@@ -2,7 +2,9 @@
 title: 필터
 description: 필터를 사용하는 방법을 알아봅니다.
 exl-id: eb683dfe-9a90-400a-a0c0-3dc00d1f28b5
-source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 0%
@@ -37,21 +39,21 @@ ht-degree: 0%
 
    * 필터의 첫 번째 부분을 클릭하고 표현식의 주제로 사용할 열을 선택합니다.
 
-      ![필터의 첫 번째 부분 선택](../../assets/magento-bi-report-builder-filter-part1.png)
+     ![필터의 첫 번째 부분 선택](../../assets/magento-bi-report-builder-filter-part1.png)
 
    * 필터의 두 번째 부분을 클릭하고 연산자를 선택합니다.
 
-      ![연산자 선택](../../assets/magento-bi-report-builder-filter-part2.png)
+     ![연산자 선택](../../assets/magento-bi-report-builder-filter-part2.png)
 
    * 필터의 세 번째 부분에서 표현식을 완료하는 데 필요한 값을 입력합니다.
 
-      ![값 입력](../../assets/magento-bi-report-builder-filter-part3.png)
+     ![값 입력](../../assets/magento-bi-report-builder-filter-part3.png)
 
    * 필터가 완료되면 을 클릭합니다. **[!UICONTROL Apply]**.
 
-      이제 보고서에는 반복 고객만 포함되며, 보고서에 대해 검색된 고객 레코드 수가 33,000개에서 12,600개로 감소했습니다.
+     이제 보고서에는 반복 고객만 포함되며, 보고서에 대해 검색된 고객 레코드 수가 33,000개에서 12,600개로 감소했습니다.
 
-      ![필터링된 보고서](../../assets/magento-bi-report-builder-filter-report.png)<!--{: .zoom}-->
+     ![필터링된 보고서](../../assets/magento-bi-report-builder-filter-report.png)<!--{: .zoom}-->
 
 1. 사이드바에서 원근 ( )을 클릭합니다. ![](../../assets/magento-bi-btn-perspective.png)) 아이콘.
 

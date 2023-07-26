@@ -2,7 +2,9 @@
 title: 대시보드
 description: 대시보드를 만들고 작업하는 방법을 알아봅니다.
 exl-id: a872344b-ac66-41eb-a471-5a69f8802527
-source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Dashboards
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 0%
@@ -41,14 +43,13 @@ ht-degree: 0%
 
    * 을(를) 만들려면 `Group` 대시보드에 대해 그룹 이름을 입력합니다.
 
-      예를 들어 Commerce 설치에 여러 스토어 보기가 있는 경우 각 스토어 보기에 대한 그룹을 만들 수 있습니다.
+     예를 들어 Commerce 설치에 여러 스토어 보기가 있는 경우 각 스토어 보기에 대한 그룹을 만들 수 있습니다.
 
    * 클릭 **[!UICONTROL Create]**.
 
    ![대시보드 이름](../../assets/magento-bi-dashboard-create-name.png)
 
    * 새 대시보드의 이름이 왼쪽 위 모서리에 나타납니다. 아래쪽 화살표(![](../../assets/magento-bi-btn-down.png))을 클릭하여 옵션을 표시합니다. 그룹을 만든 경우 새 대시보드가 목록의 그룹 아래에 나타납니다.
-
 
 ### 보고서 추가
 
@@ -58,7 +59,7 @@ ht-degree: 0%
 
    * 대시보드 헤더에서 을 클릭합니다. **[!UICONTROL Add Report]**.
 
-      ![보고서 추가](../../assets/magento-bi-dashboard-create-add-report.png)
+     ![보고서 추가](../../assets/magento-bi-dashboard-create-add-report.png)
 
 1. 클릭 **[!UICONTROL Create Report]** 표시 방법 **[!UICONTROL Report Builder Options]**.
 
@@ -107,6 +108,7 @@ ht-degree: 0%
       * `View`
       * `Edit`
       * `None`
+
    1. 확인을 묻는 메시지가 나타나면 **[!UICONTROL OK]** 을 클릭하여 각 사용자의 권한 수준을 업데이트합니다.
 
    1. 개인의 권한 수준을 변경하려면 목록에서 사용자를 찾아 권한 수준을 변경합니다. 변경 사항이 자동으로 저장됩니다.
