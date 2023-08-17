@@ -231,7 +231,7 @@ ht-degree: 0%
    - 대시보드 작업 {#working-dashboards}
       - [대시보드 공유](best-practices/share-dashboard-best-practice.md)
       - [투자자 대시보드 작성](best-practices/build-investor-dashboard.md)
-- Tutorials {#tutorials}
+- 튜토리얼 {#tutorials}
    - [사용 [!DNL Visual Report Builder]](tutorials/using-visual-report-builder.md)
    - [에서 시간 옵션 사용 [!DNL Visual Report Builder]](tutorials/time-options-visual-rpt-bldr.md)
    - [에 대한 시각화 만들기 [!DNL SQL] 쿼리](tutorials/create-visuals-from-sql.md)

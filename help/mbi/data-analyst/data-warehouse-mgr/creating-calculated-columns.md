@@ -23,7 +23,7 @@ ht-degree: 0%
 
 1. 테이블 구성표가 표시됩니다. 클릭 **[!UICONTROL Create New Column]**.
 
-1. 열에 이름을 지정합니다. 예를 들어, `Customer Gender`.
+1. 열에 이름을 지정합니다. For example, `Customer Gender`.
 
 1. 열에 대한 정의를 선택합니다. 여기에서 [계산된 열 유형 안내서](../data-warehouse-mgr/calc-column-types.md) 편리해!
 

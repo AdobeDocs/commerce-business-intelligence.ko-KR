@@ -33,7 +33,7 @@ ht-degree: 0%
 
 1. 지표 이름을 지정합니다.
 
-   Adobe은 지표가 무엇인지 한눈에 알 수 있도록 이름을 권장합니다. 예: `Average Order Revenue`.
+   Adobe은 지표가 무엇인지 한눈에 알 수 있도록 이름을 권장합니다. For example: `Average Order Revenue`.
 
 1. 다음 단계는 지표가 수행하는 작업을 정의하는 것입니다. 드롭다운 메뉴를 사용하여 지표의 작업인 `operation` 열 및 `date` 차원:
 
@@ -52,7 +52,7 @@ ht-degree: 0%
 
      기존 지표를 편집하는 경우 [지표의 작업 테이블 변경](../../data-analyst/data-warehouse-mgr/change-metric-op-table.md) 이 섹션에서 참조할 수 있습니다.
 
-   * 지표의 트렌드를 분석하는 데 사용할 수 있는 날짜 차원을 선택합니다. 예를 들어, `order date`.
+   * 지표의 트렌드를 분석하는 데 사용할 수 있는 날짜 차원을 선택합니다. For example, `order date`.
 
 ## 필터 추가 {#filters}
 

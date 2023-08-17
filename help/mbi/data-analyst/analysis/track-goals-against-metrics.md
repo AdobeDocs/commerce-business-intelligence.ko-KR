@@ -1,6 +1,6 @@
 ---
 title: 지표에 대한 목표 추적
-description: 매출, 신규 등록된 사용자, 시간 경과에 따른 주문 등 실제 데이터에 대해 비즈니스 목표를 추적하는 데 도움이 되는 대시보드를 설정하는 방법에 대해 알아봅니다.
+description: 매출, 신규 등록 사용자, 시간 경과에 따른 주문 등 실제 데이터에 대해 비즈니스 목표를 추적하는 데 도움이 되는 대시보드를 설정하는 방법에 대해 알아봅니다.
 exl-id: 9d621f40-f9c2-4310-bd96-a46ab7159930
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards, Reports

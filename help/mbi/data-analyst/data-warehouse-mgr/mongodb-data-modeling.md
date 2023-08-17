@@ -7,7 +7,7 @@ feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce 
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '129'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 ## 변수 개체 키 {#varobjectkeys}
 
-변수 개체 키가 있는 개체가 포함된 컬렉션은에서 복제되지 않습니다. [!DNL Commerce Intelligence]. 예:
+변수 개체 키가 있는 개체가 포함된 컬렉션은에서 복제되지 않습니다. [!DNL Commerce Intelligence]. For example:
 
 ```bash
     {

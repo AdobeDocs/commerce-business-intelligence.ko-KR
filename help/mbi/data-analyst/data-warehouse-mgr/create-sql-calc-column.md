@@ -17,7 +17,7 @@ ht-degree: 0%
 
 **설명**
 
-과거에는 `advanced` 고객 지원 팀의 분석가만 수행할 수 있습니다. [!DNL Adobe Commerce Intelligence]. 이제 모든 권한이 최종 사용자의 손에 있으며 고급 열을 다음 형식으로 만들 수 있습니다. `SQL Calculation` 새 열 [!DNL Commerce Intelligence] 아키텍처.
+과거에는 `advanced` 고객 지원 팀의 분석가만 이 위치에서 수행할 수 있습니다. [!DNL Adobe Commerce Intelligence]. 이제 모든 권한이 최종 사용자의 손에 있으며 고급 열을 다음 형식으로 만들 수 있습니다. `SQL Calculation` 새 열 [!DNL Commerce Intelligence] 아키텍처.
 
 다음 `Calculation` 이제 Data Warehouse 관리자에서 옵션으로 사용할 수 있는 열 유형은 PostgreSQL 논리를 사용하여 테이블의 열을 변환할 수 있는 동일한 테이블 작업입니다. 에서 사용할 수 있는 함수 및 연산자에 대한 설명서 `Calculation` 열 유형은 PostgreSQL 웹 사이트에서 찾을 수 있습니다. [여기](https://www.postgresql.org/docs/9.6/functions.html).
 

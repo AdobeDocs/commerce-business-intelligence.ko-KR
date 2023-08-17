@@ -7,7 +7,7 @@ feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '364'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 0%
 1. 만들기 [!DNL Commerce Intelligence] [!DNL MySQL] 의 사용자 [!DNL cPanel]
 1. 에 연결 및 사용자 정보 입력 [!DNL Commerce Intelligence]
 
-시작합니다.
+시작.
 
 ## 만들기 [!DNL Commerce Intelligence] [!DNL MySQL] 의 사용자 [!DNL cPanel] {#cpanel}
 

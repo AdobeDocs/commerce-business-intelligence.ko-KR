@@ -45,7 +45,7 @@ ht-degree: 1%
 
 #### 메서드
 
-[!DNL Google Analytics] 라는 쿠키에 방문자 참조 정보를 저장합니다. `__utmz`. 이 쿠키가 설정된 후(에 의해) [!DNL Google Analytics] 추적 코드)를 입력하면 해당 사용자의 도메인에 대한 모든 후속 요청과 함께 콘텐츠가 전송됩니다. 예를 들어, PHP에서는 `$_COOKIE['__utmz']` 그리고 다음과 같은 문자열이 표시됩니다.
+[!DNL Google Analytics] 라는 쿠키에 방문자 참조 정보를 저장합니다. `__utmz`. 이 쿠키가 설정된 후( [!DNL Google Analytics] 추적 코드)를 입력하면 해당 사용자의 도메인에 대한 모든 후속 요청과 함께 콘텐츠가 전송됩니다. 예를 들어, PHP에서는 `$_COOKIE['__utmz']` 그리고 다음과 같은 문자열이 표시됩니다.
 
 `100000000.12345678.1.1.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=rj metrics`
 

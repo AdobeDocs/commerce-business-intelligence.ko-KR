@@ -30,7 +30,7 @@ ht-degree: 0%
 
 1. 요약의 이름을 입력합니다.
 
-   요약에 포함된 내용을 전달하는 이름을 선택합니다. 예를 들어, `AOV Comparison`.
+   요약에 포함된 내용을 전달하는 이름을 선택합니다. For example, `AOV Comparison`.
 
 1. 다음에서 `Choose Content` 섹션에서 요약에 포함할 보고서를 선택합니다.
 

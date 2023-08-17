@@ -2,7 +2,7 @@
 source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 # 기여 문서
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ## Adobe 오픈 소스 행동 수칙
 
-이 프로젝트는 다음을 채택했습니다. [Adobe 오픈 소스 행동 수칙](../code-of-conduct.md) 또는 [.NET Foundation 행동 수칙](https://dotnetfoundation.org/code-of-conduct). 자세한 내용은 [기여](../contributing.md) 주제.
+이 프로젝트에서는 [Adobe OOCT(Open Source Code of Conduct)](../code-of-conduct.md) 또는 [.NET Foundation Code of Conduct](https://dotnetfoundation.org/code-of-conduct)가 채택되었습니다. 자세한 내용은 [기여](../contributing.md) 주제.
 
 ## Adobe 콘텐츠에 대한 귀하의 기여에 대해
 

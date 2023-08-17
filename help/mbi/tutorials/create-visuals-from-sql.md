@@ -17,7 +17,7 @@ ht-degree: 0%
 
 다음 [[!DNL SQL Report Builder]](../data-analyst/dev-reports/sql-rpt-bldr.md) 는 옵션이 있는 report builder입니다. 데이터 테이블 검색만을 목적으로 쿼리를 실행하거나, 이러한 결과를 보고서로 만들 수 있습니다. 이 자습서에서는 SQL 쿼리에서 시각화를 작성하는 방법을 설명합니다.
 
-## 용어
+## Terminology
 
 이 자습서를 시작하기 전에 `SQL Report Builder`.
 

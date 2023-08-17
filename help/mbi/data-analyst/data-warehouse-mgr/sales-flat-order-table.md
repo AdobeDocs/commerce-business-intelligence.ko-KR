@@ -57,7 +57,7 @@ ht-degree: 0%
 | `Customer's lifetime revenue` | 이 고객이 수행한 모든 주문에 대한 총 매출액 합계. 다음을 합산하여 계산됨 `base_grand_total` 각 고유 고객의 모든 주문에 대한 필드 |
 | `Customer's order number` | 해당 고객 주문에 대한 순차적 주문 등급. 고객이 수행한 모든 주문을 식별하고 를 기준으로 오름차순으로 정렬하여 계산됩니다. `created_at` 타임스탬프 및 각 주문에 증가하는 정수 값 할당. 예를 들어 고객의 첫 번째 주문은 `Customer's order number` 중 1에 해당하는 고객의 두 번째 주문은 `Customer's order number` 2개 등 |
 | `Customer's order number (previous-current)` | 고객의 이전 주문 등급과 이 주문 등급이 연결된 후 `-` 문자. 를 연결하여 계산됨(&quot;`Customer's order number` - 1&quot;)(&quot; 포함)`-`&quot; 뒤에 &quot;`Customer's order number`&quot;. 예를 들어, 고객의 두 번째 구매와 연관된 주문의 경우 이 열은 다음 값을 반환합니다. `1-2`. 두 주문 이벤트 사이의 시간을 나타낼 때 가장 많이 사용됩니다(즉, &quot;주문 사이의 시간&quot; 차트). |
-| `Is customer's last order?` | 해당 주문이 고객의 마지막 주문에 해당하는지 아니면 가장 최근 주문에 해당하는지 여부를 결정합니다. 다음을 비교하여 계산됨 `Customer's order number` 값: `Customer's lifetime number of orders`. 이 두 필드가 지정된 순서에 대해 같으면 이 열이 반환됩니다 `Yes`; 그렇지 않으면 `No` |
+| `Is customer's last order?` | 해당 주문이 고객의 마지막 주문에 해당하는지 아니면 가장 최근 주문에 해당하는지 여부를 결정합니다. 다음을 비교하여 계산됨 `Customer's order number` 값: `Customer's lifetime number of orders`. 이 두 필드가 지정된 순서에 대해 같으면 이 열이 반환됩니다 `Yes`; 그렇지 않으면 가 반환됩니다 `No` |
 | `Number of items in order` | 주문에 포함된 항목의 총 수량입니다. 조인으로 계산됨 `sales_order`.`entity_id` 끝 `sales_order_item`.`order_id` 및 합계 `sales_order_item`.`qty_ordered` 필드 |
 | `Seconds between customer's first order date and this order` | 이 주문과 고객의 첫 번째 주문 사이의 경과 시간입니다. 빼서 계산됨 `Customer's first order date` 다음에서 `created_at` 각 주문에 대해 초 단위의 정수로 반환됨 |
 | `Seconds since previous order` | 이 주문과 고객의 직전 주문 사이의 경과 시간. 다음을 빼서 계산됨 `created_at` 의 이전 주문에 대한 `created_at` (이 주문의 경우, 초 단위의 정수)로 반환됩니다. 예를 들어, 고객의 세 번째 주문에 해당하는 주문 레코드의 경우 이 열은 고객의 두 번째 주문과 세 번째 주문 사이의 시간(초)을 반환합니다. 고객의 첫 번째 주문에 대해 이 필드는 를 반환합니다 `NULL` |
