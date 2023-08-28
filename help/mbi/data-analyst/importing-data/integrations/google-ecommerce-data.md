@@ -4,14 +4,14 @@ description: Google Commerce와 공유하는 데이터 유형을 알아봅니다
 exl-id: 8e5d8863-f003-4c38-95c5-660bcbff48da
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 3f16484f189f6b4a8b072d2e3514d2f170993d60
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 0%
 
 ---
 
-# 예상[!DNL Google ECommerce] 데이터
+# 예상 [!DNL Google ECommerce] 데이터
 
 다음 이후 [!DNL Google ECommerce] 계정이 정상적으로 연결되었습니다. [!DNL Commerce Intelligence], 시스템은 제목이 있는 테이블로 데이터 가져오기를 시작합니다 `ecommerce`. 이 테이블은 각 트랜잭션에 대한 데이터 행을 기록합니다. 여기에는 다음과 같은 주문 수준 데이터 열이 포함됩니다.
 
