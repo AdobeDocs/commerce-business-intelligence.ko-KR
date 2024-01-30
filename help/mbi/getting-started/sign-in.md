@@ -4,9 +4,9 @@ description: Commerce Intelligence 계정에 로그인하는 방법에 대해 �
 exl-id: 3ee36e0e-f447-4be3-afc8-ccc6d3aa4f20
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Accounts
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 988a7bee27a0c381d1c84db960e978ca73eb3615
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '144'
 ht-degree: 0%
 
 ---
@@ -14,10 +14,6 @@ ht-degree: 0%
 # 활성화한 항목에 액세스 [!DNL Adobe Commerce Intelligence] account
 
 를 활성화한 후 [!DNL Commerce Intelligence] 다음 계정 중 하나 [온-프레미스 또는 클라우드](../getting-started/onpremise-activation.md) Adobe 계정 팀과 함께 구성 단계를 완료했으므로 이제 계정에 로그인할 수 있습니다.
-
-다음으로 로그인할 수 있습니다. [!DNL Adobe ID] 또는 을 사용하여 [!DNL Commerce Intelligence] 이메일 주소 및 암호.
-
-![로그인](../assets/sign-in.png)
 
 ## 다음을 사용하여 로그인 [!DNL Adobe ID]
 
