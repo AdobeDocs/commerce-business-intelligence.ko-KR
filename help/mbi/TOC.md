@@ -4,7 +4,7 @@ description: 사용 방법 알아보기 [!DNL Commerce Intelligence] Adobe Comme
 breadcrumb-title: Commerce Intelligence 사용 안내서
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Business Performance
-source-git-commit: 903e839e8bd8a4e7b6d21b6a7ebcae49f2dfe6e4
+source-git-commit: 2433a614e9858684842804a0ae29fb67f0d41ead
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 0%
@@ -57,10 +57,10 @@ ht-degree: 0%
       - [매핑 테이블을 사용한 데이터 표준화](data-analyst/data-warehouse-mgr/stndrd-data-map-tables.md)
       - [SQL 쿼리 번역 [!DNL Commerce Intelligence] 보고서](data-analyst/dev-reports/sql-queries-reports.md)
       - [테이블 관계 이해 및 평가](data-analyst/data-warehouse-mgr/table-relationships.md)
-      - [계산된 날짜 차이 사용](data-analyst/data-warehouse-mgr/using-date-diff-calc-column-.md)
+      - [계산된 날짜 차이 사용](data-analyst/data-warehouse-mgr/using-date-diff-calc-column.md)
       - [대시보드 전체 필터링 사용](data-analyst/data-warehouse-mgr/using-dshbrd-wide-filter-date-ranges.md)
       - [이벤트 번호 계산 열 사용](data-analyst/data-warehouse-mgr/using-event-num-calc-column.md)
-      - [순차적 비교 계산 열 사용](data-analyst/data-warehouse-mgr/using-seq-comp-calc-column-.md)
+      - [순차적 비교 계산 열 사용](data-analyst/data-warehouse-mgr/using-seq-comp-calc-column.md)
    - 일반 상거래 테이블 {#tables}
       - [소개](data-analyst/data-warehouse-mgr/common-mage-tables.md)
       - [[!DNL customer_entity]](data-analyst/data-warehouse-mgr/cust-ent-table.md)
@@ -231,7 +231,7 @@ ht-degree: 0%
    - 대시보드 작업 {#working-dashboards}
       - [대시보드 공유](best-practices/share-dashboard-best-practice.md)
       - [투자자 대시보드 작성](best-practices/build-investor-dashboard.md)
-- 튜토리얼 {#tutorials}
+- Tutorials {#tutorials}
    - [사용 [!DNL Visual Report Builder]](tutorials/using-visual-report-builder.md)
    - [에서 시간 옵션 사용 [!DNL Visual Report Builder]](tutorials/time-options-visual-rpt-bldr.md)
    - [에 대한 시각화 만들기 [!DNL SQL] 쿼리](tutorials/create-visuals-from-sql.md)
