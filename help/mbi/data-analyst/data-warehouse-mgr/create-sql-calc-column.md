@@ -4,9 +4,9 @@ description: 새로운 Adobe Commerce Intelligence 아키텍처에서 SQL 계산
 exl-id: f16e4ee4-ed73-4ddb-b701-1fe3db14346a
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, SQL Report Builder, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 8090c2e0f17f0e8d3bdec668ce546206bf024691
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '815'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ PostgreSQL의 의미는 한 줄에 하나씩 표시됩니다.
    * `Integer` - 정수
    * `Decimal(10,2)` - 총 10자리의 십진수이며, 그 중 2는 소수점의 오른쪽에 있음
    * `String` - 숫자가 아닌 모든 텍스트 유형 또는 일련의 문자
-   * `Datetime` - yyyy-MM-dd hh:mm:ss 형식
+   * `Datetime` - `yyyy-MM-dd hh:mm:ss` 형식
 
 1. 클릭 **[!UICONTROL test column]**. 이렇게 하면 각 입력에 대해 5개의 테스트 값 목록이 생성되고 각 테스트 값 세트에 대해 6단계의 논리 결과가 표시됩니다. SQL의 어느 부분에서든 오류가 발생하면 적절한 오류 메시지가 반환됩니다. 모든 입력 열이 기본 필드인 경우에만 샘플 결과를 생성할 수 있습니다. 입력 열이 계산된 열인 경우 지표에 열을 추가하고 시각적 Report Builder에서 표시하여 결과를 확인해야 합니다
 
