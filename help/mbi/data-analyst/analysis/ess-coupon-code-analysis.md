@@ -4,9 +4,9 @@ description: 귀하의 사업의 쿠폰 성과에 대해 알아보는 것은 주
 exl-id: 0d486259-b210-42ae-8f79-cd91cc15c2c2
 role: Admin, User
 feature: Data Warehouse Manager, Reports
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: d8fc96a58b72c601a5700f35ea1f3dc982d76571
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '517'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,10 @@ ht-degree: 0%
 * 할인은 다음에 반영됩니다. `base_grand_total` 금액(본인) `Revenue` Commerce Intelligence의 지표)
 * 쿠폰 코드는 `coupon_code` 필드. 이 필드가 NULL(비어 있음)이면 주문에 연결된 쿠폰이 없습니다.
 * 할인된 금액은에 저장됩니다. `base_discount_amount`. 구성에 따라 이 값이 음수 또는 양수로 표시될 수 있습니다.
+
+Commerce 2.4.7부터 고객은 주문에 두 개 이상의 쿠폰 코드를 적용할 수 있습니다. 이 경우:
+
+* 적용되는 모든 쿠폰 코드는 `coupon_code` 필드 `sales_order_coupons`. 적용된 첫 번째 쿠폰 코드도 `coupon_code` 필드 `sales_order`. 이 필드가 NULL(비어 있음)이면 주문에 연결된 쿠폰이 없습니다.
 
 ## 지표 작성
 
@@ -196,3 +200,9 @@ ht-degree: 0%
    * [!UICONTROL Chart type]: `Stacked Column`
 
 보고서를 작성한 후 대시보드에서 보고서를 구성하는 방법에 대한 자세한 내용은 이 항목 맨 위에 있는 이미지를 참조하십시오.
+
+>[!NOTE]
+>
+>Adobe Commerce 2.4.7부터 고객은 **quote_coupns** 및 **sales_order_coupins** 고객이 여러 쿠폰을 사용하는 방법에 대한 통찰력을 얻을 수 있는 표
+
+![](../../assets/multicoupon_relationship_tables.png)

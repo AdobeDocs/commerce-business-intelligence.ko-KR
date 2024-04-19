@@ -4,9 +4,9 @@ description: 쿠폰 성능 분석에 대해 알아보십시오.
 exl-id: f6565e33-18ee-4f85-ade0-fd361854475b
 role: Admin, User
 feature: Data Warehouse Manager, Reports
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: d8fc96a58b72c601a5700f35ea1f3dc982d76571
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1228'
 ht-degree: 0%
 
 ---
@@ -507,3 +507,9 @@ ht-degree: 0%
 모든 보고서를 컴파일한 후 원하는 대로 대시보드에서 구성할 수 있습니다. 결과는 페이지 상단에 있는 이미지와 비슷할 수 있습니다.
 
 이 분석을 작성하는 동안 질문이 발생하거나 Professional Services 팀의 도움을 얻고자 하는 경우 [연락처 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+
+>[!NOTE]
+>
+>Adobe Commerce 2.4.7부터 고객은 **quote_coupns** 및 **sales_order_coupins** 고객이 여러 쿠폰을 사용하는 방법에 대한 통찰력을 얻을 수 있는 표
+
+![](../../assets/multicoupon_relationship_tables.png)
