@@ -6,7 +6,7 @@ role: Admin,  User
 feature: Data Warehouse Manager, Dashboards, Reports
 source-git-commit: 6bdbdbcc652d476fa2a22589ac99678d5855e6fe
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
@@ -15,39 +15,40 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->이 항목에는 원래 아키텍처와 새 아키텍처를 사용하는 클라이언트에 대한 지침이 포함되어 있습니다. 다음과 같은 경우 새 아키텍처를 사용합니다. `Data Warehouse Views` 선택 후 사용 가능한 섹션 `Manage Data` 기본 도구 모음에서
+>이 항목에는 원래 아키텍처와 새 아키텍처를 사용하는 클라이언트에 대한 지침이 포함되어 있습니다. 기본 도구 모음에서 `Manage Data`을(를) 선택한 후 `Data Warehouse Views` 섹션을 사용할 수 있는 경우 새 아키텍처를 사용합니다.
 
-이 항목에서는 무료 배송 임계값의 성능을 추적하는 대시보드를 설정하는 방법을 보여 줍니다. 아래 표시된 이 대시보드는 A/B에서 두 개의 무료 배송 임계값을 테스트할 수 있는 좋은 방법입니다. 예를 들어 귀사는 50달러 또는 100달러에 무료 배송을 제공해야 하는지 확신할 수 없습니다. 고객의 두 임의 하위 집합에 대한 A/B 테스트를 수행하고 분석을 수행해야 합니다 [!DNL Commerce Intelligence].
+이 항목에서는 무료 배송 임계값의 성능을 추적하는 대시보드를 설정하는 방법을 보여 줍니다. 아래 표시된 이 대시보드는 A/B에서 두 개의 무료 배송 임계값을 테스트할 수 있는 좋은 방법입니다. 예를 들어 귀사는 50달러 또는 100달러에 무료 배송을 제공해야 하는지 확신할 수 없습니다. 고객의 임의 하위 집합 두 개에 대한 A/B 테스트를 수행하고 [!DNL Commerce Intelligence]에서 분석을 수행해야 합니다.
 
 시작하기 전에 상점의 무료 배송 임계값에 대한 값이 다른 두 개의 개별 기간을 식별하려고 합니다.
 
 ![](../../assets/free_shipping_threshold.png)
 
-이 분석에는 다음이 포함됩니다. [고급 계산 열](../data-warehouse-mgr/adv-calc-columns.md).
+이 분석에는 [고급 계산 열](../data-warehouse-mgr/adv-calc-columns.md)이(가) 포함되어 있습니다.
 
 ## 계산된 열
 
-원본 아키텍처를 사용하고 있는 경우(예: `Data Warehouse Views` 옵션 아래에 있는 `Manage Data` 메뉴)에서 아래 열을 빌드하려면 지원 팀에 문의하십시오. 새 아키텍처에서 이러한 열을 만들 수 있는 `Manage Data > Data Warehouse` 페이지를 가리키도록 업데이트하는 중입니다. 자세한 지침은 아래에 나와 있습니다.
+원본 아키텍처를 사용하는 경우(예: `Manage Data` 메뉴 아래에 `Data Warehouse Views` 옵션이 없는 경우) 지원 팀에 연락하여 아래 열을 빌드해야 합니다. 새 아키텍처에서 이러한 열은 `Manage Data > Data Warehouse` 페이지에서 만들 수 있습니다. 자세한 지침은 아래에 나와 있습니다.
 
-* **`sales_flat_order`** 표
+* **`sales_flat_order`** 테이블
    * 이 계산은 일반적인 장바구니 크기에 비례하여 증분으로 버킷을 만듭니다. 5, 10, 50, 100을 포함하는 증분의 범위일 수 있습니다.
 
-* **`Order subtotal (buckets)`** 원래 아키텍처: 분석가가 `[FREE SHIPPING ANALYSIS]` 티켓
-* **`Order subtotal (buckets)`** 새로운 아키텍처:
-   * 위에서 언급했듯이 이 계산은 일반적인 장바구니 크기에 비례하여 증분으로 버킷을 생성합니다. 다음과 같은 기본 소계 열이 있는 경우 `base_subtotal`: 이 새 열의 기반으로 사용할 수 있습니다. 그렇지 않은 경우 매출에서 출하 및 할인을 제외하는 계산된 열이 될 수 있습니다.
+* **`Order subtotal (buckets)`** 원본 아키텍처: 분석가가 `[FREE SHIPPING ANALYSIS]` 티켓의 일부로 만들었습니다.
+* **`Order subtotal (buckets)`**&#x200B;개의 새 아키텍처:
+   * 위에서 언급했듯이 이 계산은 일반적인 장바구니 크기에 비례하여 증분으로 버킷을 생성합니다. `base_subtotal`과(와) 같은 기본 소계 열이 있는 경우 이 새 열의 기반으로 사용할 수 있습니다. 그렇지 않은 경우 매출에서 출하 및 할인을 제외하는 계산된 열이 될 수 있습니다.
 
   >[!NOTE]
   >
-  >버킷 크기는 클라이언트로서 적합한 항목에 따라 다릅니다. 다음으로 시작할 수 있습니다. `average order value` 그리고 해당 양보다 작거나 큰 버킷을 만듭니다. 아래 계산을 살펴볼 때 쿼리의 일부를 쉽게 복사하고, 편집하고, 추가 버킷을 만드는 방법을 알 수 있습니다. 이 예제는 50씩 증가하여 수행됩니다.
+  >버킷 크기는 클라이언트로서 적합한 항목에 따라 다릅니다. `average order value`(으)로 시작하여 해당 양보다 작거나 큰 버킷을 만들 수 있습니다. 아래 계산을 살펴볼 때 쿼리의 일부를 쉽게 복사하고, 편집하고, 추가 버킷을 만드는 방법을 알 수 있습니다. 이 예제는 50씩 증가하여 수행됩니다.
 
-   * `Column type - Same table, Column definition - Calculation, Column Inputs-` `base_subtotal`, 또는 `calculated column`, `Datatype`: `Integer`
+   * `Column type - Same table, Column definition - Calculation, Column Inputs-` `base_subtotal` 또는 `calculated column`, `Datatype`: `Integer`
    * [!UICONTROL Calculation]: `case when A >= 0 and A<=200 then 0 - 200`
-조건 `A< 200` 및 `A <= 250` 그러면 `201 - 250`
-조건 `A<251` 및 `A<= 300` 그러면 `251 - 300`
-조건 `A<301` 및 `A<= 350` 그러면 `301 - 350`
-조건 `A<351` 및 `A<=400` 그러면 `351 - 400`
-조건 `A<401` 및 `A<=450` 그러면 `401 - 450`
-450을 넘는 다른 끝
+`A< 200` 및 `A <= 250`일 때 `201 - 250`
+`A<251` 및 `A<= 300`일 때 `251 - 300`
+`A<301` 및 `A<= 350`일 때 `301 - 350`
+`A<351` 및 `A<=400`일 때 `351 - 400`
+`A<401` 및 `A<=450`일 때 `401 - 450`
+450개 이상
+종료
 
 
 ## 지표
@@ -56,11 +57,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->다음을 확인하십시오. [새 열을 지표에 차원으로 추가](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 새 보고서를 작성하기 전에
+>새 보고서를 작성하기 전에 [모든 새 열을 지표에 차원으로 추가](../data-warehouse-mgr/manage-data-dimensions-metrics.md)하십시오.
 
 ## 보고서
 
-* **운송 규칙 A의 평균 주문 가격**
+* **배송 규칙 A의 평균 주문 가격**
    * [!UICONTROL Metric]: `Average order value`
 
 * 지표 `A`: `Average Order Value`
@@ -70,12 +71,12 @@ ht-degree: 0%
 * 
   [!UICONTROL Chart Type]: `Scalar`
 
-* **운송 규칙 A가 있는 소계 버켓별 주문 수**
+* **배달 규칙 A가 있는 소계 버킷별 주문 수**
    * [!UICONTROL Metric]: `Number of orders`
 
   >[!NOTE]
   >
-  >윗부분을 보여줌으로써 꼬리 끝을 자를 수 있다 `X` `sorted by` `Order subtotal` (버킷) `Show top/bottom`.
+  >`Show top/bottom`에 상위 `X` `sorted by` `Order subtotal`(버킷)을 표시하여 끝 부분을 차단할 수 있습니다.
 
 * 지표 `A`: `Number of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
@@ -85,7 +86,7 @@ ht-degree: 0%
 * 
   [!UICONTROL Chart Type]: `Column`
 
-* **운송 규칙 A가 있는 소계별 주문 비율**
+* 배송 규칙 A가 있는 소계별 주문 비율 **퍼센트**
    * [!UICONTROL Metric]: `Number of orders`
 
    * [!UICONTROL Metric]: `Number of orders`
@@ -105,7 +106,7 @@ ht-degree: 0%
 * 
   [!UICONTROL Chart Type]: `Line`
 
-* **소계가 운송 규칙 A를 초과하는 주문의 퍼센트**
+* 소계가 배송 규칙 A를 초과하는 주문의 **퍼센트**
    * [!UICONTROL Metric]: `Number of orders`
    * 
      [!UICONTROL Perspective]: `Cumulative`

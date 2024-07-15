@@ -31,11 +31,11 @@ ht-degree: 0%
 
    ![대시보드 그룹 만들기](../../assets/create-dashboard-groups-new-dashboard.png)
 
-1. 기존 대시보드의 그룹을 변경할 때 `Manage Data > Dashboards` 페이지:
+1. 기존 대시보드의 그룹을 변경할 때 `Manage Data > Dashboards` 페이지에서 다음 작업을 수행합니다.
 
    1. 그룹을 생성할 대시보드를 클릭합니다.
 
-   1. 아래 `Dashboard Group (optional)`, 현재 대시보드 그룹이 나타납니다.
+   1. `Dashboard Group (optional)` 아래에 현재 대시보드 그룹이 나타납니다.
 
    1. 그룹을 만들려면 새 그룹의 이름을 입력한 다음 상자 바깥쪽을 클릭합니다.
 
@@ -43,11 +43,11 @@ ht-degree: 0%
 
 ## 기존 그룹에 기존 대시보드 추가
 
-1. 다음에서 `Manage Data > Dashboards` 페이지에서 그룹을 변경할 대시보드를 선택합니다.
+1. `Manage Data > Dashboards` 페이지에서 그룹을 변경할 대시보드를 선택하십시오.
 
-1. 아래에 있는 텍스트 `Dashboard Group (optional)` 대시보드의 현재 대시보드 그룹을 표시합니다.
+1. `Dashboard Group (optional)` 아래의 텍스트는 대시보드의 현재 대시보드 그룹을 표시합니다.
 
-1. 대시보드 그룹을 변경하려면 목록에서 다른 그룹을 선택합니다. 이 경우 `PS`, `Campaigns`.
+1. 대시보드의 그룹을 변경하려면 목록에서 다른 그룹을 선택하십시오(이 경우 `PS`, `Campaigns`).
 
    ![그룹 대시보드 변경](../../assets/add-existing-dashboard-existing-group.png)
 

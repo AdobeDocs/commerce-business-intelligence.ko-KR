@@ -1,6 +1,6 @@
 ---
 title: Cloud Starter 구독을 위해 Commerce Intelligence 계정 활성화
-description: Cloud Starter 프로젝트용 Commerce Intelligence를 활성화하는 방법을 알아봅니다.
+description: Cloud Starter 프로젝트용 Commerce Intelligence을 활성화하는 방법에 대해 알아봅니다.
 exl-id: 172439ee-fa1d-4872-b6a9-c61a212a7cbe
 redirect_to: https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/start/onpremise-activation.html
 source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948

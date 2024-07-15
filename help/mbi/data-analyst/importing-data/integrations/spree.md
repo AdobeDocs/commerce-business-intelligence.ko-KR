@@ -11,13 +11,13 @@ ht-degree: 0%
 
 ---
 
-# 연결 [!DNL Spree]
+# [!DNL Spree] 연결
 
 ![](../../../assets/spree-commerce-logo.png)
 
-비즈니스의 성과를 확인하거나 가장 중요한 확보 소스 및 채널을 찾고 싶으십니까? 연결 중 [!DNL Spree] 데이터 받는 사람 [!DNL Commerce Intelligence] 이 질문 등에 답변할 수 있습니다.
+비즈니스의 성과를 확인하거나 가장 중요한 확보 소스 및 채널을 찾고 싶으십니까? [!DNL Spree] 데이터를 [!DNL Commerce Intelligence]에 연결하면 이러한 질문에 답변할 수 있습니다.
 
-다음 [!DNL Spree] 데이터베이스 기준: [!DNL PostgreSQL], 연결 가능 대상: [!DNL Commerce Intelligence] 사용 [일반적인 것과 동일한 단계 [!DNL Postgres] 연결](../integrations/postgresql.md).
+[!DNL Spree] 데이터베이스는 [!DNL PostgreSQL]을(를) 기반으로 합니다. [일반적인 [!DNL Postgres] 연결](../integrations/postgresql.md)과 같은 단계를 사용하여 [!DNL Commerce Intelligence]에 연결할 수 있습니다.
 
 ## 관련 설명서
 

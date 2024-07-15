@@ -22,31 +22,31 @@ ht-degree: 0%
 
 ## 새 이메일 요약 만들기
 
-1. 클릭 **[!DNL Manage Data]** 그러면 **[!UICONTROL Email Summary]** 를 클릭합니다.
+1. 사이드바에서 **[!DNL Manage Data]**&#x200B;을(를) 클릭한 다음 **[!UICONTROL Email Summary]**&#x200B;을(를) 클릭합니다.
 
    전자 메일 요약을 처음 만드는 경우 이 페이지에는 저장된 요약이 표시되지 않습니다.
 
-1. 클릭 **[!UICONTROL Create New Email Summary]** 오른쪽 상단 모서리입니다.
+1. 오른쪽 상단 모서리에서 **[!UICONTROL Create New Email Summary]**&#x200B;을(를) 클릭합니다.
 
 1. 요약의 이름을 입력합니다.
 
-   요약에 포함된 내용을 전달하는 이름을 선택합니다. For example, `AOV Comparison`.
+   요약에 포함된 내용을 전달하는 이름을 선택합니다. 예: `AOV Comparison`.
 
-1. 다음에서 `Choose Content` 섹션에서 요약에 포함할 보고서를 선택합니다.
+1. `Choose Content` 섹션에서 요약에 포함할 보고서를 선택합니다.
 
-   소유한 보고서를 최대 10개까지 선택할 수 있습니다. 보고서를 선택한 후 나타나는 아이콘을 사용하여 해당 보고서를 테이블이나 차트로 전송할지 선택합니다. 보고서를 숫자로 저장한 경우 숫자로만 보낼 수 있습니다. 오래된 데이터가 있는 보고서가 포함된 이메일 요약을 보내는 방법에 대한 자세한 내용은 [계정 설정 관리](../../administrator/account-management/managing-account-settings.md).
+   소유한 보고서를 최대 10개까지 선택할 수 있습니다. 보고서를 선택한 후 나타나는 아이콘을 사용하여 해당 보고서를 테이블이나 차트로 전송할지 선택합니다. 보고서를 숫자로 저장한 경우 숫자로만 보낼 수 있습니다. 오래된 데이터가 포함된 보고서가 포함된 전자 메일 요약을 보내는 방법에 대한 자세한 내용은 [계정 설정 관리](../../administrator/account-management/managing-account-settings.md)를 참조하십시오.
 
    >[!NOTE]
    >
    >`Cohort` 보고서는 새 아키텍처를 사용하는 경우에만 사용할 수 있습니다.
 
-1. (선택 사항) 선택 `Send Email To Me` 이메일을 받고 싶은 경우.
+1. (선택 사항) 전자 메일을 받으려면 `Send Email To Me`을(를) 선택합니다.
 
-1. 이메일에 다른 사용자를 포함시키려면 `Add Email Recipients` 쉼표, 공백, 탭 또는 세미콜론으로 구분된 필드.
+1. 전자 메일에 다른 사용자를 포함하려면 `Add Email Recipients` 필드에 쉼표, 공백, 탭 또는 세미콜론으로 구분하여 전자 메일 주소를 입력하십시오.
 
 ## 일정 이메일 요약
 
-다음에서 `Set when to send the Email Summary` 필드에서 이메일 요약을 보낼 시기를 지정할 수 있습니다. 옵션은 다음과 같습니다.
+`Set when to send the Email Summary` 필드에서 전자 메일 요약을 보낼 시기를 지정할 수 있습니다. 옵션은 다음과 같습니다.
 
 * `Manual`
 * `Once`
@@ -54,48 +54,48 @@ ht-degree: 0%
 
 ### 나중에 보낼 전자 메일 요약 저장
 
-1. 선택 `Manual` 다음에서 `Set when to send the Email Summary` 필드.
+1. `Set when to send the Email Summary` 필드에서 `Manual`을(를) 선택합니다.
 
-1. 클릭 **[!UICONTROL Save]**.
+1. **[!UICONTROL Save]**&#x200B;을(를) 클릭합니다.
 
    이렇게 하면 전자 메일 요약 목록에 요약이 저장됩니다.
 
-1. 요약을 보낼 준비가 되면 톱니바퀴 아이콘을 클릭하고 을 선택합니다 `Send Now`.
+1. 요약을 보낼 준비가 되면 톱니바퀴 아이콘을 클릭하고 `Send Now`을(를) 선택합니다.
 
 ### 이메일 요약을 한 번 보내기
 
-1. 선택 `Once` 다음에서 `Set when to send the Email Summary` 필드.
+1. `Set when to send the Email Summary` 필드에서 `Once`을(를) 선택합니다.
 
-1. 에서 시작 날짜를 지정합니다. `Select Start Date` 달력.
+1. `Select Start Date` 일정에서 시작 날짜를 지정하십시오.
 
-1. 이메일을 보낼 시간 지정 `Select time to send` 필드.
+1. `Select time to send` 필드에 전자 메일을 보낼 시간을 지정합니다.
 
 ### 반복 일정 만들기
 
-1. 선택 `Repeating` 다음에서 `Set when to send the Email Summary` 필드.
+1. `Set when to send the Email Summary` 필드에서 `Repeating`을(를) 선택합니다.
 
-1. 다음에서 `Set Frequency` 필드, 선택 `Daily`, `Weekly`, 또는 `Monthly`.
+1. `Set Frequency` 필드에서 `Daily`, `Weekly` 또는 `Monthly`을(를) 선택합니다.
 
-1. 에서 시작 날짜를 지정합니다. `Select Start Date` 달력.
+1. `Select Start Date` 일정에서 시작 날짜를 지정하십시오.
 
-1. 이메일을 보낼 시간 지정 `Select time to send` 필드.
+1. `Select time to send` 필드에 전자 메일을 보낼 시간을 지정합니다.
 
-1. (선택 사항) 종료 날짜를 지정하려면 `End Date` 달력에서 종료 날짜를 선택합니다.
+1. (선택 사항) 종료 날짜를 지정하려면 `End Date`을(를) 선택하고 달력에서 종료 날짜를 선택합니다.
 
 ## 기존 이메일 요약 수정
 
-이메일 요약을 만들고 저장한 후 `Email Summaries` 저장된 요약 목록이 페이지에 표시됩니다. 를 확장할 수 있습니다(`+`) 각 행을 참조하십시오. 이 보기의 열은 다음과 같습니다.
+전자 메일 요약을 만들고 저장하면 `Email Summaries` 페이지에 저장된 모든 요약 목록이 표시됩니다. 자세한 내용을 보려면 각 행을 확장(`+`)할 수 있습니다. 이 보기의 열은 다음과 같습니다.
 
-* `Email Name` - 이메일 요약 이름
-* `Content` - 보고서 이름과 같은 요약 내 콘텐츠 유형. 오래된 데이터가 있는 보고서가 포함된 이메일 요약을 보내는 방법에 대한 자세한 내용은 [계정 설정 관리](../../administrator/account-management/managing-account-settings.md).
-* `Scheduled` - 이메일 요약이 전송되는 빈도, 날짜 및 시간
-* `Recipients` - 이메일 요약 수신자
-* `Created Date` - 이메일 요약이 생성된 날짜
+* `Email Name` - 전자 메일 요약 이름
+* `Content` - 보고서 이름과 같은 요약 내 콘텐츠 유형. 오래된 데이터가 포함된 보고서가 포함된 전자 메일 요약을 보내는 방법에 대한 자세한 내용은 [계정 설정 관리](../../administrator/account-management/managing-account-settings.md)를 참조하십시오.
+* `Scheduled` - 전자 메일 요약을 보낸 빈도, 날짜 및 시간
+* `Recipients` - 전자 메일 요약 수신자
+* `Created Date` - 전자 메일 요약을 만든 날짜
 * `Status` - `Paused` 또는 `Active`
 
 각 행의 오른쪽에 있는 톱니바퀴 아이콘을 클릭하여 다음을 수행합니다.
 
-* `Send Now` - 지정된 모든 수신자에게 이메일 요약을 즉시 전송합니다.
-* `Edit` - 이메일 요약의 세부 사항을 수정할 수 있습니다.
-* `Pause/Active` - 이메일 요약 전달을 일시 중지하거나 구성 방법에 따라 요약을 활성화할 수 있습니다.
-* `Delete` - 이메일 요약을 삭제합니다.
+* `Send Now` - 지정된 모든 받는 사람에게 전자 메일 요약을 즉시 보냅니다.
+* `Edit` - 전자 메일 요약의 세부 정보를 수정할 수 있습니다.
+* `Pause/Active` - 전자 메일 요약 배달을 일시 중지하거나 구성 방법에 따라 요약을 사용하도록 설정할 수 있습니다.
+* `Delete` - 전자 메일 요약을 삭제합니다.

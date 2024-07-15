@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Data Warehouse Manager, Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -17,38 +17,38 @@ ht-degree: 0%
 
 ![](../../assets/churn-deashboard.png)
 
-이 분석에는 다음이 포함됩니다. [고급 계산 열](../data-warehouse-mgr/adv-calc-columns.md).
+이 분석에는 [고급 계산 열](../data-warehouse-mgr/adv-calc-columns.md)이(가) 포함되어 있습니다.
 
 ## 계산된 열
 
 생성할 열
 
-* `customer_entity` 표
+* `customer_entity` 테이블
 * `Customer's lifetime number of orders`
 * 정의 선택: `Count`
-* 선택 [!UICONTROL table]: `sales_flat_order`
-* 선택 [!UICONTROL column]: **`entity_id`**
+* [!UICONTROL table] 선택: `sales_flat_order`
+* [!UICONTROL column] 선택: **`entity_id`**
 * [!UICONTROL Path]: sales_flat_order.customer_id = customer_entity.entity_id
 * [!UICONTROL Filter]:
 * 계산되는 주문
 
-* `sales_flat_order` 표
+* `sales_flat_order` 테이블
 * `Customer's lifetime number of orders`
 * 정의 선택: 조인된 열
-* 선택 [!UICONTROL table]: `customer_entity`
-* 선택 [!UICONTROL column]: `Customer's lifetime number of orders`
+* [!UICONTROL table] 선택: `customer_entity`
+* [!UICONTROL column] 선택: `Customer's lifetime number of orders`
 * [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
 * [!UICONTROL Filter]: `Orders we count`
 
 * `Seconds since created_at`
 * 정의 선택: `Age`
-* 선택 [!UICONTROL column]: `created_at`
+* [!UICONTROL column] 선택: `created_at`
 
-* **`Customer's order number`** 는 분석가가 의 일부로 만듭니다. **[이탈 정의]** 티켓
-* **`Is customer's last order`** 는 분석가가 의 일부로 만듭니다. **[이탈 정의]** 티켓
-* **`Seconds since previous order`** 는 분석가가 의 일부로 만듭니다. **[이탈 정의]** 티켓
-* **`Months since order`** 는 분석가가 의 일부로 만듭니다. **[이탈 정의]** 티켓
-* **`Months since previous order`** 는 분석가가 의 일부로 만듭니다. **[이탈 정의]** 티켓
+* **`Customer's order number`**&#x200B;은(는) 분석가가 **[CHURN 정의]** 티켓의 일부로 만들었습니다.
+* **`Is customer's last order`**&#x200B;은(는) 분석가가 **[CHURN 정의]** 티켓의 일부로 만들었습니다.
+* **`Seconds since previous order`**&#x200B;은(는) 분석가가 **[CHURN 정의]** 티켓의 일부로 만들었습니다.
+* **`Months since order`**&#x200B;은(는) 분석가가 **[CHURN 정의]** 티켓의 일부로 만들었습니다.
+* **`Months since previous order`**&#x200B;은(는) 분석가가 **[CHURN 정의]** 티켓의 일부로 만들었습니다.
 
 ## 지표
 
@@ -56,7 +56,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->다음을 확인하십시오. [새 열을 지표에 차원으로 추가](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 새 보고서를 작성하기 전에
+>새 보고서를 작성하기 전에 [모든 새 열을 지표에 차원으로 추가](../data-warehouse-mgr/manage-data-dimensions-metrics.md)하십시오.
 
 ## 보고서
 
@@ -80,7 +80,7 @@ ht-degree: 0%
 * 
   [!UICONTROL Chart type]: `Scalar`
 
-* **주문 이후 주어진 개월 반복 주문 확률**
+* **주문 이후 몇 달 동안 반복 주문 확률**
 * 지표 A: 이전 주문 이후 매월 주문 반복(숨기기)
 * [!UICONTROL Metric]: `Number of orders`
 * 
@@ -128,8 +128,8 @@ ht-degree: 0%
 
 대시보드를 작성한 후 묻는 가장 일반적인 질문은 다음과 같습니다. 이탈 임계값을 결정하는 데 이 대시보드를 어떻게 사용합니까?
 
-**이에 대한 &quot;하나의 정답&quot;은 없습니다.** 그러나 Adobe은 초기 반복 확률률의 절반인 값과 선이 교차하는 지점을 찾는 것을 추천한다. 이 점은 &quot;사용자가 반복 주문을 하려고 하면 지금쯤 완료했을 것&quot;이라고 말할 수 있는 지점입니다. 궁극적으로 목표는 &quot;유지&quot;에서 &quot;재활성화&quot; 노력으로 전환하는 것이 적절할 임계값을 선택하는 것입니다.
+**이에 대한 &quot;정답&quot;이 없습니다.** 그러나 Adobe은 줄이 초기 반복 확률률의 절반인 값과 교차하는 지점을 찾을 것을 권장합니다. 이 점은 &quot;사용자가 반복 주문을 하려고 하면 지금쯤 완료했을 것&quot;이라고 말할 수 있는 지점입니다. 궁극적으로 목표는 &quot;유지&quot;에서 &quot;재활성화&quot; 노력으로 전환하는 것이 적절할 임계값을 선택하는 것입니다.
 
 모든 보고서를 컴파일한 후 원하는 대로 대시보드에서 구성할 수 있습니다. 결과는 페이지 상단에 있는 이미지와 비슷할 수 있습니다
 
-이 분석을 작성하는 동안 질문이 발생하거나 Professional Services 팀의 도움을 얻고자 하는 경우 [연락처 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+이 분석을 작성하는 동안 질문이 있거나 Professional Services 팀에 문의하려는 경우 [지원 팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하십시오.

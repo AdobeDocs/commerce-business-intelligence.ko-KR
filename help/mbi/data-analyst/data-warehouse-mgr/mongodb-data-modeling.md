@@ -13,15 +13,15 @@ ht-degree: 1%
 
 # [!DNL MongoDB] 데이터 모델링
 
-날짜 [!DNL Adobe Commerce Intelligence] 에서 가져오기 [!DNL MongoDB] 즉, 이 데이터는 관계형 모델로 변환됩니다.
+[!DNL Adobe Commerce Intelligence]이(가) [!DNL MongoDB] 데이터를 가져오면 해당 데이터가 관계형 모델로 변환됩니다.
 
-나쁜 소식: 대부분의 데이터 패턴은 문제를 제기하지 않지만, 에서 지원하지 않는 몇 가지 데이터가 있습니다. [!DNL Commerce Intelligence]관계형 모델로의 변환으로 인해 발생합니다.
+나쁜 소식: 대부분의 데이터 패턴에 문제가 있는 것은 아니지만, 관계형 모델로의 변환으로 인해 [!DNL Commerce Intelligence]에서 지원하지 않는 몇 가지 데이터 패턴이 있습니다.
 
 좋은 소식: 이러한 모든 패턴을 피할 수 있습니다.
 
 ## 하위 중첩 배열 {#subnested}
 
-컬렉션이 아래 예제와 같으면 [!DNL Commerce Intelligence] 항목 배열의 데이터만 복제합니다. 하위 항목 배열의 데이터는 가져오지 않습니다.
+컬렉션이 아래 예제와 같으면 [!DNL Commerce Intelligence]은(는) 항목 배열의 데이터만 복제합니다. 하위 항목 배열의 데이터는 가져오지 않습니다.
 
 ```bash
     {
@@ -43,7 +43,7 @@ ht-degree: 1%
 
 ## 변수 개체 키 {#varobjectkeys}
 
-변수 개체 키가 있는 개체가 포함된 컬렉션은에서 복제되지 않습니다. [!DNL Commerce Intelligence]. For example:
+변수 개체 키가 있는 개체가 포함된 컬렉션은 [!DNL Commerce Intelligence]에서 복제되지 않습니다. For example:
 
 ```bash
     {

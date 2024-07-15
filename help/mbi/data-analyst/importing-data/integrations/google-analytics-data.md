@@ -6,32 +6,32 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
 
-# 예상 [!DNL Google Analytics] 데이터
+# [!DNL Google Analytics]개의 데이터가 필요합니다.
 
-을(를) 연결한 후 [!DNL Google Analytics] 통합하면 다음과 같은 기능과 상호 작용할 수 있습니다. [!DNL Google Analytics] 지표 *의 바로 뒤에`Visual Report Builder`*. 을(를) 입력하면 `Visual Report Builder`을 클릭하는 경우 **[!UICONTROL Add a Metric]**, 의 일련의 지표 [!DNL Google Analytics] 프로필이 Data Warehouse의 지표 바로 아래에 드롭다운에 표시됩니다.
+[!DNL Google Analytics] 통합을 연결한 후 `Visual Report Builder`*에서 [!DNL Google Analytics] 지표*&#x200B;과(와) 즉시 상호 작용할 수 있습니다. `Visual Report Builder`을(를) 입력할 때 **[!UICONTROL Add a Metric]**&#x200B;을(를) 클릭하면 [!DNL Google Analytics] 프로필의 일련의 지표가 Data Warehouse의 지표 바로 아래에 드롭다운으로 표시됩니다.
 
-다음 [!DNL Google Analytics] 통합: *live* — 즉, `Report Builder` 에서 데이터 요청 [!DNL Google Analytics] *즉시* 보고서에 지표를 추가하는 경우. 또한 액세스할 수 있는 지표가 있는 그대로 정의됨을 의미합니다 [!DNL Google Analytics]및 이러한 값이 아님 *창고가 되어* (으)로 [!DNL Commerce Intelligence] 계정 - 보고서에 시각적으로만 표시됩니다.
+[!DNL Google Analytics] 통합은 *live*&#x200B;입니다. 즉, 보고서에 지표를 추가할 때 `Report Builder`에서 [!DNL Google Analytics] *즉시*&#x200B;의 데이터를 요청합니다. 또한 액세스할 수 있는 지표가 [!DNL Google Analytics]에 있는 그대로 정의되었으며 이러한 값은 [!DNL Commerce Intelligence] 계정에 *웨어하우징*&#x200B;이 아닙니다. 보고서에 시각적으로만 표시됩니다.
 
 +++지원되는 지표 및 Dimension(Google Analytics 3 또는 Universal Analytics)
 
 >[!NOTE]
 >
->2023년 7월 1일, 표준 Universal Analytics ([!DNL Google Analytics] 3) 속성은 더 이상 데이터를 처리하지 않습니다. 2023년 7월 1일 이후 일정 기간 동안 Universal Analytics 보고서를 볼 수 있습니다. 그러나 새 데이터는 [!DNL Google Analytics] 4개 속성입니다.
+>2023년 7월 1일부터 표준 Universal Analytics([!DNL Google Analytics] 3) 속성은 더 이상 데이터를 처리하지 않습니다. 2023년 7월 1일 이후 일정 기간 동안 Universal Analytics 보고서를 볼 수 있습니다. 그러나 새 데이터는 [!DNL Google Analytics]개의 속성에만 전송됩니다.
 
-[!DNL Google Analytics] 의 통합 [!DNL Commerce Intelligence] 사용 [!DNL Google Analytics] [코어 보고 API](https://developers.google.com/analytics/devguides/reporting/core/v3/), 그리고 다음 지표 및 차원을 지원합니다.
+[!DNL Commerce Intelligence]의 [!DNL Google Analytics] 통합에서 [!DNL Google Analytics] [Core Reporting API](https://developers.google.com/analytics/devguides/reporting/core/v3/)를 사용하고 다음 지표 및 차원을 지원합니다.
 
 >[!NOTE]
 >
->예기치 않거나 중요하지 않은 결과를 방지하려면 사용하는 모든 차원이 `Report Builder`. 다음을 확인할 수 있습니다. [여기](https://ga-dev-tools.google/dimensions-metrics-explorer/).
+>예기치 않거나 중요하지 않은 결과를 방지하려면 사용하는 모든 차원이 `Report Builder`에서 사용하는 하나 이상의 지표와 호환되는지 확인하십시오. [여기](https://ga-dev-tools.google/dimensions-metrics-explorer/)에서 확인할 수 있습니다.
 
 ## 지원되는 지표
 
-| [!DNL Commerce Intelligence] 표시 이름 | [!DNL Google Analytics] 이름 / 공식 |
+| [!DNL Commerce Intelligence] 표시 이름 | [!DNL Google Analytics] 이름/공식 |
 | --- | --- |
 | `Page Views` | `ga:pageviews` |
 | `Total Time Spent On Page` | `ga:timeOnPage` |
@@ -85,7 +85,7 @@ ht-degree: 0%
 
 ## 지원되는 Dimension
 
-| [!DNL Commerce Intelligence] 표시 이름 | [!DNL Google Analytics] 이름 / 공식 | 그룹화할 수 있습니까? |
+| [!DNL Commerce Intelligence] 표시 이름 | [!DNL Google Analytics] 이름/공식 | 그룹화할 수 있습니까? |
 | --- | --- | --- |
 | `Ad Content` | `ga:adContent` | `Yes` |
 | `Ad Group` | `ga:adGroup` | `Yes` |
@@ -156,12 +156,12 @@ ht-degree: 0%
 
 +++지원되는 지표 및 Dimension (Google Analytics 4)
 
-[!DNL Google Analytics] 의 통합 [!DNL Commerce Intelligence] 사용 [!DNL Google Analytics] [Data API v1 (GA4)](https://developers.google.com/analytics/devguides/reporting/data/v1).
+[!DNL Commerce Intelligence]의 [!DNL Google Analytics] 통합에서 [!DNL Google Analytics] [데이터 API v1(GA4)](https://developers.google.com/analytics/devguides/reporting/data/v1)을(를) 사용합니다.
 
 >[!NOTE]
 >
-> Commerce Intelligence는 다음 차원을 지원하지 않습니다. `cohort`, `cohortNthDay`, `cohortNthMonth`, 및 `cohortNthWeek`.
+> Commerce Intelligence은 `cohort`, `cohortNthDay`, `cohortNthMonth` 및 `cohortNthWeek` 차원을 지원하지 않습니다.
 >
->예기치 않거나 중요하지 않은 결과를 방지하려면 사용하는 모든 차원이 `Visual Report Builder`. 다음을 확인할 수 있습니다. [GA4 Dimension 및 지표 탐색기](https://ga-dev-tools.google/ga4/dimensions-metrics-explorer/).
+>예기치 않거나 중요하지 않은 결과를 방지하려면 사용하는 모든 차원이 `Visual Report Builder`에서 사용하는 하나 이상의 지표와 호환되는지 확인하십시오. [GA4 Dimension 및 지표 탐색기](https://ga-dev-tools.google/ga4/dimensions-metrics-explorer/)를 확인할 수 있습니다.
 
 +++

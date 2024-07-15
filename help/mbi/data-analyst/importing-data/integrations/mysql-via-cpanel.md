@@ -6,66 +6,66 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 1%
+source-wordcount: '358'
+ht-degree: 0%
 
 ---
 
-# 연결 [!DNL MySQL] 경유 [!DNL cPanel]
+# [!DNL cPanel]을(를) 통해 [!DNL MySQL] 연결
 
-* [만들기 [!DNL Commerce Intelligence] [!DNL MySQL] 의 사용자 [!DNL cPanel]](#cpanel)
-* [에 연결 및 사용자 정보 입력 [!DNL Commerce Intelligence]](#finish)
+* [ [!DNL cPanel]에서  [!DNL Commerce Intelligence] [!DNL MySQL] 사용자 만들기](#cpanel)
+* [ [!DNL Commerce Intelligence]에 연결 및 사용자 정보 입력](#finish)
 
 ## 이동
 
-* [[!DNL MySQL] SSH 터널 사용](../integrations/mysql-via-ssh-tunnel.md)
-* [[!DNL MySQL] 직접 연결](../integrations/mysql-via-a-direct-connection.md)
+* [SSH 터널을 통한 [!DNL MySQL]](../integrations/mysql-via-ssh-tunnel.md)
+* [직접 연결을 통한 [!DNL MySQL]](../integrations/mysql-via-a-direct-connection.md)
 
 >[!IMPORTANT]
 >
->[!DNL Adobe] ssh 또는 다른 형태의 암호화를 사용하여 데이터를 보호하는 것이 좋습니다! 옵션이 아닌 경우 직접 연결할 수 있습니다 [!DNL Commerce Intelligence] 이 항목의 지침을 사용하여 데이터베이스에 연결합니다.
+>[!DNL Adobe]은(는) SSH 또는 다른 형태의 암호화를 사용하여 데이터를 보호하는 것을 권장합니다! 옵션이 아닌 경우 이 항목의 지침을 사용하여 [!DNL Commerce Intelligence]을(를) 데이터베이스에 직접 연결할 수 있습니다.
 
-이 항목에서는 을(를) 직접 연결하는 방법을 설명합니다. [!DNL MySQL] 데이터베이스 대상 [!DNL Commerce Intelligence] 사용 [!DNL cPanel]. 이 프로세스를 사용하여 연결할 수도 있습니다. [!DNL Adobe Commerce] 및 기타 MySQL 기반 eCommerce 데이터베이스를 사용하여 [!DNL Commerce Intelligence].
+이 항목에서는 [!DNL cPanel]을(를) 사용하여 [!DNL MySQL] 데이터베이스를 [!DNL Commerce Intelligence]에 직접 연결하는 과정을 안내합니다. 이 프로세스를 사용하여 [!DNL Adobe Commerce] 및 기타 MySQL 기반 전자 상거래 데이터베이스를 [!DNL Commerce Intelligence]에 연결할 수도 있습니다.
 
-1. 만들기 [!DNL Commerce Intelligence] [!DNL MySQL] 의 사용자 [!DNL cPanel]
-1. 에 연결 및 사용자 정보 입력 [!DNL Commerce Intelligence]
+1. [!DNL cPanel]에서 [!DNL Commerce Intelligence] [!DNL MySQL] 사용자 만들기
+1. [!DNL Commerce Intelligence]에 연결 및 사용자 정보 입력
 
-시작.
+시작합니다.
 
-## 만들기 [!DNL Commerce Intelligence] [!DNL MySQL] 의 사용자 [!DNL cPanel] {#cpanel}
+## [!DNL cPanel]에서 [!DNL Commerce Intelligence] [!DNL MySQL] 사용자를 만드는 중 {#cpanel}
 
-1. 에 로그인 [!DNL cPanel] 호스팅 공급자를 통해
-1. 클릭 **[!UICONTROL [!DNL MySQL] Databases]**, 위치: `Database` 섹션.
-1. 아래로 스크롤하여 `Add New User` 섹션 및 사용자 만들기 [!DNL Commerce Intelligence]:
+1. 호스팅 공급자를 통해 [!DNL cPanel]에 로그인합니다.
+1. `Database` 섹션에 있는 **[!UICONTROL [!DNL MySQL] Databases]**&#x200B;을(를) 클릭합니다.
+1. `Add New User` 섹션까지 아래로 스크롤하고 [!DNL Commerce Intelligence]에 대한 사용자를 만드십시오.
 
    ![](../../../assets/create-mbi-mysql-user-cpanel.png)
 
-1. 클릭 **[!UICONTROL Create User]**.
-1. 이제 사용자를 만들었으므로 이 사용자를 데이터베이스에 연결해야 합니다. 로 돌아가기 `Add New User` 섹션 - 다음에 대한 설정 참조 `Add User to Database?` 그게 네가 필요한 거야
-1. 다음에서 `User` 이 섹션의 드롭다운에서 생성한 사용자를 선택합니다.
-1. 다음에서 `Database` 이 섹션의 드롭다운에서 연결할 데이터베이스를 선택합니다. [!DNL Commerce Intelligence].
-1. 클릭 **[!UICONTROL Add]**.
-1. 권한 체크리스트가 나타나면 옆에 있는 상자를 선택합니다 `SELECT` - 이것이 전부입니다. [!DNL Commerce Intelligence] 을(를) 데이터베이스에 연결해야 합니다.
+1. **[!UICONTROL Create User]**&#x200B;을(를) 클릭합니다.
+1. 이제 사용자를 만들었으므로 이 사용자를 데이터베이스에 연결해야 합니다. `Add New User` 섹션으로 돌아가서 필요한 `Add User to Database?`에 대한 설정을 확인하십시오.
+1. 이 섹션의 `User` 드롭다운에서 만든 사용자를 선택합니다.
+1. 이 섹션의 `Database` 드롭다운에서 [!DNL Commerce Intelligence]에 연결할 데이터베이스를 선택합니다.
+1. **[!UICONTROL Add]**&#x200B;을(를) 클릭합니다.
+1. 권한 검사 목록이 나타나면 `SELECT` 옆의 확인란을 선택합니다. [!DNL Commerce Intelligence]에서 데이터베이스에 연결하는 데 필요한 모든 항목입니다.
 
-## 에 연결 및 사용자 정보 입력 [!DNL Commerce Intelligence] {#finish}
+## [!DNL Commerce Intelligence]에 연결 및 사용자 정보 입력 {#finish}
 
-마무리하려면 연결 및 사용자 정보를 입력해야 합니다. [!DNL Commerce Intelligence]. 다음을 떠나셨나요? [!DNL MySQL] 자격 증명 페이지가 열려 있습니까? 그렇지 않으면 다음으로 이동합니다. **[!UICONTROL Manage Data** > **Connections]** 및 클릭 **[!UICONTROL Add New Data Source]**, 그런 다음 [!DNL MySQL] 아이콘.
+마무리하려면 [!DNL Commerce Intelligence]에 연결 및 사용자 정보를 입력해야 합니다. [!DNL MySQL] 자격 증명 페이지를 열어 두셨습니까? 그렇지 않으면 **[!UICONTROL Manage Data** > **Connections]**(으)로 이동하여 **[!UICONTROL Add New Data Source]**&#x200B;을(를) 클릭한 다음 [!DNL MySQL] 아이콘을 클릭합니다.
 
-의 이 페이지에 다음 정보를 입력합니다. `Database Connection` 섹션:
+`Database Connection` 섹션의 이 페이지에 다음 정보를 입력하십시오.
 
-* `Username`: 의 사용자 이름 [!DNL Commerce Intelligence] [!DNL MySQL] 사용자
-* `Password`: 의 암호 [!DNL Commerce Intelligence] [!DNL MySQL] 사용자
-* `Port`: 서버에 있는 MySQL의 포트(`3306` (기본적으로)
-* `Host`: 의 공개 주소 `MySQL` server [!DNL Commerce Intelligence] 에 연결합니다. 일반적으로 로그인하는 데 사용하는 URL입니다 `[!DNL cPanel]`.
+* `Username`: [!DNL Commerce Intelligence] [!DNL MySQL] 사용자의 사용자 이름
+* `Password`: [!DNL Commerce Intelligence] [!DNL MySQL] 사용자의 암호
+* `Port`: 서버에 있는 MySQL의 포트(기본적으로 `3306`)
+* `Host`: `MySQL` 서버 [!DNL Commerce Intelligence]이(가) 연결하는 공용 주소입니다. 일반적으로 `[!DNL cPanel]`에 로그인하는 데 사용하는 URL입니다.
 
-을(를) 사용하는 경우 [`SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md)암호화 정보를 입력해야 합니다. 설정 `Encrypted` 전환 대상 `Yes` 을 눌러 양식을 표시합니다.
+[`SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md)을(를) 사용하는 경우 암호화 정보를 입력해야 합니다. 양식을 표시하려면 `Encrypted` 전환을 `Yes`(으)로 설정하십시오.
 
-* `Connection Type`: 다음으로 설정 `SSH Tunnel`
-* `Remote Address`: 서버의 IP 주소 또는 호스트 이름 [!DNL Commerce Intelligence] 다음으로 터널링됨
-* `Username`: 의 사용자 이름 [!DNL Commerce Intelligence] `SSH (Linux)` 사용자, 참조 [지침](../../../data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md) 을(를) 수행하는 방법에 대해 설명합니다(아직 수행하지 않은 경우).
-* `SSH Port`: 서버의 SSH 포트(`22` (기본적으로)
+* `Connection Type`: `SSH Tunnel`(으)로 설정
+* `Remote Address`: [!DNL Commerce Intelligence] 서버의 IP 주소 또는 호스트 이름이
+* `Username`: [!DNL Commerce Intelligence] `SSH (Linux)` 사용자의 사용자 이름입니다. 아직 수행하지 않았다면 이 작업을 수행하는 방법에 대한 [지침](../../../data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md)을 참조하십시오.)
+* `SSH Port`: 서버의 SSH 포트(기본적으로 `22`)
 
-작업을 마치면 를 클릭합니다. **[!UICONTROL Save & Test]** 설치를 완료합니다.
+완료되면 **[!UICONTROL Save & Test]**&#x200B;을(를) 클릭하여 설치를 완료합니다.
 
 ## 관련 항목:
 

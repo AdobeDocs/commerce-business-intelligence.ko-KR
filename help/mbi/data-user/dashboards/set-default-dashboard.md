@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # 기본 대시보드 설정
 
-기본 대시보드는 열 때 표시되는 첫 번째 대시보드입니다 [!DNL Commerce Intelligence].
+기본 대시보드는 [!DNL Commerce Intelligence]을(를) 열 때 표시되는 첫 번째 대시보드입니다.
 
-1. 대시보드에서 을(를) 클릭합니다 **[!UICONTROL Dashboard Options]** 화면 맨 위에 있습니다.
+1. 대시보드에 있는 동안 화면 맨 위에 있는 **[!UICONTROL Dashboard Options]**&#x200B;을(를) 클릭합니다.
 
-1. 클릭 **[!UICONTROL Make Default]** 드롭다운에서 을 클릭합니다.
+1. 드롭다운에서 **[!UICONTROL Make Default]**&#x200B;을(를) 클릭합니다.
 
-1. 확인 메시지가 표시되면 **[!UICONTROL Yes]** 기본 대시보드를 변경합니다.
+1. 확인 메시지가 표시되면 **[!UICONTROL Yes]**&#x200B;을(를) 클릭하여 기본 대시보드를 변경합니다.
 
 이제 새로운 기본 대시보드입니다.
 

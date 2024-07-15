@@ -6,7 +6,7 @@ role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '532'
 ht-degree: 0%
 
 ---
@@ -21,31 +21,31 @@ ht-degree: 0%
 
 ![](../../assets/blobid0.png)
 
-다음과 같은 경우에만 RFM 분석을 구성할 수 있습니다. [!DNL Adobe Commerce Intelligence] 새 아키텍처에 대한 Pro 플랜(예: `Data Warehouse Views` 옵션 아래에 있는 `Manage Data` 메뉴)를 참조하십시오. 이러한 열은 **[!DNL Manage Data > Data Warehouse]** 페이지를 가리키도록 업데이트하는 중입니다. 자세한 지침은 아래에 나와 있습니다.
+새 아키텍처에 [!DNL Adobe Commerce Intelligence] Pro 플랜이 있는 경우(예: `Manage Data` 메뉴 아래에 `Data Warehouse Views` 옵션이 있는 경우)에만 RFM 분석을 구성할 수 있습니다. 이러한 열은 **[!DNL Manage Data > Data Warehouse]** 페이지에서 만들 수 있습니다. 자세한 지침은 아래에 나와 있습니다.
 
 ## 시작
 
 먼저 값이 1인 기본 키만 포함된 파일을 업로드해야 합니다. 이를 통해 분석에 필요한 몇 가지 계산된 열을 만들 수 있습니다.
 
-사용할 수 있습니다. [기사](../importing-data/connecting-data/using-file-uploader.md) 및 아래 이미지를 참조하여 파일 형식을 지정하십시오.
+이 [article](../importing-data/connecting-data/using-file-uploader.md) 및 아래 이미지를 사용하여 파일 형식을 지정할 수 있습니다.
 
 ## 계산된 열
 
-귀사에서 고객 주문을 허용한다면 더욱 차별화됩니다. 그렇다면 의 모든 단계를 무시할 수 있습니다. `customer_entity` 테이블. 게스트 주문이 허용되지 않는 경우 `sales_flat_order` 테이블.
+귀사에서 고객 주문을 허용한다면 더욱 차별화됩니다. 이 경우 `customer_entity` 테이블의 모든 단계를 무시할 수 있습니다. 게스트 주문이 허용되지 않으면 `sales_flat_order` 테이블에 대한 모든 단계를 무시하십시오.
 
 생성할 열
 
-* **`Sales_flat_order/customer_entity`** 표
+* **`Sales_flat_order/customer_entity`** 테이블
 * `Customer's last order date`
 * [!UICONTROL Column type]: `Many to one > Max`
 * [!UICONTROL Pat]: `sales_flat_order.customer_id > customer_entity.entity_id`
-* 선택됨 [!UICONTROL column]: `created_at`
+* 선택된 [!UICONTROL column]: `created_at`
 * [!UICONTROL Filter]: `Orders we count`
 
 * 
-      고객의 마지막 주문 날짜 이후 지난 시간(초)
-  * [!UICONTROL Column type]: - &quot;같은 표 > 나이
-* 선택됨 [!UICONTROL column]: `Customer's last order date`
+  고객의 마지막 주문 날짜 이후     초
+  * [!UICONTROL Column type]: -     &quot;같은 표 > 나이
+* 선택된 [!UICONTROL column]: `Customer's last order date`
 
 * (입력) 카운트 참조
 * [!UICONTROL Column type]: `Same table > Calculation`
@@ -55,17 +55,17 @@ ht-degree: 0%
 * 
   [!UICONTROL 데이터 유형]: `Integer`
 
-* **개수 참조** 표(숫자가 &quot;1&quot;인 업로드한 파일입니다.)
+* **참조 개수** 테이블(번호가 &quot;1&quot;인 업로드한 파일)
 * 고객 수
 * [!UICONTROL Column type]: `Many to One > Count Distinct`
 * [!UICONTROL Path]: `ales_flat_order.(input) reference > Count reference.Primary Key` 또는 `customer_entity.(input)reference > Count Reference`. `Primary Key`
-* 선택됨 [!UICONTROL column]: `sales_flat_order.customer_email` 또는 `customer_entity.entity_id`
+* 선택한 [!UICONTROL column]: `sales_flat_order.customer_email` 또는 `customer_entity.entity_id`
 
-* **Customer_entity** 표
+* **Customer_entity** 테이블
 * 고객 수
 * [!UICONTROL Column type]: `One to Many > JOINED_COLUMN`
 * [!UICONTROL Path]: `customer_entity`.(입력) 참조 > 고객 집중. `Primary Key`
-* 선택됨 [!UICONTROL column]: `Number of customers`
+* 선택된 [!UICONTROL column]: `Number of customers`
 
 * (입력) `Ranking by customer lifetime revenue`
 * [!UICONTROL Column type]: `Same table > Event Number`
@@ -95,7 +95,7 @@ ht-degree: 0%
 * 
   [!UICONTROL 열 유형]: – "Same table > 계산"
 * [!UICONTROL Inputs]: - **(입력) 고객 생애 주문 수별 순위**, **고객 수**
-* [!UICONTROL Calculation]: - **case when A is null then null else (B-(A-1)) end**
+* [!UICONTROL Calculation]: - **A가 null이고 Null인 경우 기타(B-(A-1)) 끝**
 * [!UICONTROL Datatype]: - 정수
 
 * 고객의 빈도 점수(백분위수)
@@ -124,22 +124,22 @@ ht-degree: 0%
 * 
   [!UICONTROL 데이터 유형]: String
 
-* **개수 참조** 표
+* **Count 참조** 테이블
 * [!UICONTROL Number of customers]: `(RFM > 0)`
 * [!UICONTROL Column type]: `Many to One > Count Distinct`
 * [!UICONTROL Path]: `sales_flat_order.(input) reference > Customer Concentration. Primary Key` 또는 `customer_entity.(input)reference > Customer Concentration.Primary Key`
-* 선택됨 [!UICONTROL column]: `sales_flat_order.customer_email` 또는 `customer_entity.entity_id`
-* [!UICONTROL Filter]: `Customer's RFM score (by percentile)` 000과 같지 않음
+* 선택한 [!UICONTROL column]: `sales_flat_order.customer_email` 또는 `customer_entity.entity_id`
+* [!UICONTROL Filter]: `Customer's RFM score (by percentile)`이(가) 000과 같지 않음
 
-* **Customer_entity** 표
+* **Customer_entity** 테이블
 * [!UICONTROL Number of customers]: `(RFM > 0)`
 * [!UICONTROL Column type]: `One to Many > JOINED_COLUMN`
 * [!UICONTROL Path]: `customer_entity.(input) reference > Customer Concentration.Primary Key`
-* 선택됨 [!UICONTROL column]: - `Number of customers`
+* 선택된 [!UICONTROL column]: - `Number of customers`
 
 * 고객의 최신성 점수 `(R+F+M)`
 * [!UICONTROL Column type]: `Same table > Calculation`
-* [!UICONTROL Inputs]: – `Customer's recency score (by percentiles)`, `Customer's frequency score (by percentiles)`, `Customer's monetary score (by percentiles)`
+* [!UICONTROL Inputs]: - `Customer's recency score (by percentiles)`, `Customer's frequency score (by percentiles)`, `Customer's monetary score (by percentiles)`
 * [!UICONTROL Calculation]: `case when (A IS NULL or B IS NULL or C IS NULL) then null else A+B+C end`
 * 
   [!UICONTROL 데이터 유형]: `Integer`
@@ -148,7 +148,7 @@ ht-degree: 0%
 * [!UICONTROL Column type]: `Same table > Event Number`
 * [!UICONTROL Event owner]: `(input) reference for count`
 * [!UICONTROL Event rank]: `Customer's recency score (R+F+M)`
-* [!UICONTROL Filter]: `Customer's RFM score (by percentile)` 000과 같지 않음
+* [!UICONTROL Filter]: `Customer's RFM score (by percentile)`이(가) 000과 같지 않음
 
 * 고객의 전체 RFM 점수로 순위 지정
 * [!UICONTROL Column type]: `Same table > Calculation`
@@ -174,11 +174,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->다음을 확인하십시오. [새 열을 지표에 차원으로 추가](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 새 보고서를 작성하기 전에
+>새 보고서를 작성하기 전에 [모든 새 열을 지표에 차원으로 추가](../data-warehouse-mgr/manage-data-dimensions-metrics.md)하십시오.
 
 ## 보고서
 
-* **RFM 그룹별 고객**
+* RFM 그룹별 **고객**
 * 지표 `A`: `New customers`
 * [!UICONTROL Metric]: `New customers`
 * [!UICONTROL Filter]: `Customer's RFM score (by percentiles) Not Equal to 000`

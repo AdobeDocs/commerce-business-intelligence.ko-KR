@@ -13,10 +13,10 @@ ht-degree: 0%
 
 # 대시보드에서 차트 제거
 
-대시보드에서 차트를 제거하려면 톱니바퀴(![](../../assets/gear-icon.png)) 아이콘 을 클릭하여 **[!UICONTROL Remove from Dashboard]**.
+대시보드에서 차트를 제거하려면 차트의 오른쪽 상단 모서리에 있는 톱니바퀴(![](../../assets/gear-icon.png)) 아이콘을 클릭하고 **[!UICONTROL Remove from Dashboard]**&#x200B;을(를) 클릭합니다.
 
 >[!NOTE]
 >
->차트를 제거하는 것은 와 같지 않습니다. [삭제 중](../../data-user/dashboards/delete-chart.md). 또한, [차트를 대시보드에 읽을 수 있습니다.](../../data-user/dashboards/add-charts-dashboard.md) 언제든지.
+>차트를 제거하는 것은 [삭제하는 것](../../data-user/dashboards/delete-chart.md)과 다릅니다. 또한 [차트를 언제든지 대시보드에 읽을 수 있습니다](../../data-user/dashboards/add-charts-dashboard.md).
 
 ![차트 제거](../../assets/Removing_Charts_from_Dashboards.gif)

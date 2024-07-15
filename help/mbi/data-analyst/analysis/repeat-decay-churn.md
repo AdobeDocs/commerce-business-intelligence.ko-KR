@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Data Warehouse Manager, Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '952'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 권장 지표
 
-반복 확률 감소와 이탈을 분석할 때 ([또는 빌드](../../data-user/reports/ess-manage-data-metrics.md)) 다음 지표를 참조하십시오.
+반복 확률 감소 및 이탈을 분석할 때 다음 지표를 사용하는 것이 좋습니다([ 또는 빌드](../../data-user/reports/ess-manage-data-metrics.md)).
 
 ### 초기 반복 순서 확률
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 이 조치는 사용자가 마지막 주문 이후 경과된 개월 수를 사용하여 다시 주문할 확률을 보여 줍니다. 이 지표를 생성하는 데 사용되는 공식은 다음과 같은 작업을 단순화합니다.
 
-![반복 확률 공식](../../assets/Repeat_probability_formula.png)
+![반복 확률 수식](../../assets/Repeat_probability_formula.png)
 
 비즈니스 모델에 따라 고객이 주문을 한 직후에 반복 주문 확률이 낮아지고 이후 몇 달 동안 계속 감소할 수도 있고 계절적 변동과 급증을 보여 줄 수도 있습니다.
 
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 전형적인 전자 상거래 사업의 반복적인 확률 감소를 보라.
 
-![주문 이후 주어진 개월 동안 초기 반복 주문 확률 반복 주문 확률.](../../assets/Order_probability_reports.png)
+![주문 이후 몇 달 동안 초기 반복 주문 확률 반복 주문 확률](../../assets/Order_probability_reports.png)
 
 ### 초기 반복 순서 확률
 
@@ -78,7 +78,7 @@ ht-degree: 0%
 
 두 개 이상의 제품을 제공하는 경우 특정 제품을 구매하는 고객이 다른 고객과 비교하여 시간이 지남에 따라 어떻게 다르게 동작하는지 궁금할 수 있습니다. 자세히 알아보시겠습니까? 이 자습서를 통해 구입한 특정 제품을 기반으로 고객 집단의 라이프타임 구매 행동을 살펴볼 수 있습니다.
 
-이 모범 사례는에서 제공합니다. [!DNL Adobe Commerce Intelligence] DAS(데이터 분석 서비스). [지원 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 추가 정보.
+이 모범 사례는 [!DNL Adobe Commerce Intelligence] DAS(데이터 분석 서비스)에서 제공합니다. 자세한 내용은 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하세요.
 
 ### 관련 항목
 

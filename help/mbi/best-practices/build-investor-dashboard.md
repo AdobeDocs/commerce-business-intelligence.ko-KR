@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Dashboards, Data Integration
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 0%
       * A/B
 * **[!UICONTROL All-time revenue by source]**
    * 지표 - 매출
-   * 고객별 그룹화 `utm_source`
+   * 고객의 `utm_source`(으)로 그룹화
 * **[!UICONTROL Revenue from top 10 products]**
    * 지표 - 제품 매출
       * 차트 숨기기
@@ -59,20 +59,20 @@ ht-degree: 0%
 * **[!UICONTROL Site visits - New vs. repeat by month]**
 * 세션
 
-포함 [!DNL Google Analytics] 통합하면 다음에 대한 보고서를 포함할 수 있습니다.
+[!DNL Google Analytics] 통합으로 다음에 대한 보고서를 포함할 수 있습니다.
 
 * 사이트 방문 횟수
 * 전환율
 
-포함 [상거래 데이터 보강 서비스](https://business.adobe.com/products/magento/magento-commerce.html), 다음에 대한 보고서를 포함할 수 있습니다.
+[Commerce 데이터 보강 서비스](https://business.adobe.com/products/magento/magento-commerce.html)를 사용하여 다음에 대한 보고서를 포함할 수 있습니다.
 
 * 주/지역, 연령, 성별 고유 고객.
 
 ## 기타 팁
 
-* 명확하고 간결하게 사용하기 [명명 규칙](../best-practices/naming-elements.md)
+* 명확하고 간결한 [명명 규칙](../best-practices/naming-elements.md) 사용
 * 투자자 사용자와 대시보드 공유
-* 또는 를 통해 전송 **[!UICONTROL Automated email summary]**(../data-user/export-data/email-summaries.md)
+* 또는 **[!UICONTROL Automated email summary]**(../data-user/export-data/email-summaries.md)을 통해 보냅니다.
 * 대시보드를 하나만 만듭니다. 이렇게 하면 콘텐츠를 유지 관리하기 쉬워지며 투자자가 보고 있는 내용을 정확하게 알 수 있습니다.
 
 보고서를 신중하게 구성하고 세부 사항에 주의하십시오. 완료되면 대시보드는 다음과 유사합니다.

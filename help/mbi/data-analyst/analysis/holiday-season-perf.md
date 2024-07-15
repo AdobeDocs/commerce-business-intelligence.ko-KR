@@ -6,7 +6,7 @@ role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## 권장 지표
 
-휴가철 성과를 분석할 때 ([또는 빌드](../../data-user/reports/ess-manage-data-metrics.md)) 다음 지표를 참조하십시오.
+휴가철 성과를 분석할 때 다음 지표를 분석([ 또는 구축](../../data-user/reports/ess-manage-data-metrics.md))해 보십시오.
 
 ### 신규 고객 수, 주문 수, 매출
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 분석할 지표를 알았으므로 이제 2014년과 2015년 모두 휴가철 기간인 11월과 12월 동안의 일부 샘플 수익 데이터를 확인합니다.
 
-![2014 및 2015년 일일 휴일 시즌 매출](../../assets/Analyzing_holiday_season.png)
+![2014 및 2015의 일일 휴일 시즌 매출](../../assets/Analyzing_holiday_season.png)
 
 이 예에서는 2014년과 2015년의 두 가지 큰 폭의 매출 증가가 블랙 프라이데이 및 사이버 먼데이와 일치합니다. 2014년과 2015년의 급등이 같은 날에 발생하지 않는 방식에 대해 알아보십시오. 블랙프라이데이가 2014년 11월 27일, 2015년 11월 28일에 하락했기 때문이다. 마찬가지로 사이버 먼데이는 2014년 11월 30일, 2015년 12월 1일이었다.
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 또 다른 옵션은 휴가철 동안 캠페인별로 ROI를 분석하는 것입니다. 휴가철 동안 실행되는 특정 캠페인의 ROI가 더 높습니까? 이러한 시즌 동안 ROI가 높은 캠페인에 대한 지출을 늘려야 합니까?
 
-또한 전체 가격 주문 수와 비교하여 할인된 주문 수를 분석할 수 있습니다. [대부분의 고객이 구매 주문을 위한 판매를 기다리고 있습니까](../analysis/coupon-usage.md) 휴가 기간 동안, 아니면 그들이 정가 품목을 구매할 것인가?
+또한 전체 가격 주문 수와 비교하여 할인된 주문 수를 분석할 수 있습니다. [대부분의 고객이 휴가철에 주문 판매를 기다리고 있습니까](../analysis/coupon-usage.md) 아니면 정가 품목을 구매하고 있습니까?
 
 ### 관련 항목
 

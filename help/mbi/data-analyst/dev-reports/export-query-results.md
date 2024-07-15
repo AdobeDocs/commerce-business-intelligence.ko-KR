@@ -13,4 +13,4 @@ ht-degree: 0%
 
 # 내 쿼리 결과 내보내기
 
-클릭 **[!UICONTROL Export Data]** 다음에서 `Results` 결과를 로 내보내는 창 `.csv` 파일.
+`Results` 창에서 **[!UICONTROL Export Data]**&#x200B;을(를) 클릭하여 결과를 `.csv` 파일로 내보냅니다.

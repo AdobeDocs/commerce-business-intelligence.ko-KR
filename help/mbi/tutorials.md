@@ -12,4 +12,4 @@ ht-degree: 25%
 
 # 튜토리얼
 
-이 셀프 가이드 튜토리얼을 따라 의 기능을 알아보십시오 [!DNL Adobe Commerce Intelligence].
+이 셀프 가이드 튜토리얼을 따라 [!DNL Adobe Commerce Intelligence]의 기능을 알아보십시오.

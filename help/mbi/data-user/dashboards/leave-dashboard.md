@@ -13,8 +13,8 @@ ht-degree: 0%
 
 # 대시보드 종료(공유 해제)
 
-팀을 변경하시겠습니까? 봄이 한창일 때 [!DNL Commerce Intelligence] 계정? 대시보드에서 나가거나 공유를 해제하려면 **[!UICONTROL Shared]** 대시보드에서 나갈 때 화면 맨 위에 있습니다. 클릭 **[!UICONTROL Leave this Dashboard]** 자신을 제거하기 위해.
+팀을 변경하시겠습니까? 봄에 [!DNL Commerce Intelligence] 계정을 정리하는 중입니까? 대시보드에서 나가거나 공유를 해제하려면 나가려는 대시보드에 있는 동안 화면 상단의 **[!UICONTROL Shared]**&#x200B;을(를) 클릭합니다. 자신을 제거하려면 **[!UICONTROL Leave this Dashboard]**&#x200B;을(를) 클릭하십시오.
 
 예:
 
-![대시보드 떠나기](../../assets/Leave_Dashboard.gif)
+![대시보드 나가기](../../assets/Leave_Dashboard.gif)

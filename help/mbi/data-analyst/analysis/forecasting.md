@@ -17,4 +17,4 @@ ht-degree: 0%
 
 이 섹션에서는 현재 고객의 라이프타임 값에 대해 알아보고 더 많은 주문에 따라 라이프타임 값이 어떻게 증가하는지 예측합니다.
 
-다음도 참조하십시오. [예상 라이프타임 값(LTV) 분석(기본)](../../data-analyst/analysis/ess-expected-ltv.md)
+참고 항목: [LTV(예상 수명 값) 분석(기본)](../../data-analyst/analysis/ess-expected-ltv.md)

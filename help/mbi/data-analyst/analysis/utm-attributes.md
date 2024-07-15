@@ -6,38 +6,38 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Reports
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '760'
 ht-degree: 0%
 
 ---
 
 # [!DNL Google Analytics] 및 UTM 속성
 
-다음과 같은 작업을 수행하는 것이 중요합니다. [사용자 획득 소스 추적](../../data-analyst/analysis/google-track-user-acq.md) 끝 [성과가 가장 좋은 광고 캠페인 식별](../../data-analyst/analysis/most-value-source-channel.md). 이 주제에서는 다음을 살펴봅니다. [!DNL Google Analytics] 소스 속성 프로세스. 즉, 언제 어떤 정보가 기록되는지 알 수 있다.
+[사용자 확보 원본을 추적](../../data-analyst/analysis/google-track-user-acq.md)하여 [성과가 가장 좋은 광고 캠페인을 확인](../../data-analyst/analysis/most-value-source-channel.md)하는 것이 중요합니다. 이 항목에서는 [!DNL Google Analytics] 소스 속성 프로세스에 대해 살펴봅니다. 즉, 언제 어떤 정보가 기록되는지 알 수 있다.
 
 ## 속성이란 무엇입니까?
 
-`Attribution` 특정 활동의 참조 소스를 지정하는 것에 대한 것입니다. 이러한 활동은 일반적으로 매크로 변환 또는 마이크로 변환이며, 매크로는 다음과 같습니다 **구매**, 마이크로 **등록, 이메일 등록, 블로그 댓글,** 기타 등등.
+`Attribution`은(는) 특정 활동의 참조 원본을 지정하는 것입니다. 이러한 활동은 일반적으로 매크로 전환 또는 마이크로 전환이며, 매크로는 **구매**&#x200B;와 같은 것이고, 마이크로는 **등록, 전자 메일 등록, 블로그 댓글**&#x200B;과 같은 것입니다.
 
 이상적으로는 전환 이벤트가 발생할 때마다 참조 소스가 기록됩니다. 그러나 그 출처는 어떻게 결정됩니까?
 
-현실은 사용자가 마이크로 또는 매크로 변환을 히트/커밋하기 전에 많은 소스에서 오는 경우가 많습니다. 예를 들어, 이들은 유기농 제품을 통해 현장으로 온 다음, 떠나고, 유료 검색을 통해 온 다음, 떠난 다음, 바로 현장으로 올 수 있습니다. 이 소스 추적 정보는 종종 UTM 매개변수를 통해 사이트에 제공되지만 보다 정교한 시스템도 있습니다. 귀하의 목적을 위해, 다음 사항에 집중하십시오. [UTM](https://support.google.com/analytics/answer/1033867?hl=en&amp;ref_topic=1032998).
+현실은 사용자가 마이크로 또는 매크로 변환을 히트/커밋하기 전에 많은 소스에서 오는 경우가 많습니다. 예를 들어, 이들은 유기농 제품을 통해 현장으로 온 다음, 떠나고, 유료 검색을 통해 온 다음, 떠난 다음, 바로 현장으로 올 수 있습니다. 이 소스 추적 정보는 종종 UTM 매개변수를 통해 사이트에 제공되지만 보다 정교한 시스템도 있습니다. [UTM](https://support.google.com/analytics/answer/1033867?hl=en&amp;ref_topic=1032998)에 초점을 맞추십시오.
 
-## 은 어떻게 합니까? [!DNL Google Analytics] utm 매개변수를 통한 속성 참조 소스
+## [!DNL Google Analytics]은(는) UTM 매개 변수를 통해 참조 소스를 어떻게 처리합니까?
 
-URL에 UTM 매개 변수가 지정되면 구문 분석되어 [!DNL Google Analytics] [쿠키](https://en.wikipedia.org/wiki/HTTP_cookie). 웹 사이트에 이 없는 경우 [!DNL Google Analytics]에서는 UTM을 가질 필요가 없습니다. [!DNL Google Analytics] 는 라이프타임 동안 UTM으로 여러 URL을 조회하는 사용자를 처리하는 방법에 대한 규칙을 가지고 있습니다(자세한 내용은 나중에 설명). 웹 사이트가 UTM 매개 변수를 외부 데이터베이스에 캡처하도록 구성되어 있다고 가정할 때 마이크로 또는 매크로 변환이 발생하면 [!DNL Google Analytics] 전환 시 쿠키가 데이터베이스에 복제됩니다.
+URL에 UTM 매개 변수가 지정되면 구문 분석되어 [!DNL Google Analytics] [cookie](https://en.wikipedia.org/wiki/HTTP_cookie)에 배치됩니다. 웹 사이트에 [!DNL Google Analytics]이(가) 없으면 UTM을 사용할 필요가 없습니다. [!DNL Google Analytics]은(는) 라이프타임 동안 UTM으로 여러 URL을 조회하는 사용자를 처리하는 방법에 대한 규칙을 가지고 있습니다(자세한 내용은 나중에 설명). 웹 사이트가 UTM 매개 변수를 외부 데이터베이스에 캡처하도록 구성되어 있다고 가정할 때 마이크로 또는 매크로 변환이 발생하면 변환 시 [!DNL Google Analytics] 쿠키에 있는 내용이 데이터베이스에 복제됩니다.
 
 ## 첫 번째 클릭과 마지막 클릭 비교
 
 ### 마지막 클릭 속성
 
-마지막 클릭 기여도 분석은 에서 사용하는 가장 일반적인 기여도 분석 모델입니다. [!DNL Google Analytics]. 이 경우 [!DNL Google Analytics] cookie는 전환 이벤트 이전의 가장 최근 소스에 대한 UTM 매개 변수를 나타내며, 다음과 같습니다. [데이터베이스에 기록됨](../../data-analyst/analysis/google-track-user-acq.md). 다음 [!DNL Google Analytics] 쿠키는 사용자가 새 UTM 매개 변수 세트가 포함된 새 URL을 클릭하는 경우에만 이전 UTM 매개 변수를 덮어씁니다.
+마지막 클릭 속성은 [!DNL Google Analytics]에서 사용하는 가장 일반적인 속성 모델입니다. 이 경우 [!DNL Google Analytics] 쿠키는 전환 이벤트 이전의 가장 최근 소스에 대한 UTM 매개 변수를 나타내며 [데이터베이스에 기록됨](../../data-analyst/analysis/google-track-user-acq.md)입니다. [!DNL Google Analytics] 쿠키는 사용자가 새 UTM 매개 변수 집합이 포함된 새 URL을 클릭하는 경우에만 이전 UTM 매개 변수를 덮어씁니다.
 
-예를 들어 를 통해 웹 사이트를 처음 방문하는 사용자를 고려하십시오. [!DNL Google Analytics] *유료 검색*&#x200B;를 반환한 다음 를 통해 반환 *유기 검색*, 그리고 마지막으로 *웹 사이트 직접* 또는 *이메일 링크* **UTM 매개 변수 없음** 전환 이벤트 전. 이 예에서는 [!DNL Google Analytics] cookie는 전환 전의 마지막 소스를 나타내므로 사용자의 소스가 유기적이라고 말합니다. 다음 *경로* 최종 전환 이벤트 이전의 사용자 는 무시됩니다. 대신 사용자가 UTM이 있는 이메일 링크에서 웹 사이트를 방문한 경우 [!DNL Google Analytics] 쿠키는 소스가 &quot;email&quot;이라고 합니다. 따라서 쿠키에 기존 UTM 매개 변수가 있고 사용자가 직접 을 통해 들어오는 경우 [!DNL Google Analytics] cookie는 &quot;직접&quot;이 아닌 UTM 매개 변수를 표시합니다.
+예를 들어 전환 이벤트 전에 [!DNL Google Analytics] *유료 검색*&#x200B;을 통해 웹 사이트를 처음 방문한 다음 *유기 검색*&#x200B;을 통해 재방문한 다음 마지막으로 *웹 사이트로 직접* 또는 *이메일 링크* **UTM 매개 변수 없이**&#x200B;을 통해 다시 돌아온 사용자를 고려해 보십시오. 이 예제에서 [!DNL Google Analytics] 쿠키는 사용자의 원본이 전환 전의 마지막 원본을 나타내므로 유기적이라고 말합니다. 최종 전환 이벤트 이전의 사용자 *경로*&#x200B;은(는) 무시됩니다. 대신 사용자가 UTM을 사용하는 이메일 링크에서 웹 사이트를 방문한 경우 [!DNL Google Analytics] 쿠키에 소스가 &quot;email&quot;이라고 표시됩니다. 따라서 쿠키에 기존 UTM 매개 변수가 있고 사용자가 직접 을 통해 들어오는 경우 [!DNL Google Analytics] 쿠키에 &quot;직접&quot;이 아닌 UTM 매개 변수가 표시됩니다.
 
 >[!NOTE]
 >
->특정 사용자 [!DNL Google Analytics] 쿠키 매개 변수는 쿠키가 [만료](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage)또는 사용자가 브라우저에서 쿠키를 지우는 경우입니다.*
+>쿠키 [이(가) 만료](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage)되거나 사용자가 브라우저에서 쿠키를 지우는 경우 특정 사용자의 [!DNL Google Analytics] 쿠키 매개 변수가 지워집니다.*
 
 ### 첫 번째 클릭 속성
 
@@ -45,7 +45,7 @@ URL에 UTM 매개 변수가 지정되면 구문 분석되어 [!DNL Google Analyt
 
 ## 속성을 분석하는 방법
 
-[!DNL Google Analytics] 에는 네 가지 다른 속성 모델을 수행할 수 있도록 해주는 강력한 기능이 웹 인터페이스에 있습니다.
+[!DNL Google Analytics]의 웹 인터페이스에는 네 가지 다른 속성 모델을 수행할 수 있는 강력한 기능이 있습니다.
 
 1. 첫 번째 클릭
 1. 마지막 클릭
@@ -63,10 +63,10 @@ URL에 UTM 매개 변수가 지정되면 구문 분석되어 [!DNL Google Analyt
 
 ## 관련 설명서
 
-* [다음을 통해 주문 참조 소스 추적 [!DNL Google Analytics] 전자 상거래](../importing-data/integrations/google-ecommerce.md)
+* [ [!DNL Google Analytics] E-Commerce을 통해 주문 참조 소스 추적](../importing-data/integrations/google-ecommerce.md)
 * [데이터베이스에서 사용자 조회 소스 추적](../analysis/google-track-user-acq.md)
 * [데이터베이스에서 사용자 장치, 브라우저 및 OS 데이터 추적](../analysis/google-track-user-acq.md)
 * [가장 가치 있는 확보 소스 및 채널 살펴보기](../analysis/most-value-source-channel.md)
-* [연결 [!DNL Google Adwords] account](../importing-data/integrations/google-adwords.md)
+* [ [!DNL Google Adwords] 계정 연결](../importing-data/integrations/google-adwords.md)
 * [광고 캠페인에 대한 ROI 향상](../analysis/roi-ad-camp.md)
-* [의 UTM 태그 지정에 대한 5가지 우수 사례 [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)
+* [ [!DNL Google Analytics]의 UTM 태그 지정에 대한 5가지 모범 사례](../../best-practices/utm-tagging-google.md)

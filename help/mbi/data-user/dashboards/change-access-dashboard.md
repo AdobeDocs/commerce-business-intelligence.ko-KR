@@ -13,4 +13,4 @@ ht-degree: 0%
 
 # 공유 대시보드에 대한 액세스 변경
 
-대시보드에 대한 액세스는 동일한 단계를 사용하여 언제든지 변경할 수 있습니다. [처음에 대시보드 공유](../../data-user/dashboards/share-dashboard-with-users.md){: target=&quot;_blank&quot;}. 에 표시되는 사용자 목록 `Share Dashboard` 메뉴를 클릭하고 필요에 따라 사용자/조직 권한을 업데이트한 다음 **[!UICONTROL Save Changes]** 업데이트하기.
+대시보드에 대한 액세스는 [처음에 대시보드를 공유](../../data-user/dashboards/share-dashboard-with-users.md){: target=&quot;_blank&quot;}하기 위해 동일한 단계를 사용하여 언제든지 변경할 수 있습니다. `Share Dashboard` 메뉴에 표시되는 사용자 목록에서 필요에 따라 사용자/조직 권한을 업데이트하고 **[!UICONTROL Save Changes]**&#x200B;을(를) 클릭하여 업데이트합니다.

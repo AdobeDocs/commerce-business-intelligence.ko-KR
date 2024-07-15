@@ -6,22 +6,22 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '1932'
+source-wordcount: '1950'
 ht-degree: 0%
 
 ---
 
 # 기본 제공 대시보드
 
-[!DNL Adobe Commerce Intelligence] 에는 비즈니스에 대한 통찰력을 제공하는 기본 제공 대시보드가 포함되어 있습니다. 대시보드를 사용하면 사용자 라이프타임 수익, 반복 구매 횟수, 지정된 기간 동안 구매한 상위 제품 등과 같은 필수 지표의 상태를 확인할 수 있습니다. 사전 구성된 이러한 대시보드는 정보에 입각한 비즈니스 결정을 내리는 데 도움을 주기 위해 작성되었습니다.
+[!DNL Adobe Commerce Intelligence]에는 비즈니스에 대한 통찰력을 제공하는 기본 제공 대시보드가 포함되어 있습니다. 대시보드를 사용하면 사용자 라이프타임 수익, 반복 구매 횟수, 지정된 기간 동안 구매한 상위 제품 등과 같은 필수 지표의 상태를 확인할 수 있습니다. 사전 구성된 이러한 대시보드는 정보에 입각한 비즈니스 결정을 내리는 데 도움을 주기 위해 작성되었습니다.
 
 >[!NOTE]
 >
->이러한 대시보드에 대한 액세스는 계정 유형 및 액세스 수준에 따라 다릅니다. 이러한 대시보드가 표시되지 않으면 다음으로 문의하십시오. [지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+>이러한 대시보드에 대한 액세스는 계정 유형 및 액세스 수준에 따라 다릅니다. 이 대시보드가 표시되지 않으면 [지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)에 문의하십시오.
 
 ## 보고서 가용성
 
-의 경우 `Customers` 및 `Executive Summary` 대시보드, 일부 보고서는 저장소의 체크아웃 구성에 따라서만 사용할 수 있습니다. 특히 스토어에서 게스트 체크아웃을 허용하거나 게스트 체크아웃을 허용하지 않는 경우.
+`Customers` 및 `Executive Summary` 대시보드의 경우 일부 보고서는 스토어의 체크아웃 구성에 따라서만 사용할 수 있습니다. 특히 스토어에서 게스트 체크아웃을 허용하거나 게스트 체크아웃을 허용하지 않는 경우.
 
 ## 고객(게스트 체크아웃 허용)
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 | `Time Between Orders` | 주문 번호별로 구분된 주문 간 평균 및 중간 시간(즉, 주문 1과 2, 2와 3 사이의 시간). |
 | `Number of Customers - Lifetime Orders` | 고객 라이프타임에 지정된 주문 수의 경우 해당 많은 주문을 한 고객의 수와 해당 숫자가 나타내는 전체 고객 기준의 백분율입니다. |
 | `One-Time Customers who Bought 3-6 Months Ago` | 3~6개월 전에 처음 구입하고 구입만 한 고객. |
-| `Avg LTV by First Order` | 집단 간 누적 평균 고객 생애 매출을 비교합니다. 집단은 고객이 처음 구매한 월로 정의됩니다. 예: `Jan 2020` 코호트는 2020년 1월에 첫 구매가 이루어진 고객의 누적 평균 LTV를 보여 준다. |
+| `Avg LTV by First Order` | 집단 간 누적 평균 고객 생애 매출을 비교합니다. 집단은 고객이 처음 구매한 월로 정의됩니다. 예를 들어 `Jan 2020` 집단은 2020년 1월에 첫 구매가 이루어진 고객의 누적 평균 LTV를 표시합니다. |
 | `Customer's First 30 Day vs Lifetime Revenue` | 첫 구매 후 30일 동안의 고객 평균 매출과 전체 라이프타임 간의 평균 매출의 비교. 각 버블은 배송 지역에 해당하며, 각 버블의 크기는 해당 지역에서 취득한 고객의 수를 나타낸다. |
 
 ## 고객(게스트 체크아웃이 허용되지 않음)
@@ -133,7 +133,7 @@ ht-degree: 0%
 
 ## 제품
 
-제품 대시보드에는 주문 제품, 총 상품 가격(GMV) 및 구매 및 환불 상위 제품에 대한 일반 제품 성능이 표시됩니다. 구매와 수익의 균형을 맞추고, 제품의 성공과 인기를 결정하는 데 도움이 될 수 있습니다. 스토어는 다음과 같아야 합니다. [환불을 추적하도록 구성됨](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html) 을 참조하십시오.
+제품 대시보드에는 주문 제품, 총 상품 가격(GMV) 및 구매 및 환불 상위 제품에 대한 일반 제품 성능이 표시됩니다. 구매와 수익의 균형을 맞추고, 제품의 성공과 인기를 결정하는 데 도움이 될 수 있습니다. 이러한 차트를 채우려면 [환불을 추적하도록 구성](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html)해야 합니다.
 
 >[!NOTE]
 >

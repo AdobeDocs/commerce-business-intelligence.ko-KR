@@ -16,10 +16,10 @@ ht-degree: 0%
 쿼리를 디자인하고 데이터 분석을 위한 직접 방문자가 되는 데 익숙합니다. 데이터 질문에 대한 구체적인 답변을 찾는 방법을 알고 있으며 동료에게 셀프서비스 경험을 제공하기를 원합니다.
 
 이 섹션에서는 다음 방법을 보여 줍니다.
-* 데이터 연결 및 가져오기 [!DNL Commerce Intelligence]
+* [!DNL Commerce Intelligence]에 데이터 연결 및 가져오기
 * Data Warehouse에서 데이터가 저장되고 구조화되는 방식 보기
 * 데이터 분석
-* 사용 [!DNL SQL Report Builder]
+* [!DNL SQL Report Builder] 사용
 
 ## 관련 항목
 

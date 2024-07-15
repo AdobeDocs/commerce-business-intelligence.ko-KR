@@ -6,7 +6,7 @@ role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '309'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,13 @@ ht-degree: 0%
 
 ![](../../assets/exp-lifetim-value-anyalysis.png)
 
-이 분석은 새 아키텍처에 대한 Pro 계정 고객만 사용할 수 있습니다. 계정에 대한 액세스 권한이 있는 경우 `Persistent Views` 아래 기능 `Manage Data` 사이드바에서는 새 아키텍처를 기반으로 하며 여기에 나열된 지침에 따라 분석을 직접 작성할 수 있습니다.
+이 분석은 새 아키텍처에 대한 Pro 계정 고객만 사용할 수 있습니다. 계정에 `Manage Data` 사이드바 아래의 `Persistent Views` 기능에 대한 액세스 권한이 있는 경우 새 아키텍처를 사용하게 되며 여기에 나열된 지침에 따라 이 분석을 직접 빌드할 수 있습니다.
 
-시작하기 전에 다음을 숙지해야 합니다. [집단 report builder.](../dev-reports/cohort-rpt-bldr.md)
+시작하기 전에 [집단 보고서 빌더](../dev-reports/cohort-rpt-bldr.md)를 숙지해야 합니다.
 
 ## 계산된 열
 
-에 만들 열 **주문 수** 사용할 경우 테이블 **30일 개월**:
+**30일 월**&#x200B;을(를) 사용하는 경우 **주문** 테이블에 만들 열:
 
 * [!UICONTROL Column name]: `Months between first order and this order`
 * [!UICONTROL Column type]: `Same Table`
@@ -43,7 +43,7 @@ ht-degree: 0%
   [!UICONTROL Datatype]: `Integer`
 * 정의: `case when created_at is null then null else (ceil((extract(epoch from current_timestamp) - extract(epoch from created_at))/2629800))::int end`
 
-에 만들 열 **`orders`** 사용할 경우 테이블 **달력** 개월:
+**달력**&#x200B;개월을 사용하는 경우 **`orders`** 테이블에 만들 열:
 
 * [!UICONTROL Column name]: `Calendar months between first order and this order`
 * [!UICONTROL Column type]: `Same Table`
@@ -81,17 +81,17 @@ ht-degree: 0%
 
 생성할 지표
 
-* **첫 번째 주문 날짜별 고유 고객**
-   * 게스트 주문을 활성화하면 `customer_email`
+* **첫 주문 날짜별 고유 고객 수**
+   * 게스트 주문을 사용하도록 설정하는 경우 `customer_email`을(를) 사용합니다.
 
-* 다음에서 **`orders`** 표
-* 이 지표는 다음을 수행합니다. **고유 값 계산**
-* 다음에서 **`customer_id`** 열
-* 정렬 기준: **`Customer's first order date`** timestamp
+* **`orders`** 테이블에서
+* 이 지표는 **고유 값 계산**&#x200B;을 수행합니다.
+* **`customer_id`** 열에서
+* **`Customer's first order date`** 타임스탬프로 정렬됨
 
 >[!NOTE]
 >
->다음을 확인하십시오. [새 열을 지표에 차원으로 추가](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) 새 보고서를 작성하기 전에
+>새 보고서를 작성하기 전에 [모든 새 열을 지표에 차원으로 추가](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md)하십시오.
 
 ## 보고서
 
@@ -100,7 +100,7 @@ ht-degree: 0%
 **월별 고객당 예상 매출**
 
 * 지표 `A`: `Revenue (hide)`
-   * `Calendar months between first order and this order` `<= X` (예를 들어 24개월과 같이 X에 적합한 숫자를 선택하십시오.)
+   * `Calendar months between first order and this order` `<= X`(24개월 등 X에 적합한 숫자 선택)
    * `Is in current month?` = `No`
 
 * 
@@ -130,13 +130,13 @@ ht-degree: 0%
 * [!UICONTROL Time period]: `All time`
 * 시간 간격: `None`
 * [!UICONTROL Group by]: `Calendar months between first order and this order` - 모두 표시
-* 변경 `group by` 대상: `All time customers` 지표 옆에 있는 연필 아이콘을 사용하여 독립적입니다. `group by`
-* 편집 `Show top/bottom` 다음과 같은 필드:
+* `group by` 옆에 있는 연필 아이콘을 사용하여 `All time customers` 지표에 대한 `group by`을(를) 독립형으로 변경합니다.
+* `Show top/bottom` 필드를 다음과 같이 편집합니다.
    * [!UICONTROL Revenue]: `Top 24 sorted by Calendar months between first order and this order`
    * [!UICONTROL All time customers]: `Top 24 sorted by All time customers`
    * [!UICONTROL All time customers by month since first order]: `Top 24 sorted by All time customers by month since first order`
 
-**집단에 의한 월별 평균 수익**
+**집단별 월간 평균 수익**
 
 * 지표 `A`: `Revenue`
 * 
@@ -144,7 +144,7 @@ ht-degree: 0%
 * [!UICONTROL Cohort date]: `Customer's first order date`
 * [!UICONTROL Perspective]: `Average value per cohort member`
 
-**집단에 의한 월별 평균 누적 수익**
+**집단별 월별 평균 누적 수익**
 
 * 지표 `A`: `Revenue`
 * 
@@ -154,4 +154,4 @@ ht-degree: 0%
 
 모든 보고서를 컴파일한 후 원하는 대로 대시보드에서 구성할 수 있습니다. 결과는 페이지 상단에 있는 이미지와 비슷할 수 있습니다.
 
-이 분석을 작성하는 동안 질문이 발생하거나 Professional Services 팀의 도움을 얻고자 하는 경우 [연락처 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+이 분석을 작성하는 동안 질문이 있거나 Professional Services 팀에 문의하려는 경우 [지원 팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하십시오.

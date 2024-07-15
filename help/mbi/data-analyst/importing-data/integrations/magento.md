@@ -11,18 +11,18 @@ ht-degree: 0%
 
 ---
 
-# 연결 [!DNL Adobe Commerce]
+# [!DNL Adobe Commerce] 연결
 
 >[!NOTE]
 >
->필요 [관리자 권한](../../../administrator/user-management/user-management.md).
+>[관리자 권한](../../../administrator/user-management/user-management.md)이 필요합니다.
 
-비즈니스의 성과를 확인하거나 가장 중요한 확보 소스 및 채널을 찾고 싶으십니까? 연결 중 [!DNL Adobe Commerce] 데이터 받는 사람 [!DNL Commerce Intelligence] 을(를) 통해 이러한 질문에 답변할 수 있습니다.
+비즈니스의 성과를 확인하거나 가장 중요한 확보 소스 및 채널을 찾고 싶으십니까? [!DNL Adobe Commerce] 데이터를 [!DNL Commerce Intelligence]에 연결하면 이러한 질문에 답변할 수 있습니다.
 
-다음으로: [!DNL Adobe Commerce] 데이터베이스는 MySQL을 기반으로 하므로 [!DNL Commerce Intelligence] 다음을 통해: [직접 연결](../integrations/mysql-via-a-direct-connection.md), [[!DNL cPanel]](../integrations/mysql-via-cpanel.md), 또는 [SSH 터널을 통해](../integrations/mysql-via-ssh-tunnel.md). SSH 메서드는 가장 안전하므로 사용하는 것이 좋습니다.
+[!DNL Adobe Commerce] 데이터베이스는 MySQL을 기반으로 하므로 SSH 터널을 통해 [직접 연결](../integrations/mysql-via-a-direct-connection.md), [[!DNL cPanel]](../integrations/mysql-via-cpanel.md) 또는 [을(를) 통해 [!DNL Commerce Intelligence]에 연결할 수 있습니다](../integrations/mysql-via-ssh-tunnel.md). SSH 메서드는 가장 안전하므로 사용하는 것이 좋습니다.
 
 ## 관련 정보
 
-* [예상 상거래 데이터](../integrations/magento-data.md)
+* [예상 Commerce 데이터](../integrations/magento-data.md)
 * [세분화 및 필터링에 권장되는 데이터 차원](../../../best-practices/segment-filter.md)
 * [가장 중요한 확보 소스 및 채널은 무엇입니까?](../../analysis/most-value-source-channel.md)

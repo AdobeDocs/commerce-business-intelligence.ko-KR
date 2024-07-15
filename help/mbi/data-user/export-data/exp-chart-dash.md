@@ -22,6 +22,6 @@ ht-degree: 0%
 - `Full Excel Export`
 - `Raw Export`
 
-다음을 정의할 수도 있습니다 [내보내기에 포함할 테이블 및 열](../../tutorials/export-raw-data.md).
+내보내기에 포함할 [테이블 및 열](../../tutorials/export-raw-data.md)을(를) 정의할 수도 있습니다.
 
-프레젠테이션이나 문서에 차트를 포함해야 하는 경우 차트를 PNG, PDF 또는 SVG 형식의 이미지로 내보낼 수 있습니다. 차트의 오른쪽 위 모서리에 있는 톱니바퀴 아이콘을 클릭합니다. 다음 항목 선택 `Enlarge` 드롭다운에서 옵션을 선택한 다음 **[!UICONTROL Download]** 내보내기를 완료합니다.
+프레젠테이션이나 문서에 차트를 포함해야 하는 경우 차트를 PNG, PDF 또는 SVG 형식의 이미지로 내보낼 수 있습니다. 차트의 오른쪽 위 모서리에 있는 톱니바퀴 아이콘을 클릭합니다. 드롭다운에서 `Enlarge` 옵션을 선택한 다음 **[!UICONTROL Download]**&#x200B;을(를) 클릭하여 내보내기를 완료합니다.

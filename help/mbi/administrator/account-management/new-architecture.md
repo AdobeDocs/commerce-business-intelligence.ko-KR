@@ -6,14 +6,14 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Import/Export
 source-git-commit: ddda796c9f32d22b1d679fc245eb11b92cd491cf
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
 
 # 새로운 아키텍처
 
-[!DNL Adobe Commerce Intelligence] 제품 및 엔지니어링 팀은 지난 한 해 동안 가장 광범위하고 많이 요청된 개선 사항을 만드는 데 주력해 왔습니다. Adobe은 새로운 제품의 출시를 발표하게 되어 매우 기쁩니다 [!DNL Commerce Intelligence] 이러한 개선 사항을 실현하는 제품 아키텍처.
+[!DNL Adobe Commerce Intelligence] 제품 및 엔지니어링 팀은 지난 한 해 동안 가장 광범위하고 많이 요청된 개선 사항을 만드는 데 주력했습니다. Adobe은 이러한 개선 사항을 실현하는 새로운 [!DNL Commerce Intelligence] 제품 아키텍처를 사용할 수 있음을 기쁘게 발표합니다.
 
 ## 새로운 아키텍처의 이점
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 ### 도움말 보기
 
-다음 [!DNL Adobe Commerce Intelligence] [서비스 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 은 추가 비용으로 재구현을 수행할 수 있습니다. 다음으로 연락 [Adobe 계정 팀](../../guide-overview.md#Submitting-a-Support-Ticket) 새 계정에서 만들기 전에 우선 순위를 지정할 대시보드/보고서 목록을 제공할 준비를 하십시오
+[!DNL Adobe Commerce Intelligence] [서비스 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)은(는) 추가 비용으로 재구현을 수행할 수 있습니다. [Adobe 계정 팀](../../guide-overview.md#Submitting-a-Support-Ticket)에 연락하여 새 계정에서 만들기 우선 순위를 지정할 대시보드/보고서 목록을 제공할 준비를 하십시오
 
 ### 기존 아키텍처 유지
 

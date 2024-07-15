@@ -11,15 +11,15 @@ ht-degree: 0%
 
 ---
 
-# 헬프 데스크 보고 [!DNL Zendesk]
+# [!DNL Zendesk]에 대한 안내 데스크 보고
 
 >[!NOTE]
 >
->에 있는 클라이언트에만 사용할 수 있습니다. `Pro` 새 아키텍처를 계획하고 사용합니다. 다음과 같은 경우 새 아키텍처를 사용합니다. `Data Warehouse Views` 선택 후 사용 가능한 섹션 `Manage Data` 기본 도구 모음에서
+>`Pro` 플랜에 있으며 새 아키텍처를 사용하는 클라이언트에만 사용할 수 있습니다. 기본 도구 모음에서 `Manage Data`을(를) 선택한 후 `Data Warehouse Views` 섹션을 사용할 수 있는 경우 새 아키텍처를 사용합니다.
 
-통합 [!DNL Zendesk] 트랜잭션 데이터베이스를 사용하는 데이터는 고객이 영업 팀 또는 고객 성공 팀과 상호 작용하는 방법을 더 잘 이해할 수 있는 탁월한 방법입니다. 또한 지원 플랫폼을 사용하는 고객 유형을 파악하는 데 도움이 됩니다. 이 항목에서는 대시보드를 설정하여 다음에 대한 세부 보고서를 얻는 방법을 보여 줍니다. [!DNL Zendesk] 트랜잭션 고객의 성능 및 연결.
+트랜잭션 데이터베이스에 [!DNL Zendesk] 데이터를 통합하면 고객이 영업 팀 또는 고객 성공 팀과 상호 작용하는 방식을 더 잘 이해할 수 있습니다. 또한 지원 플랫폼을 사용하는 고객 유형을 파악하는 데 도움이 됩니다. 이 항목에서는 대시보드를 설정하여 [!DNL Zendesk] 성능 및 트랜잭션 고객의 관계에 대한 세부 보고서를 얻는 방법을 보여 줍니다.
 
-시작하기 전에 [[!DNL Zendesk]](../integrations/zendesk.md). 이 분석에는 다음이 포함됩니다. [고급 계산 열](../../data-warehouse-mgr/adv-calc-columns.md).
+시작하기 전에 [[!DNL Zendesk]](../integrations/zendesk.md)에 연결해야 합니다. 이 분석에는 [고급 계산 열](../../data-warehouse-mgr/adv-calc-columns.md)이(가) 포함되어 있습니다.
 
 <!-- Getting Started -->
 
@@ -27,14 +27,14 @@ ht-degree: 0%
 
 ### 추적할 열
 
-* `audits` 표
+* `audits` 테이블
 * `_id`
 * `created_at`
 * `id`
 * `ticket_id`
 * `_updated_at`
 
-* `audits_~_events` 표
+* `audits_~_events` 테이블
 * `_sub_id`
 * `_id_of_parent`
 * `author_id`
@@ -43,7 +43,7 @@ ht-degree: 0%
 * `type`
 * `value`
 
-* `tickets` 표
+* `tickets` 테이블
 * `_id`
 * `assignee_id`
 * `created_at`
@@ -54,7 +54,7 @@ ht-degree: 0%
 * `via_~_source_~_from_~_address`
 * `_updated_at`
 
-* `users` 표
+* `users` 테이블
 * `_id`
 * `created_at`
 * `emails`
@@ -65,7 +65,7 @@ ht-degree: 0%
 
 ### 생성할 필터 세트
 
-* `[!DNL Zendesk] Tickets` 표
+* `[!DNL Zendesk] Tickets` 테이블
    * `status != deleted`
 
 * `Filter set name`: `Tickets we count`
@@ -75,38 +75,38 @@ ht-degree: 0%
 
 ### 생성할 열
 
-* **`[!DNL Zendesk] user's`** 표
+* **`[!DNL Zendesk] user's`** 테이블
    * `User is agent? (Yes/No) `
    * 
       * `Column type` - `Same Table > Calculation`
 
       * `Input columns` - `role`, `email`
 
-      * `SQL Calculation` `- case when `A` is not `null` and `A!=`end-user` 그러면 `Yes` 조건 `B` 은(는) 아님 `null` 및 `B` 좋아요 `%@magento.com` 그러면 `Yes` else `No` 종료
+      * `SQL Calculation` `- case when `A` is not `null` and `A!=`end-user` then `Yes` when `B`이(가) `null`이(가) 아닌 경우 `B` like `%@magento.com` then `Yes` else `No` end
 
-      * 바꾸기 `@magento.com` 도메인 포함
+      * `@magento.com`을(를) 도메인으로 바꾸기
 
       * `Datatype` - `String`
 
-* **`[!DNL Zendesk] audits_~_events`** 표
+* **`[!DNL Zendesk] audits_~_events`** 테이블
    * 정의 선택: `Joined Column`
    * [!UICONTROL Create Path]:
    * [!UICONTROL Many]: `[!DNL Zendesk] audits_~_events.author_id8`
    * [!UICONTROL One]: `[!DNL Zendesk] users.id`
 
-   * 선택 [!UICONTROL table]: `[!DNL Zendesk] users`
-   * 선택 [!UICONTROL column]: `User is agent? (Yes/No)`
+   * [!UICONTROL table] 선택: `[!DNL Zendesk] users`
+   * [!UICONTROL column] 선택: `User is agent? (Yes/No)`
    * [!UICONTROL Path]: `[!DNL Zendesk] audits_~_events.author_id = [!DNL Zendesk] users.id`
 
 * **`Author is agent? (Yes/No)`**
 
-* **`[!DNL Zendesk] audits`** 표
+* **`[!DNL Zendesk] audits`** 테이블
    * 정의 선택: `Exists`
    * [!UICONTROL Create Path]:
    * [!UICONTROL Many]: `[!DNL Zendesk] audits_~_events._id_of_parent`
    * [!UICONTROL One]: `[!DNL Zendesk] audits._id`
 
-   * 선택 [!UICONTROL table]: `[!DNL Zendesk] audits_~_events`
+   * [!UICONTROL table] 선택: `[!DNL Zendesk] audits_~_events`
    * [!UICONTROL Path]: `[!DNL Zendesk] audits_~_events._id_of_parent = [!DNL Zendesk] audits._id`
    * [!UICONTROL Filter]:
    * `field_name` = `status`
@@ -114,7 +114,7 @@ ht-degree: 0%
    * `value` = `solved`
 
    * 정의 선택: `Exists`
-   * 선택 [!UICONTROL table]: `[!DNL Zendesk] audits_~_events`
+   * [!UICONTROL table] 선택: `[!DNL Zendesk] audits_~_events`
    * [!UICONTROL Path]: `[!DNL Zendesk] audits_~_events._id_of_parent = [!DNL Zendesk] audits._id`
    * [!UICONTROL Filter]: `Author is agent? (Yes/No)`
    * `type` = `Comment`
@@ -123,19 +123,19 @@ ht-degree: 0%
 * **`Status changes to solved? (1/0)`**
 * **`Is agent comment? (1/0)`**
 
-* **`[!DNL Zendesk] Tickets`** 표
+* **`[!DNL Zendesk] Tickets`** 테이블
    * 정의 선택: `Joined Column`
    * [!UICONTROL Create Path]:
    * [!UICONTROL Many]: `[!DNL Zendesk] tickets.requester_id`
    * [!UICONTROL One]: `[!DNL Zendesk] users.id`
 
-   * 선택 [!UICONTROL table]: `[!DNL Zendesk] users`
-   * 선택 [!UICONTROL column]: `email`
+   * [!UICONTROL table] 선택: `[!DNL Zendesk] users`
+   * [!UICONTROL column] 선택: `email`
    * [!UICONTROL Path]: `[!DNL Zendesk] tickets.requester_id = [!DNL Zendesk] users.id`
 
    * 정의 선택: `Joined Column`
-   * 선택 [!UICONTROL table]: `[!DNL Zendesk] users`
-   * 선택 [!UICONTROL column]: `role`
+   * [!UICONTROL table] 선택: `[!DNL Zendesk] users`
+   * [!UICONTROL column] 선택: `role`
    * [!UICONTROL Path]: `[!DNL Zendesk] tickets.requester_id = [!DNL Zendesk] users.id`
 
    * 정의 선택: `Max`
@@ -143,15 +143,15 @@ ht-degree: 0%
    * [!UICONTROL Many]: `[!DNL Zendesk] audits.ticket_id`
    * [!UICONTROL One]: `[!DNL Zendesk] tickets.id`
 
-   * 선택 [!UICONTROL table]: `[!DNL Zendesk] audits`
-   * 선택 [!UICONTROL column]: `created_at`
+   * [!UICONTROL table] 선택: `[!DNL Zendesk] audits`
+   * [!UICONTROL column] 선택: `created_at`
    * [!UICONTROL Path]: `[!DNL Zendesk] audits.ticket_id = [!DNL Zendesk] tickets.id`
    * [!UICONTROL Filter]:
-   * `status` 이(가) (으)로 변경됨 `solved = 1`
+   * `status`이(가) `solved = 1`(으)로 변경됨
 
    * 정의 선택: `Min`
-   * 선택 [!UICONTROL table]: `[!DNL Zendesk] audits`
-   * 선택 [!UICONTROL column]: `created_at`
+   * [!UICONTROL table] 선택: `[!DNL Zendesk] audits`
+   * [!UICONTROL column] 선택: `created_at`
    * [!UICONTROL Path]: `[!DNL Zendesk] audits.ticket_id = [!DNL Zendesk] tickets.id`
    * [!UICONTROL Filter]:
    * `Is agent comment? = 1`
@@ -164,13 +164,13 @@ ht-degree: 0%
    * 
       * `Column type` - `Same Table > Date Difference`
 
-      * `Ticket's latest solved date` 빼기 `created_at`
+      * `Ticket's latest solved date` - `created_at`
 
 * **`Seconds to first response`**
    * 
       * `Column type` - `Same Table > Date Difference`
 
-      * `First agent response date` 빼기 `created_at`
+      * `First agent response date` - `created_at`
 
 * **`Requester's ticket number`**
    * 
@@ -182,7 +182,7 @@ ht-degree: 0%
 
 * **`Ticket created_at (hour of day)`**
    * 
-      * `Column type` - &quot;동일한 테이블 > 계산&quot;
+      * `Column type` - &quot;같은 테이블 > 계산&quot;
 
       * `Input columns` - `created_at`
 
@@ -192,22 +192,22 @@ ht-degree: 0%
 
 * **`Ticket created_at (day of week)`**
    * 
-      * `Column type` - &quot;동일한 테이블 > 계산&quot;
+      * `Column type` - &quot;같은 테이블 > 계산&quot;
 
       * `Input columns` - `created_at`
 
       * `Calculation` - `to_char(A,'D')||'. '||to_char(A,'Day')`
 
-     *`Datatype` – `String`
+     *`Datatype` - `String`
 
-* **`customer_entity`** 표
+* **`customer_entity`** 테이블
    * 정의 선택: `Count`
    * [!UICONTROL Create Path]:
    * [!UICONTROL Many]: `[!DNL Zendesk] tickets.email`
    * 
      [!UICONTROL One]: `customer_entity.email`
 
-   * 선택 [!UICONTROL table]: `[!DNL Zendesk] tickets`
+   * [!UICONTROL table] 선택: `[!DNL Zendesk] tickets`
    * [!UICONTROL Path]: `[!DNL Zendesk] tickets.email = customer_entity.email`
    * [!UICONTROL Filter]:
    * `Tickets we count`
@@ -215,82 +215,82 @@ ht-degree: 0%
 * **`User's lifetime number of support tickets requested`**
 * **`Has user filed a support ticket? (Yes/No)`**
    * 
-      * `Column type` - &quot;동일한 테이블 > 계산&quot;
+      * `Column type` - &quot;같은 테이블 > 계산&quot;
 
       * `Input columns` - `User's lifetime number of support tickets requested`
 
       * `Calculation` - `case when A>0 then 'Yes' else 'No' end`
 
-      * `Datatype` – `String`
+      * `Datatype` - `String`
 
-* **`[!DNL Zendesk] Tickets`** 표
+* **`[!DNL Zendesk] Tickets`** 테이블
    * 정의 선택: `Joined Column`
-   * 선택 [!UICONTROL table]: `customer_entity`
-   * 선택 [!UICONTROL column]: `User's lifetime number of support tickets requested`
+   * [!UICONTROL table] 선택: `customer_entity`
+   * [!UICONTROL column] 선택: `User's lifetime number of support tickets requested`
    * [!UICONTROL Path]: `[!DNL Zendesk] tickets.email = customer_entity.email`
 
 * **`Requester's lifetime number of support tickets`**
 
 ## 지표
 
-* **[!DNL Zendesk]새 티켓**
+* 새 티켓 **[!DNL Zendesk]개**
    * `Tickets we count`
 
-* 다음에서 **`[!DNL Zendesk] tickets`** 표
-* 이 지표는 다음을 수행합니다. **카운트**
-* 다음에서 **`id`** 열
-* 정렬 기준: **`created_at`** timestamp
+* **`[!DNL Zendesk] tickets`** 테이블에서
+* 이 지표는 **Count**&#x200B;을 수행합니다.
+* **`id`** 열에서
+* **`created_at`** 타임스탬프로 정렬됨
 * [!UICONTROL Filter]:
 
-* **[!DNL Zendesk]해결된 티켓**
+* 해결된 티켓 **[!DNL Zendesk]개**
    * `Tickets we count`
-   * 의 상태 `closed, solved`
+   * `closed, solved`의 상태
 
-* 다음에서 **`[!DNL Zendesk] tickets`** 표
-* 이 지표는 다음을 수행합니다. **카운트**
-* 다음에서 **`id`** 열
-* 정렬 기준: **`created_at`** timestamp
+* **`[!DNL Zendesk] tickets`** 테이블에서
+* 이 지표는 **Count**&#x200B;을 수행합니다.
+* **`id`** 열에서
+* **`created_at`** 타임스탬프로 정렬됨
 * [!UICONTROL Filter]:
 
-* **[!DNL Zendesk]티켓을 제출하는 고유 사용자**
+* **[!DNL Zendesk]명의 고유 사용자가 티켓을 정리함**
    * `Tickets we count`
 
-* 다음에서 **`[!DNL Zendesk] tickets`** 표
-* 이 지표는 다음을 수행합니다. **고유 개수**
-* 다음에서 **`requester_id`** 열
-* 정렬 기준: **`created_at`** timestamp
+* **`[!DNL Zendesk] tickets`** 테이블에서
+* 이 지표는 **고유 개수**&#x200B;를 수행합니다.
+* **`requester_id`** 열에서
+* **`created_at`** 타임스탬프로 정렬됨
 * [!UICONTROL Filter]:
 
-* **[!DNL Zendesk]평균/중간 티켓 해결 시간**
+* **[!DNL Zendesk]평균/중간 티켓 확인 시간**
    * `Tickets we count`
-   * 의 상태 `closed, solved`
+   * `closed, solved`의 상태
 
-* 다음에서 **`[!DNL Zendesk] tickets`** 표
-* 이 지표는 다음을 수행합니다. **평균(또는 중간값)**
-* 다음에서 **`Seconds to resolution`** 열
-* 정렬 기준: **`created_at`** timestamp
+* **`[!DNL Zendesk] tickets`** 테이블에서
+* 이 지표는 **평균(또는 중간값)**&#x200B;을 수행합니다.
+* **`Seconds to resolution`** 열에서
+* **`created_at`** 타임스탬프로 정렬됨
 * [!UICONTROL Filter]:
 
 * **[!DNL Zendesk]첫 번째 응답까지의 평균/중간 시간**
    * 카운트되는 티켓
    * 상태 IN 닫힘, 해결됨
 
-* 다음에서 **`[!DNL Zendesk] tickets`** 표
-* 이 지표는 다음을 수행합니다. **평균(또는 중간값)**
-* 다음에서 **`Seconds to first response`** 열
-* 정렬 기준: **`created_at`** timestamp
+* **`[!DNL Zendesk] tickets`** 테이블에서
+* 이 지표는 **평균(또는 중간값)**&#x200B;을 수행합니다.
+* **`Seconds to first response`** 열에서
+* **`created_at`** 타임스탬프로 정렬됨
 * [!UICONTROL Filter]:
 
 >[!NOTE]
 >
->다음을 확인하십시오. [새 열을 지표에 차원으로 추가](../../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) 새 보고서를 작성하기 전에
+>새 보고서를 작성하기 전에 [모든 새 열을 지표에 차원으로 추가](../../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md)하십시오.
 
 ### 보고서
 
 * **[!UICONTROL New/Open/Pending tickets]**
    * [!UICONTROL Metric]: `New Tickets`
    * [!UICONTROL Filter]:
-   * 의 상태 `new, open, pending`
+   * `new, open, pending`의 상태
 
 * 지표 `A`: `New tickets`
 * `Time period`: `All time`
@@ -300,7 +300,7 @@ ht-degree: 0%
 * **[!UICONTROL Closed/Solved tickets]**
    * [!UICONTROL Metric]: `New Tickets`
    * [!UICONTROL Filter]:
-   * 의 상태 `solved, closed`
+   * `solved, closed`의 상태
 
 * 지표 `A`: `New tickets`
 * `Time period`: `All time`
@@ -318,7 +318,7 @@ ht-degree: 0%
 * **[!UICONTROL Average time to resolution]**
    * [!UICONTROL Metric]: `Average time to resolution`
    * [!UICONTROL Filter]:
-   * 의 상태 `solved, closed`
+   * `solved, closed`의 상태
 
 * 지표 `A`: `Average time to resolution`
 * `Time period`: `All time`
@@ -356,7 +356,7 @@ ht-degree: 0%
 * **[!UICONTROL Time to resolution]**
    * [!UICONTROL Metric]: `Average time to resolution`
    * [!UICONTROL Filter]:
-   * 의 상태 `solved, closed`
+   * `solved, closed`의 상태
 
 * 지표 `A`: `Average time to resolution`
 * `Time period`: `All time`

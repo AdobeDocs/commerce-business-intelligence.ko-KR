@@ -1,21 +1,21 @@
 ---
 title: SQL 쿼리를 Commerce Intelligence 보고서로 번역
-description: Commerce Intelligence에서 사용하는 계산된 열, 지표로 SQL 쿼리를 변환하는 방법에 대해 알아봅니다.
+description: SQL 쿼리를 Commerce Intelligence에서 사용하는 계산된 열, 지표로 변환하는 방법에 대해 알아봅니다.
 exl-id: b3e3905f-6952-4f15-a582-bf892a971fae
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '933'
 ht-degree: 0%
 
 ---
 
 # Commerce Intelligence에서 SQL 쿼리 번역
 
-SQL 쿼리를 [계산된 열](../data-warehouse-mgr/creating-calculated-columns.md), [지표](../../data-user/reports/ess-manage-data-metrics.md), 및 [보고서](../../tutorials/using-visual-report-builder.md) 다음에서 을 사용합니다. [!DNL Commerce Intelligence]? SQL 사용자가 많은 경우 SQL이 변환되는 방식을 이해합니다. [!DNL Commerce Intelligence] 을(를) 통해 보다 스마트한 작업 수행 [Data Warehouse 관리자](../data-warehouse-mgr/tour-dwm.md) 및 를 최대한 활용하십시오. [!DNL Commerce Intelligence] 플랫폼.
+SQL 쿼리가 [!DNL Commerce Intelligence]에서 사용하는 [계산된 열](../data-warehouse-mgr/creating-calculated-columns.md), [지표](../../data-user/reports/ess-manage-data-metrics.md) 및 [보고서](../../tutorials/using-visual-report-builder.md)(으)로 변환되는 방식에 대해 궁금하셨습니까? SQL 사용자가 많은 경우 [!DNL Commerce Intelligence]에서 SQL을 변환하는 방법을 이해하면 [Data Warehouse 관리자](../data-warehouse-mgr/tour-dwm.md)에서 보다 효율적으로 작업하고 [!DNL Commerce Intelligence] 플랫폼을 최대한 활용할 수 있습니다.
 
-이 항목의 끝에 **변환 행렬** SQL 쿼리 절 및 [!DNL Commerce Intelligence] 요소.
+이 항목의 끝에 SQL 쿼리 절 및 [!DNL Commerce Intelligence] 요소에 대한 **변환 매트릭스**&#x200B;가 있습니다.
 
 일반 쿼리를 보고 시작하십시오.
 
@@ -23,43 +23,43 @@ SQL 쿼리를 [계산된 열](../data-warehouse-mgr/creating-calculated-columns.
 |--- |--- |
 | `SELECT` |  |
 | `a,` | 보고서 `group by` |
-| `SUM(b)` | `Aggregate function` (열) |
-| `FROM c` | `Source` 표 |
+| `SUM(b)` | `Aggregate function`(열) |
+| `FROM c` | `Source` 테이블 |
 | `WHERE` |  |
 | `d IS NOT NULL` | `Filter` |
 | `AND time < X`<br><br> `AND time >= Y` | 보고서 `time frame` |
 | `GROUP BY a` | 보고서 `group by` |
 
-이 예제에서는 대부분의 번역 사례를 다루지만 몇 가지 예외가 있습니다. 시작하는 방법 `aggregate` 함수는 번역됩니다.
+이 예제에서는 대부분의 번역 사례를 다루지만 몇 가지 예외가 있습니다. `aggregate` 함수를 변환하는 방법부터 시작하여 자세히 살펴보십시오.
 
 ## 집계 함수
 
-집계 함수(예: `count`, `sum`, `average`, `max`, `min`쿼리에서 의 형식을 가져옵니다. **지표 집계** 또는 **열 집계** 위치: [!DNL Commerce Intelligence]. 구별 요인은 응집을 수행하기 위해 가입이 필요한지 여부이다.
+쿼리의 집계 함수(예: `count`, `sum`, `average`, `max`, `min`)는 [!DNL Commerce Intelligence]에서 **지표 집계** 또는 **열 집계** 형식을 사용합니다. 구별 요인은 응집을 수행하기 위해 가입이 필요한지 여부이다.
 
 위의 각 예제를 참조하십시오.
 
 ## 지표 집계 {#aggregate}
 
-집계할 때 지표가 필요합니다 `within a single table`. 예를 들어 `SUM(b)` 위의 쿼리의 집계 함수는 열 합계를 나타내는 지표로 표시될 가능성이 높습니다 `B`. 
+`within a single table`을(를) 집계할 때 지표가 필요합니다. 예를 들어, 위의 쿼리의 `SUM(b)` 집계 함수는 열 `B`을(를) 합산하는 지표로 표시될 가능성이 높습니다. 
 
-이(가) `Total Revenue` 지표는에서 정의할 수 있습니다. [!DNL Commerce Intelligence]. 번역할 아래 쿼리를 참조하십시오.
+[!DNL Commerce Intelligence]에서 `Total Revenue` 지표를 정의하는 방법에 대한 특정 예를 살펴보십시오. 번역할 아래 쿼리를 참조하십시오.
 
 | | |
 |--- |--- |
 | `SELECT` |  |
-| `SUM(order_total) as "Total Revenue"` | `Metric operation` (열) |
-| `FROM orders` | `Metric source` 표 |
+| `SUM(order_total) as "Total Revenue"` | `Metric operation`(열) |
+| `FROM orders` | `Metric source` 테이블 |
 | `WHERE` |  |
 | `email NOT LIKE '%@magento.com'` | 지표 `filter` |
-| `AND created_at < X`<br><br>`AND created_at >= Y` | 지표 `timestamp` (및 보고 `time range`) |
+| `AND created_at < X`<br><br>`AND created_at >= Y` | 지표 `timestamp`(및 보고 `time range`) |
 
-을 클릭하여 지표 빌더로 이동합니다. **[!UICONTROL Manage Data** > **&#x200B;지표&#x200B;**> **새 지표 만들기]**, 먼저 적절한 을(를) 선택해야 합니다. `source` 테이블, 이 경우 `orders` 테이블. 그런 다음 지표가 아래와 같이 설정됩니다.
+**[!UICONTROL Manage Data** > **&#x200B;지표&#x200B;**> **새 지표 만들기]**&#x200B;를 클릭하여 지표 빌더로 이동합니다. 먼저 적절한 `source` 테이블을 선택해야 합니다. 이 테이블은 `orders` 테이블입니다. 그런 다음 지표가 아래와 같이 설정됩니다.
 
 ![지표 집계](../../assets/Metric_aggregation.png)
 
 ## 열 집계
 
-다른 테이블에서 조인된 열을 집계할 때는 계산된 열이 필요합니다. 따라서 예를 들어 `customer` 테이블 호출됨 `Customer LTV`: 의 해당 고객과 연관된 모든 주문의 총 값을 합계합니다. `orders` 테이블.
+다른 테이블에서 조인된 열을 집계할 때는 계산된 열이 필요합니다. 예를들어, `customer` 테이블에 `Customer LTV`(이)라는 열이 만들어져 `orders` 테이블에서 해당 고객과 관련된 모든 주문의 총 값을 합산할 수 있습니다.
 
 이 합계에 대한 쿼리는 다음과 같이 표시될 수 있습니다.
 
@@ -73,35 +73,35 @@ SQL 쿼리를 [계산된 열](../data-warehouse-mgr/creating-calculated-columns.
 | `ON c.customer_id = o.customer_id` | 경로 |
 | `WHERE o.status = 'success'` | 집계 필터 |
 
-에서 설정 중 [!DNL Commerce Intelligence] 를 사용하려면 Data Warehouse 관리자 를 사용하여 `orders` 및 `customers` 테이블을 만든 다음 라는 열을 만듭니다. `Customer LTV` 고객 테이블에서.
+이 설정을 [!DNL Commerce Intelligence]에서 설정하려면 Data Warehouse 관리자를 사용해야 합니다. 여기서 `orders` 테이블과 `customers` 테이블 사이에 경로를 만든 다음 고객의 테이블에 `Customer LTV`이라는 열을 만듭니다.
 
-다음 사이에 새 경로를 설정하는 방법 살펴보기 `customers` 및 `orders`. 최종 목표는 의 새 집계된 열을 만드는 것입니다. `customers` 테이블을 참조하려면 먼저 `customers` Data Warehouse에서 테이블을 만든 다음 **[!UICONTROL Create a Column** > **&#x200B;정의 선택&#x200B;**> **합계]**.
+`customers`과(와) `orders` 사이에 새 경로를 설정하는 방법을 살펴봅니다. 최종 목표는 `customers` 테이블에 새 집계된 열을 만드는 것이므로 먼저 Data Warehouse의 `customers` 테이블로 이동한 다음 **[!UICONTROL Create a Column** > **&#x200B;정의 선택&#x200B;**> **SUM]**&#x200B;을 클릭합니다.
 
-그런 다음 소스 테이블을 선택해야 합니다. 에 대한 경로가 존재하는 경우 `orders` 테이블에서 드롭다운에서 선택하기만 하면 됩니다. 그러나 새 경로를 만드는 경우 **[!UICONTROL Create new path]** 그리고 아래 화면이 표시됩니다.
+그런 다음 소스 테이블을 선택해야 합니다. `orders` 테이블에 경로가 있는 경우 드롭다운에서 해당 경로를 선택하면 됩니다. 그러나 새 경로를 만드는 경우 **[!UICONTROL Create new path]**&#x200B;을(를) 클릭하면 아래 화면이 표시됩니다.
 
 ![새 경로 만들기](../../assets/Create_new_path.png)
 
-여기서 결합하려는 두 테이블 간의 관계를 신중하게 고려해야 합니다. 이 경우 다음과 같은 문제가 발생할 수 있습니다 `Many` 연결된 주문 수 `One` customer, 따라서 `orders` 표는 다음에 나열됩니다. `Many` 반면에 `customers` 다음에서 선택된 테이블 `One` 옆이요.
+여기서 결합하려는 두 테이블 간의 관계를 신중하게 고려해야 합니다. 이 경우 `One` 고객과 연결된 주문이 `Many`개 있을 수 있으므로 `orders` 테이블은 `Many` 쪽에 나열되는 반면 `customers` 테이블은 `One` 쪽에서 선택됩니다.
 
 >[!NOTE]
 >
->위치 [!DNL Commerce Intelligence], a `path` 와 같음 `Join` SQL에서.
+>[!DNL Commerce Intelligence]에서 `path`은(는) SQL의 `Join`과(와) 같습니다.
 
-경로가 저장되면 다음을 만들 수 있습니다 `Customer LTV` 열! 아래를 참조하십시오.
+경로를 저장하면 `Customer LTV` 열을 만들 수 있습니다! 아래를 참조하십시오.
 
 ![](../../assets/Customer_LTV.gif)
 
-이제 새 을(를) 빌드했으므로 `Customer LTV` 의 열 `customers` 테이블, 다음을 만들 준비가 되었습니다. [지표 집계](#aggregate) 이 열 사용(예: 고객당 평균 LTV 찾기). 다음을 수행할 수도 있습니다. `group by` 또는 `filter` 를 기반으로 작성된 기존 지표를 사용하여 보고서에서 계산된 열 사용 `customers` 테이블.
+`customers` 테이블에 새 `Customer LTV` 열을 만들었으므로 이 열을 사용하여 [지표 집계](#aggregate)를 만들 준비가 되었습니다(예: 고객당 평균 LTV를 찾기 위해). `customers` 테이블에 빌드된 기존 지표를 사용하여 보고서에서 계산된 열을 기준으로 `group by` 또는 `filter`할 수도 있습니다.
 
 >[!NOTE]
 >
->후자의 경우 새 계산된 열을 작성할 때마다 다음을 수행해야 합니다 [기존 지표에 차원 추가](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 를 로 사용하기 전에 `filter` 또는 `group by`.
+>후자의 경우 새 계산된 열을 작성할 때마다 [기존 지표에 차원을 추가](../data-warehouse-mgr/manage-data-dimensions-metrics.md)해야 `filter` 또는 `group by`(으)로 사용할 수 있습니다.
 
-다음을 참조하십시오 [계산된 열 만들기](../data-warehouse-mgr/creating-calculated-columns.md) Data Warehouse 관리자 사용.
+Data Warehouse 관리자를 사용하여 [계산된 열 만들기](../data-warehouse-mgr/creating-calculated-columns.md)를 참조하십시오.
 
 ## `Group By` 절
 
-`Group By` 쿼리의 함수는에 자주 표시됩니다. [!DNL Commerce Intelligence] 시각적 보고서를 세그먼트화하거나 필터링하는 데 사용되는 열입니다. 예를 들어 을 다시 방문하겠습니다. `Total Revenue` 이전에 탐색한 쿼리이지만 이번에는 다음을 기준으로 매출을 세그먼트화합니다. `coupon\_code` 어떤 쿠폰이 가장 많은 매출을 창출하고 있는지 더 잘 이해하려면.
+쿼리의 `Group By` 함수는 종종 [!DNL Commerce Intelligence]에서 시각적 보고서를 세그먼트화하거나 필터링하는 데 사용되는 열로 표시됩니다. 예를 들어 이전에 탐색한 `Total Revenue` 쿼리를 다시 방문해보겠습니다. 하지만 이번에는 `coupon\_code`을(를) 기준으로 매출을 세분화하여 가장 많은 매출을 창출하는 쿠폰을 더 잘 이해합니다.
 
 아래 쿼리로 시작하십시오.
 
@@ -109,19 +109,19 @@ SQL 쿼리를 [계산된 열](../data-warehouse-mgr/creating-calculated-columns.
 |--- |--- |
 | `SELECT coupon_code,` | 보고서 `group by` |
 | `SUM(order_total) as "Total Revenue"` | `Metric operation`(열) |
-| `FROM orders` | `Metric source` 표 |
+| `FROM orders` | `Metric source` 테이블 |
 | `WHERE` |  |
 | `email NOT LIKE '%@magento.com'` | 지표 `filter` |
-| `AND created_at < '2016-12-01'` <br><br>`AND created_at >= '2016-09-01'` | 지표 `timestamp` (및 보고 `time range`) |
+| `AND created_at < '2016-12-01'` <br><br>`AND created_at >= '2016-09-01'` | 지표 `timestamp`(및 보고 `time range`) |
 | `GROUP BY coupon_code` | 보고서 `group by` |
 
 >[!NOTE]
 >
 >이전에 시작한 쿼리와 유일하게 다른 점은 group by로 &#39;coupon\_code&#39;를 추가한 것입니다._
 
-동일하게 사용 `Total Revenue` 이전에 만든 지표이므로 이제 쿠폰 코드로 세그먼트화된 매출 보고서를 만들 준비가 되었습니다! 9월부터 11월까지 데이터를 보고 이 시각적 보고서를 설정하는 방법을 보여 주는 아래 gif를 참조하십시오.
+이전에 만든 것과 동일한 `Total Revenue` 지표를 사용하여 이제 쿠폰 코드로 세그먼트화된 매출 보고서를 만들 준비가 되었습니다! 9월부터 11월까지 데이터를 보고 이 시각적 보고서를 설정하는 방법을 보여 주는 아래 gif를 참조하십시오.
 
-![쿠폰 코드별 수익](../../assets/Revenue_by_coupon_code.gif)
+![쿠폰 코드별 매출](../../assets/Revenue_by_coupon_code.gif)
 
 ## 공식
 
@@ -130,30 +130,30 @@ SQL 쿼리를 [계산된 열](../data-warehouse-mgr/creating-calculated-columns.
 * `AVG('order\_total')` 또는
 * `SUM('order\_total')/COUNT('order\_id')`
 
-전자의 방법은 의 평균을 수행하는 새 지표를 만드는 것입니다. `order\_total` 열. 그러나 후자의 메서드는 를 계산하도록 이미 지표가 설정되어 있다고 가정할 때 Report Builder에서 직접 만들 수도 있습니다 `Total Revenue` 및 `Number of orders`.
+이전 방법에는 `order\_total` 열에서 평균을 수행하는 새 지표를 만드는 작업이 포함됩니다. 그러나 `Total Revenue` 및 `Number of orders`을(를) 계산하기 위해 이미 지표가 설정되어 있다고 가정할 경우 후자의 메서드를 Report Builder에서 직접 만들 수 있습니다.
 
-한 걸음 물러서서 의 전체 쿼리를 살펴보십시오. `Average order value`:
+한 단계 뒤로 돌아가 `Average order value`에 대한 전체 쿼리를 살펴보십시오.
 
 | | |
 |--- |--- |
 | `SELECT` |  |
-| `SUM(order_total) as "Total Revenue"` | 지표 `operation` (열) |
-| `COUNT(order_id) as "Number of orders"` | 지표 `operation` (열) |
-| `SUM(order_total)/COUNT(order_id) as "Average order value"` | 지표 `operation` (열) / 지표 작업 (열) |
-| `FROM orders` | 지표 `source` 표 |
+| `SUM(order_total) as "Total Revenue"` | 지표 `operation`(열) |
+| `COUNT(order_id) as "Number of orders"` | 지표 `operation`(열) |
+| `SUM(order_total)/COUNT(order_id) as "Average order value"` | 지표 `operation`(열)/지표 작업(열) |
+| `FROM orders` | 지표 `source` 테이블 |
 | `WHERE` |  |
 | `email NOT LIKE '%@magento.com'` | 지표 `filter` |
 | `AND created_at < '2016-12-01'`<br><br>`AND created_at >= '2016-09-01'` | 지표 타임스탬프(및 보고 시간 범위) |
 
-이제 를 계산하기 위해 이미 지표가 설정되어 있다고 가정합니다. `Total Revenue` 및 `Number of orders`. 이러한 지표가 있으므로 `Report Builder` 및 를 사용하여 온디맨드 계산을 만듭니다. `Formula` 기능:
+이제 `Total Revenue` 및 `Number of orders`을(를) 계산하기 위해 이미 설정된 지표가 있다고 가정합니다. 이러한 지표가 있으므로 `Report Builder`을(를) 열고 `Formula` 기능을 사용하여 온디맨드 계산을 만들 수 있습니다.
 
-![AOV 포물라](../../assets/AOV_forumula.gif)
+![AOV 형식](../../assets/AOV_forumula.gif)
 
 ## 요약
 
-SQL 사용자가 많은 경우 쿼리가 번역되는 방식을 고려하십시오. [!DNL Commerce Intelligence] 를 사용하여 계산된 열, 지표 및 보고서를 작성할 수 있습니다.
+SQL 사용자가 많은 경우 [!DNL Commerce Intelligence]에서 쿼리가 변환되는 방식을 고려하면 계산된 열, 지표 및 보고서를 작성할 수 있습니다.
 
-빠른 참조를 위해 아래 표를 확인하십시오. SQL 절의 동등한 항목이 표시됩니다. [!DNL Commerce Intelligence] 요소 및 쿼리에서 사용하는 방법에 따라 두 개 이상의 요소에 매핑하는 방법을 설명합니다.
+빠른 참조를 위해 아래 표를 확인하십시오. SQL 절의 동등한 [!DNL Commerce Intelligence] 요소와 쿼리에서 사용하는 방법에 따라 둘 이상의 요소에 매핑하는 방법을 보여 줍니다.
 
 ## Commerce Intelligence 요소
 
@@ -162,6 +162,6 @@ SQL 사용자가 많은 경우 쿼리가 번역되는 방식을 고려하십시�
 | `SELECT` | X | - | X | - | - | X | - |
 | `FROM` | - | - | - | - | - | - | X |
 | `WHERE` | - | X | - | - | - | - | - |
-| `WHERE` (시간 요소 포함) | - | - | - | X | - | - | - |
+| `WHERE`(시간 요소 포함) | - | - | - | X | - | - | - |
 | `JOIN...ON` | - | X | - | - | X | X | - |
 | `GROUP BY` | - | - | X | - | - | - | - |

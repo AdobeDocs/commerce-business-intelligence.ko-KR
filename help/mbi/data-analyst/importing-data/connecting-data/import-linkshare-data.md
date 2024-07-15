@@ -1,43 +1,43 @@
 ---
 title: Linkshare 데이터 가져오기
-description: Linkshare 데이터를 로 가져오는 방법 알아보기 [!DNL Commerce Intelligence].
+description: Linkshare 데이터를  [!DNL Commerce Intelligence](으)로 가져오는 방법을 알아봅니다.
 exl-id: 1c2025a6-746c-4929-bbb1-62af1afcbc49
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '94'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
-# 가져오기 [!DNL Linkshare] 데이터
+# [!DNL Linkshare] 데이터 가져오기
 
-가져오려면 [!DNL Linkshare] 데이터 입력 [!DNL Adobe Commerce Intelligence], 다음 두 가지 작업을 수행해야 합니다.
+[!DNL Linkshare] 데이터를 [!DNL Adobe Commerce Intelligence](으)로 가져오려면 다음 두 가지 작업을 수행해야 합니다.
 
 1. [Linkshare 데이터 내보내기 ](#export)
-1. [스프레드시트를에 업로드합니다 [!DNL Commerce Intelligence]](../connecting-data/using-file-uploader.md)
+1. [스프레드시트를  [!DNL Commerce Intelligence]에 업로드](../connecting-data/using-file-uploader.md)
 
 ## Linkshare에서 데이터 내보내기 {#export}
 
-1. 내 [!DNL Linkshare] 계정, 다음으로 이동 **[!UICONTROL Reports** > **Run Reports].**
+1. [!DNL Linkshare] 계정에서 **[!UICONTROL Reports** > **Run Reports].**(으)로 이동
 
-1. 다음에서 `Report` 드롭다운, 선택 **[!UICONTROL Sales & Activity Report]**.
+1. `Report` 드롭다운에서 **[!UICONTROL Sales & Activity Report]**&#x200B;을(를) 선택합니다.
 
 1. 다른 모든 드롭다운 옵션을 기본 선택으로 둡니다.
 
-1. 다음에서 `Date Range` 드롭다운에서 원하는 옵션(`Sun - Sat`, `Mon - Sun`)는 와 일치합니다 `Start of Week` 의 설정 [!DNL Commerce Intelligence].
+1. `Date Range` 드롭다운에서 [!DNL Commerce Intelligence]의 `Start of Week` 설정과 일치하는 옵션(`Sun - Sat`, `Mon - Sun`)을 선택합니다.
 
-1. 지우기 `Compare Year-Over-Year Data` 확인란.
+1. `Compare Year-Over-Year Data` 확인란의 선택을 취소합니다.
 
-1. 아래 `Data Type`, 선택 `Transaction Date`.
+1. `Data Type`에서 `Transaction Date`을(를) 선택합니다.
 
    ![가져오기\_linkshare\_data.png](../../../assets/importing_linkshare_data.png)
 
-1. 클릭 **[!UICONTROL View Report]**.
+1. **[!UICONTROL View Report]**&#x200B;을(를) 클릭합니다.
 
-1. 클릭 **[!UICONTROL Download]**.
+1. **[!UICONTROL Download]**&#x200B;을(를) 클릭합니다.
 
    이 시점에서 `.csv` 파일을 다운로드했습니다.
 
-파일을 다운로드한 후에는에 업로드할 수 있습니다. [!DNL Commerce Intelligence] 사용 [`File Upload` 기능](../connecting-data/using-file-uploader.md).
+파일을 다운로드한 후 [`File Upload` 기능](../connecting-data/using-file-uploader.md)을 사용하여 [!DNL Commerce Intelligence]에 업로드할 수 있습니다.
