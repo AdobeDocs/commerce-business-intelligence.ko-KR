@@ -4,9 +4,9 @@ description: Adobe Commerce에서 사용할 수 있는  [!DNL Commerce Intellige
 breadcrumb-title: Commerce Intelligence 사용 안내서
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Business Performance
-source-git-commit: 2433a614e9858684842804a0ae29fb67f0d41ead
+source-git-commit: cea314102fb3b2164c1498ce1efa60e83c41b188
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '683'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,7 @@ ht-degree: 0%
       - [사용자 권한 관리](administrator/user-management/user-management.md)
       - [암호 재설정](../mbi/administrator/user-management/reset-password.md)
       - [지표 액세스 제한](../mbi/administrator/user-management/restrict-metric-access.md)
+      - [고급 사용자 관리](../mbi/administrator/user-management/advanced.md)
 - 데이터 분석 {#analyze}
    - [데이터 분석가](data-analyst.md)
    - Data Warehouse 관리자 {#warehouse-manager}
@@ -217,7 +218,7 @@ ht-degree: 0%
       - [데이터 작업](best-practices/work-data.md)
       - [ [!DNL Google Analytics]의 UTM 태그 지정](best-practices/utm-tagging-google.md)
       - [재무 데이터 서식 지정 및 가져오기](best-practices/format-import-financial-data.md)
-      - [세그먼테이션 및 필터링에 대한 권장 데이터 Dimension](best-practices/segment-filter.md)
+      - [세분화 및 필터링에 대한 권장 데이터 차원](best-practices/segment-filter.md)
       - [업데이트 주기 상태 확인](best-practices/check-update-cycle.md)
       - [업데이트 주기 시간 단축](best-practices/reduce-update-cycle-time.md)
       - [증분 복제를 지원하도록 데이터베이스 수정](best-practices/mod-db-inc-replication.md)
@@ -231,7 +232,7 @@ ht-degree: 0%
    - 대시보드 {#working-dashboards} 작업
       - [대시보드 공유](best-practices/share-dashboard-best-practice.md)
       - [투자자 대시보드 작성](best-practices/build-investor-dashboard.md)
-- Tutorials {#tutorials}
+- 튜토리얼 {#tutorials}
    - [ [!DNL Visual Report Builder] 사용](tutorials/using-visual-report-builder.md)
    - [ [!DNL Visual Report Builder]에서 시간 옵션 사용](tutorials/time-options-visual-rpt-bldr.md)
    - [ [!DNL SQL] 쿼리에 대한 시각화 만들기](tutorials/create-visuals-from-sql.md)
