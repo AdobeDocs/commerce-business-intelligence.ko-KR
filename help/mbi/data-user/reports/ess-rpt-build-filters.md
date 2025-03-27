@@ -4,9 +4,9 @@ description: 필터를 사용하는 방법을 알아봅니다.
 exl-id: eb683dfe-9a90-400a-a0c0-3dc00d1f28b5
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 0854d644cb72b3fc8b8b31a0bf7e8dca4cc99724
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '356'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ ht-degree: 0%
 
      ![필터링된 보고서](../../assets/magento-bi-report-builder-filter-report.png)<!--{: .zoom}-->
 
-1. 사이드바에서 원근(![](../../assets/magento-bi-btn-perspective.png)) 아이콘을 클릭합니다.
+1. 사이드바에서 원근(![원근 아이콘](../../assets/magento-bi-btn-perspective.png)) 아이콘을 클릭합니다.
 
    ![관점](../../assets/magento-bi-report-builder-filter-perspective.png)<!--{: .zoom}-->
 
