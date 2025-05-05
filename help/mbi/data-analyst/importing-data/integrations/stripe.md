@@ -39,7 +39,7 @@ ht-degree: 0%
 
 1. 자격 증명을 입력하고 **[!UICONTROL Sign in to your account]**&#x200B;을(를) 클릭합니다.
 
-1. 자격 증명이 확인되며 [!DNL Commerce Intelligence](으)로 다시 이동됩니다.
+1. 자격 증명이 확인되며 [!DNL Commerce Intelligence] (으)로 다시 이동됩니다.
 
 1. 연결이 성공하면 *연결이 성공합니다!* 메시지가 화면 맨 위에 나타납니다.
 

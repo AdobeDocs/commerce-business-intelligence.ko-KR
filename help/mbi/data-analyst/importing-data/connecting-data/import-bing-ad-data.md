@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL Bing] 데이터 가져오기
 
-분석을 위해 [!DNL Bing] 광고 지출 데이터를 [!DNL Adobe Commerce Intelligence](으)로 가져오려면 [!DNL Bing Ads Editor]의 데이터를 `.csv` 형식으로 내보내고 아래 단계에 따라 [!DNL Commerce Intelligence]에 업로드하면 됩니다.
+분석을 위해 [!DNL Bing] 광고 지출 데이터를 [!DNL Adobe Commerce Intelligence] (으)로 가져오려면 [!DNL Bing Ads Editor]의 데이터를 `.csv` 형식으로 내보내고 아래 단계에 따라 [!DNL Commerce Intelligence]에 업로드하면 됩니다.
 
 ## [!DNL Bing Ads Editor]
 

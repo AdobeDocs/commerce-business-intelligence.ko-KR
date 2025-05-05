@@ -16,7 +16,7 @@ ht-degree: 0%
 
 - [[!DNL Commerce Intelligence] 사용 안내서](guide-overview.md)
 - [[!DNL Commerce Intelligence] 소개](getting-started/getting-started.md)
-- {#start} 시작
+- 시작{#start}
    - [온보딩](getting-started/onboarding.md)
    - [ [!DNL Commerce Intelligence] 계정 활성화](getting-started/onpremise-activation.md)
    - [ [!DNL Commerce Intelligence] 계정에 로그인](getting-started/sign-in.md)
@@ -86,7 +86,7 @@ ht-degree: 0%
       - [ [!DNL Repeat Order Probability Report] 이해](data-analyst/dev-reports/repeat-order-probability.md)
       - [ [!DNL SQL Report Builder]을(를) 사용하여 지표 감사](data-analyst/dev-reports/audit-metrics-sql.md)
       - [ [!DNL SQL] 과(와) [!DNL Data Warehouse Manager] 사이의 열 차이점](data-analyst/dev-reports/columns-sql-dwm.md)
-   - {#connecting} 데이터를 연결하는 중
+   - 데이터를 연결하는 중{#connecting}
       - [소개](data-analyst/importing-data/connecting-data/connecting-data.md)
       - [eCommerce 데이터 서식 지정 및 가져오기](data-analyst/importing-data/connecting-data/format-import-ecom-data.md)
       - [ [!DNL Bing Ad Spend] 데이터 가져오기](data-analyst/importing-data/connecting-data/import-bing-ad-data.md)
@@ -171,7 +171,7 @@ ht-degree: 0%
       - [ [!DNL Google Analytics] UTM 속성 이해](data-analyst/analysis/utm-attributes.md)
       - [재고 레벨 분석](data-analyst/analysis/analyze-inventory-level.md)
       - [소매 달력 보고](data-analyst/analysis/report-retail-calendar.md)
-   - {#forecasting} 예측 중
+   - 예측 중{#forecasting}
       - [소개](data-analyst/analysis/forecasting.md)
 - 보고서 작성 및 데이터 공유 {#build}
    - [데이터 사용자](../mbi/data-user.md)
@@ -209,12 +209,12 @@ ht-degree: 0%
       - [공유 대시보드 액세스](data-user/dashboards/access-shared-dashboard.md)
       - [공유 대시보드에 대한 액세스 변경](data-user/dashboards/change-access-dashboard.md)
       - [대시보드 종료(공유 해제)](data-user/dashboards/leave-dashboard.md)
-   - {#share} 데이터 공유 중
+   - 데이터 공유 중{#share}
       - [데이터 공유](data-user/export-data/share-data.md)
       - [차트 데이터 내보내기](data-user/export-data/exp-chart-dash.md)
       - [자동화된 이메일 요약](data-user/export-data/email-summaries.md)
 - 모범 사례 {#best-practices}
-   - {#data} 데이터를 사용하여 작업
+   - 데이터를 사용하여 작업{#data}
       - [데이터 작업](best-practices/work-data.md)
       - [ [!DNL Google Analytics]의 UTM 태그 지정](best-practices/utm-tagging-google.md)
       - [재무 데이터 서식 지정 및 가져오기](best-practices/format-import-financial-data.md)
@@ -229,7 +229,7 @@ ht-degree: 0%
       - [ [!DNL Commerce Intelligence]에서 보고서 및 요소 이름 지정](best-practices/naming-elements.md)
       - [테이블 통합](best-practices/consolidating-your-tables.md)
       - [ [!DNL Commerce Intelligence] 계정 사용 안 함](best-practices/declutter-account.md)
-   - 대시보드 {#working-dashboards} 작업
+   - 대시보드 작업 {#working-dashboards}
       - [대시보드 공유](best-practices/share-dashboard-best-practice.md)
       - [투자자 대시보드 작성](best-practices/build-investor-dashboard.md)
 - 튜토리얼 {#tutorials}

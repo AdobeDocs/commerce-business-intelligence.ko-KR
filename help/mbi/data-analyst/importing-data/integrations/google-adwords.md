@@ -26,7 +26,7 @@ ht-degree: 0%
 1. **데이터 관리 > 통합** 아래의 `Connections` 페이지로 이동합니다.
 1. 화면 오른쪽 상단에 있는 **통합 추가**&#x200B;를 클릭합니다.
 1. **[!DNL Google Adwords]** 아이콘을 클릭합니다. [!DNL Google Adwords] 자격 증명 페이지가 열립니다.
-1. [!DNL Google Analytics] 자격 증명을 입력하십시오. 인증 프로세스가 완료되면 다시 [!DNL Commerce Intelligence](으)로 리디렉션됩니다.
+1. [!DNL Google Analytics] 자격 증명을 입력하십시오. 인증 프로세스가 완료되면 다시 [!DNL Commerce Intelligence] (으)로 리디렉션됩니다.
 1. 프로필 ID 목록이 표시됩니다. [!DNL Commerce Intelligence]에 연결할 프로필을 확인하십시오.
 
    ![](../../../assets/cnnct-profile.png)

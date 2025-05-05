@@ -1,6 +1,6 @@
 ---
 title: CJ 계열사(커미션 정션) 마케팅 데이터 가져오기
-description: CJ 계열사(Commission Junction) 데이터를  [!DNL Commerce Intelligence].L Commerce Intelligence]에 가져오는 방법을 알아봅니다.
+description: CJ 계열사(Commission Junction) 데이터를  [!DNL Commerce Intelligence].L Commerce Intelligence&rbrack;에 가져오는 방법을 알아봅니다.
 exl-id: 1db83f34-15a1-4599-ab0a-65d527ccae01
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # [!DNL CJ Affiliate] 데이터 가져오기
 
-[!DNL CJ Affiliate (Commission Junction)] 데이터를 [!DNL Adobe Commerce Intelligence](으)로 가져오려면 아래 단계에 따라 결과 파일을 [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)에 첨부하기만 하면 됩니다. Adobe은 계정에 데이터 테이블을 설정하고 독립적으로 데이터를 계속 업로드할 수 있습니다.
+[!DNL CJ Affiliate (Commission Junction)] 데이터를 [!DNL Adobe Commerce Intelligence] (으)로 가져오려면 아래 단계에 따라 결과 파일을 [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)에 첨부하기만 하면 됩니다. Adobe은 계정에 데이터 테이블을 설정하고 독립적으로 데이터를 계속 업로드할 수 있습니다.
 
 ## [!DNL CJ Affiliate] 데이터 내보내기
 

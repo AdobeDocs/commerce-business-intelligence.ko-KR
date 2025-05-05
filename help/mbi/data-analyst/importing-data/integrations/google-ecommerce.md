@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ![](../../../assets/google-ecommerce-logo.png)
 
-트래픽과 주문의 흐름이 일정하기 때문에 효과적으로 고객을 확보하고 있습니다. 하지만 가장 가치 있는 추천 채널은 무엇입니까? 한 소스에서 다른 소스에서 획득한 고객의 평균 라이프타임 값은 얼마입니까? 주문 참조 원본 데이터를 [!DNL Google ECommerce]에서 [!DNL Commerce Intelligence](으)로 연결하면 [가장 가치 있는 마케팅 채널](../../../data-analyst/analysis/most-value-source-channel.md)을 식별하는 데 도움이 되는 분석을 빌드할 수 있습니다.
+트래픽과 주문의 흐름이 일정하기 때문에 효과적으로 고객을 확보하고 있습니다. 하지만 가장 가치 있는 추천 채널은 무엇입니까? 한 소스에서 다른 소스에서 획득한 고객의 평균 라이프타임 값은 얼마입니까? 주문 참조 원본 데이터를 [!DNL Google ECommerce]에서 [!DNL Commerce Intelligence] (으)로 연결하면 [가장 가치 있는 마케팅 채널](../../../data-analyst/analysis/most-value-source-channel.md)을 식별하는 데 도움이 되는 분석을 빌드할 수 있습니다.
 
 [!DNL Commerce Intelligence]에 [!DNL Google ECommerce] 자격 증명을 입력하여 시작하십시오.
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 1. [!DNL Google ECommerce] 아이콘을 클릭합니다. [!DNL Google ECommerce] 자격 증명 페이지가 열립니다.
 
-1. [!DNL Google Analytics] 자격 증명을 입력하십시오. 인증 프로세스가 완료되면 [!DNL Commerce Intelligence](으)로 다시 리디렉션됩니다.
+1. [!DNL Google Analytics] 자격 증명을 입력하십시오. 인증 프로세스가 완료되면 [!DNL Commerce Intelligence] (으)로 다시 리디렉션됩니다.
 
 1. 프로필 ID 목록이 표시됩니다. [!DNL Commerce Intelligence]에 연결할 프로필을 확인하십시오.
 

@@ -75,7 +75,7 @@ ht-degree: 0%
 여기에서 다음 계산을 수행합니다.
 
 
-_[등록 및 구매한 총 고객 수]_ / `Time between a customer's registration date and first purchase date`]의 합계[
+_[등록 및 구매한 총 고객 수]_ / `Time between a customer's registration date and first purchase date`&rbrack;의 합계&lbrack;
 
 고객의 등록 날짜에 따라 시간 경과나 추세를 통해 이 계산을 표시하려고 합니다. [!DNL Commerce Intelligence]에서 [이 지표를 만들기](../../data-user/reports/ess-manage-data-metrics.md)하는 방법은 다음과 같습니다.
 

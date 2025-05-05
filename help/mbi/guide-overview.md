@@ -17,7 +17,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce Intelligence]은(는) 이전에 [!DNL Magento Business Intelligence](으)로 알려져 있습니다. 현재 이 안내서에서 변경 사항을 캡처하기 위해 일련의 업데이트가 진행 중입니다.
+>[!DNL Adobe Commerce Intelligence]은(는) 이전에 [!DNL Magento Business Intelligence] (으)로 알려져 있습니다. 현재 이 안내서에서 변경 사항을 캡처하기 위해 일련의 업데이트가 진행 중입니다.
 
 데이터 관리자에는 두 가지 영역이 있습니다.
 

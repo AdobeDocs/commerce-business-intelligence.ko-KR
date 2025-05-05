@@ -392,7 +392,7 @@ ht-degree: 0%
 
 사용자 그룹을 구성하려면 다음 작업을 수행하십시오.
 
-1. 기존 사용자 그룹을 보려면 [!UICONTROL **사용자 관리**] > [!UICONTROL **User Groups]**로 이동하십시오.
+1. 기존 사용자 그룹을 보려면 [!UICONTROL **사용자 관리**] > [!UICONTROL **User Groups]**&#x200B;로 이동하십시오.
 
    ![사용자 그룹 구성](../../assets/configure-user-groups.png)
 

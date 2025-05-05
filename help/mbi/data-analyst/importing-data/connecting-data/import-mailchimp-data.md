@@ -1,6 +1,6 @@
 ---
 title: MailChimp 데이터 가져오기
-description: MailChimp 데이터를  [!DNL Commerce Intelligence](으)로 가져오는 방법을 알아봅니다.
+description: MailChimp 데이터를  [!DNL Commerce Intelligence] (으)로 가져오는 방법을 알아봅니다.
 exl-id: 5595c6a6-5476-4a0e-a493-ddc32161894e
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL Mailchimp] 데이터 가져오기
 
-캠페인 활동을 종합적으로 파악하려면 [!DNL Mailchimp] 이메일 캠페인 데이터를 [!DNL Commerce Intelligence](으)로 가져올 수 있습니다. 가져오기를 완료하려면 보유한 각 [!DNL Mailchimp] 캠페인에 대해 다음을 수행해야 합니다.
+캠페인 활동을 종합적으로 파악하려면 [!DNL Mailchimp] 이메일 캠페인 데이터를 [!DNL Commerce Intelligence] (으)로 가져올 수 있습니다. 가져오기를 완료하려면 보유한 각 [!DNL Mailchimp] 캠페인에 대해 다음을 수행해야 합니다.
 
 ## 열기 데이터 내보내기 {#opens}
 

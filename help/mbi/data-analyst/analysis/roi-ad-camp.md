@@ -42,10 +42,10 @@ ht-degree: 0%
 **1. 먼저 캠페인별로 광고 비용을 세그먼트화하는 차트를 만듭니다.**
 
 1. 시간에 따른 지출을 합산하는 [!UICONTROL Metric]을(를) 만듭니다.
-1. [!UICONTROL Data > Metrics](으)로 이동
+1. [!UICONTROL Data > Metrics] (으)로 이동
 1. `Add New Metric`을(를) 선택하고 [!DNL AdWords] 비용 데이터를 기록하는 [!DNL `Adwords...`] 테이블을 선택합니다.
 1. 지표 편집기에서 지표에 이름을 지정하십시오(예: [!UICONTROL AdWord Cost]).
-1. 드롭다운을 사용하여 `date` 열이 정렬한 [!DNL Adwords...] 테이블(변경)의 `adCost` 열에서 **Sum**을(를) 수행합니다.
+1. 드롭다운을 사용하여 `date` 열이 정렬한 [!DNL Adwords...] 테이블(변경)의 `adCost` 열에서 **Sum**&#x200B;을(를) 수행합니다.
    ![](../../assets/success-add-new-metric.png)<!--="500" height="303"}-->
 1. 맨 위에 있는 `Back to Metric List`을(를) 클릭하고 대시보드로 이동합니다.
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 1. 대시보드에서 [!UICONTROL Add Report > Create report]을(를) 클릭합니다.
 1. 방금 만든 [!UICONTROL Adword Cost] 지표 선택
 1. [!UICONTROL Time period]을(를) `All-time`(으)로 설정하고 [!UICONTROL Interval]을(를) `None`(으)로 설정합니다.
-1. `Group by` 탭에서 `campaign`을(를) [!UICONTROL grouping field](으)로 추가하고 상자에서 `Add All`을(를) 클릭합니다.
+1. `Group by` 탭에서 `campaign`을(를) [!UICONTROL grouping field] (으)로 추가하고 상자에서 `Add All`을(를) 클릭합니다.
 1. 이 보고서는 캠페인별 총 [!DNL AdWords] 비용을 보여 줍니다.
 
 **2. 캠페인별로 새 사용자를 계산하는 보고서를 만듭니다.**
@@ -69,7 +69,7 @@ ht-degree: 0%
 1. 대시보드에서 **[!UICONTROL Add Report > Create report]**&#x200B;을(를) 클릭합니다.
 1. 평균 사용자의 라이프타임 수익을 계산하는 `Average lifetime revenue` 지표를 선택하십시오.
 1. [!UICONTROL Time period]을(를) `All-time`(으)로 설정하고 [!UICONTROL Interval]을(를) `None`(으)로 설정합니다.
-1. `Group by` 탭에서 `campaign` 또는 `utm\_campaign`을(를) [!UICONTROL grouping field](으)로 추가하고 상자에서 `Add All`을(를) 클릭합니다
+1. `Group by` 탭에서 `campaign` 또는 `utm\_campaign`을(를) [!UICONTROL grouping field] (으)로 추가하고 상자에서 `Add All`을(를) 클릭합니다
 1. 이 보고서는 캠페인별 평균 사용자 라이프타임 매출을 보여 줍니다
 
 **마지막으로 다음 세 가지 분석을 하나의 보고서에 모아 캠페인 ROI를 계산하십시오.**

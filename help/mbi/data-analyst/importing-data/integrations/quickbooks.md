@@ -35,7 +35,7 @@ ht-degree: 0%
 ![](../../../assets/QuickBooks_App_Store_1.jpg)
 
 1. `Search for a company` 드롭다운에서 회사를 선택합니다.
-1. **[!UICONTROL Next]**&#x200B;을(를) 클릭합니다. [!DNL Commerce Intelligence](으)로 리디렉션되었으며 *연결이 성공했습니다!* 메시지가 화면 맨 위에 표시됩니다.
+1. **[!UICONTROL Next]**&#x200B;을(를) 클릭합니다. [!DNL Commerce Intelligence] (으)로 리디렉션되었으며 *연결이 성공했습니다!* 메시지가 화면 맨 위에 표시됩니다.
 
 ## 관련 항목
 

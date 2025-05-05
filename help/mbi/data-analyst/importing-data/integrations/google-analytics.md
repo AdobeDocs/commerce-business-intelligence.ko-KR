@@ -29,7 +29,7 @@ ht-degree: 0%
 
 1. [!DNL Google Analytics] 아이콘을 클릭합니다. [!DNL Google Analytics] 자격 증명 페이지가 열립니다.
 
-1. [!DNL Google Analytics] 자격 증명을 입력하십시오. 인증 프로세스가 완료되면 [!DNL Commerce Intelligence](으)로 다시 리디렉션됩니다.
+1. [!DNL Google Analytics] 자격 증명을 입력하십시오. 인증 프로세스가 완료되면 [!DNL Commerce Intelligence] (으)로 다시 리디렉션됩니다.
 
 1. 프로필 ID 목록이 표시됩니다. [!DNL Commerce Intelligence]에 연결할 프로필을 확인하십시오. 프로필이 여러 개이고 어떤 프로필인지 식별하는 데 도움이 필요한 경우 아래의 여러 [!DNL Google Analytics] 프로필 연결 섹션을 참조하십시오.
 

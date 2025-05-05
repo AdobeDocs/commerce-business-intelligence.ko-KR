@@ -61,9 +61,9 @@ ht-degree: 0%
 * **`Order's created at`**
 * 정의 선택: `Joined Column`
 * [!UICONTROL Create Path]:
-* 
+* &#x200B;
   [!UICONTROL Many]: `enterprise_rma.order_id`
-* 
+* &#x200B;
   [!UICONTROL One]: `sales_flat_order.entity_id`
 
 * [!UICONTROL table] 선택: `sales_flat_order`
@@ -82,9 +82,11 @@ ht-degree: 0%
 * **`return_date_requested`**
 * 정의 선택: `Joined Column`
 * [!UICONTROL Create Path]:
-   * 
+   * &#x200B;
+
      [!UICONTROL Many]: `enterprise_rma_item_entity.rma_entity_id`
-   * 
+   * &#x200B;
+
      [!UICONTROL One]: `enterprise_rma.entity_id`
 
 * [!UICONTROL table] 선택: `enterprise_rma`
@@ -157,14 +159,14 @@ ht-degree: 0%
 
 * 공식: 반복 주문 확률
 * [!UICONTROL Formula]: `B / A`
-* 
+* &#x200B;
   [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL 간격]: `None`
 * [!UICONTROL Group by]: `Customer's order number`
-* 
+* &#x200B;
   [!UICONTROL 차트 유형]: `Bar`
 
 * **평균 반환 시간(항상)**
@@ -172,9 +174,9 @@ ht-degree: 0%
 * [!UICONTROL Metric]: `Avg time between order and return`
 
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL 간격]: `None`
-* 
+* &#x200B;
   [!UICONTROL 차트 유형]: `Number`
 
 * **반품이 있는 주문 비율**
@@ -188,11 +190,11 @@ ht-degree: 0%
 
 * 공식: 반품이 있는 주문의 %
 * [!UICONTROL Formula]: `B / A`
-* 
+* &#x200B;
   [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL 간격]: `None`
 * [!UICONTROL Chart Type]: `Number - % of orders with return`
 
@@ -202,7 +204,7 @@ ht-degree: 0%
 
 * [!UICONTROL Time period]: `All time`
 * [!UICONTROL Interval]: `By month`
-* 
+* &#x200B;
   [!UICONTROL 차트 유형]: `Line`
 
 * **반품을 했지만 다시 구매하지 않은 고객**
@@ -213,11 +215,11 @@ ht-degree: 0%
    * `Is customer's last order? (1=yes/0=no) = 1`
 
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL 간격]: `None`
-* 
+* &#x200B;
   [!UICONTROL 그룹 기준]: `Customer_email`
-* 
+* &#x200B;
   [!UICONTROL 차트 유형]: `Table`
 
 * 항목별 **반환 비율**
@@ -230,14 +232,14 @@ ht-degree: 0%
 
 * [!UICONTROL Formula]: `Return %`
 * [!UICONTROL Formula]: `B / A`
-* 
+* &#x200B;
   [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL 간격]: `None`
 * [!UICONTROL Group by]: `product_sku AND/OR product_name`
-* 
+* &#x200B;
   [!UICONTROL 차트 유형]: `Table`
 
 모든 보고서를 컴파일한 후 원하는 대로 대시보드에서 구성할 수 있습니다. 결과는 위의 샘플 대시보드와 비슷할 수 있습니다.

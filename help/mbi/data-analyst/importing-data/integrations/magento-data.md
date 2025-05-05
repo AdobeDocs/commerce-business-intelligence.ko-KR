@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [에 [!DNL Adobe Commerce] 스토어](../../../data-analyst/importing-data/integrations/magento.md)를 연결한 후 Data Warehouse 관리자를 사용하여 분석을 위해 Commerce 데이터베이스에서 관련 데이터 필드를 쉽게 추적할 수 있습니다.
 
-이 항목에서는 Commerce 사용자가 [!DNL Commerce Intelligence](으)로 가져오는 기본 데이터 표에 대해 살펴봅니다.
+이 항목에서는 Commerce 사용자가 [!DNL Commerce Intelligence] (으)로 가져오는 기본 데이터 표에 대해 살펴봅니다.
 
 | **테이블 이름** | **설명** |
 |-----|-----|

@@ -58,7 +58,7 @@ ht-degree: 0%
 * 고객의 수익 백분위수
 * [!UICONTROL Column type]: - `Same table > Calculation`
 * [!UICONTROL Inputs]: - `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation]: - **A가 null이고 A/B가 null인 경우* 100 end **
+* [!UICONTROL Calculation]: - **A가 null이고 A/B가 null인 경우* 100 end &#x200B;**
 * [!UICONTROL Datatype]: - `Decimal`
 
 * `Sales_flat_order` 테이블
@@ -76,7 +76,7 @@ ht-degree: 0%
 * 고객의 수익 백분위수
 * [!UICONTROL Column type]: - `Same table > Calculation`
 * [!UICONTROL Inputs]: - `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation]: - **A가 null이고 A/B가 null인 경우* 100 end **
+* [!UICONTROL Calculation]: - **A가 null이고 A/B가 null인 경우* 100 end &#x200B;**
 * [!UICONTROL Datatype]: - `Decimal`
 
 >[!NOTE]
@@ -100,16 +100,16 @@ ht-degree: 0%
 * [!UICONTROL Metric]: `Total customer lifetime value`
 * [!UICONTROL Filter]: `Customer's revenue percentile IS NOT NULL`
 
-* 
+* &#x200B;
   [!UICONTROL 그룹 기준]: `Independent`
 * 지표 `A`: `Total customer lifetime revenue by percentile`
 * 지표 `B`: `Total customer lifetime revenue (ungrouped)`
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Customer's revenue percentile`
 * 위쪽/아래쪽 표시: `100% of Customer's revenue percentile Name`
-* 
+* &#x200B;
   [!UICONTROL Chart type]: `Line`
 
 * **상위 10% 농도**
@@ -117,12 +117,12 @@ ht-degree: 0%
 
 * 지표 `A`: `Total customer lifetime revenue`
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * 차트 숨기기
-* 
+* &#x200B;
   [!UICONTROL 그룹 기준]: `Email`
-* 
+* &#x200B;
   [!UICONTROL Chart type]: `Table`
 
 * **하위 50% 집중도(한 번만 구매)**
@@ -133,12 +133,12 @@ ht-degree: 0%
 * [!UICONTROL Filter]:
 
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * 차트 숨기기
-* 
+* &#x200B;
   [!UICONTROL 그룹 기준]: `Email`
-* 
+* &#x200B;
   [!UICONTROL Chart type]: `Table`
 
 * **하위 10% 농도**
@@ -146,12 +146,12 @@ ht-degree: 0%
 
 * 지표 `A`: `Total customer lifetime revenue`
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * 차트 숨기기
-* 
+* &#x200B;
   [!UICONTROL 그룹 기준]: `Email`
-* 
+* &#x200B;
   [!UICONTROL Chart type]: `Table`
 
 모든 보고서를 컴파일한 후 원하는 대로 대시보드에서 구성할 수 있습니다. 결과는 위의 샘플 대시보드와 비슷할 수 있습니다.

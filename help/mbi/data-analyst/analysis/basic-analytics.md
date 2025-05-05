@@ -176,7 +176,7 @@ ht-degree: 0%
    * **[!UICONTROL Group By]**: `customer_email`
    * **[!UICONTROL Show Top/Bottom]**: 주문별로 정렬된 상위 25개
 
-  주문별 상위 25개 고객](../../assets/Top_25_customers_by_lifetime_orders.png)<!--{: width="929"}-->![
+  주문별 상위 25개 고객&rbrack;(../../assets/Top_25_customers_by_lifetime_orders.png)<!--{: width="929"}-->!&lbrack;
 
 ### 라이프타임 매출별 상위 고객
 

@@ -44,7 +44,7 @@ ht-degree: 0%
 
 이제 채널은 소스와 미디어의 조합일 뿐이므로 Data Warehouse에서 이러한 그룹화를 다시 만드는 것은 쉬운 3단계 프로세스입니다.
 
-1. **통합 사용[!DNL Google ECommerce]2}**
+1. **통합 사용[!DNL Google ECommerce]2&rbrace;**
 
    [활성화하면](../importing-data/integrations/google-ecommerce.md)Data Warehouse에서 [동기화](../{{ site.baseurl }}/data-analyst/data-warehouse-mgr/tour-dwm.html#syncing) **중간** 및 **소스** 필드를 확인하십시오. 이 작업이 완료되면 중간 및 소스 획득 데이터를 Data Warehouse으로 가져옵니다.
 

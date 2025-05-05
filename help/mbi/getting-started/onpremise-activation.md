@@ -90,7 +90,7 @@ ht-degree: 0%
 
 ## 데이터베이스 연결 정보 가져오기
 
-[!DNL Commerce] 데이터베이스에 대한 데이터베이스 연결 정보를 [!DNL Commerce Intelligence](으)로 가져오기
+[!DNL Commerce] 데이터베이스에 대한 데이터베이스 연결 정보를 [!DNL Commerce Intelligence] (으)로 가져오기
 
 1. 정보를 얻으려면 다음을 실행하십시오.
 

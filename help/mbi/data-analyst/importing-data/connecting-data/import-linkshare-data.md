@@ -1,6 +1,6 @@
 ---
 title: Linkshare 데이터 가져오기
-description: Linkshare 데이터를  [!DNL Commerce Intelligence](으)로 가져오는 방법을 알아봅니다.
+description: Linkshare 데이터를  [!DNL Commerce Intelligence] (으)로 가져오는 방법을 알아봅니다.
 exl-id: 1c2025a6-746c-4929-bbb1-62af1afcbc49
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL Linkshare] 데이터 가져오기
 
-[!DNL Linkshare] 데이터를 [!DNL Adobe Commerce Intelligence](으)로 가져오려면 다음 두 가지 작업을 수행해야 합니다.
+[!DNL Linkshare] 데이터를 [!DNL Adobe Commerce Intelligence] (으)로 가져오려면 다음 두 가지 작업을 수행해야 합니다.
 
 1. [Linkshare 데이터 내보내기 ](#export)
 1. [스프레드시트를  [!DNL Commerce Intelligence]에 업로드](../connecting-data/using-file-uploader.md)

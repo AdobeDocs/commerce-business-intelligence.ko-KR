@@ -1,6 +1,6 @@
 ---
 title: 다른 광고 지출 데이터 가져오기
-description: 오프라인 또는 기타 광고 지출 데이터를  [!DNL Commerce Intelligence](으)로 가져오는 방법을 알아봅니다.
+description: 오프라인 또는 기타 광고 지출 데이터를  [!DNL Commerce Intelligence] (으)로 가져오는 방법을 알아봅니다.
 exl-id: 6f12a397-0927-4e87-95ff-3a55ccc9e14b
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export

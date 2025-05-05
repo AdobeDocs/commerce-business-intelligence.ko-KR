@@ -23,7 +23,7 @@ ht-degree: 0%
 
 특히 [!DNL Commerce Intelligence]에 대한 [!DNL Adobe Analytics] 통합은 판매자가 [!DNL Adobe Commerce]과(와) [!DNL Adobe Analytics] 데이터 집합을 결합하는 기능을 제공합니다.
 
-- 기존 [!DNL Adobe Analytics] 계정에서 [!DNL Commerce Intelligence](으)로 연결을 만듭니다.
+- 기존 [!DNL Adobe Analytics] 계정에서 [!DNL Commerce Intelligence] (으)로 연결을 만듭니다.
 
 - 하나의 보고서 세트에서 최대 25개의 Data Warehouse 및 차원을 선택하여 지표로 복제합니다.
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 1. **[!UICONTROL Authorize with Adobe Analytics]**&#x200B;을(를) 클릭합니다.
 
-1. [!DNL Adobe Analytics] 자격 증명을 입력하십시오. 인증에 성공하면 [!DNL Commerce Intelligence](으)로 다시 리디렉션됩니다.
+1. [!DNL Adobe Analytics] 자격 증명을 입력하십시오. 인증에 성공하면 [!DNL Commerce Intelligence] (으)로 다시 리디렉션됩니다.
 
 1. 사용 가능한 보고서 세트 목록이 표시됩니다. 데이터를 가져올 보고서 세트를 선택한 다음 **[!UICONTROL Continue]**&#x200B;을(를) 클릭합니다.
 
