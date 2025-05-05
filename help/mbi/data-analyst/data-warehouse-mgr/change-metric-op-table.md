@@ -25,6 +25,6 @@ ht-degree: 0%
 
    ![](../../assets/change-metrics-2.png)
 
-1. 새 테이블에 일치하는 열이 없는 경우 **데이터 테이블에서 만들거나** [!DNL Commerce Intelligence]에서 만든 계산 열 또는 차원인 경우 [지원 팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)할 수 있습니다. **지표에서 차원을 삭제**&#x200B;할 수도 있습니다. 더 이상 필요하지 않은 차원을 삭제하려면 지표 편집기로 돌아가 `Dimensions`에서 삭제할 차원을 선택하면 됩니다.
+1. 새 테이블에 일치하는 열이 없는 경우 **데이터 테이블에서 만들거나** [!DNL Commerce Intelligence]에서 만든 계산 열 또는 차원인 경우 [지원 팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)할 수 있습니다. **지표에서 차원을 삭제**&#x200B;할 수도 있습니다. 더 이상 필요하지 않은 차원을 삭제하려면 지표 편집기로 돌아가 `Dimensions`에서 삭제할 차원을 선택하면 됩니다.
 
    ![](../../assets/change-metrics-3.png)

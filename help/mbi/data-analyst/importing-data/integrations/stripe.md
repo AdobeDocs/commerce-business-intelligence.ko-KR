@@ -48,4 +48,4 @@ ht-degree: 0%
 [[!DNL Stripe] API 설명서](https://stripe.com/docs/api)는 [!DNL Stripe]을(를) [!DNL Commerce Intelligence]과(와) 통합하는 방법에 대한 자세한 내용을 학습하는 데 유용한 리소스가 될 수 있습니다.
 
 * [ [!DNL Stripe] 데이터가 필요합니다.](../integrations/stripe-data.md)
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)

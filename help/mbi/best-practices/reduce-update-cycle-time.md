@@ -43,4 +43,4 @@ ht-degree: 0%
 
 ## 요약
 
-이러한 권장 사항을 구현한 후에도 업데이트 시간이 느린 것 같으면 [지원 팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하십시오.
+이러한 권장 사항을 구현한 후에도 업데이트 시간이 느린 것 같으면 [지원 팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하십시오.

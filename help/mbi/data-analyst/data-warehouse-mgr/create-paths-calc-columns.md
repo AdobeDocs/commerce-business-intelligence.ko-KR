@@ -20,7 +20,7 @@ Data Warehouse에서 [계산된 열을 만드는 중](../data-warehouse-mgr/crea
 1. 데이터베이스의 테이블이 서로 관련되는 방식
 1. 이 관계를 정의하는 기본 및 외래 키
 
-이 정보를 알고 있으면 이 항목의 지침에 따라 경로를 쉽게 만들 수 있습니다. 조직의 기술 전문가에게 문의하거나 [전문 서비스 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)에 문의할 수 있습니다.
+이 정보를 알고 있으면 이 항목의 지침에 따라 경로를 쉽게 만들 수 있습니다. 조직의 기술 전문가에게 문의하거나 [전문 서비스 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)에 문의할 수 있습니다.
 
 ## 테이블 관계 및 주요 유형에 대한 새로 고침 {#refresher}
 
@@ -79,7 +79,7 @@ Data Warehouse에서 열을 만들 때 한 테이블에서 다른 테이블로 �
 
 * **[!DNL Commerce Intelligence]에서 기본/외래 키 관계를 추측할 수 없습니다**. 계정에 잘못된 데이터를 도입하지 않으려는 경우 경로를 수동으로 만들어야 합니다.
 
-* **현재 서로 다른 두 테이블 사이에만 경로를 지정할 수 있습니다**. 다시 만들려는 논리에 두 개 이상의 테이블이 포함됩니까? 그런 다음 (1) 먼저 중간 테이블에 열을 연결한 다음 &quot;최종 대상&quot; 테이블에 열을 연결하거나 (2) [전문 서비스 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)에 문의하여 목표에 대한 최상의 접근 방법을 찾는 것이 적절할 수 있습니다.
+* **현재 서로 다른 두 테이블 사이에만 경로를 지정할 수 있습니다**. 다시 만들려는 논리에 두 개 이상의 테이블이 포함됩니까? 그런 다음 (1) 먼저 중간 테이블에 열을 연결한 다음 &quot;최종 대상&quot; 테이블에 열을 연결하거나 (2) [전문 서비스 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)에 문의하여 목표에 대한 최상의 접근 방법을 찾는 것이 적절할 수 있습니다.
 
 * **열은 한 번에 하나의 경로에 대한 외래 키 참조만 될 수 있습니다**. 예를 들어 `order_items.order_id`이(가) `orders.id`을(를) 가리키면 `order_items.order_id`은(는) 다른 항목을 가리킬 수 없습니다.
 

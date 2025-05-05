@@ -35,4 +35,4 @@ ht-degree: 0%
 ## 관련 항목
 
 * [Zendesk 연결하기](../integrations/zendesk.md)
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)

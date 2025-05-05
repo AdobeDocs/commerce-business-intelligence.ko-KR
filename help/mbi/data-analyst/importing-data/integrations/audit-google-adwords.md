@@ -23,6 +23,6 @@ ht-degree: 0%
 
 1. 계정이 [!DNL Google Adwords] 편집기에 추가되면 **[!UICONTROL File** > **&#x200B;스프레드시트(CSV) 내보내기&#x200B;**> **전체 계정 내보내기]**&#x200B;를 선택하십시오
 
-이렇게 하면 현재 [!DNL Google Adwords] 계정에 저장된 모든 정보가 포함된 `.csv` 파일이 만들어집니다. 이 시점에서 [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)을 제출하십시오(이 파일을 첨부하십시오!). 따라서 데이터를 자세히 살펴볼 수 있습니다. 파일이 너무 큰 경우 [!DNL Dropbox] 또는 [!DNL Google Drive]을(를) 통해 [!DNL Commerce Intelligence] 팀과 공유하십시오.
+이렇게 하면 현재 [!DNL Google Adwords] 계정에 저장된 모든 정보가 포함된 `.csv` 파일이 만들어집니다. 이 시점에서 [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)을 제출하십시오(이 파일을 첨부하십시오!). 따라서 데이터를 자세히 살펴볼 수 있습니다. 파일이 너무 큰 경우 [!DNL Dropbox] 또는 [!DNL Google Drive]을(를) 통해 [!DNL Commerce Intelligence] 팀과 공유하십시오.
 
 [!DNL Google Adwords] `.csv` 파일 내보내기에 대한 자세한 내용은 공식 [[!DNL Google Adwords] 설명서](https://support.google.com/google-ads/editor/answer/38657?hl=en)를 참조하세요.

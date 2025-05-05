@@ -65,4 +65,4 @@ ht-degree: 0%
 
 위의 예에서 수식의 `timestamp`, `groupings`, `perspectives` 및 `filters`이(가) 해당 입력 지표에서 상속됨을 알았습니까? 지표가 사용할 수 있는 것처럼 수식을 사용하여 `perspectives` 및 [독립적인 시간 옵션](../../tutorials/time-options-visual-rpt-bldr.md){: target=&quot;_blank&quot;}을 사용할 수 있습니다.
 
-`Report Builder`에서 수식 사용에 대한 추가 질문이 있는 경우 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하세요.
+`Report Builder`에서 수식 사용에 대한 추가 질문이 있는 경우 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하세요.

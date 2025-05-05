@@ -151,4 +151,4 @@ ht-degree: 1%
 
 ## 요약 {#wrapup}
 
-고객이 쿠폰을 사용하는 방법을 더 잘 이해하기 위해 생성할 수 있는 다양한 분석이 있습니다. 고객이 쿠폰을 어떻게 사용하는지 또는 쿠폰을 사용하는 데 걸리는 시간을 분석하는 것에 대해 생각해 본 적이 있습니까? 최적의 할인 금액을 찾는 것은 어떻습니까? 어떤 금액이 반복 구매자를 격려하고, 더 높은 평균 주문 가격을 제공하며, 더 높은 생애 수익을 얻습니까? 이러한 유형의 질문에 대한 도움말을 보려면 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하세요.
+고객이 쿠폰을 사용하는 방법을 더 잘 이해하기 위해 생성할 수 있는 다양한 분석이 있습니다. 고객이 쿠폰을 어떻게 사용하는지 또는 쿠폰을 사용하는 데 걸리는 시간을 분석하는 것에 대해 생각해 본 적이 있습니까? 최적의 할인 금액을 찾는 것은 어떻습니까? 어떤 금액이 반복 구매자를 격려하고, 더 높은 평균 주문 가격을 제공하며, 더 높은 생애 수익을 얻습니까? 이러한 유형의 질문에 대한 도움말을 보려면 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하세요.

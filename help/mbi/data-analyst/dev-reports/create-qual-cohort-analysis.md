@@ -39,7 +39,7 @@ ht-degree: 0%
 
 `Report Builder`에서 `qualitative cohort` 보고서를 만들면 Adobe 분석가 팀이 필요한 테이블에 [고급 계산 열](../data-warehouse-mgr/creating-calculated-columns.md)을 만드는 작업이 포함됩니다.
 
-이를 만들려면 [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)을 제출하세요(이 문서 참조!). 다음은 알고 있어야 하는 사항입니다.
+이를 만들려면 [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)을 제출하세요(이 문서 참조!). 다음은 알고 있어야 하는 사항입니다.
 
 * 집단 분석을 수행할 `metric`과(와) 이 분석에서 사용하는 테이블(예: `orders` 테이블에 빌드된 `Revenue`)입니다.
 

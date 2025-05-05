@@ -25,7 +25,7 @@ ht-degree: 0%
 
 경우에 따라 `order-specific` 차원을 `user-specific` 차원으로 전환하여 `Repeat Order Probability` 차트에서 필터로 추가할 수 있습니다. 이러한 경우 사용자의 1차 주문 또는 최근 주문의 주문 속성(예: 사용자의 1차 지역 이름)을 반환합니다.
 
-이러한 새 차원을 만들려면 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하십시오.
+이러한 새 차원을 만들려면 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하십시오.
 
 ## 다른 속성을 가진 주문 반복 확률 비교
 
