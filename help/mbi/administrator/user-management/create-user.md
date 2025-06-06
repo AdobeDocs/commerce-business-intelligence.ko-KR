@@ -4,14 +4,14 @@ description: 새  [!DNL Commerce Intelligence] 사용자를 추가하는 방법�
 exl-id: 6b846e3d-fce0-4145-b298-9a9c57e6bd26
 role: Admin, User
 feature: User Management
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 99fc6c26017b5da4d066d400be1888ab4032590d
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 0%
 
 ---
 
-# 새 [!DNL Adobe Commercer Intelligence] 사용자 추가
+# 새 [!DNL Adobe Commerce Intelligence] 사용자 추가
 
 1. 오른쪽 상단에서 회사 이름을 클릭하고 드롭다운에서 **[!UICONTROL Invite User]**&#x200B;을(를) 선택합니다.
 1. 사용자 이름과 이메일을 입력합니다.
@@ -40,4 +40,4 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->각 계정에는 계약된 라이선스 수 또는 시트가 있습니다. 한도에 도달했거나 더 자세히 알아보려면 [지원 티켓을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하세요.
+>각 계정에는 계약된 라이선스 수 또는 시트가 있습니다. 한도에 도달했거나 더 자세히 알아보려면 [지원 티켓을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하세요.
