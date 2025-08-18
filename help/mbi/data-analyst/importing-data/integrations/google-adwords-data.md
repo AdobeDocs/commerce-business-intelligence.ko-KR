@@ -1,6 +1,6 @@
 ---
 title: 예상 Google Adwords 데이터
-description: Data Warehouse 관리자를 사용하여 분석을 위한 관련 데이터 필드를 쉽게 추적하는 방법에 대해 알아봅니다.
+description: Data Warehouse Manager를 사용하여 분석을 위한 관련 데이터 필드를 쉽게 추적하는 방법에 대해 알아봅니다.
 exl-id: b0085683-7bb1-4da2-b343-4309e4796f0c
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL Google Adwords]개의 데이터가 필요합니다.
 
-[계정 [!DNL Google Adwords] 연결](../integrations/google-adwords.md)한 후 [Data Warehouse 관리자](../../data-warehouse-mgr/tour-dwm.md)를 사용하여 분석을 위해 관련 데이터 필드를 쉽게 추적할 수 있습니다.
+[계정 [!DNL Google Adwords] 연결](../integrations/google-adwords.md)한 후 [Data Warehouse 관리자](../../data-warehouse-mgr/tour-dwm.md)를 사용하여 분석할 관련 데이터 필드를 쉽게 추적할 수 있습니다.
 
 여기에서 Data Warehouse에 복제할 수 있는 테이블이 두 개 있습니다.
 
@@ -45,12 +45,12 @@ ht-degree: 0%
 |-----|-----|
 | `\_id` | 테이블의 기본 키 |
 | `accountId` | 계정 ID |
-| [`adClicks`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adclicks) | 해당 날짜의 총 클릭 수 |
-| [`adCost`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adcost) | 당일 캠페인에 대한 총 비용 |
-| [`adwordsCampaignID`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adwordscampaignid) | [!DNL Adwords] 캠페인 ID |
-| [`campaign`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=traffic_sources&amp;jump=ga_campaign) | 캠페인 이름(예: [utm\_campaign](https://support.google.com/analytics/answer/1033867?hl=en)) |
-| [`date`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=time&amp;jump=ga_date) | 캠페인이 실행된 날짜 |
-| [`impressions`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_impressions) | 해당 날짜의 노출 횟수 |
+| [`adClicks`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_adclicks) | 해당 날짜의 총 클릭 수 |
+| [`adCost`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_adcost) | 당일 캠페인에 대한 총 비용 |
+| [`adwordsCampaignID`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_adwordscampaignid) | [!DNL Adwords] 캠페인 ID |
+| [`campaign`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=traffic_sources&jump=ga_campaign) | 캠페인 이름(예: [utm\_campaign](https://support.google.com/analytics/answer/1033867?hl=en)) |
+| [`date`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=time&jump=ga_date) | 캠페인이 실행된 날짜 |
+| [`impressions`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_impressions) | 해당 날짜의 노출 횟수 |
 | `profileId` | 프로필 ID |
 | `profileName` | 프로필 이름 |
 | `\_updated\_at` | 이 행의 마지막 업데이트 날짜 및 시간 |
@@ -65,12 +65,12 @@ ht-degree: 0%
 |-----|-----|
 | `\_id` | 테이블의 기본 키 |
 | `accountId` | 계정 ID |
-| [`adClicks`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adclicks) | 해당 날짜의 총 클릭 수 |
-| [`adCost`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adcost) | 당일 캠페인에 대한 총 비용 |
-| [`adwordsCampaignID`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adwordscampaignid) | [!DNL Adwords] 캠페인 ID |
-| [`campaign`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=traffic_sources&amp;jump=ga_campaign) | 캠페인 이름(예: [utm\_campaign](https://support.google.com/analytics/answer/1033867?hl=en)) |
-| [`date`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=time&amp;jump=ga_date) | 캠페인이 실행된 날짜 |
-| [`impressions`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_impressions) | 해당 날짜의 노출 횟수 |
+| [`adClicks`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_adclicks) | 해당 날짜의 총 클릭 수 |
+| [`adCost`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_adcost) | 당일 캠페인에 대한 총 비용 |
+| [`adwordsCampaignID`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_adwordscampaignid) | [!DNL Adwords] 캠페인 ID |
+| [`campaign`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=traffic_sources&jump=ga_campaign) | 캠페인 이름(예: [utm\_campaign](https://support.google.com/analytics/answer/1033867?hl=en)) |
+| [`date`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=time&jump=ga_date) | 캠페인이 실행된 날짜 |
+| [`impressions`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_impressions) | 해당 날짜의 노출 횟수 |
 | `profileId` | 프로필 ID |
 | `profileName` | 프로필 이름 |
 | `\_updated\_at` | 이 행의 마지막 업데이트 날짜 및 시간 |
@@ -89,4 +89,4 @@ ht-degree: 0%
 
 통합 테이블이 없고 `adwords` 테이블에 멋진 대시보드를 작성하는 경우 보고를 복제하거나 중복 지표를 만들어 해당 데이터를 [!DNL Facebook Ads] 데이터와 비교해야 합니다. 통합 테이블을 사용하면 [!DNL Facebook Ads] 데이터를 기존 [!DNL Adwords] 보고서에 원활하게 통합할 수 있습니다. 광고 플랫폼별로 세그먼트화할 수도 있습니다.
 
-위의 필드를 이미 동기화한 경우 [문의하기](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하여 광고 지출을 통합하십시오.
+위의 필드를 이미 동기화한 경우 [문의하기](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하여 광고 지출을 통합하십시오.

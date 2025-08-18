@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 순차적 비교 계산 열
 
-이 항목에서는 **[!DNL Manage Data > Data Warehouse]** 페이지에서 사용할 수 있는 `Sequential Comparison` 계산 열의 목적과 용도에 대해 간략하게 설명합니다. 아래는 그것이 하는 일에 대한 설명이며, 그 뒤에 예제와 그것을 만드는 역학이 이어진다.
+이 항목에서는 `Sequential Comparison` 페이지에서 사용할 수 있는 **[!DNL Manage Data > Data Warehouse]** 계산 열의 목적과 용도에 대해 간략하게 설명합니다. 아래는 그것이 하는 일에 대한 설명이며, 그 뒤에 예제와 그것을 만드는 역학이 이어진다.
 
 **설명**
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 | **`4`** | A | 2015년 1월 2일 13일:00:0 | 126000 |
 | **`5`** | B | 2015년 1월 3일 13일:00:0 | 217800 |
 
-위의 예에서 `Seconds since owner's previous event`은(는) `Sequential Comparison` 계산 열입니다. `owner_id = A`의 경우 먼저 `timestamp` 열을 기반으로 시퀀스를 식별한 다음 현재 이벤트의 타임스탬프에서 이전 이벤트의 `timestamp`을(를) 뺍니다. 테이블의 세 번째 행인 `owner_id A`에 대한 두 번째 행에서 `Seconds since owner's previous event` 값은 &#39;2015-01-01 02:00&#39;과(와) &#39;2015-01-01 00:00:00&#39; 사이의 초 수입니다. 이 차이는 2시간 = 7,200초와 같습니다.
+위의 예에서 `Seconds since owner's previous event`은(는) `Sequential Comparison` 계산 열입니다. `owner_id = A`의 경우 먼저 `timestamp` 열을 기반으로 시퀀스를 식별한 다음 현재 이벤트의 타임스탬프에서 이전 이벤트의 `timestamp`을(를) 뺍니다. 테이블의 세 번째 행인 `owner_id A`에 대한 두 번째 행에서 `Seconds since owner's previous event` 값은 &#39;2015-01-01 02:00&#39;과(와) &#39;2015-01-01 00:00:0&#39; 사이의 초 수입니다. 이 차이는 2시간 = 7,200초와 같습니다.
 
 이 계산된 열 형식의 경우 소유자의 첫 번째 이벤트에 해당하는 행에 `NULL` 값이 있습니다.
 

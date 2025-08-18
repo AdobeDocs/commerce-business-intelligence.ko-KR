@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 지표 쿼리
 
-시작하려면 **[!UICONTROL Report Builder > SQL Report Builder > Create Report]**(으)로 이동하여 [!DNL SQL Report Builder]을(를) 엽니다. [!DNL SQL] 편집기의 사이드바를 사용하여 지표 위로 마우스를 이동하고 **[!UICONTROL Insert]**&#x200B;을(를) 클릭하여 지표를 쿼리에 직접 삽입할 수 있습니다. 이렇게 하면 해당 지표의 쿼리 정의가 편집기에 추가됩니다. 정의에는 다음 구성 요소가 포함됩니다.
+시작하려면 [!DNL SQL Report Builder]&#x200B;(으)로 이동하여 **[!UICONTROL Report Builder > SQL Report Builder > Create Report]**&#x200B;을(를) 엽니다. [!DNL SQL] 편집기의 사이드바를 사용하여 지표 위로 마우스를 이동하고 **[!UICONTROL Insert]**&#x200B;을(를) 클릭하여 지표를 쿼리에 직접 삽입할 수 있습니다. 이렇게 하면 해당 지표의 쿼리 정의가 편집기에 추가됩니다. 정의에는 다음 구성 요소가 포함됩니다.
 
 - 수행 중인 **지표 작업**&#x200B;은(는) 아래 예에서 `SUM()`(으)로 표시됩니다.
 - 지표가 빌드된 **table on**&#x200B;은(는) `FROM` 절로 표시됩니다.
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 ## 저장 및 내보내기
 
-보고서의 요구 사항이 충족되면 보고서에 고유한 이름을 지정하고 **[!UICONTROL Save]**&#x200B;을(를) 클릭한 다음 저장할 보고서 유형과 대시보드를 선택하십시오. Adobe 지표를 감사할 때는 보고서를 `Table`(으)로 저장하여 테스트 대시보드에 저장하는 것이 좋습니다.
+보고서의 요구 사항이 충족되면 보고서에 고유한 이름을 지정하고 **[!UICONTROL Save]**&#x200B;을(를) 클릭한 다음 저장할 보고서 유형과 대시보드를 선택하십시오. 지표를 감사할 때 Adobe에서는 보고서를 `Table`(으)로 저장하여 테스트 대시보드에 저장하는 것이 좋습니다.
 
 보고서가 저장되면 `Go to Dashboard`을(를) 선택하여 해당 대시보드로 이동합니다. 여기에서 보고서를 찾아 **[!UICONTROL Options gear > Full `.csv`내보내기]** 또는 **[!UICONTROL Full Excel Export]**&#x200B;를 선택하여 데이터를 내보낼 수 있습니다.
 
@@ -48,4 +48,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->데이터를 감사한 후 불일치가 발견되면 [지원 센터에 문의: 데이터 불일치](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html?lang=ko) 지원 항목에서 다음에 수행할 작업에 대한 자세한 내용을 확인하십시오.
+>데이터를 감사한 후 불일치가 발견되면 [지원 센터에 문의: 데이터 불일치](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html) 지원 항목에서 다음에 수행할 작업에 대한 자세한 내용을 확인하십시오.

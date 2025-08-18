@@ -1,5 +1,5 @@
 ---
-title: 비날짜 기반 집단에 대한 집단 Report Builder
+title: 비날짜 기반 집단을 위한 집단 Report Builder
 description: 유사한 활동이나 속성으로 사용자를 그룹화하는 방법에 대해 알아봅니다.
 exl-id: c7b85ce9-113c-4ffc-855f-3d53fe2347d8
 role: Admin, Data Architect, Data Engineer, User
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 1. 왼쪽 탭에서 **[!UICONTROL Report Builder]**&#x200B;을(를) 클릭하거나 대시보드에서 **[!UICONTROL Add Report** > **Create Report]**&#x200B;을(를) 클릭합니다.
 
-1. `Report Builder Selection` 화면에서 `Visual Report Builder` 옵션 옆의 **[!UICONTROL Create Report]**&#x200B;을(를) 클릭합니다.
+1. `Report Builder Selection` 화면에서 **[!UICONTROL Create Report]** 옵션 옆의 `Visual Report Builder`을(를) 클릭합니다.
 
 ### 지표 추가
 
@@ -55,11 +55,11 @@ ht-degree: 0%
 
 
 
-#### 1. `cohorts` 그룹화
+#### &#x200B;1. `cohorts` 그룹화
 
 `Cohorts`은(는) 동작 특성별로 그룹화됩니다(이 예제 `Customer's first order GA source`). 여기에서 사용할 수 있는 옵션은 지표에 대해 이미 `groupable`(으)로 지정된 열입니다.
 
-#### 2. 집단 선택
+#### &#x200B;2. 집단 선택
 
 해당 특성에 대한 모든 결과를 표시할 수 있습니다. 이로 인해 `cohorts`이(가) 많이 발생할 수 있으므로 필요한 특정 `cohorts`(`Customer's first order GA source`에 사용할 수 있는 다양한 값에 해당됨)을(를) 선택할 수 있습니다.
 
@@ -75,13 +75,13 @@ ht-degree: 0%
 
 #### 5. `Time range after cohort occurrence`
 
-월별, 주별 또는 연도별로 시간 경과에 따라 `cohorts`을(를) 보시겠습니까? 여기에서 이러한 항목을 선택할 수 있습니다. 해당 섹션 아래에서 `cohort action timestamp`이(가) 발생한 후 `time range`을(를) 선택합니다. 예를 들어 작업 시간 범위 동안 첫 번째 주문을 한 고객에 대한 12개월의 데이터를 보여줍니다.
+월별, 주별 또는 연도별로 시간 경과에 따라 `cohorts`을(를) 보시겠습니까? 여기에서 이러한 항목을 선택할 수 있습니다. 해당 섹션 아래에서 `time range`이(가) 발생한 후 `cohort action timestamp`을(를) 선택합니다. 예를 들어 작업 시간 범위 동안 첫 번째 주문을 한 고객에 대한 12개월의 데이터를 보여줍니다.
 
 ![집단 우선 작업 시간 범위](../../assets/5-cohort-first-action-time-range.png)<!--{: width="400" height="557"}-->
 
 >[!NOTE]
 >
->`Standard` 보기와 `Cohort` 보기 사이를 전환할 때 지표에 적용된 [!UICONTROL Filters]이(가) 그대로 유지됩니다.
+>[!UICONTROL Filters] 보기와 `Standard` 보기 사이를 전환할 때 지표에 적용된 `Cohort`이(가) 그대로 유지됩니다.
 
 ### 관련 항목
 

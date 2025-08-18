@@ -27,7 +27,7 @@ ht-degree: 1%
 
 ### (옵션 1) [!DNL Google Analytics E-Commerce]을(를) 통해 주문 참조 원본 데이터 추적
 
-[!DNL Google Analytics E-Commerce]을(를) 사용하여 주문 및 판매 데이터를 추적하는 경우 [[!DNL [Google Analytics E-Commerce Connector]]](../importing-data/integrations/google-ecommerce.md)을(를) 사용하여 각 주문의 조회 원본 데이터를 동기화할 수 있습니다. 이를 통해 조회 소스(예: `utm_source` 또는 `utm_medium`)별로 매출 및 주문을 세그먼트화할 수 있습니다. 또한 `User's first order source`과(와) 같은 [!DNL Commerce Intelligence] 사용자 지정 차원을 통해 고객 확보 소스에 대한 감을 얻을 수 있습니다.
+[!DNL Google Analytics E-Commerce]을(를) 사용하여 주문 및 판매 데이터를 추적하는 경우 [!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md)을(를) 사용하여 각 주문의 조회 원본 데이터를 동기화할 수 있습니다. 이를 통해 조회 소스(예: `utm_source` 또는 `utm_medium`)별로 매출 및 주문을 세그먼트화할 수 있습니다. 또한 [!DNL Commerce Intelligence]과(와) 같은 `User's first order source` 사용자 지정 차원을 통해 고객 확보 소스에 대한 감을 얻을 수 있습니다.
 
 ### (옵션 2) [!DNL Google Analytics]의 획득 원본 데이터를 데이터베이스에 저장 중
 
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 #### 왜요?
 
-기본 [!DNL Google Analytics] 전환 및 획득 지표를 보고 있다면 전체 상황을 파악할 수 없습니다. 유기 검색 대 유료 검색의 전환 수를 보는 동안 흥미로운, 당신은 그 정보로 무엇을 할 수 있습니까? 유료 검색에 더 많은 돈을 지출해야 합니까? 이는 Google Analytics이 제공하지 않는, 해당 채널에서 오는 고객의 가치에 따라 달라집니다.
+기본 [!DNL Google Analytics] 전환 및 획득 지표를 보고 있다면 전체 상황을 파악할 수 없습니다. 유기 검색 대 유료 검색의 전환 수를 보는 동안 흥미로운, 당신은 그 정보로 무엇을 할 수 있습니까? 유료 검색에 더 많은 돈을 지출해야 합니까? 이는 Google Analytics에서 제공하지 않는 해당 채널에서 오는 고객의 가치에 따라 다릅니다.
 
 >[!NOTE]
 >
@@ -51,13 +51,13 @@ ht-degree: 1%
 
 문자열로 인코딩된 획득 소스 데이터가 분명히 있습니다. 이를 테스트하여 방문자의 최신 획득 소스 및 관련 캠페인 데이터인지 확인합니다. 이제 데이터를 추출하는 방법을 알아야 합니다.
 
-이 코드는 github에서 호스팅된 [PHP 라이브러리](https://github.com/RJMetrics/referral-grabber-php)로 변환되었습니다. 라이브러리를 사용하려면 `ReferralGrabber.php`에 대한 참조를 `include`한 다음
+이 코드는 github에서 호스팅된 [PHP 라이브러리](https://github.com/RJMetrics/referral-grabber-php)로 변환되었습니다. 라이브러리를 사용하려면 `include`에 대한 참조를 `ReferralGrabber.php`한 다음
 
 `$data = ReferralGrabber::parseGoogleCookie($_COOKIE['__utmz']);`
 
 반환된 `$data` 배열은 키 `source`, `medium`, `term`, `content`, `campaign`, `gclid` 및 해당 값의 맵입니다.
 
-Adobe은 다음과 같은 열이 있는 `user_referral`(이)라는 데이터베이스에 테이블을 추가할 것을 권장합니다. `id INT PRIMARY KEY, user_id INT NOT NULL, source VARCHAR(255), medium VARCHAR(255), term VARCHAR(255), content VARCHAR(255), campaign VARCHAR(255), gclid VARCHAR(255)` 사용자가 등록할 때마다 추천 정보를 가져와서 이 테이블에 저장합니다.
+Adobe에서는 다음과 같은 열이 있는 `user_referral`(이)라는 데이터베이스에 테이블을 추가하는 것이 좋습니다. `id INT PRIMARY KEY, user_id INT NOT NULL, source VARCHAR(255), medium VARCHAR(255), term VARCHAR(255), content VARCHAR(255), campaign VARCHAR(255), gclid VARCHAR(255)`. 사용자가 등록할 때마다 추천 정보를 가져와서 이 테이블에 저장합니다.
 
 #### 이 데이터를 사용하는 방법
 

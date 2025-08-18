@@ -17,14 +17,14 @@ ht-degree: 0%
 >
 >[관리자 권한](../../../administrator/user-management/user-management.md)이 필요합니다.
 
-[!DNL Adobe Commerce Intelligence]은(는) 시각화 기능 때문만이 아니라 모든 데이터를 단일 Data Warehouse에 넣을 수 있는 기능을 제공하므로 강력한 기능입니다. 데이터베이스 및 통합 외부에 있는 데이터도 Data Warehouse 관리자의 [파일 업로드] 도구를 사용하여 [!DNL Commerce Intelligence] (으)로 가져올 수 있습니다.
+[!DNL Adobe Commerce Intelligence]은(는) 시각화 기능 때문만이 아니라 모든 데이터를 단일 Data Warehouse에 넣을 수 있는 기능을 제공하므로 강력한 기능입니다. 데이터베이스 및 통합 외부에 있는 데이터도 Data Warehouse Manager의 [파일 업로드] 도구를 사용하여 [!DNL Commerce Intelligence]&#x200B;(으)로 가져올 수 있습니다.
 
 광고 캠페인을 예로 사용하십시오. 온라인 및 오프라인 캠페인을 모두 실행하는 경우 온라인 통합의 데이터만 분석하는 경우에는 전체 상황을 파악할 수 없습니다. 오프라인 캠페인 데이터가 포함된 스프레드시트를 업로드하면 두 데이터 세트를 모두 분석하고 캠페인 성과를 보다 강력하게 이해할 수 있습니다.
 
 ## 제한 사항 및 요구 사항 {#require}
 
 1. **파일 업로드에 대해 지원되는 형식은 `CSV` 또는`comma separated values`**&#x200B;뿐입니다. Excel에서 작업하는 경우 다른 이름으로 저장 기능을 사용하여 파일을 `.csv` 형식으로 저장할 수 있습니다.
-1. **`CSV`개 파일은`UTF-8 encoding`**&#x200B;을(를) 사용해야 합니다. 대부분의 경우, 이것은 문제가 아닙니다. 파일을 업로드하는 동안 이 오류가 발생하면 [이 지원 문서를 참조하십시오](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=ko).
+1. **`CSV`개 파일은`UTF-8 encoding`**&#x200B;을(를) 사용해야 합니다. 대부분의 경우, 이것은 문제가 아닙니다. 파일을 업로드하는 동안 이 오류가 발생하면 [이 지원 문서를 참조하십시오](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html).
 1. **파일은 100MB**&#x200B;보다 클 수 없습니다. 파일이 이보다 큰 경우 테이블을 청크로 분리하여 개별 파일로 저장합니다. 초기 파일이 로드된 후 데이터를 추가할 수 있습니다.
 1. **모든 테이블에`primary key`**&#x200B;이(가) 있어야 합니다. 테이블에 `primary key` 또는 테이블의 각 행에 대한 고유 식별자로 사용할 수 있는 열이 하나 이상 있어야 합니다. `primary key`(으)로 지정된 모든 열은 *절대*&#x200B;이(가) 될 수 있습니다. `primary key`은(는) 각 행에 숫자를 제공하는 열을 추가하는 것만큼 간단하거나 고유한 값의 열을 만들기 위해 연결된 두 개의 열일 수 있습니다(예: `campaign name` 및 `date`).
 
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 열 레이블을 지정하고 올바르게 가져오려면 스프레드시트의 첫 행이 각 열의 데이터를 설명하는 헤더인지 확인합니다.
 
-열 이름은 고유해야 하며 문자, 숫자, 공백 및 `$ % # /` 기호만 포함해야 합니다. 열 이름에 쉼표가 포함되어 있으면 파일을 업로드할 때 두 개의 열로 분할됩니다. Adobe 또한 업데이트 속도를 최적화하려면 파일에 85개 이하의 열이 있는 것이 좋습니다.
+열 이름은 고유해야 하며 문자, 숫자, 공백 및 `$ % # /` 기호만 포함해야 합니다. 열 이름에 쉼표가 포함되어 있으면 파일을 업로드할 때 두 개의 열로 분할됩니다. 또한 Adobe에서는 업데이트 속도를 최적화하기 위해 파일에 85개 이하의 열이 있는 것이 좋습니다.
 
 ### 쉼표가 있는 데이터 {#commas}
 
@@ -69,11 +69,11 @@ ht-degree: 0%
 
 ### 선행 및/또는 후행 0이 있는 값 {#zeroes}
 
-ZIP 코드 및 ID와 같은 파일의 일부 값은 0으로 시작되거나 끝날 수 있습니다. 0이 제대로 유지되고 업로드되도록 하려면 서식 유형(예: [숫자에서 텍스트로](https://support.microsoft.com/en-us/office/format-numbers-as-text-583160db-936b-4e52-bdff-6f1863518ba4?ui=en-us&amp;rs=en-us&amp;ad=us))을 변경하거나 숫자 서식을 적용할 수 있습니다.
+ZIP 코드 및 ID와 같은 파일의 일부 값은 0으로 시작되거나 끝날 수 있습니다. 0이 제대로 유지되고 업로드되도록 하려면 서식 유형(예: [숫자에서 텍스트로](https://support.microsoft.com/en-us/office/format-numbers-as-text-583160db-936b-4e52-bdff-6f1863518ba4?ui=en-us&rs=en-us&ad=us))을 변경하거나 숫자 서식을 적용할 수 있습니다.
 
-숫자 서식을 변경하는 방법의 예로 `US ZIP codes`을(를) 사용하십시오. [!DNL Excel]에서 `ZIP codes`과(와) [숫자 형식을 변경](https://support.microsoft.com/en-us/office/display-numbers-as-postal-codes-61b55c9f-6fe3-4e54-96ca-9e85c38a5a1d?ui=en-us&amp;rs=en-us&amp;ad=us)하여 `ZIP code`을(를) 포함하는 열을 강조 표시합니다. 사용자 지정 숫자 형식을 선택할 수도 있고 `Type` 창에서 `00000`을(를) 입력합니다. 일부 코드는 `00000` 형식으로 지정되고 다른 코드는 `00000-0000`인 경우 이 메서드가 문제를 일으킬 수 있습니다.
+숫자 서식을 변경하는 방법의 예로 `US ZIP codes`을(를) 사용하십시오. [!DNL Excel]에서 `ZIP codes`과(와) [숫자 형식을 변경](https://support.microsoft.com/en-us/office/display-numbers-as-postal-codes-61b55c9f-6fe3-4e54-96ca-9e85c38a5a1d?ui=en-us&rs=en-us&ad=us)하여 `ZIP code`을(를) 포함하는 열을 강조 표시합니다. 사용자 지정 숫자 형식을 선택할 수도 있고 `Type` 창에서 `00000`을(를) 입력합니다. 일부 코드는 `00000` 형식으로 지정되고 다른 코드는 `00000-0000`인 경우 이 메서드가 문제를 일으킬 수 있습니다.
 
-`Type`은(는) ID와 같은 다른 데이터 형식[&#128279;](https://support.microsoft.com/en-us/office/keeping-leading-zeros-and-large-numbers-1bf7b935-36e1-4985-842f-5dfa51f85fe7?correlationid=e1d4c2d3-cd5d-4a14-999d-437800274a90&amp;ui=en-us&amp;rs=en-us&amp;ad=us)을(를) 수용하도록 형식이 다르게 될 수 있습니다. 예를 들어 `ID`이(가) 9자리 길이이면 `Type`은(는) `000000000` 또는 `000-000-000`일 수 있습니다. `123456`이(가) `000-123-456`(으)로 변경됩니다.
+`Type`은(는) ID와 같은 다른 데이터 형식[을(를) 수용하도록 형식이 다르게 ](https://support.microsoft.com/en-us/office/keeping-leading-zeros-and-large-numbers-1bf7b935-36e1-4985-842f-5dfa51f85fe7?correlationid=e1d4c2d3-cd5d-4a14-999d-437800274a90&ui=en-us&rs=en-us&ad=us)될 수 있습니다. 예를 들어 `ID`이(가) 9자리 길이이면 `Type`은(는) `000000000` 또는 `000-000-000`일 수 있습니다. `123456`이(가) `000-123-456`(으)로 변경됩니다.
 
 [!DNL Google Docs] 및 [!DNL Apple Numbers] 리소스의 경우 이 페이지 하단에 있는 [관련](#related) 목록을 참조하십시오.
 
@@ -107,7 +107,7 @@ ZIP 코드 및 ID와 같은 파일의 일부 값은 0으로 시작되거나 끝�
 
 ![](../../../assets/fileupload.gif)
 
-업로드된 테이블은 Data Warehouse 관리자에서 테이블 목록(모든 테이블 및 동기화된 테이블 옵션 모두)의 **파일 업로드** 섹션 아래에 표시됩니다.
+업로드된 테이블은 Data Warehouse Manager의 테이블 목록([모든 테이블] 및 [동기화된 테이블] 옵션 모두)에서 **파일 업로드** 섹션 아래에 표시됩니다.
 
 ![](../../../assets/upload-tables.png)
 
@@ -143,7 +143,7 @@ ZIP 코드 및 ID와 같은 파일의 일부 값은 0으로 시작되거나 끝�
 
 이 항목에서는 데이터 가져오기를 사용하는 기본 사항만 다루지만 보다 고급 작업을 수행할 수도 있습니다. 금융, 전자 상거래, 광고 지출 및 기타 유형의 데이터 형식 지정 및 가져오기에 대한 지침은 관련 문서를 확인하십시오.
 
-또한 파일 업로드는 데이터를 [!DNL Commerce Intelligence] (으)로 가져오는 유일한 방법이 아닙니다. [데이터 가져오기 API](https://developer.adobe.com/commerce/services/reporting/import-api/) 함수를 사용하면 임의의 데이터를 [!DNL Commerce Intelligence] Data Warehouse에 푸시할 수 있습니다.
+또한 파일 업로드는 데이터를 [!DNL Commerce Intelligence]&#x200B;(으)로 가져오는 유일한 방법이 아닙니다. [데이터 가져오기 API](https://developer.adobe.com/commerce/services/reporting/import-api/) 함수를 사용하면 임의의 데이터를 [!DNL Commerce Intelligence] Data Warehouse에 푸시할 수 있습니다.
 
 ## 관련 항목 {#related}
 

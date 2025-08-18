@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # SQL 계산 열 만들기
 
-이 항목에서는 [Data Warehouse 관리자](../data-warehouse-mgr/tour-dwm.md)를 사용하여 표에 추가할 수 있는 `Calculation` 열 형식의 용도와 사용에 대해 설명합니다. 아래에서는 SQL 계산의 기능, 계산 사용 이유, SQL 계산 생성 프로세스에 대해 설명하고 두 가지 예를 포함합니다.
+이 항목에서는 `Calculation`Data Warehouse 관리자[를 사용하여 표에 추가할 수 있는 ](../data-warehouse-mgr/tour-dwm.md) 열 유형의 용도와 사용에 대해 간략하게 설명합니다. 아래에서는 SQL 계산의 기능, 계산 사용 이유, SQL 계산 생성 프로세스에 대해 설명하고 두 가지 예를 포함합니다.
 
 **설명**
 
-이전에는 `advanced`(으)로 간주되는 열을 [!DNL Adobe Commerce Intelligence]의 고객 지원 팀의 분석가만 수행할 수 있었습니다. 이제 모든 기능을 최종 사용자가 사용할 수 있으며 새 [!DNL Commerce Intelligence] 아키텍처에서 `SQL Calculation` 열 형태로 고급 열을 만들 수 있습니다.
+이전에는 `advanced`(으)로 간주되는 열을 [!DNL Adobe Commerce Intelligence]의 고객 지원 팀의 분석가만 수행할 수 있었습니다. 이제 모든 기능을 최종 사용자가 사용할 수 있으며 새 `SQL Calculation` 아키텍처에서 [!DNL Commerce Intelligence] 열 형태로 고급 열을 만들 수 있습니다.
 
 이제 Data Warehouse 관리자에서 옵션으로 사용할 수 있는 `Calculation` 열 유형은 PostgreSQL 논리를 사용하여 테이블의 열을 변환할 수 있는 동일한 테이블 작업입니다. `Calculation` 열 유형에서 사용할 수 있는 함수 및 연산자에 대한 설명서는 PostgreSQL 웹 사이트 [여기](https://www.postgresql.org/docs/9.6/functions.html)에서 찾을 수 있습니다.
 
@@ -25,17 +25,17 @@ ht-degree: 0%
 
 **예 1: 고객의 마지막 주문입니까?**
 
-대부분의 계정에는 `orders` 테이블에 `Is customer's last order?`(이)라는 열이 있어 반복 구매율과 이탈된 고객에 대한 분석을 수행합니다. 계정이 새 아키텍처에 있는 경우 이 열은 `Calculation` 열을 사용하여 작성되며 아래 스크린샷에서 볼 수 있습니다.
+대부분의 계정에는 `Is customer's last order?` 테이블에 `orders`(이)라는 열이 있어 반복 구매율과 이탈된 고객에 대한 분석을 수행합니다. 계정이 새 아키텍처에 있는 경우 이 열은 `Calculation` 열을 사용하여 작성되며 아래 스크린샷에서 볼 수 있습니다.
 
 ![](../../assets/Is_customer_s_last_order.png)
 
-`Is customer's last order?` 열은 각각 `A` 및 `B`(으)로 별칭이 지정된 입력 `Customer's lifetime number of orders` 및 `Customer's order number`을(를) 사용합니다.
+`Is customer's last order?` 열은 각각 `Customer's lifetime number of orders` 및 `Customer's order number`(으)로 별칭이 지정된 입력 `A` 및 `B`을(를) 사용합니다.
 
 PostgreSQL의 의미는 한 줄에 하나씩 표시됩니다.
 
 * case: 일련의 If - Then 문이 시작됩니다.
 * `A`이(가) null이거나 `B`이(가) null이면 null: 입력이 비어 있으면 출력도 비어 있어야 합니다. SQL 오류를 방지하기 위한 것입니다.
-* `A=B`일 때 `Yes`: `Customer's lifetime number of orders`이(가) 이 행의 `Customer's order number`과(와) 같으면 `Yes`을(를) 반환합니다. 따라서 고객이 4개의 주문을 했다면 4번째 주문의 행은 `Is customer's last order?`에 대해 `Yes`을(를) 반환합니다.
+* `A=B`일 때 `Yes`: `Customer's lifetime number of orders`이(가) 이 행의 `Customer's order number`과(와) 같으면 `Yes`을(를) 반환합니다. 따라서 고객이 4개의 주문을 했다면 4번째 주문의 행은 `Yes`에 대해 `Is customer's last order?`을(를) 반환합니다.
 * else `No`: 다른 when 문이 충족되지 않으면 `No`을(를) 반환합니다.
 * end: If - Then 문을 종료합니다.
 
@@ -45,17 +45,17 @@ PostgreSQL의 의미는 한 줄에 하나씩 표시됩니다.
 
 많은 클라이언트가 `product name` 또는 `category`과(와) 같은 필드로 슬라이스하여 항목 수준에서 매출을 분석하기를 원합니다. 대부분의 데이터베이스는 실제로 주문에서 제품의 수익을 제공하지 않습니다. 대신 주문에서 판매된 수량과 품목의 가격을 제공합니다.
 
-제품 매출 분석을 활성화하기 위해 대부분의 계정에 `Orders Items` 테이블에 `Order item total value (quantity * price)`(이)라는 열이 있습니다. 계정이 새 아키텍처에 있는 경우 이 열도 `Calculation` 열을 사용하여 작성되며 아래 스크린샷에서 볼 수 있습니다.
+제품 매출 분석을 활성화하기 위해 대부분의 계정에 `Order item total value (quantity * price)` 테이블에 `Orders Items`(이)라는 열이 있습니다. 계정이 새 아키텍처에 있는 경우 이 열도 `Calculation` 열을 사용하여 작성되며 아래 스크린샷에서 볼 수 있습니다.
 
 ![](../../assets/Order_item_total_value.png)
 
-Commerce 스키마에서 `Order item total value (quantity * price)` 열은 각각 `A` 및 `B`(으)로 별칭이 지정된 `qty ordered` 및 `base price` 입력을 사용합니다.
+Commerce 스키마에서 `Order item total value (quantity * price)` 열은 각각 `qty ordered` 및 `base price`(으)로 별칭이 지정된 `A` 및 `B` 입력을 사용합니다.
 
 이 새 열에서 반환되는 값은 달러/센트 단위이므로 올바른 데이터 형식은 `Decimal(10,2)`입니다.
 
 **기계**
 
-아래와 같이 **[!DNL Manage Data > Data Warehouse]**(으)로 이동하여 테이블에 새 `Calculation` 열을 추가할 수 있습니다.
+아래와 같이 `Calculation`(으)로 이동하여 테이블에 새 **[!DNL Manage Data > Data Warehouse]** 열을 추가할 수 있습니다.
 
 ![](../../assets/blobid2.png)
 
@@ -74,6 +74,6 @@ Commerce 스키마에서 `Order item total value (quantity * price)` 열은 각�
    * `String` - 숫자가 아닌 모든 텍스트 유형 또는 일련의 문자
    * `Datetime` - `yyyy-MM-dd hh:mm:ss` 형식
 
-1. **[!UICONTROL test column]**&#x200B;을(를) 클릭합니다. 이렇게 하면 각 입력에 대해 5개의 테스트 값 목록이 생성되고 각 테스트 값 세트에 대해 6단계의 논리 결과가 표시됩니다. SQL의 어느 부분에서든 오류가 발생하면 적절한 오류 메시지가 반환됩니다. 모든 입력 열이 기본 필드인 경우에만 샘플 결과를 생성할 수 있습니다. 입력 열이 계산된 열인 경우 지표에 열을 추가하고 시각적 Report Builder에서 표시하여 결과를 확인해야 합니다
+1. **[!UICONTROL test column]**&#x200B;을(를) 클릭합니다. 이렇게 하면 각 입력에 대해 5개의 테스트 값 목록이 생성되고 각 테스트 값 세트에 대해 6단계의 논리 결과가 표시됩니다. SQL의 어느 부분에서든 오류가 발생하면 적절한 오류 메시지가 반환됩니다. 모든 입력 열이 기본 필드인 경우에만 샘플 결과를 생성할 수 있습니다. 입력 열이 계산된 열인 경우 지표에 열을 추가하고 Visual Report Builder에서 표시하여 결과를 확인해야 합니다
 
 1. 결과가 만족스러우면 **[!UICONTROL Save]**&#x200B;을(를) 클릭합니다. 이 열은 을 사용할 수 있도록 설정합니다.

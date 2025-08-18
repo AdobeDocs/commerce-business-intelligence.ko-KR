@@ -1,6 +1,6 @@
 ---
 title: SQL Report Builder과 함께 사용되는 통합
-description: SQL Report Builder과 함께 사용할 수 있는 통합을 알아봅니다.
+description: SQL Report Builder과 함께 사용할 수 있는 통합에 대해 알아봅니다.
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a

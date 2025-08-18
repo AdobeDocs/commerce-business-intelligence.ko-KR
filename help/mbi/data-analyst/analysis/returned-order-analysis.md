@@ -61,9 +61,9 @@ ht-degree: 0%
 * **`Order's created at`**
 * 정의 선택: `Joined Column`
 * [!UICONTROL Create Path]:
-* &#x200B;
+* 
   [!UICONTROL Many]: `enterprise_rma.order_id`
-* &#x200B;
+* 
   [!UICONTROL One]: `sales_flat_order.entity_id`
 
 * [!UICONTROL table] 선택: `sales_flat_order`
@@ -76,24 +76,22 @@ ht-degree: 0%
 * [!UICONTROL column] 선택: `Customer's order number`
    * `enterprise_rma.order_id = sales_flat_order.entity_id`
 
-* 분석가가 `[RETURNS ANALYSIS]` 티켓의 일부로 **`Time between order's created_at and date_requested`**&#x200B;을(를) 만들었습니다.
+* 분석가가 **`Time between order's created_at and date_requested`** 티켓의 일부로 `[RETURNS ANALYSIS]`을(를) 만들었습니다.
 
 * **`enterprise_rma_item_entity`** 테이블
 * **`return_date_requested`**
 * 정의 선택: `Joined Column`
 * [!UICONTROL Create Path]:
-   * &#x200B;
-
+   * 
      [!UICONTROL Many]: `enterprise_rma_item_entity.rma_entity_id`
-   * &#x200B;
-
+   * 
      [!UICONTROL One]: `enterprise_rma.entity_id`
 
 * [!UICONTROL table] 선택: `enterprise_rma`
 * [!UICONTROL column] 선택: `date_requested`
    * `enterprise_rma_item_entity.rma_entity_id = enterprise_rma.entity_id`
 
-* 분석가가 `[RETURNS ANALYSIS]` 티켓의 일부로 **`Return item total value (qty_returned * price)`**&#x200B;을(를) 만들었습니다.
+* 분석가가 **`Return item total value (qty_returned * price)`** 티켓의 일부로 `[RETURNS ANALYSIS]`을(를) 만들었습니다.
 
 * **`sales_flat_order`** 테이블
 * **`Order contains a return? (1=yes/0=No)`**
@@ -101,8 +99,8 @@ ht-degree: 0%
 * [!UICONTROL table] 선택: `enterprise_rma`
    * `enterprise_rma.order_id = sales_flat_order.entity_id`
 
-* 분석가가 `[RETURNS ANALYSIS]` 티켓의 일부로 **`Customer's previous order number`**&#x200B;을(를) 만들었습니다.
-* 분석가가 `[RETURNS ANALYSIS]` 티켓의 일부로 **`Customer's previous order contains return? (1=yes/0=no)`**&#x200B;을(를) 만들었습니다.
+* 분석가가 **`Customer's previous order number`** 티켓의 일부로 `[RETURNS ANALYSIS]`을(를) 만들었습니다.
+* 분석가가 **`Customer's previous order contains return? (1=yes/0=no)`** 티켓의 일부로 `[RETURNS ANALYSIS]`을(를) 만들었습니다.
 
 >[!NOTE]
 >
@@ -159,14 +157,14 @@ ht-degree: 0%
 
 * 공식: 반복 주문 확률
 * [!UICONTROL Formula]: `B / A`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL 간격]: `None`
 * [!UICONTROL Group by]: `Customer's order number`
-* &#x200B;
+* 
   [!UICONTROL 차트 유형]: `Bar`
 
 * **평균 반환 시간(항상)**
@@ -174,9 +172,9 @@ ht-degree: 0%
 * [!UICONTROL Metric]: `Avg time between order and return`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL 간격]: `None`
-* &#x200B;
+* 
   [!UICONTROL 차트 유형]: `Number`
 
 * **반품이 있는 주문 비율**
@@ -190,11 +188,11 @@ ht-degree: 0%
 
 * 공식: 반품이 있는 주문의 %
 * [!UICONTROL Formula]: `B / A`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL 간격]: `None`
 * [!UICONTROL Chart Type]: `Number - % of orders with return`
 
@@ -204,7 +202,7 @@ ht-degree: 0%
 
 * [!UICONTROL Time period]: `All time`
 * [!UICONTROL Interval]: `By month`
-* &#x200B;
+* 
   [!UICONTROL 차트 유형]: `Line`
 
 * **반품을 했지만 다시 구매하지 않은 고객**
@@ -215,11 +213,11 @@ ht-degree: 0%
    * `Is customer's last order? (1=yes/0=no) = 1`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL 간격]: `None`
-* &#x200B;
+* 
   [!UICONTROL 그룹 기준]: `Customer_email`
-* &#x200B;
+* 
   [!UICONTROL 차트 유형]: `Table`
 
 * 항목별 **반환 비율**
@@ -232,16 +230,16 @@ ht-degree: 0%
 
 * [!UICONTROL Formula]: `Return %`
 * [!UICONTROL Formula]: `B / A`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL 간격]: `None`
 * [!UICONTROL Group by]: `product_sku AND/OR product_name`
-* &#x200B;
+* 
   [!UICONTROL 차트 유형]: `Table`
 
 모든 보고서를 컴파일한 후 원하는 대로 대시보드에서 구성할 수 있습니다. 결과는 위의 샘플 대시보드와 비슷할 수 있습니다.
 
-이 분석을 작성하는 동안 질문이 있거나 Professional Services 팀에 참여하려는 경우 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하십시오.
+이 분석을 작성하는 동안 질문이 있거나 Professional Services 팀에 참여하려는 경우 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하십시오.

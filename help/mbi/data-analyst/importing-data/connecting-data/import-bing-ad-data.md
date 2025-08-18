@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL Bing] 데이터 가져오기
 
-분석을 위해 [!DNL Bing] 광고 지출 데이터를 [!DNL Adobe Commerce Intelligence] (으)로 가져오려면 [!DNL Bing Ads Editor]의 데이터를 `.csv` 형식으로 내보내고 아래 단계에 따라 [!DNL Commerce Intelligence]에 업로드하면 됩니다.
+분석을 위해 [!DNL Bing] 광고 지출 데이터를 [!DNL Adobe Commerce Intelligence]&#x200B;(으)로 가져오려면 [!DNL Bing Ads Editor]의 데이터를 `.csv` 형식으로 내보내고 아래 단계에 따라 [!DNL Commerce Intelligence]에 업로드하면 됩니다.
 
 ## [!DNL Bing Ads Editor]
 
@@ -21,9 +21,9 @@ ht-degree: 0%
 
 ## [!DNL Bing Ads] 데이터 내보내기
 
-1. [!DNL Bing Ads Editor]의 `Browser` 창에서 내보낼 캠페인 또는 광고 그룹을 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL Export]**&#x200B;을(를) 클릭합니다.
+1. `Browser`의 [!DNL Bing Ads Editor] 창에서 내보낼 캠페인 또는 광고 그룹을 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL Export]**&#x200B;을(를) 클릭합니다.
 1. `Export` 대화 상자에서 **[!UICONTROL Export]**&#x200B;을(를) 클릭합니다.
 1. `Save As` 대화 상자에서 내보내기 파일을 저장할 폴더를 클릭합니다.
 1. `File name` 상자에서 파일 내보내기 이름을 선택합니다.
 1. **[!UICONTROL Save]**&#x200B;을(를) 클릭합니다.
-1. 파일을 다운로드한 후 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하여 사용자를 대신하여 첫 번째 업로드를 수행하고 필요한 백엔드 차원을 설정합니다.
+1. 파일을 다운로드한 후 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하여 사용자를 대신하여 첫 번째 업로드를 수행하고 필요한 백엔드 차원을 설정합니다.

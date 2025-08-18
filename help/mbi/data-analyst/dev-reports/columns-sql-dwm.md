@@ -1,6 +1,6 @@
 ---
-title: SQL과 Data Warehouse 관리자의 차이점
-description: SQL과 Data Warehouse 관리자의 차이점에 대해 알아봅니다.
+title: SQL과 Data Warehouse Manager의 차이점
+description: SQL과 Data Warehouse Manager의 차이점에 대해 알아봅니다.
 exl-id: 31dd7a04-5c03-4399-b67e-f51703eb9fea
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->[!DNL SQL] 편집기를 사용하여 만든 열이 Data Warehouse에 저장되지 않았습니다. 항상 열이 포함된 쿼리에 액세스할 수 있지만 둘 이상의 보고서에서 열을 사용하려면 각 보고서에 대한 쿼리에 열을 다시 만들어야 합니다. 즉, [!DNL SQL] 편집기를 사용하여 만든 열은 기존 [!DNL Report Builder]에서 사용할 수 없습니다.
+>[!DNL SQL] 편집기를 사용하여 만든 열이 Data Warehouse에 저장되지 않습니다. 항상 열이 포함된 쿼리에 액세스할 수 있지만 둘 이상의 보고서에서 열을 사용하려면 각 보고서에 대한 쿼리에 열을 다시 만들어야 합니다. 즉, [!DNL SQL] 편집기를 사용하여 만든 열은 기존 [!DNL Report Builder]에서 사용할 수 없습니다.
 
 ## Data Warehouse 관리자의 열
 

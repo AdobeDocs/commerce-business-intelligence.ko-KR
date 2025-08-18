@@ -56,7 +56,7 @@ ht-degree: 0%
 
 위에 요약된 기본 데이터 열 외에도 다음을 포함하여 이 분석을 활성화하려면 계산된 데이터 필드 세트가 필요합니다.
 
-* 특정 사용자의 `MIN(order.created_at`을(를) 반환하는 `Customer's first purchase date`
+* 특정 사용자의 `Customer's first purchase date`을(를) 반환하는 `MIN(order.created_at`
 
 그런 다음 를 만드는 데 사용됩니다.
 
@@ -64,7 +64,7 @@ ht-degree: 0%
 
 이 두 필드는 사용자 수준(예: `user` 테이블)에서 만들어야 합니다. 이를 통해 사용자에 의해 평균 분석을 정규화할 수 있습니다(즉, 이 평균 계산의 분모가 사용자 수임).
 
-[!DNL Commerce Intelligence]개의 단계가 있는 곳입니다. [!DNL Commerce Intelligence] Data Warehouse을 사용하여 위의 열을 만들 수 있습니다. Adobe 분석가 팀에 문의하여 새 열을 만들 특정 정의를 제공하십시오. [열 편집기](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md)를 사용할 수도 있습니다.
+[!DNL Commerce Intelligence]개의 단계가 있는 곳입니다. [!DNL Commerce Intelligence] Data Warehouse을 사용하여 위의 열을 만들 수 있습니다. Adobe 분석가 팀에 문의하여 새 열 생성에 대한 특정 정의를 제공합니다. [열 편집기](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md)를 사용할 수도 있습니다.
 
 프로덕션 서버에 불필요한 부담을 주기 때문에 이러한 계산된 데이터 필드를 데이터베이스에 직접 생성하지 않는 것이 좋습니다.
 
@@ -75,13 +75,13 @@ ht-degree: 0%
 여기에서 다음 계산을 수행합니다.
 
 
-_[등록 및 구매한 총 고객 수]_ / `Time between a customer's registration date and first purchase date`&rbrack;의 합계&lbrack;
+_[등록 및 구매한 총 고객 수`Time between a customer's registration date and first purchase date`] / [의 합계]_
 
-고객의 등록 날짜에 따라 시간 경과나 추세를 통해 이 계산을 표시하려고 합니다. [!DNL Commerce Intelligence]에서 [이 지표를 만들기](../../data-user/reports/ess-manage-data-metrics.md)하는 방법은 다음과 같습니다.
+고객의 등록 날짜에 따라 시간 경과나 추세를 통해 이 계산을 표시하려고 합니다. [에서 ](../../data-user/reports/ess-manage-data-metrics.md)이 지표를 만들기[!DNL Commerce Intelligence]하는 방법은 다음과 같습니다.
 
 1. **[!UICONTROL Data]**(으)로 이동하여 `Metrics` 탭을 선택합니다.
 1. **[!UICONTROL Add New Metric]**&#x200B;을(를) 클릭하고 `user` 테이블(위에서 차원을 만든 위치)을 선택합니다.
-1. 드롭다운에서 `Customer's registration date` 열로 정렬된 `user` 테이블의 `Time between a customer's registration date and first purchase date` 열에 있는 `Average`을(를) 선택합니다.
+1. 드롭다운에서 `Average` 열로 정렬된 `Time between a customer's registration date and first purchase date` 테이블의 `user` 열에 있는 `Customer's registration date`을(를) 선택합니다.
 1. 관련 필터 또는 필터 세트를 추가합니다.
 
 이제 이 지표가 준비되었습니다.
@@ -94,7 +94,7 @@ _[등록 및 구매한 총 고객 수]_ / `Time between a customer's registratio
 
 ### `Visual Report Builder` {#visualrb}
 
-[데이터를 시각화하는 가장 쉬운 방법은 `Visual Report Builder`](../../data-user/reports/ess-rpt-build-visual.md)입니다. SQL에 익숙하지 않거나 보고서를 빠르게 만들려는 경우 시각적 Report Builder이 가장 좋습니다. 몇 번의 클릭만으로 지표를 추가하고, 데이터를 세그먼트화하고, 조직 전체에 걸쳐 보고서를 만들 수 있습니다. 이 옵션은 기술 전문 지식이 필요하지 않으므로 초보자 및 전문가 모두에게 적합합니다.
+[데이터를 시각화하는 가장 쉬운 방법은 `Visual Report Builder`](../../data-user/reports/ess-rpt-build-visual.md)입니다. SQL에 익숙하지 않거나 보고서를 빠르게 만들려는 경우 Visual Report Builder이 가장 적합한 방법입니다. 몇 번의 클릭만으로 지표를 추가하고, 데이터를 세그먼트화하고, 조직 전체에 걸쳐 보고서를 만들 수 있습니다. 이 옵션은 기술 전문 지식이 필요하지 않으므로 초보자 및 전문가 모두에게 적합합니다.
 
 |  |  |
 |--- |--- |

@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## Commerce Intelligence에서 내 `channels`을(를) 보지 않는 이유는 무엇입니까? {#nochannels}
 
-`Channels`은(는) 데이터의 간단한 집계 버킷입니다. 획득을 채널 버킷으로 정렬하려면 [!DNL Google]에서 특정 매개 변수를 사용하여 고유한 규칙과 정의를 설정합니다. 획득 [Source](https://support.google.com/analytics/answer/1033173?hl=en)(트래픽의 원본)과 획득 [Medium](https://support.google.com/analytics/answer/6099206?hl=en)(소스의 일반 범주)의 조합입니다.
+`Channels`은(는) 데이터의 간단한 집계 버킷입니다. 획득을 채널 버킷으로 정렬하려면 [!DNL Google]에서 특정 매개 변수를 사용하여 고유한 규칙과 정의를 설정합니다. 획득 [Source](https://support.google.com/analytics/answer/1033173?hl=en)&#x200B;(트래픽의 원본)과 획득 [Medium](https://support.google.com/analytics/answer/6099206?hl=en)&#x200B;(소스의 일반 범주)의 조합입니다.
 
 이러한 버킷을 사용하면 트래픽이 발생하는 위치를 이해하는 데 도움이 될 수 있지만, 이 데이터는 채널별로 태그가 지정되지 않고 Source과 Medium의 조합으로 태그가 지정됩니다. [!DNL Google]이(가) 채널 정보를 두 개의 개별 데이터 지점으로 보내기 때문에 채널 그룹화가 [!DNL Commerce Intelligence]에 자동으로 표시되지 않습니다.
 
@@ -42,11 +42,11 @@ ht-degree: 0%
 
 ## 내 Data Warehouse에서 이러한 채널 그룹화를 어떻게 다시 만들 수 있습니까? {#recreate}
 
-이제 채널은 소스와 미디어의 조합일 뿐이므로 Data Warehouse에서 이러한 그룹화를 다시 만드는 것은 쉬운 3단계 프로세스입니다.
+이제 채널은 소스와 미디어의 조합일 뿐이므로 Data Warehouse에서 이러한 그룹화를 다시 만드는 쉬운 3단계 프로세스입니다.
 
-1. **통합 사용[!DNL Google ECommerce]2&rbrace;**
+1. **통합 사용[!DNL Google ECommerce]2}**
 
-   [활성화하면](../importing-data/integrations/google-ecommerce.md)Data Warehouse에서 [동기화](../{{ site.baseurl }}/data-analyst/data-warehouse-mgr/tour-dwm.html#syncing) **중간** 및 **소스** 필드를 확인하십시오. 이 작업이 완료되면 중간 및 소스 획득 데이터를 Data Warehouse으로 가져옵니다.
+   [활성화하면](../importing-data/integrations/google-ecommerce.md)Data Warehouse에서 [medium] 및 {{ site.baseurl }}source **필드를**&#x200B;동기화&#x200B;**(../**/data-analyst/data-warehouse-mgr/tour-dwm.html#syncing)해야 합니다. 이 작업이 완료되면 중간 및 소스 획득 데이터를 Data Warehouse으로 가져옵니다.
 
 1. **Google의 채널 그룹 매핑 업로드**
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
    [!DNL Google Analytics] Pro이고 고유한 채널을 만든 경우 파일을 [!DNL Commerce Intelligence]에 업로드하기 전에 특정 규칙을 매핑 테이블에 추가할 수 있습니다.
 
-   [파일 업로드](../importing-data/connecting-data/using-file-uploader.md)(으)로 Data Warehouse에 가져옵니다.
+   [파일 업로드](../importing-data/connecting-data/using-file-uploader.md)(으)로 Data Warehouse으로 가져옵니다.
 
    ![](../../assets/Setting_Primary_Keys.png)
 

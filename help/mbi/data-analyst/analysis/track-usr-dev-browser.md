@@ -31,7 +31,7 @@ ht-degree: 0%
 
 ### 이 데이터를 언제 기록해야 합니까?
 
-[!DNL Adobe]은(는) 사용자가 만들어지거나 순서가 지정될 때마다 이 정보를 저장하기 위해 `Customers` 및 `Orders` 데이터베이스 테이블에 `Platform` 또는 `User-Agent`이라는 새 필드를 추가할 것을 권장합니다. SQL 데이터베이스를 사용하는 경우 이 필드는 `VARCHAR(255)`이어야 합니다. 
+[!DNL Adobe]은(는) 사용자가 만들어지거나 순서가 지정될 때마다 이 정보를 저장하기 위해 `Platform` 및 `User-Agent` 데이터베이스 테이블에 `Customers` 또는 `Orders`이라는 새 필드를 추가할 것을 권장합니다. SQL 데이터베이스를 사용하는 경우 이 필드는 `VARCHAR(255)`이어야 합니다. 
 
 >[!NOTE]
 >

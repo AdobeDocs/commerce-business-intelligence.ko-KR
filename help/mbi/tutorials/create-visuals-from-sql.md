@@ -1,6 +1,6 @@
 ---
 title: SQL 쿼리에서 시각화 만들기
-description: SQL Report Builder에서 사용되는 용어에 익숙해지고 SQL 시각화를 작성하는 데 필요한 견고한 기반을 제공하는 방법에 대해 알아봅니다.
+description: SQL Report Builder에 사용되는 용어를 숙지하고 SQL 시각화를 작성하는 데 필요한 견고한 기반을 제공하는 방법에 대해 알아봅니다.
 exl-id: 9b9bc205-5b64-4e64-8d23-057072e5dd72
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: SQL Report Builder, Data Warehouse Manager, Reports, Data Integration
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 - `Series`: 측정하려는 열을 SQL Report Builder에서 시리즈라고 합니다. 일반적인 예로는 `revenue`, `items sold` 및 `marketing spend`이(가) 있습니다. 시각화를 만들려면 하나 이상의 열을 `Series`(으)로 설정해야 합니다.
 
-- `Category`: 데이터를 세그먼트화하는 데 사용할 열을 `Category`이라고 합니다. 이는 [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md)의 `Group By` 기능과 같습니다. 예를 들어 고객 생애 매출을 획득 소스로 분할하려면 획득 소스가 포함된 열이 `Category`(으)로 지정됩니다. 두 개 이상의 열을 `Category`(으)로 설정할 수 있습니다.
+- `Category`: 데이터를 세그먼트화하는 데 사용할 열을 `Category`이라고 합니다. 이는 `Group By`의 [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md) 기능과 같습니다. 예를 들어 고객 생애 매출을 획득 소스로 분할하려면 획득 소스가 포함된 열이 `Category`(으)로 지정됩니다. 두 개 이상의 열을 `Category`(으)로 설정할 수 있습니다.
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 - `EXTRACT` 함수는 타임스탬프의 일, 주, 월 또는 연도를 구문 분석하는 데 유용합니다. 보고서에 사용할 `time interval`이(가) `daily`, `weekly`, `monthly` 또는 `yearly`인 경우 유용합니다.
 
-시작하려면 **[!UICONTROL Report Builder** > **SQL Report Builder]**&#x200B;을(를) 클릭하여 [!DNL SQL Report Builder]을(를) 엽니다.
+시작하려면 [!DNL SQL Report Builder]을(를) 클릭하여 **[!UICONTROL Report Builder** > **SQL Report Builder]**&#x200B;을(를) 엽니다.
 
 예를 들어 각 제품에 대해 판매된 월별 총 항목 수를 반환하는 이 쿼리를 생각해 보십시오.
 
@@ -62,7 +62,7 @@ ht-degree: 0%
 
 ## 2단계: 시각화 만들기
 
-이러한 결과를 통해 *시각화를 만드는 방법을 알아보세요.* 시작하려면 `Results` 창에서 **[!UICONTROL Chart]** 탭을 클릭하십시오. `Chart settings` 탭이 표시됩니다.
+이러한 결과를 통해 *시각화를 만드는 방법을 알아보세요.* 시작하려면 **[!UICONTROL Chart]** 창에서 `Results` 탭을 클릭하십시오. `Chart settings` 탭이 표시됩니다.
 
 쿼리가 처음 실행될 때 쿼리의 모든 열이 시리즈로 표시되기 때문에 보고서가 무시될 수 있습니다.
 
@@ -74,11 +74,11 @@ ht-degree: 0%
 
 - `Category`: 이 예에서는 각 제품을 보고서에서 다른 줄로 볼 수 있습니다. 이렇게 하려면 `Product name`을(를) `Category`(으)로 설정합니다.
 
-- `Labels`: `Items Sold`을(를) 시간 경과에 따른 트렌드로 보려면 열 `year` 및 `month`을(를) x축의 레이블로 사용하십시오.
+- `Labels`: `year`을(를) 시간 경과에 따른 트렌드로 보려면 열 `month` 및 `Items Sold`을(를) x축의 레이블로 사용하십시오.
 
 >[!NOTE]
 >
->레이블의 열이 `date`/`time`개인 경우 쿼리에 `ORDER BY` 절이 있어야 합니다.
+>레이블의 열이 `ORDER BY`/`date`개인 경우 쿼리에 `time` 절이 있어야 합니다.
 
 다음은 쿼리 실행에서 보고서 설정에 이르기까지 이 시각화를 만드는 방법을 간략히 보여줍니다.
 

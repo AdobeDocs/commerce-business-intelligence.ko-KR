@@ -76,22 +76,19 @@ ht-degree: 2%
 * **이탈률**
    * [!UICONTROL Metric]: 새 고객(첫 번째 주문 날짜별)
    * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
-   * &#x200B;
-
+   * 
      [!UICONTROL Perspective]: `Cumulative`
    * [!UICONTROL Metric]: `New customers (by last order date)`
    * [!UICONTROL Filter]:
-   * 고객의 마지막 주문 날짜 이후 시간(초) >= [이탈된 고객에 대한 자체 정의된 컷오프&#x200B;]&#x200B;**`^`**
+   * 고객의 마지막 주문 날짜 이후 시간(초) >= [이탈된 고객에 대한 자체 정의된 컷오프&#x200B;]**`^`**
    * `Lifetime number of orders Greater Than 0`
 
    * [!UICONTROL Metric]: `New customers (by last order date)`
    * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
-   * &#x200B;
-
+   * 
      [!UICONTROL Perspective]: Cumulative
    * [!UICONTROL Formula]: `(B / ((A + B) - C)`
-   * &#x200B;
-
+   * 
      [!UICONTROL Format]: Percentage
 
 * *지표 `A`:`New customers cumulative`*

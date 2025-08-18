@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL Mixpanel]개의 데이터가 필요합니다.
 
-[계정 [!DNL Mixpanel] 연결](../integrations/mixpanel.md)한 후 [Data Warehouse 관리자](../../../data-analyst/data-warehouse-mgr/tour-dwm.md)를 사용하여 분석을 위해 관련 데이터 필드를 쉽게 추적할 수 있습니다.
+[계정 [!DNL Mixpanel] 연결](../integrations/mixpanel.md)한 후 [Data Warehouse 관리자](../../../data-analyst/data-warehouse-mgr/tour-dwm.md)를 사용하여 분석할 관련 데이터 필드를 쉽게 추적할 수 있습니다.
 
 이 항목에서는 [!DNL Mixpanel]에서 [!DNL Commerce Intelligence] 계정으로 가져올 수 있는 기본 데이터 테이블을 살펴봅니다. [!DNL Mixpanel]을(를) 연결한 후 Data Warehouse에 다음 테이블이 만들어집니다. 추적에 사용할 수 있는 모든 필드를 보려면 테이블 이름 열의 링크를 클릭합니다.
 
@@ -32,4 +32,4 @@ ht-degree: 0%
 ## 관련 설명서
 
 * [ [!DNL Mixpanel] 연결 중](../integrations/mixpanel.md)
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

@@ -21,4 +21,4 @@ ht-degree: 0%
 
 ## 기존 사용자
 
-공유 대시보드 목록을 다시 보려면 `Global Search` 메뉴에서 **[!UICONTROL Find]**&#x200B;을(를) 클릭할 수 있습니다.
+공유 대시보드 목록을 다시 보려면 **[!UICONTROL Find]** 메뉴에서 `Global Search`을(를) 클릭할 수 있습니다.

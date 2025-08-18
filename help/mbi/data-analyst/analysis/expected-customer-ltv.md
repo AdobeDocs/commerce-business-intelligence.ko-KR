@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ![](../../assets/exp-lifetim-value-anyalysis.png)
 
-이 분석은 새 아키텍처에 대한 Pro 계정 고객만 사용할 수 있습니다. 계정에 `Manage Data` 사이드바 아래의 `Persistent Views` 기능에 대한 액세스 권한이 있는 경우 새 아키텍처를 사용하게 되며 여기에 나열된 지침에 따라 이 분석을 직접 빌드할 수 있습니다.
+이 분석은 새 아키텍처에 대한 Pro 계정 고객만 사용할 수 있습니다. 계정에 `Persistent Views` 사이드바 아래의 `Manage Data` 기능에 대한 액세스 권한이 있는 경우 새 아키텍처를 사용하게 되며 여기에 나열된 지침에 따라 이 분석을 직접 빌드할 수 있습니다.
 
 시작하기 전에 [집단 보고서 빌더](../dev-reports/cohort-rpt-bldr.md)를 숙지해야 합니다.
 
@@ -27,51 +27,51 @@ ht-degree: 0%
 
 * [!UICONTROL Column name]: `Months between first order and this order`
 * [!UICONTROL Column type]: `Same Table`
-* &#x200B;
+* 
   [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column input]: A = `Seconds between customer's first order date and this order`
-* &#x200B;
+* 
   [!UICONTROL Datatype]: `Integer`
 * **정의:**`case when A is null then null when A <= 0 then '1'::int else (ceil(A)/2629800)::int end`
 
 * [!UICONTROL Column name]: `Months since order`
 * [!UICONTROL Column type]: `Same Table`
-* &#x200B;
+* 
   [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column input]: A = `created_at`
-* &#x200B;
+* 
   [!UICONTROL Datatype]: `Integer`
 * 정의: `case when created_at is null then null else (ceil((extract(epoch from current_timestamp) - extract(epoch from created_at))/2629800))::int end`
 
-**달력**&#x200B;개월을 사용하는 경우 **`orders`** 테이블에 만들 열:
+**`orders`**&#x200B;달력&#x200B;**개월을 사용하는 경우** 테이블에 만들 열:
 
 * [!UICONTROL Column name]: `Calendar months between first order and this order`
 * [!UICONTROL Column type]: `Same Table`
-* &#x200B;
+* 
   [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column inputs]:
    * `A` = `created_at`
    * `B` = `Customer's first order date`
 
-* &#x200B;
+* 
   [!UICONTROL Datatype]: `Integer`
 * 정의: `case when (A::date is null) or (B::date is null) then null else ((date_part('year',A::date) - date_part('year',B::date))*12 + date_part('month',A::date) - date_part('month',B::date))::int end`
 
 * [!UICONTROL Column name]: `Calendar months since order`
 * [!UICONTROL Column type]: `Same Table`
-* &#x200B;
+* 
   [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column input]: `A` = `created_at`
-* &#x200B;
+* 
   [!UICONTROL Datatype]: `Integer`
 * **정의:**`case when A is null then null else ((date_part('year',current_timestamp::date) - date_part('year',A::date))*12 + date_part('month',current_timestamp::date) - date_part('month',A::date))::int end`
 
 * [!UICONTROL Column name]: `Is in current month? (Yes/No)`
 * [!UICONTROL Column type]: `Same Table`
-* &#x200B;
+* 
   [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column input]: A = `created_at`
-* &#x200B;
+* 
   [!UICONTROL Datatype]: `String`
 * 정의: `case when A is null then null when (date_trunc('month', current_timestamp::date))::varchar = (date_trunc('month', A::date))::varchar then 'Yes' else 'No' end`
 
@@ -103,7 +103,7 @@ ht-degree: 0%
    * `Calendar months between first order and this order` `<= X`(24개월 등 X에 적합한 숫자 선택)
    * `Is in current month?` = `No`
 
-* &#x200B;
+* 
   [!UICONTROL 지표]: `Revenue`
 * [!UICONTROL Filter]:
 
@@ -122,7 +122,7 @@ ht-degree: 0%
 
 * [!UICONTROL Formula]: `Expected revenue`
 * [!UICONTROL Formula]: `A / (B - C)`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Currency`
 
 기타 차트 세부 정보
@@ -139,7 +139,7 @@ ht-degree: 0%
 **집단별 월간 평균 수익**
 
 * 지표 `A`: `Revenue`
-* &#x200B;
+* 
   [!UICONTROL Metric view]: `Cohort`
 * [!UICONTROL Cohort date]: `Customer's first order date`
 * [!UICONTROL Perspective]: `Average value per cohort member`
@@ -147,11 +147,11 @@ ht-degree: 0%
 **집단별 월별 평균 누적 수익**
 
 * 지표 `A`: `Revenue`
-* &#x200B;
+* 
   [!UICONTROL Metric view]: `Cohort`
 * [!UICONTROL Cohort date]: `Customer's first order date`
 * [!UICONTROL Perspective]: `Cumulative average value per cohort member`
 
 모든 보고서를 컴파일한 후 원하는 대로 대시보드에서 구성할 수 있습니다. 결과는 페이지 상단에 있는 이미지와 비슷할 수 있습니다.
 
-이 분석을 작성하는 동안 질문이 있거나 Professional Services 팀에 문의하려는 경우 [지원 팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하십시오.
+이 분석을 작성하는 동안 질문이 있거나 Professional Services 팀에 문의하려는 경우 [지원 팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하십시오.

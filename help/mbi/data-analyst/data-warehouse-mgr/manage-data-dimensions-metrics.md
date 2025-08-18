@@ -78,7 +78,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->차원을 삭제한 후에도 Data Warehouse의 테이블에 열로 존재합니다. 모든 지표에 다시 추가하고 이러한 차원을 사용하여 새 지표를 작성할 수 있습니다. [!DNL Commerce Intelligence]에서 차원에 해당하는 데이터 열을 제거하려면 [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) 페이지를 통해 데이터 열의 추적을 해제하면 됩니다.
+>차원을 삭제한 후에도 Data Warehouse에서 표에 열로 존재합니다. 모든 지표에 다시 추가하고 이러한 차원을 사용하여 새 지표를 작성할 수 있습니다. [!DNL Commerce Intelligence]에서 차원에 해당하는 데이터 열을 제거하려면 [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) 페이지를 통해 데이터 열의 추적을 해제하면 됩니다.
 
 ## 관련 설명서
 

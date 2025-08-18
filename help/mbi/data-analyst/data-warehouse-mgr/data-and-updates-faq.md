@@ -32,7 +32,7 @@ ht-degree: 0%
 
 ## 업데이트 주기가 오래 걸리는 이유는 무엇입니까? {#updatecycletime}
 
-많은 요인으로 인해 이미 긴 업데이트 시간이 추가될 수 있습니다. 특정 [복제 메서드](../data-warehouse-mgr/cfg-replication-methods.md), [더 높은 재확인 빈도](../data-warehouse-mgr/cfg-data-rechecks.md) 및 대시보드 및 차트 수가 몇 가지 기여자에 불과합니다. Adobe은 업데이트 시간을 줄이기 위해 [일부 설정을 다시 구성](../../best-practices/reduce-update-cycle-time.md)하고 [분석을 위해 데이터베이스를 최적화](../../best-practices/opt-db-analysis.md)할 것을 권장합니다.
+많은 요인으로 인해 이미 긴 업데이트 시간이 추가될 수 있습니다. 특정 [복제 메서드](../data-warehouse-mgr/cfg-replication-methods.md), [더 높은 재확인 빈도](../data-warehouse-mgr/cfg-data-rechecks.md) 및 대시보드 및 차트 수가 몇 가지 기여자에 불과합니다. Adobe에서는 업데이트 시간을 줄이려면 [일부 설정을 다시 구성](../../best-practices/reduce-update-cycle-time.md)하고 [분석을 위해 데이터베이스를 최적화](../../best-practices/opt-db-analysis.md)하는 것이 좋습니다.
 
 ## 업데이트 주기가 완료되면 알림을 받을 수 있습니까? {#notifyupdate}
 
@@ -40,8 +40,8 @@ ht-degree: 0%
 
 ## [!DNL Google ECommerce]데이터가 내 데이터베이스와 다른 이유는 무엇입니까? {#ecommdatabase}
 
-[!DNL Google Analytics]과(와) 데이터베이스 간의 불일치는 여러 가지 이유로 발생할 수 있습니다. 추적이 제대로 활성화되지 않음, 사용자가 시크릿 방문 및 클릭 이벤트가 제대로 작동하지 않는 것은 몇 가지 예에 불과합니다. 매출과 주문이 올바르게 표시되지 않으면 [이 항목을 참조](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=ko)하여 문제를 진단하십시오.
+[!DNL Google Analytics]과(와) 데이터베이스 간의 불일치는 여러 가지 이유로 발생할 수 있습니다. 추적이 제대로 활성화되지 않음, 사용자가 시크릿 방문 및 클릭 이벤트가 제대로 작동하지 않는 것은 몇 가지 예에 불과합니다. 매출과 주문이 올바르게 표시되지 않으면 [이 항목을 참조](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html)하여 문제를 진단하십시오.
 
 ## 데이터 불일치 문제를 해결하려면 어떻게 합니까? {#datadiscrepancy}
 
-Adobe은 일관되지 않은 데이터를 보는 것이 답답한 경험이 될 수 있다는 것을 알고 있습니다. [데이터 불일치 검사 목록](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.html?lang=ko) 또는 [데이터 내보내기 자습서](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=ko)를 사용하여 문제를 진단해 보십시오. 여전히 문제가 있으면 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하세요.
+Adobe은 일관되지 않은 데이터를 보는 것이 답답한 경험이 될 수 있다는 것을 알고 있습니다. [데이터 불일치 검사 목록](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.html) 또는 [데이터 내보내기 자습서](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html)를 사용하여 문제를 진단해 보십시오. 여전히 문제가 있으면 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하세요.

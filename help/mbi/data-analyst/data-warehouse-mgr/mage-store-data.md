@@ -21,7 +21,7 @@ ht-degree: 2%
 
 이러한 개념에 대해 논의하려면 다음 예를 참조하십시오.
 
-`Clothes4U`은(는) 온라인 및 오프라인 매장 모두를 보유한 의류 소매점입니다. 웹 사이트 뒤에 있는 [!DNL Magento Open Source]을(를) 사용하여 데이터를 수집하고 구성합니다.
+`Clothes4U`은(는) 온라인 및 벽돌과 박격포가 모두 있는 retailer 의류입니다. 웹 사이트 뒤에 있는 [!DNL Magento Open Source]을(를) 사용하여 데이터를 수집하고 구성합니다.
 
 ## `catalog\_product\_entity`
 
@@ -59,7 +59,7 @@ ht-degree: 2%
 * `email` - 이 필드는 새 고객이 계정을 만들 때 입력한 전자 메일로 채워집니다.
 * `created_at` - 이 열은 각 사용자가 가입했을 때의 타임스탬프를 반환합니다.
 
-## [!DNL Adobe Commerce 2.x]이(가) 있는 경우 `sales\_flat\_order (or Sales\_order`
+## `sales\_flat\_order (or Sales\_order`이(가) 있는 경우 [!DNL Adobe Commerce 2.x]
 
 계정 생성이 완료되면 `Sammy Customer`이(가) 구매를 시작할 준비가 되었습니다. 웹 사이트에서 고객이 두 쌍의 `Throwback Bellbottoms`과(와) 한 쌍의 `V-Neck T-Shirt`을(를) 장바구니에 추가합니다. 선택에 만족하면 고객이 체크아웃으로 이동하여 주문을 제출하고 [sales flat order table](../data-warehouse-mgr/sales-flat-order-table.md)에 다음 항목을 만듭니다.
 
@@ -70,7 +70,7 @@ ht-degree: 2%
 * `entity_id` - `sales_flat_order` 테이블의 기본 키입니다.
    * Sammy 고객이 이 주문을 하고 위의 행이 `sales_flat_order` 테이블에 작성되면 해당 주문이 `entity_id` = 227로 할당되었습니다.
 * `customer_id` - 이 열은 이 특정 주문을 한 고객의 고유 식별자입니다.
-   * 이 주문과 연결된 `customer_id`은(는) 214입니다. 이 값은 `customer_entity` 테이블에 있는 Sammy 고객의 `entity_id`입니다.
+   * 이 주문과 연결된 `customer_id`은(는) 214입니다. 이 값은 `entity_id` 테이블에 있는 Sammy 고객의 `customer_entity`입니다.
 * `subtotal` - 이 열은 주문에 대해 고객에게 청구된 총 금액입니다.
    * &#39;트로우백 벨바텀&#39;과 &#39;브이넥 티셔츠&#39; 두 켤레의 가격은 총 94.85달러였다
 * `created_at` - 이 열은 각 순서가 만들어진 시점의 타임스탬프를 반환합니다.
@@ -90,10 +90,10 @@ ht-degree: 2%
    * `Sammy Customer`의 주문에 두 개의 개별 제품이 포함되어 있으므로 이 테이블에 두 개의 줄이 생성되었습니다.
 * `name` - 이 열은 제품 이름입니다.
 * `product_id` - 이 열은 이 행이 참조하는 제품의 고유 식별자입니다.
-   * `catalog_product_entity` 테이블에 `Throwback Bellbottoms`의 `entity_id`이(가) 205이므로 위의 첫 번째 행에 `product_id` = 205가 있습니다.
+   * `product_id` 테이블에 `Throwback Bellbottoms`의 `entity_id`이(가) 205이므로 위의 첫 번째 행에 `catalog_product_entity` = 205가 있습니다.
 * `order_id` - 이 열은 이러한 특정 주문 항목을 포함하는 주문의 `entity_id`입니다.
-   * 위의 두 행은 모두 `sales_flat_order` 테이블에 `entity_id` = 227이 있는 `Sammy Customer`에서 수행한 주문의 일부이므로 `order_id` = 227이 있습니다
+   * 위의 두 행은 모두 `order_id` 테이블에 `Sammy Customer` = 227이 있는 `entity_id`에서 수행한 주문의 일부이므로 `sales_flat_order` = 227이 있습니다
 * `qty_ordered` - 이 열은 이 특정 주문에 포함된 제품의 단위 수입니다.
    * `Sammy Customer`의 주문에는 두 쌍의 `Throwback Bellbottoms`이(가) 포함되어 있습니다.
 * `price` - 이 열은 주문 항목의 단일 단위 가격입니다.
-   * `sales_flat_order` 테이블의 `Sammy Customer` 순서에서 `subtotal`은(는) 각각 $39.95에 있는 두 쌍의 `Throwback Bellbottoms`과(와) $14.95에 있는 한 쌍의 `V-Neck T-Shirt`을(를) 합한 94.85입니다.
+   * `subtotal` 테이블의 `Sammy Customer` 순서에서 `sales_flat_order`은(는) 각각 $39.95에 있는 두 쌍의 `Throwback Bellbottoms`과(와) $14.95에 있는 한 쌍의 `V-Neck T-Shirt`을(를) 합한 94.85입니다.

@@ -16,7 +16,7 @@ ht-degree: 0%
 특정 경우에 지표가 작업을 수행하는 데 사용하는 데이터 테이블을 변경하도록 결정할 수 있습니다. 예를 들어 새 사용자 테이블이 있는 경우 `Users\_Old` 테이블에서 사용자 관련 지표를 마이그레이션하여 `Users\_New` 테이블을 대신 사용할 수 있습니다.
 
 1. **[!UICONTROL Data]** > **[!UICONTROL Metrics]**(으)로 이동
-1. `operational` 테이블을 전환할 지표 옆의 **[!UICONTROL Edit]**&#x200B;을(를) 클릭합니다.
+1. **[!UICONTROL Edit]** 테이블을 전환할 지표 옆의 `operational`을(를) 클릭합니다.
 1. 편집기에서 **[!UICONTROL Change]**&#x200B;을(를) 클릭합니다.
 
    ![](../../assets/change-metrics-1.png)
@@ -25,6 +25,6 @@ ht-degree: 0%
 
    ![](../../assets/change-metrics-2.png)
 
-1. 새 테이블에 일치하는 열이 없는 경우 **데이터 테이블에서 만들거나** [!DNL Commerce Intelligence]에서 만든 계산 열 또는 차원인 경우 [지원 팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)할 수 있습니다. **지표에서 차원을 삭제**&#x200B;할 수도 있습니다. 더 이상 필요하지 않은 차원을 삭제하려면 지표 편집기로 돌아가 `Dimensions`에서 삭제할 차원을 선택하면 됩니다.
+1. 새 테이블에 일치하는 열이 없는 경우 **데이터 테이블에서 만들거나** [에서 만든 계산 열 또는 차원인 경우 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)지원 팀에 문의[!DNL Commerce Intelligence]할 수 있습니다. **지표에서 차원을 삭제**&#x200B;할 수도 있습니다. 더 이상 필요하지 않은 차원을 삭제하려면 지표 편집기로 돌아가 `Dimensions`에서 삭제할 차원을 선택하면 됩니다.
 
    ![](../../assets/change-metrics-3.png)

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->`Pro` 플랜에 있으며 새 아키텍처를 사용하는 클라이언트에만 사용할 수 있습니다. 기본 도구 모음에서 `Manage Data`을(를) 선택한 후 `Data Warehouse Views` 섹션을 사용할 수 있는 경우 새 아키텍처를 사용합니다.
+>`Pro` 플랜에 있으며 새 아키텍처를 사용하는 클라이언트에만 사용할 수 있습니다. 기본 도구 모음에서 `Data Warehouse Views`을(를) 선택한 후 `Manage Data` 섹션을 사용할 수 있는 경우 새 아키텍처를 사용합니다.
 
 트랜잭션 데이터베이스에 [!DNL Zendesk] 데이터를 통합하면 고객이 영업 팀 또는 고객 성공 팀과 상호 작용하는 방식을 더 잘 이해할 수 있습니다. 또한 지원 플랫폼을 사용하는 고객 유형을 파악하는 데 도움이 됩니다. 이 항목에서는 대시보드를 설정하여 [!DNL Zendesk] 성능 및 트랜잭션 고객의 관계에 대한 세부 보고서를 얻는 방법을 보여 줍니다.
 
@@ -77,7 +77,7 @@ ht-degree: 0%
 
 * **`[!DNL Zendesk] user's`** 테이블
    * `User is agent? (Yes/No) `
-   * &#x200B;
+   * 
       * `Column type` - `Same Table > Calculation`
 
       * `Input columns` - `role`, `email`
@@ -161,19 +161,19 @@ ht-degree: 0%
 * `Ticket's latest solved date`
 * `First agent response date`
 * `Seconds to resolution`
-   * &#x200B;
+   * 
       * `Column type` - `Same Table > Date Difference`
 
       * `Ticket's latest solved date` - `created_at`
 
 * **`Seconds to first response`**
-   * &#x200B;
+   * 
       * `Column type` - `Same Table > Date Difference`
 
       * `First agent response date` - `created_at`
 
 * **`Requester's ticket number`**
-   * &#x200B;
+   * 
       * `Column type` - `Same Table > Event Number`
 
       * `Event Owner` - `requester_id`
@@ -181,7 +181,7 @@ ht-degree: 0%
       * `Event Rank` - `created_at`
 
 * **`Ticket created_at (hour of day)`**
-   * &#x200B;
+   * 
       * `Column type` - &quot;같은 테이블 > 계산&quot;
 
       * `Input columns` - `created_at`
@@ -191,7 +191,7 @@ ht-degree: 0%
       * `Datatype` - 정수
 
 * **`Ticket created_at (day of week)`**
-   * &#x200B;
+   * 
       * `Column type` - &quot;같은 테이블 > 계산&quot;
 
       * `Input columns` - `created_at`
@@ -204,8 +204,7 @@ ht-degree: 0%
    * 정의 선택: `Count`
    * [!UICONTROL Create Path]:
    * [!UICONTROL Many]: `[!DNL Zendesk] tickets.email`
-   * &#x200B;
-
+   * 
      [!UICONTROL One]: `customer_entity.email`
 
    * [!UICONTROL table] 선택: `[!DNL Zendesk] tickets`
@@ -215,7 +214,7 @@ ht-degree: 0%
 
 * **`User's lifetime number of support tickets requested`**
 * **`Has user filed a support ticket? (Yes/No)`**
-   * &#x200B;
+   * 
       * `Column type` - &quot;같은 테이블 > 계산&quot;
 
       * `Input columns` - `User's lifetime number of support tickets requested`
@@ -402,8 +401,7 @@ ht-degree: 0%
 * `Chart Type`: `Column`
 
 * **[!UICONTROL Number of new users who have and have not filed tickets]**
-   * &#x200B;
-
+   * 
      [!UICONTROL 지표]: Users
 
 * 지표 `A`: `New users`

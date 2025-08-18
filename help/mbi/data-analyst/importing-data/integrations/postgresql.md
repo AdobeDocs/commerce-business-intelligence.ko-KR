@@ -6,19 +6,19 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
 
-# [!DNL SSH Tunnel]을(를) 통해 [!DNL PostgreSQL] 연결
+# [!DNL PostgreSQL]을(를) 통해 [!DNL SSH Tunnel] 연결
 
-`SSH tunnel`을(를) 통해 [!DNL PostgreSQL] 데이터베이스를 [!DNL Commerce Intelligence]에 연결하려면 다음을 수행해야 합니다.
+[!DNL PostgreSQL]을(를) 통해 [!DNL Commerce Intelligence] 데이터베이스를 `SSH tunnel`에 연결하려면 다음을 수행해야 합니다.
 
 1. [ [!DNL Commerce Intelligence] 공개 키 검색](#retrieve)
 1. [ [!DNL Commerce Intelligence] IP 주소에 대한 액세스 허용](#allowlist)
-1. [ [!DNL Commerce Intelligence]의  [!DNL Linux] 사용자 만들기](#linux)
-1. [ [!DNL Commerce Intelligence]의  [!DNL PostgreSQL] 사용자 만들기](#postgres)
+1. [ [!DNL Linux] 의  [!DNL Commerce Intelligence]사용자 만들기](#linux)
+1. [ [!DNL PostgreSQL] 의  [!DNL Commerce Intelligence]사용자 만들기](#postgres)
 1. [ [!DNL Commerce Intelligence]에 연결 및 사용자 정보 입력](#finish)
 
 ## [!DNL Commerce Intelligence] [!DNL public key] 검색 중 {#retrieve}
@@ -40,9 +40,9 @@ ht-degree: 0%
 
 연결에 성공하려면 IP 주소에서 액세스를 허용하도록 방화벽을 구성해야 합니다. `54.88.76.97/32`이지만 `PostgreSQL` 자격 증명 페이지에도 있습니다. 위의 GIF에 있는 파란색 상자를 참조하십시오.
 
-## [!DNL Commerce Intelligence]에 대해 [!DNL Linux] 사용자를 만드는 중 {#linux}
+## [!DNL Linux]에 대해 [!DNL Commerce Intelligence] 사용자를 만드는 중 {#linux}
 
-실시간(또는 자주 업데이트되는) 데이터가 포함되어 있는 한 프로덕션 또는 보조 시스템일 수 있습니다. [!DNL PostgreSQL] 서버에 연결할 수 있는 권한이 있는 한 원하는 방식으로 [이 사용자를 제한](../../../administrator/account-management/restrict-db-access.md)할 수 있습니다.
+실시간(또는 자주 업데이트되는) 데이터가 포함되어 있는 한 프로덕션 또는 보조 시스템일 수 있습니다. [ 서버에 연결할 수 있는 권한이 있는 한 원하는 방식으로 ](../../../administrator/account-management/restrict-db-access.md)이 사용자를 제한[!DNL PostgreSQL]할 수 있습니다.
 
 1. 새 사용자를 추가하려면 [!DNL Linux] 서버에서 다음 명령을 root로 실행합니다.
 
@@ -61,7 +61,7 @@ ht-degree: 0%
         "<PASTE KEY HERE>" >> /home/rjmetric/.ssh/authorized_keys
 ```
 
-1. 사용자 만들기를 완료하려면 `SSH`을(를) 통해 액세스할 수 있도록 `/home/rjmetric` 디렉터리에 대한 권한을 변경하십시오.
+1. 사용자 만들기를 완료하려면 `/home/rjmetric`을(를) 통해 액세스할 수 있도록 `SSH` 디렉터리에 대한 권한을 변경하십시오.
 
 ```bash
         chown -R rjmetric:rjmetric /home/rjmetric
@@ -105,4 +105,4 @@ ht-degree: 0%
 
 ### 관련 항목
 
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

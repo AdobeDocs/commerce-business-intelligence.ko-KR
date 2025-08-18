@@ -30,7 +30,7 @@ ht-degree: 0%
   >이 지표가 구성된 테이블(게스트 체크아웃을 수락하는 스토어의 기능에 따라 `customer_entity` 또는 `sales_order`일 수 있음).
 
    * **[!UICONTROL Create New Metric]**&#x200B;을(를) 클릭하고 위에서 테이블을 선택합니다.
-   * 이 지표는 `created_at`에 의해 정렬된 `Customer's lifetime revenue` 열에서 **중간값**&#x200B;을 수행합니다.
+   * 이 지표는 **에 의해 정렬된** 열에서 `Customer's lifetime revenue`중간값`created_at`을 수행합니다.
       * [!UICONTROL Filters]:
          * `Customers we count (Saved Filter Set)`(또는 `Registered accounts we count`) 추가
 
@@ -48,13 +48,12 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->**[!UICONTROL Time Period:]**&#x200B;에서 각 보고서의 기간은 `All-time`(으)로 나열됩니다. 분석 요구 사항에 맞게 자유롭게 변경하십시오. Adobe은 `All time`, `Year-to-date` 또는 `Last 365 days`과(와) 같이 이 대시보드에 있는 모든 보고서를 동일한 기간에 포함하도록 권장합니다.
+>**[!UICONTROL Time Period:]**&#x200B;에서 각 보고서의 기간은 `All-time`(으)로 나열됩니다. 분석 요구 사항에 맞게 자유롭게 변경하십시오. Adobe에서는 `All time`, `Year-to-date` 또는 `Last 365 days`과(와) 같이 이 대시보드에 있는 모든 보고서를 동일한 기간에 포함하도록 권장합니다.
 
 * **[!UICONTROL Average LTV (all)]**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
-
+   * 
      [!UICONTROL 간격]: `None`
    * [!UICONTROL Chart Type]: `Number (scalar)`
 
@@ -65,8 +64,7 @@ ht-degree: 0%
          * [`B`] `Customer's lifetime number of orders` **다음보다 큼**`0`
 
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
-
+   * 
      [!UICONTROL 간격]: `None`
    * [!UICONTROL Chart Type]: `Number (scalar)`
 
@@ -75,8 +73,7 @@ ht-degree: 0%
    * 지표 `2`: `Median lifetime revenue`
    * [!UICONTROL Time period]: `All time`
    * [!UICONTROL Interval]: `By Month`
-   * &#x200B;
-
+   * 
      [!UICONTROL 차트 유형]: `Line`
    * `Multiple Y-Axes` 선택 취소
 
@@ -84,12 +81,10 @@ ht-degree: 0%
    * 지표 `1`: `Avg lifetime revenue`
    * 지표 `2`: `New customers`
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
-
+   * 
      [!UICONTROL 간격]: `None`
    * [!UICONTROL Group by]: `Customer's lifetime number of orders`
-   * &#x200B;
-
+   * 
      [!UICONTROL 차트 유형]: `Line`
 
   >[!NOTE]

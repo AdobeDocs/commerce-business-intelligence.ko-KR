@@ -6,14 +6,14 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
 
 # 다른 사용자와 대시보드 공유
 
-대시보드 공유는 팀이 계속 진행할 수 있도록 하고 공동 토론을 유도할 수 있는 좋은 방법입니다. 중앙 대시보드를 만들고 공유하면 제어를 유지하면서 팀에 필요한 정보를 제공할 수 있습니다. [[!DNL Adobe] 권장](../../best-practices/share-dashboard-best-practice.md){: target=&quot;_blank&quot;} 실수로 인한 변경을 최소화하기 위해 선택한 몇 개에 `Edit` 권한을 부여할 것을 권장합니다.
+대시보드 공유는 팀이 계속 진행할 수 있도록 하고 공동 토론을 유도할 수 있는 좋은 방법입니다. 중앙 대시보드를 만들고 공유하면 제어를 유지하면서 팀에 필요한 정보를 제공할 수 있습니다. [[!DNL Adobe] 권장](../../best-practices/share-dashboard-best-practice.md){: target="_blank"}은(는) 우연한 변경을 최소화하기 위해 선택한 몇 개에 `Edit` 권한을 부여할 것을 권장합니다.
 
 >[!NOTE]
 >

@@ -1,5 +1,5 @@
 ---
-title: facebook 광고 연결
+title: Facebook 광고 연결
 description: 광고 지출 데이터를 분석하고 비용이 효과적으로 지출되는지 확인하는 방법을 알아봅니다.
 exl-id: 219a868b-f17c-4299-9e29-94db9156c9b6
 role: Admin, Data Architect, Data Engineer, User
@@ -23,18 +23,18 @@ ht-degree: 0%
 
 [!DNL Facebook Ad] 데이터를 [!DNL Commerce Intelligence]에 연결하는 간단한 3단계 프로세스입니다.
 
-1. [ [!DNL Commerce Intelligence]에서 데이터 소스로  [!DNL Facebook] 추가](#stepone)
-1. [ [!DNL Facebook Ads] 데이터에 대한  [!DNL Commerce Intelligence] 액세스 허용](#steptwo)
+1. [ [!DNL Facebook] 에서 데이터 소스로  [!DNL Commerce Intelligence]추가](#stepone)
+1. [ [!DNL Commerce Intelligence] 데이터에 대한  [!DNL Facebook Ads] 액세스 허용](#steptwo)
 1. [데이터를 가져올  [!DNL Facebook Ads] 계정 선택](#stepthree)
 
 ## [!DNL Facebook]을(를) [!DNL Commerce Intelligence]의 데이터 소스로 추가 {#stepone}
 
-1. [!DNL Commerce Intelligence] 계정에 [!DNL Facebook] 통합을 추가하려면 **[!UICONTROL Manage Data** > **Integrations]** 아래의 `Connections` 페이지로 이동하십시오.
+1. [!DNL Facebook] 계정에 [!DNL Commerce Intelligence] 통합을 추가하려면 `Connections` 아래의 **[!UICONTROL Manage Data** > **Integrations]** 페이지로 이동하십시오.
 1. 오른쪽에 있는 **[!UICONTROL Add Integration]**&#x200B;을(를) 클릭합니다.
 1. [!DNL Facebook] 아이콘을 클릭합니다. [!DNL Facebook] 인증 페이지가 표시됩니다.
 1. **[!UICONTROL Authorize]**&#x200B;을(를) 클릭합니다.
 
-## [!DNL Facebook Ads] 데이터에 대한 [!DNL Commerce Intelligence] 액세스 허용 {#steptwo}
+## [!DNL Commerce Intelligence] 데이터에 대한 [!DNL Facebook Ads] 액세스 허용 {#steptwo}
 
 **[!DNL Facebook Authorize]**&#x200B;을(를) 클릭하면 작은 팝업 창이 표시됩니다.
 
@@ -54,11 +54,11 @@ ht-degree: 0%
 
 ## 다음은 무엇입니까? {#next}
 
-[!DNL Google Analytics]에서 [!DNL Facebook]개의 캠페인을 추적하고 있는지 확인하십시오. 이렇게 하면 [!DNL Google Analytics]의 `utm\_campaign` 필드가 [!DNL Facebook] 캠페인에 대해 올바르게 채워집니다.
+[!DNL Facebook]에서 [!DNL Google Analytics]개의 캠페인을 추적하고 있는지 확인하십시오. 이렇게 하면 `utm\_campaign`의 [!DNL Google Analytics] 필드가 [!DNL Facebook] 캠페인에 대해 올바르게 채워집니다.
 
 ## 관련 항목
 
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [ [!DNL Google Adwords] 계정 연결](../integrations/google-ecommerce.md)
 * [ [!DNL Google eCommerce]을(를) 통해 주문 참조 원본 추적](../integrations/google-ecommerce.md)
 * [데이터베이스에서 사용자 조회 소스 추적](../../analysis/google-track-user-acq.md)

@@ -13,19 +13,19 @@ ht-degree: 0%
 
 # 포함된 대시보드
 
-[!DNL Adobe]에서 `eCommerce` 및 `SaaS` 스타터 패키지를 제공합니다. Adobe 분석가가 만든 이러한 패키지에는 데이터 세트에 대한 맞춤형 대시보드 및 보고서 세트가 포함되어 있습니다. 이러한 패키지에 포함된 분석을 통해 사용자 라이프타임 수익, 반복 구매 횟수 등과 같은 필수 지표의 상태를 확인할 수 있으므로 향후 탐색을 위한 견고한 기반을 마련할 수 있습니다.
+[!DNL Adobe]에서 `eCommerce` 및 `SaaS` 스타터 패키지를 제공합니다. Adobe 분석가가 만든 이러한 패키지에는 데이터 세트에 대한 사용자 지정된 대시보드 및 보고서 세트가 들어 있습니다. 이러한 패키지에 포함된 분석을 통해 사용자 라이프타임 수익, 반복 구매 횟수 등과 같은 필수 지표의 상태를 확인할 수 있으므로 향후 탐색을 위한 견고한 기반을 마련할 수 있습니다.
 
 >[!NOTE]
 >
 >일부 대시보드의 사용 가능 여부는 데이터 세트에 따라 다릅니다.
 
-질문이 있거나 패키지를 계정에 추가하려면 [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)을 제출하여 도움을 받으십시오.
+질문이 있거나 패키지를 계정에 추가하려면 [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)을 제출하여 도움을 받으십시오.
 
 ## 경영진 개요
 
 `executive overview` 대시보드는 다른 대시보드에 있는 차트로 만들어집니다. 이 대시보드는 데이터에 대한 높은 수준의 개요이며 매일 검토되는 차트를 포함하며, 다른 대시보드에는 보다 자세한 정보가 포함되어 있습니다. 처음에는 각 계정에서 기본 대시보드로 설정됩니다.
 
-일반적인 차트 세트가 포함되어 있습니다. Adobe은 가장 자주 사용하는 다른 차트를 추가하여 이 대시보드를 사용자의 요구 사항에 맞게 조정할 것을 권장합니다.
+일반적인 차트 세트가 포함되어 있습니다. Adobe에서는 가장 자주 사용하는 다른 차트를 추가하여 이 대시보드를 사용자의 요구 사항에 맞게 조정할 것을 권장합니다.
 
 ## 집단 분석
 

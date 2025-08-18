@@ -37,7 +37,7 @@ ht-degree: 0%
 >
 >`customer\_entity.entity\_id`이(가) `sales\_flat\_order.entity\_id`과(와) 같지 않습니다. 첫 번째는 `customer\_id`(으)로 생각할 수 있으며 두 번째는 `order\_id.`(으)로 생각할 수 있습니다.
 
-[!DNL Commerce Intelligence] 내에서 이 두 테이블 간의 경로가 없는 경우 [Data Warehouse] 탭에서 [경로를 만들고](../data-warehouse-mgr/create-paths-calc-columns.md)할 수 있습니다. 경로를 만들 준비가 되면 다음과 같이 정의됩니다.
+[!DNL Commerce Intelligence] 내에서 이 두 테이블 간의 경로가 없는 경우 Data Warehouse 탭에서 [경로를 만들고](../data-warehouse-mgr/create-paths-calc-columns.md)할 수 있습니다. 경로를 만들 준비가 되면 다음과 같이 정의됩니다.
 
 ![](../../assets/SFO___CE_path.png)
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 한 주문에 여러 항목이 포함될 수 있습니다. 이 두 테이블 간의 관계는 `sales\_flat\_order.entity\_id = sales\_flat\_order\_item.order\_id`입니다.
 
-[!DNL Commerce Intelligence] 내에서 이 두 테이블 간의 경로가 없는 경우 [Data Warehouse] 탭에서 [경로를 만들고](../data-warehouse-mgr/create-paths-calc-columns.md)할 수 있습니다. 경로를 만들 준비가 되면 아래에 표시된 대로 경로를 정의합니다.
+[!DNL Commerce Intelligence] 내에서 이 두 테이블 간의 경로가 없는 경우 Data Warehouse 탭에서 [경로를 만들고](../data-warehouse-mgr/create-paths-calc-columns.md)할 수 있습니다. 경로를 만들 준비가 되면 아래에 표시된 대로 경로를 정의합니다.
 
 ![](../../assets/SFOI___SFO_path.png)
 
@@ -57,6 +57,6 @@ ht-degree: 0%
 
 하나의 제품은 여러 가지 물건을 구매할 수 있습니다. 이 두 테이블 간의 관계는 `catalog\_product\_entity.entity\_id = sales\_flat\_order\_item.product`입니다.
 
-[!DNL Commerce Intelligence] 내에서 이 두 테이블 간의 경로가 없는 경우 [Data Warehouse] 탭에서 [경로를 만들고](../data-warehouse-mgr/create-paths-calc-columns.md)할 수 있습니다. 경로를 만들 준비가 되면 아래에 표시된 대로 경로를 정의합니다.
+[!DNL Commerce Intelligence] 내에서 이 두 테이블 간의 경로가 없는 경우 Data Warehouse 탭에서 [경로를 만들고](../data-warehouse-mgr/create-paths-calc-columns.md)할 수 있습니다. 경로를 만들 준비가 되면 아래에 표시된 대로 경로를 정의합니다.
 
 ![](../../assets/SFOI___CPE_path.png)

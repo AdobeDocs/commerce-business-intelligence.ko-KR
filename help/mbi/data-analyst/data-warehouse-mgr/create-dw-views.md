@@ -13,11 +13,11 @@ ht-degree: 6%
 
 # Data Warehouse 보기 작업
 
-이 문서에서는 **[!UICONTROL Manage Data]** > **[!UICONTROL Data Warehouse Views]**(으)로 이동하여 액세스할 수 있는 `Data Warehouse Views`의 용도와 사용에 대해 간략하게 설명합니다. 다음은 기능 및 보기를 만드는 방법에 대한 설명과 `Data Warehouse Views`을(를) 사용하여 [!DNL Facebook] 및 [!DNL AdWords] 지출 데이터를 통합하는 방법에 대한 예입니다.
+이 문서에서는 `Data Warehouse Views` > **[!UICONTROL Manage Data]**(으)로 이동하여 액세스할 수 있는 **[!UICONTROL Data Warehouse Views]**&#x200B;의 용도와 사용에 대해 간략하게 설명합니다. 다음은 기능 및 보기를 만드는 방법에 대한 설명과 `Data Warehouse Views`을(를) 사용하여 [!DNL Facebook] 및 [!DNL AdWords] 지출 데이터를 통합하는 방법에 대한 예입니다.
 
 ## 일반 목적
 
-`Data Warehouse Views` 기능은 기존 테이블을 수정하여 새 웨어하우스된 테이블을 만들거나 SQL을 사용하여 여러 테이블을 연결하거나 통합하는 방법입니다. 업데이트 주기에 의해 `Data Warehouse View`이(가) 만들어지고 처리되면 아래와 같이 Data Warehouse에서 `Data Warehouse Views` 드롭다운 아래의 새 테이블로 채워집니다.
+`Data Warehouse Views` 기능은 기존 테이블을 수정하여 새 웨어하우스된 테이블을 만들거나 SQL을 사용하여 여러 테이블을 연결하거나 통합하는 방법입니다. 업데이트 주기에 의해 `Data Warehouse View`이(가) 만들어지고 처리되면 아래와 같이 `Data Warehouse Views` 드롭다운 아래의 새 테이블로 Data Warehouse에 채워집니다.
 
 ![](../../assets/Data_Warehouse.png)
 
@@ -29,14 +29,14 @@ SQL을 잘 알고 있는 경우 이러한 통합 예제는 모두 `UNION` 함수
 
 ## Data Warehouse 보기 만들기 및 관리
 
-아래와 같이 **[!UICONTROL Manage Data]** > **[!UICONTROL Data Warehouse Views]**(으)로 이동하여 새 `Data Warehouse Views`을(를) 만들고 기존 보기를 삭제할 수 있습니다.
+아래와 같이 `Data Warehouse Views` > **[!UICONTROL Manage Data]**(으)로 이동하여 새 **[!UICONTROL Data Warehouse Views]**&#x200B;을(를) 만들고 기존 보기를 삭제할 수 있습니다.
 
 ![](../../assets/Data_Warehouse_Views.png)
 
 여기에서 아래 샘플 지침에 따라 보기를 만들 수 있습니다.
 
 1. 기존 보기를 관찰하는 경우 **[!UICONTROL New Data Warehouse View]**&#x200B;을(를) 클릭하여 빈 쿼리 창을 엽니다. 빈 쿼리 창이 이미 열려 있는 경우 다음 단계로 진행합니다.
-1. `View Name` 필드에 입력하여 보기의 이름을 지정하십시오. 여기에 제공된 이름은 Data Warehouse에서 보기의 표시 이름을 결정합니다. `View names`은(는) 소문자, 숫자 및 밑줄(_)로 제한됩니다. 다른 문자는 사용할 수 없습니다.
+1. `View Name` 필드에 입력하여 보기의 이름을 지정하십시오. 여기에 제공된 이름은 Data Warehouse 보기의 표시 이름을 결정합니다. `View names`은(는) 소문자, 숫자 및 밑줄(_)로 제한됩니다. 다른 문자는 사용할 수 없습니다.
 1. 표준 PostgreSQL 구문을 사용하여 `Select Query` 창에 쿼리를 입력하십시오.
 
    >[!NOTE]
@@ -81,7 +81,7 @@ SQL을 잘 알고 있는 경우 이러한 통합 예제는 모두 `UNION` 함수
 
 [!DNL Facebook]과(와) [!DNL Google AdWords] 캠페인을 모두 포함하는 단일 광고 지출 테이블을 만들려면 SQL 쿼리를 작성하고 `UNION ALL` 함수를 사용해야 합니다. `UNION ALL` 문은 각 쿼리의 결과를 단일 출력에 추가하면서 서로 다른 여러 SQL 쿼리를 결합하는 데 가장 많이 사용됩니다.
 
-PostgreSQL [설명서](https://www.postgresql.org/docs/8.3/queries-union.html)에 설명된 대로 언급할 가치가 있는 `UNION` 문의 몇 가지 요구 사항이 있습니다.
+PostgreSQL `UNION`설명서[에 설명된 대로 언급할 가치가 있는 ](https://www.postgresql.org/docs/8.3/queries-union.html) 문의 몇 가지 요구 사항이 있습니다.
 
 * 모든 쿼리는 동일한 수의 열을 반환해야 합니다.
 * 해당 열에는 동일한 데이터 유형이 있어야 합니다.
@@ -115,7 +115,7 @@ PostgreSQL [설명서](https://www.postgresql.org/docs/8.3/queries-union.html)�
 위에 대한 몇 가지 중요한 사항:
 
 * 명확성을 위해 모든 쿼리에서 이름이 일치하도록 모든 열에 별칭을 지정합니다. 그러나 이는 요구 사항이 아닙니다. SELECT 쿼리에서 열이 호출되는 순서는 줄이 어떻게 정렬되는지 나타냅니다.
-* [!DNL AdWords] 또는 [!DNL Facebook] 데이터를 더 쉽게 필터링할 수 있도록 `ad_source`이라는 새 열이 만들어집니다. 이 쿼리는 두 테이블의 모든 데이터를 결합합니다. `ad_source`과(와) 같은 열을 만들지 않으면 특정 원본에서 보낸 지출을 식별할 수 있는 쉬운 방법이 없습니다.
+* `ad_source` 또는 [!DNL AdWords] 데이터를 더 쉽게 필터링할 수 있도록 [!DNL Facebook]이라는 새 열이 만들어집니다. 이 쿼리는 두 테이블의 모든 데이터를 결합합니다. `ad_source`과(와) 같은 열을 만들지 않으면 특정 원본에서 보낸 지출을 식별할 수 있는 쉬운 방법이 없습니다.
 
 위의 쿼리를 `Data Warehouse View`(으)로 저장하면 아래와 같이 [!DNL Facebook] 및 [!DNL AdWords] 비용이 모두 포함된 테이블이 만들어집니다.
 
@@ -136,7 +136,7 @@ PostgreSQL [설명서](https://www.postgresql.org/docs/8.3/queries-union.html)�
 
 **추가 도움말을 찾고 계십니까?**
 
-SQL을 작성하고 `Data Warehouse Views`을(를) 만드는 작업은 기술 지원에 포함되지 않습니다. 그러나 [서비스 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)은(는) 보기 만들기에 대한 지원을 제공합니다. 특정 분석을 위해 새 데이터베이스를 사용하여 기존 데이터베이스를 마이그레이션하고 단일 Data Warehouse 보기를 만드는 모든 작업에 대해 지원 팀이 도움을 줄 수 있습니다.
+SQL을 작성하고 `Data Warehouse Views`을(를) 만드는 작업은 기술 지원에 포함되지 않습니다. 그러나 [서비스 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)은(는) 보기 만들기에 대한 지원을 제공합니다. 특정 분석을 위해 새 데이터베이스를 사용하여 기존 데이터베이스를 마이그레이션하고 단일 Data Warehouse 보기를 만드는 모든 작업에 대해 지원 팀이 도움을 줄 수 있습니다.
 
 일반적으로 2~3개의 유사한 구조 테이블을 통합하기 위해 새 `Data Warehouse View`을(를) 만들려면 5시간의 서비스 시간이 필요하며, 이 경우 약 1,250달러의 작업 비용이 듭니다. 그러나 필요한 예상 투자를 늘릴 수 있는 몇 가지 일반적인 요소는 다음과 같습니다.
 

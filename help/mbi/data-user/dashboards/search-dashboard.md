@@ -29,6 +29,6 @@ ht-degree: 0%
 
 ## 다른 사용자가 소유한 대시보드 찾기 {#other}
 
-다른 사용자가 소유한 대시보드를 찾고 계십니까? 대시보드를 다른 사용자가 볼 수 있는 경우 `Dashboard Options` 드롭다운에서 **[!UICONTROL Find]**&#x200B;을(를) 클릭하여 검색할 수 있습니다.
+다른 사용자가 소유한 대시보드를 찾고 계십니까? 대시보드를 다른 사용자가 볼 수 있는 경우 **[!UICONTROL Find]** 드롭다운에서 `Dashboard Options`을(를) 클릭하여 검색할 수 있습니다.
 
 ![대시보드 찾기](../../assets/find-dboards-other-owners.png)

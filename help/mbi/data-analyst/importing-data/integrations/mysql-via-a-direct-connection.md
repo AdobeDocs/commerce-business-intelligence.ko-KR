@@ -16,13 +16,13 @@ ht-degree: 0%
 ## 이 항목에서
 
 * [ [!DNL Commerce Intelligence] IP 주소에 대한 액세스 허용](#allowlist)
-* [ [!DNL Commerce Intelligence]의  [!DNL MySQL] 사용자 만들기](#steptwo)
+* [ [!DNL MySQL] 의  [!DNL Commerce Intelligence]사용자 만들기](#steptwo)
 * [ [!DNL Commerce Intelligence]에 연결 정보 입력](#stepthree)
 
 ## 이동
 
 * [[!DNL MySQL] 경유 ](../integrations/mysql-via-ssh-tunnel.md)
-* [ [!DNL cPanel]을(를) 통한 [!DNL MySQL]](../integrations/mysql-via-cpanel.md)
+* [[!DNL MySQL]을(를) 통한  [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
 
 >[!NOTE]
 >
@@ -36,9 +36,9 @@ ht-degree: 0%
 
 ![MBI_Allow_Access_IPs.png](../../../assets/MBI_allow_access_IPs.png)
 
-## [!DNL Commerce Intelligence]에 대해 [!DNL MySQL] 사용자 만들기
+## [!DNL MySQL]에 대해 [!DNL Commerce Intelligence] 사용자 만들기
 
-[!DNL Commerce Intelligence]에 대해 `MySQL` 사용자를 만드는 가장 간단한 방법은 `GRANT` 권한으로 `MySQL`에 로그인할 때 다음 쿼리를 실행하는 것입니다. `Commerce Intelligence IP Address`을(를) [!DNL Commerce Intelligence] IP 주소로 바꾸고 `secure password`을(를) 선택한 보안 암호로 바꿉니다.
+`MySQL`에 대해 [!DNL Commerce Intelligence] 사용자를 만드는 가장 간단한 방법은 `MySQL` 권한으로 `GRANT`에 로그인할 때 다음 쿼리를 실행하는 것입니다. `Commerce Intelligence IP Address`을(를) [!DNL Commerce Intelligence] IP 주소로 바꾸고 `secure password`을(를) 선택한 보안 암호로 바꿉니다.
 
 ```sql
     GRANT SELECT ON *.* TO 'magentobi'@'<Commerce Intelligence IP address>' IDENTIFIED BY '<secure password>';
@@ -60,10 +60,10 @@ ht-degree: 0%
 * `Port`: 서버에 있는 MySQL의 포트(기본적으로 `3306`)
 * `Host`: 기본적으로 localhost입니다. 일반적으로 이 값은 [!DNL MySQL] 서버에 대한 바인드 주소 값이며 기본적으로 `127.0.0.1 (localhost)`이지만 일부 로컬 네트워크 주소(예: `192.168.0.1`) 또는 서버의 공용 IP 주소일 수도 있습니다.
 
-  이 값은 `\[mysqld\]`을(를) 읽는 줄 아래의 `my.cnf` 파일(`/etc/my.cnf`에 있음)에서 찾을 수 있습니다. 해당 파일에서 바인드 주소 줄이 주석 처리되면 외부 연결 시도로부터 서버가 보호됩니다.
+  이 값은 `my.cnf`을(를) 읽는 줄 아래의 `/etc/my.cnf` 파일(`\[mysqld\]`에 있음)에서 찾을 수 있습니다. 해당 파일에서 바인드 주소 줄이 주석 처리되면 외부 연결 시도로부터 서버가 보호됩니다.
 
 완료되면 **[!UICONTROL Save & Test]**&#x200B;을(를) 클릭하여 설치를 완료합니다.
 
 ## 관련 설명서
 
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

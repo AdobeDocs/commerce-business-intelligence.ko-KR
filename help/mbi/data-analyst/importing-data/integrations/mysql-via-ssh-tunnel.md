@@ -11,25 +11,25 @@ ht-degree: 0%
 
 ---
 
-# [!DNL SSH Tunnel]을(를) 통해 [!DNL MySQL] 연결
+# [!DNL MySQL]을(를) 통해 [!DNL SSH Tunnel] 연결
 
 * [ [!DNL Commerce Intelligence] 공개 키 검색](#retrieve)
 * [ [!DNL Commerce Intelligence] IP 주소에 대한 액세스 허용](#allowlist)
 * [ [!DNL Commerce Intelligence]에 대한 Linux 사용자 만들기](#linux)
-* [ [!DNL Commerce Intelligence]의  [!DNL MySQL] 사용자 만들기](#mysql)
+* [ [!DNL MySQL] 의  [!DNL Commerce Intelligence]사용자 만들기](#mysql)
 * [ [!DNL Commerce Intelligence]에 연결 및 사용자 정보 입력](#finish)
 
 ## 이동
 
 * [[!DNL MySQL] 경유 ](../integrations/mysql-via-a-direct-connection.md)
-* [ [!DNL cPanel]을(를) 통한 [!DNL MySQL]](../integrations/mysql-via-cpanel.md)
+* [[!DNL MySQL]을(를) 통한  [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
 
-`SSH tunnel`을(를) 통해 [!DNL MySQL] 데이터베이스를 [!DNL Commerce Intelligence]에 연결하려면 다음을 수행해야 합니다.
+[!DNL MySQL]을(를) 통해 [!DNL Commerce Intelligence] 데이터베이스를 `SSH tunnel`에 연결하려면 다음을 수행해야 합니다.
 
 1. [!DNL Commerce Intelligence] `public key` 검색
 1. [!DNL Commerce Intelligence] `IP address`에 대한 액세스 허용
-1. [!DNL Commerce Intelligence]에 대해 `Linux` 사용자 만들기
-1. [!DNL Commerce Intelligence]에 대해 `MySQL` 사용자 만들기
+1. `Linux`에 대해 [!DNL Commerce Intelligence] 사용자 만들기
+1. `MySQL`에 대해 [!DNL Commerce Intelligence] 사용자 만들기
 1. [!DNL Commerce Intelligence]에 연결 및 사용자 정보 입력
 
 
@@ -52,9 +52,9 @@ ht-degree: 0%
 
 연결에 성공하려면 IP 주소에서 액세스를 허용하도록 방화벽을 구성해야 합니다. `54.88.76.97` 및 `34.250.211.151`이지만 `MySQL credentials` 페이지에도 있습니다. 위의 GIF에 있는 파란색 상자를 참조하십시오.
 
-## [!DNL Commerce Intelligence]에 대해 [!DNL Linux] 사용자를 만드는 중 {#linux}
+## [!DNL Linux]에 대해 [!DNL Commerce Intelligence] 사용자를 만드는 중 {#linux}
 
-실시간(또는 자주 업데이트되는) 데이터가 포함되어 있는 한 프로덕션 또는 보조 시스템일 수 있습니다. `MySQL` 서버에 연결할 수 있는 권한이 있는 한 원하는 방식으로 [이 사용자를 제한](../../../administrator/account-management/restrict-db-access.md)할 수 있습니다.
+실시간(또는 자주 업데이트되는) 데이터가 포함되어 있는 한 프로덕션 또는 보조 시스템일 수 있습니다. [ 서버에 연결할 수 있는 권한이 있는 한 원하는 방식으로 ](../../../administrator/account-management/restrict-db-access.md)이 사용자를 제한`MySQL`할 수 있습니다.
 
 1. 새 사용자를 추가하려면 [!DNL Linux] 서버에서 다음 명령을 root로 실행합니다.
 
@@ -73,7 +73,7 @@ ht-degree: 0%
         "<PASTE KEY HERE>" >> /home/rjmetric/.ssh/authorized_keys
 ```
 
-1. 사용자 만들기를 완료하려면 `SSH`을(를) 통해 액세스할 수 있도록 `/home/rjmetric` 디렉터리에 대한 권한을 변경하십시오.
+1. 사용자 만들기를 완료하려면 `/home/rjmetric`을(를) 통해 액세스할 수 있도록 `SSH` 디렉터리에 대한 권한을 변경하십시오.
 
 ```bash
         chown -R rjmetric:rjmetric /home/rjmetric
@@ -83,9 +83,9 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->서버와 연결된 `sshd\_config` 파일이 기본 옵션으로 설정되지 않은 경우 특정 사용자만 서버에 액세스할 수 있으므로 [!DNL Commerce Intelligence]에 연결할 수 없습니다. 이러한 경우 `rjmetric` 사용자가 서버에 액세스할 수 있도록 하려면 `AllowUsers`과(와) 같은 명령을 실행해야 합니다.
+>서버와 연결된 `sshd\_config` 파일이 기본 옵션으로 설정되지 않은 경우 특정 사용자만 서버에 액세스할 수 있으므로 [!DNL Commerce Intelligence]에 연결할 수 없습니다. 이러한 경우 `AllowUsers` 사용자가 서버에 액세스할 수 있도록 하려면 `rjmetric`과(와) 같은 명령을 실행해야 합니다.
 
-## [!DNL Commerce Intelligence]에 대해 [!DNL MySQL] 사용자를 만드는 중 {#mysql}
+## [!DNL MySQL]에 대해 [!DNL Commerce Intelligence] 사용자를 만드는 중 {#mysql}
 
 조직에 다른 프로세스가 필요할 수 있지만 이 사용자를 만드는 가장 간단한 방법은 권한을 부여할 수 있는 권한이 있는 사용자로 [!DNL MySQL]에 로그인한 경우 다음 쿼리를 실행하는 것입니다.
 
@@ -108,7 +108,7 @@ ht-degree: 0%
 * `Port`: 서버의 [!DNL MySQL] 포트(기본적으로 3306)
 * `Host` 기본적으로 localhost입니다. 일반적으로 이 값은 [!DNL MySQL] 서버에 대한 바인드 주소 값이며 기본적으로 `127.0.0.1 (localhost)`이지만 일부 로컬 네트워크 주소(예: `192.168.0.1`) 또는 서버의 공용 IP 주소일 수도 있습니다.
 
-  이 값은 `\[mysqld\]`을(를) 읽는 줄 아래의 `my.cnf` 파일(`/etc/my.cnf`에 있음)에서 찾을 수 있습니다. 해당 파일에서 바인드 주소 줄이 주석 처리되면 외부 연결 시도로부터 서버가 보호됩니다.
+  이 값은 `my.cnf`을(를) 읽는 줄 아래의 `/etc/my.cnf` 파일(`\[mysqld\]`에 있음)에서 찾을 수 있습니다. 해당 파일에서 바인드 주소 줄이 주석 처리되면 외부 연결 시도로부터 서버가 보호됩니다.
 
 `SSH Connection` 섹션에서:
 
@@ -120,4 +120,4 @@ ht-degree: 0%
 
 ## 관련 항목:
 
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

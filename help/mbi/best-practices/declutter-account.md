@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Commerce Intelligence]에서 6개월이나 6년 동안 활동했는지에 관계없이 정돈된 계정을 유지하는 것은 조직이 플랫폼을 최대한 활용하는 데 무엇보다 중요합니다. 시간이 지남에 따라 더 이상 필요하지 않은 사용자, 대시보드, 보고서, 지표 및 열이 있는 것이 당연합니다. 일회용으로 보고서를 만들어 놓고 잊어버렸거나 회사에서 나간 사용자가 계정을 비활성화한 적이 없을 수 있습니다.
 
-[!DNL Commerce Intelligence] 계정의 [모든 요소에 대해 표준화되고 명확한 이름 지정](../best-practices/naming-elements.md))을 사용하면 아래 계정 감사 단계를 통해 사용자의 불필요한 분석과 혼란을 줄일 수 있습니다. 한 가지 추가 이점에는 [잠재적으로 더 빠른 업데이트 주기](../best-practices/reduce-update-cycle-time.md)가 포함됩니다.
+[ 계정의 ](../best-practices/naming-elements.md)모든 요소에 대해 표준화되고 명확한 이름 지정[!DNL Commerce Intelligence])을 사용하면 아래 계정 감사 단계를 통해 사용자의 불필요한 분석과 혼란을 줄일 수 있습니다. 한 가지 추가 이점에는 [잠재적으로 더 빠른 업데이트 주기](../best-practices/reduce-update-cycle-time.md)가 포함됩니다.
 
 ## 1단계: 비활성 사용자 식별
 
@@ -95,13 +95,13 @@ ht-degree: 0%
 
 ![](../../mbi/assets/report_dependecies.png)
 
-지표가 더 이상 필요하지 않은 경우 **[!UICONTROL Back to Metric List]**&#x200B;을(를) 클릭하여 **[!UICONTROL Metrics]** 페이지로 돌아가 삭제할 지표를 찾습니다. **[!UICONTROL Delete]**&#x200B;을(를) 클릭합니다.
+지표가 더 이상 필요하지 않은 경우 **[!UICONTROL Metrics]**&#x200B;을(를) 클릭하여 **[!UICONTROL Back to Metric List]** 페이지로 돌아가 삭제할 지표를 찾습니다. **[!UICONTROL Delete]**&#x200B;을(를) 클릭합니다.
 
 ## 4단계: 동기화된 열 평가
 
 마지막 단계는 Data Warehouse에서 현재 동기화 중인 열을 평가하는 것입니다. 열 동기화를 해제하면 계정이 더 이상 사용되지 않을 뿐만 아니라 업데이트 시간도 줄어들 수 있습니다.
 
-계속 진행하려면 [!DNL Commerce Intelligence] [지원](../guide-overview.md#Submitting-a-Support-Ticket)에 문의하세요. 지원 팀은 SQL 보고서를 제외하고 사용자의 대시보드에서 사용되지 않고 전자 메일 요약에 사용되지 않는 모든 열을 포함하는 보고서를 만들 수 있습니다. 그런 다음 Data Warehouse 관리자를 통해 이 보고서를 동기화 해제할 열을 선택하는 안내서로 사용할 수 있습니다.
+계속 진행하려면 [!DNL Commerce Intelligence] [지원](../guide-overview.md#Submitting-a-Support-Ticket)에 문의하세요. 지원 팀은 SQL 보고서를 제외하고 사용자의 대시보드에서 사용되지 않고 전자 메일 요약에 사용되지 않는 모든 열을 포함하는 보고서를 만들 수 있습니다. 그런 다음 Data Warehouse Manager를 통해 이 보고서를 동기화하지 않을 열을 선택하는 안내서로 사용할 수 있습니다.
 
 >[!NOTE]
 >

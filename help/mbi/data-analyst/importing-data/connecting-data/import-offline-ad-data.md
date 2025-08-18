@@ -1,6 +1,6 @@
 ---
 title: 다른 광고 지출 데이터 가져오기
-description: 오프라인 또는 기타 광고 지출 데이터를  [!DNL Commerce Intelligence] (으)로 가져오는 방법을 알아봅니다.
+description: 오프라인 또는 기타 광고 지출 데이터를  [!DNL Commerce Intelligence](으)로 가져오는 방법을 알아봅니다.
 exl-id: 6f12a397-0927-4e87-95ff-3a55ccc9e14b
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 광고 비용 데이터 업로드
 
-광고 지출 데이터를 분석하는 첫 번째 단계는 데이터를 가져오는 것입니다. 대부분의 광고 플랫폼에서는 보고서를 내보낼 수 있으므로 Adobe은 광고 플랫폼에서 원시 데이터를 내보내고 아무런 조작 없이 직접 [!DNL Commerce Intelligence]에 업로드하는 것을 권장합니다. Data Warehouse의 데이터에 대한 작업을 수행할 수 있으므로 노력을 두 배로 늘릴 필요가 없습니다.
+광고 지출 데이터를 분석하는 첫 번째 단계는 데이터를 가져오는 것입니다. 대부분의 광고 플랫폼에서는 보고서를 내보낼 수 있으므로 Adobe에서는 광고 플랫폼에서 원시 데이터를 내보내고 아무런 조작 없이 직접 [!DNL Commerce Intelligence]에 업로드하는 것을 권장합니다. Data Warehouse에서 데이터에 대한 작업을 수행할 수 있으므로 노력을 두 배로 늘릴 필요가 없습니다.
 
 광고 지출 데이터를 내보낸 후 [`File Upload` 기능](../connecting-data/using-file-uploader.md)을(를) 사용하여 데이터를 Data Warehouse으로 가져옵니다. 시간이 지남에 따라 새 데이터를 동일한 [!DNL Commerce Intelligence] 테이블에 업로드할 수 있습니다.
 

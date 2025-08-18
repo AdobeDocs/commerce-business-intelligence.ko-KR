@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Commerce Intelligence]에 유사한 방식으로 필터링해야 하는 지표가 여러 개 있는 경우(예: 테스트 주문 필터링) 저장된 필터 집합을 만들어 지표에 적용할 수 있습니다. 이렇게 하면 지표를 만들거나 편집할 때 개별 필터를 추가할 필요가 없어 시간을 절약할 수 있습니다.
 
-자세한 내용은 [교육 비디오](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html?lang=ko)를 참조하세요.
+자세한 내용은 [교육 비디오](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html)를 참조하세요.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 1. `Filter Set` 저장.
 
-필터 세트가 저장되면 동일한 테이블을 사용하는 모든 지표에 적용할 수 있습니다. 예를 들어 `orders` 테이블에 `Filter Set`을(를) 만든 경우 `Revenue`과 같이 이 테이블에 빌드된 *모든 지표*&#x200B;에 적용할 수 있습니다.
+필터 세트가 저장되면 동일한 테이블을 사용하는 모든 지표에 적용할 수 있습니다. 예를 들어 `Filter Set` 테이블에 `orders`을(를) 만든 경우 *과 같이 이 테이블에 빌드된*&#x200B;모든 지표`Revenue`에 적용할 수 있습니다.
 
 >[!NOTE]
 >

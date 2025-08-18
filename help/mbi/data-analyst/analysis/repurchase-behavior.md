@@ -82,4 +82,4 @@ ht-degree: 0%
 
 이탈이 발생하는 이유를 확인했으면 분석을 사용하여 `reactivation` 캠페인을 빌드할 수 있습니다. 이 데이터를 사용하여 비활성 상태가 된 사용자, 마지막 방문 이후 경과 시간, 마지막 구매 내역 등을 식별할 수 있습니다. 이를 통해 고객이 다시 돌아오도록 유도하는 실행 가능한 결정을 내릴 수 있습니다.
 
-분석에 도움이 필요하면 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하세요.
+분석에 도움이 필요하면 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하세요.

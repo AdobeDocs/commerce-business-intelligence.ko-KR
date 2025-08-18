@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # [!DNL Facebook Ads]개의 데이터가 필요합니다.
 
-[Data Warehouse에  [!DNL Facebook Ads] 계정](../integrations/facebook-ads.md)을 연결한 후 [계정 관리자](../../../data-analyst/data-warehouse-mgr/tour-dwm.md)를 사용하여 분석할 관련 데이터 필드를 쉽게 추적할 수 있습니다.
+[계정 [!DNL Facebook Ads] 연결](../integrations/facebook-ads.md)한 후 [Data Warehouse 관리자](../../../data-analyst/data-warehouse-mgr/tour-dwm.md)를 사용하여 분석할 관련 데이터 필드를 쉽게 추적할 수 있습니다.
 
-이 항목에서는 Adobe이 Data Warehouse과 동기화할 것을 권장하는 표에 대한 간략한 개요를 제공합니다. 하위 테이블이 상당히 많기 때문에 핵심 테이블만 강조 표시됩니다.
+이 항목에서는 Adobe에서 Data Warehouse과 동기화하는 데 권장하는 표에 대한 간단한 개요를 제공합니다. 하위 테이블이 상당히 많기 때문에 핵심 테이블만 강조 표시됩니다.
 
 ## 핵심 광고 캠페인 테이블
 
@@ -60,4 +60,4 @@ ht-degree: 0%
 ## 관련 항목
 
 * [ [!DNL Facebook Ads] 연결 중](../integrations/facebook-ads.md)
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

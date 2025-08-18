@@ -6,14 +6,14 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '143'
 ht-degree: 0%
 
 ---
 
 # 필터 옵션
 
-이 항목에서는 [보고서 만들기](../../tutorials/using-visual-report-builder.md){: target=&quot;_blank&quot;} 또는 [지표 만들기](../../data-user/reports/ess-manage-data-metrics.md){: target=&quot;_blank&quot;} 시 `filters`에서 사용되는 몇 가지 특수 `operators`을 살펴봅니다.
+이 항목에서는 `operators`보고서를 만들 때`filters` 또는 [지표를 만들 때](../../tutorials/using-visual-report-builder.md){: target="_blank"}에 [에서 사용되는 몇 가지 특수 ](../../data-user/reports/ess-manage-data-metrics.md){: target="_blank"}에 대해 살펴봅니다.
 
 ## `Filter Operators`
 

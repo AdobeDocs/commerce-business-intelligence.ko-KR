@@ -1,5 +1,5 @@
 ---
-title: 시각적 Report Builder 사용
+title: Visual Report Builder 사용
 description: 특정 기간 동안 보고서의 데이터를 분석하는 방법에 대해 알아봅니다.
 exl-id: da97b63d-63f0-4fd6-87e3-4cac49a42acc
 role: Admin, Data Architect, Data Engineer, User
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ## 3단계: `Formulas` 추가
 
-보고서의 지표 목록 바로 위에 있는 **[!UICONTROL Add Formula]**&#x200B;을(를) 클릭하여 `Formulas`을(를) 보고서에 추가합니다. [수식 편집기](../data-analyst/dev-reports/formulas-in-rpt-bldr.md)에서 보고서에 포함된 모든 지표를 입력으로 사용할 수 있습니다. 기본 수학 연산자는 다양한 지표를 조작하는 데 사용됩니다.
+보고서의 지표 목록 바로 위에 있는 `Formulas`을(를) 클릭하여 **[!UICONTROL Add Formula]**&#x200B;을(를) 보고서에 추가합니다. [수식 편집기](../data-analyst/dev-reports/formulas-in-rpt-bldr.md)에서 보고서에 포함된 모든 지표를 입력으로 사용할 수 있습니다. 기본 수학 연산자는 다양한 지표를 조작하는 데 사용됩니다.
 
 주문당 평균 매출을 보여주는 보고서를 만들려고 한다고 가정해 보겠습니다. 이 경우 `Revenue` 지표를 `Number of orders` 지표로 나눕니다.
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 기간에 대한 특정 날짜 범위를 설정할 때는 시작 날짜가 간격의 시작 날짜이고 종료 날짜가 간격의 종료 날짜인지 확인하십시오.
 
-예를 들어 기간을 `January 1st`에서 `March 1st`(으)로 설정하고 `monthly` 간격을 선택하면 `March`이(가) 데이터 포인트로 표시되지만 `March 1`을(를) 제외하고 `March`에서는 매일 무시됩니다. 이 경우 `January 1 to March 31`에서 `Time Period`을(를) 만들어야 합니다.
+예를 들어 기간을 `January 1st`에서 `March 1st`(으)로 설정하고 `monthly` 간격을 선택하면 `March`이(가) 데이터 포인트로 표시되지만 `March`을(를) 제외하고 `March 1`에서는 매일 무시됩니다. 이 경우 `Time Period`에서 `January 1 to March 31`을(를) 만들어야 합니다.
 
 ## 5단계: `Group by` / `Segmenting the Analysis` {#groupby}
 
@@ -75,7 +75,7 @@ ht-degree: 0%
 
 드롭다운 메뉴와 텍스트 상자 외에도 `LIKE` 또는 `IN`과 같은 특수 필터 연산자를 사용하여 필터를 만들 수도 있습니다.
 
-`LIKE` 문과 함께 와일드카드(`%` 또는 `_`)를 사용할 수 있습니다. `%` 와일드카드는 여러 문자를 일치하지만 `_`은(는) 단일 문자만 일치합니다. For example:
+`%` 문과 함께 와일드카드(`_` 또는 `LIKE`)를 사용할 수 있습니다. `%` 와일드카드는 여러 문자를 일치하지만 `_`은(는) 단일 문자만 일치합니다. For example:
 
 - `affiliate's name Like B%`은(는) 이름이 `B`(으)로 시작하는 고객의 데이터만 허용합니다.
 
@@ -125,9 +125,9 @@ ht-degree: 0%
 
 ## 7단계: 보고서 저장
 
-차트를 만들 때 `Visual Report Builder`의 오른쪽 상단 모서리에서 **[!UICONTROL Save]**&#x200B;을(를) 클릭하여 저장할 수 있습니다.
+차트를 만들 때 **[!UICONTROL Save]**&#x200B;의 오른쪽 상단 모서리에서 `Visual Report Builder`을(를) 클릭하여 저장할 수 있습니다.
 
-`Type` 드롭다운을 사용하여 차트, 테이블 또는 숫자(`scalar`)를 저장하고 `Location` 드롭다운을 사용하여 보고서를 저장할 대시보드를 저장하도록 선택할 수 있습니다.
+`scalar` 드롭다운을 사용하여 차트, 테이블 또는 숫자(`Type`)를 저장하고 `Location` 드롭다운을 사용하여 보고서를 저장할 대시보드를 저장하도록 선택할 수 있습니다.
 
 **[!UICONTROL Save to Dashboard]**&#x200B;을(를) 클릭하여 보고서를 저장할 수 있습니다.
 

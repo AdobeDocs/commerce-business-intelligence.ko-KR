@@ -19,7 +19,7 @@ ht-degree: 0%
 
 때로는 이름이 더 이상 맞지 않을 때도 있습니다. 대시보드 이름을 바꾸는 것은 빠르고 간단합니다.
 
-1. 대시보드에 있는 동안 화면 상단의 `Global Search` 메뉴 옆에 있는 **[!UICONTROL Dashboard Options]** 메뉴를 클릭합니다.
+1. 대시보드에 있는 동안 화면 상단의 **[!UICONTROL Dashboard Options]** 메뉴 옆에 있는 `Global Search` 메뉴를 클릭합니다.
 
 1. 드롭다운에서 **[!UICONTROL Rename]**&#x200B;을(를) 클릭합니다.
 

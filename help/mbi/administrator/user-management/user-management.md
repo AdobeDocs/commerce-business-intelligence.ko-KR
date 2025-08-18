@@ -6,7 +6,7 @@ role: Admin, User
 feature: User Management
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->_특정 지표에 대한&#x200B;**[!UICONTROL Standard]**&#x200B;사용자의 [액세스](../../administrator/user-management/restrict-metric-access.md)을 제한할 수 있습니다._
+>_특정 지표에 대한&#x200B;**[!UICONTROL Standard]**사용자의 [액세스](../../administrator/user-management/restrict-metric-access.md)을 제한할 수 있습니다._
 >
 >**[!UICONTROL Standard] _사용자는 추가 권한 설정으로 청구에 액세스할 수 있습니다._
 >
@@ -62,7 +62,7 @@ ht-degree: 0%
 
 ### 청구
 
-`Billing`명의 사용자가 청구 페이지에 액세스할 수 있으며 결제 정보를 변경할 수 있습니다. 또한 청구 관련 질문이 있는 경우 Adobe으로 문의할 수도 있습니다.
+`Billing`명의 사용자가 청구 페이지에 액세스할 수 있으며 결제 정보를 변경할 수 있습니다. 또한 청구 관련 질문이 있는 경우 Adobe에서 문의할 수도 있습니다.
 
 `Admin`명의 사용자는 기본적으로 `Billing` 탭에 액세스할 수 있지만 `Standard`명의 사용자는 프로필에서 `Billing` 확인란을 선택한 경우에도 액세스할 수 있습니다.
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 ### 기술
 
-`Technical`명의 사용자에게 해당 사용자에 대한 권한이 없습니다. 이 설정은 조직 내 기술 담당자를 표시합니다. 이러한 사용자는 기술 관련 질문이 있는 경우 Adobe으로 문의할 수 있습니다.
+`Technical`명의 사용자에게 해당 사용자에 대한 권한이 없습니다. 이 설정은 조직 내 기술 담당자를 표시합니다. 이러한 사용자는 기술 관련 질문이 있는 경우 Adobe에서 문의할 수 있습니다.
 
 `Admin`명의 사용자가 **[!UICONTROL Account Settings]** > **[!UICONTROL Create Users]**&#x200B;을(를) 클릭하고 프롬프트에 따라 새 사용자를 계정에 추가할 수 있습니다. 사용자가 [!DNL Commerce Intelligence]에서 만들어지면 초대하는 행운의 사용자에게 계정 설정 프로세스를 완료하는 방법에 대한 전자 메일 지침이 전송됩니다.
 

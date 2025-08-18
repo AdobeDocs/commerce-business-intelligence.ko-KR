@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 견적 테이블
 
-`quote` 테이블(M1의 `sales_flat_quote`)에는 스토어에서 만든 모든 장바구니에 대한 레코드가 중단되었거나 구매로 변환되었는지 여부에 관계없이 들어 있습니다. 각 행은 하나의 장바구니를 나타냅니다. Adobe 이 테이블의 잠재적 크기 때문에 60일 이상 된 전환되지 않은 장바구니가 있는 경우와 같이 특정 기준이 충족되는 경우 레코드를 정기적으로 삭제하는 것이 좋습니다.
+`quote` 테이블(M1의 `sales_flat_quote`)에는 스토어에서 만든 모든 장바구니에 대한 레코드가 중단되었거나 구매로 변환되었는지 여부에 관계없이 들어 있습니다. 각 행은 하나의 장바구니를 나타냅니다. 이 테이블의 잠재적 크기 때문에 Adobe에서는 60일 이상 된 전환되지 않은 장바구니가 있는 경우와 같이 특정 기준이 충족되는 경우 레코드를 주기적으로 삭제할 것을 권장합니다.
 
 >[!NOTE]
 >
@@ -41,10 +41,10 @@ ht-degree: 0%
 
 | **열 이름** | **설명** |
 |---|---|
-| `Order date` | 전환된 장바구니의 주문 생성 날짜를 반영하는 타임스탬프. `sales_order.increment_id`에 `quote.reserved_order_id`을(를) 조인하고 `sales_order.created_at` 필드를 반환하여 계산됨 |
-| `Seconds between cart creation and order` | 장바구니 생성과 주문 생성 사이의 경과 시간. `Order date`에서 `created_at`을(를) 빼서 계산했으며 정수로 반환됩니다. |
+| `Order date` | 전환된 장바구니의 주문 생성 날짜를 반영하는 타임스탬프. `quote.reserved_order_id`에 `sales_order.increment_id`을(를) 조인하고 `sales_order.created_at` 필드를 반환하여 계산됨 |
+| `Seconds between cart creation and order` | 장바구니 생성과 주문 생성 사이의 경과 시간. `created_at`에서 `Order date`을(를) 빼서 계산했으며 정수로 반환됩니다. |
 | `Seconds since cart creation` | 장바구니 생성일과 현재 사이의 경과 시간. 쿼리가 실행될 때 서버 타임스탬프에서 `created_at`을(를) 빼서 계산되며, 정수로 반환됩니다. 장바구니 나이를 식별하는 데 가장 일반적으로 사용됨 |
-| `Store name` | 이 주문과 연계된 Commerce 스토어 이름. `store.store_id`에 `quote.store_id`을(를) 조인하고 `name` 필드를 반환하여 계산됨 |
+| `Store name` | 이 주문과 연계된 Commerce 스토어 이름. `quote.store_id`에 `store.store_id`을(를) 조인하고 `name` 필드를 반환하여 계산됨 |
 
 {style="table-layout:auto"}
 

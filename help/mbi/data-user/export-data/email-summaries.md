@@ -54,7 +54,7 @@ ht-degree: 0%
 
 ### 나중에 보낼 전자 메일 요약 저장
 
-1. `Set when to send the Email Summary` 필드에서 `Manual`을(를) 선택합니다.
+1. `Manual` 필드에서 `Set when to send the Email Summary`을(를) 선택합니다.
 
 1. **[!UICONTROL Save]**&#x200B;을(를) 클릭합니다.
 
@@ -64,7 +64,7 @@ ht-degree: 0%
 
 ### 이메일 요약을 한 번 보내기
 
-1. `Set when to send the Email Summary` 필드에서 `Once`을(를) 선택합니다.
+1. `Once` 필드에서 `Set when to send the Email Summary`을(를) 선택합니다.
 
 1. `Select Start Date` 일정에서 시작 날짜를 지정하십시오.
 
@@ -72,7 +72,7 @@ ht-degree: 0%
 
 ### 반복 일정 만들기
 
-1. `Set when to send the Email Summary` 필드에서 `Repeating`을(를) 선택합니다.
+1. `Repeating` 필드에서 `Set when to send the Email Summary`을(를) 선택합니다.
 
 1. `Set Frequency` 필드에서 `Daily`, `Weekly` 또는 `Monthly`을(를) 선택합니다.
 

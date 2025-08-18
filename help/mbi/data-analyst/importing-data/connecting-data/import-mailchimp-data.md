@@ -1,6 +1,6 @@
 ---
 title: MailChimp 데이터 가져오기
-description: MailChimp 데이터를  [!DNL Commerce Intelligence] (으)로 가져오는 방법을 알아봅니다.
+description: MailChimp 데이터를  [!DNL Commerce Intelligence](으)로 가져오는 방법을 알아봅니다.
 exl-id: 5595c6a6-5476-4a0e-a493-ddc32161894e
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL Mailchimp] 데이터 가져오기
 
-캠페인 활동을 종합적으로 파악하려면 [!DNL Mailchimp] 이메일 캠페인 데이터를 [!DNL Commerce Intelligence] (으)로 가져올 수 있습니다. 가져오기를 완료하려면 보유한 각 [!DNL Mailchimp] 캠페인에 대해 다음을 수행해야 합니다.
+캠페인 활동을 종합적으로 파악하려면 [!DNL Mailchimp] 이메일 캠페인 데이터를 [!DNL Commerce Intelligence]&#x200B;(으)로 가져올 수 있습니다. 가져오기를 완료하려면 보유한 각 [!DNL Mailchimp] 캠페인에 대해 다음을 수행해야 합니다.
 
 ## 열기 데이터 내보내기 {#opens}
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 ## 보낸 데이터 내보내기 {#sent}
 
-1. [!DNL Mailchimp]의 `Campaigns` 탭으로 이동합니다.
+1. `Campaigns`의 [!DNL Mailchimp] 탭으로 이동합니다.
 
 1. 캠페인 이름 옆에 있는 **[!UICONTROL View Report]**&#x200B;을(를) 클릭합니다.
 
@@ -73,6 +73,6 @@ ht-degree: 0%
 
 ## [!DNL Commerce Intelligence]에 업로드할 파일 준비 {#upload}
 
-각 파일(`Opens`, `Clicks` 및 `Sent`)은 별도의 파일로 [!DNL Commerce Intelligence]에 업로드해야 합니다. Adobe은 명명 규칙 `MailChimp\_ACTION\_DATE`을(를) 사용하여 파일 이름을 지정하도록 권장합니다. `ACTION`을(를) `Open`, `Click` 또는 `Sent`(으)로 바꾸고 `DATE`을(를) 내보낸 날짜로 바꿉니다.
+각 파일(`Opens`, `Clicks` 및 `Sent`)은 별도의 파일로 [!DNL Commerce Intelligence]에 업로드해야 합니다. Adobe에서는 다음 명명 규칙을 사용하여 파일 이름을 지정할 것을 권장합니다. `MailChimp\_ACTION\_DATE`. `ACTION`을(를) `Open`, `Click` 또는 `Sent`(으)로 바꾸고 `DATE`을(를) 내보낸 날짜로 바꿉니다.
 
 파일을 업로드할 준비가 되면 [`File Upload` 기능](../connecting-data/using-file-uploader.md)을(를) 사용하여 데이터를 Data Warehouse으로 가져옵니다.

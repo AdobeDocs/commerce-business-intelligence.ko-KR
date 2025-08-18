@@ -69,27 +69,27 @@ ht-degree: 0%
 * [!UICONTROL Metric]: 주문 수
 
 * [!UICONTROL Formula]: 초기 반복 순서 확률
-* &#x200B;
+* 
   [!UICONTROL 공식]: `A/B`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Scalar`
 
 * **주문 이후 몇 달 동안 반복 주문 확률**
 * 지표 A: 이전 주문 이후 매월 주문 반복(숨기기)
 * [!UICONTROL Metric]: `Number of orders`
-* &#x200B;
+* 
   [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
 * 지표 B: 주문 이후 개월별 마지막 주문(숨기기)
 * [!UICONTROL Metric]: `Number of orders`
-* &#x200B;
+* 
   [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
@@ -97,29 +97,29 @@ ht-degree: 0%
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
-* &#x200B;
+* 
   [!UICONTROL 그룹 기준]: `Independent`
 
 * 지표 D: 역대 마지막 주문 수(숨기기)
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
-* &#x200B;
+* 
   [!UICONTROL 그룹 기준]: `Independent`
 
 * [!UICONTROL Formula]: 초기 반복 순서 확률
-* &#x200B;
+* 
   [!UICONTROL 공식]: `(C-A)/(C+D-A-B)`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Months since previous order`
 * Show top.bottom: 카테고리 이름별로 정렬된 상위 24개 카테고리
 
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Line`
 
 초기 반복 주문 확률 보고서는 총 반복 주문 / 총 주문 수를 나타냅니다. 모든 주문은 반복 주문을 할 수 있는 기회입니다. 반복 주문 수는 실제로 실행되는 주문의 하위 집합입니다.
@@ -128,8 +128,8 @@ ht-degree: 0%
 
 대시보드를 작성한 후 묻는 가장 일반적인 질문은 다음과 같습니다. 이탈 임계값을 결정하는 데 이 대시보드를 어떻게 사용합니까?
 
-**이에 대한 &quot;정답&quot;이 없습니다.** 그러나 Adobe은 줄이 초기 반복 확률률의 절반인 값과 교차하는 지점을 찾을 것을 권장합니다. 이 점은 &quot;사용자가 반복 주문을 하려고 하면 지금쯤 완료했을 것&quot;이라고 말할 수 있는 지점입니다. 궁극적으로 목표는 &quot;유지&quot;에서 &quot;재활성화&quot; 노력으로 전환하는 것이 적절할 임계값을 선택하는 것입니다.
+**이에 대한 &quot;정답&quot;이 없습니다.** 그러나 Adobe에서는 줄이 초기 반복 확률률의 절반인 값과 교차하는 지점을 찾는 것이 좋습니다. 이 점은 &quot;사용자가 반복 주문을 하려고 하면 지금쯤 완료했을 것&quot;이라고 말할 수 있는 지점입니다. 궁극적으로 목표는 &quot;유지&quot;에서 &quot;재활성화&quot; 노력으로 전환하는 것이 적절할 임계값을 선택하는 것입니다.
 
 모든 보고서를 컴파일한 후 원하는 대로 대시보드에서 구성할 수 있습니다. 결과는 페이지 상단에 있는 이미지와 비슷할 수 있습니다
 
-이 분석을 작성하는 동안 질문이 있거나 Professional Services 팀에 문의하려는 경우 [지원 팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하십시오.
+이 분석을 작성하는 동안 질문이 있거나 Professional Services 팀에 문의하려는 경우 [지원 팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하십시오.

@@ -23,9 +23,9 @@ ht-degree: 0%
 
 간단한 3단계 프로세스를 통해 [!DNL Mixpanel] 데이터를 [!DNL Commerce Intelligence]에 연결:
 
-1. [ [!DNL Commerce Intelligence]에서  [!DNL Mixpanel] 자격 증명 페이지 열기](#stepone)
+1. [ [!DNL Mixpanel] 에서  [!DNL Commerce Intelligence]자격 증명 페이지 열기](#stepone)
 1. [ [!DNL Mixpanel] API 자격 증명 검색](#steptwo)
-1. [ [!DNL Commerce Intelligence]에  [!DNL Mixpanel] API 자격 증명 입력](#stepthree)
+1. [ [!DNL Mixpanel] 에  [!DNL Commerce Intelligence]API 자격 증명 입력](#stepthree)
 
 이 프로세스를 완료하려면 두 개의 브라우저 창 또는 탭을 열어야 합니다. 하나는 [!DNL Commerce Intelligence]에 대한 것이고 다른 하나는 [!DNL Mixpanel] 계정에 대한 것입니다.
 
@@ -33,9 +33,9 @@ ht-degree: 0%
 
 시작:
 
-1. **[!DNL Manage Data** > **Connections]** 아래의 `Connections` 페이지로 이동합니다.
+1. `Connections` 아래의 **[!DNL Manage Data** > **Connections]** 페이지로 이동합니다.
 
-1. `Data Sources` 테이블 위의 화면 오른쪽에 있는 **[!UICONTROL Add a New Source]**&#x200B;을(를) 클릭합니다.
+1. **[!UICONTROL Add a New Source]** 테이블 위의 화면 오른쪽에 있는 `Data Sources`을(를) 클릭합니다.
 
 1. [!DNL Mixpanel] 아이콘을 클릭하면 자격 증명 페이지가 열립니다.
 
@@ -55,9 +55,9 @@ ht-degree: 0%
 
 이걸 열어 두시면 이걸 포장할 필요가 있어요.
 
-## [!DNL Commerce Intelligence]에서 [!DNL Mixpanel] API 자격 증명 입력 {#stepthree}
+## [!DNL Mixpanel]에서 [!DNL Commerce Intelligence] API 자격 증명 입력 {#stepthree}
 
-1. `API Key` 및 `Secret`을(를) [!DNL Commerce Intelligence]의 [!DNL Mixpanel] 자격 증명 페이지에 복사합니다.
+1. `API Key` 및 `Secret`을(를) [!DNL Mixpanel]의 [!DNL Commerce Intelligence] 자격 증명 페이지에 복사합니다.
 1. 설치를 완료하려면 **[!UICONTROL Connect to Mixpanel]**&#x200B;을(를) 클릭하십시오.
 
 연결이 성공하면 _이(가) 성공합니다!_ 메시지가 페이지 맨 위에 표시됩니다.
@@ -65,4 +65,4 @@ ht-degree: 0%
 ### 관련 항목
 
 * [ [!DNL Mixpanel] 데이터가 필요합니다.](../integrations/mixpanel-data.md)
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

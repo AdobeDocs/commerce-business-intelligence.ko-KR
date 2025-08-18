@@ -15,7 +15,7 @@ ht-degree: 0%
 
 데이터를 분석할 때 다양한 소스의 데이터를 통합하는 것이 좋습니다. `orders` 테이블의 데이터와 [!DNL Google Analytics] 데이터를 연결하여 획득 소스별로 매출을 그룹화하시겠습니까? 세분화를 위해 고객 성별을 기준으로 매출을 그룹화하거나 거래 데이터에 고객 속성을 결합할 수 있습니다. 이 항목에서는 이 작업을 수행하는 방법에 대해 설명합니다.
 
-Adobe 시작하기 전에 [계산된 열 유형 안내서](../../data-analyst/data-warehouse-mgr/calc-column-types.md)를 검토하여 Data Warehouse 관리자에서 만들 수 있는 열 유형과 해당 정의 및 예제를 살펴보는 것이 좋습니다.
+Adobe 시작하기 전에 [계산된 열 유형 안내서](../../data-analyst/data-warehouse-mgr/calc-column-types.md)를 검토하여 Data Warehouse Manager에서 만들 수 있는 열 유형과 해당 정의 및 예제를 살펴보는 것이 좋습니다.
 
 1. 시작하려면 **[!DNL Manage Data > Data Warehouse]**&#x200B;을(를) 클릭하세요.
 

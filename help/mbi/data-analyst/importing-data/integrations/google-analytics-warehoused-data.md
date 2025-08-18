@@ -1,6 +1,6 @@
 ---
 title: 예상 Google Analytics 웨어하우스 데이터
-description: 웨어하우스된 Google Analytics 데이터와 상호 작용하는 방법에 대해 알아봅니다.
+description: Google Analytics 웨어하우스 데이터와 상호 작용하는 방법에 대해 알아봅니다.
 exl-id: 2b1305cd-5f34-43d9-b77f-a4f5b1d82c66
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -21,17 +21,17 @@ ht-degree: 0%
 >
 >일부 정보는 [[!DNL Stitch]](https://www.stitchdata.com/docs/integrations/saas/google-analytics)에 있는 친구의 사용 권한과 함께 사용되었습니다.
 
-[!DNL Commerce Intelligence]의 [!DNL Google Analytics Warehoused] 통합에서 [!DNL Google Analytics] [핵심 보고 API](https://developers.google.com/analytics/devguides/reporting/core/v3/)를 사용합니다.
+[!DNL Google Analytics Warehoused]의 [!DNL Commerce Intelligence] 통합에서 [!DNL Google Analytics] [핵심 보고 API](https://developers.google.com/analytics/devguides/reporting/core/v3/)를 사용합니다.
 
 >[!NOTE]
 >
->예기치 않거나 중요하지 않은 결과를 방지하려면 사용하는 모든 차원이 `Report Builder`에서 사용하는 [하나 이상의 지표와 호환](https://ga-dev-tools.google/dimensions-metrics-explorer/)되는지 확인하십시오.
+>예기치 않거나 중요하지 않은 결과를 방지하려면 사용하는 모든 차원이 [에서 사용하는 ](https://ga-dev-tools.google/dimensions-metrics-explorer/)하나 이상의 지표와 호환`Report Builder`되는지 확인하십시오.
 
-Data Warehouse에 `report`이라는 단일 테이블이 만들어집니다.
+단일 테이블(`report`)이 Data Warehouse에 만들어집니다.
 
-이 테이블의 스키마는 설정 프로세스 중에 선택한 지표 및 Dimension과 `start-date` 및 `end-date` 두 개의 다른 열로 구성됩니다.
+이 테이블의 스키마는 설정 프로세스 중에 선택한 지표 및 차원과 `start-date` 및 `end-date` 두 개의 다른 열로 구성됩니다.
 
-예를 들어, 설정하는 동안 다음 지표 및 Dimension을 선택했습니다.
+예를 들어, 설정하는 동안 다음 지표 및 차원을 선택했습니다.
 
 * `Metrics`: `ga:users`
 * `Dimensions`: `ga:month`
@@ -56,7 +56,7 @@ Data Warehouse에 `report`이라는 단일 테이블이 만들어집니다.
 
 [!DNL Google Analytics] 광고 캠페인에서 조작 관점에서 수행할 수 있는 작업의 예를 살펴보십시오. 이름이 다른 4분기 광고 캠페인이 여러 개 있다고 가정해 봅시다. 캠페인은 특정 마케팅 이니셔티브의 결과였습니다. 웨어하우스된 데이터를 사용하여 해당 캠페인 이름을 찾고 Q4 이니셔티브 이름 `Operation Dumbo`을(를) 반환하는 열을 만들 수 있습니다.
 
-결합 측면을 사용하면 분석을 수행하기 위해 [!DNL Google Analytics] 데이터를 다른 데이터에 결합할 수 있습니다. 예를 들어, [!DNL Google Analytics]의 `Total Time On Site By Ad Campaign` 데이터를 가져와서 [!DNL Facebook Ads]의 `Total Spent Per Campaign` 데이터와 함께 참여하면 참여로 인해 비용이 얼마나 많이 소요되는지 전체적으로 파악할 수 있습니다.
+결합 측면을 사용하면 분석을 수행하기 위해 [!DNL Google Analytics] 데이터를 다른 데이터에 결합할 수 있습니다. 예를 들어, `Total Time On Site By Ad Campaign`의 [!DNL Google Analytics] 데이터를 가져와서 `Total Spent Per Campaign`의 [!DNL Facebook Ads] 데이터와 함께 참여하면 참여로 인해 비용이 얼마나 많이 소요되는지 전체적으로 파악할 수 있습니다.
 
 반면에 [!DNL Google Analytics Live] 통합을 사용하면 모든 [!DNL Google Analytics] 차트는 [!DNL Commerce Intelligence] Data Warehouse에 저장되지 않은 작은 사일로와 같습니다.
 

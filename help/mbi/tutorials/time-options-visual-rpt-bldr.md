@@ -1,5 +1,5 @@
 ---
-title: 시각적 Report Builder에서 시간 옵션 사용
+title: Visual Report Builder에서 시간 옵션 사용
 description: 특정 기간 동안 보고서의 데이터를 분석하는 방법에 대해 알아봅니다.
 exl-id: a1bb4838-f882-44b1-a29f-84b985032ceb
 role: Admin, Data Architect, Data Engineer, User
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Visual Report Builder]에서 [!DNL Time] 옵션 사용
+# [!DNL Time]에서 [!DNL Visual Report Builder] 옵션 사용
 
 [!DNL Visual Report Builder]의 기능 중 하나는 전역 `Time Range` 및 `Interval` 설정입니다. 이러한 설정을 사용하여 특정 기간 동안 보고서의 데이터를 분석할 수 있습니다.
 
@@ -42,13 +42,13 @@ ht-degree: 0%
 1. 전역 **[!UICONTROL Time Range]** 옵션을 클릭한 다음 **[!UICONTROL Moving Time Range]**&#x200B;을(를) 클릭합니다. `Last Year`(으)로 설정합니다.
 1. 전역 **[!UICONTROL Time Interval]** 옵션을 클릭하고 `Monthly`(으)로 설정합니다.
 1. Report Builder은 두 번째 지표에 대해 두 번째 Y축을 자동으로 추가합니다. `Multiple Y-Axes` 상자를 선택 취소합니다.
-1. 그런 다음 첫 번째 지표에 독립 `Time Interval`을(를) 적용합니다. `first Revenue metric` 오른쪽에 있는 **[!UICONTROL Time Options]**(시계 아이콘)을 클릭합니다.
+1. 그런 다음 첫 번째 지표에 독립 `Time Interval`을(를) 적용합니다. **[!UICONTROL Time Options]** 오른쪽에 있는 `first Revenue metric`(시계 아이콘)을 클릭합니다.
 1. 보고서 위에 표시되는 확장된 창에서 **[!UICONTROL Time Options]**&#x200B;을(를) 클릭합니다.
 1. 드롭다운에서 다음을 설정합니다.
 
    * `Time Interval`: `None`(으)로 설정합니다.
 
-   * `Time Range`: 먼저 **[!UICONTROL Custom]**&#x200B;을(를) 클릭한 다음 **[!UICONTROL Moving Range]**&#x200B;을(를) 클릭하고 마지막으로 `Last Year` 옵션을 선택하여 `Last Year`(으)로 설정합니다.
+   * `Time Range`: 먼저 `Last Year`을(를) 클릭한 다음 **[!UICONTROL Custom]**&#x200B;을(를) 클릭하고 마지막으로 **[!UICONTROL Moving Range]** 옵션을 선택하여 `Last Year`(으)로 설정합니다.
 
    * **[!UICONTROL Apply]**&#x200B;을(를) 클릭하여 간격 및 범위 설정을 저장합니다. 이렇게 하면 이전 연도의 총 매출을 계산하는 지표가 만들어집니다. 그런 다음 이 지표를 수식에서 분모로 사용합니다.
 
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 ## 서로 다른 시간 범위에서 동일한 지표 비교 {#difftimerange}
 
-이 예제에서는 사용자 지정 차원 `Day number of the month`을(를) 사용합니다. 이 보고서를 만들려고 하는데 Data Warehouse에 이 차원이 없는 경우 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하여 도움을 받으십시오.
+이 예제에서는 사용자 지정 차원 `Day number of the month`을(를) 사용합니다. 이 보고서를 만들려고 하는데 Data Warehouse에 이 차원이 없는 경우 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하여 도움을 받으십시오.
 
 이 범주에서 가장 일반적인 두 가지 예는 (1) 성장 지표 (전년 대비 또는 전월 대비 매출)를 비교하는 것과 (2) 최근 재고 또는 품목 판매 트렌드를 더 잘 이해하는 것입니다.
 
@@ -77,13 +77,13 @@ ht-degree: 0%
 1. 첫 번째 지표의 이름을 `Items sold last 7 days`(으)로 바꾸고 두 번째 지표의 이름을 `Items sold last 28 days`(으)로 바꿉니다.
 1. **[!UICONTROL Time Range]**&#x200B;을(를) 클릭한 다음 **[!UICONTROL Moving Time Range]**&#x200B;을(를) 클릭합니다. `Last Month`(으)로 설정합니다.
 1. **[!UICONTROL Time Interval]**&#x200B;을(를) 클릭하고 `None`(으)로 설정합니다.
-1. 두 번째 `Revenue` 지표 옆에 있는 **[!UICONTROL Time Options]**(시계 아이콘)을 클릭합니다.
+1. 두 번째 **[!UICONTROL Time Options]** 지표 옆에 있는 `Revenue`(시계 아이콘)을 클릭합니다.
 1. 보고서 위에 표시되는 확장된 창에서 **[!UICONTROL Time Options]**&#x200B;을(를) 클릭합니다.
 1. 드롭다운에서 다음을 설정합니다.
 
    * `Time Interval`: `None`(으)로 설정합니다.
 
-   * `Time Range`: 먼저 **[!UICONTROL Custom]**&#x200B;을(를) 클릭한 후 **[!UICONTROL Moving Range]**&#x200B;을(를) 클릭하여 `From 14 Months Ago To 13 Months Ago`(으)로 설정합니다. 메뉴 상단에 있는 필드와 드롭다운을 사용하여 범위를 설정합니다. 이 설정을 사용하면 이전 달과 이전 연도의 매출을 볼 수 있습니다.
+   * `Time Range`: 먼저 `From 14 Months Ago To 13 Months Ago`을(를) 클릭한 후 **[!UICONTROL Custom]**&#x200B;을(를) 클릭하여 **[!UICONTROL Moving Range]**(으)로 설정합니다. 메뉴 상단에 있는 필드와 드롭다운을 사용하여 범위를 설정합니다. 이 설정을 사용하면 이전 달과 이전 연도의 매출을 볼 수 있습니다.
 
    지표가 보고서에서 사라지더라도 걱정하지 마십시오. 독립적인 시간 옵션을 설정하면 보고서에서 지표를 자동으로 숨깁니다. 다시 표시하려면 지표 옆에 있는 **[!UICONTROL Show]**&#x200B;을(를) 클릭합니다.
 
@@ -91,7 +91,7 @@ ht-degree: 0%
 
    * **[!UICONTROL Apply]**&#x200B;을(를) 클릭하여 간격 및 범위 설정을 저장합니다.
 
-   * 그런 다음 **[!UICONTROL Group By]**&#x200B;을(를) 클릭하고 차원을 선택하여 사용자 지정 `Day number of the month` 차원을 추가합니다. 이 경우 주문의 월 일 번호가 반환됩니다. 예를 들어 3월 2일에 수행한 주문은 `2`을(를) 반환합니다.
+   * 그런 다음 `Day number of the month`을(를) 클릭하고 차원을 선택하여 사용자 지정 **[!UICONTROL Group By]** 차원을 추가합니다. 이 경우 주문의 월 일 번호가 반환됩니다. 예를 들어 3월 2일에 수행한 주문은 `2`을(를) 반환합니다.
 
    * `Group By` 드롭다운에서 `Show All`을(를) 선택하고 **[!UICONTROL Apply]**&#x200B;을(를) 클릭합니다. 이렇게 하면 보고서에 대한 X축 값이 만들어집니다.
 
@@ -110,12 +110,12 @@ ht-degree: 0%
    1. 두 번째 지표의 이름을 `Items sold last 28 days`(으)로 바꿉니다.
 1. `Items sold last 7 days` 지표에서 전역 **[!UICONTROL Time Range]** 옵션을 클릭한 다음 **[!UICONTROL Moving Time Range]**&#x200B;을(를) 클릭합니다. 이 예제에서는 `Last 7 Days`(으)로 설정합니다.
 1. **[!UICONTROL Time Interval]**&#x200B;을(를) 클릭하고 `None`(으)로 설정합니다.
-1. 그런 다음 `Items sold last 28 days` 지표에 대해 `Time Options`을(를) 정의합니다. `second Items sold` 지표의 오른쪽에 있는 **[!UICONTROL Time Options]**(시계 아이콘)을 클릭합니다.
+1. 그런 다음 `Time Options` 지표에 대해 `Items sold last 28 days`을(를) 정의합니다. **[!UICONTROL Time Options]** 지표의 오른쪽에 있는 `second Items sold`(시계 아이콘)을 클릭합니다.
 1. 보고서 위에 표시되는 확장된 창에서 **[!UICONTROL Time Options]**&#x200B;을(를) 클릭합니다.
 1. 드롭다운에서 다음을 설정합니다.
 
    * `Time Interval`: `None`(으)로 설정합니다.
-   * `Time Range`: 먼저 **[!UICONTROL Custom]**&#x200B;을(를) 클릭한 다음 **[!UICONTROL Moving Range]**&#x200B;을(를) 클릭하여 `From 29 days to 1 day ago`(으)로 설정합니다. 메뉴 상단에 있는 필드와 드롭다운을 사용하여 범위를 설정합니다.
+   * `Time Range`: 먼저 `From 29 days to 1 day ago`을(를) 클릭한 다음 **[!UICONTROL Custom]**&#x200B;을(를) 클릭하여 **[!UICONTROL Moving Range]**(으)로 설정합니다. 메뉴 상단에 있는 필드와 드롭다운을 사용하여 범위를 설정합니다.
    * **[!UICONTROL Apply]**&#x200B;을(를) 클릭하여 간격 및 범위 설정을 저장합니다.
    * `Items sold last 28 days` 지표를 복제하고 새 지표의 `Time Options`을(를) 엽니다. 옵션을 다음과 같이 설정합니다.
 
@@ -127,14 +127,14 @@ ht-degree: 0%
 
 수식을 만들려면 **[!UICONTROL Add Formula]**&#x200B;을(를) 클릭합니다. 아래 공식을 입력하고 완료되면 **[!UICONTROL Apply Changes]**&#x200B;을(를) 클릭합니다. 다음 세 가지 기간에 대해 각각 이 작업을 반복합니다.
 
-* `last 7 days time period`에 대해 `Formula` 필드에 `D / A`을(를) 입력하십시오.
-* `last 28 days time period`에 대해 `Formula` 필드에 `D / (B/4)`을(를) 입력하십시오.
+* `last 7 days time period`에 대해 `D / A` 필드에 `Formula`을(를) 입력하십시오.
+* `last 28 days time period`에 대해 `D / (B/4)` 필드에 `Formula`을(를) 입력하십시오.
 
   >[!NOTE]
   >
   >여기에서 선택한 시간 범위를 정규화하는 것이 중요합니다. 이 예에서는 28일을 4주로 나눕니다. 수식에 다른 논리를 적용해야 할 수도 있습니다.
 
-* `last promo period`에 대해 `Formula` 필드에 `D / C`을(를) 입력하십시오.
+* `last promo period`에 대해 `D / C` 필드에 `Formula`을(를) 입력하십시오.
 
   ![](../assets/Different_Time_Ranges_2.png)
 

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->이 항목에는 원래 아키텍처와 새 아키텍처를 사용하는 클라이언트에 대한 지침이 포함되어 있습니다. 기본 도구 모음에서 `Manage Data`을(를) 선택한 후 `Data Warehouse Views` 섹션을 사용할 수 있는 경우 새 아키텍처를 사용합니다.
+>이 항목에는 원래 아키텍처와 새 아키텍처를 사용하는 클라이언트에 대한 지침이 포함되어 있습니다. 기본 도구 모음에서 `Data Warehouse Views`을(를) 선택한 후 `Manage Data` 섹션을 사용할 수 있는 경우 새 아키텍처를 사용합니다.
 
 이 항목에서는 무료 배송 임계값의 성능을 추적하는 대시보드를 설정하는 방법을 보여 줍니다. 아래 표시된 이 대시보드는 A/B에서 두 개의 무료 배송 임계값을 테스트할 수 있는 좋은 방법입니다. 예를 들어 귀사는 50달러 또는 100달러에 무료 배송을 제공해야 하는지 확신할 수 없습니다. 고객의 임의 하위 집합 두 개에 대한 A/B 테스트를 수행하고 [!DNL Commerce Intelligence]에서 분석을 수행해야 합니다.
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## 계산된 열
 
-원본 아키텍처를 사용하는 경우(예: `Manage Data` 메뉴 아래에 `Data Warehouse Views` 옵션이 없는 경우) 지원 팀에 연락하여 아래 열을 빌드해야 합니다. 새 아키텍처에서 이러한 열은 `Manage Data > Data Warehouse` 페이지에서 만들 수 있습니다. 자세한 지침은 아래에 나와 있습니다.
+원본 아키텍처를 사용하는 경우(예: `Data Warehouse Views` 메뉴 아래에 `Manage Data` 옵션이 없는 경우) 지원 팀에 연락하여 아래 열을 빌드해야 합니다. 새 아키텍처에서 이러한 열은 `Manage Data > Data Warehouse` 페이지에서 만들 수 있습니다. 자세한 지침은 아래에 나와 있습니다.
 
 * **`sales_flat_order`** 테이블
    * 이 계산은 일반적인 장바구니 크기에 비례하여 증분으로 버킷을 만듭니다. 5, 10, 50, 100을 포함하는 증분의 범위일 수 있습니다.
@@ -66,9 +66,9 @@ ht-degree: 0%
 
 * 지표 `A`: `Average Order Value`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Scalar`
 
 * **배달 규칙 A가 있는 소계 버킷별 주문 수**
@@ -76,62 +76,57 @@ ht-degree: 0%
 
   >[!NOTE]
   >
-  >`Show top/bottom`에 상위 `X` `sorted by` `Order subtotal`(버킷)을 표시하여 끝 부분을 차단할 수 있습니다.
+  >`X`에 상위 `sorted by` `Order subtotal` `Show top/bottom`(버킷)을 표시하여 끝 부분을 차단할 수 있습니다.
 
 * 지표 `A`: `Number of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Order subtotal (buckets)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Column`
 
 * 배송 규칙 A가 있는 소계별 주문 비율 **퍼센트**
    * [!UICONTROL Metric]: `Number of orders`
 
    * [!UICONTROL Metric]: `Number of orders`
-   * &#x200B;
-
+   * 
      [!UICONTROL 그룹 기준]: `Independent`
    * [!UICONTROL Formula]: `(A / B)`
-   * &#x200B;
-
+   * 
      [!UICONTROL Format]: `%`
 
 * 지표 `A`: `Number of orders by subtotal (hide)`
 * 지표 `B`: `Total number of orders (hide)`
 * [!UICONTROL Formula]: `% of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Order subtotal (buckets)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Line`
 
 * 소계가 배송 규칙 A를 초과하는 주문의 **퍼센트**
    * [!UICONTROL Metric]: `Number of orders`
-   * &#x200B;
-
+   * 
      [!UICONTROL Perspective]: `Cumulative`
 
    * [!UICONTROL Metric]: `Number of orders`
-   * &#x200B;
-
+   * 
      [!UICONTROL 그룹 기준]: `Independent`
 
    * [!UICONTROL Formula]: `1- (A / B)`
-   * &#x200B;
-
+   * 
      [!UICONTROL Format]: `%`
 
 * 지표 `A`: `Number of orders by subtotal`
 * 지표 `B`: `Total number of orders (hide)`
 * [!UICONTROL Formula]: `% of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Order subtotal (buckets)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Line`
 
 

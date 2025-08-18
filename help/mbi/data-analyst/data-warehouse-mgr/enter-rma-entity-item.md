@@ -57,7 +57,7 @@ ht-degree: 0%
 
 `enterprise_rma`
 
-* 다음 조인을 통해 `enterprise_rma_item_entity` 테이블에 `Return date\_requested`과(와) 같은 조인된 열을 만듭니다.
+* 다음 조인을 통해 `Return date\_requested` 테이블에 `enterprise_rma_item_entity`과(와) 같은 조인된 열을 만듭니다.
 * Commerce 1.x: `enterprise_rma_item_entity.rma_entity_id `(많음) => `enterprise_rma.entity_id`(하나)
 * Commerce 2.x: `magento_rma_item_entity.rma_entity_id `(많음) => `magento_rma.entity_id`(하나)
 

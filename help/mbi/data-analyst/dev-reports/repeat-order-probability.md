@@ -25,11 +25,11 @@ ht-degree: 0%
 
 경우에 따라 `order-specific` 차원을 `user-specific` 차원으로 전환하여 `Repeat Order Probability` 차트에서 필터로 추가할 수 있습니다. 이러한 경우 사용자의 1차 주문 또는 최근 주문의 주문 속성(예: 사용자의 1차 지역 이름)을 반환합니다.
 
-이러한 새 차원을 만들려면 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하십시오.
+이러한 새 차원을 만들려면 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하십시오.
 
 ## 다른 속성을 가진 주문 반복 확률 비교
 
-Adobe 다른 주문 특성(예: 주문의 `region`)에 대한 반복 구매 수를 비교하려면 `Users by lifetime number of orders`과(와) 유사한 차트를 만드는 것이 좋습니다. 이는 1, 2, 3,... 라이프타임 주문 수를 생성한 사용자 수를 보여주고 주문 레벨 필터를 추가합니다. (즉, 사용자가 한 지역에서 반복 구매할지 또는 다른 지역에서 반복 구매할지 여부를 보여 줄 수 있습니다.)
+다른 주문 특성(예: 주문의 `region`)에 대한 반복 구매 수를 비교하려면 Adobe에서 `Users by lifetime number of orders`과(와) 유사한 차트를 만드는 것이 좋습니다. 이는 1, 2, 3,... 라이프타임 주문 수를 생성한 사용자 수를 보여주고 주문 레벨 필터를 추가합니다. (즉, 사용자가 한 지역에서 반복 구매할지 또는 다른 지역에서 반복 구매할지 여부를 보여 줄 수 있습니다.)
 
 그런 다음 이러한 차트를 구성하는 숫자를 Excel로 내보내 반복 순서 확률비를 계산할 수 있습니다. 고객이 `(x)`개 주문하여 `(x+1)`개 주문을 했을 확률을 보려면 간단히 ` divide the number of people who've made at least (x+1) purchases by the number of people who have made at least (x)`개를 구매하십시오.
 

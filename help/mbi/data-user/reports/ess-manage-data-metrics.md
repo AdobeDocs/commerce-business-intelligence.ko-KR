@@ -66,7 +66,7 @@ ht-degree: 0%
 * &quot;\[`A`\] 및 \[`B`\]&quot;에서는 \[`A`\] 및 \[`B`\] 필터를 모두 충족하는 데이터만 허용합니다
 * &quot;(\[`A`\] 및 \[`B`\]) 또는 \[`C`\]&quot;은(는) \[`A`\] 및 \[`B`\] 필터를 모두 충족하거나 \[`C`\] 필터를 단독으로 충족하는 데이터만 허용합니다
 
-## Dimension 추가 {#dimensions}
+## 차원 추가 {#dimensions}
 
 [`Dimensions`](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) 섹션에는 필터링 또는 그룹화에 사용 가능한 모든 데이터 차원이 표시됩니다. 기본적으로 사용 가능한 모든 데이터 열은 차원으로 나열됩니다. 예를 계속 진행하여 조회 출처별로 매출을 세그먼트화하려는 경우 여기에서 세그먼트화할 수 있습니다.
 

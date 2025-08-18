@@ -43,11 +43,11 @@ ht-degree: 0%
 
 ## 필터 저장
 
-특정 스토어의 성능을 분석하려면 오른쪽 상단의 스토어 아이콘(![스토어 필터](../../assets/store-filter.png))을 클릭합니다. 기본적으로 `Store Filter`은(는) `All Stores`(으)로 설정되어 Commerce 사이트에서 사용할 수 있는 모든 [스토어 보기](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-views.html?lang=ko)의 데이터를 표시합니다.
+특정 스토어의 성능을 분석하려면 오른쪽 상단의 스토어 아이콘(![스토어 필터](../../assets/store-filter.png))을 클릭합니다. 기본적으로 `Store Filter`은(는) `All Stores`(으)로 설정되어 Commerce 사이트에서 사용할 수 있는 모든 [스토어 보기](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-views.html)의 데이터를 표시합니다.
 
 >[!NOTE]
 >
->저장소 필터가 전체 [!DNL Commerce Intelligence] 계정에 대해 활성화되거나 비활성화됩니다. 대시보드에 필터의 영향을 받지 않는 보고서(예: [!DNL Adobe Commerce] 데이터에 작성되지 않은 보고서)가 포함되어 있는 경우 저장소 필터가 적용될 때 해당 보고서가 업데이트되지 않습니다. 저장소 선택에 따라 보고서를 업데이트해야 하거나 계정 저장소 필터가 잘못 비활성화되어 있다고 생각되는 경우 [지원 센터에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)할 수 있습니다.
+>저장소 필터가 전체 [!DNL Commerce Intelligence] 계정에 대해 활성화되거나 비활성화됩니다. 대시보드에 필터의 영향을 받지 않는 보고서(예: [!DNL Adobe Commerce] 데이터에 작성되지 않은 보고서)가 포함되어 있는 경우 저장소 필터가 적용될 때 해당 보고서가 업데이트되지 않습니다. 저장소 선택에 따라 보고서를 업데이트해야 하거나 계정 저장소 필터가 잘못 비활성화되어 있다고 생각되는 경우 [지원 센터에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)할 수 있습니다.
 
 `Store Filter`에서 스토어를 선택하면 필터가 대시보드 사이를 이동할 때 선택 내용을 유지합니다. 선택을 유지하면 `All Stores`을(를) 선택할 때까지 선택한 저장소의 데이터를 모든 곳에서 볼 수 있습니다.
 

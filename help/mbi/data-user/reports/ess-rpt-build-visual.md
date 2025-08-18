@@ -1,6 +1,6 @@
 ---
-title: 시각적 Report Builder
-description: 시각적 Report Builder 사용 방법을 알아봅니다.
+title: Visual Report Builder
+description: Visual Report Builder 사용 방법을 알아봅니다.
 exl-id: 1101f43d-e014-4df2-be21-12d90a9d8a56
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
@@ -43,7 +43,7 @@ ht-degree: 0%
 
    **`Group By`**
 
-   `Group By` 컨트롤은 그룹 또는 세그먼트별로 여러 차원을 추가할 수 있는 기능을 제공합니다. Dimension은 데이터를 그룹화하는 데 사용할 수 있는 테이블의 열입니다.
+   `Group By` 컨트롤은 그룹 또는 세그먼트별로 여러 차원을 추가할 수 있는 기능을 제공합니다. 차원은 데이터를 그룹화하는 데 사용할 수 있는 테이블의 열입니다.
 
    * `Group By` 옵션 목록에서 사용 가능한 차원 중 하나를 선택합니다.
 
@@ -55,7 +55,7 @@ ht-degree: 0%
 
    * 그룹화 기준 세부 정보를 닫으려면 **[!UICONTROL Apply]**&#x200B;을(를) 클릭하십시오.
 
-     ![여러 Dimension](../../assets/magento-bi-report-builder-group-by-dimension-detail.png)
+     ![여러 차원](../../assets/magento-bi-report-builder-group-by-dimension-detail.png)
 
    * 첫 번째 주문을 하는 동안 해당 쿠폰을 사용한 달의 고객 수를 보려면 각 라인의 몇 개 데이터 포인트를 마우스로 가리킵니다.
 
@@ -73,7 +73,7 @@ ht-degree: 0%
 
    `Date Range` 컨트롤은 현재 날짜 범위 및 시간 간격 설정을 보여주며 오른쪽 차트 바로 위에 있습니다.
 
-   * 이 예제에서 `All-Time by Month`(으)로 설정된 `Date Range` 컨트롤을 클릭합니다.
+   * 이 예제에서 `Date Range`(으)로 설정된 `All-Time by Month` 컨트롤을 클릭합니다.
 
      ![날짜 범위](../../assets/magento-bi-report-builder-date-range.png)
 
@@ -96,7 +96,7 @@ ht-degree: 0%
      | | |
      |-----|-----|
      | ![](../../assets/magento-bi-btn-chart-line.png) | 선 그래프 |
-     | ![](../../assets/magento-bi-btn-chart-horz-bar.png) | 가로 막대 |
+     | ![](../../assets/magento-bi-btn-chart-horz-bar.png) | 가로 막대형 |
      | ![](../../assets/magento-bi-btn-chart-horz-stacked-bar.png) | 가로 누적 막대 |
      | ![](../../assets/magento-bi-btn-chart-vert-bar.png) | 세로 막대 |
      | ![](../../assets/magento-bi-btn-chart-vert-stacked-bar.png) | 세로 누적 막대 |

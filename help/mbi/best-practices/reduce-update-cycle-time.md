@@ -19,13 +19,13 @@ ht-degree: 0%
 
 ## 재검사 빈도 감소
 
-데이터베이스 테이블에는 변경 가능한 값이 있는 데이터 열이 있을 수 있습니다. 예를 들어 **orders** 테이블에 **status**(이)라는 열이 있을 수 있습니다. 주문이 데이터베이스에 처음 기록되면 상태 열에 값 `pending`이(가) 포함될 수 있습니다. 이 `pending` 값으로 [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md)에서 순서가 복제됩니다.
+데이터베이스 테이블에는 변경 가능한 값이 있는 데이터 열이 있을 수 있습니다. 예를 들어 **orders** 테이블에 **status**(이)라는 열이 있을 수 있습니다. 주문이 데이터베이스에 처음 기록되면 상태 열에 값 `pending`이(가) 포함될 수 있습니다. 이 [ 값으로 ](../data-analyst/data-warehouse-mgr/tour-dwm.md)Data Warehouse`pending`에서 순서가 복제됩니다.
 
-변경 가능한 열은 시간이 지남에 따라 [업데이트된 값에 대해 다시 확인](../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md)해야 합니다. 기본적으로 [!DNL Commerce Intelligence]은(는) 업데이트할 때마다 이러한 열을 다시 확인하지만, 다시 확인하고 복제해야 할 데이터가 많은 경우 업데이트 시간에 부정적인 영향을 줄 수 있습니다. Adobe은 업데이트할 때마다 다시 검사를 실행하는 대신 재검사 빈도를 매일, 매주 또는 매월 설정하는 것이 좋습니다.
+변경 가능한 열은 시간이 지남에 따라 [업데이트된 값에 대해 다시 확인](../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md)해야 합니다. 기본적으로 [!DNL Commerce Intelligence]은(는) 업데이트할 때마다 이러한 열을 다시 확인하지만, 다시 확인하고 복제해야 할 데이터가 많은 경우 업데이트 시간에 부정적인 영향을 줄 수 있습니다. Adobe에서는 업데이트할 때마다 다시 검사를 실행하는 대신 재검사 빈도를 매일, 매주 또는 매월 설정하는 것이 좋습니다.
 
 ## 증분 복제 방법 사용
 
-위에서 언급했듯이 긴 업데이트 시간은 다시 확인하고 복제해야 하는 데이터의 양과 직접적인 관련이 있습니다. [증분 복제 방법](../data-analyst/data-warehouse-mgr/cfg-replication-methods.md)을 사용하면 업데이트 주기 동안 처리되는 데이터의 양을 크게 줄일 수 있습니다. Adobe 가능한 경우 이러한 방법을 사용하거나 증분 방법을 지원하도록 데이터베이스를 수정하는 것이 좋습니다.
+위에서 언급했듯이 긴 업데이트 시간은 다시 확인하고 복제해야 하는 데이터의 양과 직접적인 관련이 있습니다. [증분 복제 방법](../data-analyst/data-warehouse-mgr/cfg-replication-methods.md)을 사용하면 업데이트 주기 동안 처리되는 데이터의 양을 크게 줄일 수 있습니다. 가능한 경우 Adobe에서는 이러한 방법을 사용하거나 증분 방법을 지원하도록 데이터베이스를 수정하는 것이 좋습니다.
 
 ## 대시보드에서 사용되지 않은 차트 제거
 
@@ -43,4 +43,4 @@ ht-degree: 0%
 
 ## 요약
 
-이러한 권장 사항을 구현한 후에도 업데이트 시간이 느린 것 같으면 [지원 팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하십시오.
+이러한 권장 사항을 구현한 후에도 업데이트 시간이 느린 것 같으면 [지원 팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하십시오.

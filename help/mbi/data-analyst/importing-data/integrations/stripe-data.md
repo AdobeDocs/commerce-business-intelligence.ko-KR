@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # [!DNL Stripe]개의 데이터가 필요합니다.
 
-[계정 [!DNL Stripe] 연결](../integrations/stripe.md)한 후 [Data Warehouse 관리자](../../../data-analyst/data-warehouse-mgr/tour-dwm.md)를 사용하여 분석을 위해 관련 데이터 필드를 쉽게 추적할 수 있습니다.
+[계정 [!DNL Stripe] 연결](../integrations/stripe.md)한 후 [Data Warehouse 관리자](../../../data-analyst/data-warehouse-mgr/tour-dwm.md)를 사용하여 분석할 관련 데이터 필드를 쉽게 추적할 수 있습니다.
 
-이 항목에서는 [!DNL Stripe]에서 [!DNL Commerce Intelligence] (으)로 가져올 수 있는 기본 데이터 테이블을 살펴봅니다. 설치가 완료되면 Data Warehouse에 다음 테이블이 만들어집니다. 각 테이블의 속성에 대해 자세히 알아보려면 테이블 이름 열의 링크를 클릭합니다.
+이 항목에서는 [!DNL Stripe]에서 [!DNL Commerce Intelligence]&#x200B;(으)로 가져올 수 있는 기본 데이터 테이블을 살펴봅니다. 설치가 완료되면 Data Warehouse에 다음 테이블이 만들어집니다. 각 테이블의 속성에 대해 자세히 알아보려면 테이블 이름 열의 링크를 클릭합니다.
 
 | **테이블 이름** | **설명** |
 |-----|-----|
@@ -36,4 +36,4 @@ ht-degree: 0%
 ## 관련 항목:
 
 * [ [!DNL Stripe] 연결 중](../integrations/stripe.md)
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 활성화된 [!DNL Adobe Commerce Intelligence] 계정에 액세스
 
-[온-프레미스 또는 클라우드](../getting-started/onpremise-activation.md)에 대해 [!DNL Commerce Intelligence] 계정을 활성화하고 Adobe 계정 팀과 함께 구성 단계를 완료하면 이제 계정에 로그인할 수 있습니다.
+[!DNL Commerce Intelligence]온-프레미스 또는 클라우드[에 대해 ](../getting-started/onpremise-activation.md) 계정을 활성화하고 Adobe 계정 팀과 함께 구성 단계를 완료하면 이제 계정에 로그인할 수 있습니다.
 
 ## [!DNL Adobe ID]을(를) 사용하여 로그인
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
    ![로그인-adobe](../assets/sign-in-adobe.png)
 
-1. [!DNL Commerce Intelligence] 계정을 만들 때 사용한 전자 메일 주소를 입력하십시오. 아직 Adobe 계정이 없는 경우 **[!UICONTROL Create an account]**&#x200B;을(를) 클릭하고 정보를 입력하십시오. [!DNL Commerce Intelligence] 계정을 만들 때 사용한 전자 메일 주소를 사용하십시오. 이메일 주소는 Adobe 계정에 액세스하는 데 필요한 키입니다.
+1. [!DNL Commerce Intelligence] 계정을 만들 때 사용한 전자 메일 주소를 입력하십시오. Adobe 계정이 아직 없는 경우 **[!UICONTROL Create an account]**&#x200B;을(를) 클릭하고 정보를 입력하십시오. [!DNL Commerce Intelligence] 계정을 만들 때 사용한 전자 메일 주소를 사용하십시오. 이메일 주소는 Adobe 계정에 액세스하는 데 필요한 키입니다.
 
 >[!NOTE]
 >

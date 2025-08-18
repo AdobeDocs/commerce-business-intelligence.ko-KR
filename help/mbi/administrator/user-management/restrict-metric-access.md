@@ -15,7 +15,7 @@ ht-degree: 0%
 
 사용자 권한 수준을 설정하는 것 외에도 사용자별로 지표에 대한 액세스를 제한할 수 있습니다. 예를 들어, 회계 부서에서 매출 관련 지표에 액세스할 수 있지만 사용자 확보 지표는 액세스할 수 없도록 하려면 해당 지표에 대한 액세스를 제한할 수 있습니다.
 
-이와 같은 경우 Adobe은 해당 사용자의 계정을 **[[!UICONTROL Standard]](../../administrator/user-management/user-management.md)**(으)로 설정할 것을 권장합니다. 지표, 계산된 열, 통합 또는 사용자를 만들거나 변경할 필요가 없지만 Data Warehouse의 데이터에 액세스해야 하는 사용자에게는 **[!UICONTROL Standard]** 권한을 제공해야 합니다. 데이터에 대한 액세스를 완전히 제한하려면 대신 **[!UICONTROL Read Only]** 권한을 사용하십시오.
+이와 같은 경우 Adobe에서는 해당 사용자의 계정을 **[[!UICONTROL Standard]](../../administrator/user-management/user-management.md)**(으)로 설정할 것을 권장합니다. 지표, 계산된 열, 통합 또는 사용자를 만들거나 변경할 필요가 없지만 Data Warehouse의 데이터에 액세스해야 하는 사용자에게 **[!UICONTROL Standard]** 권한을 제공해야 합니다. 데이터에 대한 액세스를 완전히 제한하려면 대신 **[!UICONTROL Read Only]** 권한을 사용하십시오.
 
 권한 수준을 설정한 후 다음을 수행하여 **[!UICONTROL Standard]** 사용자가 액세스할 수 있는 지표를 선택할 수 있습니다.
 

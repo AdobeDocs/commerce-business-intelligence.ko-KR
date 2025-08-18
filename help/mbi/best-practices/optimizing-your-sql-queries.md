@@ -15,13 +15,13 @@ ht-degree: 0%
 
 [!DNL SQL Report Builder]을(를) 사용하면 지정된 시간에 해당 쿼리를 쿼리하고 반복할 수 있습니다. 이 기능은 작성한 열이나 보고서를 업데이트해야 한다는 사실을 인식하기 전에 업데이트 주기가 끝날 때까지 기다리지 않고 쿼리를 수정해야 할 때 유용합니다.
 
-쿼리를 실행하기 전에 [[!DNL Commerce Intelligence] 비용을 예상합니다](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=ko). 비용은 쿼리를 실행하는 데 필요한 시간과 리소스 수를 고려합니다. 해당 비용이 너무 높거나 반환된 행 수가 [!DNL Commerce Intelligence] 제한을 초과하는 경우 쿼리가 실패합니다. [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md)을 쿼리하여 최대한 간소화된 쿼리를 작성할 수 있도록 하려면 Adobe에서 다음 사항을 권장합니다.
+쿼리를 실행하기 전에 [[!DNL Commerce Intelligence] 비용을 예상합니다](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html). 비용은 쿼리를 실행하는 데 필요한 시간과 리소스 수를 고려합니다. 해당 비용이 너무 높거나 반환된 행 수가 [!DNL Commerce Intelligence] 제한을 초과하는 경우 쿼리가 실패합니다. [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md)을 쿼리하여 최대한 간소화된 쿼리를 작성할 수 있도록 하려면 Adobe에서 다음 사항을 권장합니다.
 
 ## SELECT 사용 또는 모든 열 선택
 
 모든 열을 선택해도 적시에 쉽게 실행되는 쿼리는 수행되지 않습니다. `SELECT *`을(를) 사용하는 쿼리는 특히 테이블에 열이 많은 경우 실행하는 데 시간이 많이 걸릴 수 있습니다.
 
-Adobe 따라서 가능한 경우 `SELECT *`을(를) 사용하지 말고 필요한 열만 포함하는 것이 좋습니다.
+따라서 Adobe에서는 가능한 모든 곳에서 `SELECT *`을(를) 사용하지 말고 필요한 열만 포함할 것을 권장합니다.
 
 | **이 대신...** | **사용해 보세요!** |
 |-----|-----|
@@ -47,7 +47,7 @@ FULL OUTER JOIN 쿼리를 다시 작성하는 방법을 살펴봅니다.
 
 ## 여러 조인 사용
 
-쿼리에 여러 조인을 포함할 수 있지만, 이 경우 쿼리 비용이 증가할 수 있습니다. Adobe 비용 임계값에 도달하지 않도록 하려면 가능한 한 여러 조인을 피하는 것이 좋습니다.
+쿼리에 여러 조인을 포함할 수 있지만, 이 경우 쿼리 비용이 증가할 수 있습니다. 비용 임계값에 도달하지 않도록 Adobe에서는 가능한 여러 조인을 피하는 것이 좋습니다.
 
 ## 필터 사용
 
@@ -71,7 +71,7 @@ FULL OUTER JOIN 쿼리를 다시 작성하는 방법을 살펴봅니다.
 
 ## 존재함 대 위치 사용
 
-`EXISTS`과(와) `IN`을(를) 사용하는 것은 반환하려는 결과의 유형에 따라 다릅니다. 단일 값에만 관심이 있는 경우 `IN` 대신 `EXISTS` 절을 사용하십시오. `IN`은(는) 쉼표로 구분된 값 목록과 함께 사용되므로 쿼리의 계산 비용이 증가합니다.
+`EXISTS`과(와) `IN`을(를) 사용하는 것은 반환하려는 결과의 유형에 따라 다릅니다. 단일 값에만 관심이 있는 경우 `EXISTS` 대신 `IN` 절을 사용하십시오. `IN`은(는) 쉼표로 구분된 값 목록과 함께 사용되므로 쿼리의 계산 비용이 증가합니다.
 
 `IN`개의 쿼리가 실행되면 시스템은 먼저 하위 쿼리(`IN` 문)를 처리한 다음 `IN` 문에 지정된 관계를 기반으로 전체 쿼리를 처리해야 합니다. `EXISTS`은(는) 쿼리를 여러 번 실행할 필요가 없기 때문에 훨씬 효율적입니다. 쿼리에 지정된 관계를 확인하는 동안 true/false 값이 반환됩니다.
 

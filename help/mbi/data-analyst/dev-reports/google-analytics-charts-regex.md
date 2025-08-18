@@ -1,6 +1,6 @@
 ---
 title: Google Analytics 차트 만들기
-description: Google Analytics 데이터로 차트를 만드는 방법에 대해 알아봅니다.
+description: Google Analytics 데이터에서 차트를 만드는 방법을 알아봅니다.
 exl-id: ee80fd0d-e3b1-4331-853d-3c2c11931d3f
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports

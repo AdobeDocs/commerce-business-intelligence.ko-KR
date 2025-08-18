@@ -1,22 +1,22 @@
 ---
 title: 고급 계산 열 유형
-description: 대부분의 사용 열 사례에 대한 기본 사항을 알아봅니다. 하지만 Data Warehouse 관리자가 만들 수 있는 것보다 더 복잡한 계산된 열을 원할 수 있습니다.
+description: 대부분의 사용 열 사례에 대한 기본 사항을 알아봅니다. 하지만 Data Warehouse Manager가 만들 수 있는 것보다 더 복잡한 계산된 열이 필요할 수 있습니다.
 exl-id: 9871fa19-95b3-46e4-ae2d-bd7c524d12db
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '930'
 ht-degree: 2%
 
 ---
 
 # 고급 계산 열 유형
 
-만들려는 많은 분석에는 `group by` 또는 `filter by`하려는 **새 열**&#x200B;을 사용해야 할 수 있습니다. [계산된 열 만들기](../data-warehouse-mgr/creating-calculated-columns.md) 자습서에서는 대부분의 사용 사례에 대한 기본 사항을 다루지만 Data Warehouse 관리자가 만들 수 있는 것보다 복잡한 계산된 열을 원할 수도 있습니다.
+만들려는 많은 분석에는 **또는**&#x200B;하려는 `group by`새 열`filter by`을 사용해야 할 수 있습니다. [계산된 열 만들기](../data-warehouse-mgr/creating-calculated-columns.md) 자습서에서는 대부분의 사용 사례에 대한 기본 사항을 다루지만 Data Warehouse Manager가 만들 수 있는 것보다 복잡한 계산된 열을 원할 수도 있습니다.
 {: #top}
 
-이러한 유형의 열은 Data Warehouse 분석가 Adobe 팀에서 만들 수 있습니다. 새 계산된 열을 정의하려면 다음 정보를 제공합니다.
+Data Warehouse 분석가의 Adobe 팀에서 이러한 유형의 열을 만들 수 있습니다. 새 계산된 열을 정의하려면 다음 정보를 제공합니다.
 
 1. 이 열의 **`definition`**(입력, 수식 또는 서식 포함)
 1. 열을 만들 **`table`**
@@ -161,7 +161,7 @@ ht-degree: 2%
 
 걱정하지 마세요. 여기에 나열되어 있지 않다고 해서 가능하지 않은 것은 아니다. Data Warehouse 분석가 Adobe 팀이 도움을 줄 수 있습니다.
 
-새 계산된 열을 정의하려면 빌드할 내용에 대한 세부 정보를 포함하여 [지원 티켓을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)합니다.
+새 계산된 열을 정의하려면 빌드할 내용에 대한 세부 정보를 포함하여 [지원 티켓을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)합니다.
 
 ## 관련 설명서
 

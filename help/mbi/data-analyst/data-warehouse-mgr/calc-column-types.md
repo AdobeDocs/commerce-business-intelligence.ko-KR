@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '708'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,9 @@ ht-degree: 0%
 * [핸디 참조 맵](#map)
 * [고급 계산 열](#advanced)
 
-[Data Warehouse 관리자](../data-warehouse-mgr/tour-dwm.md) 내에서 열을 만들어 분석에 사용할 데이터를 보강하고 최적화할 수 있습니다. [이 기능](../data-warehouse-mgr/creating-calculated-columns.md)은(는) Data Warehouse 관리자에서 테이블을 선택하고 **[!UICONTROL Create New Column]**&#x200B;을(를) 클릭하여 액세스할 수 있습니다.
+[Data Warehouse 관리자](../data-warehouse-mgr/tour-dwm.md) 내에서 열을 만들어 분석을 위해 데이터를 보강하고 최적화할 수 있습니다. [이 기능](../data-warehouse-mgr/creating-calculated-columns.md)은(는) Data Warehouse 관리자에서 테이블을 선택하고 **[!UICONTROL Create New Column]**&#x200B;을(를) 클릭하여 액세스할 수 있습니다.
 
-이 항목에서는 Data Warehouse 관리자로 생성할 수 있는 열 유형에 대해 설명합니다. 또한 설명, 해당 열의 시각적 설명, 열을 만드는 데 필요한 모든 입력의 [참조 맵](#map)도 다룹니다. 다음 세 가지 방법으로 계산된 열을 만들 수 있습니다.
+이 항목에서는 Data Warehouse Manager로 만들 수 있는 열 유형에 대해 설명합니다. 또한 설명, 해당 열의 시각적 설명, 열을 만드는 데 필요한 모든 입력의 [참조 맵](#map)도 다룹니다. 다음 세 가지 방법으로 계산된 열을 만들 수 있습니다.
 
 1. [동일한 테이블 계산 열](#sametable)
 1. [일대다 계산된 열](#onetomany)
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 나이 계산 열은 현재 시간과 일부 입력 시간 사이의 초 수를 반환합니다.
 
-아래 예제에서는 `customers` 테이블에 `Seconds since customer's most recent order`을(를) 만듭니다. `X days` 내에서 구매(때로는 이탈이라고도 함)하지 않은 고객의 사용자 목록을 만드는 데 사용할 수 있습니다.
+아래 예제에서는 `Seconds since customer's most recent order` 테이블에 `customers`을(를) 만듭니다. `X days` 내에서 구매(때로는 이탈이라고도 함)하지 않은 고객의 사용자 목록을 만드는 데 사용할 수 있습니다.
 
 ![](../../assets/age.gif)
 
@@ -65,13 +65,13 @@ Commerce 클라이언트의 경우 `base\_currency\_code` 필드는 일반적으
 
 이러한 열은 일대다 열과 동일한 경로를 사용하지만 데이터를 반대 방향으로 지정합니다. 열은 패스의 한 쪽에 만들어집니다(많은 쪽이 아니라). 이러한 관계 때문에 열의 값은 집계, 즉 다변도의 데이터 포인트에서 수행되는 수학적 연산이 되어야 합니다. 이에 대한 많은 사용 사례가 있으며 몇 가지 예가 아래에 나와 있습니다.
 
-### 카운트 {#count}
+### 계수 {#count}
 
 이 유형의 계산된 열은 많은 테이블의 값 개수를 반환합니다. *한 테이블부터*.
 
-아래 예제에서는 `orders.status`에 대한 필터를 사용하여 `customers` 테이블에 `Customer's lifetime number of canceled orders` 차원이 만들어집니다.
+아래 예제에서는 `Customer's lifetime number of canceled orders`에 대한 필터를 사용하여 `customers` 테이블에 `orders.status` 차원이 만들어집니다.
 
-![](../../assets/many_to_one.gif){: width=&quot;699&quot; height=&quot;351&quot;}
+![](../../assets/many_to_one.gif){: width="699" height="351"}
 
 ### 합계 {#sum}
 
@@ -101,7 +101,7 @@ Sum calculated 열은 `many` 테이블에 있는 값의 합계입니다.
 
 비즈니스에 대한 질문을 분석하고 답변하는 퀘스트에서 원하는 정확한 열을 작성할 수 없는 상황이 발생할 수 있습니다.
 
-Adobe 빠르게 전환하려면 [고급 계산 열 형식](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) 안내서를 확인하여 Adobe 지원 팀에서 만들 수 있는 열의 종류를 확인하는 것이 좋습니다. 이 항목에서는 열을 만드는 데 필요한 정보(요청에 포함)도 다룹니다.
+Adobe에서는 신속한 전환을 위해 [고급 계산 열 유형](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) 안내서를 확인하여 Adobe 지원 팀에서 작성할 수 있는 열 종류를 확인하는 것이 좋습니다. 이 항목에서는 열을 만드는 데 필요한 정보(요청에 포함)도 다룹니다.
 
 ## 관련 설명서
 

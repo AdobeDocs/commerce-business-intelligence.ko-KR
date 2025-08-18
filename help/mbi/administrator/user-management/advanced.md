@@ -3,13 +3,13 @@ title: 고급 사용자 관리
 description: 데이터 가시성 향상, 보고 간소화, 사용자 그룹별 맞춤식 액세스, 대시보드 공유 간소화, 조직의 보안 및 확장성 보장
 role: Admin, User
 feature: User Management
-source-git-commit: 42871886d12b97ee52aa270da6f0186a9a4eaddc
+exl-id: d96a075d-53ab-48d3-ba83-3ff4298a0cb7
+source-git-commit: df408b8947a62cdb498b56370be965c89c45f6ff
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 0%
 
 ---
-
 
 # 고급 사용자 관리
 
@@ -392,7 +392,7 @@ ht-degree: 0%
 
 사용자 그룹을 구성하려면 다음 작업을 수행하십시오.
 
-1. 기존 사용자 그룹을 보려면 [!UICONTROL **사용자 관리**] > [!UICONTROL **User Groups]**&#x200B;로 이동하십시오.
+1. 기존 사용자 그룹을 보려면 [!UICONTROL **사용자 관리**] > [!UICONTROL **User Groups]**로 이동하십시오.
 
    ![사용자 그룹 구성](../../assets/configure-user-groups.png)
 

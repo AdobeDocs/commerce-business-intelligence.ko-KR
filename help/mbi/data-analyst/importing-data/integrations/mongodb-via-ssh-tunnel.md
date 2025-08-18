@@ -23,7 +23,7 @@ SSH 터널을 통해 [!DNL MongoDB] 데이터베이스를 [!DNL Commerce Intelli
 
 >[!NOTE]
 >
->Adobe 이 설정의 기술 특성으로 인해 이전에 이 작업을 수행하지 않았다면 개발자에서 루프하여 도움이 되도록 하는 것이 좋습니다.
+>이 설정의 기술 특성으로 인해 Adobe에서는 이전에 이 작업을 수행하지 않았다면 개발자에서 반복해서 도움을 줄 것을 권장합니다.
 
 ## [!DNL Commerce Intelligence] 공개 키 검색 중 {#retrieve}
 
@@ -46,11 +46,11 @@ SSH 터널을 통해 [!DNL MongoDB] 데이터베이스를 [!DNL Commerce Intelli
 
 ![MBI_Allow_Access_IPs.png](../../../assets/MBI_allow_access_IPs.png)
 
-## [!DNL Commerce Intelligence]에 대해 `Linux` 사용자를 만드는 중 {#linux}
+## `Linux`에 대해 [!DNL Commerce Intelligence] 사용자를 만드는 중 {#linux}
 
 >[!IMPORTANT]
 >
->서버와 연결된 `sshd_config` 파일이 기본 옵션으로 설정되지 않은 경우 특정 사용자만 서버에 액세스할 수 있으므로 [!DNL Commerce Intelligence]에 연결할 수 없습니다. 이러한 경우 `rjmetric` 사용자가 서버에 액세스할 수 있도록 하려면 `AllowUsers`과(와) 같은 명령을 실행해야 합니다.
+>서버와 연결된 `sshd_config` 파일이 기본 옵션으로 설정되지 않은 경우 특정 사용자만 서버에 액세스할 수 있으므로 [!DNL Commerce Intelligence]에 연결할 수 없습니다. 이러한 경우 `AllowUsers` 사용자가 서버에 액세스할 수 있도록 하려면 `rjmetric`과(와) 같은 명령을 실행해야 합니다.
 
 실시간(또는 자주 업데이트되는) 데이터가 포함되어 있는 한 프로덕션 또는 보조 시스템일 수 있습니다. [!DNL MongoDB] 서버에 연결할 수 있는 권한이 있는 한 원하는 방식으로 이 사용자를 제한할 수 있습니다.
 
@@ -146,4 +146,4 @@ SSH 터널을 통해 [!DNL MongoDB] 데이터베이스를 [!DNL Commerce Intelli
 
 ### 관련 항목
 
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

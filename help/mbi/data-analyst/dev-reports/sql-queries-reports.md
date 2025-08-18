@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Commerce Intelligence에서 SQL 쿼리 번역
 
-SQL 쿼리가 [!DNL Commerce Intelligence]에서 사용하는 [계산된 열](../data-warehouse-mgr/creating-calculated-columns.md), [지표](../../data-user/reports/ess-manage-data-metrics.md) 및 [보고서](../../tutorials/using-visual-report-builder.md)(으)로 변환되는 방식에 대해 궁금하셨습니까? SQL 사용자가 많은 경우 [!DNL Commerce Intelligence]에서 SQL을 변환하는 방법을 이해하면 [Data Warehouse 관리자](../data-warehouse-mgr/tour-dwm.md)에서 보다 효율적으로 작업하고 [!DNL Commerce Intelligence] 플랫폼을 최대한 활용할 수 있습니다.
+SQL 쿼리가 [에서 사용하는 ](../data-warehouse-mgr/creating-calculated-columns.md)계산된 열[, ](../../data-user/reports/ess-manage-data-metrics.md)지표[ 및 ](../../tutorials/using-visual-report-builder.md)보고서[!DNL Commerce Intelligence]&#x200B;(으)로 변환되는 방식에 대해 궁금하셨습니까? SQL 사용자가 많은 경우 [!DNL Commerce Intelligence]에서 SQL을 변환하는 방법을 이해하면 [Data Warehouse 관리자](../data-warehouse-mgr/tour-dwm.md)에서 보다 효율적으로 작업하고 [!DNL Commerce Intelligence] 플랫폼을 최대한 활용할 수 있습니다.
 
-이 항목의 끝에 SQL 쿼리 절 및 [!DNL Commerce Intelligence] 요소에 대한 **변환 매트릭스**&#x200B;가 있습니다.
+이 항목의 끝에 SQL 쿼리 절 및 **요소에 대한**&#x200B;변환 매트릭스[!DNL Commerce Intelligence]가 있습니다.
 
 일반 쿼리를 보고 시작하십시오.
 
@@ -34,7 +34,7 @@ SQL 쿼리가 [!DNL Commerce Intelligence]에서 사용하는 [계산된 열](..
 
 ## 집계 함수
 
-쿼리의 집계 함수(예: `count`, `sum`, `average`, `max`, `min`)는 [!DNL Commerce Intelligence]에서 **지표 집계** 또는 **열 집계** 형식을 사용합니다. 구별 요인은 응집을 수행하기 위해 가입이 필요한지 여부이다.
+쿼리의 집계 함수(예: `count`, `sum`, `average`, `max`, `min`)는 **에서**&#x200B;지표 집계&#x200B;**또는**&#x200B;열 집계[!DNL Commerce Intelligence] 형식을 사용합니다. 구별 요인은 응집을 수행하기 위해 가입이 필요한지 여부이다.
 
 위의 각 예제를 참조하십시오.
 
@@ -42,7 +42,7 @@ SQL 쿼리가 [!DNL Commerce Intelligence]에서 사용하는 [계산된 열](..
 
 `within a single table`을(를) 집계할 때 지표가 필요합니다. 예를 들어, 위의 쿼리의 `SUM(b)` 집계 함수는 열 `B`을(를) 합산하는 지표로 표시될 가능성이 높습니다. 
 
-[!DNL Commerce Intelligence]에서 `Total Revenue` 지표를 정의하는 방법에 대한 특정 예를 살펴보십시오. 번역할 아래 쿼리를 참조하십시오.
+`Total Revenue`에서 [!DNL Commerce Intelligence] 지표를 정의하는 방법에 대한 특정 예를 살펴보십시오. 번역할 아래 쿼리를 참조하십시오.
 
 | | |
 |--- |--- |
@@ -73,15 +73,15 @@ SQL 쿼리가 [!DNL Commerce Intelligence]에서 사용하는 [계산된 열](..
 | `ON c.customer_id = o.customer_id` | 경로 |
 | `WHERE o.status = 'success'` | 집계 필터 |
 
-이 설정을 [!DNL Commerce Intelligence]에서 설정하려면 Data Warehouse 관리자를 사용해야 합니다. 여기서 `orders` 테이블과 `customers` 테이블 사이에 경로를 만든 다음 고객의 테이블에 `Customer LTV`이라는 열을 만듭니다.
+이 설정을 [!DNL Commerce Intelligence]에서 설정하려면 Data Warehouse 관리자를 사용해야 합니다. 여기서 `orders`과(와) `customers` 테이블 사이에 경로를 만든 다음 고객의 테이블에 `Customer LTV`이라는 열을 만듭니다.
 
-`customers`과(와) `orders` 사이에 새 경로를 설정하는 방법을 살펴봅니다. 최종 목표는 `customers` 테이블에 새 집계된 열을 만드는 것이므로 먼저 Data Warehouse의 `customers` 테이블로 이동한 다음 **[!UICONTROL Create a Column** > **&#x200B;정의 선택&#x200B;**> **SUM]**&#x200B;을 클릭합니다.
+`customers`과(와) `orders` 사이에 새 경로를 설정하는 방법을 살펴봅니다. 최종 목표는 `customers` 테이블에 새 집계된 열을 만드는 것이므로 먼저 Data Warehouse의 `customers` 테이블로 이동한 다음 **[!UICONTROL Create a Column** > **&#x200B;정의 선택&#x200B;**> **합계]**&#x200B;를 클릭합니다.
 
 그런 다음 소스 테이블을 선택해야 합니다. `orders` 테이블에 경로가 있는 경우 드롭다운에서 해당 경로를 선택하면 됩니다. 그러나 새 경로를 만드는 경우 **[!UICONTROL Create new path]**&#x200B;을(를) 클릭하면 아래 화면이 표시됩니다.
 
 ![새 경로 만들기](../../assets/Create_new_path.png)
 
-여기서 결합하려는 두 테이블 간의 관계를 신중하게 고려해야 합니다. 이 경우 `One` 고객과 연결된 주문이 `Many`개 있을 수 있으므로 `orders` 테이블은 `Many` 쪽에 나열되는 반면 `customers` 테이블은 `One` 쪽에서 선택됩니다.
+여기서 결합하려는 두 테이블 간의 관계를 신중하게 고려해야 합니다. 이 경우 `Many` 고객과 연결된 주문이 `One`개 있을 수 있으므로 `orders` 테이블은 `Many` 쪽에 나열되는 반면 `customers` 테이블은 `One` 쪽에서 선택됩니다.
 
 >[!NOTE]
 >
@@ -91,7 +91,7 @@ SQL 쿼리가 [!DNL Commerce Intelligence]에서 사용하는 [계산된 열](..
 
 ![](../../assets/Customer_LTV.gif)
 
-`customers` 테이블에 새 `Customer LTV` 열을 만들었으므로 이 열을 사용하여 [지표 집계](#aggregate)를 만들 준비가 되었습니다(예: 고객당 평균 LTV를 찾기 위해). `customers` 테이블에 빌드된 기존 지표를 사용하여 보고서에서 계산된 열을 기준으로 `group by` 또는 `filter`할 수도 있습니다.
+`Customer LTV` 테이블에 새 `customers` 열을 만들었으므로 이 열을 사용하여 [지표 집계](#aggregate)를 만들 준비가 되었습니다(예: 고객당 평균 LTV를 찾기 위해). `group by` 테이블에 빌드된 기존 지표를 사용하여 보고서에서 계산된 열을 기준으로 `filter` 또는 `customers`할 수도 있습니다.
 
 >[!NOTE]
 >

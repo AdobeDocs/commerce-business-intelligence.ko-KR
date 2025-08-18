@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 데이터 마이그레이션
 
-새 데이터베이스 스키마, 서버 또는 보고 데이터베이스로 마이그레이션하는 것은 스트레스를 받을 필요가 없습니다. [[!DNL Adobe] 서비스 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)에서 마이그레이션 지원을 제공합니다.
+새 데이터베이스 스키마, 서버 또는 보고 데이터베이스로 마이그레이션하는 것은 스트레스를 받을 필요가 없습니다. [[!DNL Adobe] 서비스 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)에서 마이그레이션 지원을 제공합니다.
 
 전환이 최대한 매끄럽게 진행되도록 하려면 마이그레이션 요청을 제출할 때 가능한 한 자세히 설명해야 합니다. 이 항목에는 요청을 제출하고 마이그레이션을 시작하는 데 필요한 모든 것이 있습니다. 귀하의 요구 사항에 대한 포괄적인 그림을 제공하면 프로젝트의 범위가 적절하고 예상치가 정확하다는 것을 보증할 수 있습니다.
 
@@ -49,9 +49,9 @@ ht-degree: 0%
 
 1. 스프레드시트에서 새 데이터베이스로 마이그레이션할 모든 테이블에 대한 탭을 만듭니다.
 
-1. 각 탭에서 마이그레이션해야 하는 모든 기존 열에 대한 열을 만듭니다. Adobe은 이름을 `Existing column name`과(와) 같이 지정할 것을 권장합니다.
+1. 각 탭에서 마이그레이션해야 하는 모든 기존 열에 대한 열을 만듭니다. Adobe에서는 이름을 `Existing column name`과(와) 같이 지정할 것을 권장합니다.
 
-1. 스프레드시트의 각 탭에서 새 데이터베이스에 해당하는 열에 대해 다른 열을 만들어야 합니다. Adobe은 열 이름을 `New column name`과(와) 같이 지정할 것을 권장합니다.
+1. 스프레드시트의 각 탭에서 새 데이터베이스에 해당하는 열에 대해 다른 열을 만들어야 합니다. Adobe에서는 열 이름을 `New column name`과(와) 같이 지정할 것을 권장합니다.
 
 1. 기존 열과 그에 해당하는 열을 입력합니다. 기존 열에 새로운 해당 열이 없으면 `N/A`을(를) 입력하십시오.
 
@@ -67,7 +67,7 @@ ht-degree: 0%
 
 ## 요청을 제출하는 방법 {#submitreq}
 
-[지원 요청을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하면 연락할 수 있습니다.
+[지원 요청을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하면 연락할 수 있습니다.
 
 이전 섹션의 단계에 따라 열과 일치하는 스프레드시트를 만들었다면 첨부하는 것을 잊지 마십시오.
 

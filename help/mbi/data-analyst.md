@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 관련 항목
 
-* [Data Warehouse 관리자](../mbi/data-analyst/data-warehouse-mgr/tour-dwm.md)
+* [Data Warehouse Manager](../mbi/data-analyst/data-warehouse-mgr/tour-dwm.md)
 * [[!DNL SQL Report Builder]](data-analyst/dev-reports/sql-rpt-bldr.md)
 * [데이터 연결 중](../mbi/data-analyst/importing-data/connecting-data/connecting-data.md)
 * [통합](../mbi/data-analyst/importing-data/integrations/magento.md)

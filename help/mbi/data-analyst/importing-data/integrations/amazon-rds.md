@@ -31,7 +31,7 @@ ht-degree: 0%
 
 [!DNL Commerce Intelligence] IP 주소를 추가할 때 주소 끝에 `/32`을(를) 추가하여 [!DNL Amazon]에 정확한 IP 주소임을 나타내십시오. 걱정하지 마십시오. AWS 인터페이스를 통해 이 기능이 필요하다는 것을 알 수 있습니다.
 
-## [!DNL Commerce Intelligence]에 대해 `Linux` 사용자 만들기 {#linux}
+## `Linux`에 대해 [!DNL Commerce Intelligence] 사용자 만들기 {#linux}
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 인스턴스에 대한 [!DNL Commerce Intelligence] 액세스 권한을 부여하고 사용자를 만든 후에는 [!DNL Commerce Intelligence]에 연결 정보를 입력할 필요가 없습니다.
 
-**[!UICONTROL Add Integration]**&#x200B;을(를) 클릭하여 `MySQL`, `Microsoft SQL` 및 `PostgreSQL`의 자격 증명 페이지에 `Integrations` 페이지(**[!UICONTROL Manage Data** > **Integrations]**)를 통해 액세스할 수 있습니다. 통합 목록이 표시되면 사용 중인 데이터베이스의 아이콘을 눌러 인증서 페이지로 이동합니다. 현재 필요한 통합에 대한 액세스 권한이 없는 경우 Adobe 계정 팀에 문의하십시오.
+`MySQL`을(를) 클릭하여 `Microsoft SQL`, `PostgreSQL` 및 `Integrations`의 자격 증명 페이지에 **[!UICONTROL Manage Data** > **Integrations]** 페이지(**[!UICONTROL Add Integration]**)를 통해 액세스할 수 있습니다. 통합 목록이 표시되면 사용 중인 데이터베이스의 아이콘을 눌러 인증서 페이지로 이동합니다. 현재 필요한 통합에 대한 액세스 권한이 없는 경우 Adobe 계정 팀에 문의하십시오.
 
 연결 만들기를 완료하려면 다음 정보가 필요합니다.
 

@@ -33,16 +33,16 @@ ht-degree: 0%
 
 | **열 이름** | **설명** |
 |---|---|
-| `Customer's first 30 day revenue` | 고객의 첫 번째 주문 일자로부터 30일 이내에 이 고객이 수행한 모든 주문의 총 매출액 합계. ≤ `customer_entity.entity_id`을(를) `sales_order.customer_id`에 조인하고 `sales_order.Seconds between customer's first order date and this order`이(가) 2592000 모든 주문에 대한 `base_grand_total` 필드를 합하여 계산됨(30일 후 초 수) |
-| `Customer's first order date` | 해당 고객이 주문한 첫 번째 주문의 타임스탬프. `sales_order.customer_id`에 `customer_entity.entity_id`을(를) 조인하고 최소 `sales_order`을(를) 반환하여 계산되었습니다.`created_at` 값 |
-| `Customer's first order's billing region` | 고객의 첫 번째 주문과 연계된 청구 지역. `customer_entity.entity_id`을(를) `sales_order.customer_id`에 조인하고 `sales_order.Customer's order number` = 1인 `Billing address region`을(를) 반환하여 계산됨 |
-| `Customer's first order's coupon_code` | 고객의 첫 번째 주문과 연계된 쿠폰 코드. `customer_entity.entity_id`을(를) `sales_order.customer_id`에 조인하고 `sales_order.Customer's order number` = 1인 `sales_order.coupon_code`을(를) 반환하여 계산됨 |
-| `Customer's group code` | 등록된 고객의 그룹 이름. `customer_group`에 `customer_entity.group_id`을(를) 연결하여 계산되었습니다.`customer_group_id` 및 `customer_group_code` 필드 반환 |
+| `Customer's first 30 day revenue` | 고객의 첫 번째 주문 일자로부터 30일 이내에 이 고객이 수행한 모든 주문의 총 매출액 합계. ≤ `customer_entity.entity_id`을(를) `sales_order.customer_id`에 조인하고 `base_grand_total`이(가) 2592000 모든 주문에 대한 `sales_order.Seconds between customer's first order date and this order` 필드를 합하여 계산됨(30일 후 초 수) |
+| `Customer's first order date` | 해당 고객이 주문한 첫 번째 주문의 타임스탬프. `customer_entity.entity_id`에 `sales_order.customer_id`을(를) 조인하고 최소 `sales_order`을(를) 반환하여 계산되었습니다.`created_at` 값 |
+| `Customer's first order's billing region` | 고객의 첫 번째 주문과 연계된 청구 지역. `customer_entity.entity_id`을(를) `sales_order.customer_id`에 조인하고 `Billing address region` = 1인 `sales_order.Customer's order number`을(를) 반환하여 계산됨 |
+| `Customer's first order's coupon_code` | 고객의 첫 번째 주문과 연계된 쿠폰 코드. `customer_entity.entity_id`을(를) `sales_order.customer_id`에 조인하고 `sales_order.coupon_code` = 1인 `sales_order.Customer's order number`을(를) 반환하여 계산됨 |
+| `Customer's group code` | 등록된 고객의 그룹 이름. `customer_entity.group_id`에 `customer_group`을(를) 연결하여 계산되었습니다.`customer_group_id` 및 `customer_group_code` 필드 반환 |
 | `Customer's lifetime number of coupons` | 이 고객이 수행한 모든 주문에 적용된 총 쿠폰 수입니다. `customer_entity.entity_id`을(를) `sales_order.customer_id`에 조인하고 `sales_order.coupon_code`이(가) `NULL`이(가) 아닌 주문 수를 계산하여 계산됨 |
 | `Customer's lifetime number of orders` | 이 고객이 수행한 총 주문 수. `customer_entity.entity_id`을(를) `sales_order.customer_id`에 조인하고 `sales_order` 테이블의 행 수를 계산하여 계산됨 |
-| `Customer's lifetime revenue` | 이 고객이 수행한 모든 주문에 대한 총 매출액 합계. `sales_order.customer_id`에 `customer_entity.entity_id`을(를) 결합하고 이 고객이 주문한 모든 주문에 대한 `base_grand_total` 필드를 합하여 계산됨 |
+| `Customer's lifetime revenue` | 이 고객이 수행한 모든 주문에 대한 총 매출액 합계. `customer_entity.entity_id`에 `sales_order.customer_id`을(를) 결합하고 이 고객이 주문한 모든 주문에 대한 `base_grand_total` 필드를 합하여 계산됨 |
 | `Seconds since customer's first order date` | 고객의 첫 번째 주문 일자와 지금 사이의 경과 시간. 쿼리가 실행될 때 서버 타임스탬프에서 `Customer's first order date`을(를) 빼서 계산되며, 정수로 반환됩니다 |
-| `Store name` | 등록된 이 계정과 연결된 Commerce 스토어의 이름입니다. `store.store_id`에 `customer_entity.store_id`을(를) 조인하고 `name` 필드를 반환하여 계산됨 |
+| `Store name` | 등록된 이 계정과 연결된 Commerce 스토어의 이름입니다. `customer_entity.store_id`에 `store.store_id`을(를) 조인하고 `name` 필드를 반환하여 계산됨 |
 
 {style="table-layout:auto"}
 

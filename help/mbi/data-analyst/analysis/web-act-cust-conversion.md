@@ -17,11 +17,11 @@ ht-degree: 0%
 
 이 항목에서는 페이지 보기 수, 세션 및 사용자를 포함하여 웹 사이트 활동 및 시간에 따른 고객 전환율을 추적하는 대시보드를 설정하는 방법을 보여 줍니다.
 
-## 전제 조건
+## 사전 요구 사항
 
-**광고 비용 데이터를 가져옵니다** - [[!DNL [Google AdWords]]](../importing-data/integrations/google-adwords.md)을(를) [!DNL Adobe Commerce Intelligence]에 연결합니다. 이렇게 하면 [!DNL AdWords] 지출이 Commerce Intelligence에서 자동으로 동기화됩니다.
+**광고 비용 데이터를 가져옵니다** - [!DNL [Google AdWords]](../importing-data/integrations/google-adwords.md)을(를) [!DNL Adobe Commerce Intelligence]에 연결합니다. 이렇게 하면 [!DNL AdWords] 지출이 Commerce Intelligence에서 자동으로 동기화됩니다.
 
-**사용자 확보 채널 데이터 추적** - [!DNL Google AdWords] 데이터를 데이터베이스의 특정 주문에 연결하려면 [!DNL Google Analytics E-commerce]을(를) 통해 [사용자 확보 추적](../analysis/google-track-user-acq.md)해야 합니다. 이렇게 하면 각 주문을 utm 소스 및 미디어와 연결할 수 있습니다.
+**사용자 확보 채널 데이터 추적** - [!DNL Google AdWords] 데이터를 데이터베이스의 특정 주문에 연결하려면 [을(를) 통해 ](../analysis/google-track-user-acq.md)사용자 확보 추적[!DNL Google Analytics E-commerce]해야 합니다. 이렇게 하면 각 주문을 utm 소스 및 미디어와 연결할 수 있습니다.
 
 ## 사용자 확보 캠페인
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 * [!DNL Google AdWords] 데이터를 연결할 때 자동으로 생성되는 지표
 * `Number of orders` 및 `New users`과(와) 같이 계정에서 이미 사용할 수 있는 기본 지표
-* [!DNL Google Analytics Ecommerce] 데이터를 데이터베이스에 연결할 때 만들어지는 Dimension(예: 주문의 utm 소스 및 주문의 utm 미디어). 현재 계정에서 이러한 필드를 사용할 수 없는 경우 지원 팀에 문의하십시오
+* [!DNL Google Analytics Ecommerce] 데이터를 데이터베이스에 연결할 때 만들어지는 차원입니다(예: 주문의 utm 소스 및 주문의 utm 미디어). 현재 계정에서 이러한 필드를 사용할 수 없는 경우 지원 팀에 문의하십시오
 
 ## 보고서 작성
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 **이제 재방문자와 비교하여 새 방문자의 평균 세션 길이를 살펴봅니다.**
 
 1. 보고서를 만듭니다.
-1. 드롭다운 아래의 [!DNL Google Analytics] 섹션 위로 마우스를 가져간 후 **UICONTROL 지표 추가**&#x200B;를 클릭하고 `Average Session Length`을(를) 선택합니다.
+1. 드롭다운 아래의 **섹션 위로 마우스를 가져간 후** UICONTROL 지표 추가[!DNL Google Analytics]를 클릭하고 `Average Session Length`을(를) 선택합니다.
 1. 13개월 전부터 1개월 전까지 기간을 이동 범위로 변경하고 시간 간격을 `by month`(으)로 조정하시겠습니까?
 1. `Group by`을(를) 추가하고 `New or returning visitor`을(를) 선택합니다.  `Show All` 상자를 선택한 다음 **[!UICONTROL Apply]**&#x200B;을(를) 클릭합니다.
 1. 보고서에 `Average session length`과(와) 같은 이름을 지정하고 **[!UICONTROL Save]**&#x200B;을(를) 클릭합니다.

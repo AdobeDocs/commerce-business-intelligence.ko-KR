@@ -65,6 +65,6 @@ ht-degree: 0%
 
    `Cumulative` 큐브 뷰에서는 매월 들쭉날쭉한 위아래로 표시되지 않고 시간에 따라 변경 내용을 배포합니다.
 
-1. 보고서에 대한 `Title`을(를) 입력하고 대시보드에 대한 `Chart`(으)로 **[!UICONTROL Save]**&#x200B;을(를) 클릭합니다.
+1. 보고서에 대한 `Title`을(를) 입력하고 대시보드에 대한 **[!UICONTROL Save]**(으)로 `Chart`을(를) 클릭합니다.
 
    ![대시보드에 저장](../../assets/magento-bi-report-builder-filter-perspective-cumulative-save.png)

@@ -21,7 +21,7 @@ ht-degree: 0%
 
 이상적으로는 전환 이벤트가 발생할 때마다 참조 소스가 기록됩니다. 그러나 그 출처는 어떻게 결정됩니까?
 
-현실은 사용자가 마이크로 또는 매크로 변환을 히트/커밋하기 전에 많은 소스에서 오는 경우가 많습니다. 예를 들어, 이들은 유기농 제품을 통해 현장으로 온 다음, 떠나고, 유료 검색을 통해 온 다음, 떠난 다음, 바로 현장으로 올 수 있습니다. 이 소스 추적 정보는 종종 UTM 매개변수를 통해 사이트에 제공되지만 보다 정교한 시스템도 있습니다. [UTM](https://support.google.com/analytics/answer/1033867?hl=en&amp;ref_topic=1032998)에 초점을 맞추십시오.
+현실은 사용자가 마이크로 또는 매크로 변환을 히트/커밋하기 전에 많은 소스에서 오는 경우가 많습니다. 예를 들어, 이들은 유기농 제품을 통해 현장으로 온 다음, 떠나고, 유료 검색을 통해 온 다음, 떠난 다음, 바로 현장으로 올 수 있습니다. 이 소스 추적 정보는 종종 UTM 매개변수를 통해 사이트에 제공되지만 보다 정교한 시스템도 있습니다. [UTM](https://support.google.com/analytics/answer/1033867?hl=en&ref_topic=1032998)에 초점을 맞추십시오.
 
 ## [!DNL Google Analytics]은(는) UTM 매개 변수를 통해 참조 소스를 어떻게 처리합니까?
 
@@ -37,7 +37,7 @@ URL에 UTM 매개 변수가 지정되면 구문 분석되어 [!DNL Google Analyt
 
 >[!NOTE]
 >
->쿠키 [이(가) 만료](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage)되거나 사용자가 브라우저에서 쿠키를 지우는 경우 특정 사용자의 [!DNL Google Analytics] 쿠키 매개 변수가 지워집니다.*
+>쿠키 [!DNL Google Analytics]이(가) 만료[되거나 사용자가 브라우저에서 쿠키를 지우는 경우 특정 사용자의 ](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage) 쿠키 매개 변수가 지워집니다.*
 
 ### 첫 번째 클릭 속성
 

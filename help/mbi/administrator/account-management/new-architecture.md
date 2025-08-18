@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 새로운 아키텍처
 
-[!DNL Adobe Commerce Intelligence] 제품 및 엔지니어링 팀은 지난 한 해 동안 가장 광범위하고 많이 요청된 개선 사항을 만드는 데 주력했습니다. Adobe은 이러한 개선 사항을 실현하는 새로운 [!DNL Commerce Intelligence] 제품 아키텍처를 사용할 수 있음을 기쁘게 발표합니다.
+[!DNL Adobe Commerce Intelligence] 제품 및 엔지니어링 팀은 지난 한 해 동안 가장 광범위하고 많이 요청된 개선 사항을 만드는 데 주력했습니다. Adobe은 이러한 개선 사항을 실현하는 새로운 [!DNL Commerce Intelligence] 제품 아키텍처를 제공할 수 있음을 기쁘게 발표합니다.
 
 ## 새로운 아키텍처의 이점
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 기술적 이점
 
-주요 차이점은 위에 나열되어 있지만 주요 변경 사항은 업데이트 주기 동안 계산이 수행되는 방식입니다. 계산은 모든 업데이트 중에 더 이상 모든 열에서 실행되지 않습니다. 대신 시각적 Report Builder에서 온디맨드로 실행됩니다.
+주요 차이점은 위에 나열되어 있지만 주요 변경 사항은 업데이트 주기 동안 계산이 수행되는 방식입니다. 계산은 모든 업데이트 중에 더 이상 모든 열에서 실행되지 않습니다. 대신 Visual Report Builder에서 주문형 실행됩니다.
 
 ### 새 아키텍처로 이동
 
@@ -41,12 +41,12 @@ ht-degree: 0%
 * 이러한 보고서를 작성하는 데 필요한 지표 및 차원을 식별합니다.
 * 해당 지표 및 차원을 다시 만드는 데 필요한 열을 식별합니다.
 
-이 작업이 완료되면 이러한 핵심 보고서를 다시 빌드하기 위해 새 아키텍처 Data Warehouse과 동기화해야 하는 데이터를 알 수 있습니다.
+완료되면 이러한 핵심 보고서를 다시 빌드하기 위해 새 아키텍처 Data Warehouse에 동기화하는 데 필요한 데이터를 알 수 있습니다.
 
 ### 도움말 보기
 
-[!DNL Adobe Commerce Intelligence] [서비스 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)은(는) 추가 비용으로 재구현을 수행할 수 있습니다. [Adobe 계정 팀](../../guide-overview.md#Submitting-a-Support-Ticket)에 연락하여 새 계정에서 만들기 우선 순위를 지정할 대시보드/보고서 목록을 제공할 준비를 하십시오
+[!DNL Adobe Commerce Intelligence] [서비스 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)은(는) 추가 비용으로 재구현을 수행할 수 있습니다. [Adobe 계정 팀](../../guide-overview.md#Submitting-a-Support-Ticket)에 연락하여 새 계정에서 만들기 우선 순위를 지정할 대시보드/보고서 목록을 제공할 준비를 하십시오
 
 ### 기존 아키텍처 유지
 
-이러한 기능이 중요하지 않은 경우 기존 계정을 고수할 수 있습니다. 기존 계정을 유지하는 데 추가 비용은 없습니다. Adobe은 변경 사항 없이 해당 계정을 계속 지원합니다.
+이러한 기능이 중요하지 않은 경우 기존 계정을 고수할 수 있습니다. 기존 계정을 유지하는 데 추가 비용은 없습니다. Adobe은 변경 사항 없이 이러한 계정을 계속 지원합니다.

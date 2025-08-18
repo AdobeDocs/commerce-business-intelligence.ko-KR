@@ -7,13 +7,13 @@ feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '77'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
 # [!DNL Commerce Intelligence Essentials]과(와) [!DNL Commerce Intelligence Pro]
 
-다음 표에서는 기존 `Essentials` 계정과 현재 Commerce Intelligence 계정에 포함된 요소를 설명합니다. Adobe이 더 이상 `Essentials`을(를) 제공하지 않습니다.
+다음 표에서는 기존 `Essentials` 계정과 현재 Commerce Intelligence 계정에 포함된 요소를 설명합니다. Adobe은 더 이상 `Essentials`을(를) 제공하지 않습니다.
 
 |   | **`Commerce Intelligence Essentials`** | **`Commerce Intelligence Pro`** |
 |-----|-----|-----|
