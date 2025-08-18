@@ -50,7 +50,7 @@ ht-degree: 0%
    * **현재 날짜**
       * [!UICONTROL Column type]: `Same table > Calculation`
       * [!UICONTROL Inputs]: `Date Retail`
-      * 
+      * &#x200B;
         [!UICONTROL 데이터 유형]: `Datetime`
       * [!UICONTROL Calculation]: `case when A is null then null else to\_char(now(), 'YYYY-MM-DD 00:00:00') end`
 
@@ -62,7 +62,7 @@ ht-degree: 0%
       * [!UICONTROL Column type]: E`vent Counter`
       * [!UICONTROL Local Key]: `Current date`
       * [!UICONTROL Remote Key]: `Retail calendar.Date Retail`
-      * 
+      * &#x200B;
         [!UICONTROL Operation]: `Max`
       * [!UICONTROL Operation value]: `Year Retail`
    * **현재 소매 연도에 포함됩니까? (예/아니요)**
@@ -70,7 +70,7 @@ ht-degree: 0%
       * [!UICONTROL Inputs]:
          * `A` - `Year Retail`
          * `B` - `Current retail year`
-      * 
+      * &#x200B;
         [!UICONTROL 데이터 유형]: `String`
       * [!UICONTROL Calculation]: `case when A is null or B is null then null when A = B then 'Yes' else 'No' end`
    * **이전 소매 연도에 포함됩니까? (예/아니요)**
@@ -78,7 +78,7 @@ ht-degree: 0%
       * [!UICONTROL Inputs]:
          * `A` - `Year Retail`
          * `B` - `Current retail year`
-      * 
+      * &#x200B;
         [!UICONTROL 데이터 유형]: String
       * [!UICONTROL Calculation]: `case when A is null or B is null then null when (A = (B-1)) then 'Yes' else 'No' end`
 
@@ -139,62 +139,62 @@ ht-degree: 0%
       * [!UICONTROL Filter]:
          * `Created\_at (retail Year) = 2015`
    * [!UICONTROL Time period]: `All time`
-   * 
+   * &#x200B;
      [!UICONTROL Interval]: `None`
-   * 
+   * &#x200B;
      [!UICONTROL Group by]: `Created\_at` (retail week)
-   * 
+   * &#x200B;
      [!UICONTROL Chart type]: `Line`
       * `multiple Y-axes` 끄기
 
 * **소매 달력 개요(현재 월별 소매 연도)**
    * 지표 `A`: `Revenue`
-      * 
+      * &#x200B;
         [!UICONTROL 지표]: `Revenue`
       * [!UICONTROL Filter]:
-         * 
+         * &#x200B;
            [!UICONTROL Include current retail year?]: `Yes`
    * 지표 `B`: `Orders`
       * [!UICONTROL Metric]: `Number of orders`
       * [!UICONTROL Filter]:
-         * 
+         * &#x200B;
            [!UICONTROL Include current retail year?]: `Yes`
    * 지표 `C`: `Avg order value`
       * [!UICONTROL Metric]: `Avg order value`
       * [!UICONTROL Filter]:
-         * 
+         * &#x200B;
            [!UICONTROL Include current retail year?]: `Yes`
    * [!UICONTROL Time period]: `All time`
-   * 
+   * &#x200B;
      [!UICONTROL Interval]: `None`
-   * 
+   * &#x200B;
      [!UICONTROL Group by]: `Created\_at` (retail month)
-   * 
+   * &#x200B;
      [!UICONTROL Chart type]: `Line`
 
 * **소매 일정 개요(이전 월별 소매 연도)**
    * 지표 `A`: `Revenue`
-      * 
+      * &#x200B;
         [!UICONTROL 지표]: `Revenue`
       * [!UICONTROL Filter]:
-         * 
+         * &#x200B;
            [!UICONTROL Include current retail year?]: `Yes`
    * 지표 `B`: `Orders`
       * [!UICONTROL Metric]: 주문 수
       * [!UICONTROL Filter]:
-         * 
+         * &#x200B;
            [!UICONTROL Include current retail year?]: `Yes`
    * 지표 `C`: `Avg order value`
       * [!UICONTROL Metric]: `Avg order value`
       * [!UICONTROL Filter]:
-         * 
+         * &#x200B;
            [!UICONTROL Include current retail year?]: `Yes`
    * [!UICONTROL Time period]: `All time`
-   * 
+   * &#x200B;
      [!UICONTROL Interval]: `None`
-   * 
+   * &#x200B;
      [!UICONTROL Group by]: `Created\_at` (retail month)
-   * 
+   * &#x200B;
      [!UICONTROL Chart type]: `Line`
 
 ## 다음 단계

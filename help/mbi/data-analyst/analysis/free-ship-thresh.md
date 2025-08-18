@@ -66,9 +66,9 @@ ht-degree: 0%
 
 * 지표 `A`: `Average Order Value`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Scalar`
 
 * **배달 규칙 A가 있는 소계 버킷별 주문 수**
@@ -80,53 +80,53 @@ ht-degree: 0%
 
 * 지표 `A`: `Number of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Order subtotal (buckets)`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Column`
 
 * 배송 규칙 A가 있는 소계별 주문 비율 **퍼센트**
    * [!UICONTROL Metric]: `Number of orders`
 
    * [!UICONTROL Metric]: `Number of orders`
-   * 
+   * &#x200B;
      [!UICONTROL 그룹 기준]: `Independent`
    * [!UICONTROL Formula]: `(A / B)`
-   * 
+   * &#x200B;
      [!UICONTROL Format]: `%`
 
 * 지표 `A`: `Number of orders by subtotal (hide)`
 * 지표 `B`: `Total number of orders (hide)`
 * [!UICONTROL Formula]: `% of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Order subtotal (buckets)`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Line`
 
 * 소계가 배송 규칙 A를 초과하는 주문의 **퍼센트**
    * [!UICONTROL Metric]: `Number of orders`
-   * 
+   * &#x200B;
      [!UICONTROL Perspective]: `Cumulative`
 
    * [!UICONTROL Metric]: `Number of orders`
-   * 
+   * &#x200B;
      [!UICONTROL 그룹 기준]: `Independent`
 
    * [!UICONTROL Formula]: `1- (A / B)`
-   * 
+   * &#x200B;
      [!UICONTROL Format]: `%`
 
 * 지표 `A`: `Number of orders by subtotal`
 * 지표 `B`: `Total number of orders (hide)`
 * [!UICONTROL Formula]: `% of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Order subtotal (buckets)`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Line`
 
 

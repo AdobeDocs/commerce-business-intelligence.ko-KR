@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## 사전 요구 사항
 
-**광고 비용 데이터를 가져옵니다** - [!DNL [Google AdWords]](../importing-data/integrations/google-adwords.md)을(를) [!DNL Adobe Commerce Intelligence]에 연결합니다. 이렇게 하면 [!DNL AdWords] 지출이 Commerce Intelligence에서 자동으로 동기화됩니다.
+**광고 비용 데이터를 가져옵니다** - [[!DNL [Google AdWords]]](../importing-data/integrations/google-adwords.md)을(를) [!DNL Adobe Commerce Intelligence]에 연결합니다. 이렇게 하면 [!DNL AdWords] 지출이 Commerce Intelligence에서 자동으로 동기화됩니다.
 
 **사용자 확보 채널 데이터 추적** - [!DNL Google AdWords] 데이터를 데이터베이스의 특정 주문에 연결하려면 [을(를) 통해 ](../analysis/google-track-user-acq.md)사용자 확보 추적[!DNL Google Analytics E-commerce]해야 합니다. 이렇게 하면 각 주문을 utm 소스 및 미디어와 연결할 수 있습니다.
 

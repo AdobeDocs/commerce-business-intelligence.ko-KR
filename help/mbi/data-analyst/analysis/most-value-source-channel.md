@@ -15,7 +15,7 @@ ht-degree: 0%
 
 대상을 조사하고, 캠페인을 만들고, 몇 가지 마케팅 채널에 투자했습니다. 이제 시간이 좀 지났는데, 그 채널들은 어떻게 수행하고 있습니까? 어떤 채널에서 가장 새로운 사용자를 확보했습니까? 전체 매출에 가장 많은 기여를 한 소스는 무엇입니까?
 
-[!DNL Adobe Commerce Intelligence]을(를) 사용하면 [!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en)에 해당하는지 또는 사용자 지정 데이터 필드에 해당하는지 여부에 관계없이 조회 원본별로 매출과 사용자를 쉽게 세그먼트화할 수 있습니다. 이 세그먼테이션을 사용하면 가장 성과가 좋은 채널을 찾아 마케팅 예산을 더 잘 투자할 수 있습니다.
+[!DNL Adobe Commerce Intelligence]을(를) 사용하면 [[!DNL [Google Analytics' UTM fields]]](https://support.google.com/analytics/answer/1191184?hl=en)에 해당하는지 또는 사용자 지정 데이터 필드에 해당하는지 여부에 관계없이 조회 원본별로 매출과 사용자를 쉽게 세그먼트화할 수 있습니다. 이 세그먼테이션을 사용하면 가장 성과가 좋은 채널을 찾아 마케팅 예산을 더 잘 투자할 수 있습니다.
 
 이 주제에서는 가장 가치 있는 마케팅 채널을 파악하는 데 사용할 수 있는 몇 가지 보고서에 대해 알아봅니다.
 

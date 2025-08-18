@@ -53,7 +53,7 @@ ht-degree: 0%
 * **[!UICONTROL Average LTV (all)]**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
    * [!UICONTROL Time period]: `All time`
-   * 
+   * &#x200B;
      [!UICONTROL 간격]: `None`
    * [!UICONTROL Chart Type]: `Number (scalar)`
 
@@ -64,7 +64,7 @@ ht-degree: 0%
          * [`B`] `Customer's lifetime number of orders` **다음보다 큼**`0`
 
    * [!UICONTROL Time period]: `All time`
-   * 
+   * &#x200B;
      [!UICONTROL 간격]: `None`
    * [!UICONTROL Chart Type]: `Number (scalar)`
 
@@ -73,7 +73,7 @@ ht-degree: 0%
    * 지표 `2`: `Median lifetime revenue`
    * [!UICONTROL Time period]: `All time`
    * [!UICONTROL Interval]: `By Month`
-   * 
+   * &#x200B;
      [!UICONTROL 차트 유형]: `Line`
    * `Multiple Y-Axes` 선택 취소
 
@@ -81,10 +81,10 @@ ht-degree: 0%
    * 지표 `1`: `Avg lifetime revenue`
    * 지표 `2`: `New customers`
    * [!UICONTROL Time period]: `All time`
-   * 
+   * &#x200B;
      [!UICONTROL 간격]: `None`
    * [!UICONTROL Group by]: `Customer's lifetime number of orders`
-   * 
+   * &#x200B;
      [!UICONTROL 차트 유형]: `Line`
 
   >[!NOTE]

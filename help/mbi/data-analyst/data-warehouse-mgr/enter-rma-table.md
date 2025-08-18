@@ -48,7 +48,7 @@ ht-degree: 0%
 |---|---|---|
 | `Number of returns` | 요청한 반환 횟수입니다. | `Operation` 열: `entity id`<br>`Operation`: `Count`<br>`Timestamp` 열: `date requested` |
 | `Total returned amount` | 반환된 총 금액. | `Operation `열: `Return's total value`<br>`Operation`: 합계<br>`Timestamp` 열: 요청한 날짜 |
-| `Average returned amount` | 반환된 평균 금액입니다. | `Operation`` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp` 열: `date requested` |
+| `Average returned amount` | 반환된 평균 금액입니다. | `Operation` ` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp` 열: `date requested` |
 | `Average time to return` | 주문에서 반환까지의 평균 시간. | `Operation` 열: 주문에서 만든 날짜와 요청한 반환 날짜 사이의 초<br>`Operation`: `Average`<br>`Timestamp` 열: `date requested` |
 
 {style="table-layout:auto"}

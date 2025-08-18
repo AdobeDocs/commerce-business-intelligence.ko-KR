@@ -1,6 +1,6 @@
 ---
 title: CJ 계열사(커미션 정션) 마케팅 데이터 가져오기
-description: CJ 계열사(Commission Junction) 데이터를  [!DNL Commerce Intelligence].L Commerce Intelligence]에 가져오는 방법을 알아봅니다.
+description: CJ 계열사(Commission Junction) 데이터를  [!DNL Commerce Intelligence].L Commerce Intelligence&rbrack;에 가져오는 방법을 알아봅니다.
 exl-id: 1db83f34-15a1-4599-ab0a-65d527ccae01
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt

@@ -27,7 +27,7 @@ ht-degree: 1%
 
 ### (옵션 1) [!DNL Google Analytics E-Commerce]을(를) 통해 주문 참조 원본 데이터 추적
 
-[!DNL Google Analytics E-Commerce]을(를) 사용하여 주문 및 판매 데이터를 추적하는 경우 [!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md)을(를) 사용하여 각 주문의 조회 원본 데이터를 동기화할 수 있습니다. 이를 통해 조회 소스(예: `utm_source` 또는 `utm_medium`)별로 매출 및 주문을 세그먼트화할 수 있습니다. 또한 [!DNL Commerce Intelligence]과(와) 같은 `User's first order source` 사용자 지정 차원을 통해 고객 확보 소스에 대한 감을 얻을 수 있습니다.
+[!DNL Google Analytics E-Commerce]을(를) 사용하여 주문 및 판매 데이터를 추적하는 경우 [[!DNL [Google Analytics E-Commerce Connector]]](../importing-data/integrations/google-ecommerce.md)을(를) 사용하여 각 주문의 조회 원본 데이터를 동기화할 수 있습니다. 이를 통해 조회 소스(예: `utm_source` 또는 `utm_medium`)별로 매출 및 주문을 세그먼트화할 수 있습니다. 또한 [!DNL Commerce Intelligence]과(와) 같은 `User's first order source` 사용자 지정 차원을 통해 고객 확보 소스에 대한 감을 얻을 수 있습니다.
 
 ### (옵션 2) [!DNL Google Analytics]의 획득 원본 데이터를 데이터베이스에 저장 중
 

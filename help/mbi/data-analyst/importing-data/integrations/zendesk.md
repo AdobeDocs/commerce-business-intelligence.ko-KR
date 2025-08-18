@@ -31,7 +31,7 @@ ht-degree: 0%
 
 ## [!DNL Zendesk]에서 [!DNL Commerce Intelligence] 자격 증명 페이지를 엽니다. {#stepone}
 
-1. `Integrations`데이터 원본&#x200B;**[!UICONTROL Manage Data** > ** > {통합&#x200B;**의 **0} 페이지로 이동합니다.]**
+1. `Integrations`데이터 원본&#x200B;**[!UICONTROL Manage Data** > **&#x200B; > {통합&#x200B;**&#x200B;의 **0} 페이지로 이동합니다.]**
 1. 화면 오른쪽에 있는 **[!UICONTROL Add Integration]**&#x200B;을(를) 클릭합니다.
 1. [!DNL Zendesk] 아이콘을 클릭합니다. [!DNL Zendesk] 자격 증명 페이지가 열립니다.
 

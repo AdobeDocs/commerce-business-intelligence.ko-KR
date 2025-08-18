@@ -50,7 +50,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->_특정 지표에 대한&#x200B;**[!UICONTROL Standard]**사용자의 [액세스](../../administrator/user-management/restrict-metric-access.md)을 제한할 수 있습니다._
+>_특정 지표에 대한&#x200B;**[!UICONTROL Standard]**&#x200B;사용자의 [액세스](../../administrator/user-management/restrict-metric-access.md)을 제한할 수 있습니다._
 >
 >**[!UICONTROL Standard] _사용자는 추가 권한 설정으로 청구에 액세스할 수 있습니다._
 >
