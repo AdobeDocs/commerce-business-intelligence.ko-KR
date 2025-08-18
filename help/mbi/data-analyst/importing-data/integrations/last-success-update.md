@@ -31,4 +31,4 @@ ht-degree: 0%
 *특정 테이블*&#x200B;의 데이터의 최신 상태를 확인하려면 Adobe에서 계정의 가장 중요한 테이블에서 [[!DNL SQL] 을(를) 수행하는 빠른 ](../../dev-reports/sql-rpt-bldr.md)보고서`MAX(timestamp)`를 만드는 것이 좋습니다. 이 타임스탬프를 `Last Data Point`과(와) 비교하면 문제가 전체 계정에 영향을 주는지 테이블의 하위 집합에 영향을 주는지 여부를 나타냅니다. Adobe에서는 일반적으로 사용되는 3~4개의 중요한 테이블에 대해 이 작업을 수행할 것을 권장합니다.
 
 - `MAX(timestamp)` 값이 `Last Data Point Received`보다 최신인 경우 테이블의 하위 집합이 영향을 받았지만 전체 계정의 업데이트 주기는 안정적입니다.
-- `MAX(timestamp)` 값이 `Last Data Point Received`과(와) 같거나 그 이전인 경우 계정의 업데이트 주기가 영향을 받았음을 의미합니다. 이 경우 [지원 티켓을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하십시오.
+- `MAX(timestamp)` 값이 `Last Data Point Received`과(와) 같거나 그 이전인 경우 계정의 업데이트 주기가 영향을 받았음을 의미합니다. 이 경우 [지원 티켓을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하십시오.

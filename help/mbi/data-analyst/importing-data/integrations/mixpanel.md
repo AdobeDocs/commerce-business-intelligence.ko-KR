@@ -65,4 +65,4 @@ ht-degree: 0%
 ### 관련 항목
 
 * [ [!DNL Mixpanel] 데이터가 필요합니다.](../integrations/mixpanel-data.md)
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)

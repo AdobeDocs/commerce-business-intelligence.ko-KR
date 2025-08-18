@@ -40,4 +40,4 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->각 계정에는 계약된 라이선스 수 또는 시트가 있습니다. 한도에 도달했거나 더 자세히 알아보려면 [지원 티켓을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하세요.
+>각 계정에는 계약된 라이선스 수 또는 시트가 있습니다. 한도에 도달했거나 더 자세히 알아보려면 [지원 티켓을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하세요.

@@ -161,7 +161,7 @@ Data Warehouse 분석가의 Adobe 팀에서 이러한 유형의 열을 만들 �
 
 걱정하지 마세요. 여기에 나열되어 있지 않다고 해서 가능하지 않은 것은 아니다. Data Warehouse 분석가 Adobe 팀이 도움을 줄 수 있습니다.
 
-새 계산된 열을 정의하려면 빌드할 내용에 대한 세부 정보를 포함하여 [지원 티켓을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)합니다.
+새 계산된 열을 정의하려면 빌드할 내용에 대한 세부 정보를 포함하여 [지원 티켓을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)합니다.
 
 ## 관련 설명서
 

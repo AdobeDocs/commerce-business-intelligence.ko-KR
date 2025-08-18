@@ -39,23 +39,23 @@ ht-degree: 2%
 
 ## 도움말 받는 방법
 
-질문이 있고 일부 전문 서비스를 이용하거나 계정에 문제가 발생하는 경우 [지원 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)에 문의하십시오.
+질문이 있고 일부 전문 서비스를 이용하거나 계정에 문제가 발생하는 경우 [지원 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)에 문의하십시오.
 
 ### 서비스 정책
 
-고객 지원 팀에서 제공하는 [서비스 목록](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)을 참조하세요.
+고객 지원 팀에서 제공하는 [서비스 목록](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)을 참조하세요.
 
 ### 지원 티켓 제출
 
-고급 계산 열을 작성하는 데 도움이 필요하십니까? 결함이나 연결 문제가 발생했습니까? 지원 팀에 연락해야 하는 경우 Adobe에서 [지원 티켓 지침](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)을 사용하라는 메시지를 표시합니다. 이 지침에서는 Adobe에서 이 문제를 해결하는 데 필요한 정보에 대해 간략히 설명합니다.
+고급 계산 열을 작성하는 데 도움이 필요하십니까? 결함이나 연결 문제가 발생했습니까? 지원 팀에 연락해야 하는 경우 Adobe에서 [지원 티켓 지침](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)을 사용하라는 메시지를 표시합니다. 이 지침에서는 Adobe에서 이 문제를 해결하는 데 필요한 정보에 대해 간략히 설명합니다.
 
 ## 사용 가능한 설명서
 
 | 설명서 리소스 | 설명 |
 |----------------------- | ----------- |
-| [Adobe Commerce 2.4 판매자 설명서](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) | Adobe Commerce 및 Magento Open Source 모두에 대한 판매자 중심 설명서 |
-| [Adobe Commerce 설명서용 서비스](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html) | 판매자가 비즈니스의 주요 구성 요소를 스토어와 통합하는 데 도움이 되는 서비스 컬렉션을 지원하는 설명서입니다. |
-| [Adobe Commerce 2.4 Operational Guides](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html) | Adobe Commerce 및 Magento Open Source 플랫폼에 배포된 프로젝트를 개발, 배포 및 유지 관리하기 위한 개념, 프로세스, 도구 및 모범 사례에 대한 시스템 설명서입니다. |
+| [Adobe Commerce 2.4 판매자 설명서](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=ko) | Adobe Commerce 및 Magento Open Source 모두에 대한 판매자 중심 설명서 |
+| [Adobe Commerce 설명서용 서비스](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html?lang=ko) | 판매자가 비즈니스의 주요 구성 요소를 스토어와 통합하는 데 도움이 되는 서비스 컬렉션을 지원하는 설명서입니다. |
+| [Adobe Commerce 2.4 Operational Guides](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ko) | Adobe Commerce 및 Magento Open Source 플랫폼에 배포된 프로젝트를 개발, 배포 및 유지 관리하기 위한 개념, 프로세스, 도구 및 모범 사례에 대한 시스템 설명서입니다. |
 | [Adobe Commerce 2.4 개발자 설명서](https://developer.adobe.com/commerce/) | Adobe Commerce 또는 Magento Open Source을 빌드하고 사용자 지정하는 데 사용되는 개발자 중심의 설명서 |
 
 {style="table-layout:auto"}
