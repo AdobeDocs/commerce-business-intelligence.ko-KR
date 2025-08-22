@@ -10,9 +10,10 @@ feature-set: Commerce Intelligence
 level: Beginner, Intermediate
 topic: Commerce
 index: true
-source-git-commit: c212256ff32e308cb67a84afd3fd86b0f756ae24
+badgePaas: label="PaaS만" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온 클라우드 프로젝트(Adobe 관리 PaaS 인프라) 및 온프레미스 프로젝트에만 적용됩니다."
+source-git-commit: aae7508da07dcf464401a4e5681f76cee20f01c9
 workflow-type: tm+mt
-source-wordcount: '127'
+source-wordcount: '142'
 ht-degree: 0%
 
 ---
@@ -20,7 +21,7 @@ ht-degree: 0%
 
 # 내부 사용을 위한 메타데이터
 
-다음 `metadata.md` 파일에는 사용 안내서로 전달되는 저장소 수준 메타데이터가 포함되어 있습니다. `TOC.md` 저장소에 있는 파일입니다. 모든 사용 안내서의 metadata.md 콘텐츠를 변경하려면 다음 중 하나를 수행합니다 `TOC.md` 파일.
+`metadata.md` 파일에는 리포지토리의 사용 안내서 `TOC.md` 파일에 전달되는 리포지토리 수준 메타데이터가 포함되어 있습니다. 사용 안내서의 metadata.md 콘텐츠를 변경하려면 `TOC.md` 파일에서 변경하십시오.
 
 | 메타데이터 | 기능 |
 |--- |--- |
