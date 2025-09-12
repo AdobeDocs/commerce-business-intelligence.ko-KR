@@ -4,9 +4,9 @@ description: 이제 비즈니스 재정이 판매 및 마케팅 데이터와 함
 exl-id: e100c88c-af59-4185-b2a2-c8e77bfd7277
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 32b1e1be4e372164da757cb339ba1618d33a75ea
 workflow-type: tm+mt
-source-wordcount: '139'
+source-wordcount: '172'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,10 @@ ht-degree: 0%
 ![](../../../assets/Quickbooks.png)
 
 [!DNL QuickBooks] 통합을 통해 이제 영업 및 마케팅 데이터와 함께 비즈니스 재정을 사용할 수 있으므로 비용을 빠르고 쉽게 모니터링하고 초과 지출을 식별하는 등의 작업을 수행할 수 있습니다.
+
+>[!NOTE]
+>
+>Adobe Commerce Intelligence은 QuickBooks Online(데스크탑 아님)과 통합되며 로컬로 설치된 QuickBooks Desktop 모델이 아닌 QuickBooks Online SaaS 구조와 일치하는 클라우드 연결을 통한 Intuit 계정 로그인이 필요합니다.
 
 ## [!DNL QuickBooks]을(를) [!DNL Commerce Intelligence]의 데이터 소스로 추가
 
@@ -40,4 +44,4 @@ ht-degree: 0%
 ## 관련 항목
 
 * [ [!DNL QuickBooks] 데이터가 필요합니다.](../integrations/quickbooks-data.md)
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
