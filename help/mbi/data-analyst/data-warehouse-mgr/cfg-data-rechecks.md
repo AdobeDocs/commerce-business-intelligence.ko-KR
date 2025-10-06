@@ -4,9 +4,9 @@ description: 변경 가능한 값으로 데이터 열을 구성하는 방법에 
 exl-id: c31ef32e-ba5a-4902-b632-fbab551cc632
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Adobe 업데이트 시간은 동기화할 데이터 양과 상관 관계가 있�
 
 재확인 빈도를 변경하려면 변경할 열 옆에 있는 확인란을 클릭합니다. 그런 다음 **[!UICONTROL Set Recheck Frequency]** 드롭다운을 클릭하고 원하는 빈도를 설정합니다.
 
-![](../../assets/dwm-recheck.png)
+![구성 옵션 다시 확인을 보여 주는 Data Warehouse 관리자](../../assets/dwm-recheck.png)
 
 `Paused` 열에 `Changes?`이(가) 표시되는 경우가 있습니다. 이 값은 테이블의 [복제 메서드](../../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md)이(가) `Paused`(으)로 설정된 경우 표시됩니다.
 

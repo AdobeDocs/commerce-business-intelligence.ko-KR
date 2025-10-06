@@ -4,9 +4,9 @@ description: Mixpanel 내에서 직접 사용할 수 있는 모든 동일한 데
 exl-id: d18ce954-26fe-4440-ad8b-4f266c007b2f
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '134'
 ht-degree: 0%
 
 ---
@@ -19,14 +19,14 @@ ht-degree: 0%
 
 1. `Segmentation` 섹션을 방문하여 `Your Top Events`을(를) 봅니다.
 
-   ![](../../../assets/your-top-events.png)
+   상위 이벤트를 표시하는 ![Mixpanel 대시보드](../../../assets/your-top-events.png)
 
 1. 시간 범위에 대해 `Past 96 Hours` 선택
 
-   ![](../../../assets/past-96-hours.png)
+   ![지난 96시간 옵션을 표시하는 Mixpanel 시간 범위 선택기](../../../assets/past-96-hours.png)
 
 1. 보고서의 오른쪽 아래로 스크롤하여 `.csv` 파일을 내보냅니다.
 
-   ![](../../../assets/export-csv-mixpanel.png)
+   ![메뉴의 CSV로 Mixpanel 내보내기 옵션](../../../assets/export-csv-mixpanel.png)
 
 1. 이 유효성 검사 프로세스에서 작업 중인 계정 관리자 또는 분석가에게 `.csv` 파일을 보냅니다.

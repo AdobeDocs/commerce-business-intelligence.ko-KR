@@ -4,9 +4,9 @@ description: 세분화 및 필터링 모범 사례에 대해 알아봅니다.
 exl-id: 66391bce-bdeb-4e9d-8089-1c796e00d91e
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '911'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 이 항목에서는 고객에게 종종 권장되는 중요한 세그먼트를 다룹니다. 또한 이러한 세그먼트가 답변에 도움이 될 수 있는 질문에 대해서도 자세히 설명합니다. 기술적으로 세그먼트는 데이터베이스의 데이터 열입니다. [!DNL Adobe Commerce Intelligence]에서는 차원이라고 합니다.
 
-![](../../mbi/assets/mbi-critical-segments.png)
+![중요한 고객 세그먼트 및 필터를 표시하는 대시보드](../../mbi/assets/mbi-critical-segments.png)
 
 
 ## 사용자 세그먼트
@@ -71,7 +71,7 @@ ht-degree: 0%
 
 위의 차원으로 지표를 세그먼트화하는 첫 번째 단계는 데이터베이스에서 이 데이터를 추적하고 있는지 확인하는 것입니다. 추적되지 않는 경우 기술 팀과 만나 이 데이터 추적을 시작하는 방법을 찾으십시오.
 
-데이터베이스에서 데이터가 추적되는지 확인한 후 [지원 팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하여 [!DNL Commerce Intelligence] 지표 및 차트로 차원을 푸시합니다. *필드 관리* 도구를 사용하여 [!DNL Commerce Intelligence]에서 이러한 필드를 추적할 수도 있습니다.
+데이터베이스에서 데이터가 추적되는지 확인한 후 [지원 팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하여 [!DNL Commerce Intelligence] 지표 및 차트로 차원을 푸시합니다. *필드 관리* 도구를 사용하여 [!DNL Commerce Intelligence]에서 이러한 필드를 추적할 수도 있습니다.
 
 ## 관련 항목
 

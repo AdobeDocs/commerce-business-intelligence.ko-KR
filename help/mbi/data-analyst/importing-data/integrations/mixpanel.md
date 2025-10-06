@@ -4,9 +4,9 @@ description: 사용자가 웹 사이트 및 앱을 탐색하고 사용하는 방
 exl-id: e6a9f08f-1063-4d92-93e6-971280239fdb
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '246'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >[관리자 권한](../../../administrator/user-management/user-management.md)이 필요합니다.
 
-![](../../../assets/Mixpanel_logo.png)
+![Mixpanel 로고](../../../assets/Mixpanel_logo.png)
 
 [!DNL Mixpanel]을(를) 사용하면 사용자가 웹 사이트와 앱을 탐색하고 사용하는 방법을 분석할 수 있습니다. 사용자 행동 데이터를 면밀히 살펴보면 설계 및 개발 결정이 더욱 스마트해져 전체적으로 더 나은 제품을 만들 수 있습니다. [!DNL Mixpanel]을(를) [!DNL Commerce Intelligence]에 연결하면 사용자의 동작 방식과 이러한 동작이 매출로 전환되는 방식을 분석할 수 있습니다.
 
@@ -65,4 +65,4 @@ ht-degree: 0%
 ### 관련 항목
 
 * [ [!DNL Mixpanel] 데이터가 필요합니다.](../integrations/mixpanel-data.md)
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

@@ -4,9 +4,9 @@ description: Visual Report Builder 사용 방법을 알아봅니다.
 exl-id: 1101f43d-e014-4df2-be21-12d90a9d8a56
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '700'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ ht-degree: 0%
 
      ![테이블 데이터별 그룹화](../../assets/magento-bi-report-builder-group-by-table-data.png)
 
-   * 표의 오른쪽 위 모서리에 있는 바꾸기(![](../../assets/magento-bi-btn-transpose.png)) 컨트롤을 클릭하여 데이터 방향을 변경합니다.
+   * 표의 오른쪽 위 모서리에 있는 바꾸기(![바꾸기 아이콘](../../assets/magento-bi-btn-transpose.png)) 컨트롤을 클릭하여 데이터 방향을 변경합니다.
 
      데이터의 축이 플립되며, 이제 테이블에는 각 쿠폰 코드에 대한 열과 각 달에 대한 행이 있습니다. 이 방향을 읽기가 더 쉬울 수 있습니다.
 
@@ -95,14 +95,14 @@ ht-degree: 0%
 
      | | |
      |-----|-----|
-     | ![](../../assets/magento-bi-btn-chart-line.png) | 선 그래프 |
-     | ![](../../assets/magento-bi-btn-chart-horz-bar.png) | 가로 막대형 |
-     | ![](../../assets/magento-bi-btn-chart-horz-stacked-bar.png) | 가로 누적 막대 |
-     | ![](../../assets/magento-bi-btn-chart-vert-bar.png) | 세로 막대 |
-     | ![](../../assets/magento-bi-btn-chart-vert-stacked-bar.png) | 세로 누적 막대 |
-     | ![](../../assets/magento-bi-btn-chart-pie.png) | 파이 |
-     | ![](../../assets/magento-bi-btn-chart-area.png) | 영역 |
-     | ![](../../assets/magento-bi-btn-chart-funnel.png) | 단계 |
+     | ![선 그래프 아이콘](../../assets/magento-bi-btn-chart-line.png) | 선 그래프 |
+     | ![가로 막대 아이콘](../../assets/magento-bi-btn-chart-horz-bar.png) | 가로 막대형 |
+     | ![가로 누적 막대 아이콘](../../assets/magento-bi-btn-chart-horz-stacked-bar.png) | 가로 누적 막대 |
+     | ![세로 막대 아이콘](../../assets/magento-bi-btn-chart-vert-bar.png) | 세로 막대 |
+     | ![세로 스택 막대 아이콘](../../assets/magento-bi-btn-chart-vert-stacked-bar.png) | 세로 누적 막대 |
+     | ![원형 차트 아이콘](../../assets/magento-bi-btn-chart-pie.png) | 파이 |
+     | ![영역 차트 아이콘](../../assets/magento-bi-btn-chart-area.png) | 영역 |
+     | ![Funnel 차트 아이콘](../../assets/magento-bi-btn-chart-funnel.png) | 단계 |
 
      {style="table-layout:auto"}
 

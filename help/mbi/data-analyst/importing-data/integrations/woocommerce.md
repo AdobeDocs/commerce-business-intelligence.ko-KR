@@ -4,9 +4,9 @@ description: 비즈니스의 성과를 확인하거나 가장 중요한 획득 �
 exl-id: 26ac24e0-087b-4958-873c-2facab22ffb2
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '93'
+source-wordcount: '95'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >[관리자 권한](../../../administrator/user-management/user-management.md)이 필요합니다.
 
-![](../../../assets/WooCommerce-Logo.jpg)
+![WooCommerce 로고](../../../assets/WooCommerce-Logo.jpg)
 
 비즈니스의 성과를 확인하거나 가장 중요한 확보 소스 및 채널을 찾고 싶으십니까? [!DNL WooCommerce] 데이터를 [!DNL Commerce Intelligence]에 연결하면 이러한 질문에 답변할 수 있습니다.
 
@@ -25,5 +25,5 @@ ht-degree: 0%
 
 ## 관련 항목:
 
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [세분화 및 필터링에 권장되는 데이터 차원](../../../best-practices/segment-filter.md)

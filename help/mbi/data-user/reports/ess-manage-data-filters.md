@@ -4,9 +4,9 @@ description: 저장된 필터 세트를 만들고 이를 지표에 적용하는 
 exl-id: 6ef8b67c-bebd-45eb-bca7-95832ec34fc8
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Commerce Intelligence]에 유사한 방식으로 필터링해야 하는 지표가 여러 개 있는 경우(예: 테스트 주문 필터링) 저장된 필터 집합을 만들어 지표에 적용할 수 있습니다. 이렇게 하면 지표를 만들거나 편집할 때 개별 필터를 추가할 필요가 없어 시간을 절약할 수 있습니다.
 
-자세한 내용은 [교육 비디오](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html?lang=ko)를 참조하세요.
+자세한 내용은 [교육 비디오](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html)를 참조하세요.
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 1. 사이드바에서 **[!DNL Manage Data** > **Filter Sets]**&#x200B;을(를) 클릭합니다.
 
-   ![](../../assets/create-filter-sets.png)
+   ![필터 집합 추가 옵션을 사용하여 필터 집합 인터페이스를 만듭니다](../../assets/create-filter-sets.png)
 
 1. 페이지 맨 위에서 **[!UICONTROL Add Filter Set]**&#x200B;을(를) 클릭합니다.
 

@@ -4,9 +4,9 @@ description: Data Warehouse Manager에서 동기화에 사용할 수 있는 표�
 exl-id: 94beba8b-6a86-4af9-87fb-96b1cf8f8fa2
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '513'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 ## `SaaS` 통합
 
-![](../../../assets/SaaS_icons.jpg)spree-commerce-logo.png
+![지원되는 다양한 플랫폼을 보여주는 SaaS 통합 아이콘](../../../assets/SaaS_icons.jpg)spree-commerce-logo.png
 
 `SaaS` 통합은 [[!DNL Google Adwords]](../integrations/google-adwords.md), [[!DNL Salesforce]](../integrations/salesforce.md) 및 [[!DNL Zendesk]](../integrations/zendesk.md)과(와) 같은 서비스입니다. 타사 데이터는 공급업체 서버에 있으므로 데이터베이스의 데이터로 직접 액세스할 수 없습니다.
 
@@ -70,6 +70,6 @@ API를 사용하려면 약간의 기술 전문 지식이 필요합니다. 작은
 * [테이블 통합](../../../best-practices/consolidating-your-tables.md)
 * [데이터베이스에 대한 액세스 제한](../../../administrator/account-management/restrict-db-access.md)
 
-**원하는 통합이 표시되지 않습니까?** 일부 통합을 활성화해야 계정에 표시됩니다. [!DNL Facebook]과(와) 같은 항목을 찾고 있지만 나열되지 않은 경우 [지원 티켓을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하십시오.
+**원하는 통합이 표시되지 않습니까?** 일부 통합을 활성화해야 계정에 표시됩니다. [!DNL Facebook]과(와) 같은 항목을 찾고 있지만 나열되지 않은 경우 [지원 티켓을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하십시오.
 
 **통합에 대한 오류 상태가 표시되면** [문제 해결 섹션](https://support.magento.com/hc/en-us/sections/360003078151)에서 도움말을 확인하세요.

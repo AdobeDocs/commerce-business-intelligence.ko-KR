@@ -4,9 +4,9 @@ description: 가장 소중한 레퍼러 채널에 대해 알아봅니다.
 exl-id: c80f52f3-894a-4084-8c0e-aee618ed77f5
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '305'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >[관리자 권한](../../../administrator/user-management/user-management.md)이 필요합니다.
 
-![](../../../assets/google-ecommerce-logo.png)
+![Google eCommerce 로고](../../../assets/google-ecommerce-logo.png)
 
 트래픽과 주문의 흐름이 일정하기 때문에 효과적으로 고객을 확보하고 있습니다. 하지만 가장 가치 있는 추천 채널은 무엇입니까? 한 소스에서 다른 소스에서 획득한 고객의 평균 라이프타임 값은 얼마입니까? 주문 참조 원본 데이터를 [!DNL Google ECommerce]에서 [!DNL Commerce Intelligence]&#x200B;(으)로 연결하면 [가장 가치 있는 마케팅 채널](../../../data-analyst/analysis/most-value-source-channel.md)을 식별하는 데 도움이 되는 분석을 빌드할 수 있습니다.
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
    프로필이 여러 개이고 어떤 프로필인지 확인하는 데 도움이 필요한 경우 아래의 **여러 [!DNL Google Analytics] 프로필 연결 섹션을 참조하십시오.
 
-   ![](../../../assets/conn-mult-ga-profiles.png)<!--{: width="500"}-->
+   ![여러 Google Analytics 프로필에 연결하는 옵션을 표시하는 양식](../../../assets/conn-mult-ga-profiles.png)<!--{: width="500"}-->
 
 1. 변경 사항은 자동으로 저장되므로 완료되면 **[!UICONTROL Back to Connections]**&#x200B;을(를) 클릭하십시오.
 
@@ -60,7 +60,7 @@ ht-degree: 0%
 ## 관련 항목:
 
 * [ [!DNL Google ECommerce] 데이터가 필요합니다.](../integrations/google-ecommerce-data.md)
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [설정 [!DNL Google ECommerce] 추적](https://support.google.com/analytics/answer/1009612?hl=en)
 * [가장 가치 있는 확보 소스 및 채널 살펴보기](../../analysis/most-value-source-channel.md)
 * [광고 캠페인에 대한 ROI 향상](../../analysis/roi-ad-camp.md)

@@ -4,9 +4,9 @@ description: 특정 기간 동안 보고서의 데이터를 분석하는 방법�
 exl-id: a1bb4838-f882-44b1-a29f-84b985032ceb
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1272'
+source-wordcount: '1329'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 보고서에서 이러한 지표를 사용할 때 이 지표를 보고서에 추가하면 독립적인 `Time Interval`(`None`)과 `Time Range`(`Global`)이(가) 자동으로 설정됩니다.
 
-![](../assets/Metrics_without_timestamps.gif)
+![시간 간격이 없음으로 설정되고 시간 범위가 전역으로 설정된 지표를 표시하는 보고서](../assets/Metrics_without_timestamps.gif)
 
 ## 한 지표에 독립적인 시간 간격 제공 {#independenttimeinterval}
 
@@ -62,11 +62,11 @@ ht-degree: 0%
 
 이제 각 달이 작년에 얼마나 영향을 미쳤는지 알 수 있습니다.
 
-![](../assets/Independent_Time_Int.png)
+![이전 연도의 월별 매출액 비율을 보여 주는 차트](../assets/Independent_Time_Int.png)
 
 ## 서로 다른 시간 범위에서 동일한 지표 비교 {#difftimerange}
 
-이 예제에서는 사용자 지정 차원 `Day number of the month`을(를) 사용합니다. 이 보고서를 만들려고 하는데 Data Warehouse에 이 차원이 없는 경우 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하여 도움을 받으십시오.
+이 예제에서는 사용자 지정 차원 `Day number of the month`을(를) 사용합니다. 이 보고서를 만들려고 하는데 Data Warehouse에 이 차원이 없는 경우 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하여 도움을 받으십시오.
 
 이 범주에서 가장 일반적인 두 가지 예는 (1) 성장 지표 (전년 대비 또는 전월 대비 매출)를 비교하는 것과 (2) 최근 재고 또는 품목 판매 트렌드를 더 잘 이해하는 것입니다.
 
@@ -87,7 +87,7 @@ ht-degree: 0%
 
    지표가 보고서에서 사라지더라도 걱정하지 마십시오. 독립적인 시간 옵션을 설정하면 보고서에서 지표를 자동으로 숨깁니다. 다시 표시하려면 지표 옆에 있는 **[!UICONTROL Show]**&#x200B;을(를) 클릭합니다.
 
-   ![](../assets/Different_Time_Ranges.gif)
+   ![보고서에서 지표에 대해 다른 시간 범위를 설정하는 데모](../assets/Different_Time_Ranges.gif)
 
    * **[!UICONTROL Apply]**&#x200B;을(를) 클릭하여 간격 및 범위 설정을 저장합니다.
 
@@ -95,7 +95,7 @@ ht-degree: 0%
 
    * `Group By` 드롭다운에서 `Show All`을(를) 선택하고 **[!UICONTROL Apply]**&#x200B;을(를) 클릭합니다. 이렇게 하면 보고서에 대한 X축 값이 만들어집니다.
 
-   ![](../assets/TO4.png)
+   ![일별로 그룹화된 매출액 비교를 보여 주는 보고서](../assets/TO4.png)
 
    * 지표 이름을 변경합니다. 이 예제에서 첫 번째 지표는 `Revenue - 2015`이고 두 번째 지표는 `Revenue - 2014`입니다.
 
@@ -136,7 +136,7 @@ ht-degree: 0%
 
 * `last promo period`에 대해 `D / C` 필드에 `Formula`을(를) 입력하십시오.
 
-  ![](../assets/Different_Time_Ranges_2.png)
+  ![서로 다른 기간에 대한 주별 공급 계산을 보여 주는 보고서](../assets/Different_Time_Ranges_2.png)
 
 * 마지막으로 지표를 숨기고 `SKU` 또는 유사한 차원을 보고서에 `Group By`(으)로 추가하여 보고서를 사용자 지정합니다.
 

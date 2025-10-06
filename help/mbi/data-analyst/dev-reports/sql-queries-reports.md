@@ -4,9 +4,9 @@ description: SQL 쿼리를 Commerce Intelligence에서 사용하는 계산된 �
 exl-id: b3e3905f-6952-4f15-a582-bf892a971fae
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '942'
 ht-degree: 0%
 
 ---
@@ -89,7 +89,7 @@ SQL 쿼리가 [에서 사용하는 ](../data-warehouse-mgr/creating-calculated-c
 
 경로를 저장하면 `Customer LTV` 열을 만들 수 있습니다! 아래를 참조하십시오.
 
-![](../../assets/Customer_LTV.gif)
+![SQL을 사용한 고객 생애 가치 분석 애니메이션 데모](../../assets/Customer_LTV.gif)
 
 `Customer LTV` 테이블에 새 `customers` 열을 만들었으므로 이 열을 사용하여 [지표 집계](#aggregate)를 만들 준비가 되었습니다(예: 고객당 평균 LTV를 찾기 위해). `group by` 테이블에 빌드된 기존 지표를 사용하여 보고서에서 계산된 열을 기준으로 `filter` 또는 `customers`할 수도 있습니다.
 

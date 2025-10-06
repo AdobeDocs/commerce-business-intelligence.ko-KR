@@ -4,9 +4,9 @@ description: 광고 비용과 캠페인에서 획득한 사용자의 CLV(고객 
 exl-id: db99f817-2a2e-4194-9dd2-ec2d6b27a118
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '322'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >[관리자 권한](../../../administrator/user-management/user-management.md)이 필요합니다.
 
-![](../../../assets/Google_Adwords_logo.png)
+![Google AdWords 로고](../../../assets/Google_Adwords_logo.png)
 
 조사를 했고, 광고를 만들었으며, [!DNL Google] 캠페인을 시작했습니다. 이제 광고 지출 데이터를 분석하고 비용이 효과적으로 지출되고 있는지 확인할 차례입니다. 광고 지출 데이터를 사용하여 [광고 비용과 캠페인에서 획득한 사용자의 CLV(고객 생애 가치)를 합산하여 캠페인 ROI를 측정할 수 있습니다](../../analysis/roi-ad-camp.md).
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 1. [!DNL Google Analytics] 자격 증명을 입력하십시오. 인증 프로세스가 완료되면 다시 [!DNL Commerce Intelligence]&#x200B;(으)로 리디렉션됩니다.
 1. 프로필 ID 목록이 표시됩니다. [!DNL Commerce Intelligence]에 연결할 프로필을 확인하십시오.
 
-   ![](../../../assets/cnnct-profile.png)
+   ![프로필 선택을 표시하는 Google AdWords 연결 대화 상자](../../../assets/cnnct-profile.png)
 
 1. 변경 사항이 자동으로 저장되므로 완료되면 **[!UICONTROL Back to Connections]**&#x200B;을(를) 클릭하십시오.
 
@@ -55,7 +55,7 @@ ht-degree: 0%
 
 ## 관련 항목
 
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [ [!DNL Google ECommerce]을(를) 통해 주문 참조 원본 추적](../integrations/google-ecommerce.md)
 * [데이터베이스에서 사용자 조회 소스 추적](../../analysis/google-track-user-acq.md)
 * [가장 가치 있는 확보 소스 및 채널 살펴보기](../../analysis/most-value-source-channel.md)

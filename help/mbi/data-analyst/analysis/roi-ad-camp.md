@@ -4,9 +4,9 @@ description: 캠페인 성과를 평가하는 몇 가지 방법에 대해 알아
 exl-id: 4f2bf408-eeaf-4dbf-b62e-89426734640a
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Campaigns
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1247'
+source-wordcount: '1253'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 0%
 1. `Add New Metric`을(를) 선택하고 [!DNL `Adwords...`] 비용 데이터를 기록하는 [!DNL AdWords] 테이블을 선택합니다.
 1. 지표 편집기에서 지표에 이름을 지정하십시오(예: [!UICONTROL AdWord Cost]).
 1. 드롭다운을 사용하여 **열이 정렬한** 테이블(변경)의 `adCost` 열에서 [!DNL Adwords...]Sum`date`을(를) 수행합니다.
-   ![](../../assets/success-add-new-metric.png)<!--="500" height="303"}-->
+   새 지표를 추가한 후 ![성공 메시지](../../assets/success-add-new-metric.png)<!--="500" height="303"}-->
 1. 맨 위에 있는 `Back to Metric List`을(를) 클릭하고 대시보드로 이동합니다.
 
 1. 캠페인별로 세그먼트를 보내는 보고서 만들기
@@ -99,7 +99,7 @@ ht-degree: 0%
 >
 >이 예에서는 모든 캠페인 비용이 특정 제품 구매를 생성하는 데 독점적으로 사용되었다고 가정합니다. 모든 비용이 구매 생성에 사용되었다고 가정할 경우, 결과 ROI는 최악의 경우(구매당 최고 비용)를 차지합니다. 실제 ROI는 이 계산보다 더 높습니다. 예: 10명의 새 사용자와 10개의 구매를 생성한 캠페인에 $20를 지출했다고 가정할 때 구매당 실제 비용은 $1입니다. 모든 비용이 신규 사용자를 확보하는 데 들어갔다는 가정 하에 구매 당 비용은 $2이다.
 
-시작하기 전에 [지원 티켓을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하여 다음 차원을 라인 항목 테이블(`sales\_flat\_order\_item, order\_item`)에 연결합니다.
+시작하기 전에 [지원 티켓을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하여 다음 차원을 라인 항목 테이블(`sales\_flat\_order\_item, order\_item`)에 연결합니다.
 
 * 주문 출처(사용자 레벨에서만 조회 출처를 추적하는 경우 사용자 출처에 가입)
 * 주문 캠페인(사용자 수준에서 추천 소스만 추적하는 경우 사용자의 캠페인에 참여)
@@ -122,8 +122,8 @@ ht-degree: 0%
 1. 이러한 지표를 사용하여 공식을 추가합니다.
 1. [!UICONTROL ROI]: `\[A\]/\[B\]`이(가) `\[A\]`을(를) 나타내고 `Revenue per campaign for specific product(s)`이(가) `\[B\]`을(를) 나타내는 경우 `Ad cost by campaigns` 수식을 입력하십시오. (특정 제품의 수입) / (캠페인 비용)의 비율을 반환합니다.
 1. [!UICONTROL Return]: 수식 `\[A\]-\[B\]`을(를) 입력하십시오. (평균 사용자 LTV) - (획득당 평균 비용)을 계산하여 사용자에 대한 평균 마진을 반환합니다.
-1. (선택 사항) [!UICONTROL Revenue]: 캠페인당 특정 제품의 매출을 보려면 `Revenue by items` 지표를 숨기지 마십시오
-1. (선택 사항) [!UICONTROL Cost]: 캠페인 비용을 보려면 `AdWords Cost` 지표를 숨기지 마십시오
+   1. (선택 사항) [!UICONTROL Revenue]: 캠페인당 특정 제품의 매출을 보려면 `Revenue by items` 지표를 숨기지 마십시오
+   1. (선택 사항) [!UICONTROL Cost]: 캠페인 비용을 보려면 `AdWords Cost` 지표를 숨기지 마십시오
 
 1. 보고서에 이름을 지정하고 표로 저장하십시오
 

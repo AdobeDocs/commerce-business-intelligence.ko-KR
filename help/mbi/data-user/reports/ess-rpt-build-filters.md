@@ -4,9 +4,9 @@ description: 필터를 사용하는 방법을 알아봅니다.
 exl-id: eb683dfe-9a90-400a-a0c0-3dc00d1f28b5
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 0854d644cb72b3fc8b8b31a0bf7e8dca4cc99724
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
    이 보고서에서 각 데이터 포인트는 해당 월의 총 고객 수를 보여 줍니다.
 
-1. 왼쪽 패널에서 필터(![](../../assets/magento-bi-btn-filter.png)) 아이콘을 클릭합니다.
+1. 왼쪽 패널에서 필터(![필터 아이콘](../../assets/magento-bi-btn-filter.png)) 아이콘을 클릭합니다.
 
    ![필터 추가](../../assets/magento-bi-report-builder-filter-add.png)
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
    필터는 알파벳순으로 번호가 매겨져 있으며 첫 번째는 `[A]`입니다. 필터의 처음 두 부분은 드롭다운 옵션이고 세 번째 부분은 값입니다.
 
-   ![](../../assets/magento-bi-report-builder-filter-add-a.png)
+   ![필터 추가 옵션을 표시하는 필터 인터페이스](../../assets/magento-bi-report-builder-filter-add-a.png)
 
    * 필터의 첫 번째 부분을 클릭하고 표현식의 주제로 사용할 열을 선택합니다.
 

@@ -4,9 +4,9 @@ description: ' [!DNL Commerce Intelligence] 계정을 정리하는 방법을 알
 exl-id: 5fcdac2d-41ca-4011-b646-a699d9ecc6e4
 role: Admin, User
 feature: Accounts
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '904'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ ht-degree: 0%
 
 **[!UICONTROL Dashboard Options]**&#x200B;을(를) 선택한 다음 대시보드 자체에서 **[!UICONTROL Delete]**&#x200B;을(를) 선택할 수도 있습니다.
 
-![](../../mbi/assets/Delete_from_dashboard.png)
+![대시보드 톱니바퀴 메뉴에서 옵션 삭제](../../mbi/assets/Delete_from_dashboard.png)
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ ht-degree: 0%
 
 다음은 사용되지 않은 보고서 삭제 프로세스에 대해 설명합니다.
 
-![](../../mbi/assets/unused_reports.png)
+![대시보드에 없는 보고서를 표시하는 사용되지 않은 보고서 목록](../../mbi/assets/unused_reports.png)
 
 ## 3단계: 사용하지 않는 지표 삭제
 
@@ -93,7 +93,7 @@ ht-degree: 0%
 1. 페이지 맨 아래에 **[!UICONTROL Dependent Charts]** 섹션이 표시됩니다. 링크를 클릭하여 이 지표에 대한 종속 보고서 목록을 생성합니다.
 1. 시스템이 검사를 완료한 후 [!DNL Commerce Intelligence]은(는) 이 지표를 사용하는 대시보드, 보고서 및 사용자 목록을 표시합니다.
 
-![](../../mbi/assets/report_dependecies.png)
+![선택한 열을 사용하는 보고서를 표시하는 보고서 종속성 대화 상자](../../mbi/assets/report_dependecies.png)
 
 지표가 더 이상 필요하지 않은 경우 **[!UICONTROL Metrics]**&#x200B;을(를) 클릭하여 **[!UICONTROL Back to Metric List]** 페이지로 돌아가 삭제할 지표를 찾습니다. **[!UICONTROL Delete]**&#x200B;을(를) 클릭합니다.
 
@@ -112,6 +112,7 @@ ht-degree: 0%
 1. **[!DNL Manage Data]**(으)로 이동한 다음 **[!UICONTROL Data Warehouse]**(으)로 이동합니다.
 1. **[!UICONTROL Synced Tables]** 목록에서 열이 포함된 테이블로 이동합니다.
 1. 동기화를 해제할 하나 이상의 열 옆에 있는 하나 이상의 상자를 선택합니다.
+
    >[!NOTE]
    >
    >전체 테이블을 삭제하지 않으면 기본 키 열의 동기화를 해제할 수 없습니다.
@@ -120,7 +121,7 @@ ht-degree: 0%
 
 전체 프로세스를 살펴보겠습니다.
 
-![](../../mbi/assets/drop_column.png)
+![Data Warehouse 관리자에서 열 옵션 삭제](../../mbi/assets/drop_column.png)
 
 ## 요약
 

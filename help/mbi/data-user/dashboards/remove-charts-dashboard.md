@@ -4,16 +4,16 @@ description: 대시보드에서 차트를 제거하는 방법에 대해 알아�
 exl-id: 44116f15-92a5-43c9-8808-7902742508c9
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '63'
+source-wordcount: '65'
 ht-degree: 0%
 
 ---
 
 # 대시보드에서 차트 제거
 
-대시보드에서 차트를 제거하려면 차트의 오른쪽 상단 모서리에 있는 톱니바퀴(![](../../assets/gear-icon.png)) 아이콘을 클릭하고 **[!UICONTROL Remove from Dashboard]**&#x200B;을(를) 클릭합니다.
+대시보드에서 차트를 제거하려면 차트의 오른쪽 상단 모서리에 있는 톱니바퀴(![톱니바퀴 아이콘](../../assets/gear-icon.png)) 아이콘을 클릭하고 **[!UICONTROL Remove from Dashboard]**&#x200B;을(를) 클릭합니다.
 
 >[!NOTE]
 >

@@ -4,9 +4,9 @@ description: 새 Adobe Commerce Intelligence 아키텍처에서 고급 열을 SQ
 exl-id: f16e4ee4-ed73-4ddb-b701-1fe3db14346a
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, SQL Report Builder, Commerce Tables
-source-git-commit: 8090c2e0f17f0e8d3bdec668ce546206bf024691
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '839'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 대부분의 계정에는 `Is customer's last order?` 테이블에 `orders`(이)라는 열이 있어 반복 구매율과 이탈된 고객에 대한 분석을 수행합니다. 계정이 새 아키텍처에 있는 경우 이 열은 `Calculation` 열을 사용하여 작성되며 아래 스크린샷에서 볼 수 있습니다.
 
-![](../../assets/Is_customer_s_last_order.png)
+고객의 마지막 주문을 식별하기 위한 ![SQL 계산 열 정의](../../assets/Is_customer_s_last_order.png)
 
 `Is customer's last order?` 열은 각각 `Customer's lifetime number of orders` 및 `Customer's order number`(으)로 별칭이 지정된 입력 `A` 및 `B`을(를) 사용합니다.
 
@@ -47,7 +47,7 @@ PostgreSQL의 의미는 한 줄에 하나씩 표시됩니다.
 
 제품 매출 분석을 활성화하기 위해 대부분의 계정에 `Order item total value (quantity * price)` 테이블에 `Orders Items`(이)라는 열이 있습니다. 계정이 새 아키텍처에 있는 경우 이 열도 `Calculation` 열을 사용하여 작성되며 아래 스크린샷에서 볼 수 있습니다.
 
-![](../../assets/Order_item_total_value.png)
+![주문 항목 총 값에 대한 SQL 계산 열 정의](../../assets/Order_item_total_value.png)
 
 Commerce 스키마에서 `Order item total value (quantity * price)` 열은 각각 `qty ordered` 및 `base price`(으)로 별칭이 지정된 `A` 및 `B` 입력을 사용합니다.
 
@@ -57,7 +57,7 @@ Commerce 스키마에서 `Order item total value (quantity * price)` 열은 각�
 
 아래와 같이 `Calculation`(으)로 이동하여 테이블에 새 **[!DNL Manage Data > Data Warehouse]** 열을 추가할 수 있습니다.
 
-![](../../assets/blobid2.png)
+![계산된 열 결과를 보여 주는 표 보기](../../assets/blobid2.png)
 
 여기에서 아래 단계에 따라 `Calculation` 열을 만들 수 있습니다.
 

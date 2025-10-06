@@ -4,9 +4,9 @@ description: 이제 비즈니스 재정이 판매 및 마케팅 데이터와 함
 exl-id: e100c88c-af59-4185-b2a2-c8e77bfd7277
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 32b1e1be4e372164da757cb339ba1618d33a75ea
+source-git-commit: b6f8a4f533286fad67dc875ebb6f4f3b7022ca5b
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '179'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >[관리자 권한](../../../administrator/user-management/user-management.md)이 필요합니다.
 
-![](../../../assets/Quickbooks.png)
+![QuickBooks 로고](../../../assets/Quickbooks.png)
 
 [!DNL QuickBooks] 통합을 통해 이제 영업 및 마케팅 데이터와 함께 비즈니스 재정을 사용할 수 있으므로 비용을 빠르고 쉽게 모니터링하고 초과 지출을 식별하는 등의 작업을 수행할 수 있습니다.
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 **[!UICONTROL Connect to Quickbooks]**&#x200B;을(를) 클릭한 후 [!DNL Intuit] 계정에 로그인하고 연결을 승인합니다.
 
-![](../../../assets/QuickBooks_App_Store_1.jpg)
+![QuickBooks App Store 통합 페이지](../../../assets/QuickBooks_App_Store_1.jpg)
 
 1. `Search for a company` 드롭다운에서 회사를 선택합니다.
 1. **[!UICONTROL Next]**&#x200B;을(를) 클릭합니다. [!DNL Commerce Intelligence]&#x200B;(으)로 리디렉션되었으며 *연결이 성공했습니다!* 메시지가 화면 맨 위에 표시됩니다.
@@ -44,4 +44,4 @@ ht-degree: 0%
 ## 관련 항목
 
 * [ [!DNL QuickBooks] 데이터가 필요합니다.](../integrations/quickbooks-data.md)
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

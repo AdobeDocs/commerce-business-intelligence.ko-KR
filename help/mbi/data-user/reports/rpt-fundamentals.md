@@ -4,9 +4,9 @@ description: 보고서 데이터를 사용하는 방법을 알아봅니다.
 exl-id: 94d4db27-0e06-4066-9c03-036b109d2d9b
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '995'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 * 사용당 등록에서 첫 번째 구매 날짜까지의 평균 시간.
 
-이렇게 하면 등록 날짜와 사용자의 첫 번째 구매 날짜 사이에 경과된 평균 시간이 표시되고 전환 단계의 이 마지막 단계에서 사용자가 어떻게 행동하는지에 대한 아이디어가 제공됩니다.
+이렇게 하면 등록 날짜와 사용자의 첫 구매 날짜 사이에 경과된 평균 시간이 표시되며, 전환 funnel의 이 마지막 단계에서 사용자가 어떻게 행동하는지에 대한 아이디어를 제공합니다.
 
 ## 데이터 찾기
 
@@ -128,4 +128,4 @@ Adobe 팀의 다른 멤버와 공유되는 보고서를 만들 때는 다른 사
 
 아래를 참조하십시오.
 
-![](../../assets/exp-rep-as-image.gif)
+![보고서를 이미지 파일로 내보내는 애니메이션 데모](../../assets/exp-rep-as-image.gif)

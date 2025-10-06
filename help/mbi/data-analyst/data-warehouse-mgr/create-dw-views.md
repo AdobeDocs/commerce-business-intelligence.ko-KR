@@ -4,9 +4,9 @@ description: 기존 테이블을 수정하여 새 웨어하우스된 테이블�
 exl-id: 5aa571c9-7f38-462c-8f1b-76a826c9dc55
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1105'
+source-wordcount: '1120'
 ht-degree: 6%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 6%
 
 `Data Warehouse Views` 기능은 기존 테이블을 수정하여 새 웨어하우스된 테이블을 만들거나 SQL을 사용하여 여러 테이블을 연결하거나 통합하는 방법입니다. 업데이트 주기에 의해 `Data Warehouse View`이(가) 만들어지고 처리되면 아래와 같이 `Data Warehouse Views` 드롭다운 아래의 새 테이블로 Data Warehouse에 채워집니다.
 
-![](../../assets/Data_Warehouse.png)
+![테이블 관리 옵션을 표시하는 Data Warehouse 인터페이스](../../assets/Data_Warehouse.png)
 
 여기에서 새 보기는 다른 테이블과 마찬가지로 작동하므로 새로 계산된 열을 생성하거나 지표 및 보고서를 작성할 수 있습니다.
 
@@ -31,7 +31,7 @@ SQL을 잘 알고 있는 경우 이러한 통합 예제는 모두 `UNION` 함수
 
 아래와 같이 `Data Warehouse Views` > **[!UICONTROL Manage Data]**(으)로 이동하여 새 **[!UICONTROL Data Warehouse Views]**&#x200B;을(를) 만들고 기존 보기를 삭제할 수 있습니다.
 
-![](../../assets/Data_Warehouse_Views.png)
+![사용자 지정 보기 구성을 표시하는 Data Warehouse 보기 섹션](../../assets/Data_Warehouse_Views.png)
 
 여기에서 아래 샘플 지침에 따라 보기를 만들 수 있습니다.
 
@@ -136,7 +136,7 @@ PostgreSQL `UNION`설명서[에 설명된 대로 언급할 가치가 있는 ](ht
 
 **추가 도움말을 찾고 계십니까?**
 
-SQL을 작성하고 `Data Warehouse Views`을(를) 만드는 작업은 기술 지원에 포함되지 않습니다. 그러나 [서비스 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)은(는) 보기 만들기에 대한 지원을 제공합니다. 특정 분석을 위해 새 데이터베이스를 사용하여 기존 데이터베이스를 마이그레이션하고 단일 Data Warehouse 보기를 만드는 모든 작업에 대해 지원 팀이 도움을 줄 수 있습니다.
+SQL을 작성하고 `Data Warehouse Views`을(를) 만드는 작업은 기술 지원에 포함되지 않습니다. 그러나 [서비스 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)은(는) 보기 만들기에 대한 지원을 제공합니다. 특정 분석을 위해 새 데이터베이스를 사용하여 기존 데이터베이스를 마이그레이션하고 단일 Data Warehouse 보기를 만드는 모든 작업에 대해 지원 팀이 도움을 줄 수 있습니다.
 
 일반적으로 2~3개의 유사한 구조 테이블을 통합하기 위해 새 `Data Warehouse View`을(를) 만들려면 5시간의 서비스 시간이 필요하며, 이 경우 약 1,250달러의 작업 비용이 듭니다. 그러나 필요한 예상 투자를 늘릴 수 있는 몇 가지 일반적인 요소는 다음과 같습니다.
 

@@ -4,9 +4,9 @@ description: 광고 지출 데이터를 분석하고 비용이 효과적으로 �
 exl-id: 219a868b-f17c-4299-9e29-94db9156c9b6
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >[관리자 권한](../../../administrator/user-management/user-management.md)이 필요합니다.
 
-![](../../../assets/facebook-ads-logo.png)
+![Facebook 광고 로고](../../../assets/facebook-ads-logo.png)
 
 조사를 했고, 광고를 만들었으며, [!DNL Facebook]에 캠페인을 시작했습니다. 이제 광고 지출 데이터를 분석하고 비용이 효과적으로 지출되고 있는지 확인할 차례입니다. 광고 지출 데이터를 사용하여 [광고 비용과 캠페인에서 획득한 사용자의 CLV(고객 생애 가치)를 합산하여 캠페인 ROI를 측정할 수 있습니다](../../../data-analyst/analysis/roi-ad-camp.md).
 
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 **[!DNL Facebook Authorize]**&#x200B;을(를) 클릭하면 작은 팝업 창이 표시됩니다.
 
-![](../../../assets/Facebook_Access_Popup.png)
+![Commerce Intelligence에 대한 Facebook 액세스 권한 대화 상자](../../../assets/Facebook_Access_Popup.png)
 
 [!DNL Commerce Intelligence]이(가) 공개 프로필, [!DNL Facebook Ads] 및 관련 통계의 데이터에 액세스할 수 있도록 허용하는 일련의 단계를 따릅니다. 계속하려면 이 단계에서 **[!UICONTROL OK]**&#x200B;을(를) 클릭하십시오.
 
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 1. 인증이 완료되면 데이터를 가져올 [!DNL Facebook Ads] 계정을 선택하라는 메시지가 표시됩니다. `Connect` 열의 확인란을 클릭하여 원하는 계정을 선택합니다.
 
-   ![](../../../assets/Facebook_Ad_Accounts.png)
+   ![Facebook 광고 계정 선택 인터페이스](../../../assets/Facebook_Ad_Accounts.png)
 
 1. **[!UICONTROL Save Connections]**&#x200B;을(를) 클릭합니다.
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 ## 관련 항목
 
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [ [!DNL Google Adwords] 계정 연결](../integrations/google-ecommerce.md)
 * [ [!DNL Google eCommerce]을(를) 통해 주문 참조 원본 추적](../integrations/google-ecommerce.md)
 * [데이터베이스에서 사용자 조회 소스 추적](../../analysis/google-track-user-acq.md)

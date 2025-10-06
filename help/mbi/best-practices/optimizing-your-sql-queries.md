@@ -4,18 +4,18 @@ description: SQL 쿼리를 최적화하는 방법을 알아봅니다.
 exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: acc152709c7c66f387f4eded9e6c1c646a83af35
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '826'
 ht-degree: 0%
 
 ---
 
 # SQL 쿼리 최적화
 
-[!DNL SQL Report Builder]을(를) 사용하면 지정된 시간에 해당 쿼리를 쿼리하고 반복할 수 있습니다. 이 기능은 작성한 열이나 보고서를 업데이트해야 한다는 사실을 인식하기 전에 업데이트 주기가 끝날 때까지 기다리지 않고 쿼리를 수정해야 할 때 유용합니다.
+[!DNL SQL Report Builder]을(를) 사용하면 언제든지 쿼리를 실행하고 변경할 수 있습니다. 이 기능은 열이나 보고서를 수정하기 전에 업데이트 주기가 끝날 때까지 기다리는 대신 쿼리를 즉시 업데이트해야 하는 경우에 유용합니다.
 
-쿼리를 실행하기 전에 [[!DNL Commerce Intelligence] 비용을 예상합니다](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=ko). 비용은 쿼리를 실행하는 데 필요한 시간과 리소스 수를 고려합니다. 해당 비용이 너무 높거나 반환된 행 수가 [!DNL Commerce Intelligence] 제한을 초과하는 경우 쿼리가 실패합니다. [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md)을 쿼리하여 최대한 간소화된 쿼리를 작성할 수 있도록 하려면 Adobe에서 다음 사항을 권장합니다.
+쿼리를 실행하기 전에 [[!DNL Commerce Intelligence] 비용을 예상합니다](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html). 비용은 쿼리를 실행하는 데 필요한 시간과 리소스 수를 고려합니다. 해당 비용이 너무 높거나 반환된 행 수가 [!DNL Commerce Intelligence] 제한을 초과하는 경우 쿼리가 실패합니다. [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md)을 쿼리하여 최대한 간소화된 쿼리를 작성할 수 있도록 하려면 Adobe에서 다음 사항을 권장합니다.
 
 ## SELECT 사용 또는 모든 열 선택
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 | **이 대신...** | **사용해 보세요!** |
 |-----|-----|
-| ![](../../mbi/assets/Select_all_1.png) | ![](../../mbi/assets/Select_all_2.png) |
+| ![SELECT 별표를 사용하는 SQL 쿼리](../../mbi/assets/Select_all_1.png) | ![특정 열을 선택하는 SQL 쿼리](../../mbi/assets/Select_all_2.png) |
 
 {style="table-layout:auto"}
 
@@ -39,7 +39,7 @@ FULL OUTER JOIN 쿼리를 다시 작성하는 방법을 살펴봅니다.
 
 | **이 대신...** | **사용해 보세요!** |
 |-----|-----|
-| ![](../../mbi/assets/Full_Outer_Join_1.png) | ![](../../mbi/assets/Full_Outer_Join_2.png) |
+| ![전체 외부 조인이 있는 SQL 쿼리](../../mbi/assets/Full_Outer_Join_1.png) | ![최적화된 조인이 있는 SQL 쿼리](../../mbi/assets/Full_Outer_Join_2.png) |
 
 {style="table-layout:auto"}
 
@@ -59,7 +59,7 @@ FULL OUTER JOIN 쿼리를 다시 작성하는 방법을 살펴봅니다.
 
 | **이 대신...** | **사용해 보세요!** |
 |-----|-----|
-| ![](../../mbi/assets/Join_filters_1.png) | ![](../../mbi/assets/Join_filters_2.png) |
+| ![WHERE 절 필터가 있는 SQL 쿼리](../../mbi/assets/Join_filters_1.png) | ![ON 절 필터가 있는 SQL 쿼리](../../mbi/assets/Join_filters_2.png) |
 
 {style="table-layout:auto"}
 
@@ -73,19 +73,19 @@ FULL OUTER JOIN 쿼리를 다시 작성하는 방법을 살펴봅니다.
 
 `EXISTS`과(와) `IN`을(를) 사용하는 것은 반환하려는 결과의 유형에 따라 다릅니다. 단일 값에만 관심이 있는 경우 `EXISTS` 대신 `IN` 절을 사용하십시오. `IN`은(는) 쉼표로 구분된 값 목록과 함께 사용되므로 쿼리의 계산 비용이 증가합니다.
 
-`IN`개의 쿼리가 실행되면 시스템은 먼저 하위 쿼리(`IN` 문)를 처리한 다음 `IN` 문에 지정된 관계를 기반으로 전체 쿼리를 처리해야 합니다. `EXISTS`은(는) 쿼리를 여러 번 실행할 필요가 없기 때문에 훨씬 효율적입니다. 쿼리에 지정된 관계를 확인하는 동안 true/false 값이 반환됩니다.
+`IN`개의 쿼리가 실행되면 시스템은 먼저 하위 쿼리(`IN` 문)를 처리한 다음 `IN` 문에 지정된 관계를 기반으로 전체 쿼리를 처리해야 합니다. `EXISTS` 쿼리는 쿼리를 여러 번 실행할 필요가 없기 때문에 훨씬 효율적입니다. 쿼리에 지정된 관계를 확인하는 동안 true/false 값이 반환됩니다.
 
 간단히 말해, `EXISTS`을(를) 사용할 때는 시스템이 많이 처리하지 않아도 됩니다.
 
 | **이 대신...** | **사용해 보세요!** |
 |-----|-----|
-| ![](../../mbi/assets/Exists_1.png) | ![](../../mbi/assets/Exists_2.png) |
+| ![NULL 검사가 포함된 LEFT JOIN을 사용하는 SQL 쿼리](../../mbi/assets/Exists_1.png) | ![EXISTS 절을 사용하는 SQL 쿼리](../../mbi/assets/Exists_2.png) |
 
 {style="table-layout:auto"}
 
 ## 정렬 기준 사용
 
-`ORDER BY`은(는) SQL에서 값비싼 함수로 쿼리 비용을 크게 높일 수 있습니다. 쿼리의 EXPLAIN 비용이 너무 높다는 오류 메시지가 표시되면 필요하지 않은 경우 쿼리에서 `ORDER BY`을(를) 제거하십시오.
+`ORDER BY` 함수는 SQL에서 비싸며 쿼리 비용을 크게 높일 수 있습니다. 쿼리의 EXPLAIN 비용이 너무 높다는 오류 메시지가 표시되면 필요하지 않은 경우 쿼리에서 `ORDER BY`을(를) 제거하십시오.
 
 `ORDER BY`을(를) 사용할 수 없다는 말은 아닙니다. 필요한 경우에만 사용해야 합니다.
 
@@ -95,7 +95,7 @@ FULL OUTER JOIN 쿼리를 다시 작성하는 방법을 살펴봅니다.
 
 | **이 대신...** | **사용해 보세요!** |
 |-----|-----|
-| ![](../../mbi/assets/Group_by_2.png) | ![](../../mbi/assets/Group_by_1.png) |
+| ![GROUP BY가 필터 앞에 있는 SQL 쿼리](../../mbi/assets/Group_by_2.png) | ![GROUP BY](../../mbi/assets/Group_by_1.png) 앞에 필터가 있는 SQL 쿼리 |
 
 {style="table-layout:auto"}
 

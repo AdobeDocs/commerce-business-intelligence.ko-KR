@@ -4,16 +4,16 @@ description: 요청을 제출하고 마이그레이션을 시작하는 데 필�
 exl-id: 105cd003-98ef-4358-80b9-b3190c2c57b7
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '685'
 ht-degree: 0%
 
 ---
 
 # 데이터 마이그레이션
 
-새 데이터베이스 스키마, 서버 또는 보고 데이터베이스로 마이그레이션하는 것은 스트레스를 받을 필요가 없습니다. [[!DNL Adobe] 서비스 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)에서 마이그레이션 지원을 제공합니다.
+새 데이터베이스 스키마, 서버 또는 보고 데이터베이스로 마이그레이션하는 것은 스트레스를 받을 필요가 없습니다. [[!DNL Adobe] 서비스 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)에서 마이그레이션 지원을 제공합니다.
 
 전환이 최대한 매끄럽게 진행되도록 하려면 마이그레이션 요청을 제출할 때 가능한 한 자세히 설명해야 합니다. 이 항목에는 요청을 제출하고 마이그레이션을 시작하는 데 필요한 모든 것이 있습니다. 귀하의 요구 사항에 대한 포괄적인 그림을 제공하면 프로젝트의 범위가 적절하고 예상치가 정확하다는 것을 보증할 수 있습니다.
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 다음은 예입니다.
 
-![](../../../assets/Migration_Spreadsheet.png)
+![데이터베이스 스키마 및 테이블 구조를 가진 마이그레이션 스프레드시트 템플릿](../../../assets/Migration_Spreadsheet.png)
 
 >[!NOTE]
 >
@@ -67,7 +67,7 @@ ht-degree: 0%
 
 ## 요청을 제출하는 방법 {#submitreq}
 
-[지원 요청을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하면 연락할 수 있습니다.
+[지원 요청을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하면 연락할 수 있습니다.
 
 이전 섹션의 단계에 따라 열과 일치하는 스프레드시트를 만들었다면 첨부하는 것을 잊지 마십시오.
 

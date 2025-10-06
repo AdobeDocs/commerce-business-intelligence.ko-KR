@@ -4,9 +4,9 @@ description: Report Builder에서 수식을 사용하는 방법을 알아봅니�
 exl-id: 7a0ad07a-5bcc-474f-95bc-ccc2b74073b2
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '544'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 `Report Builder`에서 `formula`은(는) 일부 수학 논리를 기반으로 한 하나 이상의 지표의 조합입니다. 일반적인 예는 다음과 같습니다.
 
-![](../../assets/formula-example.png)
+![Report Builder에서 계산을 보여 주는 수식의 예](../../assets/formula-example.png)
 
 이 예제에서는 `Number of orders metric (A)`과(와) `Distinct buyers metric (B)`을(를) 사용하며 목표는 구매자가 매달 주문하는 평균 주문 수가 얼마냐는 질문에 답하는 것입니다. 공식의 매개 변수는 다음과 같습니다.
 
@@ -65,4 +65,4 @@ ht-degree: 0%
 
 위의 예에서 수식의 `timestamp`, `groupings`, `perspectives` 및 `filters`이(가) 해당 입력 지표에서 상속됨을 알았습니까? 지표가 사용할 수 있는 것처럼 수식을 사용하여 `perspectives` 및 [독립적인 시간 옵션](../../tutorials/time-options-visual-rpt-bldr.md){: target="_blank"}을 사용할 수 있습니다.
 
-`Report Builder`에서 수식 사용에 대한 추가 질문이 있는 경우 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하세요.
+`Report Builder`에서 수식 사용에 대한 추가 질문이 있는 경우 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하세요.

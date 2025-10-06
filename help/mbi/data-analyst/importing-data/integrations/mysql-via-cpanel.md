@@ -4,9 +4,9 @@ description: cPanel을 통해 MySQL을 연결하는 방법에 대해 알아봅�
 exl-id: 90b0a0b0-8c6b-4144-95b4-f588f18616c7
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 0%
 1. **[!UICONTROL [!DNL MySQL] Databases]** 섹션에 있는 `Database`을(를) 클릭합니다.
 1. `Add New User` 섹션까지 아래로 스크롤하고 [!DNL Commerce Intelligence]에 대한 사용자를 만드십시오.
 
-   ![](../../../assets/create-mbi-mysql-user-cpanel.png)
+   사용자 양식 만들기를 표시하는 ![cPanel MySQL 데이터베이스 인터페이스](../../../assets/create-mbi-mysql-user-cpanel.png)
 
 1. **[!UICONTROL Create User]**&#x200B;을(를) 클릭합니다.
 1. 이제 사용자를 만들었으므로 이 사용자를 데이터베이스에 연결해야 합니다. `Add New User` 섹션으로 돌아가서 필요한 `Add User to Database?`에 대한 설정을 확인하십시오.
@@ -69,4 +69,4 @@ ht-degree: 0%
 
 ## 관련 항목:
 
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

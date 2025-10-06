@@ -4,9 +4,9 @@ description: Report Builder를 선택하는 방법을 알아봅니다.
 exl-id: ec4204ef-975e-45c3-b09e-fb97ffc2c497
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 # Report Builder 선택
 
 >[!NOTE]
->&#x200B;>[관리자 권한](../../administrator/user-management/user-management.md)이 필요합니다.
+>>[관리자 권한](../../administrator/user-management/user-management.md)이 필요합니다.
 
 이제 분석을 만드는 데 사용할 수 있는 옵션이 더 많으므로 필요에 맞는 Report Builder의 기능을 정확히 아는 것이 어려울 수 있습니다. 이 항목에서는 분석을 작성하는 가장 좋은 방법을 선택하는 과정을 안내합니다.
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 단일 제품이 여러 제품 카테고리의 일부로 간주되며 각 제품의 각 카테고리와 관련된 수입을 보려 한다고 가정해 보겠습니다. DWM을 사용하여 이 관계를 만드는 것은 지루하고 어려울 수 있지만 [!DNL SQL] 쿼리를 작성하는 것이 좀 더 간단할 수 있습니다.
 
-![](../../assets/When_should_I_use_the_RB_2.png)
+![일대다 관계가 있는 제품 범주별 매출을 보여 주는 SQL 쿼리](../../assets/When_should_I_use_the_RB_2.png)
 
 ## 언제 기존 Report Builder을 사용해야 합니까? {#whentraditionalrb}
 

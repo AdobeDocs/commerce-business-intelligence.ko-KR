@@ -4,9 +4,9 @@ description: 전자 상거래 데이터를 주문 및 고객 데이터와 연결
 exl-id: f8a557ae-01d7-4886-8a1c-c0f245c7bc49
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Integration, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 다음은 새로 고침이 필요한 경우 테이블과 열을 동기화하는 방법을 간략하게 살펴보겠습니다.
 
-![](../../assets/Syncing_New_Columns.gif)
+![Data Warehouse에서 새 열을 동기화하는 애니메이션 데모](../../assets/Syncing_New_Columns.gif)
 
 `orders` 테이블에서 [!DNL Google eCommerce] 테이블로의 조인을 만든 후 아래 목록에서 처음 세 개의 차원을 만듭니다. 그런 다음 이러한 차원을 사용하여 `customers` 표에 세 개의 사용자/고객 차원을 만듭니다. 이 열을 `orders` 테이블에 조인합니다.
 
@@ -65,7 +65,7 @@ ht-degree: 0%
 1. 표시되는 창에서 `Many` 쪽을 `orders.order\_id`(으)로 설정하거나 주문 ID가 포함된 `orders` 테이블의 열을 설정하십시오.
 1. `One`측에서 `Google ECommerce` 테이블을 찾은 다음 열을 `transactionID`(으)로 설정합니다.
 
-   ![](../../assets/google-ecommerce-table.png)
+   ![사용 가능한 차원을 표시하는 Google 전자 상거래 테이블 구조](../../assets/google-ecommerce-table.png)
 
 1. 경로를 만들려면 **[!UICONTROL Save]**&#x200B;을(를) 클릭합니다.
 1. 경로가 추가되면 **[!UICONTROL Select table and column]** 드롭다운을 다시 클릭합니다.
@@ -74,7 +74,7 @@ ht-degree: 0%
 
 전체 프로세스를 살펴보겠습니다.
 
-![](../../assets/help_center.gif)
+![Google Analytics 소스 차원 만들기에 대한 애니메이션 데모](../../assets/help_center.gif)
 
 **주문의 [!DNL Google Analytics] 미디어** 및 `campaign`을(를) 만들어 보세요. 이러한 차원에 대한 변경 사항은 많지 않으므로 시도해 보십시오. 하지만 문제가 발생하면 [이 문서의 끝](#stuck)을(를) 확인하여 차이점을 확인할 수 있습니다.
 
@@ -115,7 +115,7 @@ ht-degree: 0%
 
 전체 프로세스를 살펴보겠습니다.
 
-![](../../assets/help_center2.gif)
+![고객 확보 차원을 만드는 애니메이션 데모](../../assets/help_center2.gif)
 
 `Customer's first order's` 미디어와 `campaign` 차원을 `orders` 테이블에 연결하여 완료하십시오. 차원에 참여하고 문제가 있으면 도움이 필요하면 [문서의 끝](#stuck)을 확인하십시오.
 

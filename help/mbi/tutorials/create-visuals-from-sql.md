@@ -4,9 +4,9 @@ description: SQL Report Builder에 사용되는 용어를 숙지하고 SQL 시�
 exl-id: 9b9bc205-5b64-4e64-8d23-057072e5dd72
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: SQL Report Builder, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '665'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 이 쿼리는 다음 결과 테이블을 반환합니다.
 
-![](../assets/SQL_results_table.png)
+![제품, 연도 및 월별로 판매된 항목이 있는 SQL 쿼리 결과를 보여 주는 테이블](../assets/SQL_results_table.png)
 
 ## 2단계: 시각화 만들기
 
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 쿼리가 처음 실행될 때 쿼리의 모든 열이 시리즈로 표시되기 때문에 보고서가 무시될 수 있습니다.
 
-![](../assets/SQL_initial_report_results.png)
+![모든 열이 계열로 표시되는 초기 SQL 보고서](../assets/SQL_initial_report_results.png)
 
 이 예에서는 시간이 지남에 따라 트렌드가 바뀌는 선 차트가 되도록 합니다. 만들려면 다음 설정을 사용합니다.
 
@@ -82,13 +82,13 @@ ht-degree: 0%
 
 다음은 쿼리 실행에서 보고서 설정에 이르기까지 이 시각화를 만드는 방법을 간략히 보여줍니다.
 
-![](../assets/SQL_report_settings.gif)
+![SQL 보고서 시각화 설정 구성에 대한 애니메이션 데모](../assets/SQL_report_settings.gif)
 
 ## 3단계: `Chart Type` 선택
 
 이 예제에서는 `Line` 차트 유형을 사용합니다. 다른 `chart type`을(를) 사용하려면 차트 옵션 섹션 위의 아이콘을 클릭하여 변경합니다.
 
-![](../assets/Chart_types.png)
+![선, 막대, 영역 및 기타 시각화 옵션을 포함한 사용 가능한 차트 유형 아이콘](../assets/Chart_types.png)
 
 ## 4단계: 시각화 저장
 

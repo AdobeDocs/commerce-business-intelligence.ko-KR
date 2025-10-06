@@ -4,9 +4,9 @@ description: 결과를 로컬 데이터베이스의 데이터와 비교할 수 �
 exl-id: d1d9e099-4138-43e6-aaec-6f15ebc5c4d4
 role: Admin, Data Architect, Data Engineer, User
 feature: Reports, Data Warehouse Manager, SQL Report Builder
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
@@ -26,13 +26,13 @@ ht-degree: 0%
 
 쿼리를 더 명확하게 보려면 쿼리 필드에 쿼리가 표시되는 방식을 다시 지정할 수 있습니다. 준비가 되면 `Run Query`을(를) 선택합니다. 결과는 쿼리 아래의 보고서 패널에 표로 채워집니다.
 
-![](../../assets/run-query-results.gif)
+![SQL 쿼리를 실행하고 결과를 보는 애니메이션 데모](../../assets/run-query-results.gif)
 
 ## 쿼리 제한
 
 특정 불일치나 데이터 세트를 찾아내려면 쿼리를 특정 샘플로 제한하여 로컬 데이터베이스를 확인해야 합니다. 원하는 제한 사항과 일치하도록 쿼리를 편집하여 이 작업을 수행할 수 있습니다. 다음 예제에서는 2013년 1월 1일 이후의 매출만 포함하도록 쿼리를 제한합니다. 쿼리를 업데이트한 후 **[!UICONTROL Run Query]**&#x200B;을(를) 다시 선택하여 결과를 업데이트합니다.
 
-![](../../assets/restricting-query.gif)
+![필터를 사용한 제한 쿼리의 애니메이션 데모](../../assets/restricting-query.gif)
 
 ## 저장 및 내보내기
 
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 보고서가 저장되면 `Go to Dashboard`을(를) 선택하여 해당 대시보드로 이동합니다. 여기에서 보고서를 찾아 **[!UICONTROL Options gear > Full `.csv`내보내기]** 또는 **[!UICONTROL Full Excel Export]**&#x200B;를 선택하여 데이터를 내보낼 수 있습니다.
 
-![](../../assets/export-dboard-data.gif)
+![대시보드 데이터 내보내기의 애니메이션 데모](../../assets/export-dboard-data.gif)
 
 ## 사용자 정의 쿼리
 
@@ -48,4 +48,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->데이터를 감사한 후 불일치가 발견되면 [지원 센터에 문의: 데이터 불일치](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html?lang=ko) 지원 항목에서 다음에 수행할 작업에 대한 자세한 내용을 확인하십시오.
+>데이터를 감사한 후 불일치가 발견되면 [지원 센터에 문의: 데이터 불일치](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html) 지원 항목에서 다음에 수행할 작업에 대한 자세한 내용을 확인하십시오.

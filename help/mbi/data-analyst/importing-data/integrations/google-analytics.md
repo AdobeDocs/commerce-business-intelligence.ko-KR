@@ -4,9 +4,9 @@ description: ' [!DNL Commerce Intelligence]과(와) Google Analytics 연결에 �
 exl-id: 10e813f1-0306-4bdd-8222-e6364ac624de
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >[관리자 권한](../../../administrator/user-management/user-management.md)이 필요합니다.
 
-![](../../../assets/google-analytics-logo.png)
+![Google Analytics 로고](../../../assets/google-analytics-logo.png)
 
 [!DNL Google Analytics]은(는) 인터넷에서 가장 널리 사용되는 웹 분석 서비스입니다. 웹 사이트에 [!DNL Google Analytics]을(를) 구현하면 방문자가 사이트를 사용하는 방법, 매력적인 콘텐츠, 방문자가 종료하는 위치 등을 추적할 수 있습니다. 다른 데이터와 함께 [!DNL Commerce Intelligence]에서 이러한 지표를 분석하면 사이트의 전반적인 상태와 유용성이 향상됩니다.
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 1. 프로필 ID 목록이 표시됩니다. [!DNL Commerce Intelligence]에 연결할 프로필을 확인하십시오. 프로필이 여러 개이고 어떤 프로필인지 식별하는 데 도움이 필요한 경우 아래의 여러 [!DNL Google Analytics] 프로필 연결 섹션을 참조하십시오.
 
-   ![](../../../assets/list-profile-id.png)<!--{: width="600px"}-->
+   ![URL에 프로필 ID를 표시하는 Google Analytics 관리 페이지](../../../assets/list-profile-id.png)<!--{: width="600px"}-->
 
 1. 변경 사항이 자동으로 저장되므로 완료되면 **연결로 돌아가기**&#x200B;를 클릭하세요.
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 ## 관련 항목:
 
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [ [!DNL Google Adwords] 연결 중](../integrations/google-adwords.md)
 * [웹 사이트 활동 및 고객 전환율 분석](../../analysis/web-act-cust-conversion.md)
 * [ [!DNL Google Analytics] 쿠키를 사용하여 사용자 획득 데이터 추적](../../analysis/google-track-user-acq.md)

@@ -4,9 +4,9 @@ description: 귀하의 사업의 쿠폰 성과에 대해 알아보는 것은 주
 exl-id: 0d486259-b210-42ae-8f79-cd91cc15c2c2
 role: Admin, User
 feature: Data Warehouse Manager, Reports
-source-git-commit: d8fc96a58b72c601a5700f35ea1f3dc982d76571
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '532'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 이 항목에서는 쿠폰을 구입한 고객이 수행하는 방법을 이해하고, 추세를 확인하고, 개별 쿠폰 코드 사용을 추적하는 데 필요한 이러한 분석을 만드는 데 필요한 단계를 설명합니다.
 
-![](../../assets/coupon_analysis_dash_720.png)<!--{: width="807" height="471"}-->
+![사용량 및 성능 지표를 표시하는 쿠폰 코드 분석 대시보드](../../assets/coupon_analysis_dash_720.png)<!--{: width="807" height="471"}-->
 
 ## 시작
 
@@ -62,42 +62,42 @@ Commerce 2.4.7부터 고객은 주문에 두 개 이상의 쿠폰 코드를 적�
 >각 보고서의 [!UICONTROL Time Period]**이(가) `All-time`(으)로 나열됩니다. 분석 요구 사항에 맞게 자유롭게 변경하십시오. Adobe에서는 `All time`, `Year-to-date` 또는 `Last 365 days`과(와) 같이 이 대시보드에 있는 모든 보고서를 동일한 기간에 포함하도록 권장합니다.
 
 * **쿠폰이 포함된 주문**
-   * &#x200B;
+   * 
      [!UICONTROL 지표]: `Orders`
       * 필터 추가:
          * [`A`] `coupon_code` **이(가) 아님** `[NULL]`
 
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
+   * 
      [!UICONTROL 간격]: `None`
    * [!UICONTROL Chart type]:`Number (scalar)`
 
 * **쿠폰 없는 주문**
-   * &#x200B;
+   * 
      [!UICONTROL 지표]: `Orders`
       * 필터 추가:
          * [`A`] `coupon_code` **IS** `[NULL]`
 
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
+   * 
      [!UICONTROL 간격]: `None`
    * [!UICONTROL Chart type]:`Number (scalar)`
 
 * **쿠폰이 포함된 주문 순 수익**
-   * &#x200B;
+   * 
      [!UICONTROL 지표]: `Revenue`
       * 필터 추가:
          * [`A`] `coupon_code` **이(가) 아님** `[NULL]`
 
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
+   * 
      [!UICONTROL 간격]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
 * **쿠폰 할인**
    * [!UICONTROL Metric]: `Coupon discount amount`
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
+   * 
      [!UICONTROL 간격]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
@@ -107,7 +107,7 @@ Commerce 2.4.7부터 고객은 주문에 두 개 이상의 쿠폰 코드를 적�
          * [`A`] `Customer's first order's coupon_code` **이(가) 아님** `[NULL]`
 
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
+   * 
      [!UICONTROL 간격]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
@@ -117,7 +117,7 @@ Commerce 2.4.7부터 고객은 주문에 두 개 이상의 쿠폰 코드를 적�
          * [A] `Customer's first order's coupon_code` **IS**`[NULL]`
 
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
+   * 
      [!UICONTROL 간격]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
@@ -141,23 +141,23 @@ Commerce 2.4.7부터 고객은 주문에 두 개 이상의 쿠폰 코드를 적�
 
    * 수식 만들기: `Gross revenue`
       * [!UICONTROL Formula]: `(B – C)`
-      * &#x200B;
+      * 
         [!UICONTROL Format]: `Currency`
 
    * 수식 만들기: **% 할인**
       * 수식: `(C / (B - C))`
-      * &#x200B;
+      * 
         [!UICONTROL Format]: `Percentage`
 
    * 수식 만들기: `Average order discount`
       * [!UICONTROL Formula]: `(C / A)`
-      * &#x200B;
+      * 
         [!UICONTROL Format]: `Percentage`
 
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
+   * 
      [!UICONTROL 간격]: `None`
-   * &#x200B;
+   * 
      [!UICONTROL 차트 유형]: `Table`
 
 * **첫 주문 쿠폰별 평균 라이프타임 수익**
@@ -166,7 +166,7 @@ Commerce 2.4.7부터 고객은 주문에 두 개 이상의 쿠폰 코드를 적�
          * [`A`] `coupon_code` **IS**`[NULL]`
 
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
+   * 
      [!UICONTROL 간격]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
@@ -176,10 +176,10 @@ Commerce 2.4.7부터 고객은 주문에 두 개 이상의 쿠폰 코드를 적�
          * [`A`] `Customer's first order's coupon_code` **이(가) 아님** `[NULL]`
 
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
+   * 
      [!UICONTROL 간격]: `None`
    * [!UICONTROL Group by]: `Customer's first order's coupon_code`
-   * &#x200B;
+   * 
      [!UICONTROL 차트 유형]: **Column**
 
 * **쿠폰으로 신규 고객/비쿠폰 고객 확보**
@@ -205,4 +205,4 @@ Commerce 2.4.7부터 고객은 주문에 두 개 이상의 쿠폰 코드를 적�
 >
 >Adobe Commerce 2.4.7부터 고객은 **quote_coupons** 및 **sales_order_coupons** 테이블을 사용하여 고객이 여러 쿠폰을 사용하는 방법에 대한 통찰력을 얻을 수 있습니다.
 
-![](../../assets/multicoupon_relationship_tables.png)
+![다중 쿠폰 분석을 위한 테이블 관계 다이어그램](../../assets/multicoupon_relationship_tables.png)

@@ -4,9 +4,9 @@ description: 4단계 프로세스를 통해 Microsoft SQL 데이터베이스를 
 exl-id: 7f49d1dc-8fbb-4a8c-9d07-9a8195c266f5
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '312'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 0%
 >
 >[관리자 권한](../../../administrator/user-management/user-management.md)이 필요합니다.
 
-![](../../../assets/MicrosoftSQLServer-logo.png)
+![Microsoft SQL Server 로고](../../../assets/MicrosoftSQLServer-logo.png)
 
 이 항목에서는 4단계 프로세스를 통해 [!DNL Microsoft SQL] 데이터베이스를 [!DNL Commerce Intelligence]에 연결하는 방법을 설명합니다. 이 프로세스에는 서버 연결 및 SQL과 관련된 기술 전문 지식이 필요하며 팀의 개발자로부터 지원이 필요할 수 있습니다.
 
-[!DNL Commerce Intelligence]은(는) [!DNL Amazon RDS], [!DNL EC2], [!DNL Microsoft SQL Azure] 및 대부분의 다른 클라우드 서버 공급자를 지원합니다. 특정 호스트에 대한 질문이 있는 경우 [지원 티켓을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하여 이 정보를 제공하십시오.
+[!DNL Commerce Intelligence]은(는) [!DNL Amazon RDS], [!DNL EC2], [!DNL Microsoft SQL Azure] 및 대부분의 다른 클라우드 서버 공급자를 지원합니다. 특정 호스트에 대한 질문이 있는 경우 [지원 티켓을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하여 이 정보를 제공하십시오.
 
 시스템에서 데이터베이스에서 SELECT 쿼리를 실행해야 합니다. 이 작업은 처음에 데이터베이스 구조의 스냅샷을 가져온 다음 정기적으로 초과 작업을 수행하여 데이터를 최신 상태로 유지합니다. 업데이트는 증분 단위이며 Adobe은 서버에서 원하지 않는 로드를 방지하기 위해 업데이트 빈도와 시간을 제한합니다.
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 1. [!DNL Commerce Intelligence]의 **[!UICONTROL Manage Data** > **Connections]**&#x200B;에 서버 IP 주소, 사용자 이름 및 암호를 입력하십시오.
 
-   ![](../../../assets/manage-data-connections.png)
+   ![데이터베이스 통합을 표시하는 데이터 연결 관리 페이지](../../../assets/manage-data-connections.png)
 
 1. **[!UICONTROL Add a Data Source]**&#x200B;을(를) 클릭합니다.
 

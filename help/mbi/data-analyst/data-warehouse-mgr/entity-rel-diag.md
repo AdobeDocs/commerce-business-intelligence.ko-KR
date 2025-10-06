@@ -4,9 +4,9 @@ description: 소수의 공통 Commerce 데이터베이스 테이블 간의 관�
 exl-id: de7d419f-efbe-4d0c-95a8-155a12aa93f3
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 [!DNL Commerce Intelligence] 내에서 이 두 테이블 간의 경로가 없는 경우 Data Warehouse 탭에서 [경로를 만들고](../data-warehouse-mgr/create-paths-calc-columns.md)할 수 있습니다. 경로를 만들 준비가 되면 다음과 같이 정의됩니다.
 
-![](../../assets/SFO___CE_path.png)
+![sales_flat_order에서 customer_entity로의 경로를 보여 주는 엔터티 관계 다이어그램](../../assets/SFO___CE_path.png)
 
 ## `sales\_flat\_order & sales\_flat\_order\_item`
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 [!DNL Commerce Intelligence] 내에서 이 두 테이블 간의 경로가 없는 경우 Data Warehouse 탭에서 [경로를 만들고](../data-warehouse-mgr/create-paths-calc-columns.md)할 수 있습니다. 경로를 만들 준비가 되면 아래에 표시된 대로 경로를 정의합니다.
 
-![](../../assets/SFOI___SFO_path.png)
+![sales_flat_order_item에서 sales_flat_order로의 경로를 보여 주는 엔터티 관계 다이어그램](../../assets/SFOI___SFO_path.png)
 
 ## `catalog\_product\_entity & sales\_flat\_order\_item`
 
@@ -59,4 +59,4 @@ ht-degree: 0%
 
 [!DNL Commerce Intelligence] 내에서 이 두 테이블 간의 경로가 없는 경우 Data Warehouse 탭에서 [경로를 만들고](../data-warehouse-mgr/create-paths-calc-columns.md)할 수 있습니다. 경로를 만들 준비가 되면 아래에 표시된 대로 경로를 정의합니다.
 
-![](../../assets/SFOI___CPE_path.png)
+![sales_flat_order_item에서 catalog_product_entity로의 경로를 보여 주는 엔터티 관계 다이어그램](../../assets/SFOI___CPE_path.png)

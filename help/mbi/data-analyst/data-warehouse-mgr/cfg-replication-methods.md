@@ -4,9 +4,9 @@ description: 표를 구성하는 방법과 표 데이터가 작동하는 방식�
 exl-id: 83895c48-a6ec-4b01-9890-164e0b21dcbc
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Data Import/Export
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1433'
+source-wordcount: '1442'
 ht-degree: 0%
 
 ---
@@ -118,7 +118,7 @@ ht-degree: 0%
 
 전체 프로세스를 살펴봅니다.
 
-![](../../assets/replication_method.gif)<!--{: width="801" height="341"}-->
+![데이터베이스 테이블에 대한 복제 방법을 구성하는 애니메이션 데모](../../assets/replication_method.gif)<!--{: width="801" height="341"}-->
 
 ## 요약
 

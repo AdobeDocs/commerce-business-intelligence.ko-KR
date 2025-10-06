@@ -4,9 +4,9 @@ description: 라이프사이클 동안 유사한 특성을 공유하는 사용�
 exl-id: d80c5389-7256-40e0-86e0-49903113f93d
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1569'
+source-wordcount: '1607'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 **지표 보기를`Cohort`**(으)로 전환
 
-![](../../assets/visual-report-builder-cohort-toggle.png)
+![집단 분석 전환 옵션을 표시하는 시각적 Report Builder](../../assets/visual-report-builder-cohort-toggle.png)
 
 `Cohort` 보고서의 세부 정보를 구성할 수 있는 새 창이 열립니다.
 
@@ -83,7 +83,7 @@ ht-degree: 0%
 
 이 값의 간격은 `cohort time period`에서 선택한 항목에 따라 변경되며 값은 기본적으로 `12`(으)로 설정됩니다. 값을 편집하려면 달력 아이콘을 클릭해야 값이 변경됩니다.
 
-![](../../assets/cohort-time-range.png)
+![날짜 옵션을 표시하는 집단 시간 범위 선택기](../../assets/cohort-time-range.png)
 
 #### 기타 참고 사항
 
@@ -105,7 +105,7 @@ ht-degree: 0%
 
 #### 나만의 `cohort` 분석을 만들려면 어떻게 해야 합니까? {#create}
 
-![](../../assets/create-cohort-analysis.png)
+![구성 옵션을 사용하여 집단 분석 대화 상자 만들기](../../assets/create-cohort-analysis.png)
 
 `Cohort` 분석 실행 중! 여기에서 누적 및 사용자별로 시간이 지남에 따라 증가하는 매출을 확인할 수 있습니다.
 
@@ -155,7 +155,7 @@ ht-degree: 0%
 
 다른 테이블에서 연결된 `cohort date`에 의해 사용자를 그룹화하도록 선택한 경우 `counting members in the … table` 옵션이 표시될 수 있습니다.
 
-![](../../assets/Cohort_Counting_Members_option.png)
+![독립 모드와 누적 모드를 보여 주는 집단 계산 멤버 옵션](../../assets/Cohort_Counting_Members_option.png)
 
 이 설정을 이해하는 예를 참조하십시오. `Revenue`까지 `Customer's registration date` 지표를 그룹화한 보고서를 작성했다고 가정합니다. 또한 `Average value per cohort member` 관점을 사용하여 시간에 따른 구매자당 매출을 확인하려고 했습니다. 구매자당 평균값을 찾으려면 나눌 구매자 수를 결정해야 합니다. `customers` 테이블에 등록된 고객 수입니까? 아니면 같은 기간 동안 `orders table`에 있는 개별 구매자의 수입니까?
 
@@ -169,7 +169,7 @@ ht-degree: 0%
 
 [관점](#perspectives)을 참조하세요.
 
-![](../../assets/Cohort_Perspective_Menu.png)
+![다른 보기 옵션을 보여 주는 집단 관점 메뉴](../../assets/Cohort_Perspective_Menu.png)
 
 ## 집단 분석의 예 {#examples}
 

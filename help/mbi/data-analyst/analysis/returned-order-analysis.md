@@ -4,9 +4,9 @@ description: 스토어 수익에 대한 세부 분석을 제공하는 대시보�
 exl-id: 6a948561-45b7-4813-9661-ab42197ca5bd
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 이 항목에서는 스토어 수익에 대한 자세한 분석을 제공하는 대시보드를 설정하는 방법을 보여 줍니다.
 
-![](../../assets/detailed-returns-dboard.png)
+![반환 비율과 이유를 보여주는 자세한 반환 대시보드](../../assets/detailed-returns-dboard.png)
 
 시작하기 전에 [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 고객이어야 하며 귀사에서 반품에 `enterprise\_rma` 테이블을 사용하고 있는지 확인해야 합니다.
 
@@ -61,9 +61,9 @@ ht-degree: 0%
 * **`Order's created at`**
 * 정의 선택: `Joined Column`
 * [!UICONTROL Create Path]:
-* &#x200B;
+* 
   [!UICONTROL Many]: `enterprise_rma.order_id`
-* &#x200B;
+* 
   [!UICONTROL One]: `sales_flat_order.entity_id`
 
 * [!UICONTROL table] 선택: `sales_flat_order`
@@ -82,9 +82,9 @@ ht-degree: 0%
 * **`return_date_requested`**
 * 정의 선택: `Joined Column`
 * [!UICONTROL Create Path]:
-   * &#x200B;
+   * 
      [!UICONTROL Many]: `enterprise_rma_item_entity.rma_entity_id`
-   * &#x200B;
+   * 
      [!UICONTROL One]: `enterprise_rma.entity_id`
 
 * [!UICONTROL table] 선택: `enterprise_rma`
@@ -157,14 +157,14 @@ ht-degree: 0%
 
 * 공식: 반복 주문 확률
 * [!UICONTROL Formula]: `B / A`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL 간격]: `None`
 * [!UICONTROL Group by]: `Customer's order number`
-* &#x200B;
+* 
   [!UICONTROL 차트 유형]: `Bar`
 
 * **평균 반환 시간(항상)**
@@ -172,9 +172,9 @@ ht-degree: 0%
 * [!UICONTROL Metric]: `Avg time between order and return`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL 간격]: `None`
-* &#x200B;
+* 
   [!UICONTROL 차트 유형]: `Number`
 
 * **반품이 있는 주문 비율**
@@ -188,11 +188,11 @@ ht-degree: 0%
 
 * 공식: 반품이 있는 주문의 %
 * [!UICONTROL Formula]: `B / A`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL 간격]: `None`
 * [!UICONTROL Chart Type]: `Number - % of orders with return`
 
@@ -202,7 +202,7 @@ ht-degree: 0%
 
 * [!UICONTROL Time period]: `All time`
 * [!UICONTROL Interval]: `By month`
-* &#x200B;
+* 
   [!UICONTROL 차트 유형]: `Line`
 
 * **반품을 했지만 다시 구매하지 않은 고객**
@@ -213,11 +213,11 @@ ht-degree: 0%
    * `Is customer's last order? (1=yes/0=no) = 1`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL 간격]: `None`
-* &#x200B;
+* 
   [!UICONTROL 그룹 기준]: `Customer_email`
-* &#x200B;
+* 
   [!UICONTROL 차트 유형]: `Table`
 
 * 항목별 **반환 비율**
@@ -230,16 +230,16 @@ ht-degree: 0%
 
 * [!UICONTROL Formula]: `Return %`
 * [!UICONTROL Formula]: `B / A`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL 간격]: `None`
 * [!UICONTROL Group by]: `product_sku AND/OR product_name`
-* &#x200B;
+* 
   [!UICONTROL 차트 유형]: `Table`
 
 모든 보고서를 컴파일한 후 원하는 대로 대시보드에서 구성할 수 있습니다. 결과는 위의 샘플 대시보드와 비슷할 수 있습니다.
 
-이 분석을 작성하는 동안 질문이 있거나 Professional Services 팀에 참여하려는 경우 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하십시오.
+이 분석을 작성하는 동안 질문이 있거나 Professional Services 팀에 참여하려는 경우 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하십시오.

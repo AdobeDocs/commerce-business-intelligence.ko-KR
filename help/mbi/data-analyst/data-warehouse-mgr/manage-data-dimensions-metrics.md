@@ -4,9 +4,9 @@ description: 차원이 무엇이며 지표를 기반으로 차트를 필터링�
 exl-id: 143a4b1e-2e6f-438a-90e6-bdda13b39cb9
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 1. `Choose Metric(s) to Add Dimensions` 열에서 차원을 추가할 지표를 선택합니다. 선택하면 오른쪽에 `Choose Dimensions to Add` 열이 나타납니다. 선택한 지표에 추가할 차원을 확인합니다.
 
-   ![](../../assets/Add_Dimensions.png)
+   ![사용 가능한 차원 옵션을 표시하는 차원 추가 대화 상자](../../assets/Add_Dimensions.png)
 
 1. 보고서의 데이터 차원을 세그먼트화하거나 그룹화하려면 _그룹화 가능_&#x200B;을 표시해야 합니다.
 

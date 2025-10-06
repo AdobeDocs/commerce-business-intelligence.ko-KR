@@ -4,9 +4,9 @@ description: 게스트 주문이 데이터에 미치는 영향 및  [!DNL Commer
 exl-id: cd5120ca-454c-4cf4-acb4-3aebe06cdc9a
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '566'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 * **모든 고객이 등록되고** 게스트 주문이 허용되지 않으면 `orders` 테이블의 모든 레코드에 `customer\_id` 열의 값이 있는 것입니다. 따라서 모든 순서가 `customers` 테이블로 다시 연결됩니다.
 
-  ![](../../assets/guest-orders-4.png)
+  ![고객 정보를 보여주는 게스트 주문 데이터 테이블](../../assets/guest-orders-4.png)
 
 * **게스트 주문이 허용되는 경우**&#x200B;은(는) 일부 주문에 `customer\_id` 열의 값이 없음을 의미합니다. 등록된 고객에게만 `customer\_id` 테이블의 `orders` 열에 대한 값이 제공됩니다. 등록되지 않은 고객은 이 열에 대해 `NULL`(또는 빈) 값을 받습니다. 따라서 모든 주문 레코드에 `customers` 테이블에 일치하는 레코드가 있는 것은 아닙니다.
 
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 이 유형의 설정에서 설정된 `Customers we count` 필터에 `Customer's order number = 1`에 대한 필터가 있습니다.
 
-![](../../assets/guest-orders-filter-set.png)
+![게스트 주문 제외를 위한 필터 집합 구성](../../assets/guest-orders-filter-set.png)
 
 게스트 주문이 없는 상황에서는 각 고객이 고객 테이블에 고유한 행으로 존재합니다(이미지 1 참조). `New customers`과(와) 같은 지표는 `created\_at` 날짜를 기준으로 이 테이블의 ID를 계산하여 등록 날짜를 기준으로 새 고객을 이해할 수 있습니다.
 

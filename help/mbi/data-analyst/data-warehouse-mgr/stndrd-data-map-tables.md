@@ -4,9 +4,9 @@ description: 매핑 테이블을 사용하여 작업하는 방법을 알아봅�
 exl-id: e452ff87-f298-43d5-acc3-af58e53bd0bc
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '775'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 `Report Builder`에서 `Revenue by State` 보고서를 작성하는 중이라고 가정해 보십시오. 보고서에 `billing state` 그룹화를 추가하려고 할 때까지 모든 것이 잘 진행되고 있습니다. 다음 내용이 표시됩니다.
 
-![](../../assets/Messy_State_Segments.png)
+![이름이 일치하지 않는 지저분한 상태 세그먼트를 표시하는 차트](../../assets/Messy_State_Segments.png)
 
 ## 어떻게 이런 일이 일어날 수 있죠?
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 두 번째 열에 **이(가) 있어야 하는 값**&#x200B;을(를) 입력하십시오. 청구 상태 예를 계속 진행하여 `pa`, `PA`, `Pennsylvania` 및 `pennsylvania`을(를) 간단히 `PA`하려면 각 입력 값에 대해 이 열에 `PA`을(를) 입력합니다.
 
-![](../../assets/Mapping_table_examples.jpg)
+![원래 값과 표준화된 값을 보여 주는 예제 매핑 테이블](../../assets/Mapping_table_examples.jpg)
 
 ## [!DNL Commerce Intelligence]에서 사용하려면 어떻게 해야 합니까? {#use}
 
@@ -66,7 +66,7 @@ ht-degree: 0%
    * `One`측에서 `mapping` 테이블 및 `Primary key` 열을 선택합니다. 이 경우 `state_input` 테이블에서 `mapping_state` 열을 선택합니다.
    * 다음은 경로의 모양입니다.
 
-     ![](../../assets/State_Mapping_Path.png)
+     ![상태 매핑 계산 경로를 표시하는 Data Warehouse 관리자](../../assets/State_Mapping_Path.png)
 
 1. 완료되면 **[!UICONTROL Save]**&#x200B;을(를) 클릭하여 경로를 만듭니다.
 1. 저장 후 경로가 바로 채워지지 않을 수 있습니다. 이 경우 `Path` 상자를 클릭하고 만든 경로를 선택하십시오.
@@ -76,7 +76,7 @@ ht-degree: 0%
 
 업데이트 주기가 완료되면 새로 결합된 열을 사용하여 데이터베이스의 지저분한 열 대신 데이터를 적절하게 세그먼트화할 수 있습니다. 이제 그룹화 옵션을 살펴보십시오. 더 이상 스트레스를 주지 않습니다.
 
-![](../../assets/Clean_State_Segments.png)
+![표준화 후 클린 상태 세그먼트를 표시하는 차트](../../assets/Clean_State_Segments.png)
 
 매핑 테이블은 Data Warehouse에서 잠재적으로 지저분한 데이터를 정리할 때 언제든지 유용합니다. 그러나 매핑 테이블은 [복제 [!DNL Google Analytics channels] in [!DNL Commerce Intelligence]](../data-warehouse-mgr/rep-google-analytics-channels.md)와 같은 멋진 다른 사용 사례에도 사용할 수 있습니다.
 

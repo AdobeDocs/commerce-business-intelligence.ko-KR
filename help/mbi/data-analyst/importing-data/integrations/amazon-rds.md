@@ -4,9 +4,9 @@ description: RDS 인스턴스 연결 단계를 알아봅니다.
 exl-id: 02ad29c8-84d6-4b49-9ac1-e5f4feaa7fda
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 각 데이터베이스의 자격 증명 페이지(**[!UICONTROL Manage Data** > **Integrations]**)에 R[!DNL RDS]을(를) [!DNL Commerce Intelligence]에 연결하기 위해 승인해야 하는 IP 주소가 들어 있는 상자가 표시됩니다. `54.88.76.97` 및 `34.250.211.151`. 다음은 `MySQL credentials` 페이지에서 IP 주소 상자를 강조 표시한 보기입니다.
 
-![](../../../assets/RDS_IP.png)
+![IP 주소 구성을 표시하는 Amazon RDS 보안 그룹 설정](../../../assets/RDS_IP.png)
 
 [!DNL Commerce Intelligence]이(가) [!DNL RDS] 인스턴스와 성공적으로 연결하려면 AWS 관리 콘솔을 통해 이러한 IP 주소를 적절한 데이터베이스 보안 그룹에 추가해야 합니다. 이러한 IP 주소를 기존 그룹에 추가하거나 만들 수 있습니다. 중요한 것은 그룹이 [!DNL Commerce Intelligence]에 연결할 인스턴스에 액세스할 수 있는 권한이 있다는 것입니다.
 
@@ -55,6 +55,6 @@ ht-degree: 0%
 
 암호화된 연결을 사용하는 경우 데이터베이스 자격 증명 페이지의 `Encrypted` 토글을 `Yes`(으)로 변경합니다. 암호화 설정을 위한 추가 양식이 표시됩니다.
 
-![](../../../assets/sql-integration-encrypted-yes.png)
+암호화를 사용할 수 있는 ![SQL 통합 양식에서 [예] 옵션을 표시함](../../../assets/sql-integration-encrypted-yes.png)
 
 

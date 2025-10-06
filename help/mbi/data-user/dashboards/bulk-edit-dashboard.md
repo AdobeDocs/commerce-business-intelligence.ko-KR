@@ -4,9 +4,9 @@ description: ' [!DNL Commerce Intelligence]에서 대량 편집 기능을 사용
 exl-id: 576ffabb-5e5d-4251-9662-951e2cd30f31
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ## [!DNL Find/Replace] 사용 중 {#findreplace}
 
-1. 대시보드 이름 옆에 있는 톱니바퀴(![](../../assets/gear-icon.png)) 아이콘을 클릭한 다음 [!UICONTROL Bulk Edit Reports] 창을 클릭합니다.
+1. 대시보드 이름 옆에 있는 톱니바퀴 아이콘(![톱니바퀴 아이콘](../../assets/gear-icon.png))을 클릭한 다음 [!UICONTROL Bulk Edit Reports] 창을 클릭합니다.
 
 1. 팝업에서 **[!UICONTROL Chart Title Find and Replace]**&#x200B;을(를) 클릭합니다.
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 ## `Chart Names` 앞에 추가 {#prepend}
 
-1. 대시보드 이름 옆에 있는 톱니바퀴(![](../../assets/gear-icon.png)) 아이콘을 클릭한 다음 [!UICONTROL Bulk Edit Reports] 창을 클릭합니다.
+1. 대시보드 이름 옆에 있는 톱니바퀴 아이콘(![톱니바퀴 아이콘](../../assets/gear-icon.png))을 클릭한 다음 [!UICONTROL Bulk Edit Reports] 창을 클릭합니다.
 
 1. 팝업에서 **[!UICONTROL Prepend Report Names]**&#x200B;을(를) 클릭합니다.
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 ## `Dates` 변경 중 {#dates}
 
-1. 대시보드 이름 옆에 있는 톱니바퀴(![](../../assets/gear-icon.png)) 아이콘을 클릭한 다음 [!UICONTROL Bulk Edit Reports] 창을 선택합니다.
+1. 대시보드 이름 옆에 있는 톱니바퀴 아이콘(![톱니바퀴 아이콘](../../assets/gear-icon.png))을 클릭한 다음 [!UICONTROL Bulk Edit Reports] 창을 선택합니다.
 
 1. 팝업 창에서 **[!UICONTROL Change Dates]**&#x200B;을(를) 클릭합니다.
 

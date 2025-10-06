@@ -4,9 +4,9 @@ description: 투자자를 위한 대시보드를 작성하는 방법에 대해 �
 exl-id: 917e7628-3498-4413-a7e1-61799989a7dd
 role: Admin, Data Architect, Data Engineer, User
 feature: Dashboards, Data Integration
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
    * 지표 - 매출
 * **[!UICONTROL Revenue from 1st time orders vs repeat orders]**
    * 지표 - 최초 주문 매출
-   * 필터 - 사용자의 주문 번호가 1과 같음
+      * 필터 - 사용자의 주문 번호가 1과 같음
    * 지표 2 - 반복 주문 매출
       * 필터 - 사용자의 주문 번호가 1보다 큼
    * 다중 Y축 확인란을 선택 취소합니다
@@ -77,4 +77,4 @@ ht-degree: 0%
 
 보고서를 신중하게 구성하고 세부 사항에 주의하십시오. 완료되면 대시보드는 다음과 유사합니다.
 
-![](../../mbi/assets/investor-dboard-example.png)
+![투자자 대시보드 빌드](../../mbi/assets/investor-dboard-example.png)

@@ -4,16 +4,16 @@ description: Salesforce 데이터를 통해 점수 책정 및 최적화부터 �
 exl-id: 249b2b40-8c8a-4616-9383-17690f07003d
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '136'
 ht-degree: 0%
 
 ---
 
 # [!DNL Salesforce] 연결
 
-![](../../../assets/Salesforce_Logo.png)
+![Salesforce 로고](../../../assets/Salesforce_Logo.png)
 
 >[!NOTE]
 >
@@ -36,4 +36,4 @@ ht-degree: 0%
 기술에 좀 더 정통한 경우 [[!DNL Salesforce] API 설명서](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm)를 통해 Salesforce이 [!DNL Commerce Intelligence]과(와) 통합되는 방법에 대해 자세히 알아볼 수 있습니다.
 
 * [ [!DNL Salesforce] 데이터가 필요합니다.](../integrations/salesforce-data.md)
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

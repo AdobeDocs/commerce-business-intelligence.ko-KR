@@ -4,9 +4,9 @@ description: 다양한 소스의 데이터를 통합하는 방법을 알아보�
 exl-id: 668cbc77-6a96-4687-9f40-3635b1be5c66
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '345'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Adobe 시작하기 전에 [계산된 열 유형 안내서](../../data-analyst/da
 
 계산된 열을 만들 때 모든 입력을 기억하는 데 문제가 있는 경우, 작성 시 이 참조 맵을 근처에 보관해 보십시오.
 
-![](../../assets/Calculated_Columns_Example.png)
+![Data Warehouse Manager의 계산된 열 구성 예](../../assets/Calculated_Columns_Example.png)
 
 ## 관련 설명서
 

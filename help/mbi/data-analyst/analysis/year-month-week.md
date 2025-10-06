@@ -4,9 +4,9 @@ description: 시간 경과에 따른 트렌드를 쉽게 보고 비교할 기간
 exl-id: 74cf11c3-7ce0-477f-9a28-9d782e5da3d9
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Reports, Dashboards
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '301'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Report Builder를 사용하면 시간 경과에 따른 트렌드를 쉽게 확인하고 비교할 기간에 대한 관점을 변경할 수 있습니다. 이 항목에서는 주 단위, 월 단위 및 년 단위 분석을 위한 보고서를 만들 수 있도록 대시보드를 설정하여 더 깊이 있게 구성하는 방법을 보여 줍니다.
 
-![](../../assets/Wow__mom__yoy.png)
+![주별, 월별 및 연도별 비교를 보여 주는 대시보드](../../assets/Wow__mom__yoy.png)
 
 시작하기 전에 더 자세한 [여기](../../tutorials/using-visual-report-builder.md) 및 독립 시간 옵션 [여기](../../tutorials/time-options-visual-rpt-bldr.md)를 살펴보십시오.
 
@@ -40,8 +40,8 @@ Report Builder를 사용하면 시간 경과에 따른 트렌드를 쉽게 확�
    * `created_at (month)` [!UICONTROL Calculation]: **to_char(A, &#39;mm-month&#39;)**
    * `created_at (day of the month)`&lt; [!UICONTROL Calculation]: **to_char(A, &#39;dd&#39;)**
    * `created_at (day of the week)` [!UICONTROL Calculation]: **to_char(A, &#39;d-Day&#39;)**
-   * **`created_at (hour of the day)` [!UICONTROL Calculation]: &#x200B;** to_char(A, &#39;hh24&#39;)**
-     ![](../../assets/new-arch-create-calc.png)
+   * **`created_at (hour of the day)` [!UICONTROL Calculation]: **to_char(A, &#39;hh24&#39;)**
+     ![Data Warehouse 관리자에서 계산된 열 인터페이스를 만듭니다](../../assets/new-arch-create-calc.png)
 
 ## 지표
 
@@ -64,10 +64,10 @@ Report Builder를 사용하면 시간 경과에 따른 트렌드를 쉽게 확�
 * 지표 `A`: `This year`
 * 지표 `B`: `Last year`
 * [!UICONTROL Time period]: `1 year ago to 0 years ago`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `created_at (month-day)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Line`
 
 * **MoM 차트**
@@ -81,10 +81,10 @@ Report Builder를 사용하면 시간 경과에 따른 트렌드를 쉽게 확�
 * 지표 `A`: 이번 달*
 * 지표 `B`: 지난 달*
 * [!UICONTROL Time period]: 1개월 전부터 0개월 전까지입니다.
-* &#x200B;
+* 
   [!UICONTROL Interval]: None
 * [!UICONTROL Group by]: `created_at (day of month)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: Line
 
 * **너비 차트**
@@ -98,10 +98,10 @@ Report Builder를 사용하면 시간 경과에 따른 트렌드를 쉽게 확�
 * 지표 `A`: `This week`
 * 지표 `B`: `Last week`
 * [!UICONTROL Time period]: `1 week ago to 0 weeks ago`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `created_at (day of week)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Line`
 
 * **DoD 차트**
@@ -115,10 +115,10 @@ Report Builder를 사용하면 시간 경과에 따른 트렌드를 쉽게 확�
 * 지표 `A`: `Today`
 * 지표 B: `Yesterday`
 * [!UICONTROL Time period]: `1 day ago to 0 days ago`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `created_at (hour of day)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Line`
 
 모든 보고서를 컴파일한 후 원하는 대로 대시보드에서 구성할 수 있습니다. 결과는 이 페이지 상단에 있는 이미지와 비슷할 수 있습니다.

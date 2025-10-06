@@ -4,9 +4,9 @@ description: 질적 집단이 무엇인지, 이 분석을 빌드하는 데 관�
 exl-id: 113244e4-409b-4129-b3d4-7a3433539ade
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '850'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 `qualitative cohort`에서 `Report Builder` 보고서를 만들면 Adobe 분석 팀이 필요한 표에 [고급 계산 열](../data-warehouse-mgr/creating-calculated-columns.md)을 만드는 작업이 포함됩니다.
 
-이를 만들려면 [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)을 제출하세요(이 문서 참조!). 다음은 알고 있어야 하는 사항입니다.
+이를 만들려면 [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)을 제출하세요(이 문서 참조!). 다음은 알고 있어야 하는 사항입니다.
 
 * 집단 분석을 수행할 `metric`과(와) 이 분석에서 사용하는 테이블(예: `Revenue` 테이블에 빌드된 `orders`)입니다.
 
@@ -55,7 +55,7 @@ Adobe 분석가 팀이 위의 내용에 응답하면 보고서를 작성할 새�
 
 먼저 분석 중인 각 `cohort`에 대해 한 번씩 코호트하려는 지표를 추가합니다. 이 예에서는 고객의 첫 주문 후 몇 개월 동안 `Revenue`(으)로 세그먼트화된 누적 `User's referral source`을(를) 봅니다. 즉, 각 세그먼트에 대해 특정 세그먼트에 대해 하나의 `Revenue` 지표와 필터를 추가합니다.
 
-![](../../assets/qualcohort1.gif)
+![질적 집단 분석 만들기에 대한 애니메이션 데모](../../assets/qualcohort1.gif)
 
 둘째, 보고서의 시간 옵션을 두 가지 변경해야 합니다.
 
@@ -65,7 +65,7 @@ Adobe 분석가 팀이 위의 내용에 응답하면 보고서를 작성할 새�
 
 이 예제에서는 `all time`의 `Revenue` 보기를 확인합니다. 그런 다음 일련의 점으로 끝나야 합니다.
 
-![](../../assets/qualcohort2.gif)
+![집단 그룹화 및 분석 옵션의 애니메이션 데모](../../assets/qualcohort2.gif)
 
 셋째, `cohorts`을(를) 설정하도록 조정합니다. Adobe 분석 팀에 지정한 `cohort date` 및 `time interval`을(를) 기반으로, 계정에 `cohort` 데이트를 수행하는 차원이 있습니다. 이 예제에서는 사용자 지정 차원을 `Months between this order and customer's first order date`이라고 합니다. 이 차원을 사용하면 다음 작업을 수행할 수 있습니다.
 

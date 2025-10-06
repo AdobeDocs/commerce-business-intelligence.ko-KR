@@ -4,16 +4,16 @@ description: 비즈니스의 성과를 확인하거나 가장 중요한 획득 �
 exl-id: d443e6ca-04b0-4090-a3be-14db71819356
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '89'
+source-wordcount: '92'
 ht-degree: 0%
 
 ---
 
 # [!DNL Spree] 연결
 
-![](../../../assets/spree-commerce-logo.png)
+![Commerce 로고 추가](../../../assets/spree-commerce-logo.png)
 
 비즈니스의 성과를 확인하거나 가장 중요한 확보 소스 및 채널을 찾고 싶으십니까? [!DNL Spree] 데이터를 [!DNL Commerce Intelligence]에 연결하면 이러한 질문에 답변할 수 있습니다.
 

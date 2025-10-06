@@ -4,9 +4,9 @@ description: 열을 만들어 분석을 위해 데이터를 보강하고 최적�
 exl-id: 1af79b9e-77ff-4fc6-917a-4e6743b95035
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '741'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 아래 예제에서는 `Seconds since customer's most recent order` 테이블에 `customers`을(를) 만듭니다. `X days` 내에서 구매(때로는 이탈이라고도 함)하지 않은 고객의 사용자 목록을 만드는 데 사용할 수 있습니다.
 
-![](../../assets/age.gif)
+![나이 계산 열 만들기에 대한 애니메이션 데모](../../assets/age.gif)
 
 ### 통화 변환기
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 Commerce 클라이언트의 경우 `base\_currency\_code` 필드는 일반적으로 기본 통화를 저장합니다. `Spot Time` 필드는 지표에 사용된 날짜와 일치해야 합니다.
 
-![](../../assets/currency_converter.png)
+![통화 변환기 계산 열 구성](../../assets/currency_converter.png)
 
 ## 일대다 계산된 열 {#onetomany}
 
@@ -59,7 +59,7 @@ Commerce 클라이언트의 경우 `base\_currency\_code` 필드는 일반적으
 
 아래 예제에서 `Customer's group\_id` 차원은 `orders` 테이블에 결합됩니다.
 
-![](../../assets/joined_column.gif)
+![조인된 열 연결 표를 만드는 애니메이션 데모](../../assets/joined_column.gif)
 
 ## 다대일 계산 열 {#manytoone}
 
@@ -71,7 +71,7 @@ Commerce 클라이언트의 경우 `base\_currency\_code` 필드는 일반적으
 
 아래 예제에서는 `Customer's lifetime number of canceled orders`에 대한 필터를 사용하여 `customers` 테이블에 `orders.status` 차원이 만들어집니다.
 
-![](../../assets/many_to_one.gif){: width="699" height="351"}
+![다대일 열 집계의 애니메이션 데모](../../assets/many_to_one.gif){: width="699" height="351"}
 
 ### 합계 {#sum}
 
@@ -95,7 +95,7 @@ Sum calculated 열은 `many` 테이블에 있는 값의 합계입니다.
 
 계산된 열을 생성할 때 모든 입력을 기억하는 데 문제가 있는 경우, 작성 시 이 참조 맵을 근처에 보관하십시오.
 
-![](../../assets/merged_reference_map.png)
+![병합된 계산된 열 구성을 표시하는 참조 맵](../../assets/merged_reference_map.png)
 
 ## 고급 계산 열 {#advanced}
 

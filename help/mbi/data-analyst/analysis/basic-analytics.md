@@ -4,9 +4,9 @@ description: 기본 분석을 이해하고 빌드하는 방법을 알아봅니�
 exl-id: 23cea7b3-2e66-40c3-b4bd-d197237782e3
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Warehouse Manager, Dashboards, Data Integration
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '3120'
+source-wordcount: '3130'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 **손님 주문을 수락하시겠습니까?**
 
-*그럴 경우 이 테이블에 모든 고객이 포함되지 않을 수 있습니다. 고객 분석에 모든 고객이 포함되는지 확인하려면 [지원 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)에 문의하십시오.*
+*그럴 경우 이 테이블에 모든 고객이 포함되지 않을 수 있습니다. 고객 분석에 모든 고객이 포함되는지 확인하려면 [지원 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)에 문의하십시오.*
 
 *손님 주문을 수락할지 확실하지 않습니까? 자세한 내용은 [이 항목](../data-warehouse-mgr/guest-orders.md)을 참조하세요!*
 
@@ -60,7 +60,7 @@ ht-degree: 0%
 * **[!UICONTROL Created_at]**: 주문을 만들거나 수행한 날짜입니다.
 * **[!UICONTROL Customer_email]**: 주문한 고객의 이메일 주소입니다. 고객의 고유 식별자일 수도 있습니다.
 * **[!UICONTROL Customer's lifetime number of orders]**: `Customers` 테이블에서 이름이 같은 열의 복사본입니다.
-* **[!UICONTROL Customer's order number]**: 주문과 연결된 고객의 순차적 주문 번호입니다. 예를 들어 표시되는 행이 고객의 첫 번째 주문인 경우 이 열은 &quot;1&quot;이지만, 고객의 15번째 주문인 경우 이 열에는 이 주문에 대한 &quot;15&quot;가 표시됩니다. 이 차원이 `Customers` 테이블에 없는 경우 [지원 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)에 이 차원을 빌드하도록 요청하십시오.
+* **[!UICONTROL Customer's order number]**: 주문과 연결된 고객의 순차적 주문 번호입니다. 예를 들어 표시되는 행이 고객의 첫 번째 주문인 경우 이 열은 &quot;1&quot;이지만, 고객의 15번째 주문인 경우 이 열에는 이 주문에 대한 &quot;15&quot;가 표시됩니다. 이 차원이 `Customers` 테이블에 없는 경우 [지원 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)에 이 차원을 빌드하도록 요청하십시오.
 * **[!UICONTROL Customer's order number (previous-current)]**: **[!UICONTROL Customer's order number]** 열에 있는 두 값의 연결입니다. 이 메서드는 아래 샘플 보고서에서 두 주문 간의 경과 시간을 표시하는 데 사용됩니다. 예를 들어, 고객의 첫 번째 주문 일자와 두 번째 주문 일자 사이의 시간은 이 계산과 함께 &quot;1-2&quot;로 표시됩니다.
 * **[!UICONTROL Coupon_code]**: 각 주문에 사용된 쿠폰을 표시합니다.
 * **[!UICONTROL Seconds since previous order]**: 고객의 주문 사이의 시간(초)입니다.
@@ -155,7 +155,7 @@ ht-degree: 0%
    * **[!UICONTROL Time Interval]**: `By Month`
    * **[!UICONTROL Group By]**: `Customer's Order Number`, `2` 및 `3` 선택
 
-  ![](../../assets/2nd_and_3rd_purchases_last_year.png)
+  ![작년의 두 번째 및 세 번째 구매 분석을 보여 주는 차트](../../assets/2nd_and_3rd_purchases_last_year.png)
 
 * **보고서 예 2**: 지난 해 반복 고객 수
    * **[!UICONTROL Metric]**: `Distinct Customers`
@@ -244,9 +244,9 @@ ht-degree: 0%
 * **설명**: 고객으로서 첫 30일 이내에 고객이 생성한 매출액의 평균입니다.
 * **지표 설명**: 이 지표는 **이(가) 정렬한** 테이블에서 `Customer's First 30 Day Revenue`의 `customer_entity`평균`created_at`을(를) 수행합니다.
 * **보고서 설명**: 고객의 첫 30일 매출에 대한 전체 평균
-* **[!UICONTROL Metric]**: `Average First 30 Day Revenue`
-* **[!UICONTROL Time Range]**: `All Time`
-* **[!UICONTROL Time Interval]**: `None`
+   * **[!UICONTROL Metric]**: `Average First 30 Day Revenue`
+   * **[!UICONTROL Time Range]**: `All Time`
+   * **[!UICONTROL Time Interval]**: `None`
 
 ![첫 30일 평균 수익](../../assets/Avg_first_30_day_revenue.png)<!--{: width="929"}-->
 

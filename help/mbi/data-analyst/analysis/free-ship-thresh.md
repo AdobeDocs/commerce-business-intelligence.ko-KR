@@ -4,9 +4,9 @@ description: 무료 배송 임계값의 성능을 추적하는 대시보드를 �
 exl-id: a90ad89b-96d3-41f4-bfc4-f8c223957113
 role: Admin,  User
 feature: Data Warehouse Manager, Dashboards, Reports
-source-git-commit: 6bdbdbcc652d476fa2a22589ac99678d5855e6fe
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 시작하기 전에 상점의 무료 배송 임계값에 대한 값이 다른 두 개의 개별 기간을 식별하려고 합니다.
 
-![](../../assets/free_shipping_threshold.png)
+![무료 배송 임계값 분석 및 주문 값 분포를 보여 주는 차트](../../assets/free_shipping_threshold.png)
 
 이 분석에는 [고급 계산 열](../data-warehouse-mgr/adv-calc-columns.md)이(가) 포함되어 있습니다.
 
@@ -66,9 +66,9 @@ ht-degree: 0%
 
 * 지표 `A`: `Average Order Value`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Scalar`
 
 * **배달 규칙 A가 있는 소계 버킷별 주문 수**
@@ -80,53 +80,53 @@ ht-degree: 0%
 
 * 지표 `A`: `Number of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Order subtotal (buckets)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Column`
 
 * 배송 규칙 A가 있는 소계별 주문 비율 **퍼센트**
    * [!UICONTROL Metric]: `Number of orders`
 
    * [!UICONTROL Metric]: `Number of orders`
-   * &#x200B;
+   * 
      [!UICONTROL 그룹 기준]: `Independent`
    * [!UICONTROL Formula]: `(A / B)`
-   * &#x200B;
+   * 
      [!UICONTROL Format]: `%`
 
 * 지표 `A`: `Number of orders by subtotal (hide)`
 * 지표 `B`: `Total number of orders (hide)`
 * [!UICONTROL Formula]: `% of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Order subtotal (buckets)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Line`
 
 * 소계가 배송 규칙 A를 초과하는 주문의 **퍼센트**
    * [!UICONTROL Metric]: `Number of orders`
-   * &#x200B;
+   * 
      [!UICONTROL Perspective]: `Cumulative`
 
    * [!UICONTROL Metric]: `Number of orders`
-   * &#x200B;
+   * 
      [!UICONTROL 그룹 기준]: `Independent`
 
    * [!UICONTROL Formula]: `1- (A / B)`
-   * &#x200B;
+   * 
      [!UICONTROL Format]: `%`
 
 * 지표 `A`: `Number of orders by subtotal`
 * 지표 `B`: `Total number of orders (hide)`
 * [!UICONTROL Formula]: `% of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Order subtotal (buckets)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Line`
 
 

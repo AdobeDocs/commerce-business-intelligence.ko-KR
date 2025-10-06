@@ -4,9 +4,9 @@ description: 방문자가 사이트를 사용하는 방법, 매력적인 콘텐�
 exl-id: b9879399-9e1a-4f36-b510-8426ebc83aeb
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '489'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >[관리자 권한](../../../administrator/user-management/user-management.md)이 필요합니다.
 
-![](../../../assets/google-analytics-logo.png)
+![Google Analytics 로고](../../../assets/google-analytics-logo.png)
 
 [!DNL Google Analytics]은(는) 인터넷에서 가장 널리 사용되는 웹 분석 서비스입니다. 웹 사이트에 [!DNL Google Analytics]을(를) 구현하면 방문자가 사이트를 사용하는 방법, 매력적인 콘텐츠, 방문자가 종료하는 위치 등을 추적할 수 있습니다. [!DNL Google Analytics Warehoused]은(는) 기존 [!DNL Google Analytics] 통합과 별도의 통합입니다. 기존 [!DNL Google Analytics] 통합의 라이브 피드와 다른 [!DNL Google Analytics] 데이터가 Data Warehouse에 있으므로 더 나은 분석을 수행할 수 있습니다. 다른 데이터와 함께 [!DNL Commerce Intelligence]에서 이러한 지표를 분석하면 사이트의 전반적인 상태와 유용성이 향상됩니다.
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->[!DNL Google Analytics Warehoused]은(는) `Premium` 통합입니다. 이 통합을 구독에 추가하려면 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하세요.
+>[!DNL Google Analytics Warehoused]은(는) `Premium` 통합입니다. 이 통합을 구독에 추가하려면 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하세요.
 
 1. `Connections` 아래의 **[!UICONTROL Admin** > **Integrations]** 페이지로 이동합니다.
 1. 오른쪽에 있는 **[!UICONTROL Add an Integration]**&#x200B;을(를) 클릭합니다.
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 ## 관련 설명서
 
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [ [!DNL Google Adwords] 연결 중](../integrations/google-adwords.md)
 * [웹 사이트 활동 및 고객 전환율 분석](../../analysis/web-act-cust-conversion.md)
 * [ [!DNL Google Analytics] 쿠키를 사용하여 사용자 획득 데이터 추적](../../analysis/google-track-user-acq.md)

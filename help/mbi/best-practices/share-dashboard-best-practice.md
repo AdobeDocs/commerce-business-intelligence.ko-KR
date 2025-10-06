@@ -4,9 +4,9 @@ description: 대시보드로 작업하고 공유하는 방법에 대해 알아�
 exl-id: 73df627f-bc08-45c0-aa5e-410c4fd0642d
 role: Admin, User
 feature: Dashboards
-source-git-commit: d40a04cedb3aee3385a8c34e0919f954431e0897
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '377'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 대시보드를 소유한 사용자를 보려면 왼쪽 상단 모서리에서 대시보드 드롭다운을 클릭합니다. 아래에 이름이 없는 모든 대시보드는 사용자의 것입니다.
 
-![](../../mbi/assets/Dash_ownership.png)
+![작성자 및 권한을 표시하는 대시보드 소유권 표시기](../../mbi/assets/Dash_ownership.png)
 
 모든 중복 대시보드를 제거하려면 다음 작업을 수행하십시오.
 

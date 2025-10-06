@@ -4,9 +4,9 @@ description: 재무 데이터의 형식을 지정하고 가져오는 방법을 �
 exl-id: cdbed262-7cf1-4fd6-ad5a-c44d26dffba7
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 2차원의 교차 탭 데이터 테이블은 종종 재무 데이터에 사용되는 형식입니다. 열과 행 모두에서 레이블로 분류된 값을 사용하는 경우 이러한 유형의 레이아웃은 사람의 눈과 스프레드시트 도구로 쉽게 볼 수 있지만 데이터베이스에 익숙하지 않습니다.
 
-![](../../mbi/assets/crosstab.png)
+![데이터를 피벗 테이블 레이아웃으로 표시하는 크로스탭 형식](../../mbi/assets/crosstab.png)
 
 [!DNL Commerce Intelligence]에서 이 데이터를 가져오고 분석하려면 테이블을 1차원 목록으로 병합해야 합니다. 병합되면 각 데이터 값은 모두 단일 행에 있는 여러 레이블로 분류됩니다. 여기서 각 행은 고유하거나, 고유 식별자를 갖게 됩니다(예: 기본 키 열).
 
-![](../../mbi/assets/flattened.png)
+![데이터를 열 형식 레이아웃으로 표시하는 병합된 형식](../../mbi/assets/flattened.png)
 
 ## 가져오기용 Excel 파일 서식 지정
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 1. 새 시트에 피벗 테이블을 만들고 **[!UICONTROL Finish]**&#x200B;을(를) 클릭합니다.
 1. 필드 목록에서 열 및 행 필드의 선택을 취소합니다.
 1. 결과 숫자 값을 두 번 클릭하여 병합된 소스 데이터를 새 시트에 표시합니다.
-   ![](../../mbi/assets/pivot-table-double-click.png)
+   확장하려면 두 번 클릭을 보여 주는 ![Excel 피벗 테이블 필드 목록](../../mbi/assets/pivot-table-double-click.png)
 1. `CSV` 파일로 저장합니다.
 
 ## 요약

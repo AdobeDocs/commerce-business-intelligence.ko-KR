@@ -4,9 +4,9 @@ description: 데이터 가시성 향상, 보고 간소화, 사용자 그룹별 �
 role: Admin, User
 feature: User Management
 exl-id: d96a075d-53ab-48d3-ba83-3ff4298a0cb7
-source-git-commit: df408b8947a62cdb498b56370be965c89c45f6ff
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '948'
 ht-degree: 0%
 
 ---
@@ -392,7 +392,7 @@ ht-degree: 0%
 
 사용자 그룹을 구성하려면 다음 작업을 수행하십시오.
 
-1. 기존 사용자 그룹을 보려면 [!UICONTROL **사용자 관리**] > [!UICONTROL **User Groups]**&#x200B;로 이동하십시오.
+1. 기존 사용자 그룹을 보려면 [!UICONTROL **사용자 관리**] > [!UICONTROL **User Groups]**로 이동하십시오.
 
    ![사용자 그룹 구성](../../assets/configure-user-groups.png)
 
@@ -460,7 +460,7 @@ ht-degree: 0%
 
 그러나 사용자는 사용자 구성 중에 매핑된 저장소를 기반으로 필터링된 대시보드 데이터를 볼 수 있습니다.
 
-![대시보드 관리자 보기](../../assets/view-dashboard-user.png)
+![필터링된 관리자 보기](../../assets/view-dashboard-user.png)
 
 >[!TIP]
 >

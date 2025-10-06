@@ -4,9 +4,9 @@ description: ' [!DNL Commerce Intelligence]에서 헬프 데스크 보고를 통
 exl-id: 1c7f7c5c-4b1c-4bcf-8f1d-2b4cf9cdb0fb
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '261'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >[관리자 권한](../../../administrator/user-management/user-management.md)이 필요합니다.
 
-![](../../../assets/Zendesk_logo.png)
+![Zendesk 로고](../../../assets/Zendesk_logo.png)
 
 [!DNL Zendesk] 데이터를 연결하면 [!DNL Commerce Intelligence]에서 헬프 데스크 보고를 통합할 수 있습니다. 이를 통해 고객 지원을 최적화하고 매출과 함께 헬프 데스크 성과를 모니터링할 수 있습니다.
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 ## [!DNL Zendesk]에서 [!DNL Commerce Intelligence] 자격 증명 페이지를 엽니다. {#stepone}
 
-1. `Integrations`데이터 원본&#x200B;**[!UICONTROL Manage Data** > **&#x200B; > {통합&#x200B;**&#x200B;의 **0} 페이지로 이동합니다.]**
+1. `Integrations`데이터 원본&#x200B;**[!UICONTROL Manage Data** > ** > {통합&#x200B;**의 **0} 페이지로 이동합니다.]**
 1. 화면 오른쪽에 있는 **[!UICONTROL Add Integration]**&#x200B;을(를) 클릭합니다.
 1. [!DNL Zendesk] 아이콘을 클릭합니다. [!DNL Zendesk] 자격 증명 페이지가 열립니다.
 
@@ -54,4 +54,4 @@ ht-degree: 0%
 ## 관련 항목:
 
 * [ [!DNL Zendesk] 데이터가 필요합니다.](../integrations/exp-zendesk-data.md)
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

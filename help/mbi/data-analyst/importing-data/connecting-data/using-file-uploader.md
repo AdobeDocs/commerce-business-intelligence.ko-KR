@@ -4,9 +4,9 @@ description: 모든 데이터를 단일 Data Warehouse에 넣는 방법을 알�
 exl-id: 28db0e78-0222-431d-bbb9-6ef133686603
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1298'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 ## 제한 사항 및 요구 사항 {#require}
 
 1. **파일 업로드에 대해 지원되는 형식은 `CSV` 또는`comma separated values`**&#x200B;뿐입니다. Excel에서 작업하는 경우 다른 이름으로 저장 기능을 사용하여 파일을 `.csv` 형식으로 저장할 수 있습니다.
-1. **`CSV`개 파일은`UTF-8 encoding`**&#x200B;을(를) 사용해야 합니다. 대부분의 경우, 이것은 문제가 아닙니다. 파일을 업로드하는 동안 이 오류가 발생하면 [이 지원 문서를 참조하십시오](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=ko).
+1. **`CSV`개 파일은`UTF-8 encoding`**&#x200B;을(를) 사용해야 합니다. 대부분의 경우, 이것은 문제가 아닙니다. 파일을 업로드하는 동안 이 오류가 발생하면 [이 지원 문서를 참조하십시오](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html).
 1. **파일은 100MB**&#x200B;보다 클 수 없습니다. 파일이 이보다 큰 경우 테이블을 청크로 분리하여 개별 파일로 저장합니다. 초기 파일이 로드된 후 데이터를 추가할 수 있습니다.
 1. **모든 테이블에`primary key`**&#x200B;이(가) 있어야 합니다. 테이블에 `primary key` 또는 테이블의 각 행에 대한 고유 식별자로 사용할 수 있는 열이 하나 이상 있어야 합니다. `primary key`(으)로 지정된 모든 열은 *절대*&#x200B;이(가) 될 수 있습니다. `primary key`은(는) 각 행에 숫자를 제공하는 열을 추가하는 것만큼 간단하거나 고유한 값의 열을 만들기 위해 연결된 두 개의 열일 수 있습니다(예: `campaign name` 및 `date`).
 
@@ -105,11 +105,11 @@ ZIP 코드 및 ID와 같은 파일의 일부 값은 0으로 시작되거나 끝�
 
 시각화가 필요한 경우 전체 프로세스를 살펴보십시오.
 
-![](../../../assets/fileupload.gif)
+![추가되는 데이터를 보여 주는 파일 업로드 프로세스의 애니메이션 데모](../../../assets/fileupload.gif)
 
 업로드된 테이블은 Data Warehouse Manager의 테이블 목록([모든 테이블] 및 [동기화된 테이블] 옵션 모두)에서 **파일 업로드** 섹션 아래에 표시됩니다.
 
-![](../../../assets/upload-tables.png)
+![데이터 가져오기에 사용 가능한 테이블을 표시하는 테이블 인터페이스 업로드](../../../assets/upload-tables.png)
 
 ## 기존 테이블에 데이터 업데이트 또는 추가 {#appending}
 
