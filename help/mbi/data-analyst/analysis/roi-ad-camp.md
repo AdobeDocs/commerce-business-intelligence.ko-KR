@@ -20,7 +20,7 @@ ht-degree: 0%
 * 광고 비용 데이터 가져오기:
    * [연결 [!DNL Google AdWords] 대상 [!DNL Commerce Intelligence]](../importing-data/integrations/google-adwords.md): [!DNL Adwords]에서 보낸 시간을 [!DNL Commerce Intelligence]에서 동기화합니다.
    * [다른 광고 비용 데이터 업로드](../importing-data/connecting-data/import-offline-ad-data.md): [!DNL Commerce Intelligence]에 대한 직접 커넥터가 없는 채널에 권장됩니다.
-   * 여러 소스에서 비용 데이터를 가져오는 경우 [의 데이터를 ](../../best-practices/consolidating-your-tables.md)통합[!DNL Commerce Intelligence]할 수 있습니다. 간단히 [지원 티켓을 제출](../../guide-overview.md#Submitting-a-Support-Ticket)하세요.
+   * 여러 소스에서 비용 데이터를 가져오는 경우 [의 데이터를 &#x200B;](../../best-practices/consolidating-your-tables.md)통합[!DNL Commerce Intelligence]할 수 있습니다. 간단히 [지원 티켓을 제출](../../guide-overview.md#Submitting-a-Support-Ticket)하세요.
 * [사용자 획득 채널 데이터 추적](../analysis/google-track-user-acq.md)
 
 ## 사용자 확보 캠페인
@@ -131,10 +131,10 @@ ht-degree: 0%
 
 ## 관련 설명서
 
-* [ [!DNL Google Analytics] E-Commerce을 통해 주문 참조 소스 추적](../importing-data/integrations/google-ecommerce.md)
+* [&#x200B; [!DNL Google Analytics] E-Commerce을 통해 주문 참조 소스 추적](../importing-data/integrations/google-ecommerce.md)
 * [데이터베이스에서 사용자 조회 소스 추적](../analysis/google-track-user-acq.md)
 * [데이터베이스에서 사용자 장치, 브라우저 및 OS 데이터 추적](../analysis/track-usr-dev-browser.md)
 * [가장 가치 있는 확보 소스 및 채널 살펴보기](../analysis/most-value-source-channel.md)
-* [ [!DNL Google Adwords] 계정 연결](../importing-data/integrations/google-adwords.md)
-* [ [!DNL Google Analytics] UTM 속성은 어떻게 작동합니까?](../analysis/utm-attributes.md)
-* [ [!DNL Google Analytics]의 UTM 태그 지정에 대한 5가지 모범 사례](../../best-practices/utm-tagging-google.md)
+* [&#x200B; [!DNL Google Adwords] 계정 연결](../importing-data/integrations/google-adwords.md)
+* [&#x200B; [!DNL Google Analytics] UTM 속성은 어떻게 작동합니까?](../analysis/utm-attributes.md)
+* [&#x200B; [!DNL Google Analytics]의 UTM 태그 지정에 대한 5가지 모범 사례](../../best-practices/utm-tagging-google.md)

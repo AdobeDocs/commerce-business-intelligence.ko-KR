@@ -55,46 +55,46 @@ ht-degree: 0%
 
 * **목표를 달성하는 데 남은 수익**
 * 지표 `A`: `Revenue`
-* 
+* &#x200B;
   [!UICONTROL 지표]: `Revenue`
 
 * 지표 `B`: `Target Revenue`
 * [!UICONTROL Metric]: `Monthly Revenue Target`
 
 * [!UICONTROL Formula]: `Revenue left to achieve target`
-* 
+* &#x200B;
   [!UICONTROL 공식]: `(B-A)`
-* 
+* &#x200B;
   [!UICONTROL Format]: `Number`
 
 * [!UICONTROL Time period]: (원하는 적절한 기간)
-* 
+* &#x200B;
   [!UICONTROL Interval]: `Month`
-* 
+* &#x200B;
   [!UICONTROL 차트 유형]: `Scalar`
 
 * **매출 목표**
 * 지표 `A`: `Revenue`
-* 
+* &#x200B;
   [!UICONTROL 지표]: `Revenue`
 
 * 지표 `B`: `Target Revenue`
 * [!UICONTROL Metric]: `Monthly Revenue Target`
 
 * 지표 `C`: `Revenue (amount change since previous year)`(숨기기)
-* 
+* &#x200B;
   [!UICONTROL 지표]: `Revenue`
 * [!UICONTROL Perspective]: `Amount change vs. Previous year`
 
 * [!UICONTROL Formula]: (작년 이번 달)
-* 
+* &#x200B;
   [!UICONTROL 공식]: `(A-C)`
-* 
+* &#x200B;
   [!UICONTROL Format]: `Currency`
 
 * `Multiple Y-Axes` 끄기
 * [!UICONTROL Time period]: (원하는 적절한 기간)*
-* 
+* &#x200B;
   [!UICONTROL Interval]: `Month`
 * [!UICONTROL Chart Type]: `Line Chart`
 

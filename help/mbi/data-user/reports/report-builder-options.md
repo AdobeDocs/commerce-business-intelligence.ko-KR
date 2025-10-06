@@ -14,7 +14,7 @@ ht-degree: 0%
 # Report Builder 선택
 
 >[!NOTE]
->>[관리자 권한](../../administrator/user-management/user-management.md)이 필요합니다.
+>&#x200B;>[관리자 권한](../../administrator/user-management/user-management.md)이 필요합니다.
 
 이제 분석을 만드는 데 사용할 수 있는 옵션이 더 많으므로 필요에 맞는 Report Builder의 기능을 정확히 아는 것이 어려울 수 있습니다. 이 항목에서는 분석을 작성하는 가장 좋은 방법을 선택하는 과정을 안내합니다.
 

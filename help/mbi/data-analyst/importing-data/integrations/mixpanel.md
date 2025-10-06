@@ -23,9 +23,9 @@ ht-degree: 0%
 
 간단한 3단계 프로세스를 통해 [!DNL Mixpanel] 데이터를 [!DNL Commerce Intelligence]에 연결:
 
-1. [ [!DNL Mixpanel] 에서  [!DNL Commerce Intelligence]자격 증명 페이지 열기](#stepone)
-1. [ [!DNL Mixpanel] API 자격 증명 검색](#steptwo)
-1. [ [!DNL Mixpanel] 에  [!DNL Commerce Intelligence]API 자격 증명 입력](#stepthree)
+1. [&#x200B; [!DNL Mixpanel] 에서  [!DNL Commerce Intelligence]자격 증명 페이지 열기](#stepone)
+1. [&#x200B; [!DNL Mixpanel] API 자격 증명 검색](#steptwo)
+1. [&#x200B; [!DNL Mixpanel] 에  [!DNL Commerce Intelligence]API 자격 증명 입력](#stepthree)
 
 이 프로세스를 완료하려면 두 개의 브라우저 창 또는 탭을 열어야 합니다. 하나는 [!DNL Commerce Intelligence]에 대한 것이고 다른 하나는 [!DNL Mixpanel] 계정에 대한 것입니다.
 
@@ -64,5 +64,5 @@ ht-degree: 0%
 
 ### 관련 항목
 
-* [ [!DNL Mixpanel] 데이터가 필요합니다.](../integrations/mixpanel-data.md)
+* [&#x200B; [!DNL Mixpanel] 데이터가 필요합니다.](../integrations/mixpanel-data.md)
 * [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

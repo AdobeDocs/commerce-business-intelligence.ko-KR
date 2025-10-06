@@ -166,7 +166,7 @@ ht-degree: 0%
 >
 >[!DNL Adobe Commerce Intelligence Pro] 고객인 경우 다음 단계를 조정하려면 고객 성공 관리자 또는 고객 기술 관리자에게 문의하십시오.
 
-구성을 완료한 후 [ 계정에 ](../getting-started/sign-in.md)로그인[!DNL Commerce Intelligence]하세요.
+구성을 완료한 후 [&#x200B; 계정에 &#x200B;](../getting-started/sign-in.md)로그인[!DNL Commerce Intelligence]하세요.
 
 <!---# Activate your [!DNL Commerce Intelligence] Account
 

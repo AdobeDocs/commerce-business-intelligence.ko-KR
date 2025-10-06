@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Commerce Intelligence]에서 6개월이나 6년 동안 활동했는지에 관계없이 정돈된 계정을 유지하는 것은 조직이 플랫폼을 최대한 활용하는 데 무엇보다 중요합니다. 시간이 지남에 따라 더 이상 필요하지 않은 사용자, 대시보드, 보고서, 지표 및 열이 있는 것이 당연합니다. 일회용으로 보고서를 만들어 놓고 잊어버렸거나 회사에서 나간 사용자가 계정을 비활성화한 적이 없을 수 있습니다.
 
-[ 계정의 ](../best-practices/naming-elements.md)모든 요소에 대해 표준화되고 명확한 이름 지정[!DNL Commerce Intelligence])을 사용하면 아래 계정 감사 단계를 통해 사용자의 불필요한 분석과 혼란을 줄일 수 있습니다. 한 가지 추가 이점에는 [잠재적으로 더 빠른 업데이트 주기](../best-practices/reduce-update-cycle-time.md)가 포함됩니다.
+[&#x200B; 계정의 &#x200B;](../best-practices/naming-elements.md)모든 요소에 대해 표준화되고 명확한 이름 지정[!DNL Commerce Intelligence])을 사용하면 아래 계정 감사 단계를 통해 사용자의 불필요한 분석과 혼란을 줄일 수 있습니다. 한 가지 추가 이점에는 [잠재적으로 더 빠른 업데이트 주기](../best-practices/reduce-update-cycle-time.md)가 포함됩니다.
 
 ## 1단계: 비활성 사용자 식별
 

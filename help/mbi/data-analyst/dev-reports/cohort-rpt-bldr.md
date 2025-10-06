@@ -31,7 +31,7 @@ ht-degree: 0%
 
 ### 새로운 아키텍처
 
-다음은 `Cohort Report Builder`새 아키텍처[에서 ](../../administrator/account-management/new-architecture.md)을(를) 사용하기 위한 지침입니다.
+다음은 `Cohort Report Builder`새 아키텍처[에서 &#x200B;](../../administrator/account-management/new-architecture.md)을(를) 사용하기 위한 지침입니다.
 
 1. 왼쪽 탭에서 **[!UICONTROL Report Builder]**&#x200B;을(를) 클릭하거나 대시보드에서 **[!UICONTROL Add Report** > **Create Report]**&#x200B;을(를) 클릭합니다.
 
@@ -101,7 +101,7 @@ ht-degree: 0%
 
 #### 레거시 아키텍처 {#personalinfo}
 
-다음은 이전 버전의 `Cohort Report Builder`에 대한 지침입니다. 새 버전을 사용하려면 [ 새 아키텍처 계정으로 마이그레이션하는 방법에 대한 자세한 내용은 ](../../administrator/account-management/new-architecture.md)새 아키텍처[!DNL Commerce Intelligence]를 참조하십시오.
+다음은 이전 버전의 `Cohort Report Builder`에 대한 지침입니다. 새 버전을 사용하려면 [&#x200B; 새 아키텍처 계정으로 마이그레이션하는 방법에 대한 자세한 내용은 &#x200B;](../../administrator/account-management/new-architecture.md)새 아키텍처[!DNL Commerce Intelligence]를 참조하십시오.
 
 #### 나만의 `cohort` 분석을 만들려면 어떻게 해야 합니까? {#create}
 

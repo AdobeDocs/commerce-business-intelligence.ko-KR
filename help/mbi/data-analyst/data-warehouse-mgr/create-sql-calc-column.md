@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # SQL 계산 열 만들기
 
-이 항목에서는 `Calculation`Data Warehouse 관리자[를 사용하여 표에 추가할 수 있는 ](../data-warehouse-mgr/tour-dwm.md) 열 유형의 용도와 사용에 대해 간략하게 설명합니다. 아래에서는 SQL 계산의 기능, 계산 사용 이유, SQL 계산 생성 프로세스에 대해 설명하고 두 가지 예를 포함합니다.
+이 항목에서는 `Calculation`Data Warehouse 관리자[를 사용하여 표에 추가할 수 있는 &#x200B;](../data-warehouse-mgr/tour-dwm.md) 열 유형의 용도와 사용에 대해 간략하게 설명합니다. 아래에서는 SQL 계산의 기능, 계산 사용 이유, SQL 계산 생성 프로세스에 대해 설명하고 두 가지 예를 포함합니다.
 
 **설명**
 

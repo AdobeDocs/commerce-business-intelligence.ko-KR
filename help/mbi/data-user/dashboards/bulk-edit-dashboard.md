@@ -15,11 +15,11 @@ ht-degree: 0%
 
 벌크 편집 기능을 사용하면 대시보드에서 차트 이름과 날짜를 쉽게 변경할 수 있습니다. 예를 들어 특정 대시보드의 모든 차트가 단일 저장소를 참조하고 분기별이 아닌 월별 기준으로 보고하도록 할 수 있습니다. 모든 항목을 수동으로 변경하는 대신 `bulk-editing` 기능을 사용할 수 있도록 하십시오. 이 항목에서는 다음을 사용하는 방법을 배웁니다.
 
-* [ [!DNL Find/Replace] 기능](#findreplace)
+* [&#x200B; [!DNL Find/Replace] 기능](#findreplace)
 
-* [ [!DNL Prepend Name] 기능](#prepend)
+* [&#x200B; [!DNL Prepend Name] 기능](#prepend)
 
-* [ [!DNL Change Dates] 기능](#dates)
+* [&#x200B; [!DNL Change Dates] 기능](#dates)
 
 *이 변경 내용을 영구적으로 적용해야 하는지 확인하십시오.* 그렇지 않으면 대시보드를 복제한 다음 새 대시보드에서 날짜를 변경하는 것이 좋습니다. 이를 통해 필요한 변경 사항을 유지하면서 원래 대시보드를 유지할 수 있습니다.
 

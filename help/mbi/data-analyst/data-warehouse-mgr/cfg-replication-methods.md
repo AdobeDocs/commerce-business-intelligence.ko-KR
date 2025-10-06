@@ -44,7 +44,7 @@ ht-degree: 0%
 예를들어 테이블에 마지막으로 데이터가 변경된 시간을 나타내는 `modified\_at` 열이 있을 수 있습니다. 가장 최근 업데이트가 화요일 정오에 실행된 경우, 업데이트에서는 화요일 정오보다 큰 `modified\_at` 값을 가진 모든 행을 검색합니다. 화요일 정오 이후에 생성되거나 수정된 모든 검색된 행은 Data Warehouse에 복제됩니다.
 
 **알고 계십니까?**
-데이터베이스가 현재 `Incremental` 복제 메서드를 지원하지 않더라도 [ 또는 ](../../best-practices/mod-db-inc-replication.md)을(를) 사용할 수 있도록 `Modified At`데이터베이스를 변경`Single Auto Incrementing PK`할 수 있습니다.
+데이터베이스가 현재 `Incremental` 복제 메서드를 지원하지 않더라도 [&#x200B; 또는 &#x200B;](../../best-practices/mod-db-inc-replication.md)을(를) 사용할 수 있도록 `Modified At`데이터베이스를 변경`Single Auto Incrementing PK`할 수 있습니다.
 
 `Modified At`은(는) 가장 이상적인 복제 방법일 뿐만 아니라 가장 빠릅니다. 이 방법은 대규모 데이터 세트에서 눈에 띄는 속도 증가를 생성할 뿐만 아니라 재확인 옵션을 구성할 필요가 없습니다. 다른 방법은 작은 데이터 하위 집합이 변경된 경우에도 변경 사항을 식별하기 위해 전체 테이블을 반복해야 합니다. `Modified At`은(는) 작은 하위 집합만 반복합니다.
 
@@ -135,6 +135,6 @@ ht-degree: 0%
 ## 관련 설명서
 
 * [데이터 재확인 이해](../data-warehouse-mgr/cfg-data-rechecks.md)
-* [지원할 데이터베이스 수정 ](../../best-practices/mod-db-inc-replication.md)
+* [지원할 데이터베이스 수정 &#x200B;](../../best-practices/mod-db-inc-replication.md)
 * [분석을 위해 데이터베이스 최적화](../../best-practices/opt-db-analysis.md)
 * [업데이트 시간 단축](../../best-practices/reduce-update-cycle-time.md)
