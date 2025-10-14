@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 활성화된 [!DNL Adobe Commerce Intelligence] 계정에 액세스
 
-[!DNL Commerce Intelligence]온-프레미스 또는 클라우드[에 대해 ](../getting-started/onpremise-activation.md) 계정을 활성화하고 Adobe 계정 팀과 함께 구성 단계를 완료하면 이제 계정에 로그인할 수 있습니다.
+[!DNL Commerce Intelligence]온-프레미스 또는 클라우드[에 대해 &#x200B;](../getting-started/onpremise-activation.md) 계정을 활성화하고 Adobe 계정 팀과 함께 구성 단계를 완료하면 이제 계정에 로그인할 수 있습니다.
 
 ## [!DNL Adobe ID]을(를) 사용하여 로그인
 

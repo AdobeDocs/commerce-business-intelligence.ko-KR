@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 권장 지표
 
-반복 확률 감소 및 이탈을 분석할 때 다음 지표를 사용하는 것이 좋습니다([ 또는 빌드](../../data-user/reports/ess-manage-data-metrics.md)).
+반복 확률 감소 및 이탈을 분석할 때 다음 지표를 사용하는 것이 좋습니다([&#x200B; 또는 빌드](../../data-user/reports/ess-manage-data-metrics.md)).
 
 ### 초기 반복 순서 확률
 

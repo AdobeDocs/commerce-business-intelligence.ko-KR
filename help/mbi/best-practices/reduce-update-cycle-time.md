@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## 재검사 빈도 감소
 
-데이터베이스 테이블에는 변경 가능한 값이 있는 데이터 열이 있을 수 있습니다. 예를 들어 **orders** 테이블에 **status**(이)라는 열이 있을 수 있습니다. 주문이 데이터베이스에 처음 기록되면 상태 열에 값 `pending`이(가) 포함될 수 있습니다. 이 [ 값으로 ](../data-analyst/data-warehouse-mgr/tour-dwm.md)Data Warehouse`pending`에서 순서가 복제됩니다.
+데이터베이스 테이블에는 변경 가능한 값이 있는 데이터 열이 있을 수 있습니다. 예를 들어 **orders** 테이블에 **status**(이)라는 열이 있을 수 있습니다. 주문이 데이터베이스에 처음 기록되면 상태 열에 값 `pending`이(가) 포함될 수 있습니다. 이 [&#x200B; 값으로 &#x200B;](../data-analyst/data-warehouse-mgr/tour-dwm.md)Data Warehouse`pending`에서 순서가 복제됩니다.
 
 변경 가능한 열은 시간이 지남에 따라 [업데이트된 값에 대해 다시 확인](../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md)해야 합니다. 기본적으로 [!DNL Commerce Intelligence]은(는) 업데이트할 때마다 이러한 열을 다시 확인하지만, 다시 확인하고 복제해야 할 데이터가 많은 경우 업데이트 시간에 부정적인 영향을 줄 수 있습니다. Adobe에서는 업데이트할 때마다 다시 검사를 실행하는 대신 재검사 빈도를 매일, 매주 또는 매월 설정하는 것이 좋습니다.
 

@@ -36,5 +36,5 @@ ht-degree: 0%
 
 ## 관련 항목
 
-* [ [!DNL AdWords] 데이터 연결](../integrations/google-adwords.md)
+* [&#x200B; [!DNL AdWords] 데이터 연결](../integrations/google-adwords.md)
 * [광고 캠페인에 대한 ROI 향상](../../analysis/roi-ad-camp.md)

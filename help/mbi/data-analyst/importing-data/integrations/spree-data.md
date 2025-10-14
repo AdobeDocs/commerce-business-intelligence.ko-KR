@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [에 [!DNL Spree] 스토어](../../../data-analyst/importing-data/integrations/spree.md)를 연결한 후 [Data Warehouse 관리자](../../data-warehouse-mgr/tour-dwm.md)를 사용하여 분석을 위해 [!DNL Spree] 플랫폼에서 관련 데이터 필드를 쉽게 추적할 수 있습니다.
 
-이 항목에서는 [!DNL Spree] 데이터에 대한 [!DNL Commerce Intelligence]추가 설명서[에 대한 링크를 포함하여 ](https://guides.spreecommerce.org/developer/addresses.html#address)에서 [!DNL Spree] 계정으로 가져올 수 있는 기본 데이터 테이블을 살펴봅니다.
+이 항목에서는 [!DNL Spree] 데이터에 대한 [!DNL Commerce Intelligence]추가 설명서[에 대한 링크를 포함하여 &#x200B;](https://guides.spreecommerce.org/developer/addresses.html#address)에서 [!DNL Spree] 계정으로 가져올 수 있는 기본 데이터 테이블을 살펴봅니다.
 
 | **테이블 이름** | **설명** |
 |-----|-----|
@@ -29,5 +29,5 @@ ht-degree: 0%
 
 ## 관련 항목:
 
-* [ [!DNL Spree] 연결 중](../integrations/spree.md)
+* [&#x200B; [!DNL Spree] 연결 중](../integrations/spree.md)
 * [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)

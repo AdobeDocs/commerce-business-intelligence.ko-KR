@@ -29,6 +29,6 @@ ht-degree: 0%
 
    ![cj 계열사 데이터 내보내기](../../../assets/export-an-individual-order-2.jpg)<!--{:.zoom}-->
 
-1. 파일을 다운로드한 후에는 [ Data Warehouse에 ](../connecting-data/using-file-uploader.md)파일을 업로드[!DNL Commerce Intelligence]할 수 있습니다.
+1. 파일을 다운로드한 후에는 [&#x200B; Data Warehouse에 &#x200B;](../connecting-data/using-file-uploader.md)파일을 업로드[!DNL Commerce Intelligence]할 수 있습니다.
 
    이렇게 하면 정기적으로 새 데이터를에 계속 업로드할 수 있는 [!DNL Commerce Intelligence] Data Warehouse에 테이블이 만들어집니다. 파일을 업로드할 때 [파일 업로더 사용](../connecting-data/using-file-uploader.md)에 나열된 서식 요구 사항을 따릅니다.

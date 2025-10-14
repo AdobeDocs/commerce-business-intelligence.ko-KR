@@ -29,5 +29,5 @@ ht-degree: 0%
 
 ## 관련 항목
 
-* [ [!DNL Adobe Commerce] 연결 중](../integrations/magento.md)
+* [&#x200B; [!DNL Adobe Commerce] 연결 중](../integrations/magento.md)
 * [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)

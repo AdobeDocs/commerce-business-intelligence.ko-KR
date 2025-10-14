@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Linkshare] 데이터를 [!DNL Adobe Commerce Intelligence]&#x200B;(으)로 가져오려면 다음 두 가지 작업을 수행해야 합니다.
 
-1. [Linkshare 데이터 내보내기 ](#export)
+1. [Linkshare 데이터 내보내기 &#x200B;](#export)
 1. [스프레드시트를  [!DNL Commerce Intelligence]에 업로드](../connecting-data/using-file-uploader.md)
 
 ## Linkshare에서 데이터 내보내기 {#export}
@@ -40,4 +40,4 @@ ht-degree: 0%
 
    이 시점에서 `.csv` 파일을 다운로드했습니다.
 
-파일을 다운로드한 후 [!DNL Commerce Intelligence] 기능[`File Upload`을 사용하여 ](../connecting-data/using-file-uploader.md)에 업로드할 수 있습니다.
+파일을 다운로드한 후 [!DNL Commerce Intelligence] 기능[`File Upload`을 사용하여 &#x200B;](../connecting-data/using-file-uploader.md)에 업로드할 수 있습니다.

@@ -117,7 +117,7 @@ Report Builder에서 이 보고서를 만들려면 `Revenue by user registration
 
 ## 관련 항목 {#related}
 
-* [ [!DNL Google ECommerce]을(를) 통한 주문 조회 원본 추적](../importing-data/integrations/google-ecommerce.md)
-* [ [!DNL Google Adwords] 계정 연결 중](../importing-data/integrations/google-adwords.md)
+* [&#x200B; [!DNL Google ECommerce]을(를) 통한 주문 조회 원본 추적](../importing-data/integrations/google-ecommerce.md)
+* [&#x200B; [!DNL Google Adwords] 계정 연결 중](../importing-data/integrations/google-adwords.md)
 * [주문 및 고객 데이터를 사용하여  [!DNL Google ECommerce] 차원 작성](../data-warehouse-mgr/bldg-google-ecomm-dim.md)
-* [ [!DNL Google Analytics]의 UTM 태그 지정에 대한 우수 사례](../../best-practices/utm-tagging-google.md)
+* [&#x200B; [!DNL Google Analytics]의 UTM 태그 지정에 대한 우수 사례](../../best-practices/utm-tagging-google.md)

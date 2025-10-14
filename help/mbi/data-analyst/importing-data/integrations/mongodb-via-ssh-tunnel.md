@@ -15,11 +15,11 @@ ht-degree: 0%
 
 SSH 터널을 통해 [!DNL MongoDB] 데이터베이스를 [!DNL Commerce Intelligence]에 연결하려면 다음을 수행해야 합니다.
 
-1. [ [!DNL Commerce Intelligence] 공개 키 검색](#retrieve)
-1. [ [!DNL Commerce Intelligence] IP 주소에 대한 액세스 허용](#allowlist)
+1. [&#x200B; [!DNL Commerce Intelligence] 공개 키 검색](#retrieve)
+1. [&#x200B; [!DNL Commerce Intelligence] IP 주소에 대한 액세스 허용](#allowlist)
 1. [Commerce Intelligence용 Linux 사용자 만들기](#linux)
 1. [Commerce Intelligence용  [!DNL MongoDB] 사용자 만들기](#mongodb)
-1. [ [!DNL Commerce Intelligence]에 연결 및 사용자 정보 입력](#finish)
+1. [&#x200B; [!DNL Commerce Intelligence]에 연결 및 사용자 정보 입력](#finish)
 
 >[!NOTE]
 >

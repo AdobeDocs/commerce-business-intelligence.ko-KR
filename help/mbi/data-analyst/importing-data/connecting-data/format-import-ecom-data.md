@@ -25,7 +25,7 @@ ht-degree: 0%
 | `Customer` | 주문한 고객. |
 | `Order total` | 총 주문 수. 이 열은 계산 기반 열일 수 있으며, 다른 열의 값(예: 소계 및 배송)은 이 열의 합계를 구성합니다. |
 | `Currency` | 주문이 지불된 통화. 관련 있는 경우 포함. |
-| ` Order status` | `In Progress`, `Refunded` 또는 `Complete` 등 주문 상태. 이 열의 값이 변경됩니다(완료되지 않은 경우). [ 페이지의 ](../../../data-analyst/importing-data/connecting-data/using-file-uploader.md)데이터 추가 기능`File Uploads`을 사용하여 새 데이터와 업데이트된 데이터를 가져올 수 있습니다. |
+| ` Order status` | `In Progress`, `Refunded` 또는 `Complete` 등 주문 상태. 이 열의 값이 변경됩니다(완료되지 않은 경우). [&#x200B; 페이지의 &#x200B;](../../../data-analyst/importing-data/connecting-data/using-file-uploader.md)데이터 추가 기능`File Uploads`을 사용하여 새 데이터와 업데이트된 데이터를 가져올 수 있습니다. |
 | `Acquisition/marketing channel` | 주문한 고객이 참조한 획득 또는 마케팅 채널. |
 | `Order datetime` | 주문이 생성된 날짜와 시간입니다. |
 | `Order updated at` | 주문 레코드를 마지막으로 수정한 날짜 및 시간입니다. |

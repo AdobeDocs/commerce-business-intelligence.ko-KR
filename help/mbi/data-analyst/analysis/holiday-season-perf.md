@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## 권장 지표
 
-휴가철 성과를 분석할 때 다음 지표를 분석([ 또는 구축](../../data-user/reports/ess-manage-data-metrics.md))해 보십시오.
+휴가철 성과를 분석할 때 다음 지표를 분석([&#x200B; 또는 구축](../../data-user/reports/ess-manage-data-metrics.md))해 보십시오.
 
 ### 신규 고객 수, 주문 수, 매출
 

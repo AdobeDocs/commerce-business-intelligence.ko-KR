@@ -25,7 +25,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->예기치 않거나 중요하지 않은 결과를 방지하려면 사용하는 모든 차원이 [에서 사용하는 ](https://ga-dev-tools.google/dimensions-metrics-explorer/)하나 이상의 지표와 호환`Report Builder`되는지 확인하십시오.
+>예기치 않거나 중요하지 않은 결과를 방지하려면 사용하는 모든 차원이 [에서 사용하는 &#x200B;](https://ga-dev-tools.google/dimensions-metrics-explorer/)하나 이상의 지표와 호환`Report Builder`되는지 확인하십시오.
 
 단일 테이블(`report`)이 Data Warehouse에 만들어집니다.
 
@@ -62,4 +62,4 @@ ht-degree: 0%
 
 ## 관련 항목:
 
-* [ [!DNL Google Analytics Warehoused] 연결 중](../integrations/google-analytics-warehoused.md)
+* [&#x200B; [!DNL Google Analytics Warehoused] 연결 중](../integrations/google-analytics-warehoused.md)
