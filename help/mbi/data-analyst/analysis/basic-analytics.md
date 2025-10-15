@@ -88,7 +88,7 @@ ht-degree: 0%
 
 ## 마케팅 지출 테이블
 
-마케팅 지출을 분석할 때 분석에 [!DNL Facebook], [!DNL Google AdWords] 또는 다른 소스를 포함할 수 있습니다. 여러 마케팅 지출 소스가 있는 경우 [Managed Services 팀](https://business.adobe.com/products/magento/fully-managed-service.html)에 문의하여 마케팅 캠페인에 대한 통합 테이블을 설정하십시오.
+마케팅 지출을 분석할 때 분석에 [!DNL Facebook], [!DNL Google AdWords] 또는 다른 소스를 포함할 수 있습니다. 여러 마케팅 지출 소스가 있는 경우 [Managed Services 팀](https://business.adobe.com/kr/products/magento/fully-managed-service.html)에 문의하여 마케팅 캠페인에 대한 통합 테이블을 설정하십시오.
 
 **차원**
 

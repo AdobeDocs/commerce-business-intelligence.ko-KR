@@ -64,7 +64,7 @@ ht-degree: 0%
 * 사이트 방문 횟수
 * 전환율
 
-[Commerce 데이터 보강 서비스](https://business.adobe.com/products/magento/magento-commerce.html)를 사용하여 다음에 대한 보고서를 포함할 수 있습니다.
+[Commerce 데이터 보강 서비스](https://business.adobe.com/kr/products/magento/magento-commerce.html)를 사용하여 다음에 대한 보고서를 포함할 수 있습니다.
 
 * 주/지역, 연령, 성별 고유 고객.
 

@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ![반환 비율과 이유를 보여주는 자세한 반환 대시보드](../../assets/detailed-returns-dboard.png)
 
-시작하기 전에 [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 고객이어야 하며 귀사에서 반품에 `enterprise\_rma` 테이블을 사용하고 있는지 확인해야 합니다.
+시작하기 전에 [Adobe Commerce](https://business.adobe.com/kr/products/magento/magento-commerce.html) 고객이어야 하며 귀사에서 반품에 `enterprise\_rma` 테이블을 사용하고 있는지 확인해야 합니다.
 
 이 분석에는 [고급 계산 열](../data-warehouse-mgr/adv-calc-columns.md)이(가) 포함되어 있습니다.
 
