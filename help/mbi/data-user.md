@@ -1,12 +1,12 @@
 ---
 title: 데이터 사용자
-description: 데이터 사용자
+description: 데이터를 사용하여 보다 정보에 입각한 비즈니스 결정을 내리고 보고서 및 대시보드를 만드는 방법을 알아봅니다.
 exl-id: 2f412c94-5042-4411-b19b-482993e6f70f
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: cd4698a1ce3721d80aeec0782ee1efb3e43b5ce6
 workflow-type: tm+mt
-source-wordcount: '70'
+source-wordcount: '86'
 ht-degree: 0%
 
 ---
