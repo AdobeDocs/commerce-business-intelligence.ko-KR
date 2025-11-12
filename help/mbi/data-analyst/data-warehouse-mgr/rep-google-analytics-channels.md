@@ -4,9 +4,9 @@ description: 획득 소스를 사용하여 Google Analytics 채널을 복제하�
 exl-id: e7248fe4-94db-4cdf-8f58-1f65061a207d
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: cb7dd221f3e83be0c7ee01a6af479e5d1bad108c
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '689'
 ht-degree: 0%
 
 ---
@@ -44,9 +44,9 @@ ht-degree: 0%
 
 이제 채널은 소스와 미디어의 조합일 뿐이므로 Data Warehouse에서 이러한 그룹화를 다시 만드는 쉬운 3단계 프로세스입니다.
 
-1. **통합 사용[!DNL Google ECommerce]2&rbrace;**
+1. **통합 사용[!DNL Google ECommerce]2}**
 
-   [활성화하면](../importing-data/integrations/google-ecommerce.md)Data Warehouse에서 [medium] 및 {{ site.baseurl }}source **필드를**&#x200B;동기화&#x200B;**(../**/data-analyst/data-warehouse-mgr/tour-dwm.html#syncing)해야 합니다. 이 작업이 완료되면 중간 및 소스 획득 데이터를 Data Warehouse으로 가져옵니다.
+   [활성화하면](../importing-data/integrations/google-ecommerce.md)Data Warehouse에서 [중간](tour-dwm.md#syncing) 및 **소스** 필드를 **동기화**&#x200B;하세요. 이 작업이 완료되면 중간 및 소스 획득 데이터를 Data Warehouse으로 가져옵니다.
 
 1. **Google의 채널 그룹 매핑 업로드**
 
