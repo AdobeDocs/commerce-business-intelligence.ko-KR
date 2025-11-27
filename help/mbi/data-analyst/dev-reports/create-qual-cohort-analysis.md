@@ -4,9 +4,9 @@ description: 질적 집단이 무엇인지, 이 분석을 빌드하는 데 관�
 exl-id: 113244e4-409b-4129-b3d4-7a3433539ade
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '846'
 ht-degree: 0%
 
 ---
@@ -20,8 +20,6 @@ ht-degree: 0%
 ## `qualitative cohorts`은(는) 무엇입니까? {#whatare}
 
 일반적으로 `Cohort` 분석은 수명 주기 동안 유사한 특성을 공유하는 사용자 그룹의 분석으로 정의할 수 있습니다. 이를 통해 다양한 사용자 그룹 간 행동 트렌드를 식별할 수 있습니다.
-
-[집단 분석](https://www.cohortanalysis.com/)을 참조하세요.
 
 대부분의 `cohort`은(는) 공통의 날짜(예: 주어진 달에 첫 번째 구매한 모든 고객 집합)별로 [!DNL Commerce Intelligence] 그룹 사용자를 함께 분석합니다. `qualitative cohort`은(는) 약간 다릅니다. 시간 기반이 아닌 특성으로 정의된 사용자 그룹입니다. 예를 들면 다음과 같습니다.
 
@@ -39,7 +37,7 @@ ht-degree: 0%
 
 `qualitative cohort`에서 `Report Builder` 보고서를 만들면 Adobe 분석 팀이 필요한 표에 [고급 계산 열](../data-warehouse-mgr/creating-calculated-columns.md)을 만드는 작업이 포함됩니다.
 
-이를 만들려면 [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)을 제출하세요(이 문서 참조!). 다음은 알고 있어야 하는 사항입니다.
+이를 만들려면 [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)을 제출하세요(이 문서 참조!). 다음은 알고 있어야 하는 사항입니다.
 
 * 집단 분석을 수행할 `metric`과(와) 이 분석에서 사용하는 테이블(예: `Revenue` 테이블에 빌드된 `orders`)입니다.
 

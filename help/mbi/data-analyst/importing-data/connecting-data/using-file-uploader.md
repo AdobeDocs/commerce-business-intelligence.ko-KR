@@ -4,9 +4,9 @@ description: 모든 데이터를 단일 Data Warehouse에 넣는 방법을 알�
 exl-id: 28db0e78-0222-431d-bbb9-6ef133686603
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
 workflow-type: tm+mt
-source-wordcount: '1298'
+source-wordcount: '1293'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 ## 제한 사항 및 요구 사항 {#require}
 
 1. **파일 업로드에 대해 지원되는 형식은 `CSV` 또는`comma separated values`**&#x200B;뿐입니다. Excel에서 작업하는 경우 다른 이름으로 저장 기능을 사용하여 파일을 `.csv` 형식으로 저장할 수 있습니다.
-1. **`CSV`개 파일은`UTF-8 encoding`**&#x200B;을(를) 사용해야 합니다. 대부분의 경우, 이것은 문제가 아닙니다. 파일을 업로드하는 동안 이 오류가 발생하면 [이 지원 문서를 참조하십시오](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=ko).
+1. **`CSV`개 파일은`UTF-8 encoding`**&#x200B;을(를) 사용해야 합니다. 대부분의 경우, 이것은 문제가 아닙니다. 파일을 업로드하는 동안 이 오류가 발생하면 [이 지원 문서를 참조하십시오](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html).
 1. **파일은 100MB**&#x200B;보다 클 수 없습니다. 파일이 이보다 큰 경우 테이블을 청크로 분리하여 개별 파일로 저장합니다. 초기 파일이 로드된 후 데이터를 추가할 수 있습니다.
 1. **모든 테이블에`primary key`**&#x200B;이(가) 있어야 합니다. 테이블에 `primary key` 또는 테이블의 각 행에 대한 고유 식별자로 사용할 수 있는 열이 하나 이상 있어야 합니다. `primary key`(으)로 지정된 모든 열은 *절대*&#x200B;이(가) 될 수 있습니다. `primary key`은(는) 각 행에 숫자를 제공하는 열을 추가하는 것만큼 간단하거나 고유한 값의 열을 만들기 위해 연결된 두 개의 열일 수 있습니다(예: `campaign name` 및 `date`).
 
@@ -73,7 +73,7 @@ ZIP 코드 및 ID와 같은 파일의 일부 값은 0으로 시작되거나 끝�
 
 숫자 서식을 변경하는 방법의 예로 `US ZIP codes`을(를) 사용하십시오. [!DNL Excel]에서 `ZIP codes`과(와) [숫자 형식을 변경](https://support.microsoft.com/en-us/office/display-numbers-as-postal-codes-61b55c9f-6fe3-4e54-96ca-9e85c38a5a1d?ui=en-us&rs=en-us&ad=us)하여 `ZIP code`을(를) 포함하는 열을 강조 표시합니다. 사용자 지정 숫자 형식을 선택할 수도 있고 `Type` 창에서 `00000`을(를) 입력합니다. 일부 코드는 `00000` 형식으로 지정되고 다른 코드는 `00000-0000`인 경우 이 메서드가 문제를 일으킬 수 있습니다.
 
-`Type`은(는) ID와 같은 다른 데이터 형식[을(를) 수용하도록 형식이 다르게 &#x200B;](https://support.microsoft.com/en-us/office/keeping-leading-zeros-and-large-numbers-1bf7b935-36e1-4985-842f-5dfa51f85fe7?correlationid=e1d4c2d3-cd5d-4a14-999d-437800274a90&ui=en-us&rs=en-us&ad=us)될 수 있습니다. 예를 들어 `ID`이(가) 9자리 길이이면 `Type`은(는) `000000000` 또는 `000-000-000`일 수 있습니다. `123456`이(가) `000-123-456`(으)로 변경됩니다.
+`Type`은(는) ID와 같은 다른 데이터 형식[을(를) 수용하도록 형식이 다르게 ](https://support.microsoft.com/en-us/office/keeping-leading-zeros-and-large-numbers-1bf7b935-36e1-4985-842f-5dfa51f85fe7?correlationid=e1d4c2d3-cd5d-4a14-999d-437800274a90&ui=en-us&rs=en-us&ad=us)될 수 있습니다. 예를 들어 `ID`이(가) 9자리 길이이면 `Type`은(는) `000000000` 또는 `000-000-000`일 수 있습니다. `123456`이(가) `000-123-456`(으)로 변경됩니다.
 
 [!DNL Google Docs] 및 [!DNL Apple Numbers] 리소스의 경우 이 페이지 하단에 있는 [관련](#related) 목록을 참조하십시오.
 
@@ -153,5 +153,4 @@ ZIP 코드 및 ID와 같은 파일의 일부 값은 0으로 시작되거나 끝�
 
 ## 타사 리소스
 
-* [숫자 데이터 서식 가이드](http://www.dummies.com/how-to/content/how-to-choose-a-number-format-in-your-numbers-spre.html)
 * [[!DNL Google Docs] 데이터 서식 가이드](https://support.google.com/docs/answer/56470?hl=en)

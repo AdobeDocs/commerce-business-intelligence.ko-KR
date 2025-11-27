@@ -4,9 +4,9 @@ description: 획득 소스를 사용하여 Google Analytics 채널을 복제하�
 exl-id: e7248fe4-94db-4cdf-8f58-1f65061a207d
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: cb7dd221f3e83be0c7ee01a6af479e5d1bad108c
+source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '688'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 | 유기 검색 | 무급 검색 엔진에서 유기적으로 순위가 매겨진 트래픽. | Medium = `organic` |
 | 레퍼러 | 유기 검색이 아닌 외부 링크 또는 소셜 네트워크가 아닌 웹 사이트에서 들어오는 트래픽입니다. | Medium = `referral` |
 | 유료 검색 | 미디어가 &quot;cpc&quot;, &quot;ppc&quot; 또는 &quot;paidsearch&quot;인 UTM 추적 코드가 있고 &quot;콘텐츠&quot;와 일치하지 않는 광고 배포 네트워크인 트래픽입니다. | Medium = `^(cpc|ppc|paidsearch)$`<br>AND 광고 배포 네트워크 ≠ `Content` |
-| 소셜 | 약 [400개의 소셜 네트워크](https://www.annielytics.com/blog/analytics/sites-google-analytics-includes-in-social-reports/)에서 발생하고 광고로 태그가 지정되지 않은 참조 트래픽입니다. | 소셜 Source 참조 = `Yes`<br>또는 Medium = `^(social|social-network|social-media|sm|social network|social media)$` |
+| 소셜 | 약 400개의 소셜 네트워크에서 오며 광고로 태그가 지정되지 않은 참조 트래픽. | 소셜 Source 참조 = `Yes`<br>또는 Medium = `^(social|social-network|social-media|sm|social network|social media)$` |
 | 이메일 | &quot;이메일&quot; 미디어로 태그가 지정된 세션의 트래픽입니다. | Medium의 UTM 추적 코드 = `email` |
 | 표시 | 미디어가 디스플레이 또는 cpm인 UTM 추적 코드가 있는 트래픽입니다. 광고 배포 네트워크가 &quot;콘텐츠&quot;와 일치하는 AdWords 상호 작용도 포함합니다. | Medium = `^(display|cpm|banner)$`<br>OR 광고 배포 네트워크 = `Content`<br>AND 광고 형식 ≠ `Text` |
 | 기타 | &quot;cpc&quot;, &quot;ppc&quot;, &quot;cpm&quot;, &quot;cpv&quot;, &quot;cpa&quot;, &quot;cpp&quot;, &quot;affiliate&quot; 미디어로 태그가 지정된 다른 광고 채널(유료 검색 제외)의 세션. | Medium = `^(cpv|cpa|cpp|content-text)$` |
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 이제 채널은 소스와 미디어의 조합일 뿐이므로 Data Warehouse에서 이러한 그룹화를 다시 만드는 쉬운 3단계 프로세스입니다.
 
-1. **통합 사용[!DNL Google ECommerce]2&rbrace;**
+1. **통합 사용[!DNL Google ECommerce]2}**
 
    [활성화하면](../importing-data/integrations/google-ecommerce.md)Data Warehouse에서 [중간](tour-dwm.md#syncing) 및 **소스** 필드를 **동기화**&#x200B;하세요. 이 작업이 완료되면 중간 및 소스 획득 데이터를 Data Warehouse으로 가져옵니다.
 

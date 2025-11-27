@@ -4,7 +4,7 @@ description: ' [!DNL Commerce Intelligence] 계정을 활성화하기 위해 연
 exl-id: 0efac7b4-2457-48c7-947a-d2776b90a1dd
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
 workflow-type: tm+mt
 source-wordcount: '732'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 계정을 만든 후 [!DNL The Magento BI Team@rjmetrics.com]에서 보낸 계정 알림 전자 메일을 확인하세요. 전자 메일에 제공된 링크를 사용하여 [!DNL Commerce Intelligence] 계정에 액세스하고 암호를 만드십시오. 받은 편지함으로 이동하여 이메일 주소를 확인합니다.
 
-전자 메일을 받지 못한 경우 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하세요.
+전자 메일을 받지 못한 경우 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하세요.
 
 ![새 Commerce Intelligence 계정에 대한 암호 화면 만들기](../assets/create-account-4.png)
 
@@ -166,11 +166,11 @@ ht-degree: 0%
 >
 >[!DNL Adobe Commerce Intelligence Pro] 고객인 경우 다음 단계를 조정하려면 고객 성공 관리자 또는 고객 기술 관리자에게 문의하십시오.
 
-구성을 완료한 후 [&#x200B; 계정에 &#x200B;](../getting-started/sign-in.md)로그인[!DNL Commerce Intelligence]하세요.
+구성을 완료한 후 [ 계정에 ](../getting-started/sign-in.md)로그인[!DNL Commerce Intelligence]하세요.
 
 <!---# Activate your [!DNL Commerce Intelligence] Account
 
-To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko).
+To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 >[!NOTE]
 >

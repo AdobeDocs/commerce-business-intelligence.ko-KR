@@ -4,9 +4,9 @@ description: 사용자 라이프타임 수익, 반복 구매 횟수 등과 같�
 exl-id: f50fc417-e5d4-401c-9baa-cda1468196a2
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 3a7423c9dd0f957b77baa27b3447a715caad017b
 workflow-type: tm+mt
-source-wordcount: '960'
+source-wordcount: '956'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >일부 대시보드의 사용 가능 여부는 데이터 세트에 따라 다릅니다.
 
-질문이 있거나 패키지를 계정에 추가하려면 [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)을 제출하여 도움을 받으십시오.
+질문이 있거나 패키지를 계정에 추가하려면 [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)을 제출하여 도움을 받으십시오.
 
 ## 경영진 개요
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 `Retention health` 대시보드에는 사용자 기반의 반복 구매 동작이 표시됩니다.
 
-`Time between orders` 차트는 사용자의 첫 번째 순서와 두 번째 순서, 두 번째 순서와 세 번째 순서 사이의 평균 및/또는 평균 경과 시간을 보여 줍니다. [이 데이터를 사용하여 이메일 마케팅 캠페인을 구성하는 것이 좋습니다](http://blog.rjmetrics.com/acting-on-marketing-data-in-your-rjmetrics-online-dashboard/).
+`Time between orders` 차트는 사용자의 첫 번째 순서와 두 번째 순서, 두 번째 순서와 세 번째 순서 사이의 평균 및/또는 평균 경과 시간을 보여 줍니다. 이 데이터를 사용하여 이메일 마케팅 캠페인을 구성하는 것이 좋습니다.
 
 `Users by lifetime number of orders` 차트는 반복 구매 행동에 대한 일반적인 개요를 제공하기 위해 각 수명 주문 수에 대한 총 사용자 수를 나열합니다.  
 
@@ -89,7 +89,7 @@ ht-degree: 0%
 
 * 지난 `X`일 동안 활성 상태인 상위 지출자 목록(보상 받을 사람)
 
-데이터 내보내기 도구를 사용하면 [대상 마케팅에 대해 유사한 구매 행동을 하는 사용자의 전자 메일 목록을 쉽게 만들 수 있습니다](http://blog.rjmetrics.com/creating-contact-lists-for-top-customers/).
+데이터 내보내기 도구를 사용하여 대상 마케팅에 대해 유사한 구매 행동을 하는 사용자의 이메일 목록을 만들 수 있습니다.
 
 ## 사용자 활동
 
@@ -97,4 +97,4 @@ ht-degree: 0%
 
 `% of cohort members who have purchased` 차트는 등록 시점을 기준으로 사용자의 전환율(0 ~ 1)을 표시하므로 중요합니다(각 선은 사용자 집단을 나타냄). 첫 구매일 때도 표시됩니다(예: 등록 후 1, 2, 3...월). 이는 사용자의 10%가 1개월에 활성화되었지만 이 숫자는 2, 3, 4개월에 증가하고 나중에 안정될 수 있음을 보여 줄 수 있습니다.
 
-일반적으로 이 차트의 선은 일정 시간이 지나면 수평이 됩니다. 이는 해당 시점 이후 유기적으로 전환되는 추가 코호트 멤버가 거의 없음을 나타냅니다. 구매하려는 대부분의 사용자가 이미 그렇게 했습니다. 이 시점에서는 이러한 구성원들이 개입 없이 구매자로 전환될 가능성이 매우 낮다. [사용자 지정 프로모션이나 대상 전자 메일을 통해 사용자에게 연락하는 것은 이 모집단의 전환을 시작할 위험이 낮은 방법입니다.](http://blog.rjmetrics.com/acting-on-marketing-data-in-your-rjmetrics-online-dashboard/)
+일반적으로 이 차트의 선은 일정 시간이 지나면 수평이 됩니다. 이는 해당 시점 이후 유기적으로 전환되는 추가 코호트 멤버가 거의 없음을 나타냅니다. 구매하려는 대부분의 사용자가 이미 그렇게 했습니다. 이 시점에서는 이러한 구성원들이 개입 없이 구매자로 전환될 가능성이 매우 낮다. 사용자 지정 프로모션 또는 타겟팅된 이메일로 고객에게 연락하는 것은 이 모집단의 전환을 바로 시작할 수 있는 위험성이 낮은 방법입니다.

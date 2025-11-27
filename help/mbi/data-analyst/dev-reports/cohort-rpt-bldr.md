@@ -4,9 +4,9 @@ description: 라이프사이클 동안 유사한 특성을 공유하는 사용�
 exl-id: d80c5389-7256-40e0-86e0-49903113f93d
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
 workflow-type: tm+mt
-source-wordcount: '1607'
+source-wordcount: '1597'
 ht-degree: 0%
 
 ---
@@ -19,8 +19,6 @@ ht-degree: 0%
 
 `Cohort` 분석은 수명 주기 동안 유사한 특성을 공유하는 사용자 그룹의 분석으로 광범위하게 정의할 수 있습니다. 이를 통해 다양한 사용자 그룹 간 행동 트렌드를 식별할 수 있습니다.
 
-`cohort` 분석에 대한 심도 있는 입문서를 보려면 [이 페이지](https://www.cohortanalysis.com/)를 검토하십시오.
-
 [!DNL Commerce Intelligence] 대시보드에서 계정의 `cohorts` 날짜 및 지표를 기반으로 `cohort` 사용자를 쉽게 만들 수 있습니다.
 
 ## 그렇다면 코호트 분석이 중요한 이유는 무엇입니까? {#important}
@@ -31,7 +29,7 @@ ht-degree: 0%
 
 ### 새로운 아키텍처
 
-다음은 `Cohort Report Builder`새 아키텍처[에서 &#x200B;](../../administrator/account-management/new-architecture.md)을(를) 사용하기 위한 지침입니다.
+다음은 `Cohort Report Builder`새 아키텍처[에서 ](../../administrator/account-management/new-architecture.md)을(를) 사용하기 위한 지침입니다.
 
 1. 왼쪽 탭에서 **[!UICONTROL Report Builder]**&#x200B;을(를) 클릭하거나 대시보드에서 **[!UICONTROL Add Report** > **Create Report]**&#x200B;을(를) 클릭합니다.
 
@@ -101,7 +99,7 @@ ht-degree: 0%
 
 #### 레거시 아키텍처 {#personalinfo}
 
-다음은 이전 버전의 `Cohort Report Builder`에 대한 지침입니다. 새 버전을 사용하려면 [&#x200B; 새 아키텍처 계정으로 마이그레이션하는 방법에 대한 자세한 내용은 &#x200B;](../../administrator/account-management/new-architecture.md)새 아키텍처[!DNL Commerce Intelligence]를 참조하십시오.
+다음은 이전 버전의 `Cohort Report Builder`에 대한 지침입니다. 새 버전을 사용하려면 [ 새 아키텍처 계정으로 마이그레이션하는 방법에 대한 자세한 내용은 ](../../administrator/account-management/new-architecture.md)새 아키텍처[!DNL Commerce Intelligence]를 참조하십시오.
 
 #### 나만의 `cohort` 분석을 만들려면 어떻게 해야 합니까? {#create}
 
