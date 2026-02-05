@@ -70,7 +70,7 @@ API를 사용하려면 약간의 기술 전문 지식이 필요합니다. 작은
 * [테이블 통합](../../../best-practices/consolidating-your-tables.md)
 * [데이터베이스에 대한 액세스 제한](../../../administrator/account-management/restrict-db-access.md)
 
-**원하는 통합이 표시되지 않습니까?** 일부 통합을 활성화해야 계정에 표시됩니다. [!DNL Facebook]과(와) 같은 항목을 찾고 있지만 나열되지 않은 경우 [지원 티켓을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하십시오.
+**원하는 통합이 표시되지 않습니까?** 일부 통합을 활성화해야 계정에 표시됩니다. [!DNL Facebook]과(와) 같은 항목을 찾고 있지만 나열되지 않은 경우 [지원 티켓을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하십시오.
 
 **통합에 대한 오류 상태가 표시되면** [문제 해결 섹션](https://support.magento.com/hc/en-us/sections/360003078151)에서 도움말을 확인하세요.
 
