@@ -66,7 +66,7 @@ API를 사용하려면 약간의 기술 전문 지식이 필요합니다. 작은
 통합을 추가하려면 **[!UICONTROL Manage Data** > **Connections]**&#x200B;을(를) 클릭한 다음 **[!UICONTROL Add a New Data Source]**&#x200B;을(를) 클릭합니다. 추가할 통합의 아이콘을 클릭하고 도움말 항목의 지침을 따라 설정합니다.
 
 * [통합 FAQ](https://support.magento.com/hc/en-us/sections/360003161871-Integration-FAQ)
-* [사용 가능 ](../integrations/integrations.md)
+* [사용 가능 &#x200B;](../integrations/integrations.md)
 * [테이블 통합](../../../best-practices/consolidating-your-tables.md)
 * [데이터베이스에 대한 액세스 제한](../../../administrator/account-management/restrict-db-access.md)
 

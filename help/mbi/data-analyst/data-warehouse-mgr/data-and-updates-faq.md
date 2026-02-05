@@ -17,7 +17,7 @@ ht-degree: 0%
 * [정기 업데이트와 강제 업데이트의 차이점은 무엇입니까?](#regularforcedupdates)
 * [업데이트 주기가 오래 걸리는 이유는 무엇입니까?](#updatecycletime)
 * [업데이트 주기가 완료되면 알림을 받을 수 있습니까?](#notifyupdate)
-* [ [!DNL Google ECommerce] 데이터가 내 데이터베이스와 다른 이유는 무엇입니까?](#ecommdatabase)
+* [&#x200B; [!DNL Google ECommerce] 데이터가 내 데이터베이스와 다른 이유는 무엇입니까?](#ecommdatabase)
 * [데이터 불일치 문제를 해결하려면 어떻게 합니까?](#datadiscrepancy)
 
 ## 데이터가 변경된 이유는 무엇입니까? {#datachange}
