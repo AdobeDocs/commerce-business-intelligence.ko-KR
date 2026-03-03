@@ -2,9 +2,9 @@
 title: 예상 Facebook 광고 데이터
 description: Data Warehouse과 동기화하는 것이 권장되는 표에 대한 간략한 개요를 알아봅니다
 exl-id: 0c8b907b-1a98-470b-bb2c-55327e88e502
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 0%
@@ -59,5 +59,5 @@ ht-degree: 0%
 
 ## 관련 항목
 
-* [&#x200B; [!DNL Facebook Ads] 연결 중](../integrations/facebook-ads.md)
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
+* [ [!DNL Facebook Ads] 연결 중](../integrations/facebook-ads.md)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

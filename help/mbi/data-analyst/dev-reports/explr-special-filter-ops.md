@@ -2,9 +2,9 @@
 title: 특수 필터 연산자
 description: 보고서를 만들거나 지표를 만들 때 필터에 사용되는 몇 가지 특수 연산자에 대해 알아봅니다.
 exl-id: 12837490-b9ca-4040-bb71-8988b5dde485
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 필터 옵션
 
-이 항목에서는 `operators`보고서를 만들 때`filters` 또는 [지표를 만들 때](../../tutorials/using-visual-report-builder.md){: target="_blank"}에 [에서 사용되는 몇 가지 특수 &#x200B;](../../data-user/reports/ess-manage-data-metrics.md){: target="_blank"}에 대해 살펴봅니다.
+이 항목에서는 `operators`보고서를 만들 때`filters` 또는 [지표를 만들 때](../../tutorials/using-visual-report-builder.md){: target="_blank"}에 [에서 사용되는 몇 가지 특수 ](../../data-user/reports/ess-manage-data-metrics.md){: target="_blank"}에 대해 살펴봅니다.
 
 ## `Filter Operators`
 

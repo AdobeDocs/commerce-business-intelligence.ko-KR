@@ -2,9 +2,9 @@
 title: 비날짜 기반 집단을 위한 집단 Report Builder
 description: 유사한 활동이나 속성으로 사용자를 그룹화하는 방법에 대해 알아봅니다.
 exl-id: c7b85ce9-113c-4ffc-855f-3d53fe2347d8
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 76c5329c3f55570fa4e46601e902dc5a09e319e7
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 0%

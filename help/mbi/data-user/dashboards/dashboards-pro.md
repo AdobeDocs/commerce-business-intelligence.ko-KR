@@ -2,9 +2,9 @@
 title: 기본 대시보드
 description: insight을 비즈니스에 제공하는 기본 제공 대시보드에 대해 알아봅니다.
 exl-id: fe61c92e-de87-4317-96d7-01d2a9846bf9
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '1950'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->이러한 대시보드에 대한 액세스는 계정 유형 및 액세스 수준에 따라 다릅니다. 이 대시보드가 표시되지 않으면 [지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)에 문의하십시오.
+>이러한 대시보드에 대한 액세스는 계정 유형 및 액세스 수준에 따라 다릅니다. 이 대시보드가 표시되지 않으면 [지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)에 문의하십시오.
 
 ## 보고서 가용성
 
@@ -133,7 +133,7 @@ ht-degree: 0%
 
 ## 제품
 
-제품 대시보드에는 주문 제품, 총 상품 가격(GMV) 및 구매 및 환불 상위 제품에 대한 일반 제품 성능이 표시됩니다. 구매와 수익의 균형을 맞추고, 제품의 성공과 인기를 결정하는 데 도움이 될 수 있습니다. 이러한 차트를 채우려면 [환불을 추적하도록 구성](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html?lang=ko)해야 합니다.
+제품 대시보드에는 주문 제품, 총 상품 가격(GMV) 및 구매 및 환불 상위 제품에 대한 일반 제품 성능이 표시됩니다. 구매와 수익의 균형을 맞추고, 제품의 성공과 인기를 결정하는 데 도움이 될 수 있습니다. 이러한 차트를 채우려면 [환불을 추적하도록 구성](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html)해야 합니다.
 
 >[!NOTE]
 >

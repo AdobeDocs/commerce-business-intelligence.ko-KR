@@ -2,9 +2,9 @@
 title: SQL 계산 열 생성 및 사용
 description: 새 Adobe Commerce Intelligence 아키텍처에서 고급 열을 SQL 계산 열 형태로 만드는 방법을 알아봅니다.
 exl-id: f16e4ee4-ed73-4ddb-b701-1fe3db14346a
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, SQL Report Builder, Commerce Tables
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '839'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # SQL 계산 열 만들기
 
-이 항목에서는 `Calculation`Data Warehouse 관리자[를 사용하여 표에 추가할 수 있는 &#x200B;](../data-warehouse-mgr/tour-dwm.md) 열 유형의 용도와 사용에 대해 간략하게 설명합니다. 아래에서는 SQL 계산의 기능, 계산 사용 이유, SQL 계산 생성 프로세스에 대해 설명하고 두 가지 예를 포함합니다.
+이 항목에서는 `Calculation`Data Warehouse 관리자[를 사용하여 표에 추가할 수 있는 ](../data-warehouse-mgr/tour-dwm.md) 열 유형의 용도와 사용에 대해 간략하게 설명합니다. 아래에서는 SQL 계산의 기능, 계산 사용 이유, SQL 계산 생성 프로세스에 대해 설명하고 두 가지 예를 포함합니다.
 
 **설명**
 

@@ -2,9 +2,9 @@
 title: 고객 집중 정의
 description: 총 수익이 고객 기반 간에 어떻게 분배되는지 측정하는 데 도움이 되는 대시보드를 설정하는 방법을 알아봅니다.
 exl-id: 6242019f-a6a5-48d3-b214-94acd7842e00
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports, Dashboards
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 0%
@@ -58,7 +58,7 @@ ht-degree: 0%
 * 고객의 수익 백분위수
 * [!UICONTROL Column type]: - `Same table > Calculation`
 * [!UICONTROL Inputs]: - `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation]: - **A가 null이고 A/B가 null인 경우* 100 end &#x200B;**
+* [!UICONTROL Calculation]: - **A가 null이고 A/B가 null인 경우* 100 end **
 * [!UICONTROL Datatype]: - `Decimal`
 
 * `Sales_flat_order` 테이블
@@ -76,7 +76,7 @@ ht-degree: 0%
 * 고객의 수익 백분위수
 * [!UICONTROL Column type]: - `Same table > Calculation`
 * [!UICONTROL Inputs]: - `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation]: - **A가 null이고 A/B가 null인 경우* 100 end &#x200B;**
+* [!UICONTROL Calculation]: - **A가 null이고 A/B가 null인 경우* 100 end **
 * [!UICONTROL Datatype]: - `Decimal`
 
 >[!NOTE]
@@ -100,16 +100,16 @@ ht-degree: 0%
 * [!UICONTROL Metric]: `Total customer lifetime value`
 * [!UICONTROL Filter]: `Customer's revenue percentile IS NOT NULL`
 
-* &#x200B;
+* 
   [!UICONTROL 그룹 기준]: `Independent`
 * 지표 `A`: `Total customer lifetime revenue by percentile`
 * 지표 `B`: `Total customer lifetime revenue (ungrouped)`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Customer's revenue percentile`
 * 위쪽/아래쪽 표시: `100% of Customer's revenue percentile Name`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Line`
 
 * **상위 10% 농도**
@@ -117,12 +117,12 @@ ht-degree: 0%
 
 * 지표 `A`: `Total customer lifetime revenue`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * 차트 숨기기
-* &#x200B;
+* 
   [!UICONTROL 그룹 기준]: `Email`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Table`
 
 * **하위 50% 집중도(한 번만 구매)**
@@ -133,12 +133,12 @@ ht-degree: 0%
 * [!UICONTROL Filter]:
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * 차트 숨기기
-* &#x200B;
+* 
   [!UICONTROL 그룹 기준]: `Email`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Table`
 
 * **하위 10% 농도**
@@ -146,14 +146,14 @@ ht-degree: 0%
 
 * 지표 `A`: `Total customer lifetime revenue`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * 차트 숨기기
-* &#x200B;
+* 
   [!UICONTROL 그룹 기준]: `Email`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Table`
 
 모든 보고서를 컴파일한 후 원하는 대로 대시보드에서 구성할 수 있습니다. 결과는 위의 샘플 대시보드와 비슷할 수 있습니다.
 
-이 분석을 작성하는 동안 질문이 있거나 Professional Services 팀에 문의하려는 경우 [지원 팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하십시오.
+이 분석을 작성하는 동안 질문이 있거나 Professional Services 팀에 문의하려는 경우 [지원 팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하십시오.

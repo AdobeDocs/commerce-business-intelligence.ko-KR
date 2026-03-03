@@ -2,9 +2,9 @@
 title: 투자자를 위한 대시보드 구축
 description: 투자자를 위한 대시보드를 작성하는 방법에 대해 알아봅니다.
 exl-id: 917e7628-3498-4413-a7e1-61799989a7dd
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Dashboards, Data Integration
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 0%
@@ -64,7 +64,7 @@ ht-degree: 0%
 * 사이트 방문 횟수
 * 전환율
 
-[Commerce 데이터 보강 서비스](https://business.adobe.com/kr/products/magento/magento-commerce.html)를 사용하여 다음에 대한 보고서를 포함할 수 있습니다.
+[Commerce 데이터 보강 서비스](https://business.adobe.com/products/magento/magento-commerce.html)를 사용하여 다음에 대한 보고서를 포함할 수 있습니다.
 
 * 주/지역, 연령, 성별 고유 고객.
 

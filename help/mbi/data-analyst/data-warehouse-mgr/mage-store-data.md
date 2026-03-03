@@ -2,9 +2,9 @@
 title: Adobe Commerce에 데이터 저장
 description: 데이터가 생성되는 방법, 새 행이 삽입되는 원인 및 Adobe Commerce 데이터베이스에 작업이 기록되는 방법에 대해 알아봅니다.
 exl-id: 436ecdc1-7112-4dec-9db7-1f3757a2a938
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '964'
 ht-degree: 2%

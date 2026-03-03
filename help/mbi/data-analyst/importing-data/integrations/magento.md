@@ -2,9 +2,9 @@
 title: Adobe Commerce 연결
 description: 가장 중요한 획득 소스 및 채널을 찾는 방법에 대해 알아봅니다.
 exl-id: c20e7673-9aa3-4e5e-979c-6adaa4164793
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '100'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 비즈니스의 성과를 확인하거나 가장 중요한 확보 소스 및 채널을 찾고 싶으십니까? [!DNL Adobe Commerce] 데이터를 [!DNL Commerce Intelligence]에 연결하면 이러한 질문에 답변할 수 있습니다.
 
-[!DNL Adobe Commerce] 데이터베이스는 MySQL을 기반으로 하므로 SSH 터널을 통해 [!DNL Commerce Intelligence]직접 연결[, &#x200B;](../integrations/mysql-via-a-direct-connection.md) 또는 [[!DNL cPanel]](../integrations/mysql-via-cpanel.md)을(를) 통해 [에 연결할 수 있습니다](../integrations/mysql-via-ssh-tunnel.md). SSH 메서드는 가장 안전하므로 사용하는 것이 좋습니다.
+[!DNL Adobe Commerce] 데이터베이스는 MySQL을 기반으로 하므로 SSH 터널을 통해 [!DNL Commerce Intelligence]직접 연결[, ](../integrations/mysql-via-a-direct-connection.md) 또는 [[!DNL cPanel]](../integrations/mysql-via-cpanel.md)을(를) 통해 [에 연결할 수 있습니다](../integrations/mysql-via-ssh-tunnel.md). SSH 메서드는 가장 안전하므로 사용하는 것이 좋습니다.
 
 ## 관련 정보
 

@@ -2,9 +2,9 @@
 title: Report Builder 선택
 description: Report Builder를 선택하는 방법을 알아봅니다.
 exl-id: ec4204ef-975e-45c3-b09e-fb97ffc2c497
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 # Report Builder 선택
 
 >[!NOTE]
->&#x200B;>[관리자 권한](../../administrator/user-management/user-management.md)이 필요합니다.
+>>[관리자 권한](../../administrator/user-management/user-management.md)이 필요합니다.
 
 이제 분석을 만드는 데 사용할 수 있는 옵션이 더 많으므로 필요에 맞는 Report Builder의 기능을 정확히 아는 것이 어려울 수 있습니다. 이 항목에서는 분석을 작성하는 가장 좋은 방법을 선택하는 과정을 안내합니다.
 

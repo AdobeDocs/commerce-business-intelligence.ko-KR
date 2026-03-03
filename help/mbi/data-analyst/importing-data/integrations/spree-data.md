@@ -2,9 +2,9 @@
 title: 예상 Spre 데이터
 description: Spree에서  [!DNL Commerce Intelligence]  계정으로 가져올 수 있는 기본 데이터 테이블을 살펴봅니다.
 exl-id: 203a2d4b-e7ad-4704-a3c1-8e22ff0bf2d6
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '263'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [에 [!DNL Spree] 스토어](../../../data-analyst/importing-data/integrations/spree.md)를 연결한 후 [Data Warehouse 관리자](../../data-warehouse-mgr/tour-dwm.md)를 사용하여 분석을 위해 [!DNL Spree] 플랫폼에서 관련 데이터 필드를 쉽게 추적할 수 있습니다.
 
-이 항목에서는 [!DNL Spree] 데이터에 대한 [!DNL Commerce Intelligence]추가 설명서[에 대한 링크를 포함하여 &#x200B;](https://guides.spreecommerce.org/developer/addresses.html#address)에서 [!DNL Spree] 계정으로 가져올 수 있는 기본 데이터 테이블을 살펴봅니다.
+이 항목에서는 [!DNL Spree] 데이터에 대한 [!DNL Commerce Intelligence]추가 설명서[에 대한 링크를 포함하여 ](https://guides.spreecommerce.org/developer/addresses.html#address)에서 [!DNL Spree] 계정으로 가져올 수 있는 기본 데이터 테이블을 살펴봅니다.
 
 | **테이블 이름** | **설명** |
 |-----|-----|
@@ -29,5 +29,5 @@ ht-degree: 0%
 
 ## 관련 항목:
 
-* [&#x200B; [!DNL Spree] 연결 중](../integrations/spree.md)
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
+* [ [!DNL Spree] 연결 중](../integrations/spree.md)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

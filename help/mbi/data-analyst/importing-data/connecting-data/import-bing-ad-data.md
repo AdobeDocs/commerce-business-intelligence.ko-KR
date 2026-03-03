@@ -2,9 +2,9 @@
 title: Bing 광고 지출 데이터 가져오기
 description: 분석을 위해 Bing 광고 지출 데이터를  [!DNL Commerce Intelligence] 에 가져오는 방법을 알아봅니다.
 exl-id: c8dec4b4-74ce-41b2-a77d-403fe44e2816
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 0%
@@ -26,4 +26,4 @@ ht-degree: 0%
 1. `Save As` 대화 상자에서 내보내기 파일을 저장할 폴더를 클릭합니다.
 1. `File name` 상자에서 파일 내보내기 이름을 선택합니다.
 1. **[!UICONTROL Save]**&#x200B;을(를) 클릭합니다.
-1. 파일을 다운로드한 후 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하여 사용자를 대신하여 첫 번째 업로드를 수행하고 필요한 백엔드 차원을 설정합니다.
+1. 파일을 다운로드한 후 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하여 사용자를 대신하여 첫 번째 업로드를 수행하고 필요한 백엔드 차원을 설정합니다.

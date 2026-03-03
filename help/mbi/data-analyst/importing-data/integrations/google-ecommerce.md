@@ -2,9 +2,9 @@
 title: Google Commerce 연결
 description: 가장 소중한 레퍼러 채널에 대해 알아봅니다.
 exl-id: c80f52f3-894a-4084-8c0e-aee618ed77f5
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 0%
@@ -59,8 +59,8 @@ ht-degree: 0%
 
 ## 관련 항목:
 
-* [&#x200B; [!DNL Google ECommerce] 데이터가 필요합니다.](../integrations/google-ecommerce-data.md)
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
+* [ [!DNL Google ECommerce] 데이터가 필요합니다.](../integrations/google-ecommerce-data.md)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [설정 [!DNL Google ECommerce] 추적](https://support.google.com/analytics/answer/1009612?hl=en)
 * [가장 가치 있는 확보 소스 및 채널 살펴보기](../../analysis/most-value-source-channel.md)
 * [광고 캠페인에 대한 ROI 향상](../../analysis/roi-ad-camp.md)

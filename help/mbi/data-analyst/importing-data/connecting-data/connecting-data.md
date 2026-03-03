@@ -2,9 +2,9 @@
 title: 데이터 연결
 description: Data Warehouse Manager에서 동기화에 사용할 수 있는 표를 검색하는 방법을 알아봅니다.
 exl-id: 94beba8b-6a86-4af9-87fb-96b1cf8f8fa2
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
-source-git-commit: d683f1362d87eee16c41ba9a8a83a9ff533b14aa
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 0%
@@ -66,11 +66,11 @@ API를 사용하려면 약간의 기술 전문 지식이 필요합니다. 작은
 통합을 추가하려면 **[!UICONTROL Manage Data** > **Connections]**&#x200B;을(를) 클릭한 다음 **[!UICONTROL Add a New Data Source]**&#x200B;을(를) 클릭합니다. 추가할 통합의 아이콘을 클릭하고 도움말 항목의 지침을 따라 설정합니다.
 
 * [통합 FAQ](https://support.magento.com/hc/en-us/sections/360003161871-Integration-FAQ)
-* [사용 가능 &#x200B;](../integrations/integrations.md)
+* [사용 가능 ](../integrations/integrations.md)
 * [테이블 통합](../../../best-practices/consolidating-your-tables.md)
 * [데이터베이스에 대한 액세스 제한](../../../administrator/account-management/restrict-db-access.md)
 
-**원하는 통합이 표시되지 않습니까?** 일부 통합을 활성화해야 계정에 표시됩니다. [!DNL Facebook]과(와) 같은 항목을 찾고 있지만 나열되지 않은 경우 [지원 티켓을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하십시오.
+**원하는 통합이 표시되지 않습니까?** 일부 통합을 활성화해야 계정에 표시됩니다. [!DNL Facebook]과(와) 같은 항목을 찾고 있지만 나열되지 않은 경우 [지원 티켓을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하십시오.
 
 **통합에 대한 오류 상태가 표시되면** [문제 해결 섹션](https://support.magento.com/hc/en-us/sections/360003078151)에서 도움말을 확인하세요.
 

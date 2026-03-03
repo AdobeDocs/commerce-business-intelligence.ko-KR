@@ -2,9 +2,9 @@
 title: 보고서 사용
 description: 보고서 데이터를 사용하는 방법을 알아봅니다.
 exl-id: 94d4db27-0e06-4066-9c03-036b109d2d9b
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 0%
@@ -77,7 +77,7 @@ ht-degree: 0%
 
 _[등록 및 구매한 총 고객 수`Time between a customer's registration date and first purchase date`] / [의 합계]_
 
-고객의 등록 날짜에 따라 시간 경과나 추세를 통해 이 계산을 표시하려고 합니다. [에서 &#x200B;](../../data-user/reports/ess-manage-data-metrics.md)이 지표를 만들기[!DNL Commerce Intelligence]하는 방법은 다음과 같습니다.
+고객의 등록 날짜에 따라 시간 경과나 추세를 통해 이 계산을 표시하려고 합니다. [에서 ](../../data-user/reports/ess-manage-data-metrics.md)이 지표를 만들기[!DNL Commerce Intelligence]하는 방법은 다음과 같습니다.
 
 1. **[!UICONTROL Data]**(으)로 이동하여 `Metrics` 탭을 선택합니다.
 1. **[!UICONTROL Add New Metric]**&#x200B;을(를) 클릭하고 `user` 테이블(위에서 차원을 만든 위치)을 선택합니다.

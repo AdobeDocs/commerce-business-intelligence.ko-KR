@@ -2,9 +2,9 @@
 title: 데이터 검사 구성
 description: 변경 가능한 값으로 데이터 열을 구성하는 방법에 대해 알아봅니다.
 exl-id: c31ef32e-ba5a-4902-b632-fbab551cc632
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 데이터 검사 구성
 
-데이터베이스 테이블에는 변경 가능한 값이 있는 데이터 열이 있을 수 있습니다. 예를 들어 `orders` 테이블에 `status` 열이 있을 수 있습니다. 주문이 데이터베이스에 처음 기록되면 상태 열에 _보류 중_ 값이 포함될 수 있습니다. 이 [&#x200B; 값으로 &#x200B;](../data-warehouse-mgr/tour-dwm.md)Data Warehouse`pending`에서 순서가 복제됩니다.
+데이터베이스 테이블에는 변경 가능한 값이 있는 데이터 열이 있을 수 있습니다. 예를 들어 `orders` 테이블에 `status` 열이 있을 수 있습니다. 주문이 데이터베이스에 처음 기록되면 상태 열에 _보류 중_ 값이 포함될 수 있습니다. 이 [ 값으로 ](../data-warehouse-mgr/tour-dwm.md)Data Warehouse`pending`에서 순서가 복제됩니다.
 
 주문 상태가 항상 `pending` 상태는 아니지만 변경될 수 있습니다. 결국 `complete` 또는 `cancelled`이(가) 될 수 있습니다. Data Warehouse에서 이 변경 사항을 동기화하려면 열에 새 값을 다시 선택해야 합니다.
 

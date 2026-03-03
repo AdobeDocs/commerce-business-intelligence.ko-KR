@@ -2,9 +2,9 @@
 title: WooCommerce 연결
 description: 비즈니스의 성과를 확인하거나 가장 중요한 획득 소스 및 채널을 찾는 방법에 대해 알아봅니다.
 exl-id: 26ac24e0-087b-4958-873c-2facab22ffb2
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 0%
@@ -25,5 +25,5 @@ ht-degree: 0%
 
 ## 관련 항목:
 
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [세분화 및 필터링에 권장되는 데이터 차원](../../../best-practices/segment-filter.md)

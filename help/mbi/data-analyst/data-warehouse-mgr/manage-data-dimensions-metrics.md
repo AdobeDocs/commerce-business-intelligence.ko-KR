@@ -2,9 +2,9 @@
 title: 데이터 차원 관리
 description: 차원이 무엇이며 지표를 기반으로 차트를 필터링하거나 세그먼트화하는 데 사용할 수 있는지 알아봅니다.
 exl-id: 143a4b1e-2e6f-438a-90e6-bdda13b39cb9
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%

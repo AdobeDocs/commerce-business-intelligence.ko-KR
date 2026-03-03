@@ -2,9 +2,9 @@
 title: Facebook 광고 연결
 description: 광고 지출 데이터를 분석하고 비용이 효과적으로 지출되는지 확인하는 방법을 알아봅니다.
 exl-id: 219a868b-f17c-4299-9e29-94db9156c9b6
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 0%
@@ -23,8 +23,8 @@ ht-degree: 0%
 
 [!DNL Facebook Ad] 데이터를 [!DNL Commerce Intelligence]에 연결하는 간단한 3단계 프로세스입니다.
 
-1. [&#x200B; [!DNL Facebook] 에서 데이터 소스로  [!DNL Commerce Intelligence]추가](#stepone)
-1. [&#x200B; [!DNL Commerce Intelligence] 데이터에 대한  [!DNL Facebook Ads] 액세스 허용](#steptwo)
+1. [ [!DNL Facebook] 에서 데이터 소스로  [!DNL Commerce Intelligence]추가](#stepone)
+1. [ [!DNL Commerce Intelligence] 데이터에 대한  [!DNL Facebook Ads] 액세스 허용](#steptwo)
 1. [데이터를 가져올  [!DNL Facebook Ads] 계정 선택](#stepthree)
 
 ## [!DNL Facebook]을(를) [!DNL Commerce Intelligence]의 데이터 소스로 추가 {#stepone}
@@ -58,11 +58,11 @@ ht-degree: 0%
 
 ## 관련 항목
 
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
-* [&#x200B; [!DNL Google Adwords] 계정 연결](../integrations/google-ecommerce.md)
-* [&#x200B; [!DNL Google eCommerce]을(를) 통해 주문 참조 원본 추적](../integrations/google-ecommerce.md)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [ [!DNL Google Adwords] 계정 연결](../integrations/google-ecommerce.md)
+* [ [!DNL Google eCommerce]을(를) 통해 주문 참조 원본 추적](../integrations/google-ecommerce.md)
 * [데이터베이스에서 사용자 조회 소스 추적](../../analysis/google-track-user-acq.md)
 * [데이터베이스에서 사용자 장치, 브라우저 및 OS 데이터 추적](../../analysis/track-usr-dev-browser.md)
 * [가장 가치 있는 확보 소스 및 채널 살펴보기](../../analysis/most-value-source-channel.md)
 * [광고 캠페인에 대한 ROI 향상](../../analysis/roi-ad-camp.md)
-* [&#x200B; [!DNL Google Analytics] UTM 속성은 어떻게 작동합니까?](../../analysis/utm-attributes.md)
+* [ [!DNL Google Analytics] UTM 속성은 어떻게 작동합니까?](../../analysis/utm-attributes.md)

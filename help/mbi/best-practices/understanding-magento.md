@@ -2,9 +2,9 @@
 title: ' [!DNL Commerce Intelligence] 환경 이해'
 description: ' [!DNL Commerce Intelligence] 환경 작업 및 개선에 대해 알아봅니다.'
 exl-id: 601b5fba-da02-4cc8-96ed-147c24f326f9
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '749'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL Adobe Commerce Intelligence] 환경
 
-상거래 데이터를 분석할 때 이러한 요인과 일반적인 오해에 대해 알아두십시오. Commerce 스키마를 올바르게 사용하고 있는지 확인하는 데 도움이 필요하면 [지원에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하십시오.
+상거래 데이터를 분석할 때 이러한 요인과 일반적인 오해에 대해 알아두십시오. Commerce 스키마를 올바르게 사용하고 있는지 확인하는 데 도움이 필요하면 [지원에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하십시오.
 
 ## [!DNL entity\_id]
 

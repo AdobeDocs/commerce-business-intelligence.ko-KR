@@ -2,9 +2,9 @@
 title: SSH 터널을 통해  [!DNL MongoDB] 연결
 description: SSH 터널을 통해 [!DNL MongoDB] 연결하는 방법에 대해 알아봅니다.
 exl-id: 3557a8c7-c4c5-4742-ae30-125c719aca39
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '661'
 ht-degree: 0%
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 SSH 터널을 통해 [!DNL MongoDB] 데이터베이스를 [!DNL Commerce Intelligence]에 연결하려면 다음을 수행해야 합니다.
 
-1. [&#x200B; [!DNL Commerce Intelligence] 공개 키 검색](#retrieve)
-1. [&#x200B; [!DNL Commerce Intelligence] IP 주소에 대한 액세스 허용](#allowlist)
+1. [ [!DNL Commerce Intelligence] 공개 키 검색](#retrieve)
+1. [ [!DNL Commerce Intelligence] IP 주소에 대한 액세스 허용](#allowlist)
 1. [Commerce Intelligence용 Linux 사용자 만들기](#linux)
 1. [Commerce Intelligence용  [!DNL MongoDB] 사용자 만들기](#mongodb)
-1. [&#x200B; [!DNL Commerce Intelligence]에 연결 및 사용자 정보 입력](#finish)
+1. [ [!DNL Commerce Intelligence]에 연결 및 사용자 정보 입력](#finish)
 
 >[!NOTE]
 >
@@ -146,4 +146,4 @@ SSH 터널을 통해 [!DNL MongoDB] 데이터베이스를 [!DNL Commerce Intelli
 
 ### 관련 항목
 
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

@@ -2,9 +2,9 @@
 title: Stripe 연결
 description: 비즈니스 결제 및 송장 데이터를 관리하고 추적하는 방법에 대해 알아봅니다.
 exl-id: c038f2a9-b2bd-4e45-93f9-12d2e5077b31
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '151'
 ht-degree: 0%
@@ -21,8 +21,8 @@ ht-degree: 0%
 
 [!DNL Stripe]을(를) 통해 회사의 결제 및 송장 데이터를 관리하고 추적할 수 있습니다. [!DNL Stripe] 계정을 [!DNL Commerce Intelligence]에 연결하는 간단한 2단계 프로세스입니다.
 
-1. [&#x200B; [!DNL Stripe] 에서 데이터 소스로  [!DNL Commerce Intelligence]추가](#stepone)
-1. [&#x200B; [!DNL Commerce Intelligence] 데이터에 대한  [!DNL Stripe] 액세스 허용](#steptwo)
+1. [ [!DNL Stripe] 에서 데이터 소스로  [!DNL Commerce Intelligence]추가](#stepone)
+1. [ [!DNL Commerce Intelligence] 데이터에 대한  [!DNL Stripe] 액세스 허용](#steptwo)
 
 ## [!DNL Stripe]을(를) 데이터 소스로 추가 {#stepone}
 
@@ -47,5 +47,5 @@ ht-degree: 0%
 
 [[!DNL Stripe] API 설명서](https://stripe.com/docs/api)는 [!DNL Stripe]을(를) [!DNL Commerce Intelligence]과(와) 통합하는 방법에 대한 자세한 내용을 학습하는 데 유용한 리소스가 될 수 있습니다.
 
-* [&#x200B; [!DNL Stripe] 데이터가 필요합니다.](../integrations/stripe-data.md)
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
+* [ [!DNL Stripe] 데이터가 필요합니다.](../integrations/stripe-data.md)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

@@ -2,9 +2,9 @@
 title: 반복 확률 감소 및 이탈 분석
 description: 주문 간 시간 경과 방법과 고객의 이탈 예상 시기를 알아보고 이해합니다.
 exl-id: ea26052d-ac74-43b7-a4a6-977800d4c719
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports, Dashboards
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 권장 지표
 
-반복 확률 감소 및 이탈을 분석할 때 다음 지표를 사용하는 것이 좋습니다([&#x200B; 또는 빌드](../../data-user/reports/ess-manage-data-metrics.md)).
+반복 확률 감소 및 이탈을 분석할 때 다음 지표를 사용하는 것이 좋습니다([ 또는 빌드](../../data-user/reports/ess-manage-data-metrics.md)).
 
 ### 초기 반복 순서 확률
 
@@ -78,7 +78,7 @@ ht-degree: 0%
 
 두 개 이상의 제품을 제공하는 경우 특정 제품을 구매하는 고객이 다른 고객과 비교하여 시간이 지남에 따라 어떻게 다르게 동작하는지 궁금할 수 있습니다. 자세히 알아보시겠습니까? 이 자습서를 통해 구입한 특정 제품을 기반으로 고객 집단의 라이프타임 구매 행동을 살펴볼 수 있습니다.
 
-이 모범 사례는 [!DNL Adobe Commerce Intelligence] DAS(데이터 분석 서비스)에서 제공합니다. 자세한 내용은 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하세요.
+이 모범 사례는 [!DNL Adobe Commerce Intelligence] DAS(데이터 분석 서비스)에서 제공합니다. 자세한 내용은 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하세요.
 
 ### 관련 항목
 

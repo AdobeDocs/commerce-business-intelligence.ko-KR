@@ -2,9 +2,9 @@
 title: Visual Report Builder 사용
 description: 특정 기간 동안 보고서의 데이터를 분석하는 방법에 대해 알아봅니다.
 exl-id: da97b63d-63f0-4fd6-87e3-4cac49a42acc
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '1274'
 ht-degree: 0%

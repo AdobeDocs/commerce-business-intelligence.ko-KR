@@ -2,9 +2,9 @@
 title: 예상 Google Adwords 데이터
 description: Data Warehouse Manager를 사용하여 분석을 위한 관련 데이터 필드를 쉽게 추적하는 방법에 대해 알아봅니다.
 exl-id: b0085683-7bb1-4da2-b343-4309e4796f0c
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '436'
 ht-degree: 0%
@@ -89,4 +89,4 @@ ht-degree: 0%
 
 통합 테이블이 없고 `adwords` 테이블에 멋진 대시보드를 작성하는 경우 보고를 복제하거나 중복 지표를 만들어 해당 데이터를 [!DNL Facebook Ads] 데이터와 비교해야 합니다. 통합 테이블을 사용하면 [!DNL Facebook Ads] 데이터를 기존 [!DNL Adwords] 보고서에 원활하게 통합할 수 있습니다. 광고 플랫폼별로 세그먼트화할 수도 있습니다.
 
-위의 필드를 이미 동기화한 경우 [문의하기](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하여 광고 지출을 통합하십시오.
+위의 필드를 이미 동기화한 경우 [문의하기](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하여 광고 지출을 통합하십시오.

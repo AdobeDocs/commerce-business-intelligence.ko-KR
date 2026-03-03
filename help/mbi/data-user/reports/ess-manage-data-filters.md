@@ -2,9 +2,9 @@
 title: 지표에 대한 필터 세트 만들기
 description: 저장된 필터 세트를 만들고 이를 지표에 적용하는 방법을 알아봅니다.
 exl-id: 6ef8b67c-bebd-45eb-bca7-95832ec34fc8
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Commerce Intelligence]에 유사한 방식으로 필터링해야 하는 지표가 여러 개 있는 경우(예: 테스트 주문 필터링) 저장된 필터 집합을 만들어 지표에 적용할 수 있습니다. 이렇게 하면 지표를 만들거나 편집할 때 개별 필터를 추가할 필요가 없어 시간을 절약할 수 있습니다.
 
-자세한 내용은 [교육 비디오](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html?lang=ko)를 참조하세요.
+자세한 내용은 [교육 비디오](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html)를 참조하세요.
 
 >[!NOTE]
 >

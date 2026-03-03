@@ -2,9 +2,9 @@
 title: VPN을 통해 데이터베이스 연결
 description: SSH 터널 대신 VPN을 통해 데이터베이스를 연결하는 방법에 대해 알아봅니다.
 exl-id: c7aa564d-42de-426e-92e9-f6e250a6abba
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 0%
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 Adobe에서는 `SSH tunnel`을(를) 사용하여 데이터베이스를 연결하는 것이 좋지만 암호화된 `VPN` 연결을 사용하여 보안을 유지할 수도 있습니다. `VPN`은(는) 모든 데이터베이스 통합에 사용할 수 있으며, 프로세스를 단순화하기 위해 `SSH tunnel`을(를) 설정하는 것과 거의 동일합니다.
 
-1. [&#x200B; [!DNL Commerce Intelligence] 데이터베이스 사용자 만들기](#database)
-1. [&#x200B; [!DNL Commerce Intelligence] VPN 사용자 만들기](#vpn)
-1. [&#x200B; [!DNL Commerce Intelligence] IP 주소에 대한 액세스 허용](#allowlist)
+1. [ [!DNL Commerce Intelligence] 데이터베이스 사용자 만들기](#database)
+1. [ [!DNL Commerce Intelligence] VPN 사용자 만들기](#vpn)
+1. [ [!DNL Commerce Intelligence] IP 주소에 대한 액세스 허용](#allowlist)
 1. [Commerce Intelligence에 연결 및 VPN 사용자 정보 입력](#finish)
 
 데이터베이스 자격 증명 외에 VPN 사용자가 작업을 완료할 수 있도록 자격 증명을 입력해야 합니다. Adobe 모든 VPN 사용자가 작동하지만, 계정에서 사용자를 더 쉽게 추적할 수 있도록 [!DNL Commerce Intelligence] 사용자를 만드는 것이 좋습니다.

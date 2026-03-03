@@ -2,9 +2,9 @@
 title: 지표의 작업 테이블 변경
 description: 지표가 작업을 수행하는 데 사용하는 데이터 테이블을 변경하는 방법을 알아봅니다.
 exl-id: c7a074ca-31f4-43e5-85d9-b64dca95dc23
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 0%
@@ -25,6 +25,6 @@ ht-degree: 0%
 
    ![사용 가능한 테이블을 표시하는 테이블 선택 드롭다운](../../assets/change-metrics-2.png)
 
-1. 새 테이블에 일치하는 열이 없는 경우 **데이터 테이블에서 만들거나** [에서 만든 계산 열 또는 차원인 경우 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)지원 팀에 문의[!DNL Commerce Intelligence]할 수 있습니다. **지표에서 차원을 삭제**&#x200B;할 수도 있습니다. 더 이상 필요하지 않은 차원을 삭제하려면 지표 편집기로 돌아가 `Dimensions`에서 삭제할 차원을 선택하면 됩니다.
+1. 새 테이블에 일치하는 열이 없는 경우 **데이터 테이블에서 만들거나** [에서 만든 계산 열 또는 차원인 경우 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)지원 팀에 문의[!DNL Commerce Intelligence]할 수 있습니다. **지표에서 차원을 삭제**&#x200B;할 수도 있습니다. 더 이상 필요하지 않은 차원을 삭제하려면 지표 편집기로 돌아가 `Dimensions`에서 삭제할 차원을 선택하면 됩니다.
 
    ![작동 열 선택 드롭다운 메뉴](../../assets/change-metrics-3.png)

@@ -2,9 +2,9 @@
 title: QuickBooks 연결
 description: 이제 비즈니스 재정이 판매 및 마케팅 데이터와 함께 어떻게 연동될 수 있는지 알아보고 비용을 빠르고 쉽게 탭하고, 과소비를 식별하는 등의 작업을 수행할 수 있습니다.
 exl-id: e100c88c-af59-4185-b2a2-c8e77bfd7277
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: b6f8a4f533286fad67dc875ebb6f4f3b7022ca5b
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 0%
@@ -43,5 +43,5 @@ ht-degree: 0%
 
 ## 관련 항목
 
-* [&#x200B; [!DNL QuickBooks] 데이터가 필요합니다.](../integrations/quickbooks-data.md)
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
+* [ [!DNL QuickBooks] 데이터가 필요합니다.](../integrations/quickbooks-data.md)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

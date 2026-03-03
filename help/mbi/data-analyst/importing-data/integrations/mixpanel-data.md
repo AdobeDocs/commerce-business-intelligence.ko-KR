@@ -2,9 +2,9 @@
 title: 예상 Mixpanel 데이터
 description: Mixpanel에서  [!DNL Commerce Intelligence]  계정으로 가져올 수 있는 기본 데이터 테이블을 살펴봅니다.
 exl-id: 87bd337a-63fa-44cf-b1fe-c2f34ca86029
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 0%
@@ -24,12 +24,12 @@ ht-degree: 0%
 | **테이블 이름** | **설명** |
 |-----|-----|
 | [`mixpanel\_export`](https://developer.mixpanel.com/reference/raw-data-export-api#datafeed) | 이 표에는 이벤트, 이벤트 날짜 및 플랫폼 버킷을 포함한 원시 이벤트 데이터가 포함되어 있습니다. |
-| [`mixpanel\_funnels`](https://developer.mixpanel.com/reference/raw-data-export-api#funnels-default) | 이 표에는 단계 ID, 단계 길이(사용자가 단계를 완료해야 하는 일 수) 및 단계의 시작 및 종료 날짜를 포함하여 단계에 대한 데이터가 포함되어 있습니다. |
+| [`mixpanel\_funnels`](https://developer.mixpanel.com/reference/raw-data-export-api#funnels-default) | 이 표에는 funnel ID, funnel 길이(사용자가 funnel을 완료하는 데 필요한 일 수), funnel의 시작 및 종료 날짜 등 유입 경로에 대한 데이터가 포함되어 있습니다. |
 | [`mixpanel\_engage`](https://developer.mixpanel.com/reference/raw-data-export-api#engage-default) | 여기에는 세션 ID, 페이지 및 사용자 정보와 사용자가 마지막으로 조회된 날짜/시간을 포함하여 People Analytics의 데이터가 포함됩니다. |
 
 {style="table-layout:auto"}
 
 ## 관련 설명서
 
-* [&#x200B; [!DNL Mixpanel] 연결 중](../integrations/mixpanel.md)
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
+* [ [!DNL Mixpanel] 연결 중](../integrations/mixpanel.md)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

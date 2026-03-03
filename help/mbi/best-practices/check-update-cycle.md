@@ -2,9 +2,9 @@
 title: 업데이트 주기 상태 확인
 description: 업데이트 주기 상태를 확인하는 방법을 알아봅니다.
 exl-id: bd65f2bb-86c1-4e83-a132-797694ddb086
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Dashboards
-source-git-commit: 776b4b666c47775a7b883a3a6f71c16b4b3bfbad
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 업데이트 주기 상태를 확인해야 하는 이유는 무엇입니까?
 
-상태 업데이트 주기를 확인하는 것은 [!DNL Commerce Intelligence] 계정의 데이터를 감사할 때 유용합니다. [예상과 일치하지 않는 결과](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md)가 표시되는 경우(예: [!DNL Commerce Intelligence]의 일일 매출이 전자 상거래 플랫폼 또는 [[!DNL Google] 전자 상거래 매출에 표시되는 내용과 일치하지 않음](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=ko)) 업데이트가 완료되면 마지막 데이터 포인트를 확인하여 문제가 해결되었는지 확인할 수 있습니다.
+상태 업데이트 주기를 확인하는 것은 [!DNL Commerce Intelligence] 계정의 데이터를 감사할 때 유용합니다. [예상과 일치하지 않는 결과](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md)가 표시되는 경우(예: [!DNL Commerce Intelligence]의 일일 매출이 전자 상거래 플랫폼 또는 [[!DNL Google] 전자 상거래 매출에 표시되는 내용과 일치하지 않음](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html)) 업데이트가 완료되면 마지막 데이터 포인트를 확인하여 문제가 해결되었는지 확인할 수 있습니다.
 
 ## [!UICONTROL Read-Only] 및 [!UICONTROL Standard] 사용자
 

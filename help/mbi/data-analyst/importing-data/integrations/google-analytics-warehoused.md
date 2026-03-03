@@ -2,9 +2,9 @@
 title: Google Analytics 웨어하우징 연결
 description: 방문자가 사이트를 사용하는 방법, 매력적인 콘텐츠, 방문자가 종료하는 위치 등을 추적하는 방법에 대해 알아봅니다.
 exl-id: b9879399-9e1a-4f36-b510-8426ebc83aeb
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 0%
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->[!DNL Google Analytics Warehoused]은(는) `Premium` 통합입니다. 이 통합을 구독에 추가하려면 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하세요.
+>[!DNL Google Analytics Warehoused]은(는) `Premium` 통합입니다. 이 통합을 구독에 추가하려면 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하세요.
 
 1. `Connections` 아래의 **[!UICONTROL Admin** > **Integrations]** 페이지로 이동합니다.
 1. 오른쪽에 있는 **[!UICONTROL Add an Integration]**&#x200B;을(를) 클릭합니다.
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 ## 관련 설명서
 
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
-* [&#x200B; [!DNL Google Adwords] 연결 중](../integrations/google-adwords.md)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [ [!DNL Google Adwords] 연결 중](../integrations/google-adwords.md)
 * [웹 사이트 활동 및 고객 전환율 분석](../../analysis/web-act-cust-conversion.md)
-* [&#x200B; [!DNL Google Analytics] 쿠키를 사용하여 사용자 획득 데이터 추적](../../analysis/google-track-user-acq.md)
+* [ [!DNL Google Analytics] 쿠키를 사용하여 사용자 획득 데이터 추적](../../analysis/google-track-user-acq.md)

@@ -2,9 +2,9 @@
 title: Google Analytics 연결
 description: ' [!DNL Commerce Intelligence]과(와) Google Analytics 연결에 대해 알아봅니다.'
 exl-id: 10e813f1-0306-4bdd-8222-e6364ac624de
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 0%
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 ## 관련 항목:
 
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
-* [&#x200B; [!DNL Google Adwords] 연결 중](../integrations/google-adwords.md)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [ [!DNL Google Adwords] 연결 중](../integrations/google-adwords.md)
 * [웹 사이트 활동 및 고객 전환율 분석](../../analysis/web-act-cust-conversion.md)
-* [&#x200B; [!DNL Google Analytics] 쿠키를 사용하여 사용자 획득 데이터 추적](../../analysis/google-track-user-acq.md)
+* [ [!DNL Google Analytics] 쿠키를 사용하여 사용자 획득 데이터 추적](../../analysis/google-track-user-acq.md)

@@ -2,9 +2,9 @@
 title: 예상 Google Analytics 웨어하우스 데이터
 description: Google Analytics 웨어하우스 데이터와 상호 작용하는 방법에 대해 알아봅니다.
 exl-id: 2b1305cd-5f34-43d9-b77f-a4f5b1d82c66
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->예기치 않거나 중요하지 않은 결과를 방지하려면 사용하는 모든 차원이 [에서 사용하는 &#x200B;](https://ga-dev-tools.google/dimensions-metrics-explorer/)하나 이상의 지표와 호환`Report Builder`되는지 확인하십시오.
+>예기치 않거나 중요하지 않은 결과를 방지하려면 사용하는 모든 차원이 [에서 사용하는 ](https://ga-dev-tools.google/dimensions-metrics-explorer/)하나 이상의 지표와 호환`Report Builder`되는지 확인하십시오.
 
 단일 테이블(`report`)이 Data Warehouse에 만들어집니다.
 
@@ -62,4 +62,4 @@ ht-degree: 0%
 
 ## 관련 항목:
 
-* [&#x200B; [!DNL Google Analytics Warehoused] 연결 중](../integrations/google-analytics-warehoused.md)
+* [ [!DNL Google Analytics Warehoused] 연결 중](../integrations/google-analytics-warehoused.md)

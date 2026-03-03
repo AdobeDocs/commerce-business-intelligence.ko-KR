@@ -2,9 +2,9 @@
 title: Google Adwords 연결
 description: 광고 비용과 캠페인에서 획득한 사용자의 CLV(고객 생애 가치)를 결합하여 캠페인 ROI를 측정하는 방법을 알아봅니다.
 exl-id: db99f817-2a2e-4194-9dd2-ec2d6b27a118
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 0%
@@ -55,9 +55,9 @@ ht-degree: 0%
 
 ## 관련 항목
 
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
-* [&#x200B; [!DNL Google ECommerce]을(를) 통해 주문 참조 원본 추적](../integrations/google-ecommerce.md)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [ [!DNL Google ECommerce]을(를) 통해 주문 참조 원본 추적](../integrations/google-ecommerce.md)
 * [데이터베이스에서 사용자 조회 소스 추적](../../analysis/google-track-user-acq.md)
 * [가장 가치 있는 확보 소스 및 채널 살펴보기](../../analysis/most-value-source-channel.md)
 * [광고 캠페인에 대한 ROI 향상](../../analysis/roi-ad-camp.md)
-* [&#x200B; [!DNL Google Analytics] UTM 속성은 어떻게 작동합니까?](../../analysis/utm-attributes.md)
+* [ [!DNL Google Analytics] UTM 속성은 어떻게 작동합니까?](../../analysis/utm-attributes.md)

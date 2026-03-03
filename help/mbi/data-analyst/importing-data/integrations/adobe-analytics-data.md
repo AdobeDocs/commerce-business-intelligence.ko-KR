@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Analytics] 데이터가 필요합니다.'
 description: RDS 인스턴스 연결 단계를 알아봅니다.
 exl-id: 4df66ec1-c7f3-4b02-8f0f-49cada99c14c
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 0%
@@ -48,6 +48,6 @@ ht-degree: 0%
 | 제한 사항 | 설명 |
 | --- | --- |
 | `Historical data period` | 다른 타사 통합과 마찬가지로 [!DNL Adobe Analytics] 통합은 제한된 양의 이전 데이터를 가져온 다음 데이터를 계속 업데이트합니다. 이전 기간은 2주로 구성됩니다. |
-| `Empty component combinations` | 일부 지표 및 차원 조합에는 데이터가 포함되어 있지 않습니다. 복제를 위해 이러한 조합을 선택한 경우 [!DNL Commerce Intelligence]은(는) 복제된 테이블에서 열을 제외합니다. 이러한 조합을 선택하지 않으려면 먼저 [[!DNL Adobe Analytics] Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=ko)에서 보고서를 만들어 예상한 데이터를 가져오는지 확인할 수 있습니다. |
+| `Empty component combinations` | 일부 지표 및 차원 조합에는 데이터가 포함되어 있지 않습니다. 복제를 위해 이러한 조합을 선택한 경우 [!DNL Commerce Intelligence]은(는) 복제된 테이블에서 열을 제외합니다. 이러한 조합을 선택하지 않으려면 먼저 [[!DNL Adobe Analytics] Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html)에서 보고서를 만들어 예상한 데이터를 가져오는지 확인할 수 있습니다. |
 | `Re-authorization cadence` | [!DNL Adobe Analytics] 통합의 재인증이 2주마다 필요합니다. 다시 승인하려면 통합을 위한 편집 페이지로 이동하여 **[!UICONTROL Re-Authorize with [!DNL Adobe Analytics]]**&#x200B;을(를) 클릭합니다. |
 | `One dimension per row` | [!DNL Adobe Analytics]에서 한 번에 하나의 차원에 대한 지표 데이터를 제공합니다. 설정하는 동안 여러 차원을 선택하는 경우 [!DNL Commerce Intelligence] 테이블의 각 행에는 각 차원에 대한 단일 차원 값과 Null이 포함됩니다. |

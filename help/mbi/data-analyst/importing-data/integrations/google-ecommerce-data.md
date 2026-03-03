@@ -2,9 +2,9 @@
 title: '[!DNL Google ECommerce]데이터가 필요합니다.'
 description: Google Commerce와 공유하는 데이터 유형을 알아봅니다.
 exl-id: 8e5d8863-f003-4c38-95c5-660bcbff48da
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 3f16484f189f6b4a8b072d2e3514d2f170993d60
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 0%

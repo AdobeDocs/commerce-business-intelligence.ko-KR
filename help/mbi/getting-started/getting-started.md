@@ -2,9 +2,9 @@
 title: Adobe Commerce Intelligence 소개
 description: Adobe Commerce Intelligence에 대해 알아봅니다.
 exl-id: 0c960d8c-9bb7-429e-a88e-21678a77b710
-role: Admin, Data Architect, Data Engineer, Leader, User
+role: Admin, Developer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 0%
@@ -26,4 +26,4 @@ ht-degree: 0%
 
 표준 대시보드에는 마케팅 ROI, 고객 생애 가치, 고객 세분화, 경영진 및 투자자 KPI, 집단 분석 및 머천다이징 분석이 포함됩니다.
 
-[&#x200B; 계정을 &#x200B;](../getting-started/onpremise-activation.md)활성화[!DNL Commerce Intelligence]하면 [!DNL Adobe Commerce] 데이터베이스를 [!DNL Commerce Intelligence]에 연결하고 약 100개의 보고서가 있는 5개의 대시보드에 즉시 액세스할 수 있습니다. 이러한 보고서는 데이터에 대한 통찰력을 제공하고 *매달 주문이 어떻게 증가하고 있습니까?*, *가장 단골 고객은 누구입니까?*, *쿠폰 전략이 작동하고 있습니까?*.
+[ 계정을 ](../getting-started/onpremise-activation.md)활성화[!DNL Commerce Intelligence]하면 [!DNL Adobe Commerce] 데이터베이스를 [!DNL Commerce Intelligence]에 연결하고 약 100개의 보고서가 있는 5개의 대시보드에 즉시 액세스할 수 있습니다. 이러한 보고서는 데이터에 대한 통찰력을 제공하고 *매달 주문이 어떻게 증가하고 있습니까?*, *가장 단골 고객은 누구입니까?*, *쿠폰 전략이 작동하고 있습니까?*.

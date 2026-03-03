@@ -2,9 +2,9 @@
 title: Commerce 이탈
 description: Commerce 이탈률을 생성하고 분석하는 방법에 대해 알아봅니다.
 exl-id: 8775cf0a-114d-4b48-8bd2-fc1700c59a12
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 2%
@@ -76,19 +76,19 @@ ht-degree: 2%
 * **이탈률**
    * [!UICONTROL Metric]: 새 고객(첫 번째 주문 날짜별)
    * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
-   * &#x200B;
+   * 
      [!UICONTROL Perspective]: `Cumulative`
    * [!UICONTROL Metric]: `New customers (by last order date)`
    * [!UICONTROL Filter]:
-   * 고객의 마지막 주문 날짜 이후 시간(초) >= [이탈된 고객에 대한 자체 정의된 컷오프&#x200B;]&#x200B;**`^`**
+   * 고객의 마지막 주문 날짜 이후 시간(초) >= [이탈된 고객에 대한 자체 정의된 컷오프&#x200B;]**`^`**
    * `Lifetime number of orders Greater Than 0`
 
    * [!UICONTROL Metric]: `New customers (by last order date)`
    * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
-   * &#x200B;
+   * 
      [!UICONTROL Perspective]: Cumulative
    * [!UICONTROL Formula]: `(B / ((A + B) - C)`
-   * &#x200B;
+   * 
      [!UICONTROL Format]: Percentage
 
 * *지표 `A`:`New customers cumulative`*

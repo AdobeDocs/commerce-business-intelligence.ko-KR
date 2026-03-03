@@ -2,9 +2,9 @@
 title: 보고서 사본 만들기
 description: 보고서 사본을 만드는 방법을 알아봅니다.
 exl-id: c57783b4-32ae-4054-a85a-5ddf63cfd34b
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 0%

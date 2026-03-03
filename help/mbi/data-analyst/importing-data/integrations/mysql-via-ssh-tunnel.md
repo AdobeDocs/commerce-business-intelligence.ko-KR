@@ -2,9 +2,9 @@
 title: SSH 터널을 통해  [!DNL MySQL] 연결 중
 description: SSH 터널을 통해 [!DNL MySQL] 연결하는 방법에 대해 알아봅니다.
 exl-id: 6b691a6a-9542-4e47-9b1d-d6d3c3dac357
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 0%
@@ -13,15 +13,15 @@ ht-degree: 0%
 
 # [!DNL MySQL]을(를) 통해 [!DNL SSH Tunnel] 연결
 
-* [&#x200B; [!DNL Commerce Intelligence] 공개 키 검색](#retrieve)
-* [&#x200B; [!DNL Commerce Intelligence] IP 주소에 대한 액세스 허용](#allowlist)
-* [&#x200B; [!DNL Commerce Intelligence]에 대한 Linux 사용자 만들기](#linux)
-* [&#x200B; [!DNL MySQL] 의  [!DNL Commerce Intelligence]사용자 만들기](#mysql)
-* [&#x200B; [!DNL Commerce Intelligence]에 연결 및 사용자 정보 입력](#finish)
+* [ [!DNL Commerce Intelligence] 공개 키 검색](#retrieve)
+* [ [!DNL Commerce Intelligence] IP 주소에 대한 액세스 허용](#allowlist)
+* [ [!DNL Commerce Intelligence]에 대한 Linux 사용자 만들기](#linux)
+* [ [!DNL MySQL] 의  [!DNL Commerce Intelligence]사용자 만들기](#mysql)
+* [ [!DNL Commerce Intelligence]에 연결 및 사용자 정보 입력](#finish)
 
 ## 이동
 
-* [[!DNL MySQL] 경유 &#x200B;](../integrations/mysql-via-a-direct-connection.md)
+* [[!DNL MySQL] 경유 ](../integrations/mysql-via-a-direct-connection.md)
 * [[!DNL MySQL]을(를) 통한  [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
 
 [!DNL MySQL]을(를) 통해 [!DNL Commerce Intelligence] 데이터베이스를 `SSH tunnel`에 연결하려면 다음을 수행해야 합니다.
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 ## [!DNL Linux]에 대해 [!DNL Commerce Intelligence] 사용자를 만드는 중 {#linux}
 
-실시간(또는 자주 업데이트되는) 데이터가 포함되어 있는 한 프로덕션 또는 보조 시스템일 수 있습니다. [&#x200B; 서버에 연결할 수 있는 권한이 있는 한 원하는 방식으로 &#x200B;](../../../administrator/account-management/restrict-db-access.md)이 사용자를 제한`MySQL`할 수 있습니다.
+실시간(또는 자주 업데이트되는) 데이터가 포함되어 있는 한 프로덕션 또는 보조 시스템일 수 있습니다. [ 서버에 연결할 수 있는 권한이 있는 한 원하는 방식으로 ](../../../administrator/account-management/restrict-db-access.md)이 사용자를 제한`MySQL`할 수 있습니다.
 
 1. 새 사용자를 추가하려면 [!DNL Linux] 서버에서 다음 명령을 root로 실행합니다.
 
@@ -120,4 +120,4 @@ ht-degree: 0%
 
 ## 관련 항목:
 
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

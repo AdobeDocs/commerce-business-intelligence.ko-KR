@@ -2,9 +2,9 @@
 title: 질적 집단 분석 만들기
 description: 질적 집단이 무엇인지, 이 분석을 빌드하는 데 관심이 있을 수 있는 이유와 Commerce Intelligence에서 이를 작성하는 방법에 대해 알아봅니다.
 exl-id: 113244e4-409b-4129-b3d4-7a3433539ade
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '846'
 ht-degree: 0%
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 `qualitative cohort`에서 `Report Builder` 보고서를 만들면 Adobe 분석 팀이 필요한 표에 [고급 계산 열](../data-warehouse-mgr/creating-calculated-columns.md)을 만드는 작업이 포함됩니다.
 
-이를 만들려면 [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)을 제출하세요(이 문서 참조!). 다음은 알고 있어야 하는 사항입니다.
+이를 만들려면 [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)을 제출하세요(이 문서 참조!). 다음은 알고 있어야 하는 사항입니다.
 
 * 집단 분석을 수행할 `metric`과(와) 이 분석에서 사용하는 테이블(예: `Revenue` 테이블에 빌드된 `orders`)입니다.
 

@@ -2,9 +2,9 @@
 title: 예상 Commerce 데이터
 description: Commerce 사용자가 Commerce Intelligence으로 가져오는 기본 데이터 표 살펴보기
 exl-id: b481c8fc-41b6-4094-8901-17d57f26bfc0
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 0%
@@ -29,5 +29,5 @@ ht-degree: 0%
 
 ## 관련 항목
 
-* [&#x200B; [!DNL Adobe Commerce] 연결 중](../integrations/magento.md)
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
+* [ [!DNL Adobe Commerce] 연결 중](../integrations/magento.md)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

@@ -2,9 +2,9 @@
 title: SSH 터널을 통해 PostgreSQL 연결
 description: SSH 터널을 통해 PostgreSQL 데이터베이스를 Commerce Intelligence에 연결하는 방법을 알아봅니다.
 exl-id: da610988-21c1-4f5f-b4e2-e2deb175a2aa
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '541'
 ht-degree: 0%
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 [!DNL PostgreSQL]을(를) 통해 [!DNL Commerce Intelligence] 데이터베이스를 `SSH tunnel`에 연결하려면 다음을 수행해야 합니다.
 
-1. [&#x200B; [!DNL Commerce Intelligence] 공개 키 검색](#retrieve)
-1. [&#x200B; [!DNL Commerce Intelligence] IP 주소에 대한 액세스 허용](#allowlist)
-1. [&#x200B; [!DNL Linux] 의  [!DNL Commerce Intelligence]사용자 만들기](#linux)
-1. [&#x200B; [!DNL PostgreSQL] 의  [!DNL Commerce Intelligence]사용자 만들기](#postgres)
-1. [&#x200B; [!DNL Commerce Intelligence]에 연결 및 사용자 정보 입력](#finish)
+1. [ [!DNL Commerce Intelligence] 공개 키 검색](#retrieve)
+1. [ [!DNL Commerce Intelligence] IP 주소에 대한 액세스 허용](#allowlist)
+1. [ [!DNL Linux] 의  [!DNL Commerce Intelligence]사용자 만들기](#linux)
+1. [ [!DNL PostgreSQL] 의  [!DNL Commerce Intelligence]사용자 만들기](#postgres)
+1. [ [!DNL Commerce Intelligence]에 연결 및 사용자 정보 입력](#finish)
 
 ## [!DNL Commerce Intelligence] [!DNL public key] 검색 중 {#retrieve}
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 ## [!DNL Linux]에 대해 [!DNL Commerce Intelligence] 사용자를 만드는 중 {#linux}
 
-실시간(또는 자주 업데이트되는) 데이터가 포함되어 있는 한 프로덕션 또는 보조 시스템일 수 있습니다. [&#x200B; 서버에 연결할 수 있는 권한이 있는 한 원하는 방식으로 &#x200B;](../../../administrator/account-management/restrict-db-access.md)이 사용자를 제한[!DNL PostgreSQL]할 수 있습니다.
+실시간(또는 자주 업데이트되는) 데이터가 포함되어 있는 한 프로덕션 또는 보조 시스템일 수 있습니다. [ 서버에 연결할 수 있는 권한이 있는 한 원하는 방식으로 ](../../../administrator/account-management/restrict-db-access.md)이 사용자를 제한[!DNL PostgreSQL]할 수 있습니다.
 
 1. 새 사용자를 추가하려면 [!DNL Linux] 서버에서 다음 명령을 root로 실행합니다.
 
@@ -105,4 +105,4 @@ ht-degree: 0%
 
 ### 관련 항목
 
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

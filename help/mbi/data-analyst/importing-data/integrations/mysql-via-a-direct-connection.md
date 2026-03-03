@@ -2,9 +2,9 @@
 title: 직접 연결을 통해 MySQL 연결
 description: 직접 연결을 통해  [!DNL MongoDB] 을(를) 연결하는 방법에 대해 알아봅니다.
 exl-id: 53765844-c9bb-4a16-b00c-ce9672f87415
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 ## 이 항목에서
 
-* [&#x200B; [!DNL Commerce Intelligence] IP 주소에 대한 액세스 허용](#allowlist)
-* [&#x200B; [!DNL MySQL] 의  [!DNL Commerce Intelligence]사용자 만들기](#steptwo)
-* [&#x200B; [!DNL Commerce Intelligence]에 연결 정보 입력](#stepthree)
+* [ [!DNL Commerce Intelligence] IP 주소에 대한 액세스 허용](#allowlist)
+* [ [!DNL MySQL] 의  [!DNL Commerce Intelligence]사용자 만들기](#steptwo)
+* [ [!DNL Commerce Intelligence]에 연결 정보 입력](#stepthree)
 
 ## 이동
 
-* [[!DNL MySQL] 경유 &#x200B;](../integrations/mysql-via-ssh-tunnel.md)
+* [[!DNL MySQL] 경유 ](../integrations/mysql-via-ssh-tunnel.md)
 * [[!DNL MySQL]을(를) 통한  [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
 
 >[!NOTE]
@@ -66,4 +66,4 @@ ht-degree: 0%
 
 ## 관련 설명서
 
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

@@ -2,9 +2,9 @@
 title: 대시보드 검색
 description: 전역 검색 기능을 사용하여 대시보드를 찾는 방법과 다른 사용자가 소유한 대시보드를 검색하는 방법을 알아봅니다.
 exl-id: eea09ee5-e7ec-4002-8257-a35a64c900a9
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '146'
 ht-degree: 0%

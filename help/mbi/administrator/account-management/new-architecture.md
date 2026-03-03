@@ -2,9 +2,9 @@
 title: 새로운 아키텍처
 description: 새로운 아키텍처로 이동하여 얻을 수 있는 이점에 대해 알아봅니다.
 exl-id: cbb10673-5704-4a90-9574-5ac114f389b9
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Import/Export
-source-git-commit: ddda796c9f32d22b1d679fc245eb11b92cd491cf
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 ### 도움말 보기
 
-[!DNL Adobe Commerce Intelligence] [서비스 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)은(는) 추가 비용으로 재구현을 수행할 수 있습니다. [Adobe 계정 팀](../../guide-overview.md#Submitting-a-Support-Ticket)에 연락하여 새 계정에서 만들기 우선 순위를 지정할 대시보드/보고서 목록을 제공할 준비를 하십시오
+[!DNL Adobe Commerce Intelligence] [서비스 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)은(는) 추가 비용으로 재구현을 수행할 수 있습니다. [Adobe 계정 팀](../../guide-overview.md#Submitting-a-Support-Ticket)에 연락하여 새 계정에서 만들기 우선 순위를 지정할 대시보드/보고서 목록을 제공할 준비를 하십시오
 
 ### 기존 아키텍처 유지
 

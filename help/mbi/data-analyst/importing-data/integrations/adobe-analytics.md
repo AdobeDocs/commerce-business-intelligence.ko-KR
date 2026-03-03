@@ -2,9 +2,9 @@
 title: Adobe Analytics 연결
 description: ' [!DNL Adobe Analytics] 의 엔드 투 엔드 고객 여정 포커스와  [!DNL Commerce Intelligence]에서 의존하는 전자 상거래 포커스를 통합하는 방법을 알아봅니다.'
 exl-id: 824e1ee4-6b88-42f7-b265-29330dbc4407
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 0%
@@ -57,6 +57,6 @@ ht-degree: 0%
 
 1. 선택한 보고서 세트가 테이블에 표시됩니다. **[!UICONTROL Save]**&#x200B;을(를) 클릭하여 선택 내용을 확인합니다.
 
-1. 통합이 승인되었음을 [!DNL Commerce Intelligence] [지원 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)에 알리고 초기 연결 프로세스를 실행합니다.
+1. 통합이 승인되었음을 [!DNL Commerce Intelligence] [지원 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)에 알리고 초기 연결 프로세스를 실행합니다.
 
 초기 연결 프로세스가 실행되면 Data Warehouse 페이지의 `All Tables` 탭에서 테이블을 사용할 수 있습니다. 복제할 열을 선택하면 다음 전체 업데이트 후에 데이터가 표시됩니다.
