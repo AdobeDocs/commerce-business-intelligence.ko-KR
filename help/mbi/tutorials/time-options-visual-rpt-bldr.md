@@ -66,7 +66,7 @@ ht-degree: 0%
 
 ## 서로 다른 시간 범위에서 동일한 지표 비교 {#difftimerange}
 
-이 예제에서는 사용자 지정 차원 `Day number of the month`을(를) 사용합니다. 이 보고서를 만들려고 하는데 Data Warehouse에 이 차원이 없는 경우 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하여 도움을 받으십시오.
+이 예제에서는 사용자 지정 차원 `Day number of the month`을(를) 사용합니다. 이 보고서를 만들려고 하는데 Data Warehouse에 이 차원이 없는 경우 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하여 도움을 받으십시오.
 
 이 범주에서 가장 일반적인 두 가지 예는 (1) 성장 지표 (전년 대비 또는 전월 대비 매출)를 비교하는 것과 (2) 최근 재고 또는 품목 판매 트렌드를 더 잘 이해하는 것입니다.
 

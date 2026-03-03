@@ -136,7 +136,7 @@ PostgreSQL `UNION`설명서[에 설명된 대로 언급할 가치가 있는 &#x2
 
 **추가 도움말을 찾고 계십니까?**
 
-SQL을 작성하고 `Data Warehouse Views`을(를) 만드는 작업은 기술 지원에 포함되지 않습니다. 그러나 [서비스 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)은(는) 보기 만들기에 대한 지원을 제공합니다. 특정 분석을 위해 새 데이터베이스를 사용하여 기존 데이터베이스를 마이그레이션하고 단일 Data Warehouse 보기를 만드는 모든 작업에 대해 지원 팀이 도움을 줄 수 있습니다.
+SQL을 작성하고 `Data Warehouse Views`을(를) 만드는 작업은 기술 지원에 포함되지 않습니다. 그러나 [서비스 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)은(는) 보기 만들기에 대한 지원을 제공합니다. 특정 분석을 위해 새 데이터베이스를 사용하여 기존 데이터베이스를 마이그레이션하고 단일 Data Warehouse 보기를 만드는 모든 작업에 대해 지원 팀이 도움을 줄 수 있습니다.
 
 일반적으로 2~3개의 유사한 구조 테이블을 통합하기 위해 새 `Data Warehouse View`을(를) 만들려면 5시간의 서비스 시간이 필요하며, 이 경우 약 1,250달러의 작업 비용이 듭니다. 그러나 필요한 예상 투자를 늘릴 수 있는 몇 가지 일반적인 요소는 다음과 같습니다.
 

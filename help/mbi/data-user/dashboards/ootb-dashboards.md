@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >일부 대시보드의 사용 가능 여부는 데이터 세트에 따라 다릅니다.
 
-질문이 있거나 패키지를 계정에 추가하려면 [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)을 제출하여 도움을 받으십시오.
+질문이 있거나 패키지를 계정에 추가하려면 [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)을 제출하여 도움을 받으십시오.
 
 ## 경영진 개요
 

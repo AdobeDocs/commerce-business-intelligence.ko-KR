@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 재고 레벨 분석
 
-이 항목에서는 현재 인벤토리에 대한 통찰력을 제공하고 기존 아키텍처 또는 새 아키텍처 모두의 클라이언트에 대한 지침을 포함하는 대시보드를 설정하는 방법을 보여 줍니다. **[!UICONTROL Data Warehouse Views]** 메뉴 아래에 **[!UICONTROL Manage Data]** 옵션이 없는 경우 레거시 아키텍처를 사용하는 것입니다. 기존 아키텍처를 사용하는 경우 아래 [계산된 열](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 지침에 따라 지정된 섹션에 도달하면 제목이 **[!UICONTROL INVENTORY ANALYSIS]**&#x200B;인 _새 지원 요청_&#x200B;을 제출하십시오.
+이 항목에서는 현재 인벤토리에 대한 통찰력을 제공하고 기존 아키텍처 또는 새 아키텍처 모두의 클라이언트에 대한 지침을 포함하는 대시보드를 설정하는 방법을 보여 줍니다. **[!UICONTROL Data Warehouse Views]** 메뉴 아래에 **[!UICONTROL Manage Data]** 옵션이 없는 경우 레거시 아키텍처를 사용하는 것입니다. 기존 아키텍처를 사용하는 경우 아래 [계산된 열](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko) 지침에 따라 지정된 섹션에 도달하면 제목이 **[!UICONTROL INVENTORY ANALYSIS]**&#x200B;인 _새 지원 요청_&#x200B;을 제출하십시오.
 
 ## 추적할 열:
 
@@ -242,4 +242,4 @@ ht-degree: 0%
    * &#x200B;
      [!UICONTROL Chart type]: `Table`
 
-이 분석을 작성하는 동안 질문이 있거나 Professional Services 팀에 문의하려는 경우 [지원 팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하십시오.
+이 분석을 작성하는 동안 질문이 있거나 Professional Services 팀에 문의하려는 경우 [지원 팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하십시오.

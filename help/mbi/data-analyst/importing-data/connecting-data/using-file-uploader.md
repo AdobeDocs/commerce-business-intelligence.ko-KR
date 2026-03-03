@@ -24,7 +24,7 @@ ht-degree: 0%
 ## 제한 사항 및 요구 사항 {#require}
 
 1. **파일 업로드에 대해 지원되는 형식은 `CSV` 또는`comma separated values`**&#x200B;뿐입니다. Excel에서 작업하는 경우 다른 이름으로 저장 기능을 사용하여 파일을 `.csv` 형식으로 저장할 수 있습니다.
-1. **`CSV`개 파일은`UTF-8 encoding`**&#x200B;을(를) 사용해야 합니다. 대부분의 경우, 이것은 문제가 아닙니다. 파일을 업로드하는 동안 이 오류가 발생하면 [이 지원 문서를 참조하십시오](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html).
+1. **`CSV`개 파일은`UTF-8 encoding`**&#x200B;을(를) 사용해야 합니다. 대부분의 경우, 이것은 문제가 아닙니다. 파일을 업로드하는 동안 이 오류가 발생하면 [이 지원 문서를 참조하십시오](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=ko).
 1. **파일은 100MB**&#x200B;보다 클 수 없습니다. 파일이 이보다 큰 경우 테이블을 청크로 분리하여 개별 파일로 저장합니다. 초기 파일이 로드된 후 데이터를 추가할 수 있습니다.
 1. **모든 테이블에`primary key`**&#x200B;이(가) 있어야 합니다. 테이블에 `primary key` 또는 테이블의 각 행에 대한 고유 식별자로 사용할 수 있는 열이 하나 이상 있어야 합니다. `primary key`(으)로 지정된 모든 열은 *절대*&#x200B;이(가) 될 수 있습니다. `primary key`은(는) 각 행에 숫자를 제공하는 열을 추가하는 것만큼 간단하거나 고유한 값의 열을 만들기 위해 연결된 두 개의 열일 수 있습니다(예: `campaign name` 및 `date`).
 

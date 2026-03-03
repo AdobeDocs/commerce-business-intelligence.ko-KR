@@ -78,7 +78,7 @@ ht-degree: 0%
 
 두 개 이상의 제품을 제공하는 경우 특정 제품을 구매하는 고객이 다른 고객과 비교하여 시간이 지남에 따라 어떻게 다르게 동작하는지 궁금할 수 있습니다. 자세히 알아보시겠습니까? 이 자습서를 통해 구입한 특정 제품을 기반으로 고객 집단의 라이프타임 구매 행동을 살펴볼 수 있습니다.
 
-이 모범 사례는 [!DNL Adobe Commerce Intelligence] DAS(데이터 분석 서비스)에서 제공합니다. 자세한 내용은 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하세요.
+이 모범 사례는 [!DNL Adobe Commerce Intelligence] DAS(데이터 분석 서비스)에서 제공합니다. 자세한 내용은 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하세요.
 
 ### 관련 항목
 

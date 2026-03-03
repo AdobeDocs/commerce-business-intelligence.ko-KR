@@ -36,4 +36,4 @@ ht-degree: 0%
 기술에 좀 더 정통한 경우 [[!DNL Salesforce] API 설명서](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm)를 통해 Salesforce이 [!DNL Commerce Intelligence]과(와) 통합되는 방법에 대해 자세히 알아볼 수 있습니다.
 
 * [&#x200B; [!DNL Salesforce] 데이터가 필요합니다.](../integrations/salesforce-data.md)
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)

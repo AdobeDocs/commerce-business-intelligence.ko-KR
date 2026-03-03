@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL Adobe Commerce Intelligence] 환경
 
-상거래 데이터를 분석할 때 이러한 요인과 일반적인 오해에 대해 알아두십시오. Commerce 스키마를 올바르게 사용하고 있는지 확인하는 데 도움이 필요하면 [지원에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하십시오.
+상거래 데이터를 분석할 때 이러한 요인과 일반적인 오해에 대해 알아두십시오. Commerce 스키마를 올바르게 사용하고 있는지 확인하는 데 도움이 필요하면 [지원에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하십시오.
 
 ## [!DNL entity\_id]
 

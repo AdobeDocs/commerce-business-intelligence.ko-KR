@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 원시 데이터 내보내기
 
-원시 데이터 내보내기를 사용하면 Data Warehouse에서 레코드를 내보내 대시보드를 구동하는 항목을 자세히 살펴볼 수 있습니다. 또한 원시 데이터 내보내기를 통해 [데이터 불일치를 찾아냅니다](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html).
+원시 데이터 내보내기를 사용하면 Data Warehouse에서 레코드를 내보내 대시보드를 구동하는 항목을 자세히 살펴볼 수 있습니다. 또한 원시 데이터 내보내기를 통해 [데이터 불일치를 찾아냅니다](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=ko).
 
 원시 데이터 내보내기는 관련 지표의 정규화 취소 및 사전 합계를 통해 생성된 추가 열 및 차원에 대한 액세스를 제공합니다. 예를 들어 `User's first order date`은(는) [!DNL Commerce Intelligence]의 각 사용자에 대해 내보낼 수 있는 차원이지만 데이터베이스에서 사용할 수 없을 수도 있습니다.
 

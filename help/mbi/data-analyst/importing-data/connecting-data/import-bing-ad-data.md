@@ -26,4 +26,4 @@ ht-degree: 0%
 1. `Save As` 대화 상자에서 내보내기 파일을 저장할 폴더를 클릭합니다.
 1. `File name` 상자에서 파일 내보내기 이름을 선택합니다.
 1. **[!UICONTROL Save]**&#x200B;을(를) 클릭합니다.
-1. 파일을 다운로드한 후 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하여 사용자를 대신하여 첫 번째 업로드를 수행하고 필요한 백엔드 차원을 설정합니다.
+1. 파일을 다운로드한 후 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하여 사용자를 대신하여 첫 번째 업로드를 수행하고 필요한 백엔드 차원을 설정합니다.
