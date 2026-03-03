@@ -81,7 +81,7 @@ SQL을 잘 알고 있는 경우 이러한 통합 예제는 모두 `UNION` 함수
 
 [!DNL Facebook]과(와) [!DNL Google AdWords] 캠페인을 모두 포함하는 단일 광고 지출 테이블을 만들려면 SQL 쿼리를 작성하고 `UNION ALL` 함수를 사용해야 합니다. `UNION ALL` 문은 각 쿼리의 결과를 단일 출력에 추가하면서 서로 다른 여러 SQL 쿼리를 결합하는 데 가장 많이 사용됩니다.
 
-PostgreSQL `UNION`설명서[에 설명된 대로 언급할 가치가 있는 ](https://www.postgresql.org/docs/8.3/queries-union.html) 문의 몇 가지 요구 사항이 있습니다.
+PostgreSQL `UNION`설명서[에 설명된 대로 언급할 가치가 있는 &#x200B;](https://www.postgresql.org/docs/8.3/queries-union.html) 문의 몇 가지 요구 사항이 있습니다.
 
 * 모든 쿼리는 동일한 수의 열을 반환해야 합니다.
 * 해당 열에는 동일한 데이터 유형이 있어야 합니다.

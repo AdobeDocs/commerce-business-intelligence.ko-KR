@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Commerce Intelligence에서 SQL 쿼리 번역
 
-SQL 쿼리가 [에서 사용하는 ](../data-warehouse-mgr/creating-calculated-columns.md)계산된 열[, ](../../data-user/reports/ess-manage-data-metrics.md)지표[ 및 ](../../tutorials/using-visual-report-builder.md)보고서[!DNL Commerce Intelligence]&#x200B;(으)로 변환되는 방식에 대해 궁금하셨습니까? SQL 사용자가 많은 경우 [!DNL Commerce Intelligence]에서 SQL을 변환하는 방법을 이해하면 [Data Warehouse 관리자](../data-warehouse-mgr/tour-dwm.md)에서 보다 효율적으로 작업하고 [!DNL Commerce Intelligence] 플랫폼을 최대한 활용할 수 있습니다.
+SQL 쿼리가 [에서 사용하는 &#x200B;](../data-warehouse-mgr/creating-calculated-columns.md)계산된 열[, &#x200B;](../../data-user/reports/ess-manage-data-metrics.md)지표[&#x200B; 및 &#x200B;](../../tutorials/using-visual-report-builder.md)보고서[!DNL Commerce Intelligence]&#x200B;(으)로 변환되는 방식에 대해 궁금하셨습니까? SQL 사용자가 많은 경우 [!DNL Commerce Intelligence]에서 SQL을 변환하는 방법을 이해하면 [Data Warehouse 관리자](../data-warehouse-mgr/tour-dwm.md)에서 보다 효율적으로 작업하고 [!DNL Commerce Intelligence] 플랫폼을 최대한 활용할 수 있습니다.
 
 이 항목의 끝에 SQL 쿼리 절 및 **요소에 대한**&#x200B;변환 매트릭스[!DNL Commerce Intelligence]가 있습니다.
 

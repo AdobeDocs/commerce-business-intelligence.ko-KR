@@ -23,15 +23,15 @@ ht-degree: 0%
 
 [!DNL Zendesk] 데이터 연결은 간단한 3단계 프로세스입니다.
 
-1. [ [!DNL Zendesk] 에서  [!DNL Commerce Intelligence]자격 증명 페이지 열기](#stepone)
-1. [ [!DNL Zendesk] API 토큰 검색](#steptwo)
-1. [ [!DNL Zendesk] 에  [!DNL Commerce Intelligence]로그인 정보 및 토큰 입력](#stepthree)
+1. [&#x200B; [!DNL Zendesk] 에서  [!DNL Commerce Intelligence]자격 증명 페이지 열기](#stepone)
+1. [&#x200B; [!DNL Zendesk] API 토큰 검색](#steptwo)
+1. [&#x200B; [!DNL Zendesk] 에  [!DNL Commerce Intelligence]로그인 정보 및 토큰 입력](#stepthree)
 
 이 프로세스를 완료하려면 두 개의 브라우저 창 또는 탭을 열어야 합니다. 하나는 [!DNL Commerce Intelligence]에 대한 것이고 다른 하나는 [!DNL Zendesk] 계정에 대한 것입니다.
 
 ## [!DNL Zendesk]에서 [!DNL Commerce Intelligence] 자격 증명 페이지를 엽니다. {#stepone}
 
-1. `Integrations`데이터 원본&#x200B;**[!UICONTROL Manage Data** > ** > {통합&#x200B;**의 **0} 페이지로 이동합니다.]**
+1. `Integrations`데이터 원본&#x200B;**[!UICONTROL Manage Data** > **&#x200B; > {통합&#x200B;**&#x200B;의 **0} 페이지로 이동합니다.]**
 1. 화면 오른쪽에 있는 **[!UICONTROL Add Integration]**&#x200B;을(를) 클릭합니다.
 1. [!DNL Zendesk] 아이콘을 클릭합니다. [!DNL Zendesk] 자격 증명 페이지가 열립니다.
 
@@ -53,5 +53,5 @@ ht-degree: 0%
 
 ## 관련 항목:
 
-* [ [!DNL Zendesk] 데이터가 필요합니다.](../integrations/exp-zendesk-data.md)
+* [&#x200B; [!DNL Zendesk] 데이터가 필요합니다.](../integrations/exp-zendesk-data.md)
 * [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

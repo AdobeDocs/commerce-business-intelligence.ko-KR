@@ -13,8 +13,8 @@ ht-degree: 0%
 
 # [!DNL MySQL]을(를) 통해 [!DNL cPanel] 연결
 
-* [ [!DNL Commerce Intelligence] [!DNL MySQL]에서  [!DNL cPanel] 사용자 만들기](#cpanel)
-* [ [!DNL Commerce Intelligence]에 연결 및 사용자 정보 입력](#finish)
+* [&#x200B; [!DNL Commerce Intelligence] [!DNL MySQL]에서  [!DNL cPanel] 사용자 만들기](#cpanel)
+* [&#x200B; [!DNL Commerce Intelligence]에 연결 및 사용자 정보 입력](#finish)
 
 ## 이동
 

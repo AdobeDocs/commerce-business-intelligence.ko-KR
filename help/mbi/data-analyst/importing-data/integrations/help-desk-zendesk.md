@@ -77,7 +77,7 @@ ht-degree: 0%
 
 * **`[!DNL Zendesk] user's`** 테이블
    * `User is agent? (Yes/No) `
-   * 
+   * &#x200B;
       * `Column type` - `Same Table > Calculation`
 
       * `Input columns` - `role`, `email`
@@ -161,19 +161,19 @@ ht-degree: 0%
 * `Ticket's latest solved date`
 * `First agent response date`
 * `Seconds to resolution`
-   * 
+   * &#x200B;
       * `Column type` - `Same Table > Date Difference`
 
       * `Ticket's latest solved date` - `created_at`
 
 * **`Seconds to first response`**
-   * 
+   * &#x200B;
       * `Column type` - `Same Table > Date Difference`
 
       * `First agent response date` - `created_at`
 
 * **`Requester's ticket number`**
-   * 
+   * &#x200B;
       * `Column type` - `Same Table > Event Number`
 
       * `Event Owner` - `requester_id`
@@ -181,7 +181,7 @@ ht-degree: 0%
       * `Event Rank` - `created_at`
 
 * **`Ticket created_at (hour of day)`**
-   * 
+   * &#x200B;
       * `Column type` - &quot;같은 테이블 > 계산&quot;
 
       * `Input columns` - `created_at`
@@ -191,7 +191,7 @@ ht-degree: 0%
       * `Datatype` - 정수
 
 * **`Ticket created_at (day of week)`**
-   * 
+   * &#x200B;
       * `Column type` - &quot;같은 테이블 > 계산&quot;
 
       * `Input columns` - `created_at`
@@ -204,7 +204,7 @@ ht-degree: 0%
    * 정의 선택: `Count`
    * [!UICONTROL Create Path]:
    * [!UICONTROL Many]: `[!DNL Zendesk] tickets.email`
-   * 
+   * &#x200B;
      [!UICONTROL One]: `customer_entity.email`
 
    * [!UICONTROL table] 선택: `[!DNL Zendesk] tickets`
@@ -214,7 +214,7 @@ ht-degree: 0%
 
 * **`User's lifetime number of support tickets requested`**
 * **`Has user filed a support ticket? (Yes/No)`**
-   * 
+   * &#x200B;
       * `Column type` - &quot;같은 테이블 > 계산&quot;
 
       * `Input columns` - `User's lifetime number of support tickets requested`
@@ -401,7 +401,7 @@ ht-degree: 0%
 * `Chart Type`: `Column`
 
 * **[!UICONTROL Number of new users who have and have not filed tickets]**
-   * 
+   * &#x200B;
      [!UICONTROL 지표]: Users
 
 * 지표 `A`: `New users`

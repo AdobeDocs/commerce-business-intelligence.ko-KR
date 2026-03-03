@@ -47,7 +47,7 @@ ht-degree: 0%
 
 ## 시작
 
-보고서를 편집하려면 ![ 기반 차트의 오른쪽 위 모서리에 있는 톱니바퀴(](../../assets/gear-icon.png)톱니바퀴 아이콘[!DNL SQL]) 아이콘을 클릭하고 **[!UICONTROL Edit]**&#x200B;을(를) 클릭하십시오.
+보고서를 편집하려면 ![&#x200B; 기반 차트의 오른쪽 위 모서리에 있는 톱니바퀴(](../../assets/gear-icon.png)톱니바퀴 아이콘[!DNL SQL]) 아이콘을 클릭하고 **[!UICONTROL Edit]**&#x200B;을(를) 클릭하십시오.
 
 ## 쿼리 작성 {#writing}
 
@@ -113,7 +113,7 @@ ht-degree: 0%
 
 #### [!DNL SQL Report Builder]
 
-[[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md)을(를) 사용하면 Data Warehouse을 직접 쿼리하고 결과를 보고 빠르게 보고서로 변환할 수 있습니다. [!DNL SQL]을(를) 사용하면 [ 또는  [!DNL SQL]  보고서 빌더에서 ](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html)사용할 수 없는`Visual`함수를 사용`Cohort`할 수 있으므로 데이터를 보다 세밀하게 제어할 수 있습니다.
+[[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md)을(를) 사용하면 Data Warehouse을 직접 쿼리하고 결과를 보고 빠르게 보고서로 변환할 수 있습니다. [!DNL SQL]을(를) 사용하면 [&#x200B; 또는  [!DNL SQL]  보고서 빌더에서 &#x200B;](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html)사용할 수 없는`Visual`함수를 사용`Cohort`할 수 있으므로 데이터를 보다 세밀하게 제어할 수 있습니다.
 
 [!DNL SQL]을(를) 사용하여 만든 계산된 열은 업데이트 주기에 종속되지 않습니다. 즉, 원하는 대로 반복하고 결과를 즉시 확인할 수 있습니다.
 

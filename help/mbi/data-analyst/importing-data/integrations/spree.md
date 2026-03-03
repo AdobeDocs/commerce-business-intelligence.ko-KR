@@ -17,7 +17,7 @@ ht-degree: 0%
 
 비즈니스의 성과를 확인하거나 가장 중요한 확보 소스 및 채널을 찾고 싶으십니까? [!DNL Spree] 데이터를 [!DNL Commerce Intelligence]에 연결하면 이러한 질문에 답변할 수 있습니다.
 
-[!DNL Spree] 데이터베이스는 [!DNL PostgreSQL]을(를) 기반으로 합니다. [!DNL Commerce Intelligence]일반적인[연결 [!DNL Postgres] 과 같은 단계를 사용하여 ](../integrations/postgresql.md)에 연결할 수 있습니다.
+[!DNL Spree] 데이터베이스는 [!DNL PostgreSQL]을(를) 기반으로 합니다. [!DNL Commerce Intelligence]일반적인[연결 [!DNL Postgres] 과 같은 단계를 사용하여 &#x200B;](../integrations/postgresql.md)에 연결할 수 있습니다.
 
 ## 관련 설명서
 

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 소매 달력 보고
 
-이 항목에서는 [ 계정 내에서 ](https://nrf.com/resources/4-5-4-calendar)4-5-4 소매 달력[!DNL Adobe Commerce Intelligence]을 사용하도록 구조를 설정하는 방법을 보여 줍니다. 시각적 리포트 빌더는 놀라울 정도로 유연한 시간 범위, 간격 및 독립 설정을 제공합니다. 그러나 이러한 모든 설정은 기존의 월별 달력을 사용하여 작동합니다.
+이 항목에서는 [&#x200B; 계정 내에서 &#x200B;](https://nrf.com/resources/4-5-4-calendar)4-5-4 소매 달력[!DNL Adobe Commerce Intelligence]을 사용하도록 구조를 설정하는 방법을 보여 줍니다. 시각적 리포트 빌더는 놀라울 정도로 유연한 시간 범위, 간격 및 독립 설정을 제공합니다. 그러나 이러한 모든 설정은 기존의 월별 달력을 사용하여 작동합니다.
 
 많은 고객이 소매 또는 회계 날짜를 사용하도록 달력을 변경하기 때문에 아래 단계에서는 데이터를 사용하고 소매 날짜를 사용하여 보고서를 만드는 방법을 보여줍니다. 아래 지침은 4-5-4 소매 달력을 참조하지만, 재무 달력이든 사용자 정의 시간대이든 팀이 사용하는 특정 달력에 대해 변경할 수 있습니다.
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 시작
 
-소매 연도 2014년부터 2017년까지 4-5-4 소매 일정 [ 버전을 ](../../assets/454-calendar.csv)다운로드`.csv`할 수 있습니다. 내부 소매 일정에 따라 이 파일을 조정하고 날짜 범위를 확장하여 기록 및 현재 시간대를 지원할 수 있습니다. 파일을 다운로드한 후 File Uploader를 사용하여 [!DNL Commerce Intelligence] Data Warehouse에서 소매 달력 테이블을 만듭니다. 4-5-4 소매 달력의 변경되지 않은 버전을 사용하는 경우 이 표에 있는 필드의 구조 및 데이터 유형이 다음과 일치하는지 확인하십시오.
+소매 연도 2014년부터 2017년까지 4-5-4 소매 일정 [&#x200B; 버전을 &#x200B;](../../assets/454-calendar.csv)다운로드`.csv`할 수 있습니다. 내부 소매 일정에 따라 이 파일을 조정하고 날짜 범위를 확장하여 기록 및 현재 시간대를 지원할 수 있습니다. 파일을 다운로드한 후 File Uploader를 사용하여 [!DNL Commerce Intelligence] Data Warehouse에서 소매 달력 테이블을 만듭니다. 4-5-4 소매 달력의 변경되지 않은 버전을 사용하는 경우 이 표에 있는 필드의 구조 및 데이터 유형이 다음과 일치하는지 확인하십시오.
 
 | 열 이름 | 열 데이터 유형 | 기본 키 |
 | --- | --- | --- |
@@ -50,7 +50,7 @@ ht-degree: 0%
    * **현재 날짜**
       * [!UICONTROL Column type]: `Same table > Calculation`
       * [!UICONTROL Inputs]: `Date Retail`
-      * 
+      * &#x200B;
         [!UICONTROL 데이터 유형]: `Datetime`
       * [!UICONTROL Calculation]: `case when A is null then null else to\_char(now(), 'YYYY-MM-DD 00:00:00') end`
 
@@ -62,7 +62,7 @@ ht-degree: 0%
       * [!UICONTROL Column type]: E`vent Counter`
       * [!UICONTROL Local Key]: `Current date`
       * [!UICONTROL Remote Key]: `Retail calendar.Date Retail`
-      * 
+      * &#x200B;
         [!UICONTROL Operation]: `Max`
       * [!UICONTROL Operation value]: `Year Retail`
    * **현재 소매 연도에 포함됩니까? (예/아니요)**
@@ -70,7 +70,7 @@ ht-degree: 0%
       * [!UICONTROL Inputs]:
          * `A` - `Year Retail`
          * `B` - `Current retail year`
-      * 
+      * &#x200B;
         [!UICONTROL 데이터 유형]: `String`
       * [!UICONTROL Calculation]: `case when A is null or B is null then null when A = B then 'Yes' else 'No' end`
    * **이전 소매 연도에 포함됩니까? (예/아니요)**
@@ -78,7 +78,7 @@ ht-degree: 0%
       * [!UICONTROL Inputs]:
          * `A` - `Year Retail`
          * `B` - `Current retail year`
-      * 
+      * &#x200B;
         [!UICONTROL 데이터 유형]: String
       * [!UICONTROL Calculation]: `case when A is null or B is null then null when (A = (B-1)) then 'Yes' else 'No' end`
 
@@ -139,62 +139,62 @@ ht-degree: 0%
       * [!UICONTROL Filter]:
          * `Created\_at (retail Year) = 2015`
    * [!UICONTROL Time period]: `All time`
-   * 
+   * &#x200B;
      [!UICONTROL Interval]: `None`
-   * 
+   * &#x200B;
      [!UICONTROL Group by]: `Created\_at` (retail week)
-   * 
+   * &#x200B;
      [!UICONTROL Chart type]: `Line`
       * `multiple Y-axes` 끄기
 
 * **소매 달력 개요(현재 월별 소매 연도)**
    * 지표 `A`: `Revenue`
-      * 
+      * &#x200B;
         [!UICONTROL 지표]: `Revenue`
       * [!UICONTROL Filter]:
-         * 
+         * &#x200B;
            [!UICONTROL Include current retail year?]: `Yes`
    * 지표 `B`: `Orders`
       * [!UICONTROL Metric]: `Number of orders`
       * [!UICONTROL Filter]:
-         * 
+         * &#x200B;
            [!UICONTROL Include current retail year?]: `Yes`
    * 지표 `C`: `Avg order value`
       * [!UICONTROL Metric]: `Avg order value`
       * [!UICONTROL Filter]:
-         * 
+         * &#x200B;
            [!UICONTROL Include current retail year?]: `Yes`
    * [!UICONTROL Time period]: `All time`
-   * 
+   * &#x200B;
      [!UICONTROL Interval]: `None`
-   * 
+   * &#x200B;
      [!UICONTROL Group by]: `Created\_at` (retail month)
-   * 
+   * &#x200B;
      [!UICONTROL Chart type]: `Line`
 
 * **소매 일정 개요(이전 월별 소매 연도)**
    * 지표 `A`: `Revenue`
-      * 
+      * &#x200B;
         [!UICONTROL 지표]: `Revenue`
       * [!UICONTROL Filter]:
-         * 
+         * &#x200B;
            [!UICONTROL Include current retail year?]: `Yes`
    * 지표 `B`: `Orders`
       * [!UICONTROL Metric]: 주문 수
       * [!UICONTROL Filter]:
-         * 
+         * &#x200B;
            [!UICONTROL Include current retail year?]: `Yes`
    * 지표 `C`: `Avg order value`
       * [!UICONTROL Metric]: `Avg order value`
       * [!UICONTROL Filter]:
-         * 
+         * &#x200B;
            [!UICONTROL Include current retail year?]: `Yes`
    * [!UICONTROL Time period]: `All time`
-   * 
+   * &#x200B;
      [!UICONTROL Interval]: `None`
-   * 
+   * &#x200B;
      [!UICONTROL Group by]: `Created\_at` (retail month)
-   * 
+   * &#x200B;
      [!UICONTROL Chart type]: `Line`
 
 ## 다음 단계

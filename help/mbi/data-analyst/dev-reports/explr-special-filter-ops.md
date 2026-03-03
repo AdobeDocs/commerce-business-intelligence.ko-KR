@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 필터 옵션
 
-이 항목에서는 `operators`보고서를 만들 때`filters` 또는 [지표를 만들 때](../../tutorials/using-visual-report-builder.md){: target="_blank"}에 [에서 사용되는 몇 가지 특수 ](../../data-user/reports/ess-manage-data-metrics.md){: target="_blank"}에 대해 살펴봅니다.
+이 항목에서는 `operators`보고서를 만들 때`filters` 또는 [지표를 만들 때](../../tutorials/using-visual-report-builder.md){: target="_blank"}에 [에서 사용되는 몇 가지 특수 &#x200B;](../../data-user/reports/ess-manage-data-metrics.md){: target="_blank"}에 대해 살펴봅니다.
 
 ## `Filter Operators`
 

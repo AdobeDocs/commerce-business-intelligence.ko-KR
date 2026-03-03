@@ -49,7 +49,7 @@ ht-degree: 0%
 
 ## [!DNL Commerce Intelligence]에서 사용하려면 어떻게 해야 합니까? {#use}
 
-매핑 테이블을 만들었으면 [파일을 ](../../data-analyst/importing-data/connecting-data/using-file-uploader.md)에 업로드[!DNL Commerce Intelligence]하고 [조인된 열을 만들기](../../data-analyst/data-warehouse-mgr/calc-column-types.md)하여 새 필드를 원하는 테이블로 이동해야 합니다. 파일이 Data Warehouse에 동기화된 후 이 작업을 수행할 수 있습니다.
+매핑 테이블을 만들었으면 [파일을 &#x200B;](../../data-analyst/importing-data/connecting-data/using-file-uploader.md)에 업로드[!DNL Commerce Intelligence]하고 [조인된 열을 만들기](../../data-analyst/data-warehouse-mgr/calc-column-types.md)하여 새 필드를 원하는 테이블로 이동해야 합니다. 파일이 Data Warehouse에 동기화된 후 이 작업을 수행할 수 있습니다.
 
 이 예제에서는 조인된 열을 사용하여 `mapping_state` 테이블(`state_input`)에서 만든 열을 `customer_address` 테이블로 이동합니다. 이렇게 하면 보고서의 `state_input` 열 대신 `state` 열을 기준으로 그룹화할 수 있습니다.
 
