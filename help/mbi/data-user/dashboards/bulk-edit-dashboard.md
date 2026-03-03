@@ -2,9 +2,9 @@
 title: 대시보드에서 차트 벌크 편집
 description: ' [!DNL Commerce Intelligence]에서 대량 편집 기능을 사용하는 방법에 대해 알아봅니다.'
 exl-id: 576ffabb-5e5d-4251-9662-951e2cd30f31
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 0%

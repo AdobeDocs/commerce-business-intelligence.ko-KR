@@ -2,9 +2,9 @@
 title: 데이터 작업
 description: 해당 데이터를 구성하고 작업하기 위한 모범 사례에 대해 알아봅니다.
 exl-id: cd898aa0-afec-481a-b800-d156d57aba85
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '65'
 ht-degree: 0%

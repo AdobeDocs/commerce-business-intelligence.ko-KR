@@ -2,9 +2,9 @@
 title: SSH 터널을 통해  [!DNL MongoDB] 연결
 description: SSH 터널을 통해 [!DNL MongoDB] 연결하는 방법에 대해 알아봅니다.
 exl-id: 3557a8c7-c4c5-4742-ae30-125c719aca39
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '661'
 ht-degree: 0%

@@ -2,9 +2,9 @@
 title: Microsoft SQL Server 연결
 description: 4단계 프로세스를 통해 Microsoft SQL 데이터베이스를  [!DNL Commerce Intelligence] 에 연결하는 방법을 알아봅니다.
 exl-id: 7f49d1dc-8fbb-4a8c-9d07-9a8195c266f5
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
-source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 0%

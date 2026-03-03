@@ -2,9 +2,9 @@
 title: PrestaShop 연결
 description: PrestaShop 데이터를  [!DNL Commerce Intelligence]에 연결하는 방법을 알아봅니다.
 exl-id: b6f240c0-9461-4015-a56a-64e8e67392fa
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '87'
 ht-degree: 0%

@@ -2,9 +2,9 @@
 title: Google Adwords 연결
 description: 광고 비용과 캠페인에서 획득한 사용자의 CLV(고객 생애 가치)를 결합하여 캠페인 ROI를 측정하는 방법을 알아봅니다.
 exl-id: db99f817-2a2e-4194-9dd2-ec2d6b27a118
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 0%

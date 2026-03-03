@@ -2,9 +2,9 @@
 title: 획득 소스를 사용하여 Google Analytics 채널 복제
 description: 획득 소스를 사용하여 Google Analytics 채널을 복제하는 방법에 대해 알아봅니다.
 exl-id: e7248fe4-94db-4cdf-8f58-1f65061a207d
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '688'
 ht-degree: 0%
@@ -32,11 +32,11 @@ ht-degree: 0%
 | 직접 | 사이트로 직접 들어오는 모든 사용자. | Source = `Direct`<br>이고 Medium = `(not set); OR Medium = (none)` |
 | 유기 검색 | 무급 검색 엔진에서 유기적으로 순위가 매겨진 트래픽. | Medium = `organic` |
 | 레퍼러 | 유기 검색이 아닌 외부 링크 또는 소셜 네트워크가 아닌 웹 사이트에서 들어오는 트래픽입니다. | Medium = `referral` |
-| 유료 검색 | 미디어가 &quot;cpc&quot;, &quot;ppc&quot; 또는 &quot;paidsearch&quot;인 UTM 추적 코드가 있고 &quot;콘텐츠&quot;와 일치하지 않는 광고 배포 네트워크인 트래픽입니다. | Medium = `^(cpc|ppc|paidsearch)$`<br>AND 광고 배포 네트워크 ≠ `Content` |
-| 소셜 | 약 400개의 소셜 네트워크에서 오며 광고로 태그가 지정되지 않은 참조 트래픽. | 소셜 Source 참조 = `Yes`<br>또는 Medium = `^(social|social-network|social-media|sm|social network|social media)$` |
+| 유료 검색 | 미디어가 &quot;cpc&quot;, &quot;ppc&quot; 또는 &quot;paidsearch&quot;인 UTM 추적 코드가 있고 &quot;콘텐츠&quot;와 일치하지 않는 광고 배포 네트워크인 트래픽입니다. | Medium = `^(cpc`\|`ppc`\|`paidsearch)$`<br>AND 광고 배포 네트워크 ≠ `Content` |
+| 소셜 | 약 400개의 소셜 네트워크에서 오며 광고로 태그가 지정되지 않은 참조 트래픽. | 소셜 Source 참조 = `Yes`<br>또는 Medium = `^(social`\|`social-network`\|`social-media`\|`sm`\|`social network`\|`social media)$` |
 | 이메일 | &quot;이메일&quot; 미디어로 태그가 지정된 세션의 트래픽입니다. | Medium의 UTM 추적 코드 = `email` |
-| 표시 | 미디어가 디스플레이 또는 cpm인 UTM 추적 코드가 있는 트래픽입니다. 광고 배포 네트워크가 &quot;콘텐츠&quot;와 일치하는 AdWords 상호 작용도 포함합니다. | Medium = `^(display|cpm|banner)$`<br>OR 광고 배포 네트워크 = `Content`<br>AND 광고 형식 ≠ `Text` |
-| 기타 | &quot;cpc&quot;, &quot;ppc&quot;, &quot;cpm&quot;, &quot;cpv&quot;, &quot;cpa&quot;, &quot;cpp&quot;, &quot;affiliate&quot; 미디어로 태그가 지정된 다른 광고 채널(유료 검색 제외)의 세션. | Medium = `^(cpv|cpa|cpp|content-text)$` |
+| 표시 | 미디어가 디스플레이 또는 cpm인 UTM 추적 코드가 있는 트래픽입니다. 광고 배포 네트워크가 &quot;콘텐츠&quot;와 일치하는 AdWords 상호 작용도 포함합니다. | Medium = `^(display`\|`cpm`\|`banner)$`<br>또는 광고 배포 네트워크 = `Content`<br>AND 광고 형식 ≠ `Text` |
+| 기타 | &quot;cpc&quot;, &quot;ppc&quot;, &quot;cpm&quot;, &quot;cpv&quot;, &quot;cpa&quot;, &quot;cpp&quot;, &quot;affiliate&quot; 미디어로 태그가 지정된 다른 광고 채널(유료 검색 제외)의 세션. | Medium = `^(cpv`\|`cpa`\|`cpp`\|`content-text)$` |
 
 {style="table-layout:auto"}
 

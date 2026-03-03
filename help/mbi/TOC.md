@@ -1,12 +1,13 @@
 ---
 title: Commerce Intelligence
 description: Adobe Commerce에서 사용할 수 있는  [!DNL Commerce Intelligence] 기능을 사용하는 방법에 대해 알아봅니다.
+user-guide-title: Commerce Intelligence 사용 안내서
 breadcrumb-title: Commerce Intelligence 사용 안내서
-role: Admin, Data Architect, Data Engineer, Leader, User
+role: Admin, Developer, Leader, User
 feature: Business Performance
-source-git-commit: cea314102fb3b2164c1498ce1efa60e83c41b188
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '687'
 ht-degree: 0%
 
 ---

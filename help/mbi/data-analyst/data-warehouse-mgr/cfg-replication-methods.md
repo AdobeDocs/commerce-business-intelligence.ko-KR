@@ -2,9 +2,9 @@
 title: 복제 방법 구성
 description: 표를 구성하는 방법과 표 데이터가 작동하는 방식을 통해 표에 가장 적합한 복제 방법을 선택할 수 있습니다.
 exl-id: 83895c48-a6ec-4b01-9890-164e0b21dcbc
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '1442'
 ht-degree: 0%

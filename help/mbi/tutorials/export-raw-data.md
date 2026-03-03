@@ -2,9 +2,9 @@
 title: 원시 데이터 내보내기
 description: ' [!DNL Commerce Intelligence] Data Warehouse에서 레코드를 내보내 대시보드를 구동하는 항목을 자세히 살펴보는 방법에 대해 알아봅니다.'
 exl-id: 26decdaf-2b2c-4ca2-b3d5-0386892662e8
-role: Admin, Data Architect, Data Engineer, Leader, User
+role: Admin, Developer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 0%

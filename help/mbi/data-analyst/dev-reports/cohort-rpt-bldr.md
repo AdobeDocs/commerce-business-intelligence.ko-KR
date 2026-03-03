@@ -2,9 +2,9 @@
 title: 코호트 Report Builder
 description: 라이프사이클 동안 유사한 특성을 공유하는 사용자 그룹의 분석에 대해 알아봅니다.
 exl-id: d80c5389-7256-40e0-86e0-49903113f93d
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '1597'
 ht-degree: 0%

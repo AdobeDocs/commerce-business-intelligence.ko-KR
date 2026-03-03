@@ -2,9 +2,9 @@
 title: SQL Report Builder 작업
 description: 결과를 로컬 데이터베이스의 데이터와 비교할 수 있도록 SQL Report Builder을 사용하여 데이터 및 지표를 감사하는 방법을 알아봅니다.
 exl-id: d1d9e099-4138-43e6-aaec-6f15ebc5c4d4
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Reports, Data Warehouse Manager, SQL Report Builder
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 0%

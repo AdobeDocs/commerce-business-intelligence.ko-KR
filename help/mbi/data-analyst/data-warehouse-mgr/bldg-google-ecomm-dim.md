@@ -2,9 +2,9 @@
 title: 빌드[!DNL Google ECommerce] 차원
 description: 전자 상거래 데이터를 주문 및 고객 데이터와 연결하는 차원을 빌드하는 방법을 알아봅니다.
 exl-id: f8a557ae-01d7-4886-8a1c-c0f245c7bc49
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Integration, Data Warehouse Manager
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '1023'
 ht-degree: 0%

@@ -2,9 +2,9 @@
 title: SQL 계산 열 생성 및 사용
 description: 새 Adobe Commerce Intelligence 아키텍처에서 고급 열을 SQL 계산 열 형태로 만드는 방법을 알아봅니다.
 exl-id: f16e4ee4-ed73-4ddb-b701-1fe3db14346a
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, SQL Report Builder, Commerce Tables
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '839'
 ht-degree: 0%

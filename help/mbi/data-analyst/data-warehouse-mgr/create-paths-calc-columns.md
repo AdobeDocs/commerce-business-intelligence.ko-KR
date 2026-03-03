@@ -2,9 +2,9 @@
 title: 계산된 열의 경로 만들기 또는 삭제
 description: 열을 만드는 테이블이 정보를 가져오는 테이블과 어떻게 관련이 있는지 설명하는 경로를 정의하는 방법을 알아봅니다.
 exl-id: 734a8046-8058-4f03-93a2-8d59b9be6d2d
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '1007'
 ht-degree: 0%

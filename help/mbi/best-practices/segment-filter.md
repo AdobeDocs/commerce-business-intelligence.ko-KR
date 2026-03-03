@@ -2,9 +2,9 @@
 title: 세분화 및 필터링에 대한 권장 데이터 차원
 description: 세분화 및 필터링 모범 사례에 대해 알아봅니다.
 exl-id: 66391bce-bdeb-4e9d-8089-1c796e00d91e
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '911'
 ht-degree: 0%

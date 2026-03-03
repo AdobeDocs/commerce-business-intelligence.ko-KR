@@ -2,9 +2,9 @@
 title: SQL 쿼리 최적화
 description: SQL 쿼리를 최적화하는 방법을 알아봅니다.
 exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-source-git-commit: acc152709c7c66f387f4eded9e6c1c646a83af35
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 0%

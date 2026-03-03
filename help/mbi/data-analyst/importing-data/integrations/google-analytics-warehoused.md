@@ -2,9 +2,9 @@
 title: Google Analytics 웨어하우징 연결
 description: 방문자가 사이트를 사용하는 방법, 매력적인 콘텐츠, 방문자가 종료하는 위치 등을 추적하는 방법에 대해 알아봅니다.
 exl-id: b9879399-9e1a-4f36-b510-8426ebc83aeb
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 0%

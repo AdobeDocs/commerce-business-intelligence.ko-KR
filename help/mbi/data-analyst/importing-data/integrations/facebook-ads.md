@@ -2,9 +2,9 @@
 title: Facebook 광고 연결
 description: 광고 지출 데이터를 분석하고 비용이 효과적으로 지출되는지 확인하는 방법을 알아봅니다.
 exl-id: 219a868b-f17c-4299-9e29-94db9156c9b6
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 0%

@@ -2,9 +2,9 @@
 title: 데이터 연결
 description: Data Warehouse Manager에서 동기화에 사용할 수 있는 표를 검색하는 방법을 알아봅니다.
 exl-id: 94beba8b-6a86-4af9-87fb-96b1cf8f8fa2
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
-source-git-commit: d683f1362d87eee16c41ba9a8a83a9ff533b14aa
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 0%

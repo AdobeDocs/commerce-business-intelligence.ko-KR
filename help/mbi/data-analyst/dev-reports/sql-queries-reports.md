@@ -2,9 +2,9 @@
 title: SQL 쿼리를 Commerce Intelligence 보고서로 번역
 description: SQL 쿼리를 Commerce Intelligence에서 사용하는 계산된 열, 지표로 변환하는 방법에 대해 알아봅니다.
 exl-id: b3e3905f-6952-4f15-a582-bf892a971fae
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 0%

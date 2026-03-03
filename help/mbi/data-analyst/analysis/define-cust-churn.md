@@ -2,9 +2,9 @@
 title: 고객 이탈 정의
 description: 트랜잭션 고객에 대한 이탈을 정의하는 데 도움이 되는 대시보드를 설정하는 방법에 대해 알아봅니다.
 exl-id: fea8f7e9-c84c-4d49-a657-8b75140c113a
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports, Dashboards
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 0%

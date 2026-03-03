@@ -2,9 +2,9 @@
 title: Data Warehouse 보기 만들기 및 사용
 description: 기존 테이블을 수정하여 새 웨어하우스된 테이블을 만들거나 SQL을 사용하여 여러 테이블을 함께 연결하거나 통합하는 방법에 대해 알아봅니다.
 exl-id: 5aa571c9-7f38-462c-8f1b-76a826c9dc55
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '1120'
 ht-degree: 6%

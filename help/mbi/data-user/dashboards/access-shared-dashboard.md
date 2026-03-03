@@ -2,9 +2,9 @@
 title: 공유 대시보드 액세스
 description: 공유 대시보드에 액세스하는 방법을 알아봅니다.
 exl-id: 528b8a2e-f13c-4ce8-ab8e-13864f50761a
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '67'
 ht-degree: 0%

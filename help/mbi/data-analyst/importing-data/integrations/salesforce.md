@@ -2,9 +2,9 @@
 title: Salesforce 연결
 description: Salesforce 데이터를 통해 점수 책정 및 최적화부터 전환된 기회에 대한 목표를 달성하는 것까지 다양한 분석을 구현하는 방법을 알아봅니다.
 exl-id: 249b2b40-8c8a-4616-9383-17690f07003d
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 0%

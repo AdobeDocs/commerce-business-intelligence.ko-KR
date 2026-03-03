@@ -2,9 +2,9 @@
 title: 데이터 검사 구성
 description: 변경 가능한 값으로 데이터 열을 구성하는 방법에 대해 알아봅니다.
 exl-id: c31ef32e-ba5a-4902-b632-fbab551cc632
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 0%

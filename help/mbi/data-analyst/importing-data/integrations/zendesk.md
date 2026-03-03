@@ -2,9 +2,9 @@
 title: Zendesk 연결
 description: ' [!DNL Commerce Intelligence]에서 헬프 데스크 보고를 통합하는 방법을 알아봅니다.'
 exl-id: 1c7f7c5c-4b1c-4bcf-8f1d-2b4cf9cdb0fb
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 0%

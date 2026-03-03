@@ -2,9 +2,9 @@
 title: enterprise_rma 테이블
 description: 특정 반환 요청에 대한 정보를 분석하는 방법에 대해 알아봅니다.
 exl-id: a19cbc9a-e34f-4f4e-820f-9e413d1a552d
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%

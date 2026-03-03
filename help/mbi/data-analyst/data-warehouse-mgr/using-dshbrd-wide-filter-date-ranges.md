@@ -2,9 +2,9 @@
 title: 대시보드 전체 필터링
 description: 특정 대시보드에 있는 모든 보고서를 일괄 편집하는 방법을 알아봅니다.
 exl-id: 379d0027-8a7a-4062-a66a-4f06c37b806c
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%

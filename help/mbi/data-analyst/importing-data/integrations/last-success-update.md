@@ -2,9 +2,9 @@
 title: 데이터베이스와 SQL 편집기 간의 결과 이해
 description: 데이터베이스와 SQL 편집기 간의 결과를 이해하는 방법에 대해 알아봅니다.
 exl-id: f31f3eef-791a-4984-901e-bc10554031bd
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%
