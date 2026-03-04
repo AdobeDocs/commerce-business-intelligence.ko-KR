@@ -4,7 +4,7 @@ description: Mixpanel 내에서 직접 사용할 수 있는 모든 동일한 데
 exl-id: d18ce954-26fe-4440-ad8b-4f266c007b2f
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+source-git-commit: 063112ebbafad195b0a80ee2b119ab32d879ae5b
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 0%
@@ -30,3 +30,4 @@ ht-degree: 0%
    ![메뉴의 CSV로 Mixpanel 내보내기 옵션](../../../assets/export-csv-mixpanel.png)
 
 1. 이 유효성 검사 프로세스에서 작업 중인 계정 관리자 또는 분석가에게 `.csv` 파일을 보냅니다.
+
