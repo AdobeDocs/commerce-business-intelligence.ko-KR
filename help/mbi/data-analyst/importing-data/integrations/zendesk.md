@@ -5,11 +5,22 @@ exl-id: 1c7f7c5c-4b1c-4bcf-8f1d-2b4cf9cdb0fb
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 TQID: https://experienceleague.adobe.com/KBUuqTDD9s3qXDktcV3RzLx4zxtAFwAkKPbsQE2YGtI
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 261
@@ -29,15 +40,15 @@ ht-degree: 0%
 
 [!DNL Zendesk] 데이터 연결은 간단한 3단계 프로세스입니다.
 
-1. [ [!DNL Zendesk] 에서  [!DNL Commerce Intelligence]자격 증명 페이지 열기](#stepone)
-1. [ [!DNL Zendesk] API 토큰 검색](#steptwo)
-1. [ [!DNL Zendesk] 에  [!DNL Commerce Intelligence]로그인 정보 및 토큰 입력](#stepthree)
+1. [&#x200B; [!DNL Zendesk] 에서  [!DNL Commerce Intelligence]자격 증명 페이지 열기](#stepone)
+1. [&#x200B; [!DNL Zendesk] API 토큰 검색](#steptwo)
+1. [&#x200B; [!DNL Zendesk] 에  [!DNL Commerce Intelligence]로그인 정보 및 토큰 입력](#stepthree)
 
 이 프로세스를 완료하려면 두 개의 브라우저 창 또는 탭을 열어야 합니다. 하나는 [!DNL Commerce Intelligence]에 대한 것이고 다른 하나는 [!DNL Zendesk] 계정에 대한 것입니다.
 
 ## [!DNL Zendesk]에서 [!DNL Commerce Intelligence] 자격 증명 페이지를 엽니다. {#stepone}
 
-1. `Integrations`데이터 원본&#x200B;**[!UICONTROL Manage Data** > ** > {통합&#x200B;**의 **0} 페이지로 이동합니다.]**
+1. `Integrations`데이터 원본&#x200B;**[!UICONTROL Manage Data** > **&#x200B; > {통합&#x200B;**&#x200B;의 **0} 페이지로 이동합니다.]**
 1. 화면 오른쪽에 있는 **[!UICONTROL Add Integration]**&#x200B;을(를) 클릭합니다.
 1. [!DNL Zendesk] 아이콘을 클릭합니다. [!DNL Zendesk] 자격 증명 페이지가 열립니다.
 
@@ -59,5 +70,5 @@ ht-degree: 0%
 
 ## 관련 항목:
 
-* [ [!DNL Zendesk] 데이터가 필요합니다.](../integrations/exp-zendesk-data.md)
+* [&#x200B; [!DNL Zendesk] 데이터가 필요합니다.](../integrations/exp-zendesk-data.md)
 * [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

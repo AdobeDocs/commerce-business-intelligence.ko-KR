@@ -5,11 +5,25 @@ exl-id: 5aa571c9-7f38-462c-8f1b-76a826c9dc55
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
 TQID: https://experienceleague.adobe.com/vYwWxyLRBA-ZG6IZv9Xw1nYqdYG2nfucHNB6rF8qAsM
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 1120
@@ -87,7 +101,7 @@ SQL을 잘 알고 있는 경우 이러한 통합 예제는 모두 `UNION` 함수
 
 [!DNL Facebook]과(와) [!DNL Google AdWords] 캠페인을 모두 포함하는 단일 광고 지출 테이블을 만들려면 SQL 쿼리를 작성하고 `UNION ALL` 함수를 사용해야 합니다. `UNION ALL` 문은 각 쿼리의 결과를 단일 출력에 추가하면서 서로 다른 여러 SQL 쿼리를 결합하는 데 가장 많이 사용됩니다.
 
-PostgreSQL `UNION`설명서[에 설명된 대로 언급할 가치가 있는 ](https://www.postgresql.org/docs/8.3/queries-union.html) 문의 몇 가지 요구 사항이 있습니다.
+PostgreSQL `UNION`설명서[에 설명된 대로 언급할 가치가 있는 &#x200B;](https://www.postgresql.org/docs/8.3/queries-union.html) 문의 몇 가지 요구 사항이 있습니다.
 
 * 모든 쿼리는 동일한 수의 열을 반환해야 합니다.
 * 해당 열에는 동일한 데이터 유형이 있어야 합니다.

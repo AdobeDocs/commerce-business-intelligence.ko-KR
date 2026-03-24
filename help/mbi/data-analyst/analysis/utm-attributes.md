@@ -5,9 +5,16 @@ exl-id: 48b8a3d3-f1ac-4d3f-8f65-db1245c9ae0a
 role: Admin, Developer, User
 feature: Reports
 TQID: https://experienceleague.adobe.com/DIg4HPkxaY4eCXZvTS8j4eO8C-d-yqPgBkrvFD5L0ms
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 760
@@ -41,7 +48,7 @@ URL에 UTM 매개 변수가 지정되면 구문 분석되어 [!DNL Google Analyt
 
 >[!NOTE]
 >
->쿠키 [!DNL Google Analytics]이(가) 만료[되거나 사용자가 브라우저에서 쿠키를 지우는 경우 특정 사용자의 ](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage) 쿠키 매개 변수가 지워집니다.*
+>쿠키 [!DNL Google Analytics]이(가) 만료[되거나 사용자가 브라우저에서 쿠키를 지우는 경우 특정 사용자의 &#x200B;](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage) 쿠키 매개 변수가 지워집니다.*
 
 ### 첫 번째 클릭 속성
 
@@ -67,10 +74,10 @@ URL에 UTM 매개 변수가 지정되면 구문 분석되어 [!DNL Google Analyt
 
 ## 관련 설명서
 
-* [ [!DNL Google Analytics] E-Commerce을 통해 주문 참조 소스 추적](../importing-data/integrations/google-ecommerce.md)
+* [&#x200B; [!DNL Google Analytics] E-Commerce을 통해 주문 참조 소스 추적](../importing-data/integrations/google-ecommerce.md)
 * [데이터베이스에서 사용자 조회 소스 추적](../analysis/google-track-user-acq.md)
 * [데이터베이스에서 사용자 장치, 브라우저 및 OS 데이터 추적](../analysis/google-track-user-acq.md)
 * [가장 가치 있는 확보 소스 및 채널 살펴보기](../analysis/most-value-source-channel.md)
-* [ [!DNL Google Adwords] 계정 연결](../importing-data/integrations/google-adwords.md)
+* [&#x200B; [!DNL Google Adwords] 계정 연결](../importing-data/integrations/google-adwords.md)
 * [광고 캠페인에 대한 ROI 향상](../analysis/roi-ad-camp.md)
-* [ [!DNL Google Analytics]의 UTM 태그 지정에 대한 5가지 모범 사례](../../best-practices/utm-tagging-google.md)
+* [&#x200B; [!DNL Google Analytics]의 UTM 태그 지정에 대한 5가지 모범 사례](../../best-practices/utm-tagging-google.md)

@@ -5,11 +5,21 @@ exl-id: f8a557ae-01d7-4886-8a1c-c0f245c7bc49
 role: Admin, Developer, User
 feature: Data Integration, Data Warehouse Manager
 TQID: https://experienceleague.adobe.com/K5PKexwI5oIb0WFtT47gQ2wEuF-TYUQrntRq1yJ4Vlc
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 1023
@@ -56,7 +66,7 @@ ht-degree: 0%
 
 ## 차원 빌드
 
-차원을 만들려면 [ > ](../data-warehouse-mgr/tour-dwm.md)을(를) 클릭하여 **[!UICONTROL Data]** Data Warehouse 관리자&#x200B;**[!UICONTROL Data Warehouse]**&#x200B;를 엽니다.
+차원을 만들려면 [&#x200B; > &#x200B;](../data-warehouse-mgr/tour-dwm.md)을(를) 클릭하여 **[!UICONTROL Data]** Data Warehouse 관리자&#x200B;**[!UICONTROL Data Warehouse]**&#x200B;를 엽니다.
 
 ### 주문 테이블, 1라운드
 
@@ -65,7 +75,7 @@ ht-degree: 0%
 1. Data Warehouse의 테이블 목록에서 주문 정보가 포함된 테이블(이 경우 `orders`)을 클릭합니다.
 1. **[!UICONTROL Create a Column]**&#x200B;을(를) 클릭합니다.
 1. 열 이름을 지정합니다.
-1. `Joined Column`정의 드롭다운[에서 ](../data-warehouse-mgr/calc-column-types.md)을(를) 선택합니다. 이 예제는 [일대일 관계](../data-warehouse-mgr/table-relationships.md)에서 작동하며 `eCommerce.transactionID` 열을 `orders` 테이블의 정확히 하나의 행과 일치시킵니다.
+1. `Joined Column`정의 드롭다운[에서 &#x200B;](../data-warehouse-mgr/calc-column-types.md)을(를) 선택합니다. 이 예제는 [일대일 관계](../data-warehouse-mgr/table-relationships.md)에서 작동하며 `eCommerce.transactionID` 열을 `orders` 테이블의 정확히 하나의 행과 일치시킵니다.
 1. 그런 다음 경로 또는 사용 중인 테이블과 열이 연결되는 방식을 정의해야 합니다. `Select a table and column` 드롭다운을 클릭합니다.
 1. 필요한 경로를 사용할 수 없으므로 새 경로를 만들어야 합니다. **[!UICONTROL Create new Path]**&#x200B;을(를) 클릭합니다.
 1. 표시되는 창에서 `Many` 쪽을 `orders.order\_id`(으)로 설정하거나 주문 ID가 포함된 `orders` 테이블의 열을 설정하십시오.
@@ -91,7 +101,7 @@ ht-degree: 0%
 1. Data Warehouse의 테이블 목록에서 고객 정보가 포함된 테이블(이 경우 `customers`)을 클릭합니다.
 1. **[!UICONTROL Create a Column]**&#x200B;을(를) 클릭합니다.
 1. 열 이름을 지정합니다.
-1. 이 예제에서는 `is MAX`정의 드롭다운[에서 ](../../data-analyst/data-warehouse-mgr/calc-column-types.md) 정의를 선택합니다. 가능한 값이 하나만 있는 텍스트 열에 적용할 경우 `is MIN` 정의도 작동할 수 있습니다. 중요한 점은 필터를 제대로 설정했는지 확인하는 것입니다. 나중에 다시 설정할 수 있습니다.
+1. 이 예제에서는 `is MAX`정의 드롭다운[에서 &#x200B;](../../data-analyst/data-warehouse-mgr/calc-column-types.md) 정의를 선택합니다. 가능한 값이 하나만 있는 텍스트 열에 적용할 경우 `is MIN` 정의도 작동할 수 있습니다. 중요한 점은 필터를 제대로 설정했는지 확인하는 것입니다. 나중에 다시 설정할 수 있습니다.
 1. **[!UICONTROL Select a table and column]** 드롭다운을 클릭하고 `orders` 테이블을 선택한 다음 `Order's [!DNL Google Analytics] source` 열을 선택합니다.
 1. **[!UICONTROL Save]**&#x200B;을(를) 클릭합니다.
 1. 테이블 스키마로 돌아간 후 `Options` 드롭다운을 클릭한 다음 `Filters`을(를) 클릭합니다.
@@ -107,7 +117,7 @@ ht-degree: 0%
 
 ### 보너스: 주문 테이블, 2라운드
 
-원한다면 여기에서 중지할 수 있지만, 이 섹션을 통해 **마지막 섹션[!DNL Google Analytics]에서 만든**&#x200B;고객의 첫 번째 주문 [ 차원](#customers)을(를) `orders` 테이블로 가져와 추가로 분석할 수 있습니다. 이 섹션에서 차원을 만들면 고객 첫 번째 주문의 `orders` 특성을 사용하여 `Revenue` 테이블에 빌드된 모든 지표(`Number of orders`, `Distinct buyers`, [!DNL Google Analytics] 등)를 분석할 수 있습니다.
+원한다면 여기에서 중지할 수 있지만, 이 섹션을 통해 **마지막 섹션[!DNL Google Analytics]에서 만든**&#x200B;고객의 첫 번째 주문 [&#x200B; 차원](#customers)을(를) `orders` 테이블로 가져와 추가로 분석할 수 있습니다. 이 섹션에서 차원을 만들면 고객 첫 번째 주문의 `orders` 특성을 사용하여 `Revenue` 테이블에 빌드된 모든 지표(`Number of orders`, `Distinct buyers`, [!DNL Google Analytics] 등)를 분석할 수 있습니다.
 
 이 예제에서는 `Customer's first order's [!DNL Google Analytics] source` 차원을 `orders` 테이블에 조인합니다.
 

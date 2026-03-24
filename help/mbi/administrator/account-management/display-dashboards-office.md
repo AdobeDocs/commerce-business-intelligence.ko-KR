@@ -5,10 +5,17 @@ exl-id: aabe5c8f-0809-467c-9713-099aed6926b9
 role: Admin, User
 feature: Dashboards
 TQID: https://experienceleague.adobe.com/lYvsw4ljmHhnRPmlUBJS03TiFWAEIRd9FpVQnUkY-vI
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 220
@@ -28,6 +35,6 @@ ht-degree: 0%
 
 1. **USB 키보드 및 마우스**&#x200B;로 동글을 제어할 수 있습니다.
 
-1. **한 번에 여러 탭 사이를 회전하는 브라우저 확장입니다.** 선택한 대시보드를 설정하여 고유한 탭에 표시할 수 있습니다. [을(를) 사용하는 경우 Adobe에서는 ](https://chrome.google.com/webstore/detail/revolver-tabs/dlknooajieciikpedpldejhhijacnbda?hl=en)회전 탭[!DNL Chrome] 확장을 권장합니다.
+1. **한 번에 여러 탭 사이를 회전하는 브라우저 확장입니다.** 선택한 대시보드를 설정하여 고유한 탭에 표시할 수 있습니다. [을(를) 사용하는 경우 Adobe에서는 &#x200B;](https://chrome.google.com/webstore/detail/revolver-tabs/dlknooajieciikpedpldejhhijacnbda?hl=en)회전 탭[!DNL Chrome] 확장을 권장합니다.
 
 위의 하드웨어가 있으면 각 탭에 표시할 특정 대시보드와 함께 화면에서 브라우저 창을 열 수 있습니다. 마지막으로, 원하는 빈도로 각 대시보드를 회전하도록 브라우저를 구성합니다.

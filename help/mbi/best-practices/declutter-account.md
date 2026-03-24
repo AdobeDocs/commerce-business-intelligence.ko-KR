@@ -5,10 +5,18 @@ exl-id: 5fcdac2d-41ca-4011-b646-a699d9ecc6e4
 role: Admin, User
 feature: Accounts
 TQID: https://experienceleague.adobe.com/cybn11Z5oXnfc6Oz34Dk1syw4w0o03vA-TRNMjHeifE
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 904
@@ -20,7 +28,7 @@ ht-degree: 0%
 
 [!DNL Commerce Intelligence]에서 6개월이나 6년 동안 활동했는지에 관계없이 정돈된 계정을 유지하는 것은 조직이 플랫폼을 최대한 활용하는 데 무엇보다 중요합니다. 시간이 지남에 따라 더 이상 필요하지 않은 사용자, 대시보드, 보고서, 지표 및 열이 있는 것이 당연합니다. 일회용으로 보고서를 만들어 놓고 잊어버렸거나 회사에서 나간 사용자가 계정을 비활성화한 적이 없을 수 있습니다.
 
-[ 계정의 ](../best-practices/naming-elements.md)모든 요소에 대해 표준화되고 명확한 이름 지정[!DNL Commerce Intelligence])을 사용하면 아래 계정 감사 단계를 통해 사용자의 불필요한 분석과 혼란을 줄일 수 있습니다. 한 가지 추가 이점에는 [잠재적으로 더 빠른 업데이트 주기](../best-practices/reduce-update-cycle-time.md)가 포함됩니다.
+[&#x200B; 계정의 &#x200B;](../best-practices/naming-elements.md)모든 요소에 대해 표준화되고 명확한 이름 지정[!DNL Commerce Intelligence])을 사용하면 아래 계정 감사 단계를 통해 사용자의 불필요한 분석과 혼란을 줄일 수 있습니다. 한 가지 추가 이점에는 [잠재적으로 더 빠른 업데이트 주기](../best-practices/reduce-update-cycle-time.md)가 포함됩니다.
 
 ## 1단계: 비활성 사용자 식별
 

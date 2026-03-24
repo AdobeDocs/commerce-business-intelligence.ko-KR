@@ -5,11 +5,22 @@ exl-id: c31ef32e-ba5a-4902-b632-fbab551cc632
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
 TQID: https://experienceleague.adobe.com/aw43nDwCdBOJ-9D2BKJGV7PV-7c3jGXxhUEgE2utY5A
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 569
@@ -19,7 +30,7 @@ ht-degree: 0%
 
 # 데이터 검사 구성
 
-데이터베이스 테이블에는 변경 가능한 값이 있는 데이터 열이 있을 수 있습니다. 예를 들어 `orders` 테이블에 `status` 열이 있을 수 있습니다. 주문이 데이터베이스에 처음 기록되면 상태 열에 _보류 중_ 값이 포함될 수 있습니다. 이 [ 값으로 ](../data-warehouse-mgr/tour-dwm.md)Data Warehouse`pending`에서 순서가 복제됩니다.
+데이터베이스 테이블에는 변경 가능한 값이 있는 데이터 열이 있을 수 있습니다. 예를 들어 `orders` 테이블에 `status` 열이 있을 수 있습니다. 주문이 데이터베이스에 처음 기록되면 상태 열에 _보류 중_ 값이 포함될 수 있습니다. 이 [&#x200B; 값으로 &#x200B;](../data-warehouse-mgr/tour-dwm.md)Data Warehouse`pending`에서 순서가 복제됩니다.
 
 주문 상태가 항상 `pending` 상태는 아니지만 변경될 수 있습니다. 결국 `complete` 또는 `cancelled`이(가) 될 수 있습니다. Data Warehouse에서 이 변경 사항을 동기화하려면 열에 새 값을 다시 선택해야 합니다.
 

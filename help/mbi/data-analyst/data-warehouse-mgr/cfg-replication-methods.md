@@ -5,11 +5,21 @@ exl-id: 83895c48-a6ec-4b01-9890-164e0b21dcbc
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Data Import/Export
 TQID: https://experienceleague.adobe.com/zP44fYttORVvVtWgnykRswpsh9VwdqYbfwt1aJqWJdE
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 1442
@@ -50,7 +60,7 @@ ht-degree: 0%
 예를들어 테이블에 마지막으로 데이터가 변경된 시간을 나타내는 `modified\_at` 열이 있을 수 있습니다. 가장 최근 업데이트가 화요일 정오에 실행된 경우, 업데이트에서는 화요일 정오보다 큰 `modified\_at` 값을 가진 모든 행을 검색합니다. 화요일 정오 이후에 생성되거나 수정된 모든 검색된 행은 Data Warehouse에 복제됩니다.
 
 **알고 계십니까?**
-데이터베이스가 현재 `Incremental` 복제 메서드를 지원하지 않더라도 [ 또는 ](../../best-practices/mod-db-inc-replication.md)을(를) 사용할 수 있도록 `Modified At`데이터베이스를 변경`Single Auto Incrementing PK`할 수 있습니다.
+데이터베이스가 현재 `Incremental` 복제 메서드를 지원하지 않더라도 [&#x200B; 또는 &#x200B;](../../best-practices/mod-db-inc-replication.md)을(를) 사용할 수 있도록 `Modified At`데이터베이스를 변경`Single Auto Incrementing PK`할 수 있습니다.
 
 `Modified At`은(는) 가장 이상적인 복제 방법일 뿐만 아니라 가장 빠릅니다. 이 방법은 대규모 데이터 세트에서 눈에 띄는 속도 증가를 생성할 뿐만 아니라 재확인 옵션을 구성할 필요가 없습니다. 다른 방법은 작은 데이터 하위 집합이 변경된 경우에도 변경 사항을 식별하기 위해 전체 테이블을 반복해야 합니다. `Modified At`은(는) 작은 하위 집합만 반복합니다.
 
@@ -141,6 +151,6 @@ ht-degree: 0%
 ## 관련 설명서
 
 * [데이터 재확인 이해](../data-warehouse-mgr/cfg-data-rechecks.md)
-* [지원할 데이터베이스 수정 ](../../best-practices/mod-db-inc-replication.md)
+* [지원할 데이터베이스 수정 &#x200B;](../../best-practices/mod-db-inc-replication.md)
 * [분석을 위해 데이터베이스 최적화](../../best-practices/opt-db-analysis.md)
 * [업데이트 시간 단축](../../best-practices/reduce-update-cycle-time.md)

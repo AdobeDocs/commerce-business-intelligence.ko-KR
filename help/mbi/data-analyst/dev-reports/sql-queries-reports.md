@@ -5,11 +5,22 @@ exl-id: b3e3905f-6952-4f15-a582-bf892a971fae
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
 TQID: https://experienceleague.adobe.com/-VQfwFZeSlEcD053XRQ4mWF51jnTGaV04tUAqLu7-U8
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 942
@@ -19,7 +30,7 @@ ht-degree: 0%
 
 # Commerce Intelligence에서 SQL 쿼리 번역
 
-SQL 쿼리가 [에서 사용하는 ](../data-warehouse-mgr/creating-calculated-columns.md)계산된 열[, ](../../data-user/reports/ess-manage-data-metrics.md)지표[ 및 ](../../tutorials/using-visual-report-builder.md)보고서[!DNL Commerce Intelligence]&#x200B;(으)로 변환되는 방식에 대해 궁금하셨습니까? SQL 사용자가 많은 경우 [!DNL Commerce Intelligence]에서 SQL을 변환하는 방법을 이해하면 [Data Warehouse 관리자](../data-warehouse-mgr/tour-dwm.md)에서 보다 효율적으로 작업하고 [!DNL Commerce Intelligence] 플랫폼을 최대한 활용할 수 있습니다.
+SQL 쿼리가 [에서 사용하는 &#x200B;](../data-warehouse-mgr/creating-calculated-columns.md)계산된 열[, &#x200B;](../../data-user/reports/ess-manage-data-metrics.md)지표[&#x200B; 및 &#x200B;](../../tutorials/using-visual-report-builder.md)보고서[!DNL Commerce Intelligence]&#x200B;(으)로 변환되는 방식에 대해 궁금하셨습니까? SQL 사용자가 많은 경우 [!DNL Commerce Intelligence]에서 SQL을 변환하는 방법을 이해하면 [Data Warehouse 관리자](../data-warehouse-mgr/tour-dwm.md)에서 보다 효율적으로 작업하고 [!DNL Commerce Intelligence] 플랫폼을 최대한 활용할 수 있습니다.
 
 이 항목의 끝에 SQL 쿼리 절 및 **요소에 대한**&#x200B;변환 매트릭스[!DNL Commerce Intelligence]가 있습니다.
 

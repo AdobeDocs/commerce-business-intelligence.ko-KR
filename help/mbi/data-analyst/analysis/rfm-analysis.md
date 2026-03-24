@@ -5,10 +5,20 @@ exl-id: 8f0f08fd-710b-4810-9faf-3d0c3cc0a25d
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
 TQID: https://experienceleague.adobe.com/AaRzdTdV7-a4ApO-TA5jbyaJ3sr6sqP9HCToKG--uQ0
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 542
@@ -47,17 +57,17 @@ ht-degree: 0%
 * 선택된 [!UICONTROL column]: `created_at`
 * [!UICONTROL Filter]: `Orders we count`
 
-* 
+* &#x200B;
   고객의 마지막 주문 날짜 이후     초
   * [!UICONTROL Column type]: -     &quot;같은 표 > 나이
 * 선택된 [!UICONTROL column]: `Customer's last order date`
 
 * (입력) 카운트 참조
 * [!UICONTROL Column type]: `Same table > Calculation`
-* 
+* &#x200B;
   [!UICONTROL 입력]: `entity_id`
 * [!UICONTROL Calculation]: `**case when A is null then null else 1 end**`
-* 
+* &#x200B;
   [!UICONTROL 데이터 유형]: `Integer`
 
 * **참조 개수** 테이블(번호가 &quot;1&quot;인 업로드한 파일)
@@ -81,14 +91,14 @@ ht-degree: 0%
 * [!UICONTROL Column type]: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime revenue`, `Number of customers`
 * [!UICONTROL Calculation]: `case when A is null then null else (B-(A-1)) end`
-* 
+* &#x200B;
   [!UICONTROL 데이터 유형]: `Integer`
 
 * 고객 통화 점수(백분위수)
 * [!UICONTROL Column type]: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime revenue`, `Number of customers`
 * [!UICONTROL Calculation]: `Case when round((B-A+1)*100/B,0) <= 20 then 5 when round((B-A+1)*100/B,0) <= 40 then 4 when round((B-A+1)*100/B,0) <= 60 then 3 when round((B-A+1)*100/B,0) <= 80 then 2 when round((B-A+1)*100/B,0) <= 100 then 1 else 0 end`
-* 
+* &#x200B;
   [!UICONTROL 데이터 유형]: `Integer`
 
 * (입력) 고객 생애 주문 수별 순위
@@ -97,7 +107,7 @@ ht-degree: 0%
 * [!UICONTROL Event rank]: `Customer's lifetime number of orders`
 
 * 고객 생애 주문 수별 순위
-* 
+* &#x200B;
   [!UICONTROL 열 유형]: – "Same table > 계산"
 * [!UICONTROL Inputs]: - **(입력) 고객 생애 주문 수별 순위**, **고객 수**
 * [!UICONTROL Calculation]: - **A가 null이고 Null인 경우 기타(B-(A-1)) 끝**
@@ -107,7 +117,7 @@ ht-degree: 0%
 * [!UICONTROL Column type]: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime number of orders`, `Number of customers`
 * [!UICONTROL Calculation]: `Case when round((B-A+1)*100/B,0) <= 20 then 5 when round((B-A+1)*100/B,0) <= 40 then 4 when round((B-A+1)*100/B,0) <= 60 then 3 when round((B-A+1)*100/B,0) <= 80 then 2 when round((B-A+1)*100/B,0) <= 100 then 1 else 0 end`
-* 
+* &#x200B;
   [!UICONTROL 데이터 유형]: `Integer`
 
 * 고객의 마지막 주문 날짜 이후 몇 초씩 순위 지정
@@ -119,14 +129,14 @@ ht-degree: 0%
 * [!UICONTROL Column type]: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime number of orders`, `Number of customers`
 * [!UICONTROL Calculation]: `Case when (A * 100/B,0) <= 20 then 5 when (A * 100/B,0) <= 40 then 4 when (A * 100/B,0) <= 60 then 3 when (A * 100/B,0) <= 80 then 2 when (A * 100/B,0) <= 100 then 1 else 0 end`
-* 
+* &#x200B;
   [!UICONTROL 데이터 유형]: `Integer`
 
 * 고객의 최신성 점수(백분위수)
 * [!UICONTROL Column type]: `Same table > Calculation`
 * [!UICONTROL Inputs]: `Customer's recency score (by percentiles)`, `Customer's frequency score (by percentiles)`, `Customer's monetary score (by percentiles)`
 * [!UICONTROL Calculation]: `case when (A IS NULL or B IS NULL or C IS NULL) then null else concat(A,B,C) end`
-* 
+* &#x200B;
   [!UICONTROL 데이터 유형]: String
 
 * **Count 참조** 테이블
@@ -146,7 +156,7 @@ ht-degree: 0%
 * [!UICONTROL Column type]: `Same table > Calculation`
 * [!UICONTROL Inputs]: - `Customer's recency score (by percentiles)`, `Customer's frequency score (by percentiles)`, `Customer's monetary score (by percentiles)`
 * [!UICONTROL Calculation]: `case when (A IS NULL or B IS NULL or C IS NULL) then null else A+B+C end`
-* 
+* &#x200B;
   [!UICONTROL 데이터 유형]: `Integer`
 
 * (입력) 고객의 전체 RFM 점수별 순위
@@ -159,14 +169,14 @@ ht-degree: 0%
 * [!UICONTROL Column type]: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer's overall RFM score`, `Number of customers (RFM > 0)`
 * [!UICONTROL Calculation]: `case when A is null then null else (B-(A-1)) end`
-* 
+* &#x200B;
   [!UICONTROL 데이터 유형]: `Integer`
 
 * 고객의 RFM 그룹
 * [!UICONTROL Column type]: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime revenue`, `Number of customers`
 * [!UICONTROL Calculation]: `Case when round(A * 100/B,0) <= 20 then '5. copper' when round(A * 100/B,0) <= 40 then '4. bronze' when round(A * 100/B,0) <= 60 then '3. silver' when round(A * 100/B,0)<= 80 then '2. gold' else '1. Platinum' end`
-* 
+* &#x200B;
   [!UICONTROL 데이터 유형]: `Integer`
 
 >[!NOTE]
@@ -189,13 +199,13 @@ ht-degree: 0%
 * [!UICONTROL Filter]: `Customer's RFM score (by percentiles) Not Equal to 000`
 
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * 차트 숨기기
 * [!UICONTROL Group by]: `Customer's RFM group`
-* 
+* &#x200B;
   [!UICONTROL 그룹 기준]: `Email`
-* 
+* &#x200B;
   [!UICONTROL Chart type]: `Table`
 
 * **최근 점수가 5개인 고객**
@@ -204,15 +214,15 @@ ht-degree: 0%
 * [!UICONTROL Filter]: `Customer's recency score (by percentiles) Equal to 5`
 
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Scalar`
 * 차트 숨기기
-* 
+* &#x200B;
   [!UICONTROL 그룹 기준]: `Email`
 * [!UICONTROL Group by]: `Customer's RFM score (R+F+M)`
-* 
+* &#x200B;
   [!UICONTROL Chart type]: `Table`
 
 * **최신성 점수가 하나인 고객**
@@ -221,15 +231,15 @@ ht-degree: 0%
 * [!UICONTROL Filter]: `Customer's recency score (by percentiles) Equal to 1`
 
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Scalar`
 * 차트 숨기기
-* 
+* &#x200B;
   [!UICONTROL 그룹 기준]: `Email`
 * [!UICONTROL Group by]: `Customer's RFM score (R+F+M)`
-* 
+* &#x200B;
   [!UICONTROL Chart type]: `Table`
 
 모든 보고서를 컴파일한 후 원하는 대로 대시보드에서 구성할 수 있습니다. 결과는 위의 샘플 대시보드와 비슷할 수 있지만, 생성된 세 테이블은 수행할 수 있는 고객 세분화 유형의 예입니다.

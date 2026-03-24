@@ -5,11 +5,21 @@ exl-id: 70bfd855-3b3f-469b-99bc-deb8251904b7
 role: Admin, Developer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
 TQID: https://experienceleague.adobe.com/IX5oaIr8tbUUeA3ZrIQNUMnG8ApXMBS1hcpecqFW8kg
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: beb7a3c1-66ab-4786-b879-7621375b3c40id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: beb7a3c1-66ab-4786-b879-7621375b3c40
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 450
@@ -33,7 +43,7 @@ ht-degree: 0%
 
 ### &#x200B;2. 도구를 사용하여 URL 만들기
 
-`UTM`개의 태그가 지정된 URL은 번거로울 수 있습니다. 더 오래 입력하지 말고 [이와 같은 ](https://support.google.com/analytics/answer/1033867?hl=en) 도구를 사용하여 도움을 받으십시오. 이렇게 하면 모든 감지 가능한 매개 변수를 URL에 추가하여 생각하고 있으며, URL을 바로 복사하여 붙여넣을 수 있습니다. 소셜 링크를 관리하기 위해 [!DNL Hootsuite]과(와) 같은 도구에 모든 링크에 사용자 지정 URL 매개 변수를 추가하는 옵션이 포함되어 있습니다.
+`UTM`개의 태그가 지정된 URL은 번거로울 수 있습니다. 더 오래 입력하지 말고 [이와 같은 &#x200B;](https://support.google.com/analytics/answer/1033867?hl=en) 도구를 사용하여 도움을 받으십시오. 이렇게 하면 모든 감지 가능한 매개 변수를 URL에 추가하여 생각하고 있으며, URL을 바로 복사하여 붙여넣을 수 있습니다. 소셜 링크를 관리하기 위해 [!DNL Hootsuite]과(와) 같은 도구에 모든 링크에 사용자 지정 URL 매개 변수를 추가하는 옵션이 포함되어 있습니다.
 
 ### &#x200B;3. 매개변수 값에서 대소문자를 구분하는지 확인합니다
 

@@ -1,12 +1,21 @@
 ---
 title: CJ 계열사(커미션 정션) 마케팅 데이터 가져오기
-description: CJ 계열사(Commission Junction) 데이터를  [!DNL Commerce Intelligence].L Commerce Intelligence]에 가져오는 방법을 알아봅니다.
+description: CJ 계열사(Commission Junction) 데이터를  [!DNL Commerce Intelligence].L Commerce Intelligence&rbrack;에 가져오는 방법을 알아봅니다.
 exl-id: 1db83f34-15a1-4599-ab0a-65d527ccae01
 TQID: https://experienceleague.adobe.com/tZ2fzAKou0fBmkmKD5zdLFBNCSiAGpT3GNgkHp9ptx4
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 141
@@ -34,6 +43,6 @@ ht-degree: 0%
 
    ![cj 계열사 데이터 내보내기](../../../assets/export-an-individual-order-2.jpg)<!--{:.zoom}-->
 
-1. 파일을 다운로드한 후에는 [ Data Warehouse에 ](../connecting-data/using-file-uploader.md)파일을 업로드[!DNL Commerce Intelligence]할 수 있습니다.
+1. 파일을 다운로드한 후에는 [&#x200B; Data Warehouse에 &#x200B;](../connecting-data/using-file-uploader.md)파일을 업로드[!DNL Commerce Intelligence]할 수 있습니다.
 
    이렇게 하면 정기적으로 새 데이터를에 계속 업로드할 수 있는 [!DNL Commerce Intelligence] Data Warehouse에 테이블이 만들어집니다. 파일을 업로드할 때 [파일 업로더 사용](../connecting-data/using-file-uploader.md)에 나열된 서식 요구 사항을 따릅니다.

@@ -5,10 +5,18 @@ exl-id: 2ce3e4f9-4741-4ada-b822-ec6a5ca94497
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
 TQID: https://experienceleague.adobe.com/nqiC-AsuhdcOrxqFsW9ZqRZvlL8Ndu9xmNrTi-pvgv8
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 751
@@ -32,7 +40,7 @@ ht-degree: 1%
 
 ### (옵션 1) [!DNL Google Analytics E-Commerce]을(를) 통해 주문 참조 원본 데이터 추적
 
-[!DNL Google Analytics E-Commerce]을(를) 사용하여 주문 및 판매 데이터를 추적하는 경우 [!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md)을(를) 사용하여 각 주문의 조회 원본 데이터를 동기화할 수 있습니다. 이를 통해 조회 소스(예: `utm_source` 또는 `utm_medium`)별로 매출 및 주문을 세그먼트화할 수 있습니다. 또한 [!DNL Commerce Intelligence]과(와) 같은 `User's first order source` 사용자 지정 차원을 통해 고객 확보 소스에 대한 감을 얻을 수 있습니다.
+[!DNL Google Analytics E-Commerce]을(를) 사용하여 주문 및 판매 데이터를 추적하는 경우 [[!DNL [Google Analytics E-Commerce Connector]]](../importing-data/integrations/google-ecommerce.md)을(를) 사용하여 각 주문의 조회 원본 데이터를 동기화할 수 있습니다. 이를 통해 조회 소스(예: `utm_source` 또는 `utm_medium`)별로 매출 및 주문을 세그먼트화할 수 있습니다. 또한 [!DNL Commerce Intelligence]과(와) 같은 `User's first order source` 사용자 지정 차원을 통해 고객 확보 소스에 대한 감을 얻을 수 있습니다.
 
 ### (옵션 2) [!DNL Google Analytics]의 획득 원본 데이터를 데이터베이스에 저장 중
 
