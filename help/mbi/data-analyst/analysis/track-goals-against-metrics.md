@@ -4,9 +4,14 @@ description: 매출, 신규 등록 사용자, 시간 경과에 따른 주문 등
 exl-id: 9d621f40-f9c2-4310-bd96-a46ab7159930
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards, Reports
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+TQID: https://experienceleague.adobe.com/gT-FJxqVg3X9fuXe-4kWErttYJ6qSMD4eqNvOITNNtQ
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: 402
 ht-degree: 0%
 
 ---
@@ -55,46 +60,46 @@ ht-degree: 0%
 
 * **목표를 달성하는 데 남은 수익**
 * 지표 `A`: `Revenue`
-* &#x200B;
+* 
   [!UICONTROL 지표]: `Revenue`
 
 * 지표 `B`: `Target Revenue`
 * [!UICONTROL Metric]: `Monthly Revenue Target`
 
 * [!UICONTROL Formula]: `Revenue left to achieve target`
-* &#x200B;
+* 
   [!UICONTROL 공식]: `(B-A)`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Number`
 
 * [!UICONTROL Time period]: (원하는 적절한 기간)
-* &#x200B;
+* 
   [!UICONTROL Interval]: `Month`
-* &#x200B;
+* 
   [!UICONTROL 차트 유형]: `Scalar`
 
 * **매출 목표**
 * 지표 `A`: `Revenue`
-* &#x200B;
+* 
   [!UICONTROL 지표]: `Revenue`
 
 * 지표 `B`: `Target Revenue`
 * [!UICONTROL Metric]: `Monthly Revenue Target`
 
 * 지표 `C`: `Revenue (amount change since previous year)`(숨기기)
-* &#x200B;
+* 
   [!UICONTROL 지표]: `Revenue`
 * [!UICONTROL Perspective]: `Amount change vs. Previous year`
 
 * [!UICONTROL Formula]: (작년 이번 달)
-* &#x200B;
+* 
   [!UICONTROL 공식]: `(A-C)`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Currency`
 
 * `Multiple Y-Axes` 끄기
 * [!UICONTROL Time period]: (원하는 적절한 기간)*
-* &#x200B;
+* 
   [!UICONTROL Interval]: `Month`
 * [!UICONTROL Chart Type]: `Line Chart`
 

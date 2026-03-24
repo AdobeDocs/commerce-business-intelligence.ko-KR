@@ -4,9 +4,15 @@ description: 세분화 및 필터링 모범 사례에 대해 알아봅니다.
 exl-id: 66391bce-bdeb-4e9d-8089-1c796e00d91e
 role: Admin, Developer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/bfu4JUbmC5QrHIgnTbZ-AW1fLsrGj-TKd-BpEvpjJRk
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: 911
 ht-degree: 0%
 
 ---
@@ -71,7 +77,7 @@ ht-degree: 0%
 
 위의 차원으로 지표를 세그먼트화하는 첫 번째 단계는 데이터베이스에서 이 데이터를 추적하고 있는지 확인하는 것입니다. 추적되지 않는 경우 기술 팀과 만나 이 데이터 추적을 시작하는 방법을 찾으십시오.
 
-데이터베이스에서 데이터가 추적되는지 확인한 후 [지원 팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하여 [!DNL Commerce Intelligence] 지표 및 차트로 차원을 푸시합니다. *필드 관리* 도구를 사용하여 [!DNL Commerce Intelligence]에서 이러한 필드를 추적할 수도 있습니다.
+데이터베이스에서 데이터가 추적되는지 확인한 후 [지원 팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하여 [!DNL Commerce Intelligence] 지표 및 차트로 차원을 푸시합니다. *필드 관리* 도구를 사용하여 [!DNL Commerce Intelligence]에서 이러한 필드를 추적할 수도 있습니다.
 
 ## 관련 항목
 

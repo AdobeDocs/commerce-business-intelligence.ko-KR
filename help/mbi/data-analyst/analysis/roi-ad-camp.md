@@ -4,9 +4,15 @@ description: 캠페인 성과를 평가하는 몇 가지 방법에 대해 알아
 exl-id: 4f2bf408-eeaf-4dbf-b62e-89426734640a
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Campaigns
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+TQID: https://experienceleague.adobe.com/teo53W9N30xpRRE1nUupBLKJnl1kUK4zt-roFGiulGU
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: 1253
 ht-degree: 0%
 
 ---
@@ -20,7 +26,7 @@ ht-degree: 0%
 * 광고 비용 데이터 가져오기:
    * [연결 [!DNL Google AdWords] 대상 [!DNL Commerce Intelligence]](../importing-data/integrations/google-adwords.md): [!DNL Adwords]에서 보낸 시간을 [!DNL Commerce Intelligence]에서 동기화합니다.
    * [다른 광고 비용 데이터 업로드](../importing-data/connecting-data/import-offline-ad-data.md): [!DNL Commerce Intelligence]에 대한 직접 커넥터가 없는 채널에 권장됩니다.
-   * 여러 소스에서 비용 데이터를 가져오는 경우 [의 데이터를 &#x200B;](../../best-practices/consolidating-your-tables.md)통합[!DNL Commerce Intelligence]할 수 있습니다. 간단히 [지원 티켓을 제출](../../guide-overview.md#Submitting-a-Support-Ticket)하세요.
+   * 여러 소스에서 비용 데이터를 가져오는 경우 [의 데이터를 ](../../best-practices/consolidating-your-tables.md)통합[!DNL Commerce Intelligence]할 수 있습니다. 간단히 [지원 티켓을 제출](../../guide-overview.md#Submitting-a-Support-Ticket)하세요.
 * [사용자 획득 채널 데이터 추적](../analysis/google-track-user-acq.md)
 
 ## 사용자 확보 캠페인
@@ -99,7 +105,7 @@ ht-degree: 0%
 >
 >이 예에서는 모든 캠페인 비용이 특정 제품 구매를 생성하는 데 독점적으로 사용되었다고 가정합니다. 모든 비용이 구매 생성에 사용되었다고 가정할 경우, 결과 ROI는 최악의 경우(구매당 최고 비용)를 차지합니다. 실제 ROI는 이 계산보다 더 높습니다. 예: 10명의 새 사용자와 10개의 구매를 생성한 캠페인에 $20를 지출했다고 가정할 때 구매당 실제 비용은 $1입니다. 모든 비용이 신규 사용자를 확보하는 데 들어갔다는 가정 하에 구매 당 비용은 $2이다.
 
-시작하기 전에 [지원 티켓을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하여 다음 차원을 라인 항목 테이블(`sales\_flat\_order\_item, order\_item`)에 연결합니다.
+시작하기 전에 [지원 티켓을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하여 다음 차원을 라인 항목 테이블(`sales\_flat\_order\_item, order\_item`)에 연결합니다.
 
 * 주문 출처(사용자 레벨에서만 조회 출처를 추적하는 경우 사용자 출처에 가입)
 * 주문 캠페인(사용자 수준에서 추천 소스만 추적하는 경우 사용자의 캠페인에 참여)
@@ -131,10 +137,10 @@ ht-degree: 0%
 
 ## 관련 설명서
 
-* [&#x200B; [!DNL Google Analytics] E-Commerce을 통해 주문 참조 소스 추적](../importing-data/integrations/google-ecommerce.md)
+* [ [!DNL Google Analytics] E-Commerce을 통해 주문 참조 소스 추적](../importing-data/integrations/google-ecommerce.md)
 * [데이터베이스에서 사용자 조회 소스 추적](../analysis/google-track-user-acq.md)
 * [데이터베이스에서 사용자 장치, 브라우저 및 OS 데이터 추적](../analysis/track-usr-dev-browser.md)
 * [가장 가치 있는 확보 소스 및 채널 살펴보기](../analysis/most-value-source-channel.md)
-* [&#x200B; [!DNL Google Adwords] 계정 연결](../importing-data/integrations/google-adwords.md)
-* [&#x200B; [!DNL Google Analytics] UTM 속성은 어떻게 작동합니까?](../analysis/utm-attributes.md)
-* [&#x200B; [!DNL Google Analytics]의 UTM 태그 지정에 대한 5가지 모범 사례](../../best-practices/utm-tagging-google.md)
+* [ [!DNL Google Adwords] 계정 연결](../importing-data/integrations/google-adwords.md)
+* [ [!DNL Google Analytics] UTM 속성은 어떻게 작동합니까?](../analysis/utm-attributes.md)
+* [ [!DNL Google Analytics]의 UTM 태그 지정에 대한 5가지 모범 사례](../../best-practices/utm-tagging-google.md)

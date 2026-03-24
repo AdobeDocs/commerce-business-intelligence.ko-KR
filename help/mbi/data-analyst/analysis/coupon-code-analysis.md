@@ -4,9 +4,15 @@ description: 쿠폰 성능 분석에 대해 알아보십시오.
 exl-id: f6565e33-18ee-4f85-ade0-fd361854475b
 role: Admin, User
 feature: Data Warehouse Manager, Reports
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+TQID: https://experienceleague.adobe.com/uqVpwXs8XHpiPpXHmTgItkhDsHAGs-Ty5NSBK8KtO7s
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '1243'
+source-wordcount: 1243
 ht-degree: 0%
 
 ---
@@ -37,7 +43,7 @@ ht-degree: 0%
    * [!UICONTROL Inputs]:
       * `A`: `coupon\_code`
 
-   * &#x200B;
+   * 
      [!UICONTROL 데이터 유형]: `String`
    * [!UICONTROL Calculation]: `A`이(가) null인 경우 `No coupon`이(가) 아니면 `Coupon`이(가) 끝남
 
@@ -87,7 +93,7 @@ ht-degree: 0%
       * [!UICONTROL Inputs]:
          * `A`: `Customer's first order included a coupon? (Coupon/No coupon)`
 
-      * &#x200B;
+      * 
         [!UICONTROL 데이터 유형]: `String`
       * [!UICONTROL Calculation]: **A=&#39;Coupon&#39;, &#39;Coupon acquisition customer&#39;, 기타 &#39;Non-coupon acquisition customer&#39;인 경우**
 
@@ -97,7 +103,7 @@ ht-degree: 0%
          * `A`: `User's lifetime number of coupons used`
          * `B`: `User's lifetime number of orders`
 
-      * &#x200B;
+      * 
         [!UICONTROL 데이터 유형]: `Decimal`
       * [!UICONTROL Calculation]: **A가 null이거나 B가 null이거나 B=0인 경우 A/B가 null이 됩니다.**
 
@@ -106,7 +112,7 @@ ht-degree: 0%
       * [!UICONTROL Inputs]:
          * `A`: `Percent of customer's orders with coupon`
 
-      * &#x200B;
+      * 
         [!UICONTROL 데이터 유형]: `String`
       * [!UICONTROL Calculation]: **A가 null이면 null, A=0이면 &#39;쿠폰 사용 안 함&#39;, A&lt;0.5이면 &#39;주로 전체 가격&#39;, A=0.5이면 &#39;50/50&#39;, A=1이면 &#39;쿠폰만&#39;, A>0.5이면 &#39;주로 쿠폰&#39;, 기타 &#39;정의되지 않음&#39; 종료**
 
@@ -134,7 +140,7 @@ ht-degree: 0%
    * [!UICONTROL Inputs]:
       * `A`: `Customer's first order included a coupon? (Coupon/No coupon)`
 
-   * &#x200B;
+   * 
      [!UICONTROL 데이터 유형]: `String`
    * [!UICONTROL Calculation]: **A=&#39;Coupon&#39;, &#39;Coupon acquisition customer&#39;, 기타 &#39;Non-coupon acquisition customer&#39;인 경우**
 
@@ -144,7 +150,7 @@ ht-degree: 0%
       * `A`: `User's lifetime number of coupons used`
       * `B`: `User's lifetime number of orders`
 
-   * &#x200B;
+   * 
      [!UICONTROL 데이터 유형]: `Decimal`
    * [!UICONTROL Calculation]: **A가 null이거나 B가 null이거나 B=0인 경우 A/B가 null이 됩니다.**
 
@@ -153,7 +159,7 @@ ht-degree: 0%
    * [!UICONTROL Inputs]:
       * `A`: `Percent of customer's orders with coupon`
 
-   * &#x200B;
+   * 
      [!UICONTROL 데이터 유형]: `String`
    * [!UICONTROL Calculation]: **A가 null이면 null, A=0이면 &#39;쿠폰 사용 안 함&#39;, A&lt;0.5이면 &#39;주로 전체 가격&#39;, A=0.5이면 &#39;50/50&#39;, A=1이면 &#39;쿠폰만&#39;, A>0.5이면 &#39;주로 쿠폰&#39;, 기타 &#39;정의되지 않음&#39; 종료**
 
@@ -190,10 +196,10 @@ ht-degree: 0%
 
 * 지표 `A`: `Coupon acquisitions`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL 간격]: `None`
 * [!UICONTROL Group by]: `Coupon acquisitions customer` 또는 `Non coupon acquisition customer`
-* &#x200B;
+* 
   [!UICONTROL 차트 유형]: `Pie`
 
 * **쿠폰을 획득하거나 쿠폰을 획득하지 않은 고객 수**
@@ -212,9 +218,9 @@ ht-degree: 0%
 
 * 지표 `A`: `Average lifetime revenue (at least 3 months age)`
 * [!UICONTROL Time period]: `X years ago to 90 days ago`
-* &#x200B;
+* 
   [!UICONTROL 간격]: `None`
-* &#x200B;
+* 
   [!UICONTROL 차트 유형]: `Scalar`
 
 * **평균 라이프타임 수익: 비쿠폰 Acq. (90일 이상)**
@@ -224,9 +230,9 @@ ht-degree: 0%
 
 * 지표 `A`: `Average lifetime revenue (at least 3 months age)`
 * [!UICONTROL Time period]: `X years ago to 90 days ago`
-* &#x200B;
+* 
   [!UICONTROL 간격]: `None`
-* &#x200B;
+* 
   [!UICONTROL 차트 유형]: `Scalar`
 
 * **첫 주문 쿠폰별 평균 라이프타임 수익**
@@ -234,10 +240,10 @@ ht-degree: 0%
 
 * 지표 `A`: `Average lifetime revenue`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL 간격]: `None`
 * [!UICONTROL Group by]: `Customer's first order's coupon`
-* &#x200B;
+* 
   [!UICONTROL 차트 유형]: `Column`
 
 >[!NOTE]
@@ -253,7 +259,7 @@ ht-degree: 0%
    * [!UICONTROL Filter]:
       * 고객의 첫 번째 주문에 포함 쿠폰 (쿠폰 / 쿠폰 없음) = 쿠폰
       * 고객의 마지막 주문입니까? = 아니요
-   * &#x200B;
+   * 
      [!UICONTROL 공식]: `B/A`
    * [!UICONTROL Format]: `Percentage %`
 
@@ -263,7 +269,7 @@ ht-degree: 0%
 * 지표 `B`: `Number of non last orders`
 * [!UICONTROL Formula]: `Repeat order probability`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL 간격]: `None`
 * [!UICONTROL Group by]: `Customer's order number`
 * [!UICONTROL Chart type]: `Bar chart`
@@ -278,7 +284,7 @@ ht-degree: 0%
       * 고객의 첫 번째 주문에 포함 쿠폰 (쿠폰 / 쿠폰 없음) = 쿠폰 없음
       * 고객의 마지막 주문입니까? = 아니요
 
-   * &#x200B;
+   * 
      [!UICONTROL 공식]: `B/A`
    * [!UICONTROL Format]: `Percentage %`
 
@@ -288,7 +294,7 @@ ht-degree: 0%
 * 지표 `B`: `Number of non last orders`
 * [!UICONTROL Formula]: `Repeat order probability`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL 간격]: `None`
 * [!UICONTROL Group by]: `Customer's order number`
 * [!UICONTROL Chart type]: `Bar chart`
@@ -309,7 +315,7 @@ ht-degree: 0%
       * 고객의 첫 주문에 쿠폰이 포함되었습니까? (쿠폰/쿠폰 없음) = 쿠폰
       * 쿠폰이 적용되었습니까? (쿠폰/쿠폰 없음) = 쿠폰
 
-   * &#x200B;
+   * 
      [!UICONTROL 공식]: `C/B`
    * [!UICONTROL Format]: `Percentage %`
 
@@ -318,9 +324,9 @@ ht-degree: 0%
 * 지표 `C`: `Number of repeat orders with coupon`
 * [!UICONTROL Formula]: `% of repeat orders with coupon`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL 간격]: `None`
-* &#x200B;
+* 
   [!UICONTROL 차트 유형]: `Table` (더 나은 시각화를 위해 이 테이블의 위치를 바꿀 수 있음)
 
 * **쿠폰을 받지 않은 고객의 쿠폰 사용 비율(반복 주문)**
@@ -339,7 +345,7 @@ ht-degree: 0%
       * 고객의 첫 주문에 쿠폰이 포함되었습니까? (쿠폰/쿠폰 없음) = 쿠폰 없음
       * 쿠폰이 적용되었습니까? (쿠폰/쿠폰 없음) = 쿠폰
 
-   * &#x200B;
+   * 
      [!UICONTROL 공식]: `C/B`
    * [!UICONTROL Format]: `Percentage %`
 
@@ -348,9 +354,9 @@ ht-degree: 0%
 * 지표 `C`: `Number of repeat orders with coupon`
 * [!UICONTROL Formula]: `% of repeat orders with coupon`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL 간격]: `None`
-* &#x200B;
+* 
   [!UICONTROL 차트 유형]: `Table` (더 나은 시각화를 위해 이 테이블의 위치를 바꿀 수 있음)
 
 * **쿠폰 사용 세부 정보(처음 주문)**
@@ -359,7 +365,7 @@ ht-degree: 0%
       * 고객의 주문 번호 = 1
       * 이 쿠폰이 포함된 주문 수 > 10
 
-   * &#x200B;
+   * 
      [!UICONTROL 지표]: `Revenue`
    * [!UICONTROL Filter]:
       * 고객의 주문 번호 = 1
@@ -371,7 +377,7 @@ ht-degree: 0%
       * 이 쿠폰이 포함된 주문 수 > 10
 
    * [!UICONTROL Formula]: `B-C`(C가 음수인 경우), B+C(C가 양수인 경우)
-   * &#x200B;
+   * 
      [!UICONTROL 형식]: `Currency`
 
    * [!UICONTROL Metric]: `Average order value`
@@ -385,10 +391,10 @@ ht-degree: 0%
 * [!UICONTROL Formula]: `Gross revenue from FTO`
 * 지표 `E`: `Average order value for FTO`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL 간격]: `None`
 * [!UICONTROL Group by]: `coupon code`
-* &#x200B;
+* 
   [!UICONTROL 차트 유형]: `Table`
 >[!NOTE]
 >
@@ -399,22 +405,22 @@ ht-degree: 0%
 
 * 지표 `A`: `Number or orders with coupon`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL 간격]: `None`
-* &#x200B;
+* 
   [!UICONTROL 차트 유형]: `Scalar`
 
 * **쿠폰이 있는 주문의 순 매출액(항상)**
-   * &#x200B;
+   * 
      [!UICONTROL 지표]: `Revenue`
    * [!UICONTROL Filter]:
       * 쿠폰이 적용되었습니까? (쿠폰/쿠폰 없음) = 쿠폰
 
 * 지표 `A`: `Net revenue from orders with coupons`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL 간격]: `None`
-* &#x200B;
+* 
   [!UICONTROL 차트 유형]: `Scalar`
 
 * **쿠폰 할인(항상)**
@@ -422,9 +428,9 @@ ht-degree: 0%
 
 * 지표 `A`: `Coupon discount amount`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL 간격]: `None`
-* &#x200B;
+* 
   [!UICONTROL 차트 유형]: `Scalar`
 
 * **쿠폰이 포함된 주문 수 및 없는 주문 수**
@@ -432,7 +438,7 @@ ht-degree: 0%
 
 * 지표 `A`: `Number of orders`
 * [!UICONTROL Time period]: `Last 24 months`
-* &#x200B;
+* 
   [!UICONTROL 간격]: `None`
 * [!UICONTROL Group by]: `Order has coupon applied? (Coupon/No coupon)`
 * [!UICONTROL Chart type]: `Stacked column`
@@ -444,10 +450,10 @@ ht-degree: 0%
 
 * 지표 `A`: `New customers`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL 간격]: `None`
 * [!UICONTROL Group by]: `Customer's coupon usage`
-* &#x200B;
+* 
   [!UICONTROL 차트 유형]: `Pie`
 
 * **쿠폰 사용 세부 정보**
@@ -455,7 +461,7 @@ ht-degree: 0%
    * [!UICONTROL Filter]:
       * 이 쿠폰이 포함된 주문 수 > 10
 
-   * &#x200B;
+   * 
      [!UICONTROL 지표]: `Revenue`
    * [!UICONTROL Filter]:
       * 이 쿠폰이 포함된 주문 수 > 10
@@ -465,20 +471,20 @@ ht-degree: 0%
       * 이 쿠폰이 포함된 주문 수 > 10
 
    * [!UICONTROL Formula]: `B-C`(`C`이(가) 음수인 경우), `B+C`(`C`이(가) 양수인 경우)
-   * &#x200B;
+   * 
      [!UICONTROL 형식]: `Currency`
 
    * [!UICONTROL Formula]: `C/(B-C)`(`C`이(가) 음수인 경우), `C/(B+C)`(`C`이(가) 양수인 경우)
-   * &#x200B;
+   * 
      [!UICONTROL 형식]: `Percentage`
 
    * [!UICONTROL Metric]: `Average order value`
    * [!UICONTROL Filter]:
       * 이 쿠폰이 포함된 주문 수 > 10
 
-   * &#x200B;
+   * 
      [!UICONTROL 공식]: `C/A`
-   * &#x200B;
+   * 
      [!UICONTROL 형식]: `Currency`
 
    * [!UICONTROL Metric]: `Distinct buyers`
@@ -494,10 +500,10 @@ ht-degree: 0%
 * [!UICONTROL Formula]: `Average order discount`
 * 지표 `H`: `Distinct buyers`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL 간격]: `None`
 * [!UICONTROL Group by]: `coupon code`
-* &#x200B;
+* 
   [!UICONTROL 차트 유형]: `Table`
 
 >[!NOTE]
@@ -506,7 +512,7 @@ ht-degree: 0%
 
 모든 보고서를 컴파일한 후 원하는 대로 대시보드에서 구성할 수 있습니다. 결과는 페이지 상단에 있는 이미지와 비슷할 수 있습니다.
 
-이 분석을 작성하는 동안 질문이 있거나 Professional Services 팀에 문의하려는 경우 [지원 팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하십시오.
+이 분석을 작성하는 동안 질문이 있거나 Professional Services 팀에 문의하려는 경우 [지원 팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하십시오.
 
 >[!NOTE]
 >

@@ -4,9 +4,15 @@ description: 트랜잭션 고객에 대한 이탈을 정의하는 데 도움이 
 exl-id: fea8f7e9-c84c-4d49-a657-8b75140c113a
 role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports, Dashboards
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/eDJBh7FlhuKjBa5ft4sqAfZavmBk4V9m-Iu-26cG2VI
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: 482
 ht-degree: 0%
 
 ---
@@ -69,27 +75,27 @@ ht-degree: 0%
 * [!UICONTROL Metric]: 주문 수
 
 * [!UICONTROL Formula]: 초기 반복 순서 확률
-* &#x200B;
+* 
   [!UICONTROL 공식]: `A/B`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Scalar`
 
 * **주문 이후 몇 달 동안 반복 주문 확률**
 * 지표 A: 이전 주문 이후 매월 주문 반복(숨기기)
 * [!UICONTROL Metric]: `Number of orders`
-* &#x200B;
+* 
   [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
 * 지표 B: 주문 이후 개월별 마지막 주문(숨기기)
 * [!UICONTROL Metric]: `Number of orders`
-* &#x200B;
+* 
   [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
@@ -97,29 +103,29 @@ ht-degree: 0%
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
-* &#x200B;
+* 
   [!UICONTROL 그룹 기준]: `Independent`
 
 * 지표 D: 역대 마지막 주문 수(숨기기)
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
-* &#x200B;
+* 
   [!UICONTROL 그룹 기준]: `Independent`
 
 * [!UICONTROL Formula]: 초기 반복 순서 확률
-* &#x200B;
+* 
   [!UICONTROL 공식]: `(C-A)/(C+D-A-B)`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Months since previous order`
 * Show top.bottom: 카테고리 이름별로 정렬된 상위 24개 카테고리
 
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Line`
 
 초기 반복 주문 확률 보고서는 총 반복 주문 / 총 주문 수를 나타냅니다. 모든 주문은 반복 주문을 할 수 있는 기회입니다. 반복 주문 수는 실제로 실행되는 주문의 하위 집합입니다.
@@ -132,4 +138,4 @@ ht-degree: 0%
 
 모든 보고서를 컴파일한 후 원하는 대로 대시보드에서 구성할 수 있습니다. 결과는 페이지 상단에 있는 이미지와 비슷할 수 있습니다
 
-이 분석을 작성하는 동안 질문이 있거나 Professional Services 팀에 문의하려는 경우 [지원 팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하십시오.
+이 분석을 작성하는 동안 질문이 있거나 Professional Services 팀에 문의하려는 경우 [지원 팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하십시오.

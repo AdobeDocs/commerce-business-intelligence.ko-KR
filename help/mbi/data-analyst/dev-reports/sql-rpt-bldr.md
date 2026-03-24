@@ -4,9 +4,15 @@ description: SQL Report Builder 사용의 원리에 대해 알아봅니다.
 exl-id: 3a485b00-c59d-4bc5-b78b-57e9e92dd9d6
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/AH2H26Tjo9EXQdXg3fckTOgVkSbA6yqPJdVuO1Yzw2A
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c32adafa-ed01-4b31-997e-2413013911b0
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '1397'
+source-wordcount: 1397
 ht-degree: 0%
 
 ---
@@ -17,13 +23,13 @@ ht-degree: 0%
 >
 >SQL 차트를 만들고 편집하려면 [관리자 권한](../../administrator/user-management/user-management.md)이 필요합니다. `Standard`명의 사용자가 대시보드에서 이러한 차트를 다시 정렬할 수 있으며 `Read-only`명의 사용자가 기존 차트와 동일한 경험을 합니다. 또한 `Read-only`명의 사용자가 쿼리 텍스트에 액세스할 수 없습니다.
 
-자세한 내용은 [교육 비디오](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=ko)를 참조하세요.
+자세한 내용은 [교육 비디오](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html)를 참조하세요.
 
 [!DNL SQL] 또는 Structured Query Language는 데이터베이스와 통신하는 데 사용되는 프로그래밍 언어입니다. [!DNL Commerce Intelligence]에서 [!DNL SQL]은(는) Data Warehouse에서 데이터를 쿼리하거나 검색하는 데 사용됩니다. 대시보드의 보고서를 살펴보십시오. 각 보고서는 [!DNL SQL] 쿼리로 제공됩니다.
 
 [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md)을(를) 사용하여 Data Warehouse을 직접 쿼리하고 결과를 보고 차트로 변환할 수 있습니다. [!DNL SQL Report Builder]을(를) 클릭하여 **[!UICONTROL Report Builder** > **[!DNL SQL Report Builder]]**&#x200B;에서 보고서 만들기를 시작할 수 있습니다.
 
-자세한 내용은 [교육 비디오](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=ko)를 참조하세요.
+자세한 내용은 [교육 비디오](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html)를 참조하세요.
 
 [!DNL SQL Report Builder]을(를) 사용하면 Data Warehouse을 직접 쿼리하고 결과를 보고 차트로 빠르게 변환할 수 있습니다. [!DNL SQL]을(를) 사용하여 보고서를 작성하는 가장 좋은 방법은 업데이트 주기를 기다리지 않고 만든 열을 반복할 필요가 없다는 것입니다. 결과가 올바르게 표시되지 않으면 예상과 일치할 때까지 쿼리를 빠르게 편집하고 다시 실행할 수 있습니다.
 
@@ -47,7 +53,7 @@ ht-degree: 0%
 
 ## 시작
 
-보고서를 편집하려면 ![&#x200B; 기반 차트의 오른쪽 위 모서리에 있는 톱니바퀴(](../../assets/gear-icon.png)톱니바퀴 아이콘[!DNL SQL]) 아이콘을 클릭하고 **[!UICONTROL Edit]**&#x200B;을(를) 클릭하십시오.
+보고서를 편집하려면 ![ 기반 차트의 오른쪽 위 모서리에 있는 톱니바퀴(](../../assets/gear-icon.png)톱니바퀴 아이콘[!DNL SQL]) 아이콘을 클릭하고 **[!UICONTROL Edit]**&#x200B;을(를) 클릭하십시오.
 
 ## 쿼리 작성 {#writing}
 
@@ -113,7 +119,7 @@ ht-degree: 0%
 
 #### [!DNL SQL Report Builder]
 
-[[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md)을(를) 사용하면 Data Warehouse을 직접 쿼리하고 결과를 보고 빠르게 보고서로 변환할 수 있습니다. [!DNL SQL]을(를) 사용하면 [&#x200B; 또는  [!DNL SQL]  보고서 빌더에서 &#x200B;](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html)사용할 수 없는`Visual`함수를 사용`Cohort`할 수 있으므로 데이터를 보다 세밀하게 제어할 수 있습니다.
+[[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md)을(를) 사용하면 Data Warehouse을 직접 쿼리하고 결과를 보고 빠르게 보고서로 변환할 수 있습니다. [!DNL SQL]을(를) 사용하면 [ 또는  [!DNL SQL]  보고서 빌더에서 ](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html)사용할 수 없는`Visual`함수를 사용`Cohort`할 수 있으므로 데이터를 보다 세밀하게 제어할 수 있습니다.
 
 [!DNL SQL]을(를) 사용하여 만든 계산된 열은 업데이트 주기에 종속되지 않습니다. 즉, 원하는 대로 반복하고 결과를 즉시 확인할 수 있습니다.
 
@@ -133,7 +139,7 @@ ht-degree: 0%
 
 대부분의 경우 업데이트 주기 때문에 결과의 차이가 발생할 수 있습니다. [!DNL Commerce Intelligence]이(가) 데이터베이스에서 Data Warehouse으로 데이터를 복제하는 중이면 동일한 쿼리를 사용하더라도 다른 결과가 표시될 수 있습니다.
 
-연결 문제로 인해 불일치가 발생할 수도 있습니다. `Connections`을(를) 클릭하여 **[!DNL Manage Data** > **Connections]** 페이지로 이동하여 확인합니다. 해당 데이터베이스 통합에 오류가 있습니까? 이 경우 다시 실행하려면 [통합을 다시 인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)해야 할 수 있습니다.
+연결 문제로 인해 불일치가 발생할 수도 있습니다. `Connections`을(를) 클릭하여 **[!DNL Manage Data** > **Connections]** 페이지로 이동하여 확인합니다. 해당 데이터베이스 통합에 오류가 있습니까? 이 경우 다시 실행하려면 [통합을 다시 인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)해야 할 수 있습니다.
 
 모든 통합이 성공적으로 연결되었으며 업데이트 주기 중에 있지 않으면 다른 문제가 발생할 수 있습니다.
 

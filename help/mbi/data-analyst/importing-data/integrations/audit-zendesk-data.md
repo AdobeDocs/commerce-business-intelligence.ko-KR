@@ -4,9 +4,15 @@ description: Zendesk 데이터를 내보내는 단계에 대해 알아봅니다.
 exl-id: 3c8dcc72-3623-4c4e-a941-f431a97571e0
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/EQmiSbzzvOONQ8-F1U9uMVpgXUKd2PEjcLXLVSgQSm8
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: 269
 ht-degree: 0%
 
 ---
@@ -17,7 +23,7 @@ ht-degree: 0%
 
 ## 데이터 내보내기 활성화
 
-현재 모든 [!DNL Zendesk] 계정에 대해 데이터 내보내기를 사용할 수 없습니다. 이 기능을 활성화하려면 [지원 티켓을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하고 [!DNL Zendesk] 하위 도메인 이름을 언급하십시오.
+현재 모든 [!DNL Zendesk] 계정에 대해 데이터 내보내기를 사용할 수 없습니다. 이 기능을 활성화하려면 [지원 티켓을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하고 [!DNL Zendesk] 하위 도메인 이름을 언급하십시오.
 
 >[!NOTE]
 >
@@ -38,6 +44,6 @@ ht-degree: 0%
 
    이 다운로드 링크는 최소 3일 동안 유효합니다.
 
-이 프로세스는 티켓 데이터(댓글 포함), 사용자 데이터 및 계정 데이터를 포함하여 현재 [!DNL Zendesk] 계정에 저장된 모든 정보가 포함된 XML 파일을 만듭니다. 이 시점에서 데이터를 자세히 살펴볼 수 있도록 [지원 티켓을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)할 수 있습니다(이 파일을 반드시 첨부하세요!). 파일이 너무 큰 경우 [!DNL Commerce Intelligence] 또는 [!DNL Dropbox]을(를) 통해 [!DNL Google Drive] 팀과 공유하십시오.
+이 프로세스는 티켓 데이터(댓글 포함), 사용자 데이터 및 계정 데이터를 포함하여 현재 [!DNL Zendesk] 계정에 저장된 모든 정보가 포함된 XML 파일을 만듭니다. 이 시점에서 데이터를 자세히 살펴볼 수 있도록 [지원 티켓을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)할 수 있습니다(이 파일을 반드시 첨부하세요!). 파일이 너무 큰 경우 [!DNL Commerce Intelligence] 또는 [!DNL Dropbox]을(를) 통해 [!DNL Google Drive] 팀과 공유하십시오.
 
 [!DNL Zendesk] 파일 내보내기에 대한 자세한 내용은 공식 [[!DNL Zendesk] 내보내기 설명서](https://support.zendesk.com/hc/en-us/articles/4408886165402-Exporting-data-to-a-JSON-CSV-or-XML-file)를 참조하세요.
