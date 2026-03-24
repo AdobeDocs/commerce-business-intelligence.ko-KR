@@ -32,7 +32,7 @@ ht-degree: 0%
 
 ![반환 비율과 이유를 보여주는 자세한 반환 대시보드](../../assets/detailed-returns-dboard.png)
 
-시작하기 전에 [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 고객이어야 하며 귀사에서 반품에 `enterprise\_rma` 테이블을 사용하고 있는지 확인해야 합니다.
+시작하기 전에 [Adobe Commerce](https://business.adobe.com/kr/products/magento/magento-commerce.html) 고객이어야 하며 귀사에서 반품에 `enterprise\_rma` 테이블을 사용하고 있는지 확인해야 합니다.
 
 이 분석에는 [고급 계산 열](../data-warehouse-mgr/adv-calc-columns.md)이(가) 포함되어 있습니다.
 
@@ -257,4 +257,4 @@ ht-degree: 0%
 
 모든 보고서를 컴파일한 후 원하는 대로 대시보드에서 구성할 수 있습니다. 결과는 위의 샘플 대시보드와 비슷할 수 있습니다.
 
-이 분석을 작성하는 동안 질문이 있거나 Professional Services 팀에 참여하려는 경우 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하십시오.
+이 분석을 작성하는 동안 질문이 있거나 Professional Services 팀에 참여하려는 경우 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하십시오.
