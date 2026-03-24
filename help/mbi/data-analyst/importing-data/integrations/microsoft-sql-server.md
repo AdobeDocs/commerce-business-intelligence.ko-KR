@@ -4,9 +4,15 @@ description: 4단계 프로세스를 통해 Microsoft SQL 데이터베이스를 
 exl-id: 7f49d1dc-8fbb-4a8c-9d07-9a8195c266f5
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/mJFBPJE334m7V8klJk-1xKAfsU4u4ObcwWDZzylJohM
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: 306
 ht-degree: 0%
 
 ---
@@ -21,7 +27,7 @@ ht-degree: 0%
 
 이 항목에서는 4단계 프로세스를 통해 [!DNL Microsoft SQL] 데이터베이스를 [!DNL Commerce Intelligence]에 연결하는 방법을 설명합니다. 이 프로세스에는 서버 연결 및 SQL과 관련된 기술 전문 지식이 필요하며 팀의 개발자로부터 지원이 필요할 수 있습니다.
 
-[!DNL Commerce Intelligence]은(는) [!DNL Amazon RDS], [!DNL EC2], [!DNL Microsoft SQL Azure] 및 대부분의 다른 클라우드 서버 공급자를 지원합니다. 특정 호스트에 대한 질문이 있는 경우 [지원 티켓을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하여 이 정보를 제공하십시오.
+[!DNL Commerce Intelligence]은(는) [!DNL Amazon RDS], [!DNL EC2], [!DNL Microsoft SQL Azure] 및 대부분의 다른 클라우드 서버 공급자를 지원합니다. 특정 호스트에 대한 질문이 있는 경우 [지원 티켓을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)하여 이 정보를 제공하십시오.
 
 시스템에서 데이터베이스에서 SELECT 쿼리를 실행해야 합니다. 이 작업은 처음에 데이터베이스 구조의 스냅샷을 가져온 다음 정기적으로 초과 작업을 수행하여 데이터를 최신 상태로 유지합니다. 업데이트는 증분 단위이며 Adobe은 서버에서 원하지 않는 로드를 방지하기 위해 업데이트 빈도와 시간을 제한합니다.
 
