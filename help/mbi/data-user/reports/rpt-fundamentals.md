@@ -4,9 +4,25 @@ description: 보고서 데이터를 사용하는 방법을 알아봅니다.
 exl-id: 94d4db27-0e06-4066-9c03-036b109d2d9b
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/e-QGaopbnpaXeP94RbjiD3SVKUcFutb-37ClyKValk8
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: 995
 ht-degree: 0%
 
 ---
@@ -107,7 +123,7 @@ _[등록 및 구매한 총 고객 수`Time between a customer's registration dat
 
 #### 보고서에 설명 추가
 
-Adobe 팀의 다른 멤버와 공유되는 보고서를 만들 때는 다른 사용자가 분석을 더 잘 이해할 수 있도록 설명을 추가하는 것이 좋습니다.
+팀의 다른 멤버와 공유되는 보고서를 만들 때는 다른 사용자가 분석을 더 잘 이해할 수 있도록 설명을 추가하는 것이 좋습니다.
 
 1. 보고서 맨 위에 있는 **[!UICONTROL i]**&#x200B;을(를) 클릭합니다.
 1. 단어 상자에 설명을 입력합니다.
