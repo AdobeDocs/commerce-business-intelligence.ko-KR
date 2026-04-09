@@ -19,7 +19,7 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 08a466710b782238003c6bdb8cefacd07134291c
 workflow-type: tm+mt
 source-wordcount: 269
 ht-degree: 0%
@@ -38,14 +38,14 @@ ht-degree: 0%
 
 | **열 이름** | **설명** |
 |---|---|
-| `entity\_id` | 테이블에 대한 고유 식별자. 각 `entity\_id`은(는) 반환이 요청된 항목을 나타냅니다. |
-| `rma\_entity\_id` | `enterprise\_rma` 테이블에 연결된 외래 키입니다. |
+| `entity_id` | 테이블에 대한 고유 식별자. 각 `entity_id`은(는) 반환이 요청된 항목을 나타냅니다. |
+| `rma_entity_id` | `enterprise_rma` 테이블에 연결된 외래 키입니다. |
 | `status` | 항목 반환의 상태입니다. 값에는 &quot;받음&quot;, &quot;보류 중&quot;, &quot;인증됨&quot; 등이 포함됩니다. 이 상태의 값은 전체 반환 상태의 값과 일치하지 않을 수 있습니다. |
-| `qty\_requested` | 고객이 반품을 요청하는 수량입니다. |
-| `qty\_approved` | 반품이 승인된 수량입니다. |
-| `qty\_returned` | 반환된 수량입니다. |
-| `order\_item\_id` | `sales\_flat\_order\_item` 테이블에 연결된 외래 키입니다. |
-| `product\_sku` | 반환되는 sku. |
+| `qty_requested` | 고객이 반품을 요청하는 수량입니다. |
+| `qty_approved` | 반품이 승인된 수량입니다. |
+| `qty_returned` | 반환된 수량입니다. |
+| `order_item_id` | `sales_flat_order_item` 테이블에 연결된 외래 키입니다. |
+| `product_sku` | 반환되는 sku. |
 
 {style="table-layout:auto"}
 
@@ -53,9 +53,9 @@ ht-degree: 0%
 
 | **열 이름** | **설명** |
 |---|---|
-| `Return date\_requested` | 고객이 반환을 요청한 날짜입니다. |
+| `Return date_requested` | 고객이 반환을 요청한 날짜입니다. |
 | `Item price` | 항목의 가격입니다. |
-| `Return item's total value (qty\_returned * price)` | 반환된 항목의 총 통화 가치입니다. `enterprise\_rma` 테이블의 총 반환 금액을 계산하는 데 사용됩니다. |
+| `Return item's total value (qty_returned * price)` | 반환된 항목의 총 통화 가치입니다. `enterprise_rma` 테이블의 총 반환 금액을 계산하는 데 사용됩니다. |
 
 {style="table-layout:auto"}
 
@@ -72,7 +72,7 @@ ht-degree: 0%
 
 `enterprise_rma`
 
-* 다음 조인을 통해 `Return date\_requested` 테이블에 `enterprise_rma_item_entity`과(와) 같은 조인된 열을 만듭니다.
+* 다음 조인을 통해 `Return date_requested` 테이블에 `enterprise_rma_item_entity`과(와) 같은 조인된 열을 만듭니다.
 * Commerce 1.x: `enterprise_rma_item_entity.rma_entity_id `(많음) => `enterprise_rma.entity_id`(하나)
 * Commerce 2.x: `magento_rma_item_entity.rma_entity_id `(많음) => `magento_rma.entity_id`(하나)
 
