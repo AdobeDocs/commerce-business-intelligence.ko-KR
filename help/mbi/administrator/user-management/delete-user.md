@@ -4,9 +4,15 @@ description: ' [!DNL Commerce Intelligence] 사용자를 삭제하는 방법을 
 exl-id: 0590275d-3329-40fb-8be1-4a700438338d
 role: Admin, User
 feature: User Management
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b6935462-7263-4ced-a703-60de6a5aeb2d
+subfeature_v2: id: d971c7be-3e54-4af9-807c-8d1f9f7b22df
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 4e01225a6bd285afbe988b9c24e07e2ea34649fc
 workflow-type: tm+mt
-source-wordcount: '190'
+source-wordcount: 190
 ht-degree: 0%
 
 ---
@@ -26,5 +32,5 @@ ht-degree: 0%
 다른 사용자의 계정에 푸시된 사용자의 대시보드만 필요한 경우 다음을 수행합니다.
 
 1. 삭제된 사용자의 전자 메일 주소를 사용하여 새 [!DNL Commerce Intelligence] 사용자를 만드십시오.
-1. 사용자를 만든 후 [지원에 알림](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)합니다. 지원 팀에서 대시보드를 계정으로 전송합니다.
+1. 사용자를 만든 후 [지원에 알림](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)합니다. 지원 팀에서 대시보드를 계정으로 전송합니다.
 1. Adobe 지원에서 전송 사실을 알린 후 사용자를 다시 삭제할 수 있습니다.
