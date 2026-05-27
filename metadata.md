@@ -1,22 +1,21 @@
 ---
 solution: Commerce, Commerce Intelligence
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+usetq: true
 landing-page-name: commerce
 landing-page-breadcrumb-title: Commerce
 product: magento
 type: Documentation
 audience: end-user
 mini-toc-levels: 2
-git-repo: https://github.com/AdobeDocs/commerce-business-intelligence.ko-KR
+git-repo: https://github.com/AdobeDocs/commerce-business-intelligence.en
 role: User
 feature-set: Commerce Intelligence
 level: Beginner, Intermediate
 topic: Commerce
 index: true
-badgePaas: label="PaaS만" type="Informative" url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온 클라우드 프로젝트(Adobe 관리 PaaS 인프라) 및 온프레미스 프로젝트에만 적용됩니다."
-source-git-commit: 121bfdb4e07eadaac09f6fda74f4fd4f582180c9
+badgePaas: label="PaaS만" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온 클라우드 프로젝트(Adobe 관리 PaaS 인프라) 및 온프레미스 프로젝트에만 적용됩니다."
+source-git-commit: f229139f3710766875e6778ea3d04221ffc2d2bf
 workflow-type: tm+mt
 source-wordcount: 173
 ht-degree: 0%
