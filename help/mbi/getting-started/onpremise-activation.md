@@ -22,9 +22,9 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: b6ae8fb1a1a7f30e3d56740986f9366e7d1e7f1a
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 732
+source-wordcount: 761
 ht-degree: 0%
 
 ---
@@ -57,9 +57,9 @@ ht-degree: 0%
 
 ![전자 메일 주소 및 권한 수준 필드가 있는 사용자 양식 추가](../assets/create-account-5.png)
 
-## [!DNL Commerce Intelligence] 관리자의 전용 [!DNL Commerce] 사용자 만들기
+## [!DNL Commerce] 관리자의 전용 [!DNL Commerce Intelligence] 사용자 만들기
 
-[!DNL Commerce Intelligence]을(를) 사용하려면 [!DNL Commerce] 프로젝트에 영구 전용 사용자를 추가해야 합니다. 이 전용 사용자는 새 데이터를 가져와 계정의 [!DNL Commerce] Data Warehouse에 전송할 수 있도록 [!DNL Commerce Intelligence]에 대한 영구 연결 역할을 합니다.
+[!DNL Commerce Intelligence]을(를) 사용하려면 [!DNL Commerce] 프로젝트에 영구 전용 사용자를 추가해야 합니다. 이 전용 사용자는 새 데이터를 가져와 계정의 [!DNL Commerce Intelligence] Data Warehouse에 전송할 수 있도록 [!DNL Commerce]에 대한 영구 연결 역할을 합니다.
 
 전용 [!DNL Commerce Intelligence] 사용자를 구성하면 계정이 비활성화되거나 삭제되지 않으므로 [!DNL Commerce Intelligence] 연결이 중지됩니다.
 
@@ -68,13 +68,13 @@ ht-degree: 0%
 >
 >Adobe에서는 영구 상태를 나타내는 계정 이름(예: ACI 전용, ACI-database-connector 등)을 사용할 것을 권장합니다.
 
-관리자의 [!DNL Commerce Intelligence]에 대한 전용 사용자를 만든 후 [!DNL Commerce] 설정이 **[!UICONTROL Master]**&#x200B;인 `Contributor` 프로젝트의 기본 환경에 동일한 사용자를 추가하십시오.
+관리자의 [!DNL Commerce Intelligence]에 대한 전용 사용자를 만든 후 **[!UICONTROL Master]** 설정이 `Contributor`인 [!DNL Commerce] 프로젝트의 기본 환경에 동일한 사용자를 추가하십시오.
 
 ![기여자에게 설정된 역할이 있는 Commerce 사용자 인터페이스 추가](../assets/commerce-add-user-settings.png)
 
 ## Commerce Intelligence SSH 키 가져오기
 
-1. [!UICONTROL Connect your database] 설정의 [!DNL Commerce Intelligence] 페이지에서 아래로 스크롤하고 **[!UICONTROL Encryption settings]**&#x200B;을(를) 선택합니다.
+1. [!DNL Commerce Intelligence] 설정의 [!UICONTROL Connect your database] 페이지에서 아래로 스크롤하고 **[!UICONTROL Encryption settings]**&#x200B;을(를) 선택합니다.
 
 1. **암호화 유형**&#x200B;에 대해 `SSH Tunnel`을(를) 선택하십시오.
 
@@ -122,9 +122,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe에서는 [`SSH tunnel`](../data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md) 터널을 사용하여 데이터베이스 연결을 만들 것을 강력히 권장합니다. 그러나 이 메서드가 옵션이 아닌 경우 [!DNL Commerce Intelligence]을(를) 사용하여 [`direct connection`](../data-analyst/importing-data/integrations/mysql-via-a-direct-connection.md)을(를) 데이터베이스에 연결할 수 있습니다.
+>Adobe에서는 [`SSH tunnel`](../data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md) 터널을 사용하여 데이터베이스 연결을 만들 것을 강력히 권장합니다. SSH 호스트 키 등록, 오류 및 문제 해결에 대해서는 [SSH 호스트 키 확인](../data-analyst/importing-data/integrations/ssh-host-key-verification.md)을 참조하십시오. 그러나 이 메서드가 옵션이 아닌 경우 [`direct connection`](../data-analyst/importing-data/integrations/mysql-via-a-direct-connection.md)을(를) 사용하여 [!DNL Commerce Intelligence]을(를) 데이터베이스에 연결할 수 있습니다.
 
-[!DNL Commerce Intelligence] 화면에 [!UICONTROL Connect your Magento Database] 정보를 입력하십시오.
+[!UICONTROL Connect your Magento Database] 화면에 [!DNL Commerce Intelligence] 정보를 입력하십시오.
 
 ![통합 이름, 호스트, 포트, 사용자 이름, 암호 및 데이터베이스 이름에 대한 필드와 데이터베이스 양식을 연결합니다](../assets/connect-magento-db.png)
 
@@ -184,7 +184,7 @@ ht-degree: 0%
 >
 >[!DNL Adobe Commerce Intelligence Pro] 고객인 경우 다음 단계를 조정하려면 고객 성공 관리자 또는 고객 기술 관리자에게 문의하십시오.
 
-구성을 완료한 후 [&#x200B; 계정에 &#x200B;](../getting-started/sign-in.md)로그인[!DNL Commerce Intelligence]하세요.
+구성을 완료한 후 [!DNL Commerce Intelligence] 계정에 [로그인](../getting-started/sign-in.md)하세요.
 
 <!--
 # Activate your [!DNL Commerce Intelligence] Account

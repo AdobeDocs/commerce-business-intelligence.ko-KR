@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 661
+source-wordcount: 686
 ht-degree: 0%
 
 ---
@@ -61,11 +61,11 @@ SSH 터널을 통해 [!DNL MongoDB] 데이터베이스를 [!DNL Commerce Intelli
 
 ![MBI_Allow_Access_IPs.png](../../../assets/MBI_allow_access_IPs.png)
 
-## `Linux`에 대해 [!DNL Commerce Intelligence] 사용자를 만드는 중 {#linux}
+## [!DNL Commerce Intelligence]에 대해 `Linux` 사용자를 만드는 중 {#linux}
 
 >[!IMPORTANT]
 >
->서버와 연결된 `sshd_config` 파일이 기본 옵션으로 설정되지 않은 경우 특정 사용자만 서버에 액세스할 수 있으므로 [!DNL Commerce Intelligence]에 연결할 수 없습니다. 이러한 경우 `AllowUsers` 사용자가 서버에 액세스할 수 있도록 하려면 `rjmetric`과(와) 같은 명령을 실행해야 합니다.
+>서버와 연결된 `sshd_config` 파일이 기본 옵션으로 설정되지 않은 경우 특정 사용자만 서버에 액세스할 수 있으므로 [!DNL Commerce Intelligence]에 연결할 수 없습니다. 이러한 경우 `rjmetric` 사용자가 서버에 액세스할 수 있도록 하려면 `AllowUsers`과(와) 같은 명령을 실행해야 합니다.
 
 실시간(또는 자주 업데이트되는) 데이터가 포함되어 있는 한 프로덕션 또는 보조 시스템일 수 있습니다. [!DNL MongoDB] 서버에 연결할 수 있는 권한이 있는 한 원하는 방식으로 이 사용자를 제한할 수 있습니다.
 
@@ -157,8 +157,13 @@ SSH 터널을 통해 [!DNL MongoDB] 데이터베이스를 [!DNL Commerce Intelli
 * `Username`: [!DNL Commerce Intelligence] SSH(Linux) 사용자 이름(rjmetric이어야 함)
 * `SSH Port`: 서버의 SSH 포트(기본적으로 22)
 
-완료되면 **[!UICONTROL Save Test]**&#x200B;을(를) 클릭하여 설치를 완료합니다.
+완료되면 **[!UICONTROL Save & Test]**&#x200B;을(를) 클릭하여 설치를 완료합니다.
 
-### 관련 항목
+>[!NOTE]
+>
+>SSH 호스트 키 등록, 새로 고침, 오류 메시지 및 문제 해결에 대해서는 [SSH 호스트 키 확인](ssh-host-key-verification.md)을 참조하십시오.
 
+## 관련 항목 {#related}
+
+* [SSH 호스트 키 확인](ssh-host-key-verification.md)
 * [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)

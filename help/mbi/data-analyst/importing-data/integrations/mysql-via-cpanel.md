@@ -19,16 +19,16 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 366
+source-wordcount: 400
 ht-degree: 0%
 
 ---
 
-# [!DNL MySQL]을(를) 통해 [!DNL cPanel] 연결
+# [!DNL cPanel]을(를) 통해 [!DNL MySQL] 연결
 
-* [&#x200B; [!DNL Commerce Intelligence] [!DNL MySQL]에서  [!DNL cPanel] 사용자 만들기](#cpanel)
+* [&#x200B; [!DNL cPanel]에서  [!DNL Commerce Intelligence] [!DNL MySQL] 사용자 만들기](#cpanel)
 * [&#x200B; [!DNL Commerce Intelligence]에 연결 및 사용자 정보 입력](#finish)
 
 ## 이동
@@ -40,17 +40,17 @@ ht-degree: 0%
 >
 >[!DNL Adobe]은(는) SSH 또는 다른 형태의 암호화를 사용하여 데이터를 보호하는 것을 권장합니다! 옵션이 아닌 경우 이 항목의 지침을 사용하여 [!DNL Commerce Intelligence]을(를) 데이터베이스에 직접 연결할 수 있습니다.
 
-이 항목에서는 [!DNL MySQL]을(를) 사용하여 [!DNL Commerce Intelligence] 데이터베이스를 [!DNL cPanel]에 직접 연결하는 과정을 안내합니다. 이 프로세스를 사용하여 [!DNL Adobe Commerce] 및 기타 MySQL 기반 전자 상거래 데이터베이스를 [!DNL Commerce Intelligence]에 연결할 수도 있습니다.
+이 항목에서는 [!DNL cPanel]을(를) 사용하여 [!DNL MySQL] 데이터베이스를 [!DNL Commerce Intelligence]에 직접 연결하는 과정을 안내합니다. 이 프로세스를 사용하여 [!DNL Adobe Commerce] 및 기타 MySQL 기반 전자 상거래 데이터베이스를 [!DNL Commerce Intelligence]에 연결할 수도 있습니다.
 
-1. [!DNL Commerce Intelligence]에서 [!DNL MySQL] [!DNL cPanel] 사용자 만들기
+1. [!DNL cPanel]에서 [!DNL Commerce Intelligence] [!DNL MySQL] 사용자 만들기
 1. [!DNL Commerce Intelligence]에 연결 및 사용자 정보 입력
 
 시작합니다.
 
-## [!DNL Commerce Intelligence]에서 [!DNL MySQL] [!DNL cPanel] 사용자를 만드는 중 {#cpanel}
+## [!DNL cPanel]에서 [!DNL Commerce Intelligence] [!DNL MySQL] 사용자를 만드는 중 {#cpanel}
 
 1. 호스팅 공급자를 통해 [!DNL cPanel]에 로그인합니다.
-1. **[!UICONTROL [!DNL MySQL] Databases]** 섹션에 있는 `Database`을(를) 클릭합니다.
+1. `Database` 섹션에 있는 **[!UICONTROL [!DNL MySQL] Databases]**&#x200B;을(를) 클릭합니다.
 1. `Add New User` 섹션까지 아래로 스크롤하고 [!DNL Commerce Intelligence]에 대한 사용자를 만드십시오.
 
    사용자 양식 만들기를 표시하는 ![cPanel MySQL 데이터베이스 인터페이스](../../../assets/create-mbi-mysql-user-cpanel.png)
@@ -82,6 +82,11 @@ ht-degree: 0%
 
 완료되면 **[!UICONTROL Save & Test]**&#x200B;을(를) 클릭하여 설치를 완료합니다.
 
-## 관련 항목:
+>[!NOTE]
+>
+>SSH 터널을 사용하는 경우 등록, 새로 고침, 오류 메시지 및 문제 해결에 대해 [SSH 호스트 키 확인](ssh-host-key-verification.md)을 참조하십시오.
 
+## 관련 항목 {#related}
+
+* [SSH 호스트 키 확인](ssh-host-key-verification.md)
 * [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)

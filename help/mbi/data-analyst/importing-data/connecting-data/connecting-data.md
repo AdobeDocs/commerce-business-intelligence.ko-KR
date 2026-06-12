@@ -23,9 +23,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 567
+source-wordcount: 628
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce Intelligence]에서 데이터 원본을 `integrations`(으)로 호출합니다. `integration`이(가) 연결되면 Data Warehouse 관리자에서 동기화에 사용할 수 있는 테이블을 검색할 수 있습니다.
 
-`Connections`을(를) 클릭하여 액세스할 수 있는 **[!UICONTROL Manage Data** > **Connections]** 페이지를 사용하여 통합을 추가하고 관리합니다. 여기에서 다음을 볼 수 있습니다.
+**[!UICONTROL Manage Data** > **Connections]**&#x200B;을(를) 클릭하여 액세스할 수 있는 `Connections` 페이지를 사용하여 통합을 추가하고 관리합니다. 여기에서 다음을 볼 수 있습니다.
 
 * 계정에 연결된 모든 통합 목록
 
@@ -56,7 +56,7 @@ ht-degree: 0%
 
 [!DNL Commerce Intelligence]은(는) [MySQL](../../importing-data/integrations/mysql-via-ssh-tunnel.md), [Microsoft SQL](../integrations/microsoft-sql-server.md), [MongoDB](../integrations/mongodb-via-ssh-tunnel.md) 및 [PostgreSQL](../integrations/postgresql.md)과 같은 SQL 기반 및 NoSQL 데이터베이스를 지원합니다.
 
-데이터베이스 자격 증명을 사용하여 데이터베이스를 [!DNL Commerce Intelligence]에 직접 연결할 수 있지만 Adobe에서는 SSH 터널과 같은 검증된 암호화 방법을 사용하는 것이 좋습니다. 이렇게 하면 Data Warehouse에 데이터가 유입될 때 데이터가 안전하게 보호됩니다.
+데이터베이스 자격 증명을 사용하여 데이터베이스를 [!DNL Commerce Intelligence]에 직접 연결할 수 있지만 Adobe에서는 SSH 터널과 같은 검증된 암호화 방법을 사용하는 것이 좋습니다. 이렇게 하면 Data Warehouse에 데이터가 유입될 때 데이터가 안전하게 보호됩니다. SSH 호스트 키 등록, 오류 및 문제 해결에 대해서는 [SSH 호스트 키 확인](../integrations/ssh-host-key-verification.md)을 참조하십시오.
 
 연결 방법 및 데이터베이스 유형에 따라 설정을 완료하는 데 일부 기술 전문 지식이 필요할 수 있습니다.
 
@@ -85,11 +85,11 @@ API를 사용하려면 약간의 기술 전문 지식이 필요합니다. 작은
 통합을 추가하려면 **[!UICONTROL Manage Data** > **Connections]**&#x200B;을(를) 클릭한 다음 **[!UICONTROL Add a New Data Source]**&#x200B;을(를) 클릭합니다. 추가할 통합의 아이콘을 클릭하고 도움말 항목의 지침을 따라 설정합니다.
 
 * [통합 FAQ](https://support.magento.com/hc/en-us/sections/360003161871-Integration-FAQ)
-* [사용 가능 &#x200B;](../integrations/integrations.md)
+* [사용 가능한 `SaaS` 및 `database` 통합](../integrations/integrations.md)
 * [테이블 통합](../../../best-practices/consolidating-your-tables.md)
 * [데이터베이스에 대한 액세스 제한](../../../administrator/account-management/restrict-db-access.md)
 
-**원하는 통합이 표시되지 않습니까?** 일부 통합을 활성화해야 계정에 표시됩니다. [!DNL Facebook]과(와) 같은 항목을 찾고 있지만 나열되지 않은 경우 [지원 티켓을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하십시오.
+**원하는 통합이 표시되지 않습니까?** 일부 통합을 활성화해야 계정에 볼 수 있습니다. [!DNL Facebook]과(와) 같은 항목을 찾고 있지만 나열되지 않은 경우 [지원 티켓을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하십시오.
 
 **통합에 대한 오류 상태가 표시되면** [문제 해결 섹션](https://support.magento.com/hc/en-us/sections/360003078151)에서 도움말을 확인하세요.
 

@@ -16,16 +16,16 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 204
+source-wordcount: 225
 ht-degree: 0%
 
 ---
 
 # 액세스 제한
 
-서버에 대한 SSH 터널을 만들 때 [!DNL Adobe Commerce Intelligence]에서 데이터베이스 이외의 항목에 액세스할 필요가 없습니다. [!DNL Commerce Intelligence]이(가) 데이터베이스를 보관하는 서버에 대한 전체 액세스를 허용하지 않도록 하려면 [!DNL Commerce Intelligence Linux] 사용자를 [제한된 기본 셸](https://www.gnu.org/software/bash/manual/html_node/The-Restricted-Shell.html)로 강제 설정하여 액세스를 제한할 수 있습니다.
+서버에 대한 SSH 터널을 만들 때 [!DNL Adobe Commerce Intelligence]에서 데이터베이스 이외의 항목에 액세스할 필요가 없습니다. SSH 호스트 키 등록, 오류 및 문제 해결에 대해서는 [SSH 호스트 키 확인](../../data-analyst/importing-data/integrations/ssh-host-key-verification.md)을 참조하십시오. [!DNL Commerce Intelligence]이(가) 데이터베이스를 보관하는 서버에 대한 전체 액세스를 허용하지 않도록 하려면 [!DNL Commerce Intelligence Linux] 사용자를 [제한된 기본 셸](https://www.gnu.org/software/bash/manual/html_node/The-Restricted-Shell.html)로 강제 설정하여 액세스를 제한할 수 있습니다.
 
 이름에서 추측했을 수도 있지만 표준 셸보다 더 잘 제어되는 환경을 설정하는 데 제한된 기본 셸이 사용됩니다. 이 유형의 셸에서 중요한 것은 제한된 셸 사용자가 시스템 기능에 액세스하거나 수정할 수 없다는 것입니다.
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 1. 실행된 셸이 `bash -r`인지 확인하십시오.
 
-이 두 작업은 모두 사용자의 홈 `authorized_keys` 디렉터리에 있는 `dir/.ssh` 파일 내에서 사용자가 로그인할 때 실행되는 명령의 일부로 수행할 수 있습니다. 다음과 같습니다.
+이 두 작업은 모두 사용자의 홈 `dir/.ssh` 디렉터리에 있는 `authorized_keys` 파일 내에서 사용자가 로그인할 때 실행되는 명령의 일부로 수행할 수 있습니다. 다음과 같습니다.
 
 ```bash
 ... other keys ...

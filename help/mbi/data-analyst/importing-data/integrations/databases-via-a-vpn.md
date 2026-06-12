@@ -20,16 +20,16 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 400
+source-wordcount: 414
 ht-degree: 0%
 
 ---
 
 # VPN을 통해 데이터베이스 연결
 
-Adobe에서는 `SSH tunnel`을(를) 사용하여 데이터베이스를 연결하는 것이 좋지만 암호화된 `VPN` 연결을 사용하여 보안을 유지할 수도 있습니다. `VPN`은(는) 모든 데이터베이스 통합에 사용할 수 있으며, 프로세스를 단순화하기 위해 `SSH tunnel`을(를) 설정하는 것과 거의 동일합니다.
+Adobe에서는 `SSH tunnel`을(를) 사용하여 데이터베이스를 연결하는 것이 좋지만 암호화된 `VPN` 연결을 사용하여 보안을 유지할 수도 있습니다. SSH 터널 연결에 대한 SSH 호스트 키 등록, 오류 및 문제 해결에 대해서는 [SSH 호스트 키 확인](ssh-host-key-verification.md)을 참조하십시오. `VPN`은(는) 모든 데이터베이스 통합에 사용할 수 있으며, 프로세스를 단순화하기 위해 `SSH tunnel`을(를) 설정하는 것과 거의 동일합니다.
 
 1. [&#x200B; [!DNL Commerce Intelligence] 데이터베이스 사용자 만들기](#database)
 1. [&#x200B; [!DNL Commerce Intelligence] VPN 사용자 만들기](#vpn)
@@ -47,7 +47,7 @@ Adobe에서는 `SSH tunnel`을(를) 사용하여 데이터베이스를 연결하
 * [MySQL](../integrations/mysql-via-a-direct-connection.md)
 * [PostgreSql](../integrations/postgresql.md)
 
-## `VPN`에 대해 [!DNL Commerce Intelligence] 사용자를 만드는 중 {#vpn}
+## [!DNL Commerce Intelligence]에 대해 `VPN` 사용자를 만드는 중 {#vpn}
 
 앞에서 언급했듯이 모든 유효한 `VPN` 사용자가 작동하지만, Adobe에서는 [!DNL Commerce Intelligence]용으로만 사용자를 만들 것을 권장합니다.
 

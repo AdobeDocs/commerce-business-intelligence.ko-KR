@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 87
+source-wordcount: 97
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 비즈니스의 성과를 확인하거나 가장 중요한 확보 소스 및 채널을 찾고 싶으십니까? [!DNL PrestaShop] 데이터를 [!DNL Commerce Intelligence]에 연결하면 이러한 질문에 답변할 수 있습니다.
 
-[!DNL PrestaShop] 데이터베이스는 [!DNL MySQL]을(를) 기반으로 합니다. [!DNL Commerce Intelligence]을(를) 통해 [직접 연결](../integrations/mysql-via-a-direct-connection.md), [[!DNL cPanel]](../integrations/mysql-via-cpanel.md) 또는 [을(를) 통해 `SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md)에 연결할 수 있습니다. Adobe에서는 가장 안전하므로 `SSH` 메서드를 사용하는 것이 좋습니다.
+[!DNL PrestaShop] 데이터베이스는 [!DNL MySQL]을(를) 기반으로 합니다. `SSH tunnel`[&#128279;](../integrations/mysql-via-ssh-tunnel.md)을(를) 통해 [직접 연결](../integrations/mysql-via-a-direct-connection.md), [[!DNL cPanel]](../integrations/mysql-via-cpanel.md) 또는 을(를) 통해 [!DNL Commerce Intelligence]에 연결할 수 있습니다. Adobe에서는 가장 안전하므로 `SSH` 메서드를 사용하는 것이 좋습니다. SSH 호스트 키 확인에 대해서는 [SSH 호스트 키 확인](../integrations/ssh-host-key-verification.md)을 참조하십시오.
 
 ## 관련 설명서
 
