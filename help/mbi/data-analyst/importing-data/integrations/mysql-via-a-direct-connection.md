@@ -5,23 +5,14 @@ exl-id: 53765844-c9bb-4a16-b00c-ce9672f87415
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 TQID: https://experienceleague.adobe.com/HkKVLKV9RpLIWN-YY5GggdnlHeBB2Xg9odAbSZklHGE
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 376
+source-wordcount: 399
 ht-degree: 0%
 
 ---
@@ -30,18 +21,19 @@ ht-degree: 0%
 
 ## 이 항목에서
 
-* [&#x200B; [!DNL Commerce Intelligence] IP 주소에 대한 액세스 허용](#allowlist)
-* [&#x200B; [!DNL MySQL] 의  [!DNL Commerce Intelligence]사용자 만들기](#steptwo)
-* [&#x200B; [!DNL Commerce Intelligence]에 연결 정보 입력](#stepthree)
+* [ [!DNL Commerce Intelligence] IP 주소에 대한 액세스 허용](#allowlist)
+* [ [!DNL Commerce Intelligence]의  [!DNL MySQL] 사용자 만들기](#steptwo)
+* [ [!DNL Commerce Intelligence]에 연결 정보 입력](#stepthree)
 
 ## 이동
 
-* [[!DNL MySQL] 경유 &#x200B;](../integrations/mysql-via-ssh-tunnel.md)
-* [[!DNL MySQL]을(를) 통한  [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
+* [`SSH tunnel`을(를) 통한 [!DNL MySQL]](../integrations/mysql-via-ssh-tunnel.md)
+* [SSH 호스트 키 확인](../integrations/ssh-host-key-verification.md)
+* [ [!DNL cPanel]을(를) 통한 [!DNL MySQL]](../integrations/mysql-via-cpanel.md)
 
 >[!NOTE]
 >
->[!DNL Adobe]에서는 데이터를 보호하기 위해 [SSH](../integrations/mysql-via-ssh-tunnel.md) 또는 다른 형태의 암호화를 사용하는 것이 좋습니다. 옵션이 아닌 경우 이 항목의 지침을 사용하여 [!DNL Commerce Intelligence]을(를) 데이터베이스에 직접 연결할 수 있습니다.
+>[!DNL Adobe]에서는 데이터를 보호하기 위해 [SSH](../integrations/mysql-via-ssh-tunnel.md) 또는 다른 형태의 암호화를 사용하는 것이 좋습니다. SSH 호스트 키 확인에 대해서는 [SSH 호스트 키 확인](../integrations/ssh-host-key-verification.md)을 참조하십시오. 옵션이 아닌 경우 이 항목의 지침을 사용하여 [!DNL Commerce Intelligence]을(를) 데이터베이스에 직접 연결할 수 있습니다.
 
 이 항목에서는 [!DNL MySQL] 데이터베이스를 [!DNL Commerce Intelligence]에 직접 연결하는 방법을 소개합니다. 이러한 설정은 [!DNL Adobe Commerce] 또는 MySQL을 사용하는 다른 전자 상거래 데이터베이스에서도 사용할 수 있습니다.
 
@@ -51,9 +43,9 @@ ht-degree: 0%
 
 ![MBI_Allow_Access_IPs.png](../../../assets/MBI_allow_access_IPs.png)
 
-## [!DNL MySQL]에 대해 [!DNL Commerce Intelligence] 사용자 만들기
+## [!DNL Commerce Intelligence]에 대해 [!DNL MySQL] 사용자 만들기
 
-`MySQL`에 대해 [!DNL Commerce Intelligence] 사용자를 만드는 가장 간단한 방법은 `MySQL` 권한으로 `GRANT`에 로그인할 때 다음 쿼리를 실행하는 것입니다. `Commerce Intelligence IP Address`을(를) [!DNL Commerce Intelligence] IP 주소로 바꾸고 `secure password`을(를) 선택한 보안 암호로 바꿉니다.
+[!DNL Commerce Intelligence]에 대해 `MySQL` 사용자를 만드는 가장 간단한 방법은 `GRANT` 권한으로 `MySQL`에 로그인할 때 다음 쿼리를 실행하는 것입니다. `Commerce Intelligence IP Address`을(를) [!DNL Commerce Intelligence] IP 주소로 바꾸고 `secure password`을(를) 선택한 보안 암호로 바꿉니다.
 
 ```sql
     GRANT SELECT ON *.* TO 'magentobi'@'<Commerce Intelligence IP address>' IDENTIFIED BY '<secure password>';
@@ -75,10 +67,10 @@ ht-degree: 0%
 * `Port`: 서버에 있는 MySQL의 포트(기본적으로 `3306`)
 * `Host`: 기본적으로 localhost입니다. 일반적으로 이 값은 [!DNL MySQL] 서버에 대한 바인드 주소 값이며 기본적으로 `127.0.0.1 (localhost)`이지만 일부 로컬 네트워크 주소(예: `192.168.0.1`) 또는 서버의 공용 IP 주소일 수도 있습니다.
 
-  이 값은 `my.cnf`을(를) 읽는 줄 아래의 `/etc/my.cnf` 파일(`\[mysqld\]`에 있음)에서 찾을 수 있습니다. 해당 파일에서 바인드 주소 줄이 주석 처리되면 외부 연결 시도로부터 서버가 보호됩니다.
+  이 값은 `\[mysqld\]`을(를) 읽는 줄 아래의 `my.cnf` 파일(`/etc/my.cnf`에 있음)에서 찾을 수 있습니다. 해당 파일에서 바인드 주소 줄이 주석 처리되면 외부 연결 시도로부터 서버가 보호됩니다.
 
 완료되면 **[!UICONTROL Save & Test]**&#x200B;을(를) 클릭하여 설치를 완료합니다.
 
 ## 관련 설명서
 
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

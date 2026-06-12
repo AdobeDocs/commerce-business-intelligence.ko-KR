@@ -5,31 +5,22 @@ exl-id: 90b0a0b0-8c6b-4144-95b4-f588f18616c7
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
 TQID: https://experienceleague.adobe.com/Ou9gOlYKFuoYQHTi7zhyecvfGlKEKF2eRSr5vctsW1s
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 366
+source-wordcount: 400
 ht-degree: 0%
 
 ---
 
-# [!DNL MySQL]을(를) 통해 [!DNL cPanel] 연결
+# [!DNL cPanel]을(를) 통해 [!DNL MySQL] 연결
 
-* [&#x200B; [!DNL Commerce Intelligence] [!DNL MySQL]에서  [!DNL cPanel] 사용자 만들기](#cpanel)
-* [&#x200B; [!DNL Commerce Intelligence]에 연결 및 사용자 정보 입력](#finish)
+* [ [!DNL cPanel]에서  [!DNL Commerce Intelligence] [!DNL MySQL] 사용자 만들기](#cpanel)
+* [ [!DNL Commerce Intelligence]에 연결 및 사용자 정보 입력](#finish)
 
 ## 이동
 
@@ -40,17 +31,17 @@ ht-degree: 0%
 >
 >[!DNL Adobe]은(는) SSH 또는 다른 형태의 암호화를 사용하여 데이터를 보호하는 것을 권장합니다! 옵션이 아닌 경우 이 항목의 지침을 사용하여 [!DNL Commerce Intelligence]을(를) 데이터베이스에 직접 연결할 수 있습니다.
 
-이 항목에서는 [!DNL MySQL]을(를) 사용하여 [!DNL Commerce Intelligence] 데이터베이스를 [!DNL cPanel]에 직접 연결하는 과정을 안내합니다. 이 프로세스를 사용하여 [!DNL Adobe Commerce] 및 기타 MySQL 기반 전자 상거래 데이터베이스를 [!DNL Commerce Intelligence]에 연결할 수도 있습니다.
+이 항목에서는 [!DNL cPanel]을(를) 사용하여 [!DNL MySQL] 데이터베이스를 [!DNL Commerce Intelligence]에 직접 연결하는 과정을 안내합니다. 이 프로세스를 사용하여 [!DNL Adobe Commerce] 및 기타 MySQL 기반 전자 상거래 데이터베이스를 [!DNL Commerce Intelligence]에 연결할 수도 있습니다.
 
-1. [!DNL Commerce Intelligence]에서 [!DNL MySQL] [!DNL cPanel] 사용자 만들기
+1. [!DNL cPanel]에서 [!DNL Commerce Intelligence] [!DNL MySQL] 사용자 만들기
 1. [!DNL Commerce Intelligence]에 연결 및 사용자 정보 입력
 
 시작합니다.
 
-## [!DNL Commerce Intelligence]에서 [!DNL MySQL] [!DNL cPanel] 사용자를 만드는 중 {#cpanel}
+## [!DNL cPanel]에서 [!DNL Commerce Intelligence] [!DNL MySQL] 사용자를 만드는 중 {#cpanel}
 
 1. 호스팅 공급자를 통해 [!DNL cPanel]에 로그인합니다.
-1. **[!UICONTROL [!DNL MySQL] Databases]** 섹션에 있는 `Database`을(를) 클릭합니다.
+1. `Database` 섹션에 있는 **[!UICONTROL [!DNL MySQL] Databases]**&#x200B;을(를) 클릭합니다.
 1. `Add New User` 섹션까지 아래로 스크롤하고 [!DNL Commerce Intelligence]에 대한 사용자를 만드십시오.
 
    사용자 양식 만들기를 표시하는 ![cPanel MySQL 데이터베이스 인터페이스](../../../assets/create-mbi-mysql-user-cpanel.png)
@@ -82,6 +73,11 @@ ht-degree: 0%
 
 완료되면 **[!UICONTROL Save & Test]**&#x200B;을(를) 클릭하여 설치를 완료합니다.
 
-## 관련 항목:
+>[!NOTE]
+>
+>SSH 터널을 사용하는 경우 등록, 새로 고침, 오류 메시지 및 문제 해결에 대해 [SSH 호스트 키 확인](ssh-host-key-verification.md)을 참조하십시오.
 
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
+## 관련 항목 {#related}
+
+* [SSH 호스트 키 확인](ssh-host-key-verification.md)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

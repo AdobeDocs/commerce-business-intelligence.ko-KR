@@ -5,36 +5,27 @@ exl-id: da610988-21c1-4f5f-b4e2-e2deb175a2aa
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
 TQID: https://experienceleague.adobe.com/IsDW3nNBF840BAd4zIhCDmHvFAFJv-1oQmrJw5MKh0Q
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 541
+source-wordcount: 566
 ht-degree: 0%
 
 ---
 
-# [!DNL PostgreSQL]을(를) 통해 [!DNL SSH Tunnel] 연결
+# [!DNL SSH Tunnel]을(를) 통해 [!DNL PostgreSQL] 연결
 
-[!DNL PostgreSQL]을(를) 통해 [!DNL Commerce Intelligence] 데이터베이스를 `SSH tunnel`에 연결하려면 다음을 수행해야 합니다.
+`SSH tunnel`을(를) 통해 [!DNL PostgreSQL] 데이터베이스를 [!DNL Commerce Intelligence]에 연결하려면 다음을 수행해야 합니다.
 
-1. [&#x200B; [!DNL Commerce Intelligence] 공개 키 검색](#retrieve)
-1. [&#x200B; [!DNL Commerce Intelligence] IP 주소에 대한 액세스 허용](#allowlist)
-1. [&#x200B; [!DNL Linux] 의  [!DNL Commerce Intelligence]사용자 만들기](#linux)
-1. [&#x200B; [!DNL PostgreSQL] 의  [!DNL Commerce Intelligence]사용자 만들기](#postgres)
-1. [&#x200B; [!DNL Commerce Intelligence]에 연결 및 사용자 정보 입력](#finish)
+1. [ [!DNL Commerce Intelligence] 공개 키 검색](#retrieve)
+1. [ [!DNL Commerce Intelligence] IP 주소에 대한 액세스 허용](#allowlist)
+1. [ [!DNL Commerce Intelligence]의  [!DNL Linux] 사용자 만들기](#linux)
+1. [ [!DNL Commerce Intelligence]의  [!DNL PostgreSQL] 사용자 만들기](#postgres)
+1. [ [!DNL Commerce Intelligence]에 연결 및 사용자 정보 입력](#finish)
 
 ## [!DNL Commerce Intelligence] [!DNL public key] 검색 중 {#retrieve}
 
@@ -55,9 +46,9 @@ ht-degree: 0%
 
 연결에 성공하려면 IP 주소에서 액세스를 허용하도록 방화벽을 구성해야 합니다. `54.88.76.97/32`이지만 `PostgreSQL` 자격 증명 페이지에도 있습니다. 위의 GIF에 있는 파란색 상자를 참조하십시오.
 
-## [!DNL Linux]에 대해 [!DNL Commerce Intelligence] 사용자를 만드는 중 {#linux}
+## [!DNL Commerce Intelligence]에 대해 [!DNL Linux] 사용자를 만드는 중 {#linux}
 
-실시간(또는 자주 업데이트되는) 데이터가 포함되어 있는 한 프로덕션 또는 보조 시스템일 수 있습니다. [&#x200B; 서버에 연결할 수 있는 권한이 있는 한 원하는 방식으로 &#x200B;](../../../administrator/account-management/restrict-db-access.md)이 사용자를 제한[!DNL PostgreSQL]할 수 있습니다.
+실시간(또는 자주 업데이트되는) 데이터가 포함되어 있는 한 프로덕션 또는 보조 시스템일 수 있습니다. [!DNL PostgreSQL] 서버에 연결할 수 있는 권한이 있는 한 원하는 방식으로 [이 사용자를 제한](../../../administrator/account-management/restrict-db-access.md)할 수 있습니다.
 
 1. 새 사용자를 추가하려면 [!DNL Linux] 서버에서 다음 명령을 root로 실행합니다.
 
@@ -76,7 +67,7 @@ ht-degree: 0%
         "<PASTE KEY HERE>" >> /home/rjmetric/.ssh/authorized_keys
 ```
 
-1. 사용자 만들기를 완료하려면 `/home/rjmetric`을(를) 통해 액세스할 수 있도록 `SSH` 디렉터리에 대한 권한을 변경하십시오.
+1. 사용자 만들기를 완료하려면 `SSH`을(를) 통해 액세스할 수 있도록 `/home/rjmetric` 디렉터리에 대한 권한을 변경하십시오.
 
 ```bash
         chown -R rjmetric:rjmetric /home/rjmetric
@@ -116,8 +107,13 @@ ht-degree: 0%
 * `Username`: SSH 로그인 이름(rjmetric이어야 함)
 * `SSH Port`: 서버의 SSH 포트(기본적으로 22)
 
-완료되면 **저장 및 테스트**&#x200B;를 클릭하여 설정을 완료합니다.
+완료되면 **[!UICONTROL Save & Test]**&#x200B;을(를) 클릭하여 설치를 완료합니다.
 
-### 관련 항목
+>[!NOTE]
+>
+>SSH 호스트 키 등록, 새로 고침, 오류 메시지 및 문제 해결에 대해서는 [SSH 호스트 키 확인](ssh-host-key-verification.md)을 참조하십시오.
 
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
+## 관련 항목 {#related}
+
+* [SSH 호스트 키 확인](ssh-host-key-verification.md)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

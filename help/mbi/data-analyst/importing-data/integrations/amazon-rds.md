@@ -5,27 +5,14 @@ exl-id: 02ad29c8-84d6-4b49-9ac1-e5f4feaa7fda
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 TQID: https://experienceleague.adobe.com/KAjnETtFvi9EHUDY8SJ-TSEhP3zooQel5ZlN-E3QxIg
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: c32adafa-ed01-4b31-997e-2413013911b0id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 503
+source-wordcount: 516
 ht-degree: 0%
 
 ---
@@ -50,11 +37,11 @@ ht-degree: 0%
 
 [!DNL Commerce Intelligence] IP 주소를 추가할 때 주소 끝에 `/32`을(를) 추가하여 [!DNL Amazon]에 정확한 IP 주소임을 나타내십시오. 걱정하지 마십시오. AWS 인터페이스를 통해 이 기능이 필요하다는 것을 알 수 있습니다.
 
-## `Linux`에 대해 [!DNL Commerce Intelligence] 사용자 만들기 {#linux}
+## [!DNL Commerce Intelligence]에 대해 `Linux` 사용자 만들기 {#linux}
 
 >[!NOTE]
 >
->이 단계는 암호화된 연결을 사용하는 경우에만 필요합니다. 이 작업을 수행하는 방법에 대한 지침은 사용 중인 데이터베이스에 대한 설정 항목(예: MySQL)을 참조하십시오. `Linux` 사용자는 인터넷을 통해 데이터를 보내는 가장 안전한 방법인 `SSH tunnel`을(를) 만들 수 있도록 허용합니다.
+>이 단계는 암호화된 연결을 사용하는 경우에만 필요합니다. 이 작업을 수행하는 방법에 대한 지침은 사용 중인 데이터베이스에 대한 설정 항목(예: MySQL)을 참조하십시오. `Linux` 사용자는 인터넷을 통해 데이터를 보내는 가장 안전한 방법인 `SSH tunnel`을(를) 만들 수 있도록 허용합니다. SSH 호스트 키 등록, 오류 및 문제 해결에 대해서는 [SSH 호스트 키 확인](ssh-host-key-verification.md)을 참조하십시오.
 
 ## [!DNL Commerce Intelligence]에 대한 데이터베이스 사용자 만들기
 
@@ -64,7 +51,7 @@ ht-degree: 0%
 
 인스턴스에 대한 [!DNL Commerce Intelligence] 액세스 권한을 부여하고 사용자를 만든 후에는 [!DNL Commerce Intelligence]에 연결 정보를 입력할 필요가 없습니다.
 
-`MySQL`을(를) 클릭하여 `Microsoft SQL`, `PostgreSQL` 및 `Integrations`의 자격 증명 페이지에 **[!UICONTROL Manage Data** > **Integrations]** 페이지(**[!UICONTROL Add Integration]**)를 통해 액세스할 수 있습니다. 통합 목록이 표시되면 사용 중인 데이터베이스의 아이콘을 눌러 인증서 페이지로 이동합니다. 현재 필요한 통합에 대한 액세스 권한이 없는 경우 Adobe 계정 팀에 문의하십시오.
+**[!UICONTROL Add Integration]**&#x200B;을(를) 클릭하여 `MySQL`, `Microsoft SQL` 및 `PostgreSQL`의 자격 증명 페이지에 `Integrations` 페이지(**[!UICONTROL Manage Data** > **Integrations]**)를 통해 액세스할 수 있습니다. 통합 목록이 표시되면 사용 중인 데이터베이스의 아이콘을 눌러 인증서 페이지로 이동합니다. 현재 필요한 통합에 대한 액세스 권한이 없는 경우 Adobe 계정 팀에 문의하십시오.
 
 연결 만들기를 완료하려면 다음 정보가 필요합니다.
 
