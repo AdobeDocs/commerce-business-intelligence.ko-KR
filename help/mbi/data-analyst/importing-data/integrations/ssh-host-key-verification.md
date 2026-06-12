@@ -124,4 +124,4 @@ Adobe에서 마이그레이션이 완료되었다는 알림을 받은 후:
 * [SSH 터널을 통해 MySQL 연결](mysql-via-ssh-tunnel.md)
 * [SSH 터널을 통해 MongoDB 연결](mongodb-via-ssh-tunnel.md)
 * [SSH 터널을 통해 PostgreSQL 연결](postgresql.md)
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)

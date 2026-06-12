@@ -89,4 +89,4 @@ ht-degree: 0%
 ## 관련 항목 {#related}
 
 * [SSH 호스트 키 확인](ssh-host-key-verification.md)
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
