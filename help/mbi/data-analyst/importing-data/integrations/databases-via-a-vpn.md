@@ -5,11 +5,21 @@ exl-id: c7aa564d-42de-426e-92e9-f6e250a6abba
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 TQID: https://experienceleague.adobe.com/0B7swwGIgBemitnx8Q4tyN8VtqwzcA-DYZdXHqzyNAk
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c32adafa-ed01-4b31-997e-2413013911b0
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
 workflow-type: tm+mt
 source-wordcount: 414
@@ -21,9 +31,9 @@ ht-degree: 0%
 
 Adobe에서는 `SSH tunnel`을(를) 사용하여 데이터베이스를 연결하는 것이 좋지만 암호화된 `VPN` 연결을 사용하여 보안을 유지할 수도 있습니다. SSH 터널 연결에 대한 SSH 호스트 키 등록, 오류 및 문제 해결에 대해서는 [SSH 호스트 키 확인](ssh-host-key-verification.md)을 참조하십시오. `VPN`은(는) 모든 데이터베이스 통합에 사용할 수 있으며, 프로세스를 단순화하기 위해 `SSH tunnel`을(를) 설정하는 것과 거의 동일합니다.
 
-1. [ [!DNL Commerce Intelligence] 데이터베이스 사용자 만들기](#database)
-1. [ [!DNL Commerce Intelligence] VPN 사용자 만들기](#vpn)
-1. [ [!DNL Commerce Intelligence] IP 주소에 대한 액세스 허용](#allowlist)
+1. [&#x200B; [!DNL Commerce Intelligence] 데이터베이스 사용자 만들기](#database)
+1. [&#x200B; [!DNL Commerce Intelligence] VPN 사용자 만들기](#vpn)
+1. [&#x200B; [!DNL Commerce Intelligence] IP 주소에 대한 액세스 허용](#allowlist)
 1. [Commerce Intelligence에 연결 및 VPN 사용자 정보 입력](#finish)
 
 데이터베이스 자격 증명 외에 VPN 사용자가 작업을 완료할 수 있도록 자격 증명을 입력해야 합니다. 모든 VPN 사용자가 작동하지만, 계정에서 사용자를 더 쉽게 추적할 수 있도록 [!DNL Commerce Intelligence] 사용자를 만드는 것이 좋습니다.
