@@ -19,9 +19,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4e01225a6bd285afbe988b9c24e07e2ea34649fc
+source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
 workflow-type: tm+mt
-source-wordcount: 190
+source-wordcount: 201
 ht-degree: 0%
 
 ---
@@ -43,3 +43,4 @@ ht-degree: 0%
 1. 삭제된 사용자의 전자 메일 주소를 사용하여 새 [!DNL Commerce Intelligence] 사용자를 만드십시오.
 1. 사용자를 만든 후 [지원에 알림](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)합니다. 지원 팀에서 대시보드를 계정으로 전송합니다.
 1. Adobe 지원에서 전송 사실을 알린 후 사용자를 다시 삭제할 수 있습니다.
+

@@ -19,7 +19,7 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
+source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
 workflow-type: tm+mt
 source-wordcount: 110
 ht-degree: 0%
@@ -41,3 +41,4 @@ ht-degree: 0%
 * [예상 Commerce 데이터](../integrations/magento-data.md)
 * [세분화 및 필터링에 권장되는 데이터 차원](../../../best-practices/segment-filter.md)
 * [가장 중요한 확보 소스 및 채널은 무엇입니까?](../../analysis/most-value-source-channel.md)
+

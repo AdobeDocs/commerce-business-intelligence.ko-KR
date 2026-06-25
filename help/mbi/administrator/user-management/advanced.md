@@ -23,9 +23,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4e01225a6bd285afbe988b9c24e07e2ea34649fc
+source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
 workflow-type: tm+mt
-source-wordcount: 948
+source-wordcount: 877
 ht-degree: 0%
 
 ---
@@ -183,7 +183,7 @@ ht-degree: 0%
     <td></td>
   </tr>
   <tr>
-    <td rowspan="4">대시보드  - 공유</td>
+    <td rowspan="4">대시보드 - 공유</td>
     <td>여러 역할에서 사용자와 대시보드 공유</td>
     <td></td>
     <td>✓</td>
@@ -490,3 +490,4 @@ ht-degree: 0%
 [!DNL Advanced User Management]이(가) 데이터 필터링 기능을 전자 메일 요약으로 확장합니다. 대상자에 따라 관리 사용자는 선택한 보고서를 필터링해야 하는 사용자 그룹을 지정할 수 있습니다.
 
 ![전자 메일 요약 예약](../../assets/schedule-email-summary.png)
+

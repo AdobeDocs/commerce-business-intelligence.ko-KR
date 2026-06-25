@@ -23,7 +23,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
+source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
 workflow-type: tm+mt
 source-wordcount: 628
 ht-degree: 0%
@@ -96,3 +96,4 @@ API를 사용하려면 약간의 기술 전문 지식이 필요합니다. 작은
 ## 업데이트 상태 모니터링(선택 사항)
 
 소스를 연결한 후 기본 상태 검사를 자동화하여 전체 업데이트가 완료되고 있는지 확인할 수 있습니다. 개발자 설명서에서 [업데이트 주기 상태 API](https://developer.adobe.com/commerce/services/reporting/update-cycle-status-api/)를 사용하여 클라이언트에 대해 가장 최근에 완료된 업데이트 주기를 가져와서 내부 대시보드 또는 경고에 표시합니다.
+

@@ -18,9 +18,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4e01225a6bd285afbe988b9c24e07e2ea34649fc
+source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
 workflow-type: tm+mt
-source-wordcount: 238
+source-wordcount: 242
 ht-degree: 0%
 
 ---
@@ -47,3 +47,4 @@ ht-degree: 0%
 >[!NOTE]
 >
 >지표를 복제하면 [!DNL Commerce Intelligence]이(가) 원래 지표에 설정된 사용자 권한을 복사합니다.
+

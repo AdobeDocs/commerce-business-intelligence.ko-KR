@@ -18,9 +18,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
 workflow-type: tm+mt
-source-wordcount: 226
+source-wordcount: 245
 ht-degree: 0%
 
 ---
@@ -55,3 +55,4 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >각 계정에는 계약된 라이선스 수 또는 시트가 있습니다. 한도에 도달했거나 더 자세히 알아보려면 [지원 티켓을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하세요.
+

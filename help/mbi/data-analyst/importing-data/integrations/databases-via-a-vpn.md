@@ -20,7 +20,7 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
+source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
 workflow-type: tm+mt
 source-wordcount: 414
 ht-degree: 0%
@@ -83,3 +83,4 @@ Adobe에서는 `SSH tunnel`을(를) 사용하여 데이터베이스를 연결하
 * `Password`: [!DNL Commerce Intelligence] `VPN` 사용자 암호
 
 완료되면 **[!UICONTROL Save & Test]**&#x200B;을(를) 클릭하여 설치를 완료합니다.
+
