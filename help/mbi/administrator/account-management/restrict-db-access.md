@@ -1,27 +1,21 @@
 ---
 title: 데이터베이스에 대한 액세스 제한
 description: 액세스를 제한하여 데이터베이스를 저장하는 서버로 액세스를 제한하는 방법에 대해 알아봅니다.
-exl-id: 7a0bc0d7-086e-4a6e-b1dd-6db13814710e
 role: Admin, User
 feature: Accounts, User Management
 TQID: https://experienceleague.adobe.com/O2cS-hbhjqktc4LpJD6agxgIwabrypgCY9fnJTCR2XM
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 94b6ebcdfcf08c1ef7b878966c0985cdce8f80bd
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+exl-id: 7a0bc0d7-086e-4a6e-b1dd-6db13814710e
+source-git-commit: fac3c5724cab4a90422fad310a4573a7268a56c4
 workflow-type: tm+mt
 source-wordcount: 225
 ht-degree: 0%
 
 ---
+
 
 # 액세스 제한
 
@@ -32,7 +26,6 @@ ht-degree: 0%
 [!DNL Commerce Intelligence Linux] 사용자를 제한하려면 다음 두 가지 작업을 수행해야 합니다.
 
 1. PATH 환경 변수를 빈 문자열로 변경합니다. 즉, 사용자가 시스템 실행 파일에 액세스할 수 없습니다.
-
 1. 실행된 셸이 `bash -r`인지 확인하십시오.
 
 이 두 작업은 모두 사용자의 홈 `dir/.ssh` 디렉터리에 있는 `authorized_keys` 파일 내에서 사용자가 로그인할 때 실행되는 명령의 일부로 수행할 수 있습니다. 다음과 같습니다.
@@ -44,5 +37,3 @@ command="env PATH="" /bin/bash -r" <rjmetrics public key goes here>
 ```
 
 이 작업이 완료되면 [!DNL Commerce Intelligence]에 대해 만든 사용자는 시스템을 변경할 수 없습니다.
-
-
