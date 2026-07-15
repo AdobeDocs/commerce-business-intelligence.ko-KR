@@ -3,7 +3,6 @@ title: 고급 사용자 관리
 description: 데이터 가시성 향상, 보고 간소화, 사용자 그룹별 맞춤식 액세스, 대시보드 공유 간소화, 조직의 보안 및 확장성 보장
 role: Admin, User
 feature: User Management
-exl-id: d96a075d-53ab-48d3-ba83-3ff4298a0cb7
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -23,12 +22,14 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 94b6ebcdfcf08c1ef7b878966c0985cdce8f80bd
+exl-id: d96a075d-53ab-48d3-ba83-3ff4298a0cb7
+source-git-commit: fac3c5724cab4a90422fad310a4573a7268a56c4
 workflow-type: tm+mt
 source-wordcount: 877
 ht-degree: 0%
 
 ---
+
 
 # 고급 사용자 관리
 
@@ -490,5 +491,3 @@ ht-degree: 0%
 [!DNL Advanced User Management]이(가) 데이터 필터링 기능을 전자 메일 요약으로 확장합니다. 대상자에 따라 관리 사용자는 선택한 보고서를 필터링해야 하는 사용자 그룹을 지정할 수 있습니다.
 
 ![전자 메일 요약 예약](../../assets/schedule-email-summary.png)
-
-

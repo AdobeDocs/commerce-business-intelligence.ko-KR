@@ -5,7 +5,8 @@ user-guide-title: Commerce Intelligence 사용 안내서
 breadcrumb-title: Commerce Intelligence 사용 안내서
 role: Admin, Developer, Leader, User
 feature: Business Performance
-source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
+nudge: true
+source-git-commit: f9af732019bbe5d695d55db238395c579678ed3c
 workflow-type: tm+mt
 source-wordcount: '663'
 ht-degree: 0%
@@ -239,3 +240,4 @@ ht-degree: 0%
    - [&#x200B; [!DNL Visual Report Builder]에서 시간 옵션 사용](tutorials/time-options-visual-rpt-bldr.md)
    - [&#x200B; [!DNL SQL] 쿼리에서 시각화 만들기](tutorials/create-visuals-from-sql.md)
    - [원시 데이터 내보내기](tutorials/export-raw-data.md)
+

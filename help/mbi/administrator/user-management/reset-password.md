@@ -1,7 +1,6 @@
 ---
 title: 암호 재설정
 description: 사용자 암호를 재설정하는 방법을 알아봅니다.
-exl-id: 4de90da3-9846-4c3a-a31e-8b379f207618
 role: Admin, User
 feature: User Management
 product_v2:
@@ -19,12 +18,14 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 94b6ebcdfcf08c1ef7b878966c0985cdce8f80bd
+exl-id: 4de90da3-9846-4c3a-a31e-8b379f207618
+source-git-commit: fac3c5724cab4a90422fad310a4573a7268a56c4
 workflow-type: tm+mt
-source-wordcount: 88
+source-wordcount: 89
 ht-degree: 0%
 
 ---
+
 
 # 암호 재설정
 
@@ -32,6 +33,4 @@ ht-degree: 0%
 
 **[!UICONTROL Personal Settings]** 페이지를 사용하여 [!DNL Commerce Intelligence] 내에서 암호를 변경할 수도 있습니다.
 
-암호를 재설정하고 계정 잠금이 유지되면 [다음 팁](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout.html?lang=ko)을 따라 문제를 해결해 보세요.
-
-
+암호를 재설정하고 계정 잠금이 유지되면 [다음 팁](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout)을 따라 문제를 해결해 보세요.

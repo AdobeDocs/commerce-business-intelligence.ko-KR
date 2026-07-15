@@ -1,7 +1,6 @@
 ---
 title: 새 Adobe Commerce Intelligence 사용자 추가
 description: 새  [!DNL Commerce Intelligence] 사용자를 추가하는 방법과 사용자 이름 또는 암호를 업데이트하는 방법을 알아봅니다.
-exl-id: 6b846e3d-fce0-4145-b298-9a9c57e6bd26
 role: Admin, User
 feature: User Management
 TQID: https://experienceleague.adobe.com/-cMJHvHlodd05-Np22qtxxS8lHMi4StXOz1iD83xWkU
@@ -18,12 +17,14 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 94b6ebcdfcf08c1ef7b878966c0985cdce8f80bd
+exl-id: 6b846e3d-fce0-4145-b298-9a9c57e6bd26
+source-git-commit: fac3c5724cab4a90422fad310a4573a7268a56c4
 workflow-type: tm+mt
 source-wordcount: 245
 ht-degree: 0%
 
 ---
+
 
 # 새 [!DNL Adobe Commerce Intelligence] 사용자 추가
 
@@ -55,5 +56,3 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >각 계정에는 계약된 라이선스 수 또는 시트가 있습니다. 한도에 도달했거나 더 자세히 알아보려면 [지원 티켓을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하세요.
-
-
