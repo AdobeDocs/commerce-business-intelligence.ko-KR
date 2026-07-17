@@ -18,7 +18,7 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 exl-id: aabe5c8f-0809-467c-9713-099aed6926b9
-source-git-commit: fac3c5724cab4a90422fad310a4573a7268a56c4
+source-git-commit: 8dadc431bf2aa7e353c7aeea31db7fef75a011f0
 workflow-type: tm+mt
 source-wordcount: 229
 ht-degree: 0%
@@ -37,4 +37,4 @@ ht-degree: 0%
 1. **USB 키보드 및 마우스**&#x200B;로 동글을 제어할 수 있습니다.
 1. **한 번에 여러 탭 사이를 회전하는 브라우저 확장입니다.** 이렇게 하면 고유한 탭에 표시하는 선택한 대시보드를 설정할 수 있습니다. [!DNL Chrome]을(를) 사용하는 경우 Adobe에서는 [회전 탭](https://chrome.google.com/webstore/detail/revolver-tabs/dlknooajieciikpedpldejhhijacnbda?hl=en) 확장을 권장합니다.
 
-위의 하드웨어가 있으면 각 탭에 표시할 특정 대시보드와 함께 화면에서 브라우저 창을 열 수 있습니다. 마지막으로, 원하는 빈도로 각 대시보드를 회전하도록 브라우저를 구성합니다.
+필요한 하드웨어가 있으면 각 탭에 표시할 특정 대시보드와 함께 화면에서 브라우저 창을 열 수 있습니다. 마지막으로, 원하는 빈도로 각 대시보드를 회전하도록 브라우저를 구성합니다.

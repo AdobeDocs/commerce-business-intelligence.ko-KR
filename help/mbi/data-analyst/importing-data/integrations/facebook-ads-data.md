@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: c8d7097b4f841a4fe8c5777f207ea0ea53202a0f
 workflow-type: tm+mt
-source-wordcount: 303
+source-wordcount: 342
 ht-degree: 0%
 
 ---
@@ -37,19 +37,27 @@ ht-degree: 0%
 
 이러한 표에는 핵심 광고 캠페인 구성 요소에 대한 데이터가 포함되어 있습니다.
 
-### [`facebook _campaigns_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-campaign-group)
+### `facebook _campaigns_ (account-id)`
+
+[`facebook _campaigns_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-campaign-group)
 
 이 테이블은 [!DNL Facebook Ads] 계정의 캠페인의 핵심 테이블입니다. 열에는 `campaign id`, `name`, `status (active/paused)`, `objective`이(가) 포함됩니다.
 
-### [`facebook _adsets_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-campaign)
+### `facebook _adsets_ (account-id)`
+
+[`facebook _adsets_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-campaign)
 
 이 테이블 레코드는 [!DNL Facebook Ads] 계정에 있는 [!DNL Facebook Ads] 집합의 핵심 테이블입니다. 열에는 광고 집합이 속한 광고 `Campaign id/name`, 예산 책정, 입찰 유형, 일정 및 대상 타깃팅 정보가 포함됩니다.
 
-### [`facebook _ads_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/adgroup)
+### `facebook _ads_ (account-id)`
+
+[`facebook _ads_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/adgroup)
 
 이 테이블은 [!DNL Facebook Ads] 계정에 모든 광고를 기록합니다. 열에는 광고 세트 및 해당 광고가 속한 광고 캠페인, 광고 입찰, 광고 타겟팅 및 광고가 사용하는 특정 크리에이티브(이미지/텍스트)에 대한 참조가 포함된 광고 정보가 포함됩니다.
 
-### [`facebook _adcreative_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-creative)
+### `facebook _adcreative_ (account-id)`
+
+[`facebook _adcreative_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-creative)
 
 이 테이블은 [!DNL Facebook Ads]에서 사용되는 크리에이티브를 기록합니다. 크리에이티브에는 크리에이티브 이름, 설명 및 적절한 경우 관련 이미지 URL이 포함됩니다.
 
