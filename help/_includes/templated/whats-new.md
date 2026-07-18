@@ -23,7 +23,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>새 <a href="https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/integration/ssh-host-key-verification">SSH 호스트 키 확인</a> 주제 문서는 등록 저장 및 테스트, SSH 호스트 키 새로 고침, 마이그레이션 동작, 오류 문제 해결 및 지원 센터에 문의하는 시간을 제공합니다. 이제 SSH 터널 통합 주제가 이 안내서에 연결됩니다.</p>
+      <td><p>새 <a href="https://experienceleague.adobe.com/ko/docs/commerce-business-intelligence/mbi/analyze/integration/ssh-host-key-verification">SSH 호스트 키 확인</a> 주제 문서는 등록 저장 및 테스트, SSH 호스트 키 새로 고침, 마이그레이션 동작, 오류 문제 해결 및 지원 센터에 문의하는 시간을 제공합니다. 이제 SSH 터널 통합 주제가 이 안내서에 연결됩니다.</p>
 </td>
       <td>
         피드백
