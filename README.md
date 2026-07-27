@@ -1,8 +1,8 @@
 ---
-source-git-commit: 4557430537492370a52030b60750950db8b245da
+source-git-commit: aa7acd0d863a3cd48ff83675b72c2a96eae02b4d
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 6%
+source-wordcount: '692'
+ht-degree: 0%
 
 ---
 # Adobe Commerce Intelligence 기술 설명서
@@ -11,17 +11,17 @@ ht-degree: 6%
 
 ## Adobe Open Source 행동 수칙
 
-이 프로젝트에서는 [Adobe OOCT(Open Source Code of Conduct)](code-of-conduct.md) 또는 [.NET Foundation Code of Conduct](https://dotnetfoundation.org/code-of-conduct)가 채택되었습니다. 자세한 내용은 [기여](contributing.md) 문서를 참조하십시오.
+이 프로젝트는 [Adobe Open Source 행동 수칙](code-of-conduct.md) 또는 [.NET Foundation 행동 수칙](https://dotnetfoundation.org/code-of-conduct)을 채택했습니다. 자세한 내용은 [기여](contributing.md) 문서를 참조하십시오.
 
 ## Adobe 콘텐츠에 대한 귀하의 기여 관련 정보
 
-[Adobe 문서 기여자 안내서](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ko)를 참조하세요.
+[Adobe 문서 기여자 안내서](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)를 참조하세요.
 
 기여 방식은 기여자 및 기여 하고자 하는 변경 사항의 종류에 따라 다릅니다.
 
 ### 사소한 변경 사항
 
-부분 업데이트에 기여하는 경우 문서를 방문하여 문서 하단에 나타나는 피드백 영역을 클릭하고 **자세한 피드백 옵션**&#x200B;을 클릭한 다음 **편집 제안**&#x200B;을 클릭하여 GitHub의 Markdown 소스 파일로 이동하십시오. GitHub UI를 사용하여 업데이트를 만듭니다. 자세한 내용은 일반 [Adobe 문서 기여자 안내서](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ko)를 참조하십시오.
+부분 업데이트에 기여하는 경우 문서를 방문하여 문서 하단에 나타나는 피드백 영역을 클릭하고 **자세한 피드백 옵션**&#x200B;을 클릭한 다음 **편집 제안**&#x200B;을 클릭하여 GitHub의 Markdown 소스 파일로 이동하십시오. GitHub UI를 사용하여 업데이트를 만듭니다. 자세한 내용은 일반 [Adobe 문서 기여자 안내서](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)를 참조하십시오.
 
 이 저장소의 설명서 및 코드 샘플에 대해 사용자가 제출하는 부분 수정 또는 설명은 Adobe 사용 약관의 적용을 받습니다.
 
@@ -37,7 +37,7 @@ Adobe Experience Cloud 솔루션에 대한 제품 팀의 테크니컬 라이터,
 
 커뮤니티 기여자는 기본 편집에 GitHub UI를 사용하거나 리포지토리를 포크하여 크게 기여할 수 있습니다.
 
-자세한 내용은 [Adobe 문서 기여자 안내서](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ko)를 참조하십시오.
+자세한 내용은 [Adobe 문서 기여자 안내서](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)를 참조하십시오.
 
 ## Markdown을 사용하여 주제 서식을 지정하는 방법
 
@@ -60,10 +60,11 @@ Adobe Experience Cloud 솔루션에 대한 제품 팀의 테크니컬 라이터,
 
 ### 후크가 수행하는 작업
 
-- 스테이징된 이미지 파일(PNG, JPG, JPEG, GIF, SVG) 자동 감지
-- `image_optim`을(를) 실행하여 이미지 압축 및 최적화
+- 준비된 이미지 파일(`.png`, `.jpeg`, `.jpg`, `.gif`, `.svg`) 자동 감지
+- `image_optim`을(를) 실행하여 래스터 이미지(`.png`, `.jpeg`, `.jpg`, `.gif`)를 압축하고 최적화합니다.
 - 최적화된 이미지 자동 재스테이지
-- 커밋된 모든 이미지가 올바르게 최적화되었는지 확인
+- 커밋된 모든 래스터 이미지가 올바르게 최적화되었는지 확인
+- 크기 제한에 대해 준비된 SVG를 확인하고 `help/`에서 크기가 초과된 SVG을 참조하는 경우 커밋을 중단합니다(그렇지 않으면 경고만 함).
 
 ### 이점
 
@@ -74,18 +75,18 @@ Adobe Experience Cloud 솔루션에 대한 제품 팀의 테크니컬 라이터,
 
 자세한 설정 지침, 문제 해결 및 구성은 [`.githooks/README.md`](.githooks/README.md)을(를) 참조하십시오.
 
-## Experience League 작성 안내서
+## Experience League Authoring 안내서
 
 ### 시작
 
-- [시작 개요](https://experienceleague.adobe.com/en/docs/authoring-guide/using/getting-started/getting-started)
+- [시작하기 개요](https://experienceleague.adobe.com/en/docs/authoring-guide/using/getting-started/getting-started)
 - [Git 설정](https://experienceleague.adobe.com/en/docs/authoring-guide/using/setup/tools/git-setup)
 - [Git 및 GitHub 설명서 핵심 사항](https://experienceleague.adobe.com/en/docs/authoring-guide/using/setup/tools/git-fundamentals)
 - [빠른 시작 비디오](https://experienceleague.adobe.com/en/docs/authoring-guide/using/getting-started/quick-start-guides/quick-start-overview)
 
 ### 워크플로
 
-- [드물게 기여하는 사용자를 위한 워크플로](https://experienceleague.adobe.com/en/docs/authoring-guide/using/editing/git-workflow-infrequent-user)
+- [자주 사용하지 않는 기여자용 워크플로우](https://experienceleague.adobe.com/en/docs/authoring-guide/using/editing/git-workflow-infrequent-user)
 - [GitHub 가져오기 요청](https://experienceleague.adobe.com/en/docs/authoring-guide/using/editing/public-github)
 
 ### 작성
@@ -93,6 +94,6 @@ Adobe Experience Cloud 솔루션에 대한 제품 팀의 테크니컬 라이터,
 - [작성 모범 사례](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/authoring-best-practices)
 - [Markdown 구문 안내서](https://experienceleague.adobe.com/en/docs/authoring-guide/using/markdown/markdown-syntax)
 - [Markdown 구문 치트 시트](https://experienceleague.adobe.com/en/docs/authoring-guide/using/markdown/cheatsheet)
-- [테이블 작업](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/tables)
+- [표 작업](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/tables)
 - [링크 추가](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/linking)
-- [콘텐츠 이동 및 재구성](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/restructure-new)
+- [컨텐츠 이동 및 재구성](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/restructure-new)
