@@ -1,27 +1,18 @@
 ---
 title: 매핑 테이블을 사용하여 데이터 표준화
-description: 매핑 테이블을 사용하여 작업하는 방법을 알아봅니다.
+description: Commerce Intelligence의 Data Warehouse Manager에서 매핑 테이블을 사용하여 청구 상태 포맷과 같은 일관되지 않은 값을 표준화하여 보고서를 정확하게 유지합니다.
 exl-id: e452ff87-f298-43d5-acc3-af58e53bd0bc
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
 TQID: https://experienceleague.adobe.com/ScOu9-YwG9T8nTMEow3QehHL8GcYeuNtUS0MHTf4GFU
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 775
+source-wordcount: 788
 ht-degree: 0%
 
 ---
@@ -64,21 +55,21 @@ ht-degree: 0%
 
 ## [!DNL Commerce Intelligence]에서 사용하려면 어떻게 해야 합니까? {#use}
 
-매핑 테이블을 만들었으면 [파일을 &#x200B;](../../data-analyst/importing-data/connecting-data/using-file-uploader.md)에 업로드[!DNL Commerce Intelligence]하고 [조인된 열을 만들기](../../data-analyst/data-warehouse-mgr/calc-column-types.md)하여 새 필드를 원하는 테이블로 이동해야 합니다. 파일이 Data Warehouse에 동기화된 후 이 작업을 수행할 수 있습니다.
+매핑 테이블을 만들었으면 [파일을 [!DNL Commerce Intelligence]에 업로드](../../data-analyst/importing-data/connecting-data/using-file-uploader.md)하고 [조인된 열을 만들기](../../data-analyst/data-warehouse-mgr/calc-column-types.md)하여 새 필드를 원하는 테이블로 이동해야 합니다. 파일이 Data Warehouse에 동기화된 후 이 작업을 수행할 수 있습니다.
 
-이 예제에서는 조인된 열을 사용하여 `mapping_state` 테이블(`state_input`)에서 만든 열을 `customer_address` 테이블로 이동합니다. 이렇게 하면 보고서의 `state_input` 열 대신 `state` 열을 기준으로 그룹화할 수 있습니다.
+이 예제에서는 조인된 열을 사용하여 `mapping_state` 테이블(`state_input`)에서 만든 열을 `customer_address` 테이블로 이동합니다. 이렇게 하면 보고서의 `state` 열 대신 `state_input` 열을 기준으로 그룹화할 수 있습니다.
 
 `joined` 열을 만들려면 Data Warehouse 관리자에서 필드를 재배치할 테이블로 이동합니다. 이 예제에서는 `customer_address` 테이블이 됩니다.
 
 1. **[!UICONTROL Create a Column]**&#x200B;을(를) 클릭합니다.
-1. `Joined Column` 드롭다운에서 `Definition`을(를) 선택합니다.
+1. `Definition` 드롭다운에서 `Joined Column`을(를) 선택합니다.
 1. 열에 데이터베이스의 `state` 열과 구별되는 이름을 지정하십시오. Report Builder에서 세그먼트화할 때 사용할 열을 알 수 있도록 열 이름을 `billing state (mapped)`로 지정합니다.
-1. 테이블을 연결하는 데 필요한 경로가 없으므로 경로를 생성해야 합니다. **[!UICONTROL Create new path]** 드롭다운에서 `Select a table and column`을(를) 클릭합니다.
+1. 테이블을 연결하는 데 필요한 경로가 없으므로 경로를 생성해야 합니다. `Select a table and column` 드롭다운에서 **[!UICONTROL Create new path]**&#x200B;을(를) 클릭합니다.
 
    테이블 관계가 무엇인지 또는 기본 키와 외래 키를 제대로 정의하는 방법을 잘 모를 경우 [자습서](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md)에서 도움말을 확인하십시오.
 
    * `Many`측에서 필드를 재배치할 테이블을 선택합니다(다시 말해 `customer_address`임). 이 예제에서는 `Foreign Key` 열 또는 `state` 열을 선택합니다.
-   * `One`측에서 `mapping` 테이블 및 `Primary key` 열을 선택합니다. 이 경우 `state_input` 테이블에서 `mapping_state` 열을 선택합니다.
+   * `One`측에서 `mapping` 테이블 및 `Primary key` 열을 선택합니다. 이 경우 `mapping_state` 테이블에서 `state_input` 열을 선택합니다.
    * 다음은 경로의 모양입니다.
 
      ![상태 매핑 계산 경로를 표시하는 Data Warehouse 관리자](../../assets/State_Mapping_Path.png)

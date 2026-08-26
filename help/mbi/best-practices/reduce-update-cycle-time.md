@@ -1,28 +1,18 @@
 ---
 title: 업데이트 주기 단축
-description: 업데이트 주기 시간을 줄이는 방법에 대해 알아봅니다.
+description: 대시보드에서 최신 데이터를 더 빨리 반영하도록 Commerce Intelligence 업데이트 주기 시간을 줄입니다. 동기화 속도에 영향을 주는 항목과 이를 개선하는 방법을 알아봅니다.
 exl-id: 0b211e2d-770f-480d-a7fb-8d10e3e7272e
 role: Admin, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager, Dashboards
 TQID: https://experienceleague.adobe.com/DFlzL9E95teiWI31j7qWRU8Ab6GkbFX7iPPdaxGq48A
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 398
+source-wordcount: 427
 ht-degree: 0%
 
 ---
@@ -35,7 +25,7 @@ ht-degree: 0%
 
 ## 재검사 빈도 감소
 
-데이터베이스 테이블에는 변경 가능한 값이 있는 데이터 열이 있을 수 있습니다. 예를 들어 **orders** 테이블에 **status**(이)라는 열이 있을 수 있습니다. 주문이 데이터베이스에 처음 기록되면 상태 열에 값 `pending`이(가) 포함될 수 있습니다. 이 [&#x200B; 값으로 &#x200B;](../data-analyst/data-warehouse-mgr/tour-dwm.md)Data Warehouse`pending`에서 순서가 복제됩니다.
+데이터베이스 테이블에는 변경 가능한 값이 있는 데이터 열이 있을 수 있습니다. 예를 들어 **orders** 테이블에 **status**(이)라는 열이 있을 수 있습니다. 주문이 데이터베이스에 처음 기록되면 상태 열에 값 `pending`이(가) 포함될 수 있습니다. 이 `pending` 값으로 [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md)에서 순서가 복제됩니다.
 
 변경 가능한 열은 시간이 지남에 따라 [업데이트된 값에 대해 다시 확인](../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md)해야 합니다. 기본적으로 [!DNL Commerce Intelligence]은(는) 업데이트할 때마다 이러한 열을 다시 확인하지만, 다시 확인하고 복제해야 할 데이터가 많은 경우 업데이트 시간에 부정적인 영향을 줄 수 있습니다. Adobe에서는 업데이트할 때마다 다시 검사를 실행하는 대신 재검사 빈도를 매일, 매주 또는 매월 설정하는 것이 좋습니다.
 
@@ -59,4 +49,4 @@ ht-degree: 0%
 
 ## 요약
 
-이러한 권장 사항을 구현한 후에도 업데이트 시간이 느린 것 같으면 [지원 팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하십시오.
+이러한 권장 사항을 구현한 후에도 업데이트 시간이 느린 것 같으면 [지원 팀에 문의](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)하십시오.

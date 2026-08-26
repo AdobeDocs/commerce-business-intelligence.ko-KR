@@ -1,30 +1,18 @@
 ---
 title: Google Commerce 연결
-description: 가장 소중한 레퍼러 채널에 대해 알아봅니다.
+description: Google Ecommerce 데이터를 Commerce Intelligence에 연결하여 가장 중요한 레퍼러 채널을 추적하고 다른 데이터 소스와 함께 매출을 분석합니다.
 exl-id: c80f52f3-894a-4084-8c0e-aee618ed77f5
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 TQID: https://experienceleague.adobe.com/iBVf-dkbm1NbELZUYjLp1TzypO7Cu55tIzd93lQ1zo0
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 305
+source-wordcount: 341
 ht-degree: 0%
 
 ---
@@ -39,11 +27,11 @@ ht-degree: 0%
 
 트래픽과 주문의 흐름이 일정하기 때문에 효과적으로 고객을 확보하고 있습니다. 하지만 가장 가치 있는 추천 채널은 무엇입니까? 한 소스에서 다른 소스에서 획득한 고객의 평균 라이프타임 값은 얼마입니까? 주문 참조 원본 데이터를 [!DNL Google ECommerce]에서 [!DNL Commerce Intelligence]&#x200B;(으)로 연결하면 [가장 가치 있는 마케팅 채널](../../../data-analyst/analysis/most-value-source-channel.md)을 식별하는 데 도움이 되는 분석을 빌드할 수 있습니다.
 
-[!DNL Google ECommerce]에 [!DNL Commerce Intelligence] 자격 증명을 입력하여 시작하십시오.
+[!DNL Commerce Intelligence]에 [!DNL Google ECommerce] 자격 증명을 입력하여 시작하십시오.
 
-1. `Connections` 아래의 **[!UICONTROL Admin** > **Connections]** 페이지로 이동합니다.
+1. **[!UICONTROL Admin** > **Connections]** 아래의 `Connections` 페이지로 이동합니다.
 
-1. **[!UICONTROL Add a New Source]** 테이블 위의 화면 오른쪽에 있는 `Data Sources`을(를) 클릭합니다.
+1. `Data Sources` 테이블 위의 화면 오른쪽에 있는 **[!UICONTROL Add a New Source]**&#x200B;을(를) 클릭합니다.
 
 1. [!DNL Google ECommerce] 아이콘을 클릭합니다. [!DNL Google ECommerce] 자격 증명 페이지가 열립니다.
 
@@ -57,7 +45,7 @@ ht-degree: 0%
 
 1. 변경 사항은 자동으로 저장되므로 완료되면 **[!UICONTROL Back to Connections]**&#x200B;을(를) 클릭하십시오.
 
-## [!DNL Google Analytics]에 여러 [!DNL Commerce Intelligence] 프로필을 연결하는 중
+## [!DNL Commerce Intelligence]에 여러 [!DNL Google Analytics] 프로필을 연결하는 중
 
 하나의 [!DNL Google Analytics] 계정에 여러 웹 사이트가 연결되어 있으며, 해당 웹 사이트가 [!DNL Google Analytics] 프로필 ID로 식별될 수 있습니다. 이 경우 [!DNL Commerce Intelligence]에 모든 프로필 ID를 포함할 수 있습니다. 프로필 선택 단계에서 포함할 프로필 ID를 확인합니다.
 
@@ -69,16 +57,16 @@ ht-degree: 0%
 
    `www.google.com/analytics/web/#home/a11345062w43527078p**XXXXXXXX**/`
 
-## [!DNL Google ECommerce]에서 [!DNL Commerce Intelligence]의 연결을 끊는 중 {#disconnect}
+## [!DNL Commerce Intelligence]에서 [!DNL Google ECommerce]의 연결을 끊는 중 {#disconnect}
 
 1. [!DNL Google Analytics] [계정 설정](https://www.google.com/account/about/?hl=en) 페이지를 방문하세요.
-1. `Security` 섹션에서 **[!UICONTROL edit]**&#x200B;개의 응용 프로그램 및 사이트 옆에 있는 `Authorizing`을(를) 클릭합니다.
-1. **[!UICONTROL revoke access]** 옆에 있는 [!DNL Commerce Intelligence]을(를) 클릭합니다.
+1. `Security` 섹션에서 `Authorizing`개의 응용 프로그램 및 사이트 옆에 있는 **[!UICONTROL edit]**&#x200B;을(를) 클릭합니다.
+1. [!DNL Commerce Intelligence] 옆에 있는 **[!UICONTROL revoke access]**&#x200B;을(를) 클릭합니다.
 
 ## 관련 항목:
 
-* [&#x200B; [!DNL Google ECommerce] 데이터가 필요합니다.](../integrations/google-ecommerce-data.md)
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
-* [설정 [!DNL Google ECommerce] 추적](https://support.google.com/analytics/answer/1009612?hl=en)
+* [ [!DNL Google ECommerce] 데이터가 필요합니다.](../integrations/google-ecommerce-data.md)
+* [통합 재인증](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [ [!DNL Google ECommerce] 추적 설정 중](https://support.google.com/analytics/answer/1009612?hl=en)
 * [가장 가치 있는 확보 소스 및 채널 살펴보기](../../analysis/most-value-source-channel.md)
 * [광고 캠페인에 대한 ROI 향상](../../analysis/roi-ad-camp.md)

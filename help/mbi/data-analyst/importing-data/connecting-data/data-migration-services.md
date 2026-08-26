@@ -5,33 +5,21 @@ exl-id: 105cd003-98ef-4358-80b9-b3190c2c57b7
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 TQID: https://experienceleague.adobe.com/q8FzCjuqcQC57WLd0201CV46es2CrbAjZx9FGFX-RFw
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 685
+source-wordcount: 711
 ht-degree: 0%
 
 ---
 
 # 데이터 마이그레이션
 
-새 데이터베이스 스키마, 서버 또는 보고 데이터베이스로 마이그레이션하는 것은 스트레스를 받을 필요가 없습니다. [[!DNL Adobe] 서비스 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)에서 마이그레이션 지원을 제공합니다.
+새 데이터베이스 스키마, 서버 또는 보고 데이터베이스로 마이그레이션하는 것은 스트레스를 받을 필요가 없습니다. [[!DNL Adobe] 서비스 팀](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)에서 마이그레이션 지원을 제공합니다.
 
 전환이 최대한 매끄럽게 진행되도록 하려면 마이그레이션 요청을 제출할 때 가능한 한 자세히 설명해야 합니다. 이 항목에는 요청을 제출하고 마이그레이션을 시작하는 데 필요한 모든 것이 있습니다. 귀하의 요구 사항에 대한 포괄적인 그림을 제공하면 프로젝트의 범위가 적절하고 예상치가 정확하다는 것을 보증할 수 있습니다.
 
@@ -41,7 +29,7 @@ ht-degree: 0%
 
 * **새 서버에 새 데이터베이스가 있습니까?** 요청을 제출하기 전에 **[!UICONTROL Manage Data** > **Connections]**&#x200B;에서 데이터 연결의 설정을 업데이트하십시오. 이 작업을 수행하는 방법에 대한 새로 고침이 필요한 경우 [`Integrations`](../integrations/integrations.md) 섹션으로 이동하여 사용 중인 데이터베이스 유형에 대한 지침을 찾으십시오.
 
-* **모든 이전 데이터가 새 데이터베이스에 있습니까, 아니면 마이그레이션해야 합니까?** 마이그레이션 프로세스 중에 이전 데이터와 새 데이터를 통합할 수 있습니다. 통합이 필요하지 않더라도 요청에 알려 주십시오.
+* **모든 이전 데이터가 새 데이터베이스에 있거나 마이그레이션해야 합니까?** 마이그레이션 프로세스 중에 이전 데이터와 새 데이터를 통합할 수 있습니다. 통합이 필요하지 않더라도 요청에 알려 주십시오.
 
 위에 대한 답을 얻었으면 마이그레이션 유형을 알아야 합니다. 새 데이터베이스에 [`same`](#sameschema) 스키마가 있습니까? 아니면 [`different`](#newschema) 스키마가 있습니까? 아래 논의에서는 각 마이그레이션 유형에 대한 자세한 지침을 확인할 수 있습니다.
 
@@ -85,7 +73,7 @@ ht-degree: 0%
 
 ## 요청을 제출하는 방법 {#submitreq}
 
-[지원 요청을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하면 연락할 수 있습니다.
+[지원 요청을 제출](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)하면 연락할 수 있습니다.
 
 이전 섹션의 단계에 따라 열과 일치하는 스프레드시트를 만들었다면 첨부하는 것을 잊지 마십시오.
 

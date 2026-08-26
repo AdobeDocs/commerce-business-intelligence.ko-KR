@@ -1,32 +1,18 @@
 ---
 title: sales_order 테이블
-description: sales_order 테이블을 사용하여 작업하는 방법을 알아봅니다.
+description: Commerce Intelligence Data Warehouse의 sales_order 테이블 구조를 살펴봅니다. 각 행이 순서를 나타내는 방법과 사용자 정의 분할이 발생하는 위치를 이해합니다.
 exl-id: 19a8ab88-de51-48f8-af39-ae4897834afe
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
 TQID: https://experienceleague.adobe.com/zdxIx9qHzEyoCbFzh0EBv1BKJEWiShtAt33-dtkEGNo
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 1200
+source-wordcount: 1215
 ht-degree: 0%
 
 ---
@@ -57,7 +43,7 @@ ht-degree: 0%
 | `increment_id` | Adobe Commerce 내에서 일반적으로 `order_id`이라고도 하는 주문의 고유 식별자입니다. `increment_id`은(는) [!DNL Google Ecommerce]과(와) 같은 외부 원본 조인에 가장 많이 사용됩니다. |
 | `shipping_address_id` | `sales_order_address` 테이블에 연결된 외래 키입니다. `sales_order_address.entity_id`에 가입하여 주문과 연계된 배송 주소 세부 정보를 확인하세요. |
 | `status` | 주문 상태. Commerce 인스턴스에 구현된 &#39;완료&#39;, &#39;처리&#39;, &#39;취소됨&#39;, &#39;환불됨&#39; 및 모든 사용자 지정 상태와 같은 값을 반환할 수 있습니다. 주문이 처리되면 변경될 수 있습니다. |
-| `store_id` | `Foreign key`이(가) `store` 테이블에 연결되어 있습니다. `store`에 참가합니다.주문과 연결된 Commerce 스토어 보기를 확인하는 `store_id` |
+| `store_id` | `Foreign key`이(가) `store` 테이블에 연결되어 있습니다. `store`.`store_id`에 참여 주문과 연결된 Commerce 스토어 보기를 확인하려면 |
 
 {style="table-layout:auto"}
 
@@ -65,26 +51,26 @@ ht-degree: 0%
 
 | **열 이름** | **설명** |
 |---|---|
-| `Billing address city` | 주문에 대한 청구 도시입니다. `sales_order`에 연결하여 계산되었습니다.`billing_address_id`에서 `sales_order_address`까지.`entity_id` 및 `city` 필드 반환 |
-| `Billing address country` | 주문에 대한 청구 국가 코드. `sales_order`에 연결하여 계산되었습니다.`billing_address_id`에서 `sales_order_address`까지.`entity_id` 및 `country_id` 반환 |
-| `Billing address region` | 주문에 대한 청구 지역(대개는 주 또는 시/도)입니다. `sales_order`에 연결하여 계산되었습니다.`billing_address_id`에서 `sales_order_address`까지.`entity_id` 및 `region` 필드 반환 |
-| `Customer's first order date` | 해당 고객이 주문한 첫 번째 주문의 타임스탬프. 고객의 &quot;인수 날짜&quot;로 간주되는 경우가 많습니다. 최소값 `sales_order`을(를) 반환하여 계산되었습니다.각 고유 고객에 대한 `created_at` 값 |
+| `Billing address city` | 주문에 대한 청구 도시입니다. `sales_order`.`billing_address_id`에 연결하여 계산됨 `sales_order_address`.`entity_id`에 연결 `city` 필드 반환 |
+| `Billing address country` | 주문에 대한 청구 국가 코드. `sales_order`.`billing_address_id`에 연결하여 계산됨 `sales_order_address`.`entity_id`에 연결 `country_id` 반환 |
+| `Billing address region` | 주문에 대한 청구 지역(대개는 주 또는 시/도)입니다. `sales_order`.`billing_address_id`에 연결하여 계산됨 `sales_order_address`.`entity_id`에 연결 `region` 필드 반환 |
+| `Customer's first order date` | 해당 고객이 주문한 첫 번째 주문의 타임스탬프. 고객의 &quot;인수 날짜&quot;로 간주되는 경우가 많습니다. 최소값 `sales_order`.`created_at`을(를) 반환하여 계산됨 각 고유 고객에 대한 값 |
 | `Customer's first order's billing region` | 주문을 한 고객에 대한 고객 확보 청구 지역. 고객의 첫 번째 주문과 연결된 `Billing address region`을(를) 반환하여 계산됨 |
 | `Customer's first order's coupon_code` | 해당 주문을 한 고객에 대한 고객 확보 쿠폰 코드. 고객의 첫 번째 주문과 연결된 `coupon_code`을(를) 반환하여 계산됨 |
-| `Customer's group code` | 이 주문을 한 고객의 그룹 이름. `sales_order`에 연결하여 계산되었습니다.`customer_group_id`에서 `customer_group`까지.`customer_group_id` 및 `customer_group_code` 필드 반환 |
+| `Customer's group code` | 이 주문을 한 고객의 그룹 이름. `sales_order`.`customer_group_id`에 연결하여 계산됨 `customer_group`.`customer_group_id`에 연결 `customer_group_code` 필드 반환 |
 | `Customer's lifetime number of coupons` | 이 고객이 수행한 모든 주문에 적용된 총 쿠폰 수량입니다. 각 고유 고객에 대해 `coupon_code`이(가) `NULL`이(가) 아닌 주문 수를 계산하여 계산됨 |
 | `Customer's lifetime number of orders` | 이 고객이 수행한 총 주문 수. 각 고유 고객에 대해 `sales_order` 테이블의 행 수를 계산하여 계산합니다. |
 | `Customer's lifetime revenue` | 이 고객이 수행한 모든 주문에 대한 총 매출액 합계. 각 고유 고객의 모든 주문에 대해 `base_grand_total` 필드를 합하여 계산됨 |
 | `Customer's order number` | 해당 고객 주문에 대한 순차적 주문 등급. 고객이 주문한 모든 주문을 식별하고 `created_at` 타임스탬프로 오름차순으로 정렬한 다음 각 주문에 증가하는 정수 값을 할당하여 계산됩니다. 예를 들어, 고객의 첫 번째 주문은 `Customer's order number`/1을 반환하고, 고객의 두 번째 주문은 `Customer's order number`/2을 반환하는 식입니다. |
 | `Customer's order number (previous-current)` | 고객의 이전 주문 등급이 이 주문 등급과 연결되어 `-` 문자로 구분됩니다. (&quot;`Customer's order number` - 1&quot;)을(를) &quot;`-`&quot; 다음에 &quot;`Customer's order number`&quot;을(를) 연결하여 계산합니다. 예를 들어 고객의 두 번째 구매와 연결된 주문의 경우 이 열은 `1-2` 값을 반환합니다. 두 주문 이벤트 사이의 시간을 나타낼 때 가장 많이 사용됩니다(즉, &quot;주문 사이의 시간&quot; 차트). |
 | `Is customer's last order?` | 해당 주문이 고객의 마지막 주문에 해당하는지 아니면 가장 최근 주문에 해당하는지 여부를 결정합니다. `Customer's order number` 값을 `Customer's lifetime number of orders`과(와) 비교하여 계산되었습니다. 이 두 필드가 지정된 순서에 대해 같으면 이 열은 `Yes`을(를) 반환하고 그렇지 않으면 `No`을(를) 반환합니다. |
-| `Number of items in order` | 주문에 포함된 항목의 총 수량입니다. `sales_order`에 연결하여 계산되었습니다.`entity_id`에서 `sales_order_item`까지.`order_id`을(를) 만들고 `sales_order_item`을(를) 합합니다.`qty_ordered` 필드 |
-| `Seconds between customer's first order date and this order` | 이 주문과 고객의 첫 번째 주문 사이의 경과 시간입니다. 각 주문에 대해 `Customer's first order date`에서 `created_at`을(를) 빼서 계산되었으며, 정수로 반환됩니다. |
+| `Number of items in order` | 주문에 포함된 항목의 총 수량입니다. `sales_order`.`entity_id`에 연결하여 계산됨 `sales_order_item`.`order_id`에 연결 `sales_order_item`.`qty_ordered` 합계 필드 |
+| `Seconds between customer's first order date and this order` | 이 주문과 고객의 첫 번째 주문 사이의 경과 시간입니다. 각 주문에 대해 `created_at`에서 `Customer's first order date`을(를) 빼서 계산되었으며, 정수로 반환됩니다. |
 | `Seconds since previous order` | 이 주문과 고객의 직전 주문 사이의 경과 시간. 이 순서의 `created_at`에서 이전 주문에 대한 `created_at`을(를) 빼서 계산되었으며, 정수(초)로 반환됩니다. 예를 들어, 고객의 세 번째 주문에 해당하는 주문 레코드의 경우 이 열은 고객의 두 번째 주문과 세 번째 주문 사이의 시간(초)을 반환합니다. 고객의 첫 번째 주문에 대해 이 필드는 `NULL`을(를) 반환합니다. |
-| `Shipping address city` | 주문에 대한 배송 도시입니다. `sales_order`에 연결하여 계산되었습니다.`shipping_address_id`에서 `sales_order_address`까지.`entity_id` 및 `city` 필드 반환 |
-| `Shipping address country` | 주문에 대한 배송 국가 코드. `sales_order`에 연결하여 계산되었습니다.`Shipping_address_id`에서 `sales_order_address`까지.`entity_id` 및 `country_id` 반환 |
-| `Shipping address region` | 주문에 대한 배송 지역(대부분의 경우 주 또는 시). `sales_order`에 연결하여 계산되었습니다.`shipping_address_id`에서 `sales_order_address`까지.`entity_id` 및 `region` 필드 반환 |
-| `Store name` | 이 주문과 연계된 Commerce 스토어 이름. `sales_order`에 연결하여 계산되었습니다.`store_id`에서 `store`까지.`store_id` 및 `name` 필드 반환 |
+| `Shipping address city` | 주문에 대한 배송 도시입니다. `sales_order`.`shipping_address_id`에 연결하여 계산됨 `sales_order_address`.`entity_id`에 연결 `city` 필드 반환 |
+| `Shipping address country` | 주문에 대한 배송 국가 코드. `sales_order`.`Shipping_address_id`에 연결하여 계산됨 `sales_order_address`.`entity_id`에 연결 `country_id` 반환 |
+| `Shipping address region` | 주문에 대한 배송 지역(대부분의 경우 주 또는 시). `sales_order`.`shipping_address_id`에 연결하여 계산됨 `sales_order_address`.`entity_id`에 연결 `region` 필드 반환 |
+| `Store name` | 이 주문과 연계된 Commerce 스토어 이름. `sales_order`.`store_id`에 연결하여 계산됨 `store`.`store_id`에 연결 `name` 필드 반환 |
 
 ## 일반 지표
 
@@ -105,21 +91,21 @@ ht-degree: 0%
 `customer_entity`
 
 * `customer_entity` 테이블에 연결하여 주문한 고객과 연결된 새 고객 수준 열을 만드십시오.
-   * 경로: `sales_order.customer_id`(많음) => `customer_entity.entity_id`(하나)
+  * 경로: `sales_order.customer_id`(많음) => `customer_entity.entity_id`(하나)
 
 `customer_group`
 
 * `customer_group` 테이블에 연결하여 주문한 고객의 고객 그룹 이름을 반환하는 열을 만듭니다.
-   * 경로: `sales_order.customer_group_id`(많음) => `customer_group.customer_group_id`(하나)
+  * 경로: `sales_order.customer_group_id`(많음) => `customer_group.customer_group_id`(하나)
 
 `sales_order_address`
 
 * 주문과 연계된 청구 및 배송 위치를 반환하는 열을 만들려면 `sales_order_address` 테이블에 참가하십시오. 청구 또는 배송 세부 사항 필요 여부에 따라 두 가지 조인 경로가 가능합니다.
-   * 경로:
-      * 배송: `sales_order.shipping_address_id`(많음) => `sales_order_address.entity_id`(하나)
-      * 청구: `sales_order.billing_address_id`(많음) => `sales_order_address.entity_id`(하나)
+  * 경로:
+    * 배송: `sales_order.shipping_address_id`(많음) => `sales_order_address.entity_id`(하나)
+    * 청구: `sales_order.billing_address_id`(많음) => `sales_order_address.entity_id`(하나)
 
 `store`
 
 * `store` 테이블에 연결하여 주문과 연결된 Commerce 스토어와 관련된 세부 정보를 반환하는 열을 만드십시오.
-   * 경로: `sales_order.store_id`(많음) => `store.store_id`(하나)
+  * 경로: `sales_order.store_id`(많음) => `store.store_id`(하나)

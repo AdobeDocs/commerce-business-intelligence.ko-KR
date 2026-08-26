@@ -5,35 +5,21 @@ exl-id: 5aa571c9-7f38-462c-8f1b-76a826c9dc55
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
 TQID: https://experienceleague.adobe.com/vYwWxyLRBA-ZG6IZv9Xw1nYqdYG2nfucHNB6rF8qAsM
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 1120
-ht-degree: 6%
+source-wordcount: 1156
+ht-degree: 13%
 
 ---
 
 # Data Warehouse 보기 작업
 
-이 문서에서는 `Data Warehouse Views` > **[!UICONTROL Manage Data]**(으)로 이동하여 액세스할 수 있는 **[!UICONTROL Data Warehouse Views]**&#x200B;의 용도와 사용에 대해 간략하게 설명합니다. 다음은 기능 및 보기를 만드는 방법에 대한 설명과 `Data Warehouse Views`을(를) 사용하여 [!DNL Facebook] 및 [!DNL AdWords] 지출 데이터를 통합하는 방법에 대한 예입니다.
+이 문서에서는 **[!UICONTROL Manage Data]** > **[!UICONTROL Data Warehouse Views]**(으)로 이동하여 액세스할 수 있는 `Data Warehouse Views`의 용도와 사용에 대해 간략하게 설명합니다. 다음은 기능 및 보기를 만드는 방법에 대한 설명과 `Data Warehouse Views`을(를) 사용하여 [!DNL Facebook] 및 [!DNL AdWords] 지출 데이터를 통합하는 방법에 대한 예입니다.
 
 ## 일반 목적
 
@@ -49,7 +35,7 @@ SQL을 잘 알고 있는 경우 이러한 통합 예제는 모두 `UNION` 함수
 
 ## Data Warehouse 보기 만들기 및 관리
 
-아래와 같이 `Data Warehouse Views` > **[!UICONTROL Manage Data]**(으)로 이동하여 새 **[!UICONTROL Data Warehouse Views]**&#x200B;을(를) 만들고 기존 보기를 삭제할 수 있습니다.
+아래와 같이 **[!UICONTROL Manage Data]** > **[!UICONTROL Data Warehouse Views]**(으)로 이동하여 새 `Data Warehouse Views`을(를) 만들고 기존 보기를 삭제할 수 있습니다.
 
 ![사용자 지정 보기 구성을 표시하는 Data Warehouse 보기 섹션](../../assets/Data_Warehouse_Views.png)
 
@@ -101,7 +87,7 @@ SQL을 잘 알고 있는 경우 이러한 통합 예제는 모두 `UNION` 함수
 
 [!DNL Facebook]과(와) [!DNL Google AdWords] 캠페인을 모두 포함하는 단일 광고 지출 테이블을 만들려면 SQL 쿼리를 작성하고 `UNION ALL` 함수를 사용해야 합니다. `UNION ALL` 문은 각 쿼리의 결과를 단일 출력에 추가하면서 서로 다른 여러 SQL 쿼리를 결합하는 데 가장 많이 사용됩니다.
 
-PostgreSQL `UNION`설명서[에 설명된 대로 언급할 가치가 있는 &#x200B;](https://www.postgresql.org/docs/8.3/queries-union.html) 문의 몇 가지 요구 사항이 있습니다.
+PostgreSQL [설명서](https://www.postgresql.org/docs/8.3/queries-union.html)에 설명된 대로 언급할 가치가 있는 `UNION` 문의 몇 가지 요구 사항이 있습니다.
 
 * 모든 쿼리는 동일한 수의 열을 반환해야 합니다.
 * 해당 열에는 동일한 데이터 유형이 있어야 합니다.
@@ -135,7 +121,7 @@ PostgreSQL `UNION`설명서[에 설명된 대로 언급할 가치가 있는 &#x2
 위에 대한 몇 가지 중요한 사항:
 
 * 명확성을 위해 모든 쿼리에서 이름이 일치하도록 모든 열에 별칭을 지정합니다. 그러나 이는 요구 사항이 아닙니다. SELECT 쿼리에서 열이 호출되는 순서는 줄이 어떻게 정렬되는지 나타냅니다.
-* `ad_source` 또는 [!DNL AdWords] 데이터를 더 쉽게 필터링할 수 있도록 [!DNL Facebook]이라는 새 열이 만들어집니다. 이 쿼리는 두 테이블의 모든 데이터를 결합합니다. `ad_source`과(와) 같은 열을 만들지 않으면 특정 원본에서 보낸 지출을 식별할 수 있는 쉬운 방법이 없습니다.
+* [!DNL AdWords] 또는 [!DNL Facebook] 데이터를 더 쉽게 필터링할 수 있도록 `ad_source`이라는 새 열이 만들어집니다. 이 쿼리는 두 테이블의 모든 데이터를 결합합니다. `ad_source`과(와) 같은 열을 만들지 않으면 특정 원본에서 보낸 지출을 식별할 수 있는 쉬운 방법이 없습니다.
 
 위의 쿼리를 `Data Warehouse View`(으)로 저장하면 아래와 같이 [!DNL Facebook] 및 [!DNL AdWords] 비용이 모두 포함된 테이블이 만들어집니다.
 
@@ -156,7 +142,7 @@ PostgreSQL `UNION`설명서[에 설명된 대로 언급할 가치가 있는 &#x2
 
 **추가 도움말을 찾고 계십니까?**
 
-SQL을 작성하고 `Data Warehouse Views`을(를) 만드는 작업은 기술 지원에 포함되지 않습니다. 그러나 [서비스 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)은(는) 보기 만들기에 대한 지원을 제공합니다. 특정 분석을 위해 새 데이터베이스를 사용하여 기존 데이터베이스를 마이그레이션하고 단일 Data Warehouse 보기를 만드는 모든 작업에 대해 지원 팀이 도움을 줄 수 있습니다.
+SQL을 작성하고 `Data Warehouse Views`을(를) 만드는 작업은 기술 지원에 포함되지 않습니다. 그러나 [서비스 팀](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)은(는) 보기 만들기에 대한 지원을 제공합니다. 특정 분석을 위해 새 데이터베이스를 사용하여 기존 데이터베이스를 마이그레이션하고 단일 Data Warehouse 보기를 만드는 모든 작업에 대해 지원 팀이 도움을 줄 수 있습니다.
 
 일반적으로 2~3개의 유사한 구조 테이블을 통합하기 위해 새 `Data Warehouse View`을(를) 만들려면 5시간의 서비스 시간이 필요하며, 이 경우 약 1,250달러의 작업 비용이 듭니다. 그러나 필요한 예상 투자를 늘릴 수 있는 몇 가지 일반적인 요소는 다음과 같습니다.
 

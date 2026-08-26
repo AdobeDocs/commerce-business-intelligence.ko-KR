@@ -5,25 +5,14 @@ exl-id: 734a8046-8058-4f03-93a2-8d59b9be6d2d
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
 TQID: https://experienceleague.adobe.com/UXIfQT9NxvKnefTMVWxjTYEMDpmCRITyzlFpNcU-y90
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 1007
+source-wordcount: 1032
 ht-degree: 0%
 
 ---
@@ -37,7 +26,7 @@ Data Warehouse에서 [계산된 열을 만들기](../data-warehouse-mgr/creating
 1. 데이터베이스의 테이블이 서로 관련되는 방식
 1. 이 관계를 정의하는 기본 및 외래 키
 
-이 정보를 알고 있으면 이 항목의 지침에 따라 경로를 쉽게 만들 수 있습니다. 조직의 기술 전문가에게 문의하거나 [전문 서비스 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)에 문의할 수 있습니다.
+이 정보를 알고 있으면 이 항목의 지침에 따라 경로를 쉽게 만들 수 있습니다. 조직의 기술 전문가에게 문의하거나 [전문 서비스 팀](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)에 문의할 수 있습니다.
 
 ## 테이블 관계 및 주요 유형에 대한 새로 고침 {#refresher}
 
@@ -59,9 +48,9 @@ Data Warehouse에서 [계산된 열을 만들기](../data-warehouse-mgr/creating
 
 ### 기본 및 외래 키 {#keys}
 
-`Primary Key`은(는) 테이블 내에서 고유한 값을 생성하는 변경되지 않는 열 또는 열 집합입니다. 예를 들어 고객이 웹 사이트에서 주문하면 새 행이 장바구니의 `orders` 테이블에 새 `order_id`과(와) 함께 추가됩니다. 이 `order_id`을(를) 사용하면 고객과 비즈니스 모두 해당 특정 주문의 진행 상황을 추적할 수 있습니다. 주문 ID는 고유하므로 일반적으로 `Primary Key` 테이블의 `orders`입니다.
+`Primary Key`은(는) 테이블 내에서 고유한 값을 생성하는 변경되지 않는 열 또는 열 집합입니다. 예를 들어 고객이 웹 사이트에서 주문하면 새 행이 장바구니의 `orders` 테이블에 새 `order_id`과(와) 함께 추가됩니다. 이 `order_id`을(를) 사용하면 고객과 비즈니스 모두 해당 특정 주문의 진행 상황을 추적할 수 있습니다. 주문 ID는 고유하므로 일반적으로 `orders` 테이블의 `Primary Key`입니다.
 
-`Foreign Key`은(는) 다른 테이블의 `Primary Key` 열에 연결되는 테이블 내에 만들어진 열입니다. 외래 키는 분석가가 레코드를 쉽게 조회하고 함께 연결할 수 있도록 표 사이에 참조를 생성합니다. 각 고객의 주문에 대해 알고 싶다고 가정해 보겠습니다. `customer id` 열(`Primary Key` 테이블의 `customers`)과 `order_id` 열(`Foreign Key` 테이블의 `customers`, `Primary Key` 테이블의 `orders` 참조)을 사용하면 이 정보를 연결하고 분석할 수 있습니다. 경로를 만들 때 `Primary Key`과(와) `Foreign Key`을(를) 모두 정의하라는 메시지가 표시됩니다.
+`Foreign Key`은(는) 다른 테이블의 `Primary Key` 열에 연결되는 테이블 내에 만들어진 열입니다. 외래 키는 분석가가 레코드를 쉽게 조회하고 함께 연결할 수 있도록 표 사이에 참조를 생성합니다. 각 고객의 주문에 대해 알고 싶다고 가정해 보겠습니다. `customer id` 열(`customers` 테이블의 `Primary Key`)과 `order_id` 열(`customers` 테이블의 `Foreign Key`, `orders` 테이블의 `Primary Key` 참조)을 사용하면 이 정보를 연결하고 분석할 수 있습니다. 경로를 만들 때 `Primary Key`과(와) `Foreign Key`을(를) 모두 정의하라는 메시지가 표시됩니다.
 
 ## 경로 만들기 {#createpath}
 
@@ -70,8 +59,8 @@ Data Warehouse에서 열을 만들 때 한 테이블에서 다른 테이블로 �
 **고객**&#x200B;과(와) **주문** 간의 관계를 사용하여 완료 방법을 표시하십시오. 분류:
 
 * 관계가 `one-to-many`입니다. 한 고객은 여러 개의 주문을 가질 수 있지만 한 주문에는 한 명의 고객만 포함될 수 있습니다. 이는 관계의 방향 또는 계산된 열을 만들어야 하는 위치를 알려줍니다. 이 경우 `orders` 테이블의 정보를 `customers` 테이블로 가져올 수 있습니다.
-* 사용할 `primary key`은(는) `customers.customerid`이거나 `customer ID` 테이블의 `customers` 열입니다.
-* 사용할 `foreign key`은(는) `orders.customerid`이거나 `customer ID` 테이블의 `orders` 열입니다.
+* 사용할 `primary key`은(는) `customers.customerid`이거나 `customers` 테이블의 `customer ID` 열입니다.
+* 사용할 `foreign key`은(는) `orders.customerid`이거나 `orders` 테이블의 `customer ID` 열입니다.
 
 이제 경로를 만들 수 있습니다.
 
@@ -96,7 +85,7 @@ Data Warehouse에서 열을 만들 때 한 테이블에서 다른 테이블로 �
 
 * **[!DNL Commerce Intelligence]에서 기본/외래 키 관계를 추측할 수 없습니다**. 계정에 잘못된 데이터를 도입하지 않으려는 경우 경로를 수동으로 만들어야 합니다.
 
-* **현재 서로 다른 두 테이블 사이에만 경로를 지정할 수 있습니다**. 다시 만들려는 논리에 두 개 이상의 테이블이 포함됩니까? 그런 다음 (1) 먼저 중간 테이블에 열을 연결한 다음 &quot;최종 대상&quot; 테이블에 열을 연결하거나 (2) [전문 서비스 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)에 문의하여 목표에 대한 최상의 접근 방법을 찾는 것이 적절할 수 있습니다.
+* **현재 서로 다른 두 테이블 사이에만 경로를 지정할 수 있습니다**. 다시 만들려는 논리에 두 개 이상의 테이블이 포함됩니까? 그런 다음 (1) 먼저 중간 테이블에 열을 연결한 다음 &quot;최종 대상&quot; 테이블에 열을 연결하거나 (2) [전문 서비스 팀](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)에 문의하여 목표에 대한 최상의 접근 방법을 찾는 것이 적절할 수 있습니다.
 
 * **열은 한 번에 하나의 경로에 대한 외래 키 참조만 될 수 있습니다**. 예를 들어 `order_items.order_id`이(가) `orders.id`을(를) 가리키면 `order_items.order_id`은(는) 다른 항목을 가리킬 수 없습니다.
 
@@ -110,7 +99,7 @@ Data Warehouse에서 잘못된 경로를 생성했습니까? 아니면 봄맞이
 
 ## 요약 {#wrapup}
 
-이제 Data Warehouse에서 계산된 열에 대한 경로를 쉽게 만들 수 있습니다. 특정 경로에 대해 여전히 잘 모르는 경우 **[!UICONTROL Support]** 계정에서 [!DNL Commerce Intelligence]을(를) 클릭하여 지원을 받을 수 있습니다.
+이제 Data Warehouse에서 계산된 열에 대한 경로를 쉽게 만들 수 있습니다. 특정 경로에 대해 여전히 잘 모르는 경우 [!DNL Commerce Intelligence] 계정에서 **[!UICONTROL Support]**&#x200B;을(를) 클릭하여 지원을 받을 수 있습니다.
 
 ## 관련 항목
 

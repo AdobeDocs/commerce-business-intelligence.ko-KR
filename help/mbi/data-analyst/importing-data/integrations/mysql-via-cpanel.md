@@ -1,35 +1,26 @@
 ---
 title: cPanel을 통해 MySQL 연결
-description: cPanel을 통해 MySQL을 연결하는 방법에 대해 알아봅니다.
+description: cPanel에서 호스팅되는 MySQL 데이터베이스를 Commerce Intelligence에 연결합니다. 전용 사용자를 만들고 연결 세부 정보를 입력하여 데이터 동기화를 시작합니다.
 exl-id: 90b0a0b0-8c6b-4144-95b4-f588f18616c7
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
 TQID: https://experienceleague.adobe.com/Ou9gOlYKFuoYQHTi7zhyecvfGlKEKF2eRSr5vctsW1s
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 400
+source-wordcount: 417
 ht-degree: 0%
 
 ---
 
 # [!DNL cPanel]을(를) 통해 [!DNL MySQL] 연결
 
-* [&#x200B; [!DNL cPanel]에서  [!DNL Commerce Intelligence] [!DNL MySQL] 사용자 만들기](#cpanel)
-* [&#x200B; [!DNL Commerce Intelligence]에 연결 및 사용자 정보 입력](#finish)
+* [ [!DNL cPanel]에서  [!DNL Commerce Intelligence] [!DNL MySQL] 사용자 만들기](#cpanel)
+* [ [!DNL Commerce Intelligence]에 연결 및 사용자 정보 입력](#finish)
 
 ## 이동
 
@@ -89,4 +80,4 @@ ht-degree: 0%
 ## 관련 항목 {#related}
 
 * [SSH 호스트 키 확인](ssh-host-key-verification.md)
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
+* [통합 재인증](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

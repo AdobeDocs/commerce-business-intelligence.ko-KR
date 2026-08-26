@@ -1,30 +1,22 @@
 ---
 title: 대시보드 이름 변경
-description: 대시보드에서 차트를 제거하는 방법에 대해 알아봅니다.
+description: Commerce Intelligence 대시보드의 현재 이름이 더 이상 맞지 않으면 대시보드 옵션 메뉴에서 이름을 바꾸고 몇 가지 빠른 단계로 업데이트합니다.
 exl-id: 45c67f3c-4660-4bb5-ba10-55ed666525f4
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
 TQID: https://experienceleague.adobe.com/EcYQwiOAPNx4sVsAztB6NScq2S-rSxrjPHMdrXlOto4
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: 9ebcff62d51b4f2c7885abd4705870a5428c08ef
 workflow-type: tm+mt
-source-wordcount: 84
+source-wordcount: 97
 ht-degree: 0%
 
 ---
 
-# 대시보드에서 차트 제거
+# 대시보드 이름 바꾸기
 
 >[!NOTE]
 >
@@ -32,7 +24,7 @@ ht-degree: 0%
 
 때로는 이름이 더 이상 맞지 않을 때도 있습니다. 대시보드 이름을 바꾸는 것은 빠르고 간단합니다.
 
-1. 대시보드에 있는 동안 화면 상단의 **[!UICONTROL Dashboard Options]** 메뉴 옆에 있는 `Global Search` 메뉴를 클릭합니다.
+1. 대시보드에 있는 동안 화면 상단의 `Global Search` 메뉴 옆에 있는 **[!UICONTROL Dashboard Options]** 메뉴를 클릭합니다.
 
 1. 드롭다운에서 **[!UICONTROL Rename]**&#x200B;을(를) 클릭합니다.
 

@@ -1,31 +1,18 @@
 ---
 title: quote_item 테이블
-description: quote_item 테이블을 사용하여 작업하는 방법을 알아봅니다.
+description: 모든 장바구니 항목을 추적하는 Commerce Intelligence의 quote_item 테이블 스키마를 검토합니다. 시간 경과에 따른 테이블 크기 관리를 위한 Adobe의 권장 사항에 대해 알아봅니다.
 exl-id: dad36e88-5986-4b52-8a0e-ac084fabb275
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
 TQID: https://experienceleague.adobe.com/wLNm1g1L6-0Ded-bZT991KvJi3dVO6zA4i2qftiX2J0
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 646
+source-wordcount: 704
 ht-degree: 0%
 
 ---
@@ -42,13 +29,13 @@ ht-degree: 0%
 
 | **열 이름** | **설명** |
 |---|---|
-| `base_price` | [카탈로그 가격 규칙, 계층별 할인 및 특별 가격](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=ko)이 적용된 후 세금, 배송 또는 장바구니 할인이 적용되기 전에 품목이 장바구니에 추가된 시점의 개별 제품 단가입니다. 이 값은 스토어의 기본 통화로 표시됩니다. |
+| `base_price` | [카탈로그 가격 규칙, 계층별 할인 및 특별 가격](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/pricing-advanced)이 적용된 후 세금, 배송 또는 장바구니 할인이 적용되기 전에 품목이 장바구니에 추가된 시점의 개별 제품 단가입니다. 이 값은 스토어의 기본 통화로 표시됩니다. |
 | `created_at` | 로컬에 UTC로 저장된 장바구니 항목의 생성 타임스탬프. [!DNL Commerce Intelligence]의 구성에 따라 이 타임스탬프가 데이터베이스 시간대와 다른 [!DNL Commerce Intelligence]의 보고 시간대로 변환될 수 있습니다. |
 | `item_id`(PK) | 테이블에 대한 고유 식별자 |
 | `name` | 주문 항목의 텍스트 이름 |
 | `parent_item_id` | 단순 제품을 상위 번들 또는 구성 가능한 제품과 연결하는 `Foreign key`. `quote_item.item_id`에 연결하여 간단한 제품과 관련된 상위 제품 특성을 확인하십시오. 상위 장바구니 항목(번들 또는 구성 가능한 제품 유형)의 경우 `parent_item_id`은(는) `NULL`입니다. |
 | `product_id` | `Foreign key`이(가) `catalog_product_entity` 테이블에 연결되어 있습니다. 주문 항목과 연결된 제품 특성을 확인하려면 `catalog_product_entity.entity_id`에 참가하십시오. |
-| `product_type` | 장바구니에 추가된 제품의 유형입니다. [제품 유형](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/product-create.html?lang=ko#product-types)에는 단순, 구성 가능, 그룹화, 가상, 번들 및 다운로드 가능한 제품이 포함됩니다. |
+| `product_type` | 장바구니에 추가된 제품의 유형입니다. [제품 유형](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/product-create#product-types)에는 단순, 구성 가능, 그룹화, 가상, 번들 및 다운로드 가능한 제품이 포함됩니다. |
 | `qty` | 특정 장바구니 품목에 대해 장바구니에 포함된 단위 수량 |
 | `quote_id` | `Foreign key`이(가) `quote` 테이블에 연결되어 있습니다. 장바구니 항목과 연결된 장바구니 특성을 확인하려면 `quote.entity_id`에 참가하십시오. |
 | `sku` | 장바구니 항목에 대한 고유 식별자 |
@@ -61,10 +48,10 @@ ht-degree: 0%
 | **열 이름** | **설명** |
 |---|---|
 | `Cart creation date` | 장바구니 생성 날짜와 연계된 타임스탬프. `quote_item.quote_id`을(를) `quote.entity_id`에 조인하고 `created_at` 타임스탬프를 반환하여 계산됨 |
-| `Cart is active? (1/0)` | 고객이 장바구니를 만들고 아직 주문으로 전환하지 않은 경우 &quot;1&quot;을 반환하는 부울 필드. 변환된 장바구니 또는 관리자를 통해 만든 장바구니에 대해 &quot;0&quot;을 반환합니다. `quote_item.quote_id`에 `quote.entity_id`을(를) 조인하고 `is_active` 필드를 반환하여 계산됨 |
-| `Cart item total value (qty * base_price)` | [카탈로그 가격 규칙, 계층화된 할인 및 특별 가격](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=ko)이 적용된 후 세금, 배송 또는 장바구니 할인이 적용되기 전에 장바구니에 항목을 추가한 시점의 총 항목 값입니다. `qty`에 `base_price`을(를) 곱하여 계산됨 |
-| `Seconds since cart creation` | 장바구니 생성일과 현재 사이의 경과 시간. `quote_item.quote_id`에 `quote.entity_id`을(를) 조인하고 `Seconds since cart creation` 필드를 반환하여 계산됨 |
-| `Store name` | 주문 항목과 연결된 Commerce 스토어의 이름입니다. `sales_order_item.store_id`에 `store.store_id`을(를) 조인하고 `name` 필드를 반환하여 계산됨 |
+| `Cart is active? (1/0)` | 고객이 장바구니를 만들고 아직 주문으로 전환하지 않은 경우 &quot;1&quot;을 반환하는 부울 필드. 변환된 장바구니 또는 관리자를 통해 만든 장바구니에 대해 &quot;0&quot;을 반환합니다. `quote.entity_id`에 `quote_item.quote_id`을(를) 조인하고 `is_active` 필드를 반환하여 계산됨 |
+| `Cart item total value (qty * base_price)` | [카탈로그 가격 규칙, 계층화된 할인 및 특별 가격](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/pricing-advanced)이 적용된 후 세금, 배송 또는 장바구니 할인이 적용되기 전에 장바구니에 항목을 추가한 시점의 총 항목 값입니다. `qty`에 `base_price`을(를) 곱하여 계산됨 |
+| `Seconds since cart creation` | 장바구니 생성일과 현재 사이의 경과 시간. `quote.entity_id`에 `quote_item.quote_id`을(를) 조인하고 `Seconds since cart creation` 필드를 반환하여 계산됨 |
+| `Store name` | 주문 항목과 연결된 Commerce 스토어의 이름입니다. `store.store_id`에 `sales_order_item.store_id`을(를) 조인하고 `name` 필드를 반환하여 계산됨 |
 
 {style="table-layout:auto"}
 
@@ -82,19 +69,19 @@ ht-degree: 0%
 `catalog_product_entity`
 
 * `catalog_product_entity` 테이블에 연결하여 장바구니 항목과 연결된 제품 특성을 반환하는 열을 만드십시오.
-   * 경로: `quote_item.product_id`(많음) => `catalog_product_entity.entity_id`(하나)
+  * 경로: `quote_item.product_id`(많음) => `catalog_product_entity.entity_id`(하나)
 
 `quote`
 
 * `quote` 테이블에 연결하여 장바구니 항목과 연결된 새 장바구니 수준 열을 만드십시오.
-   * 경로: `quote_item.quote_id`(많음) => `quote.entity_id`(하나)
+  * 경로: `quote_item.quote_id`(많음) => `quote.entity_id`(하나)
 
 `quote_item`
 
-* 상위 구성 가능 또는 번들 SKU의 세부 정보를 간단한 제품과 연결하는 열을 만들려면 `quote_item`에 참가하십시오. Data Warehouse 관리자에 빌드하는 경우 이러한 계산을 구성하는 데 도움이 필요하면 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하십시오.
-   * 경로: `quote_item.parent_item_id`(많음) => `quote_item.item_id`(하나)
+* 상위 구성 가능 또는 번들 SKU의 세부 정보를 간단한 제품과 연결하는 열을 만들려면 `quote_item`에 참가하십시오. Data Warehouse 관리자에 빌드하는 경우 이러한 계산을 구성하는 데 도움이 필요하면 [지원팀에 문의](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)하십시오.
+  * 경로: `quote_item.parent_item_id`(많음) => `quote_item.item_id`(하나)
 
 `store`
 
 * `store` 테이블에 연결하여 장바구니 항목과 연결된 Commerce 스토어와 관련된 세부 정보를 반환하는 열을 만드십시오.
-   * 경로: `quote_item.store_id`(많음) => `store.store_id`(하나)
+  * 경로: `quote_item.store_id`(많음) => `store.store_id`(하나)

@@ -1,27 +1,18 @@
 ---
 title: 투자자를 위한 대시보드 구축
-description: 투자자를 위한 대시보드를 작성하는 방법에 대해 알아봅니다.
+description: Commerce Intelligence에서 투자자 준비가 된 대시보드를 작성하십시오. 일별 작업 대시보드와 구별되는 명확하고 포괄적인 보기를 위한 모범 사례에 대해 알아봅니다.
 exl-id: 917e7628-3498-4413-a7e1-61799989a7dd
 role: Admin, Developer, User
 feature: Dashboards, Data Integration
 TQID: https://experienceleague.adobe.com/0G3u84SK-CvA7Pvb5bI-uEkUkbi9oiYvWwJHRwd-568
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 289
+source-wordcount: 315
 ht-degree: 0%
 
 ---
@@ -43,34 +34,34 @@ ht-degree: 0%
 ## 시각적 보고서
 
 * **[!UICONTROL Revenue by quarter]**
-   * 지표 - 매출
+  * 지표 - 매출
 * **[!UICONTROL Revenue from 1st time orders vs repeat orders]**
-   * 지표 - 최초 주문 매출
-      * 필터 - 사용자의 주문 번호가 1과 같음
-   * 지표 2 - 반복 주문 매출
-      * 필터 - 사용자의 주문 번호가 1보다 큼
-   * 다중 Y축 확인란을 선택 취소합니다
-   * 누적 세로 막대형 차트로 변경
+  * 지표 - 최초 주문 매출
+    * 필터 - 사용자의 주문 번호가 1과 같음
+  * 지표 2 - 반복 주문 매출
+    * 필터 - 사용자의 주문 번호가 1보다 큼
+  * 다중 Y축 확인란을 선택 취소합니다
+  * 누적 세로 막대형 차트로 변경
 * **[!UICONTROL AOV by quarter]**
-   * 지표 1 - 매출
-      * 이 지표 숨기기
-   * 지표 2 - 주문 수
-      * 이 지표 숨기기
-   * 공식 - AOV
-      * A/B
+  * 지표 1 - 매출
+    * 이 지표 숨기기
+  * 지표 2 - 주문 수
+    * 이 지표 숨기기
+  * 공식 - AOV
+    * A/B
 * **[!UICONTROL All-time revenue by source]**
-   * 지표 - 매출
-   * 고객의 `utm_source`(으)로 그룹화
+  * 지표 - 매출
+  * 고객의 `utm_source`(으)로 그룹화
 * **[!UICONTROL Revenue from top 10 products]**
-   * 지표 - 제품 매출
-      * 차트 숨기기
-      * 제품 이름별로 그룹화합니다. 모든 제품을 선택합니다.
-      * 시간 범위를 All-Time으로 설정
-      * 시간 간격을 없음으로 설정
-      * &quot;위쪽/아래쪽 표시&quot;에서 제품 수익별로 정렬된 상위 10만 표시합니다.
+  * 지표 - 제품 매출
+    * 차트 숨기기
+    * 제품 이름별로 그룹화합니다. 모든 제품을 선택합니다.
+    * 시간 범위를 All-Time으로 설정
+    * 시간 간격을 없음으로 설정
+    * &quot;위쪽/아래쪽 표시&quot;에서 제품 수익별로 정렬된 상위 10만 표시합니다.
 * **[!UICONTROL Cumulative distinct buyers by quarter]**
-   * 지표 - 개별 구매자
-      * 관점 - 누적
+  * 지표 - 개별 구매자
+    * 관점 - 누적
 * **[!UICONTROL Site visits - New vs. repeat by month]**
 * 세션
 
@@ -79,7 +70,7 @@ ht-degree: 0%
 * 사이트 방문 횟수
 * 전환율
 
-[Commerce 데이터 보강 서비스](https://business.adobe.com/kr/products/magento/magento-commerce.html)를 사용하여 다음에 대한 보고서를 포함할 수 있습니다.
+[Commerce 데이터 보강 서비스](https://business.adobe.com/products/magento/magento-commerce.html)를 사용하여 다음에 대한 보고서를 포함할 수 있습니다.
 
 * 주/지역, 연령, 성별 고유 고객.
 

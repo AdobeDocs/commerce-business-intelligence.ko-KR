@@ -5,24 +5,15 @@ exl-id: 62666d08-5240-4f19-bf8e-e5b2d79a25c4
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
 TQID: https://experienceleague.adobe.com/AM-l7yCwm00r5uqmqD-z34GN3rubycbTnWeTQ4oHI8k
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 849
-ht-degree: 0%
+source-wordcount: 866
+ht-degree: 1%
 
 ---
 
@@ -63,9 +54,9 @@ ht-degree: 0%
 
 | **제품 이름** | **순서 반복 확률** | **평균 수명 주문 수** | **평균 라이프타임 수익** | **다음 순서 평균 시간** |
 |-----|-----|-----|-----|-----|
-| 단일 컵 커피 양조기 | 94.98% | 7.92 | US$549.82 | 57.01일 |
-| 커피 캡슐 | 93.82% | 8.68 | US$479.98 | 63.48일 |
-| 커피콩 | 41.92% | 6.07 | US$99.82 | 27.31일 |
+| 단일 컵 커피 양조기 | 94.98% | 7.92 | $549.82 | 57.01일 |
+| 커피 캡슐 | 93.82% | 8.68 | $479.98 | 63.48일 |
+| 커피콩 | 41.92% | 6.07 | $99.82 | 27.31일 |
 
 {style="table-layout:auto"}
 
@@ -97,4 +88,4 @@ ht-degree: 0%
 
 이탈이 발생하는 이유를 확인했으면 분석을 사용하여 `reactivation` 캠페인을 빌드할 수 있습니다. 이 데이터를 사용하여 비활성 상태가 된 사용자, 마지막 방문 이후 경과 시간, 마지막 구매 내역 등을 식별할 수 있습니다. 이를 통해 고객이 다시 돌아오도록 유도하는 실행 가능한 결정을 내릴 수 있습니다.
 
-분석에 도움이 필요하면 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하세요.
+분석에 도움이 필요하면 [지원팀에 문의](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)하세요.

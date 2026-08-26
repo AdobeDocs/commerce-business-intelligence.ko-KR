@@ -5,25 +5,14 @@ exl-id: db99f817-2a2e-4194-9dd2-ec2d6b27a118
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 TQID: https://experienceleague.adobe.com/mZ8R2vPyFy8pGpYi4KhqocVnP-OlgMPGU3KJ4C9vsTo
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 322
+source-wordcount: 339
 ht-degree: 0%
 
 ---
@@ -38,9 +27,9 @@ ht-degree: 0%
 
 조사를 했고, 광고를 만들었으며, [!DNL Google] 캠페인을 시작했습니다. 이제 광고 지출 데이터를 분석하고 비용이 효과적으로 지출되고 있는지 확인할 차례입니다. 광고 지출 데이터를 사용하여 [광고 비용과 캠페인에서 획득한 사용자의 CLV(고객 생애 가치)를 합산하여 캠페인 ROI를 측정할 수 있습니다](../../analysis/roi-ad-camp.md).
 
-[!DNL Google Adwords]에 [!DNL Commerce Intelligence] 자격 증명을 입력하여 시작하십시오.
+[!DNL Commerce Intelligence]에 [!DNL Google Adwords] 자격 증명을 입력하여 시작하십시오.
 
-1. `Connections`데이터 관리 > 통합&#x200B;**아래의** 페이지로 이동합니다.
+1. **데이터 관리 > 통합** 아래의 `Connections` 페이지로 이동합니다.
 1. 화면 오른쪽 상단에 있는 **통합 추가**&#x200B;를 클릭합니다.
 1. **[!DNL Google Adwords]** 아이콘을 클릭합니다. [!DNL Google Adwords] 자격 증명 페이지가 열립니다.
 1. [!DNL Google Analytics] 자격 증명을 입력하십시오. 인증 프로세스가 완료되면 다시 [!DNL Commerce Intelligence]&#x200B;(으)로 리디렉션됩니다.
@@ -67,14 +56,14 @@ ht-degree: 0%
 ## [!DNL Google Adwords] 연결 끊기
 
 1. [!DNL Google] [계정 설정](https://www.google.com/account/about/?hl=en) 페이지를 방문하세요.
-1. `Security` 섹션에서 **[!UICONTROL edit]**&#x200B;개의 응용 프로그램 및 사이트 옆에 있는 `Authorizing`을(를) 클릭합니다.
+1. `Security` 섹션에서 `Authorizing`개의 응용 프로그램 및 사이트 옆에 있는 **[!UICONTROL edit]**&#x200B;을(를) 클릭합니다.
 1. **[!UICONTROL revoke access]**&#x200B;을(를) 클릭합니다.
 
 ## 관련 항목
 
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
-* [&#x200B; [!DNL Google ECommerce]을(를) 통해 주문 참조 원본 추적](../integrations/google-ecommerce.md)
+* [통합 재인증](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [ [!DNL Google ECommerce]을(를) 통해 주문 참조 원본 추적](../integrations/google-ecommerce.md)
 * [데이터베이스에서 사용자 조회 소스 추적](../../analysis/google-track-user-acq.md)
 * [가장 가치 있는 확보 소스 및 채널 살펴보기](../../analysis/most-value-source-channel.md)
 * [광고 캠페인에 대한 ROI 향상](../../analysis/roi-ad-camp.md)
-* [&#x200B; [!DNL Google Analytics] UTM 속성은 어떻게 작동합니까?](../../analysis/utm-attributes.md)
+* [ [!DNL Google Analytics] UTM 속성은 어떻게 작동합니까?](../../analysis/utm-attributes.md)

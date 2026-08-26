@@ -1,27 +1,18 @@
 ---
 title: Report Builder 선택
-description: Report Builder를 선택하는 방법을 알아봅니다.
+description: Commerce Intelligence에서 사용할 수 있는 보고서 빌더를 비교하고 시각적 빌더에서 SQL 기반 옵션에 이르기까지 보고 요구에 맞는 보고서 빌더를 알아봅니다.
 exl-id: ec4204ef-975e-45c3-b09e-fb97ffc2c497
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
 TQID: https://experienceleague.adobe.com/xXSDN9dKTWp8SdeZHBmDYZhnNbxn8F-D6UvKa4qJlCI
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 644
+source-wordcount: 724
 ht-degree: 0%
 
 ---
@@ -29,13 +20,13 @@ ht-degree: 0%
 # Report Builder 선택
 
 >[!NOTE]
->&#x200B;>[관리자 권한](../../administrator/user-management/user-management.md)이 필요합니다.
+>>[관리자 권한](../../administrator/user-management/user-management.md)이 필요합니다.
 
 이제 분석을 만드는 데 사용할 수 있는 옵션이 더 많으므로 필요에 맞는 Report Builder의 기능을 정확히 아는 것이 어려울 수 있습니다. 이 항목에서는 분석을 작성하는 가장 좋은 방법을 선택하는 과정을 안내합니다.
 
 ## [!DNL SQL Report Builder]은(는) 언제 사용해야 합니까? {#whensql}
 
-[!DNL SQL Report Builder]에서 [!DNL traditional Report Builder]을(를) 사용하는 일반적인 이유 중 일부를 살펴보십시오.
+[!DNL traditional Report Builder]에서 [!DNL SQL Report Builder]을(를) 사용하는 일반적인 이유 중 일부를 살펴보십시오.
 
 ### [!DNL SQL]별 함수를 사용하려는 경우...
 
@@ -80,7 +71,7 @@ ht-degree: 0%
 
 ### 다른 사용자와 작업을 공유하는 경우...
 
-조직 전체의 사용자가 이 분석을 사용/보고 있습니까? 작업을 누구와 공유하는지에 따라 시각적 Report Builder을 사용하는 것이 더 나을 수 있습니다. 사용자는 잠재적으로 긴 [!DNL Visual Report Builder] 쿼리를 읽는 대신 [!DNL SQL]의 정의를 빠르게 볼 수 있습니다.
+조직 전체의 사용자가 이 분석을 사용/보고 있습니까? 작업을 누구와 공유하는지에 따라 시각적 Report Builder을 사용하는 것이 더 나을 수 있습니다. 사용자는 잠재적으로 긴 [!DNL SQL] 쿼리를 읽는 대신 [!DNL Visual Report Builder]의 정의를 빠르게 볼 수 있습니다.
 
 보고서가 필요하지만 [!DNL SQL]에 익숙하지 않은 사람이 있다면 Adobe에서 Report Builder의 원래 맛을 사용할 것을 제안합니다. 그것은 그들에게 일을 더 쉽게 만듭니다.
 

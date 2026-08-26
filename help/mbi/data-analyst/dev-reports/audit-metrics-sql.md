@@ -5,24 +5,14 @@ exl-id: d1d9e099-4138-43e6-aaec-6f15ebc5c4d4
 role: Admin, Developer, User
 feature: Reports, Data Warehouse Manager, SQL Report Builder
 TQID: https://experienceleague.adobe.com/7Yx7Kpir-xjz5TPuajN7CFsLjWAbY0AT3bKtBabA5Wk
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 507
+source-wordcount: 521
 ht-degree: 0%
 
 ---
@@ -33,7 +23,7 @@ ht-degree: 0%
 
 ## 지표 쿼리
 
-시작하려면 [!DNL SQL Report Builder]&#x200B;(으)로 이동하여 **[!UICONTROL Report Builder > SQL Report Builder > Create Report]**&#x200B;을(를) 엽니다. [!DNL SQL] 편집기의 사이드바를 사용하여 지표 위로 마우스를 이동하고 **[!UICONTROL Insert]**&#x200B;을(를) 클릭하여 지표를 쿼리에 직접 삽입할 수 있습니다. 이렇게 하면 해당 지표의 쿼리 정의가 편집기에 추가됩니다. 정의에는 다음 구성 요소가 포함됩니다.
+시작하려면 **[!UICONTROL Report Builder > SQL Report Builder > Create Report]**(으)로 이동하여 [!DNL SQL Report Builder]을(를) 엽니다. [!DNL SQL] 편집기의 사이드바를 사용하여 지표 위로 마우스를 이동하고 **[!UICONTROL Insert]**&#x200B;을(를) 클릭하여 지표를 쿼리에 직접 삽입할 수 있습니다. 이렇게 하면 해당 지표의 쿼리 정의가 편집기에 추가됩니다. 정의에는 다음 구성 요소가 포함됩니다.
 
 - 수행 중인 **지표 작업**&#x200B;은(는) 아래 예에서 `SUM()`(으)로 표시됩니다.
 - 지표가 빌드된 **table on**&#x200B;은(는) `FROM` 절로 표시됩니다.
@@ -64,4 +54,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->데이터를 감사한 후 불일치가 발견되면 [지원 센터에 문의: 데이터 불일치](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html?lang=ko) 지원 항목에서 다음에 수행할 작업에 대한 자세한 내용을 확인하십시오.
+>데이터를 감사한 후 불일치가 발견되면 [지원 센터에 문의: 데이터 불일치](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies) 지원 항목에서 다음에 수행할 작업에 대한 자세한 내용을 확인하십시오.
