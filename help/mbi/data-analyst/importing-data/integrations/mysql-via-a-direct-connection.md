@@ -82,4 +82,4 @@ ht-degree: 0%
 
 ## 관련 설명서
 
-* [통합 재인증](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [통합 재인증](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
