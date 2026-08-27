@@ -1,6 +1,6 @@
 ---
 title: 분석을 위해 데이터베이스 최적화
-description: 분석을 위해 데이터베이스를 최적화하는 방법을 알아봅니다.
+description: Commerce Intelligence에서 사용할 운영 데이터베이스를 최적화합니다. 새 소스를 작성하거나 수정하지 않고 이미 존재하는 중요한 데이터의 잠금을 해제합니다.
 exl-id: e73e1a1e-c933-476d-97bc-bd8f52bb2fa1
 role: Admin, Developer, User
 feature: Business Performance, Data Integration, Data Import/Export, Data Warehouse Manager
@@ -21,9 +21,9 @@ level_v2:
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 864
+source-wordcount: 885
 ht-degree: 0%
 
 ---

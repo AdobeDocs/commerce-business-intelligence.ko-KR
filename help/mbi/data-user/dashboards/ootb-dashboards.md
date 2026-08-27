@@ -21,9 +21,9 @@ level_v2:
 topic_v2:
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 956
+source-wordcount: 974
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
 >
 >일부 대시보드의 사용 가능 여부는 데이터 세트에 따라 다릅니다.
 
-질문이 있거나 패키지를 계정에 추가하려면 [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)을 제출하여 도움을 받으십시오.
+질문이 있거나 패키지를 계정에 추가하려면 [지원 티켓](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)을 제출하여 도움을 받으십시오.
 
 ## 경영진 개요
 

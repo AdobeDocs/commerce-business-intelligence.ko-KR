@@ -1,6 +1,6 @@
 ---
 title: 보고서 사용
-description: 보고서 데이터를 사용하는 방법을 알아봅니다.
+description: Commerce Intelligence 보고서를 사용하여 작년의 월별 수익 추적부터 캠페인 획득 비용 측정까지 비즈니스 질문에 답변할 수 있습니다.
 exl-id: 94d4db27-0e06-4066-9c03-036b109d2d9b
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 995
+source-wordcount: 1012
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ ht-degree: 0%
 
 위에 요약된 기본 데이터 열 외에도 다음을 포함하여 이 분석을 활성화하려면 계산된 데이터 필드 세트가 필요합니다.
 
-* 특정 사용자의 `Customer's first purchase date`을(를) 반환하는 `MIN(order.created_at`
+* 특정 사용자의 `MIN(order.created_at`을(를) 반환하는 `Customer's first purchase date`
 
 그런 다음 를 만드는 데 사용됩니다.
 
@@ -91,13 +91,13 @@ ht-degree: 0%
 여기에서 다음 계산을 수행합니다.
 
 
-_[등록 및 구매한 총 고객 수`Time between a customer's registration date and first purchase date`] / [의 합계]_
+_[등록 및 구매한 총 고객 수]_ / `Time between a customer's registration date and first purchase date`&rbrack;의 합계&lbrack;
 
-고객의 등록 날짜에 따라 시간 경과나 추세를 통해 이 계산을 표시하려고 합니다. [에서 &#x200B;](../../data-user/reports/ess-manage-data-metrics.md)이 지표를 만들기[!DNL Commerce Intelligence]하는 방법은 다음과 같습니다.
+고객의 등록 날짜에 따라 시간 경과나 추세를 통해 이 계산을 표시하려고 합니다. [!DNL Commerce Intelligence]에서 [이 지표를 만들기](../../data-user/reports/ess-manage-data-metrics.md)하는 방법은 다음과 같습니다.
 
 1. **[!UICONTROL Data]**(으)로 이동하여 `Metrics` 탭을 선택합니다.
 1. **[!UICONTROL Add New Metric]**&#x200B;을(를) 클릭하고 `user` 테이블(위에서 차원을 만든 위치)을 선택합니다.
-1. 드롭다운에서 `Average` 열로 정렬된 `Time between a customer's registration date and first purchase date` 테이블의 `user` 열에 있는 `Customer's registration date`을(를) 선택합니다.
+1. 드롭다운에서 `Customer's registration date` 열로 정렬된 `user` 테이블의 `Time between a customer's registration date and first purchase date` 열에 있는 `Average`을(를) 선택합니다.
 1. 관련 필터 또는 필터 세트를 추가합니다.
 
 이제 이 지표가 준비되었습니다.

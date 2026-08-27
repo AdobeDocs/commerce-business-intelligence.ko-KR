@@ -17,9 +17,9 @@ product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
-source-git-commit: b51e9fceba0c62f4ef3dde340d26cd78641ef3a2
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 1130
+source-wordcount: 1131
 ht-degree: 0%
 
 ---
@@ -124,4 +124,4 @@ Adobe에서 마이그레이션이 완료되었다는 알림을 받은 후:
 * [SSH 터널을 통해 MySQL 연결](mysql-via-ssh-tunnel.md)
 * [SSH 터널을 통해 MongoDB 연결](mongodb-via-ssh-tunnel.md)
 * [SSH 터널을 통해 PostgreSQL 연결](postgresql.md)
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
+* [통합 재인증](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

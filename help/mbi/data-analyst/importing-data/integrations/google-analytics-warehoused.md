@@ -24,9 +24,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 489
+source-wordcount: 514
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 [!DNL Google Analytics] 광고 캠페인에서 조작 관점에서 수행할 수 있는 작업의 예를 살펴보십시오. 이름이 다른 4분기 광고 캠페인이 여러 개 있다고 가정해 봅시다. 캠페인은 특정 마케팅 이니셔티브의 결과였습니다. 웨어하우스된 데이터를 사용하여 해당 캠페인 이름을 찾고 4분기 이니셔티브 이름 `Operation Dumbo`을(를) 반환하는 열을 만들 수 있습니다.
 
-결합 측면을 사용하면 분석을 수행하기 위해 [!DNL Google Analytics] 데이터를 다른 데이터에 결합할 수 있습니다. 예를 들어, `Total Time On Site By Ad Campaign`의 [!DNL Google Analytics] 데이터를 가져와서 `Total Spent Per Campaign`의 [!DNL Facebook Ads] 데이터와 함께 참여하면 참여로 인해 비용이 얼마나 많이 소요되는지 전체적으로 파악할 수 있습니다.
+결합 측면을 사용하면 분석을 수행하기 위해 [!DNL Google Analytics] 데이터를 다른 데이터에 결합할 수 있습니다. 예를 들어, [!DNL Google Analytics]의 `Total Time On Site By Ad Campaign` 데이터를 가져와서 [!DNL Facebook Ads]의 `Total Spent Per Campaign` 데이터와 함께 참여하면 참여로 인해 비용이 얼마나 많이 소요되는지 전체적으로 파악할 수 있습니다.
 
 반면에 [!DNL Google Analytics Live] 통합을 사용하면 모든 [!DNL Google Analytics] 차트는 Data Warehouse에 저장되지 않은 작은 사일로와 같습니다.
 
@@ -55,9 +55,9 @@ ht-degree: 0%
 
 >[!INFO]
 >
->[!DNL Google Analytics Warehoused]은(는) `Premium` 통합입니다. 이 통합을 구독에 추가하려면 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하세요.
+>[!DNL Google Analytics Warehoused]은(는) `Premium` 통합입니다. 이 통합을 구독에 추가하려면 [지원팀에 문의](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)하세요.
 
-1. `Connections` 아래의 **[!UICONTROL Admin** > **Integrations]** 페이지로 이동합니다.
+1. **[!UICONTROL Admin** > **Integrations]** 아래의 `Connections` 페이지로 이동합니다.
 1. 오른쪽에 있는 **[!UICONTROL Add an Integration]**&#x200B;을(를) 클릭합니다.
 1. [!DNL Google Analytics Warehoused] 아이콘을 클릭합니다. [!DNL Google Analytics] 자격 증명 페이지가 열립니다.
 1. [!DNL Google Analytics] 자격 증명을 입력하십시오. 인증 프로세스가 완료되면 다시 [!DNL Commerce Intelligence]&#x200B;(으)로 리디렉션됩니다.
@@ -75,15 +75,15 @@ ht-degree: 0%
 
    `www.google.com/analytics/web/#home/a11345062w43527078p**XXXXXXXX**/`
 
-## [!DNL Google Analytics Warehoused]에서 [!DNL Commerce Intelligence]의 연결을 끊는 중 {#disconnect}
+## [!DNL Commerce Intelligence]에서 [!DNL Google Analytics Warehoused]의 연결을 끊는 중 {#disconnect}
 
 1. [!DNL Google Analytics] [계정 설정](https://myaccount.google.com/intro) 페이지를 방문하세요.
-1. `Security` 섹션 아래에서 **[!UICONTROL edit]**&#x200B;개의 응용 프로그램 및 사이트 옆에 있는 `Authorizing`을(를) 클릭합니다.
-1. **[!UICONTROL revoke access]** 옆에 있는 [!DNL Commerce Intelligence]을(를) 클릭합니다.
+1. `Security` 섹션 아래에서 `Authorizing`개의 응용 프로그램 및 사이트 옆에 있는 **[!UICONTROL edit]**&#x200B;을(를) 클릭합니다.
+1. [!DNL Commerce Intelligence] 옆에 있는 **[!UICONTROL revoke access]**&#x200B;을(를) 클릭합니다.
 
 ## 관련 설명서
 
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
+* [통합 재인증](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
 * [&#x200B; [!DNL Google Adwords] 연결 중](../integrations/google-adwords.md)
 * [웹 사이트 활동 및 고객 전환율 분석](../../analysis/web-act-cust-conversion.md)
 * [&#x200B; [!DNL Google Analytics] 쿠키를 사용하여 사용자 획득 데이터 추적](../../analysis/google-track-user-acq.md)

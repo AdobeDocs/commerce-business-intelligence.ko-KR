@@ -1,6 +1,6 @@
 ---
 title: 견적 테이블
-description: Quote 표로 작업하는 방법을 알아봅니다.
+description: 모든 장바구니를 추적하는 Commerce Intelligence의 견적 테이블 스키마를 검토하십시오. 시간 경과에 따른 테이블 크기 관리를 위한 Adobe의 권장 사항에 대해 알아봅니다.
 exl-id: 3a1e9239-33a7-429e-bfc8-628c68701710
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
@@ -22,9 +22,9 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 612
+source-wordcount: 627
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 0%
 | `is_active` | 고객이 장바구니를 만들고 아직 주문으로 전환하지 않은 경우 &quot;1&quot;을 반환하는 부울 필드. 변환된 장바구니 또는 관리자를 통해 만든 장바구니에 대해 &quot;0&quot;을 반환합니다. |
 | `items_qty` | 장바구니에 포함된 모든 항목의 총 수량 합계 |
 | `reserved_order_id` | `Foreign key`이(가) `sales_order` 테이블에 연결되어 있습니다. `sales_order.increment_id`에 참여하여 전환된 장바구니와 연결된 주문 세부 정보를 확인합니다. 전환된 주문과 연결되어 있지 않은 장바구니의 경우 `reserved_order_id`은(는) `NULL` 상태로 유지됩니다. |
-| `store_id` | `Foreign key`이(가) `store` 테이블에 연결되어 있습니다. `store`에 참가합니다.장바구니와 연결된 Commerce 스토어 보기를 확인하는 `store_id` |
+| `store_id` | `Foreign key`이(가) `store` 테이블에 연결되어 있습니다. `store`.`store_id`에 참여 장바구니와 연결된 Commerce 스토어 보기를 확인하려면 |
 
 {style="table-layout:auto"}
 
@@ -59,10 +59,10 @@ ht-degree: 0%
 
 | **열 이름** | **설명** |
 |---|---|
-| `Order date` | 전환된 장바구니의 주문 생성 날짜를 반영하는 타임스탬프. `quote.reserved_order_id`에 `sales_order.increment_id`을(를) 조인하고 `sales_order.created_at` 필드를 반환하여 계산됨 |
-| `Seconds between cart creation and order` | 장바구니 생성과 주문 생성 사이의 경과 시간. `created_at`에서 `Order date`을(를) 빼서 계산했으며 정수로 반환됩니다. |
+| `Order date` | 전환된 장바구니의 주문 생성 날짜를 반영하는 타임스탬프. `sales_order.increment_id`에 `quote.reserved_order_id`을(를) 조인하고 `sales_order.created_at` 필드를 반환하여 계산됨 |
+| `Seconds between cart creation and order` | 장바구니 생성과 주문 생성 사이의 경과 시간. `Order date`에서 `created_at`을(를) 빼서 계산했으며 정수로 반환됩니다. |
 | `Seconds since cart creation` | 장바구니 생성일과 현재 사이의 경과 시간. 쿼리가 실행될 때 서버 타임스탬프에서 `created_at`을(를) 빼서 계산되며, 정수로 반환됩니다. 장바구니 나이를 식별하는 데 가장 일반적으로 사용됨 |
-| `Store name` | 이 주문과 연계된 Commerce 스토어 이름. `quote.store_id`에 `store.store_id`을(를) 조인하고 `name` 필드를 반환하여 계산됨 |
+| `Store name` | 이 주문과 연계된 Commerce 스토어 이름. `store.store_id`에 `quote.store_id`을(를) 조인하고 `name` 필드를 반환하여 계산됨 |
 
 {style="table-layout:auto"}
 
@@ -81,14 +81,14 @@ ht-degree: 0%
 `customer_entity`
 
 * `customer_entity` 테이블에 연결하여 장바구니를 만든 고객과 연결된 새 고객 수준 열을 만드십시오.
-   * 경로: `quote.customer_id`(많음) => `customer_entity.entity_id`(하나)
+  * 경로: `quote.customer_id`(많음) => `customer_entity.entity_id`(하나)
 
 `sales_order`
 
 * `sales_order` 테이블에 연결하여 전환된 장바구니와 연결된 주문 세부 정보를 반환하는 열을 만드십시오.
-   * 경로:`quote.reserved_order_id`(많음) => `sales_order.increment_id`(하나)
+  * 경로:`quote.reserved_order_id`(많음) => `sales_order.increment_id`(하나)
 
 `store`
 
 * `store` 테이블에 연결하여 장바구니와 연결된 Commerce 스토어와 관련된 세부 정보를 반환하는 열을 만듭니다.
-   * 경로: `quote.store_id`(많음) => `store.store_id`(하나)
+  * 경로: `quote.store_id`(많음) => `store.store_id`(하나)

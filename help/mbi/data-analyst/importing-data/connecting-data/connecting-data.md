@@ -23,9 +23,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 628
+source-wordcount: 627
 ht-degree: 0%
 
 ---
@@ -89,11 +89,11 @@ API를 사용하려면 약간의 기술 전문 지식이 필요합니다. 작은
 * [테이블 통합](../../../best-practices/consolidating-your-tables.md)
 * [데이터베이스에 대한 액세스 제한](../../../administrator/account-management/restrict-db-access.md)
 
-**원하는 통합이 표시되지 않습니까?** 일부 통합을 활성화해야 계정에 볼 수 있습니다. [!DNL Facebook]과(와) 같은 항목을 찾고 있지만 나열되지 않은 경우 [지원 티켓을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하십시오.
+**원하는 통합이 표시되지 않습니까?** 일부 통합을 활성화해야 계정에 볼 수 있습니다. [!DNL Facebook]과(와) 같은 항목을 찾고 있지만 나열되지 않은 경우 [지원 티켓을 제출](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)하십시오.
 
 **통합에 대한 오류 상태가 표시되면** [문제 해결 섹션](https://support.magento.com/hc/en-us/sections/360003078151)에서 도움말을 확인하세요.
 
 ## 업데이트 상태 모니터링(선택 사항)
 
-소스를 연결한 후 기본 상태 검사를 자동화하여 전체 업데이트가 완료되고 있는지 확인할 수 있습니다. 개발자 설명서에서 [업데이트 주기 상태 API](https://developer.adobe.com/commerce/services/reporting/update-cycle-status-api/)를 사용하여 클라이언트에 대해 가장 최근에 완료된 업데이트 주기를 가져와서 내부 대시보드 또는 경고에 표시합니다.
+소스를 연결한 후 기본 상태 검사를 자동화하여 전체 업데이트가 완료되고 있는지 확인할 수 있습니다. 개발자 설명서에서 [업데이트 주기 상태 API](https://developer.adobe.com/commerce/services/reporting/update-cycle/)를 사용하여 클라이언트에 대해 가장 최근에 완료된 업데이트 주기를 가져와서 내부 대시보드 또는 경고에 표시합니다.
 

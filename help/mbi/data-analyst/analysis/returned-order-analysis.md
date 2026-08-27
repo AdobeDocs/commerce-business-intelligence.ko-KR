@@ -19,10 +19,10 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 434
-ht-degree: 0%
+source-wordcount: 601
+ht-degree: 25%
 
 ---
 
@@ -61,12 +61,12 @@ ht-degree: 0%
 * **`enterprise_rma`** 테이블
 * 필터 집합 이름: `Returns we count`
 * 필터 집합 논리:
-   * 자리 표시자 - 여기에 사용자 지정 논리 입력
+  * 자리 표시자 - 여기에 사용자 지정 논리 입력
 
 * **`enterprise_rma_item_entity`** 테이블
 * 필터 집합 이름: `Returns items we count`
 * 필터 집합 논리:
-   * 자리 표시자 - 여기에 사용자 지정 논리 입력
+  * 자리 표시자 - 여기에 사용자 지정 논리 입력
 
 ### 계산된 열
 
@@ -77,45 +77,45 @@ ht-degree: 0%
 * 정의 선택: `Joined Column`
 * [!UICONTROL Create Path]:
 * &#x200B;
-  [!UICONTROL Many]: `enterprise_rma.order_id`
+  [!UICONTROL Many]&#x200B;: `enterprise_rma.order_id`
 * &#x200B;
-  [!UICONTROL One]: `sales_flat_order.entity_id`
+  [!UICONTROL One]&#x200B;: `sales_flat_order.entity_id`
 
 * [!UICONTROL table] 선택: `sales_flat_order`
 * [!UICONTROL column] 선택: `created_at`
-   * `enterprise_rma.order_id = sales_flat_order.entity_id`
+  * `enterprise_rma.order_id = sales_flat_order.entity_id`
 
 * **`Customer's order number`**
 * 정의 선택: `Joined Column`
 * [!UICONTROL table] 선택: `sales_flat_order`
 * [!UICONTROL column] 선택: `Customer's order number`
-   * `enterprise_rma.order_id = sales_flat_order.entity_id`
+  * `enterprise_rma.order_id = sales_flat_order.entity_id`
 
-* 분석가가 **`Time between order's created_at and date_requested`** 티켓의 일부로 `[RETURNS ANALYSIS]`을(를) 만들었습니다.
+* 분석가가 `[RETURNS ANALYSIS]` 티켓의 일부로 **`Time between order's created_at and date_requested`**&#x200B;을(를) 만들었습니다.
 
 * **`enterprise_rma_item_entity`** 테이블
 * **`return_date_requested`**
 * 정의 선택: `Joined Column`
 * [!UICONTROL Create Path]:
-   * &#x200B;
-     [!UICONTROL Many]: `enterprise_rma_item_entity.rma_entity_id`
-   * &#x200B;
-     [!UICONTROL One]: `enterprise_rma.entity_id`
+  * &#x200B;
+    [!UICONTROL Many]&#x200B;: `enterprise_rma_item_entity.rma_entity_id`
+  * &#x200B;
+    [!UICONTROL One]&#x200B;: `enterprise_rma.entity_id`
 
 * [!UICONTROL table] 선택: `enterprise_rma`
 * [!UICONTROL column] 선택: `date_requested`
-   * `enterprise_rma_item_entity.rma_entity_id = enterprise_rma.entity_id`
+  * `enterprise_rma_item_entity.rma_entity_id = enterprise_rma.entity_id`
 
-* 분석가가 **`Return item total value (qty_returned * price)`** 티켓의 일부로 `[RETURNS ANALYSIS]`을(를) 만들었습니다.
+* 분석가가 `[RETURNS ANALYSIS]` 티켓의 일부로 **`Return item total value (qty_returned * price)`**&#x200B;을(를) 만들었습니다.
 
 * **`sales_flat_order`** 테이블
 * **`Order contains a return? (1=yes/0=No)`**
 * 정의 선택: `Exists`
 * [!UICONTROL table] 선택: `enterprise_rma`
-   * `enterprise_rma.order_id = sales_flat_order.entity_id`
+  * `enterprise_rma.order_id = sales_flat_order.entity_id`
 
-* 분석가가 **`Customer's previous order number`** 티켓의 일부로 `[RETURNS ANALYSIS]`을(를) 만들었습니다.
-* 분석가가 **`Customer's previous order contains return? (1=yes/0=no)`** 티켓의 일부로 `[RETURNS ANALYSIS]`을(를) 만들었습니다.
+* 분석가가 `[RETURNS ANALYSIS]` 티켓의 일부로 **`Customer's previous order number`**&#x200B;을(를) 만들었습니다.
+* 분석가가 `[RETURNS ANALYSIS]` 티켓의 일부로 **`Customer's previous order contains return? (1=yes/0=no)`**&#x200B;을(를) 만들었습니다.
 
 >[!NOTE]
 >
@@ -128,28 +128,28 @@ ht-degree: 0%
 * 이 지표는 **Count**&#x200B;을 수행합니다.
 * **`entity_id`** 열에서
 * **`date_requested`**&#x200B;이(가) 정렬함
-* [!UICONTROL Filter]: `Returns we count`
+* [!UICONTROL Filter]&#x200B;: `Returns we count`
 
 * **반환된 항목**
 * **`enterprise_rma_item_entity`** 테이블에서
 * 이 지표는 **합계**&#x200B;를 수행합니다.
 * **`qty_approved`** 열에서
 * **`return date_requested`**&#x200B;이(가) 정렬함
-* [!UICONTROL Filter]: `Returns we count`
+* [!UICONTROL Filter]&#x200B;: `Returns we count`
 
 * **반환된 항목 합계 값**
 * **`enterprise_rma_item_entity`** 테이블에서
 * 이 지표는 **합계**&#x200B;를 수행합니다.
 * **`Returned item total value (qty_returned * price)`** 열에서
 * **`return date_requested`**&#x200B;이(가) 정렬함
-* [!UICONTROL Filter]: `Returns we count`
+* [!UICONTROL Filter]&#x200B;: `Returns we count`
 
 * **주문과 반환 사이의 평균 시간**
 * **`enterprise_rma`** 테이블에서
 * 이 지표는 **평균**&#x200B;을 수행합니다.
 * **`Time between order's created_at and date_requested`** 열에서
 * **`date_requested`**&#x200B;이(가) 정렬함
-* [!UICONTROL Filter]: `Returns we count`
+* [!UICONTROL Filter]&#x200B;: `Returns we count`
 
 >[!NOTE]
 >
@@ -159,102 +159,102 @@ ht-degree: 0%
 
 * **반환 후 순서 반복 확률**
 * 지표 `A`: `Number of orders with returns`
-* [!UICONTROL Metric]: `Number of orders`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
 * [!UICONTROL Filter]:
-   * `Order contains a return? (1=yes/0=No) = 1`
-   * `Is in current month? = No`
+  * `Order contains a return? (1=yes/0=No) = 1`
+  * `Is in current month? = No`
 
 * 지표 `B`: `Non-last orders with returns`
-* [!UICONTROL Metric]: `Number of orders`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
 * [!UICONTROL Filter]:
-   * `Is customer's last order? (1=yes/0=no) = 0`
-   * `Order contains a return? (1=yes/0=No) = 1`
+  * `Is customer's last order? (1=yes/0=no) = 0`
+  * `Order contains a return? (1=yes/0=No) = 1`
 
 * 공식: 반복 주문 확률
-* [!UICONTROL Formula]: `B / A`
+* [!UICONTROL Formula]&#x200B;: `B / A`
 * &#x200B;
-  [!UICONTROL Format]: `Percentage`
+  [!UICONTROL Format]&#x200B;: `Percentage`
 
-* [!UICONTROL Time period]: `All time`
+* [!UICONTROL Time period]&#x200B;: `All time`
 * &#x200B;
-  [!UICONTROL 간격]: `None`
-* [!UICONTROL Group by]: `Customer's order number`
+  [!UICONTROL 간격]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `Customer's order number`
 * &#x200B;
-  [!UICONTROL 차트 유형]: `Bar`
+  [!UICONTROL 차트 유형]&#x200B;: `Bar`
 
 * **평균 반환 시간(항상)**
 * 지표 `A`: `Avg time between order and return`
-* [!UICONTROL Metric]: `Avg time between order and return`
+* [!UICONTROL Metric]&#x200B;: `Avg time between order and return`
 
-* [!UICONTROL Time period]: `All time`
+* [!UICONTROL Time period]&#x200B;: `All time`
 * &#x200B;
-  [!UICONTROL 간격]: `None`
+  [!UICONTROL 간격]&#x200B;: `None`
 * &#x200B;
-  [!UICONTROL 차트 유형]: `Number`
+  [!UICONTROL 차트 유형]&#x200B;: `Number`
 
 * **반품이 있는 주문 비율**
 * 지표 `A`: `Number of orders`
-* [!UICONTROL Metric]: `Number of orders`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
 
 * 지표 `B`: `Orders w/ return`
-* [!UICONTROL Metric]: `Number of orders`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
 * [!UICONTROL Filter]:
-   * `Order contains a return? (1=yes/0=No) = 1`
+  * `Order contains a return? (1=yes/0=No) = 1`
 
 * 공식: 반품이 있는 주문의 %
-* [!UICONTROL Formula]: `B / A`
+* [!UICONTROL Formula]&#x200B;: `B / A`
 * &#x200B;
-  [!UICONTROL Format]: `Percentage`
+  [!UICONTROL Format]&#x200B;: `Percentage`
 
-* [!UICONTROL Time period]: `All time`
+* [!UICONTROL Time period]&#x200B;: `All time`
 * &#x200B;
-  [!UICONTROL 간격]: `None`
-* [!UICONTROL Chart Type]: `Number - % of orders with return`
+  [!UICONTROL 간격]&#x200B;: `None`
+* [!UICONTROL Chart Type]&#x200B;: `Number - % of orders with return`
 
 * **월별 수익**
 * 지표 `A`: `Returned item total value`
-* [!UICONTROL Metric]: `Returned item total value`
+* [!UICONTROL Metric]&#x200B;: `Returned item total value`
 
-* [!UICONTROL Time period]: `All time`
-* [!UICONTROL Interval]: `By month`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* [!UICONTROL Interval]&#x200B;: `By month`
 * &#x200B;
-  [!UICONTROL 차트 유형]: `Line`
+  [!UICONTROL 차트 유형]&#x200B;: `Line`
 
 * **반품을 했지만 다시 구매하지 않은 고객**
 * 지표 `A`: `Number of orders with returns`
-* [!UICONTROL Metric]: `Number of orders`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
 * [!UICONTROL Filter]:
-   * `Order contains a return? (1=yes/0=No) = 1`
-   * `Is customer's last order? (1=yes/0=no) = 1`
+  * `Order contains a return? (1=yes/0=No) = 1`
+  * `Is customer's last order? (1=yes/0=no) = 1`
 
-* [!UICONTROL Time period]: `All time`
+* [!UICONTROL Time period]&#x200B;: `All time`
 * &#x200B;
-  [!UICONTROL 간격]: `None`
+  [!UICONTROL 간격]&#x200B;: `None`
 * &#x200B;
-  [!UICONTROL 그룹 기준]: `Customer_email`
+  [!UICONTROL 그룹 기준]&#x200B;: `Customer_email`
 * &#x200B;
-  [!UICONTROL 차트 유형]: `Table`
+  [!UICONTROL 차트 유형]&#x200B;: `Table`
 
 * 항목별 **반환 비율**
 * 지표 `A`: `Returned items`(숨기기)
 * [!UICONTROL Metric]: 반환된 항목
 
 * 지표 `B`: `Items sold`(숨기기)
-* [!UICONTROL Metric]: `Number of orders`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
 * [!UICONTROL Filter]:
 
-* [!UICONTROL Formula]: `Return %`
-* [!UICONTROL Formula]: `B / A`
+* [!UICONTROL Formula]&#x200B;: `Return %`
+* [!UICONTROL Formula]&#x200B;: `B / A`
 * &#x200B;
-  [!UICONTROL Format]: `Percentage`
+  [!UICONTROL Format]&#x200B;: `Percentage`
 
-* [!UICONTROL Time period]: `All time`
+* [!UICONTROL Time period]&#x200B;: `All time`
 * &#x200B;
-  [!UICONTROL 간격]: `None`
-* [!UICONTROL Group by]: `product_sku AND/OR product_name`
+  [!UICONTROL 간격]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `product_sku AND/OR product_name`
 * &#x200B;
-  [!UICONTROL 차트 유형]: `Table`
+  [!UICONTROL 차트 유형]&#x200B;: `Table`
 
 모든 보고서를 컴파일한 후 원하는 대로 대시보드에서 구성할 수 있습니다. 결과는 위의 샘플 대시보드와 비슷할 수 있습니다.
 
-이 분석을 작성하는 동안 질문이 있거나 Professional Services 팀에 참여하려는 경우 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하십시오.
+이 분석을 작성하는 동안 질문이 있거나 Professional Services 팀에 참여하려는 경우 [지원팀에 문의](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)하십시오.

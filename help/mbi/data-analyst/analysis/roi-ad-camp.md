@@ -20,9 +20,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 1253
+source-wordcount: 1265
 ht-degree: 0%
 
 ---
@@ -34,9 +34,9 @@ ht-degree: 0%
 ## 사전 요구 사항
 
 * 광고 비용 데이터 가져오기:
-   * [연결 [!DNL Google AdWords] 대상 [!DNL Commerce Intelligence]](../importing-data/integrations/google-adwords.md): [!DNL Adwords]에서 보낸 시간을 [!DNL Commerce Intelligence]에서 동기화합니다.
-   * [다른 광고 비용 데이터 업로드](../importing-data/connecting-data/import-offline-ad-data.md): [!DNL Commerce Intelligence]에 대한 직접 커넥터가 없는 채널에 권장됩니다.
-   * 여러 소스에서 비용 데이터를 가져오는 경우 [의 데이터를 &#x200B;](../../best-practices/consolidating-your-tables.md)통합[!DNL Commerce Intelligence]할 수 있습니다. 간단히 [지원 티켓을 제출](../../guide-overview.md#Submitting-a-Support-Ticket)하세요.
+  * [연결 [!DNL Google AdWords] 대상 [!DNL Commerce Intelligence]](../importing-data/integrations/google-adwords.md): [!DNL Adwords]에서 보낸 시간을 [!DNL Commerce Intelligence]에서 동기화합니다.
+  * [다른 광고 비용 데이터 업로드](../importing-data/connecting-data/import-offline-ad-data.md): [!DNL Commerce Intelligence]에 대한 직접 커넥터가 없는 채널에 권장됩니다.
+  * 여러 소스에서 비용 데이터를 가져오는 경우 [!DNL Commerce Intelligence]의 데이터를 [통합](../../best-practices/consolidating-your-tables.md)할 수 있습니다. 간단히 [지원 티켓을 제출](../../guide-overview.md#Submitting-a-Support-Ticket)하세요.
 * [사용자 획득 채널 데이터 추적](../analysis/google-track-user-acq.md)
 
 ## 사용자 확보 캠페인
@@ -59,9 +59,9 @@ ht-degree: 0%
 
 1. 시간에 따른 지출을 합산하는 [!UICONTROL Metric]을(를) 만듭니다.
 1. [!UICONTROL Data > Metrics]&#x200B;(으)로 이동
-1. `Add New Metric`을(를) 선택하고 [!DNL `Adwords...`] 비용 데이터를 기록하는 [!DNL AdWords] 테이블을 선택합니다.
+1. `Add New Metric`을(를) 선택하고 [!DNL AdWords] 비용 데이터를 기록하는 [!DNL `Adwords...`] 테이블을 선택합니다.
 1. 지표 편집기에서 지표에 이름을 지정하십시오(예: [!UICONTROL AdWord Cost]).
-1. 드롭다운을 사용하여 **열이 정렬한** 테이블(변경)의 `adCost` 열에서 [!DNL Adwords...]Sum`date`을(를) 수행합니다.
+1. 드롭다운을 사용하여 `date` 열이 정렬한 [!DNL Adwords...] 테이블(변경)의 `adCost` 열에서 **Sum**&#x200B;을(를) 수행합니다.
    새 지표를 추가한 후 ![성공 메시지](../../assets/success-add-new-metric.png)<!--="500" height="303"}-->
 1. 맨 위에 있는 `Back to Metric List`을(를) 클릭하고 대시보드로 이동합니다.
 
@@ -98,10 +98,10 @@ ht-degree: 0%
 
 1. 차트에 포커스를 둘 수 있도록 차트 옆에 있는 숨기기 아이콘을 클릭합니다
 1. 이제 `Add Formula`을(를) 사용하여 다음과 같이 이러한 지표를 결합합니다.
-1. [!UICONTROL ROI]: \[`(\[C\]-\[A\]/\[B\])/(\[A\]/\[B\])`\]이(가) `A`을(를) 나타내고, \[`Ad Cost by Campaigns`\]이(가) `B`을(를) 나타내고, \[`New users by campaigns`\] `C`을(를) 나타내는 경우 수식 `LTV by campaigns`을(를) 입력하십시오. (평균 사용자 LTV - 획득당 평균 비용) / (획득당 평균 비용)의 비율을 반환합니다.
+1. [!UICONTROL ROI]: \[`A`\]이(가) `Ad Cost by Campaigns`을(를) 나타내고, \[`B`\]이(가) `New users by campaigns`을(를) 나타내고, \[`C`\] `LTV by campaigns`을(를) 나타내는 경우 수식 `(\[C\]-\[A\]/\[B\])/(\[A\]/\[B\])`을(를) 입력하십시오. (평균 사용자 LTV - 획득당 평균 비용) / (획득당 평균 비용)의 비율을 반환합니다.
 1. [!UICONTROL Avg Return per User]: 수식 **\[`C`\]-(\[`A`\]/\[`B`\])**&#x200B;을(를) 입력하십시오. (평균 사용자 LTV) - (획득당 평균 비용)을 계산하여 사용자에 대한 평균 마진을 반환합니다.
 1. [!UICONTROL CPA]: 수식 **`\[A\]/\[B\]`**&#x200B;을(를) 입력하십시오. 획득당 실제 캠페인의 비용이 반환됩니다.
-1. [!DNL AdWords] 데이터에서 포함할 기타 잠재적인 지표는 특정 캠페인을 통해 만들어진 총 `Impressions`과(와) 함께 `adClicks` 및 [!DNL AdWords]&#x200B;(데이터 `number of orders`)의 합계를 포함합니다.
+1. [!DNL AdWords] 데이터에서 포함할 기타 잠재적인 지표는 특정 캠페인을 통해 만들어진 총 `number of orders`과(와) 함께 `Impressions` 및 `adClicks`(데이터 [!DNL AdWords])의 합계를 포함합니다.
 1. 사용자가 등록하거나 첫 구매를 한 후 30일 및 90일 후에 LTV에 기초하여 ROI를 계산하는 것이 또한 흥미로울 수 있다.
 
 1. 자유롭게 지표와 공식을 클릭하여 드래그하여 보고서의 열을 재정렬하십시오.
@@ -115,7 +115,7 @@ ht-degree: 0%
 >
 >이 예에서는 모든 캠페인 비용이 특정 제품 구매를 생성하는 데 독점적으로 사용되었다고 가정합니다. 모든 비용이 구매 생성에 사용되었다고 가정할 경우, 결과 ROI는 최악의 경우(구매당 최고 비용)를 차지합니다. 실제 ROI는 이 계산보다 더 높습니다. 예: 10명의 새 사용자와 10개의 구매를 생성한 캠페인에 $20를 지출했다고 가정할 때 구매당 실제 비용은 $1입니다. 모든 비용이 신규 사용자를 확보하는 데 들어갔다는 가정 하에 구매 당 비용은 $2이다.
 
-시작하기 전에 [지원 티켓을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하여 다음 차원을 라인 항목 테이블(`sales\_flat\_order\_item, order\_item`)에 연결합니다.
+시작하기 전에 [지원 티켓을 제출](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)하여 다음 차원을 라인 항목 테이블(`sales\_flat\_order\_item, order\_item`)에 연결합니다.
 
 * 주문 출처(사용자 레벨에서만 조회 출처를 추적하는 경우 사용자 출처에 가입)
 * 주문 캠페인(사용자 수준에서 추천 소스만 추적하는 경우 사용자의 캠페인에 참여)
@@ -126,7 +126,7 @@ ht-degree: 0%
 1. 대시보드에서 **[!UICONTROL Add Report > Create new report]**&#x200B;을(를) 클릭합니다.
 1. 라인 항목 수준에서 매출을 계산하는 `Revenue by items` 지표를 선택하십시오.
 1. [!UICONTROL Time period]을(를) `All-time`(으)로 설정하고 [!UICONTROL Interval]을(를) `None`(으)로 설정합니다.
-1. `Filter by` 탭에서 `product name 'IN'` 제품 `A`, 제품 `B`, 제품 `C`, ...&quot;을(를) 추가하고 쉼표로 구분된 캠페인으로 타깃팅된 모든 제품 이름을 포함합니다(예: `product name 'IN' yellow t-shirt`, `red t-shirt, blue t-shirt`)
+1. `Filter by` 탭에서 `product name 'IN'` 제품 `A`, 제품 `B`, 제품 `C` 추가...&quot; 캠페인으로 타깃팅된 모든 제품 이름을 쉼표로 구분하여 포함(예: `product name 'IN' yellow t-shirt`, `red t-shirt, blue t-shirt`)
 1. `Group by` 탭에서 `order's campaign` 또는 `order's utm\_campaign`을(를) `grouping` 필드로 추가하고 상자에서 **[!UICONTROL Add All]**&#x200B;을(를) 클릭합니다
 1. 이 보고서는 캠페인별 특정 제품의 매출을 보여줍니다
 
@@ -134,9 +134,9 @@ ht-degree: 0%
 
 1. 대시보드에서 **[!UICONTROL Add Report > Create new report]**&#x200B;을(를) 클릭합니다.
 1. 위의 특정 제품에 대한 캠페인 보고서의 지시에 따라 필터 및 그룹별로 `Revenue by items` 지표를 추가하고 지표의 스칼라 값 아래에서 **[!UICONTROL Hide]**&#x200B;을(를) 클릭합니다
-1. 이제 위의 [!DNL AdWords Cost] 섹션에서 탐색한 `Ad cost by campaigns` 보고서의 방향별로 필터 및 그룹 다음에 `User acquisition campaigns` 지표를 추가한 다음 지표의 스칼라 값 아래에서 **[!UICONTROL Hide]**&#x200B;을(를) 클릭합니다
+1. 이제 위의 `User acquisition campaigns` 섹션에서 탐색한 `Ad cost by campaigns` 보고서의 방향별로 필터 및 그룹 다음에 [!DNL AdWords Cost] 지표를 추가한 다음 지표의 스칼라 값 아래에서 **[!UICONTROL Hide]**&#x200B;을(를) 클릭합니다
 1. 이러한 지표를 사용하여 공식을 추가합니다.
-1. [!UICONTROL ROI]: `\[A\]/\[B\]`이(가) `\[A\]`을(를) 나타내고 `Revenue per campaign for specific product(s)`이(가) `\[B\]`을(를) 나타내는 경우 `Ad cost by campaigns` 수식을 입력하십시오. (특정 제품의 수입) / (캠페인 비용)의 비율을 반환합니다.
+1. [!UICONTROL ROI]: `\[A\]`이(가) `Revenue per campaign for specific product(s)`을(를) 나타내고 `\[B\]`이(가) `Ad cost by campaigns`을(를) 나타내는 경우 `\[A\]/\[B\]` 수식을 입력하십시오. (특정 제품의 수입) / (캠페인 비용)의 비율을 반환합니다.
 1. [!UICONTROL Return]: 수식 `\[A\]-\[B\]`을(를) 입력하십시오. (평균 사용자 LTV) - (획득당 평균 비용)을 계산하여 사용자에 대한 평균 마진을 반환합니다.
    1. (선택 사항) [!UICONTROL Revenue]: 캠페인당 특정 제품의 매출을 보려면 `Revenue by items` 지표를 숨기지 마십시오
    1. (선택 사항) [!UICONTROL Cost]: 캠페인 비용을 보려면 `AdWords Cost` 지표를 숨기지 마십시오

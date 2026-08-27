@@ -21,9 +21,9 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 261
+source-wordcount: 271
 ht-degree: 0%
 
 ---
@@ -40,15 +40,15 @@ ht-degree: 0%
 
 [!DNL Zendesk] 데이터 연결은 간단한 3단계 프로세스입니다.
 
-1. [&#x200B; [!DNL Zendesk] 에서  [!DNL Commerce Intelligence]자격 증명 페이지 열기](#stepone)
+1. [&#x200B; [!DNL Commerce Intelligence]에서  [!DNL Zendesk] 자격 증명 페이지 열기](#stepone)
 1. [&#x200B; [!DNL Zendesk] API 토큰 검색](#steptwo)
-1. [&#x200B; [!DNL Zendesk] 에  [!DNL Commerce Intelligence]로그인 정보 및 토큰 입력](#stepthree)
+1. [&#x200B; [!DNL Commerce Intelligence]에  [!DNL Zendesk] 로그인 정보 및 토큰 입력](#stepthree)
 
 이 프로세스를 완료하려면 두 개의 브라우저 창 또는 탭을 열어야 합니다. 하나는 [!DNL Commerce Intelligence]에 대한 것이고 다른 하나는 [!DNL Zendesk] 계정에 대한 것입니다.
 
-## [!DNL Zendesk]에서 [!DNL Commerce Intelligence] 자격 증명 페이지를 엽니다. {#stepone}
+## [!DNL Commerce Intelligence]에서 [!DNL Zendesk] 자격 증명 페이지를 엽니다. {#stepone}
 
-1. `Integrations`데이터 원본&#x200B;**[!UICONTROL Manage Data** > **&#x200B; > {통합&#x200B;**&#x200B;의 **0} 페이지로 이동합니다.]**
+1. **[!UICONTROL Manage Data** > **&#x200B;데이터 원본&#x200B;**> {통합]&#x200B;**&#x200B;의 &#x200B;** 0} 페이지로 이동합니다.`Integrations`
 1. 화면 오른쪽에 있는 **[!UICONTROL Add Integration]**&#x200B;을(를) 클릭합니다.
 1. [!DNL Zendesk] 아이콘을 클릭합니다. [!DNL Zendesk] 자격 증명 페이지가 열립니다.
 
@@ -62,13 +62,13 @@ ht-degree: 0%
 1. **[!UICONTROL Create]**&#x200B;을(를) 클릭합니다.
 1. API 토큰이 만들어집니다. 이 토큰을 복사하십시오. 다음 단계에서 사용됩니다.
 
-## [!DNL Zendesk]에 [!DNL Commerce Intelligence] 로그인 정보 및 API 토큰 입력 {#stepthree}
+## [!DNL Commerce Intelligence]에 [!DNL Zendesk] 로그인 정보 및 API 토큰 입력 {#stepthree}
 
-1. [!DNL Zendesk]의 [!DNL Zendesk] 자격 증명 페이지에 [!DNL Commerce Intelligence] 사이트 접두사 및 로그인 전자 메일을 입력하십시오.
+1. [!DNL Commerce Intelligence]의 [!DNL Zendesk] 자격 증명 페이지에 [!DNL Zendesk] 사이트 접두사 및 로그인 전자 메일을 입력하십시오.
 1. API 토큰을 입력합니다.
-1. **[!UICONTROL Save & Connect]**&#x200B;을(를) 클릭합니다. 연결이 성공하면 *연결이 성공합니다!* 메시지가 화면 맨 위에 표시됩니다.
+1. **[!UICONTROL Save & Connect]**&#x200B;을(를) 클릭합니다. 연결이 성공하면 *연결이 성공합니다!* 화면 맨 위에 메시지가 표시됩니다.
 
 ## 관련 항목:
 
 * [&#x200B; [!DNL Zendesk] 데이터가 필요합니다.](../integrations/exp-zendesk-data.md)
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
+* [통합 재인증](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

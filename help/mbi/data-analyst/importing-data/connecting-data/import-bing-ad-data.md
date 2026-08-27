@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 131
+source-wordcount: 151
 ht-degree: 0%
 
 ---
@@ -37,9 +37,9 @@ ht-degree: 0%
 
 ## [!DNL Bing Ads] 데이터 내보내기
 
-1. `Browser`의 [!DNL Bing Ads Editor] 창에서 내보낼 캠페인 또는 광고 그룹을 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL Export]**&#x200B;을(를) 클릭합니다.
+1. [!DNL Bing Ads Editor]의 `Browser` 창에서 내보낼 캠페인 또는 광고 그룹을 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL Export]**&#x200B;을(를) 클릭합니다.
 1. `Export` 대화 상자에서 **[!UICONTROL Export]**&#x200B;을(를) 클릭합니다.
 1. `Save As` 대화 상자에서 내보내기 파일을 저장할 폴더를 클릭합니다.
 1. `File name` 상자에서 파일 내보내기 이름을 선택합니다.
 1. **[!UICONTROL Save]**&#x200B;을(를) 클릭합니다.
-1. 파일을 다운로드한 후 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하여 사용자를 대신하여 첫 번째 업로드를 수행하고 필요한 백엔드 차원을 설정합니다.
+1. 파일을 다운로드한 후 [지원팀에 문의](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)하여 사용자를 대신하여 첫 번째 업로드를 수행하고 필요한 백엔드 차원을 설정합니다.

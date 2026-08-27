@@ -1,6 +1,6 @@
 ---
 title: 데이터 공유
-description: 데이터 공유 개요.
+description: Commerce Intelligence 데이터를 CSV 또는 Excel 파일로 내보내고 공유하는 방법 및 자동화된 이메일 요약을 구성하여 관련자에게 계속 알리는 방법에 대해 알아봅니다.
 exl-id: 5c434d3b-0519-4980-a666-60bed122a93b
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 51
+source-wordcount: 70
 ht-degree: 0%
 
 ---

@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 117
+source-wordcount: 153
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 >
 >각 테이블의 구조(열)는 객체에 포함된 필드에 따라 다릅니다.
 
-조직에서 사용할 수 있는 개체 목록을 가져오려면 [!DNL Salesforce] [개체 목록 가져오기](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/dome_describeGlobal.htm)를 참조하십시오. 개체 목록이 있으면 [&#x200B; 설명서의 &#x200B;](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_erd_knowledge.htm)ERD(Entity Relationship Diagram) 섹션[!DNL Salesforce]을 확인하여 엔터티가 서로 관련되는 방식을 확인하십시오.
+조직에서 사용할 수 있는 개체 목록을 가져오려면 [!DNL Salesforce] [개체 목록 가져오기](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/dome_describeGlobal.htm)를 참조하십시오. 개체 목록이 있으면 [!DNL Salesforce] 설명서의 [ERD(Entity Relationship Diagram) 섹션](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_erd_knowledge.htm)을 확인하여 엔터티가 서로 관련되는 방식을 확인하십시오.
 
 ## 지원되지 않는 개체
 
@@ -65,4 +65,4 @@ ht-degree: 0%
 ## 관련 항목:
 
 * [&#x200B; [!DNL Salesforce] 연결 중](../integrations/salesforce.md)
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
+* [통합 재인증](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

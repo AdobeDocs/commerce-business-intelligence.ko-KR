@@ -22,9 +22,9 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 390
+source-wordcount: 409
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 ### 도움말 보기
 
-[!DNL Adobe Commerce Intelligence] [서비스 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)은(는) 추가 비용으로 재구현을 수행할 수 있습니다. [Adobe 계정 팀](../../guide-overview.md#Submitting-a-Support-Ticket)에 연락하여 새 계정에서 만들기 우선 순위를 지정할 대시보드/보고서 목록을 제공할 준비를 하십시오
+[!DNL Adobe Commerce Intelligence] [서비스 팀](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)은(는) 추가 비용으로 재구현을 수행할 수 있습니다. [Adobe 계정 팀](../../guide-overview.md#Submitting-a-Support-Ticket)에 연락하여 새 계정에서 만들기 우선 순위를 지정할 대시보드/보고서 목록을 제공할 준비를 하십시오
 
 ### 기존 아키텍처 유지
 

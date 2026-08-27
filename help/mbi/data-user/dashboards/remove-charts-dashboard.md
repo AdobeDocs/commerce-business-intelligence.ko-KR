@@ -1,6 +1,6 @@
 ---
 title: 대시보드에서 차트 제거
-description: 대시보드에서 차트를 제거하는 방법에 대해 알아봅니다.
+description: 계정에서 차트를 영구적으로 삭제하지 않고 차트의 톱니바퀴 아이콘 메뉴를 사용하여 Commerce Intelligence 대시보드에서 차트를 제거합니다.
 exl-id: 44116f15-92a5-43c9-8808-7902742508c9
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
@@ -17,9 +17,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 65
+source-wordcount: 79
 ht-degree: 0%
 
 ---

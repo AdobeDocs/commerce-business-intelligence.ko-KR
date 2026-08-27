@@ -1,6 +1,6 @@
 ---
 title: 암호 재설정
-description: 사용자 암호를 재설정하는 방법을 알아봅니다.
+description: 로그인 페이지에서 Commerce Intelligence 계정 암호를 재설정합니다. 이메일 링크를 따라 새 암호를 생성하고 대시보드에 다시 액세스하십시오.
 role: Admin, User
 feature: User Management
 product_v2:
@@ -19,9 +19,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 exl-id: 4de90da3-9846-4c3a-a31e-8b379f207618
-source-git-commit: fac3c5724cab4a90422fad310a4573a7268a56c4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 89
+source-wordcount: 108
 ht-degree: 0%
 
 ---

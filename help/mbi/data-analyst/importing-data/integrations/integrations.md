@@ -21,9 +21,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 84
+source-wordcount: 96
 ht-degree: 0%
 
 ---
@@ -34,4 +34,4 @@ ht-degree: 0%
 
 이 섹션에서는 다양한 외부 데이터 원본을 [!DNL Commerce Intelligence]에 연결하는 데 사용할 수 있는 사용 가능한 통합을 제공합니다.
 
-연결 또는 통합을 삭제하려면 [지원 팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하고 삭제할 연결 또는 통합의 이름을 포함하십시오.
+연결 또는 통합을 삭제하려면 [지원 팀에 문의](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)하고 삭제할 연결 또는 통합의 이름을 포함하십시오.

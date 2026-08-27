@@ -25,9 +25,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 last-update: 2026-08-14
-source-git-commit: a02a389e329acf9bf10b85687e5f877cab992337
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 489
+source-wordcount: 492
 ht-degree: 2%
 
 ---
@@ -58,15 +58,15 @@ ht-degree: 2%
 
 ## 도움말 받는 방법
 
-질문이 있고 일부 전문 서비스를 이용하거나 계정에 문제가 발생하는 경우 [지원 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)에 문의하십시오.
+질문이 있고 일부 전문 서비스를 이용하거나 계정에 문제가 발생하는 경우 [지원 팀](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)에 문의하십시오.
 
 ### 서비스 정책
 
-고객 지원 팀에서 제공하는 [서비스 목록](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)을 참조하세요.
+고객 지원 팀에서 제공하는 [서비스 목록](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)을 참조하세요.
 
 ### 지원 티켓 제출
 
-고급 계산 열을 작성하는 데 도움이 필요하십니까? 결함이나 연결 문제가 발생했습니까? 지원 팀에 연락해야 하는 경우 Adobe에서 [지원 티켓 지침](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)을 사용하라는 메시지를 표시합니다. 이 지침에서는 Adobe에서 이 문제를 해결하는 데 필요한 정보에 대해 간략히 설명합니다.
+고급 계산 열을 작성하는 데 도움이 필요하십니까? 결함이나 연결 문제가 발생했습니까? 지원 팀에 연락해야 하는 경우 Adobe에서 [지원 티켓 지침](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)을 사용하라는 메시지를 표시합니다. 이 지침에서는 Adobe에서 이 문제를 해결하는 데 필요한 정보에 대해 간략히 설명합니다.
 
 ## 사용 가능한 설명서
 

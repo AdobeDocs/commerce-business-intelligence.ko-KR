@@ -19,10 +19,10 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 849
-ht-degree: 0%
+source-wordcount: 866
+ht-degree: 1%
 
 ---
 
@@ -63,9 +63,9 @@ ht-degree: 0%
 
 | **제품 이름** | **순서 반복 확률** | **평균 수명 주문 수** | **평균 라이프타임 수익** | **다음 순서 평균 시간** |
 |-----|-----|-----|-----|-----|
-| 단일 컵 커피 양조기 | 94.98% | 7.92 | US$549.82 | 57.01일 |
-| 커피 캡슐 | 93.82% | 8.68 | US$479.98 | 63.48일 |
-| 커피콩 | 41.92% | 6.07 | US$99.82 | 27.31일 |
+| 단일 컵 커피 양조기 | 94.98% | 7.92 | $549.82 | 57.01일 |
+| 커피 캡슐 | 93.82% | 8.68 | $479.98 | 63.48일 |
+| 커피콩 | 41.92% | 6.07 | $99.82 | 27.31일 |
 
 {style="table-layout:auto"}
 
@@ -97,4 +97,4 @@ ht-degree: 0%
 
 이탈이 발생하는 이유를 확인했으면 분석을 사용하여 `reactivation` 캠페인을 빌드할 수 있습니다. 이 데이터를 사용하여 비활성 상태가 된 사용자, 마지막 방문 이후 경과 시간, 마지막 구매 내역 등을 식별할 수 있습니다. 이를 통해 고객이 다시 돌아오도록 유도하는 실행 가능한 결정을 내릴 수 있습니다.
 
-분석에 도움이 필요하면 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하세요.
+분석에 도움이 필요하면 [지원팀에 문의](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)하세요.

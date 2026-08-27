@@ -1,6 +1,6 @@
 ---
 title: SSH 터널을 통해  [!DNL MySQL] 연결 중
-description: SSH 터널을 통해 [!DNL MySQL] 연결하는 방법에 대해 알아봅니다.
+description: SSH 터널을 사용하여 MySQL 데이터베이스를 Commerce Intelligence에 안전하게 연결합니다. 공개 키 검색, IP 주소 허용 목록 및 사용자 구성.
 exl-id: 6b691a6a-9542-4e47-9b1d-d6d3c3dac357
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 642
+source-wordcount: 660
 ht-degree: 0%
 
 ---
@@ -140,4 +140,4 @@ ht-degree: 0%
 ## 관련 항목 {#related}
 
 * [SSH 호스트 키 확인](ssh-host-key-verification.md)
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
+* [통합 재인증](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

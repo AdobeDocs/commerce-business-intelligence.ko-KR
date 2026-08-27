@@ -22,16 +22,16 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 930
-ht-degree: 2%
+source-wordcount: 962
+ht-degree: 11%
 
 ---
 
 # 고급 계산 열 유형
 
-만들려는 많은 분석에는 **또는**&#x200B;하려는 `group by`새 열`filter by`을 사용해야 할 수 있습니다. [계산된 열 만들기](../data-warehouse-mgr/creating-calculated-columns.md) 자습서에서는 대부분의 사용 사례에 대한 기본 사항을 다루지만 Data Warehouse Manager가 만들 수 있는 것보다 복잡한 계산된 열을 원할 수도 있습니다.
+만들려는 많은 분석에는 `group by` 또는 `filter by`하려는 **새 열**&#x200B;을 사용해야 할 수 있습니다. [계산된 열 만들기](../data-warehouse-mgr/creating-calculated-columns.md) 자습서에서는 대부분의 사용 사례에 대한 기본 사항을 다루지만 Data Warehouse Manager가 만들 수 있는 것보다 복잡한 계산된 열을 원할 수도 있습니다.
 {: #top}
 
 Data Warehouse 분석가의 Adobe 팀에서 이러한 유형의 열을 만들 수 있습니다. 새 계산된 열을 정의하려면 다음 정보를 제공합니다.
@@ -60,8 +60,8 @@ Data Warehouse 분석가의 Adobe 팀에서 이러한 유형의 열을 만들 �
 | 1 | `A` | 2015-01-01 00:00:00 | 1 |
 | 2 | `B` | 2015-01-01 00:30:00 | 1 |
 | 3 | `A` | 2015-01-01 02:00:00 | 2 |
-| 4 | `A` | 2015년 1월 2일 13일:00:0 | 3 |
-| 5 | `B` | 2015년 1월 3일 13일:00:0 | 2 |
+| 4 | `A` | 2015-01-02 13:00:00 | 3 |
+| 5 | `B` | 2015-01-03 13:00:00 | 2 |
 
 {style="table-layout:auto"}
 
@@ -87,8 +87,8 @@ Data Warehouse 분석가의 Adobe 팀에서 이러한 유형의 열을 만들 �
 
 | `id` | `timestamp\_1` | `timestamp\_2` | `Seconds between timestamp\_2 and timestamp\_1` |
 |-----|-----|-----|-----|
-| `A` | 2015-01-01 00:00:00 | 2015년 1월 1일 12일:30:0 | 45000 |
-| `B` | 2015-01-01 08:00:00 | 2015-01-01 10:00:0 | 7200 |
+| `A` | 2015-01-01 00:00:00 | 2015-01-01 12:30:00 | 45000 |
+| `B` | 2015-01-01 08:00:00 | 2015-01-01 10:00:00 | 7200 |
 
 {style="table-layout:auto"}
 
@@ -114,8 +114,8 @@ Data Warehouse 분석가의 Adobe 팀에서 이러한 유형의 열을 만들 �
 | 1 | `A` | 2015-01-01 00:00:00 | NULL |
 | 2 | `B` | 2015-01-01 00:30:00 | NULL |
 | 3 | `A` | 2015-01-01 02:00:00 | 7720 |
-| 4 | `A` | 2015년 1월 2일 13일:00:0 | 126000 |
-| 5 | `B` | 2015년 1월 3일 13일:00:0 | 217800 |
+| 4 | `A` | 2015-01-02 13:00:00 | 126000 |
+| 5 | `B` | 2015-01-03 13:00:00 | 217800 |
 
 {style="table-layout:auto"}
 
@@ -140,7 +140,7 @@ Data Warehouse 분석가의 Adobe 팀에서 이러한 유형의 열을 만들 �
 | **`id`** | **`timestamp`** | **`transaction\_value\_EUR`** | **`transaction\_value\_USD`** |
 |-----|-----|-----|-----|
 | `1` | 2015-01-01 00:00:00 | 30 | 33.57 |
-| `2` | 2015-01-02 00:00:0 | 50 | 55.93 |
+| `2` | 2015-01-02 00:00:00 | 50 | 55.93 |
 
 {style="table-layout:auto"}
 
@@ -162,7 +162,7 @@ Data Warehouse 분석가의 Adobe 팀에서 이러한 유형의 열을 만들 �
 | **`id`** | **`timestamp\_UTC`** | **`timestamp\_ET`** |
 |-----|-----|-----|
 | `1` | 2015-01-01 00:00:00 | 2014-12-31 19:00:00 |
-| `2` | 2015년 1월 1일 12일:00:0 | 2015-01-01 07:00:00 |
+| `2` | 2015-01-01 12:00:00 | 2015-01-01 07:00:00 |
 
 {style="table-layout:auto"}
 
@@ -179,7 +179,7 @@ Data Warehouse 분석가의 Adobe 팀에서 이러한 유형의 열을 만들 �
 
 걱정하지 마세요. 여기에 나열되어 있지 않다고 해서 가능하지 않은 것은 아니다. Data Warehouse 분석가 Adobe 팀이 도움을 줄 수 있습니다.
 
-새 계산된 열을 정의하려면 빌드할 내용에 대한 세부 정보를 포함하여 [지원 티켓을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)합니다.
+새 계산된 열을 정의하려면 빌드할 내용에 대한 세부 정보를 포함하여 [지원 티켓을 제출](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)합니다.
 
 ## 관련 설명서
 

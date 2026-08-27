@@ -20,23 +20,23 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 491
+source-wordcount: 511
 ht-degree: 0%
 
 ---
 
 # 원시 데이터 내보내기
 
-원시 데이터 내보내기를 사용하면 Data Warehouse에서 레코드를 내보내 대시보드를 구동하는 항목을 자세히 살펴볼 수 있습니다. 또한 원시 데이터 내보내기를 통해 [데이터 불일치를 찾아냅니다](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=ko).
+원시 데이터 내보내기를 사용하면 Data Warehouse에서 레코드를 내보내 대시보드를 구동하는 항목을 자세히 살펴볼 수 있습니다. 또한 원시 데이터 내보내기를 통해 [데이터 불일치를 찾아냅니다](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies).
 
 원시 데이터 내보내기는 관련 지표의 정규화 취소 및 사전 합계를 통해 생성된 추가 열 및 차원에 대한 액세스를 제공합니다. 예를 들어 `User's first order date`은(는) [!DNL Commerce Intelligence]의 각 사용자에 대해 내보낼 수 있는 차원이지만 데이터베이스에서 사용할 수 없을 수도 있습니다.
 
 이 튜토리얼에서는 다음 내용을 다룹니다.
 
 * [내보낼 데이터 선택](#select)
-* [내보내기 다운로드(](#download)
+* [내보내기(`.csv` 파일) 다운로드 중](#download)
 * [내역 내보내기 액세스](#historical)
 
 ## 1단계: 내보낼 데이터 선택 {#select}
@@ -83,7 +83,7 @@ ht-degree: 0%
 
 `Raw Data Export` 대화 상자에서 선택 내용을 완료한 후 바로 내보내기가 처리를 시작합니다. 일부 내보내기의 크기가 클 수 있으므로 1,000만 행으로 제한되고 실행하는 데 시간이 다소 걸릴 수 있습니다.
 
-내보내기가 준비되었는지 확인하려면 화면 오른쪽 상단의 **[!UICONTROL Raw Data Exports]**&#x200B;을(를) 클릭합니다. 내보내기의 압축 **[!UICONTROL Download]** 파일을 다운로드하려면 `.csv`을(를) 클릭합니다.
+내보내기가 준비되었는지 확인하려면 화면 오른쪽 상단의 **[!UICONTROL Raw Data Exports]**&#x200B;을(를) 클릭합니다. 내보내기의 압축 `.csv` 파일을 다운로드하려면 **[!UICONTROL Download]**&#x200B;을(를) 클릭합니다.
 
 ![내보낸 CSV 파일을 다운로드하는 애니메이션 데모](../assets/Downloading_export.gif)
 

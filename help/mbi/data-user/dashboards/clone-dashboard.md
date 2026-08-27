@@ -1,6 +1,6 @@
 ---
 title: 대시보드 복제
-description: 대시보드를 복제하는 방법을 알아봅니다.
+description: Commerce Intelligence 대시보드를 복제하여 모든 보고서를 새 대시보드에 복사하여 다른 대상에 대해 유사한 보기가 필요할 때 시간을 절약할 수 있습니다.
 exl-id: f0bfa786-ab01-4c55-9d8a-ed002c2321b6
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
@@ -17,9 +17,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 196
+source-wordcount: 220
 ht-degree: 0%
 
 ---

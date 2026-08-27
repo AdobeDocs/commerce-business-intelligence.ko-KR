@@ -1,6 +1,6 @@
 ---
 title: 예측
-description: 예측
+description: Commerce Intelligence에서 고객 생애 가치 및 향후 주문을 예측합니다. 예측을 통해 확실하게 매출 및 성장 전략을 계획하는 방법을 살펴볼 수 있습니다.
 exl-id: 61e0516a-941c-4e32-b051-6ff664962198
 role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports
@@ -21,9 +21,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 58
+source-wordcount: 79
 ht-degree: 0%
 
 ---

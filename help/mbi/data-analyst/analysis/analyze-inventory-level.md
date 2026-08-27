@@ -1,6 +1,6 @@
 ---
 title: 재고 레벨 분석
-description: 재고 수준을 분석하는 방법에 대해 알아봅니다.
+description: 대시보드를 작성하여 Commerce Intelligence의 현재 재고 수준을 모니터링합니다. 지침은 기존 및 새 아키텍처 계정 구성을 모두 다룹니다.
 exl-id: 620156c5-7bea-4b36-84c7-e0cb4b5cc8be
 role: Admin, Developer, User
 feature: Dashboards, Reports
@@ -22,193 +22,193 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 274
-ht-degree: 0%
+source-wordcount: 522
+ht-degree: 40%
 
 ---
 
 # 재고 레벨 분석
 
-이 항목에서는 현재 인벤토리에 대한 통찰력을 제공하고 기존 아키텍처 또는 새 아키텍처 모두의 클라이언트에 대한 지침을 포함하는 대시보드를 설정하는 방법을 보여 줍니다. **[!UICONTROL Data Warehouse Views]** 메뉴 아래에 **[!UICONTROL Manage Data]** 옵션이 없는 경우 레거시 아키텍처를 사용하는 것입니다. 기존 아키텍처를 사용하는 경우 아래 [계산된 열](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko) 지침에 따라 지정된 섹션에 도달하면 제목이 **[!UICONTROL INVENTORY ANALYSIS]**&#x200B;인 _새 지원 요청_&#x200B;을 제출하십시오.
+이 항목에서는 현재 인벤토리에 대한 통찰력을 제공하고 기존 아키텍처 또는 새 아키텍처 모두의 클라이언트에 대한 지침을 포함하는 대시보드를 설정하는 방법을 보여 줍니다. **[!UICONTROL Manage Data]** 메뉴 아래에 **[!UICONTROL Data Warehouse Views]** 옵션이 없는 경우 레거시 아키텍처를 사용하는 것입니다. 기존 아키텍처를 사용하는 경우 아래 _계산된 열_ 지침에 따라 지정된 섹션에 도달하면 제목이 **[!UICONTROL INVENTORY ANALYSIS]**&#x200B;인 [새 지원 요청](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)을 제출하십시오.
 
 ## 추적할 열:
 
 ### 지침을 추적할 열
 
 * **[!UICONTROL cataloginventory_stock_item]** 테이블:
-   * **`item_id`**
-   * **`product_id`**
-   * **`qty`**
+  * **`item_id`**
+  * **`product_id`**
+  * **`qty`**
 
 * **[!UICONTROL catalog_product_entity]** 테이블:
-   * **`entity_id`**
-   * **`sku`**
-   * **`created_at`**
+  * **`entity_id`**
+  * **`sku`**
+  * **`created_at`**
 
 ## 계산된 열:
 
 +++ 새로운 아키텍처
 
 * **[!UICONTROL catalog_product_entity]** 테이블:
-   * **`Product's most recent order date`**
-      * [!UICONTROL Column type]: `Many to One`
-      * &#x200B;
-        [!UICONTROL Column equation]: `MAX`
-      * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
-      * [!UICONTROL column] 선택: `created_at`
-      * [!UICONTROL Filters]:
-         * [A] `Ordered products we count`
+  * **`Product's most recent order date`**
+    * [!UICONTROL Column type]&#x200B;: `Many to One`
+    * &#x200B;
+      [!UICONTROL Column equation]&#x200B;: `MAX`
+    * [!UICONTROL Path]&#x200B;: `sales_order_item.product_id => catalog_product_entity.entity_id`
+    * [!UICONTROL column] 선택: `created_at`
+    * [!UICONTROL Filters]:
+      * [A] `Ordered products we count`
 
-   * **`Product's first order date`**
-      * [!UICONTROL Column type]: `Many to One`
-      * &#x200B;
-        [!UICONTROL Column equation]: `MIN`
-      * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
-      * [!UICONTROL column] 선택: `created_at`
-      * [!UICONTROL Filters]:
-         * [A] `Ordered products we count`
+  * **`Product's first order date`**
+    * [!UICONTROL Column type]&#x200B;: `Many to One`
+    * &#x200B;
+      [!UICONTROL Column equation]&#x200B;: `MIN`
+    * [!UICONTROL Path]&#x200B;: `sales_order_item.product_id => catalog_product_entity.entity_id`
+    * [!UICONTROL column] 선택: `created_at`
+    * [!UICONTROL Filters]:
+      * [A] `Ordered products we count`
 
-   * **`Seconds since product's most recent order date`**
-      * [!UICONTROL Column type]: `Same Table`
-      * &#x200B;
-        [!UICONTROL Column equation]: `AGE`
-      * [!UICONTROL DATETIME column] 선택: `Product's most recent order date`
+  * **`Seconds since product's most recent order date`**
+    * [!UICONTROL Column type]&#x200B;: `Same Table`
+    * &#x200B;
+      [!UICONTROL Column equation]&#x200B;: `AGE`
+    * [!UICONTROL DATETIME column] 선택: `Product's most recent order date`
 
-   * **`Product's lifetime number of items sold`**
-      * [!UICONTROL Column type]: `Many to One`
-      * &#x200B;
-        [!UICONTROL Column equation]: `SUM`
-      * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
-      * [!UICONTROL column] 선택: `qty_ordered`
-      * [!UICONTROL Filters]:
-         * [A] `Ordered products we count`
+  * **`Product's lifetime number of items sold`**
+    * [!UICONTROL Column type]&#x200B;: `Many to One`
+    * &#x200B;
+      [!UICONTROL Column equation]&#x200B;: `SUM`
+    * [!UICONTROL Path]&#x200B;: `sales_order_item.product_id => catalog_product_entity.entity_id`
+    * [!UICONTROL column] 선택: `qty_ordered`
+    * [!UICONTROL Filters]:
+      * [A] `Ordered products we count`
 
-   * **`Avg products sold per week (all time)`**
-      * [!UICONTROL Column type]: `Same Table`
-      * &#x200B;
-        [!UICONTROL Column equation]: `CALCULATION`
-      * [!UICONTROL Column] 입력:
-         * A: `Product's lifetime number of items sold`
-         * B: `Product's first order date`
-      * &#x200B;
-        [!UICONTROL Datatype]: `Decimal`
-      * 정의:
-         * a가 null이거나 B가 null인 경우 다른 null은 round(A::decimal/(extract(epoch from (current_timestamp - B))::decimal/604800.0),2) 끝입니다.
+  * **`Avg products sold per week (all time)`**
+    * [!UICONTROL Column type]&#x200B;: `Same Table`
+    * &#x200B;
+      [!UICONTROL Column equation]&#x200B;: `CALCULATION`
+    * [!UICONTROL Column] 입력:
+      * A: `Product's lifetime number of items sold`
+      * B: `Product's first order date`
+    * &#x200B;
+      [!UICONTROL Datatype]&#x200B;: `Decimal`
+    * 정의:
+      * a가 null이거나 B가 null인 경우 다른 null은 round(A::decimal/(extract(epoch from (current_timestamp - B))::decimal/604800.0),2) 끝입니다.
 
 * **[!UICONTROL cataloginventory_stock_item]** 테이블:
-   * **`Sku`**
-      * [!UICONTROL Column type]: `One to Many`
-      * &#x200B;
-        [!UICONTROL Column equation]: `JOINED_COLUMN`
-      * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
-      * [!UICONTROL column] 선택: `sku`
+  * **`Sku`**
+    * [!UICONTROL Column type]&#x200B;: `One to Many`
+    * &#x200B;
+      [!UICONTROL Column equation]&#x200B;: `JOINED_COLUMN`
+    * [!UICONTROL Path]&#x200B;: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
+    * [!UICONTROL column] 선택: `sku`
 
-   * **`Product's lifetime number of items sold`**
-      * [!UICONTROL Column type]: `One to Many`
-      * &#x200B;
-        [!UICONTROL Column equation]: `JOINED_COLUMN`
-      * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
-      * [!UICONTROL column] 선택: `Product's lifetime number of items sold`
+  * **`Product's lifetime number of items sold`**
+    * [!UICONTROL Column type]&#x200B;: `One to Many`
+    * &#x200B;
+      [!UICONTROL Column equation]&#x200B;: `JOINED_COLUMN`
+    * [!UICONTROL Path]&#x200B;: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
+    * [!UICONTROL column] 선택: `Product's lifetime number of items sold`
 
-   * **`Seconds since product's most recent order date`**
-      * [!UICONTROL Column type]: `One to Many`
-      * &#x200B;
-        [!UICONTROL Column equation]: `JOINED_COLUMN`
-      * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
-      * [!UICONTROL column] 선택: `Seconds since product's most recent order date`
+  * **`Seconds since product's most recent order date`**
+    * [!UICONTROL Column type]&#x200B;: `One to Many`
+    * &#x200B;
+      [!UICONTROL Column equation]&#x200B;: `JOINED_COLUMN`
+    * [!UICONTROL Path]&#x200B;: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
+    * [!UICONTROL column] 선택: `Seconds since product's most recent order date`
 
-   * **`Avg products sold per week (all time)`**
-      * [!UICONTROL Column type]: `One to Many`
-      * &#x200B;
-        [!UICONTROL Column equation]: `JOINED_COLUMN`
-      * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
-      * [!UICONTROL column] 선택: `Avg products sold per week (all time)`
+  * **`Avg products sold per week (all time)`**
+    * [!UICONTROL Column type]&#x200B;: `One to Many`
+    * &#x200B;
+      [!UICONTROL Column equation]&#x200B;: `JOINED_COLUMN`
+    * [!UICONTROL Path]&#x200B;: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
+    * [!UICONTROL column] 선택: `Avg products sold per week (all time)`
 
-   * **`Weeks on hand`**
-      * [!UICONTROL Column type]: `Same Table`
-      * &#x200B;
-        [!UICONTROL Column equation]: `CALCULATION`
-      * [!UICONTROL Column] 입력:
-         * A: `qty`
-         * B: `Avg products sold per week (all time)`
-      * &#x200B;
-        [!UICONTROL Datatype]: `Decimal`
-      * 정의:
-         * A가 null이거나 B가 null이거나 B = 0.0일 때 null이거나 다른 round(A::decimal/B,2) 끝인 경우
+  * **`Weeks on hand`**
+    * [!UICONTROL Column type]&#x200B;: `Same Table`
+    * &#x200B;
+      [!UICONTROL Column equation]&#x200B;: `CALCULATION`
+    * [!UICONTROL Column] 입력:
+      * A: `qty`
+      * B: `Avg products sold per week (all time)`
+    * &#x200B;
+      [!UICONTROL Datatype]&#x200B;: `Decimal`
+    * 정의:
+      * A가 null이거나 B가 null이거나 B = 0.0일 때 null이거나 다른 round(A::decimal/B,2) 끝인 경우
 
 +++
 +++ 레거시 아키텍처
 
 * **[!UICONTROL catalog_product_entity]** 테이블:
-   * **`Product's most recent order date`**
-      * [!UICONTROL Column type]: `Many to One`
-      * &#x200B;
-        [!UICONTROL Column equation]: `MAX`
-      * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
-      * [!UICONTROL column] 선택: `created_at`
-      * [!UICONTROL Filters]:
-         * [A] `Ordered products we count`
+  * **`Product's most recent order date`**
+    * [!UICONTROL Column type]&#x200B;: `Many to One`
+    * &#x200B;
+      [!UICONTROL Column equation]&#x200B;: `MAX`
+    * [!UICONTROL Path]&#x200B;: `sales_order_item.product_id => catalog_product_entity.entity_id`
+    * [!UICONTROL column] 선택: `created_at`
+    * [!UICONTROL Filters]:
+      * [A] `Ordered products we count`
 
-   * **`Product's first order date`**
-      * [!UICONTROL Column type]: `Many to One`
-      * &#x200B;
-        [!UICONTROL Column equation]: `MIN`
-      * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
-      * [!UICONTROL column] 선택: `created_at`
-      * [!UICONTROL Filters]:
-         * [A] `Ordered products we count`
+  * **`Product's first order date`**
+    * [!UICONTROL Column type]&#x200B;: `Many to One`
+    * &#x200B;
+      [!UICONTROL Column equation]&#x200B;: `MIN`
+    * [!UICONTROL Path]&#x200B;: `sales_order_item.product_id => catalog_product_entity.entity_id`
+    * [!UICONTROL column] 선택: `created_at`
+    * [!UICONTROL Filters]:
+      * [A] `Ordered products we count`
 
-   * **`Seconds since product's most recent order date`**
-      * [!UICONTROL Column type]: `Same Table`
-      * &#x200B;
-        [!UICONTROL Column equation]: `AGE`
-      * DATETIME 열 선택: **`Product's most recent order date`**
+  * **`Seconds since product's most recent order date`**
+    * [!UICONTROL Column type]&#x200B;: `Same Table`
+    * &#x200B;
+      [!UICONTROL Column equation]&#x200B;: `AGE`
+    * DATETIME 열 선택: **`Product's most recent order date`**
 
-   * **`Product's lifetime number of items sold`**
-      * [!UICONTROL Column type]: `Many to One`
-      * &#x200B;
-        [!UICONTROL Column equation]: `SUM`
-      * [!UICONTROL Path]: **`sales_order_item.product_id => catalog_product_entity.entity_id`**
-      * [!UICONTROL column] 선택: **`qty_ordered`**
-      * [!UICONTROL Filters]:
-         * [A] `Ordered products we count`
+  * **`Product's lifetime number of items sold`**
+    * [!UICONTROL Column type]&#x200B;: `Many to One`
+    * &#x200B;
+      [!UICONTROL Column equation]&#x200B;: `SUM`
+    * [!UICONTROL Path]&#x200B;: **`sales_order_item.product_id => catalog_product_entity.entity_id`**
+    * [!UICONTROL column] 선택: **`qty_ordered`**
+    * [!UICONTROL Filters]:
+      * [A] `Ordered products we count`
 
-   * **`Avg products sold per week (all time)`**
-      * **[INVENTORY ANALYSIS]** 지원 요청을 제출할 때 분석가가 생성함
+  * **`Avg products sold per week (all time)`**
+    * **[INVENTORY ANALYSIS]** 지원 요청을 제출할 때 분석가가 생성함
 
 * **[!UICONTROL cataloginventory_stock_item]** 테이블:
-   * **`Sku`**
-      * [!UICONTROL Column type]: `One to Many`
-      * &#x200B;
-        [!UICONTROL Column equation]: `JOINED_COLUMN`
-      * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
-      * [!UICONTROL column] 선택: `sku`
+  * **`Sku`**
+    * [!UICONTROL Column type]&#x200B;: `One to Many`
+    * &#x200B;
+      [!UICONTROL Column equation]&#x200B;: `JOINED_COLUMN`
+    * [!UICONTROL Path]&#x200B;: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
+    * [!UICONTROL column] 선택: `sku`
 
-   * **`Product's lifetime number of items sold`**
-      * [!UICONTROL Column type]: `One to Many`
-      * &#x200B;
-        [!UICONTROL Column equation]: `JOINED_COLUMN`
-      * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
-      * [!UICONTROL column] 선택: `Product's lifetime number of items sold`
+  * **`Product's lifetime number of items sold`**
+    * [!UICONTROL Column type]&#x200B;: `One to Many`
+    * &#x200B;
+      [!UICONTROL Column equation]&#x200B;: `JOINED_COLUMN`
+    * [!UICONTROL Path]&#x200B;: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
+    * [!UICONTROL column] 선택: `Product's lifetime number of items sold`
 
-   * **`Seconds since product's most recent order date`**
-      * [!UICONTROL Column type]: `One to Many`
-      * &#x200B;
-        [!UICONTROL Column equation]: `JOINED_COLUMN`
-      * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
-      * [!UICONTROL column] 선택: `Seconds since product's most recent order date`
+  * **`Seconds since product's most recent order date`**
+    * [!UICONTROL Column type]&#x200B;: `One to Many`
+    * &#x200B;
+      [!UICONTROL Column equation]&#x200B;: `JOINED_COLUMN`
+    * [!UICONTROL Path]&#x200B;: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
+    * [!UICONTROL column] 선택: `Seconds since product's most recent order date`
 
-   * **`Avg products sold per week (all time)`**
-      * [!UICONTROL Column type]: `One to Many`
-      * &#x200B;
-        [!UICONTROL Column equation]: `JOINED_COLUMN`
-      * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
-      * [!UICONTROL column] 선택: `Avg products sold per week (all time)`
+  * **`Avg products sold per week (all time)`**
+    * [!UICONTROL Column type]&#x200B;: `One to Many`
+    * &#x200B;
+      [!UICONTROL Column equation]&#x200B;: `JOINED_COLUMN`
+    * [!UICONTROL Path]&#x200B;: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
+    * [!UICONTROL column] 선택: `Avg products sold per week (all time)`
 
-   * **`Weeks on hand`**
-      * **[!UICONTROL INVENTORY ANALYSIS]** 지원 요청을 제출할 때 애널리스트가 만든 항목
+  * **`Weeks on hand`**
+    * **[!UICONTROL INVENTORY ANALYSIS]** 지원 요청을 제출할 때 애널리스트가 만든 항목
 
 +++
 
@@ -217,47 +217,47 @@ ht-degree: 0%
 ### 지표 지침
 
 * **[!UICONTROL cataloginventory_stock_item]** 테이블:
-   * **`Inventory on hand`**: 이 지표는 다음을 수행합니다.
-      * 다음에 대한 **합계**
-      * **`qty`** 열이 다음에 의해 정렬됨
-      * [없음] 열
+  * **`Inventory on hand`**: 이 지표는 다음을 수행합니다.
+    * 다음에 대한 **합계**
+    * **`qty`** 열이 다음에 의해 정렬됨
+    * [없음] 열
 
 ## 보고서
 
 ### 보고서 지침
 
 * **`Inventory on hand by sku`**
-   * [!UICONTROL Metric]: `Inventory on hand`
-   * [!UICONTROL Time period]: `All time`
-   * 시간 간격: `None`
-   * [!UICONTROL Group by]:
-      * `Sku`
-      * `Weeks on hand`
-   * &#x200B;
-     [!UICONTROL Chart type]: `Table`
+  * [!UICONTROL Metric]&#x200B;: `Inventory on hand`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * 시간 간격: `None`
+  * [!UICONTROL Group by]:
+    * `Sku`
+    * `Weeks on hand`
+  * &#x200B;
+    [!UICONTROL Chart type]&#x200B;: `Table`
 
 * **`Inventory with less than 2 weeks on hand (order now)`**
-   * [!UICONTROL Metric]: `Inventory on hand`
-      * [!UICONTROL Filters]:
-         * [A] `Weeks on hand` `< 2`
+  * [!UICONTROL Metric]&#x200B;: `Inventory on hand`
+    * [!UICONTROL Filters]:
+      * [A] `Weeks on hand` `< 2`
 
-   * [!UICONTROL Time period]: `All time`
-   * 시간 간격: `None`
-   * &#x200B;
-     [!UICONTROL 그룹 기준]: `Sku`
-   * &#x200B;
-     [!UICONTROL Chart type]: `Table`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * 시간 간격: `None`
+  * &#x200B;
+    [!UICONTROL 그룹 기준]&#x200B;: `Sku`
+  * &#x200B;
+    [!UICONTROL Chart type]&#x200B;: `Table`
 
 * **`Inventory with more than 26 weeks on hand (put on sale)`**
-   * [!UICONTROL Metric]: `Inventory on hand`
-      * [!UICONTROL Filters]:
-         * [A] `Weeks on hand` `> 26`
+  * [!UICONTROL Metric]&#x200B;: `Inventory on hand`
+    * [!UICONTROL Filters]:
+      * [A] `Weeks on hand` `> 26`
 
-   * [!UICONTROL Time period]: `All time`
-   * 시간 간격: `None`
-   * &#x200B;
-     [!UICONTROL 그룹 기준]: `Sku`
-   * &#x200B;
-     [!UICONTROL Chart type]: `Table`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * 시간 간격: `None`
+  * &#x200B;
+    [!UICONTROL 그룹 기준]&#x200B;: `Sku`
+  * &#x200B;
+    [!UICONTROL Chart type]&#x200B;: `Table`
 
-이 분석을 작성하는 동안 질문이 있거나 Professional Services 팀에 문의하려는 경우 [지원 팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하십시오.
+이 분석을 작성하는 동안 질문이 있거나 Professional Services 팀에 문의하려는 경우 [지원 팀에 문의](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)하십시오.

@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 362
+source-wordcount: 433
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 [계정 [!DNL Zendesk] 연결](../integrations/zendesk.md)한 후 [Data Warehouse 관리자](../../../data-analyst/data-warehouse-mgr/tour-dwm.md)를 사용하여 분석할 관련 데이터 필드를 쉽게 추적할 수 있습니다.
 
-이 항목에서는 [!DNL Zendesk] 데이터에 대한 추가 설명서에 대한 링크를 포함하여 [!DNL Adobe Commerce Intelligence]에서 [!DNL Zendesk]&#x200B;(으)로 가져올 수 있는 기본 데이터 테이블을 살펴봅니다.
+이 항목에서는 [!DNL Zendesk] 데이터에 대한 추가 설명서에 대한 링크를 포함하여 [!DNL Zendesk]에서 [!DNL Adobe Commerce Intelligence]&#x200B;(으)로 가져올 수 있는 기본 데이터 테이블을 살펴봅니다.
 
 | 테이블 이름 | 설명 |
 |-----|-----|
@@ -50,4 +50,4 @@ ht-degree: 0%
 ## 관련 항목
 
 * [Zendesk 연결하기](../integrations/zendesk.md)
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
+* [통합 재인증](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

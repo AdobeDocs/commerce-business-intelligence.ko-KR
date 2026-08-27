@@ -1,6 +1,6 @@
 ---
 title: 내 쿼리 결과 내보내기
-description: 데이터 결과를 내보내는 방법을 알아봅니다.
+description: 플랫폼 외부에서 데이터를 분석하고 공유할 수 있도록 Commerce Intelligence의 SQL 쿼리 결과를 다운로드 가능한 CSV 파일로 내보냅니다.
 exl-id: 7c5672af-ca60-47c5-9054-ff36e2887497
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
@@ -17,13 +17,13 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 26
+source-wordcount: 45
 ht-degree: 0%
 
 ---
 
 # 내 쿼리 결과 내보내기
 
-**[!UICONTROL Export Data]** 창에서 `Results`을(를) 클릭하여 결과를 `.csv` 파일로 내보냅니다.
+`Results` 창에서 **[!UICONTROL Export Data]**&#x200B;을(를) 클릭하여 결과를 `.csv` 파일로 내보냅니다.

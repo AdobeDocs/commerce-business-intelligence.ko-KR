@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 151
+source-wordcount: 163
 ht-degree: 0%
 
 ---
@@ -36,17 +36,17 @@ ht-degree: 0%
 
 [!DNL Stripe]을(를) 통해 회사의 결제 및 송장 데이터를 관리하고 추적할 수 있습니다. [!DNL Stripe] 계정을 [!DNL Commerce Intelligence]에 연결하는 간단한 2단계 프로세스입니다.
 
-1. [&#x200B; [!DNL Stripe] 에서 데이터 소스로  [!DNL Commerce Intelligence]추가](#stepone)
-1. [&#x200B; [!DNL Commerce Intelligence] 데이터에 대한  [!DNL Stripe] 액세스 허용](#steptwo)
+1. [&#x200B; [!DNL Commerce Intelligence]에서 데이터 소스로  [!DNL Stripe] 추가](#stepone)
+1. [&#x200B; [!DNL Stripe] 데이터에 대한  [!DNL Commerce Intelligence] 액세스 허용](#steptwo)
 
 ## [!DNL Stripe]을(를) 데이터 소스로 추가 {#stepone}
 
-1. `Connections` 아래의 **[!UICONTROL Admin** > **Connections]** 페이지로 이동합니다.
-1. **[!UICONTROL Add a Data Source]** 테이블 위의 화면 오른쪽에 있는 `Data Sources`을(를) 클릭합니다.
+1. **[!UICONTROL Admin** > **Connections]** 아래의 `Connections` 페이지로 이동합니다.
+1. `Data Sources` 테이블 위의 화면 오른쪽에 있는 **[!UICONTROL Add a Data Source]**&#x200B;을(를) 클릭합니다.
 1. [!DNL Stripe] 아이콘을 클릭합니다. `[!DNL Stripe] authorization` 페이지가 표시됩니다.
 1. **[!UICONTROL Connect with Stripe]**&#x200B;을(를) 클릭합니다.
 
-## [!DNL Commerce Intelligence] 데이터에 대한 [!DNL Stripe] 액세스 허용 {#steptwo}
+## [!DNL Stripe] 데이터에 대한 [!DNL Commerce Intelligence] 액세스 허용 {#steptwo}
 
 **[!UICONTROL Connect with Stripe]**&#x200B;을(를) 클릭하면 액세스 요청 페이지가 나타납니다.
 
@@ -63,4 +63,4 @@ ht-degree: 0%
 [[!DNL Stripe] API 설명서](https://stripe.com/docs/api)는 [!DNL Stripe]을(를) [!DNL Commerce Intelligence]과(와) 통합하는 방법에 대한 자세한 내용을 학습하는 데 유용한 리소스가 될 수 있습니다.
 
 * [&#x200B; [!DNL Stripe] 데이터가 필요합니다.](../integrations/stripe-data.md)
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
+* [통합 재인증](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

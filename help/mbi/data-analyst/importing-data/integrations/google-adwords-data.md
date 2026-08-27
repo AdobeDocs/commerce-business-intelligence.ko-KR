@@ -22,9 +22,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 436
+source-wordcount: 603
 ht-degree: 0%
 
 ---
@@ -107,4 +107,4 @@ ht-degree: 0%
 
 통합 테이블이 없고 `adwords` 테이블에 멋진 대시보드를 작성하는 경우 보고를 복제하거나 중복 지표를 만들어 해당 데이터를 [!DNL Facebook Ads] 데이터와 비교해야 합니다. 통합 테이블을 사용하면 [!DNL Facebook Ads] 데이터를 기존 [!DNL Adwords] 보고서에 원활하게 통합할 수 있습니다. 광고 플랫폼별로 세그먼트화할 수도 있습니다.
 
-위의 필드를 이미 동기화한 경우 [문의하기](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하여 광고 지출을 통합하십시오.
+위의 필드를 이미 동기화한 경우 [문의하기](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)하여 광고 지출을 통합하십시오.

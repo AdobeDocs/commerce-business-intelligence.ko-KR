@@ -1,6 +1,6 @@
 ---
 title: 차트 데이터 내보내기
-description: 차트 뒤에 있는 데이터를 보는 방법에 대해 알아봅니다.
+description: 차트의 톱니바퀴 아이콘을 사용하여 Commerce Intelligence 차트 뒤의 데이터를 보고 내보내므로 대시보드를 구동하는 숫자를 자세히 파악할 수 있습니다.
 exl-id: 3c75ff3c-c4e2-4ff8-a303-6f24ccfca0ff
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 103
+source-wordcount: 122
 ht-degree: 0%
 
 ---

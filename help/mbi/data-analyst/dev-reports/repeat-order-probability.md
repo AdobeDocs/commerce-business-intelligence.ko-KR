@@ -20,9 +20,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 343
+source-wordcount: 357
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 경우에 따라 `order-specific` 차원을 `user-specific` 차원으로 전환하여 `Repeat Order Probability` 차트에서 필터로 추가할 수 있습니다. 이러한 경우 사용자의 1차 주문 또는 최근 주문의 주문 속성(예: 사용자의 1차 지역 이름)을 반환합니다.
 
-이러한 새 차원을 만들려면 [지원팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하십시오.
+이러한 새 차원을 만들려면 [지원팀에 문의](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)하십시오.
 
 ## 다른 속성을 가진 주문 반복 확률 비교
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 ### 예:
 
-| 범주 | 값 |
+| 카테고리 | 값 |
 |---|---|
 | 라이프타임 동안 1회 구입한 고객 수 | `90` |
 | 일생 동안 2회 구입한 고객 수 | `30` |

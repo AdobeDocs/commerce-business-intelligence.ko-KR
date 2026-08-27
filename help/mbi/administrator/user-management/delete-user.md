@@ -19,9 +19,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 exl-id: 0590275d-3329-40fb-8be1-4a700438338d
-source-git-commit: fac3c5724cab4a90422fad310a4573a7268a56c4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 201
+source-wordcount: 202
 ht-degree: 0%
 
 ---
@@ -42,5 +42,5 @@ ht-degree: 0%
 다른 사용자의 계정에 푸시된 사용자의 대시보드만 필요한 경우 다음을 수행합니다.
 
 1. 삭제된 사용자의 전자 메일 주소를 사용하여 새 [!DNL Commerce Intelligence] 사용자를 만드십시오.
-1. 사용자를 만든 후 [지원에 알림](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)합니다. 지원 팀에서 대시보드를 계정으로 전송합니다.
+1. 사용자를 만든 후 [지원에 알림](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)합니다. 지원 팀에서 대시보드를 계정으로 전송합니다.
 1. Adobe 지원에서 전송 사실을 알린 후 사용자를 다시 삭제할 수 있습니다.

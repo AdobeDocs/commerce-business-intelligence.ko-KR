@@ -1,6 +1,6 @@
 ---
 title: 대시보드 삭제
-description: 대시보드를 삭제하는 방법을 알아봅니다.
+description: 사용 가능한 두 가지 방법 중 하나를 사용하여 더 이상 필요하지 않은 Commerce Intelligence 대시보드를 삭제하여 대시보드 목록을 정리하고 깔끔하게 유지합니다.
 exl-id: 27482dea-0593-46d6-8310-ad505ff9436a
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
@@ -17,9 +17,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 114
+source-wordcount: 131
 ht-degree: 0%
 
 ---

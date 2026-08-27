@@ -1,6 +1,6 @@
 ---
 title: 기본 대시보드 설정
-description: 기본 대시보드를 설정하는 방법을 알아봅니다.
+description: 플랫폼을 열 때 가장 먼저 보이도록 기본 Commerce Intelligence 대시보드를 설정하여 주요 지표에 빠르게 액세스할 수 있습니다.
 exl-id: a3fc64e3-b527-4c2c-848d-c0962cd20ff3
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
@@ -17,9 +17,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 64
+source-wordcount: 82
 ht-degree: 0%
 
 ---

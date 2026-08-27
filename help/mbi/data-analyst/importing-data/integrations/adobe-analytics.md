@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 312
+source-wordcount: 327
 ht-degree: 0%
 
 ---
@@ -35,9 +35,9 @@ ht-degree: 0%
 
 ![Adobe Analytics 로고](../../../assets/adobe-analytic-slogo.png)
 
-[!DNL Adobe Analytics]에 대한 [!DNL Adobe Commerce Intelligence] 통합을 통해 [!DNL Adobe Analytics]의 엔드 투 엔드 고객 여정 포커스와 [!DNL Commerce Intelligence]에서 의존하는 전자 상거래 포커스를 통합할 수 있습니다. 이렇게 하면 스토어의 전반적인 성능을 전체적으로 파악할 수 있습니다.
+[!DNL Adobe Commerce Intelligence]에 대한 [!DNL Adobe Analytics] 통합을 통해 [!DNL Adobe Analytics]의 엔드 투 엔드 고객 여정 포커스와 [!DNL Commerce Intelligence]에서 의존하는 전자 상거래 포커스를 통합할 수 있습니다. 이렇게 하면 스토어의 전반적인 성능을 전체적으로 파악할 수 있습니다.
 
-특히 [!DNL Adobe Analytics]에 대한 [!DNL Commerce Intelligence] 통합은 판매자가 [!DNL Adobe Commerce]과(와) [!DNL Adobe Analytics] 데이터 집합을 결합하는 기능을 제공합니다.
+특히 [!DNL Commerce Intelligence]에 대한 [!DNL Adobe Analytics] 통합은 판매자가 [!DNL Adobe Commerce]과(와) [!DNL Adobe Analytics] 데이터 집합을 결합하는 기능을 제공합니다.
 
 - 기존 [!DNL Adobe Analytics] 계정에서 [!DNL Commerce Intelligence]&#x200B;(으)로 연결을 만듭니다.
 
@@ -51,17 +51,17 @@ ht-degree: 0%
 
 - [!DNL Adobe Analytics] 로그인 자격 증명
 
-- 데이터를 복제할 보고서 세트 `Name`개 중 `ID` 및/또는 [!DNL Adobe Analytics]
+- 데이터를 복제할 보고서 세트 [!DNL Adobe Analytics]개 중 `Name` 및/또는 `ID`
 
 - [!DNL Commerce Intelligence]에 복제할 지표 및 차원 목록
 
-## [!DNL Adobe Analytics]에 대한 [!DNL Commerce Intelligence] 통합 연결 중
+## [!DNL Commerce Intelligence]에 대한 [!DNL Adobe Analytics] 통합 연결 중
 
-1. `Integrations` 아래의 **[!DNL Manage Data** > **Integrations]** 페이지로 이동합니다.
+1. **[!DNL Manage Data** > **Integrations]** 아래의 `Integrations` 페이지로 이동합니다.
 
 1. **[!UICONTROL Add an Integration]**&#x200B;을(를) 클릭합니다.
 
-1. **[!UICONTROL Adobe Analytics]** 계정 연결을 승인할 수 있는 페이지에 액세스하려면 [!DNL Adobe Analytics] 아이콘을 클릭하십시오.
+1. [!DNL Adobe Analytics] 계정 연결을 승인할 수 있는 페이지에 액세스하려면 **[!UICONTROL Adobe Analytics]** 아이콘을 클릭하십시오.
 
 1. **[!UICONTROL Authorize with Adobe Analytics]**&#x200B;을(를) 클릭합니다.
 
@@ -73,6 +73,6 @@ ht-degree: 0%
 
 1. 선택한 보고서 세트가 테이블에 표시됩니다. **[!UICONTROL Save]**&#x200B;을(를) 클릭하여 선택 내용을 확인합니다.
 
-1. 통합이 승인되었음을 [!DNL Commerce Intelligence] [지원 팀](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)에 알리고 초기 연결 프로세스를 실행합니다.
+1. 통합이 승인되었음을 [!DNL Commerce Intelligence] [지원 팀](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)에 알리고 초기 연결 프로세스를 실행합니다.
 
 초기 연결 프로세스가 실행되면 Data Warehouse 페이지의 `All Tables` 탭에서 테이블을 사용할 수 있습니다. 복제할 열을 선택하면 다음 전체 업데이트 후에 데이터가 표시됩니다.

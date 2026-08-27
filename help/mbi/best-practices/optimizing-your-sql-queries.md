@@ -1,6 +1,6 @@
 ---
 title: SQL 쿼리 최적화
-description: SQL 쿼리를 최적화하는 방법을 알아봅니다.
+description: Commerce Intelligence SQL Report Builder에서 SQL 쿼리 최적화 쿼리 비용을 줄이고 크기를 초과한 결과로 인한 오류를 방지하기 위한 모범 사례에 대해 알아봅니다.
 exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
 role: Admin, Developer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
@@ -21,9 +21,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 826
+source-wordcount: 847
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 [!DNL SQL Report Builder]을(를) 사용하면 언제든지 쿼리를 실행하고 변경할 수 있습니다. 이 기능은 열이나 보고서를 수정하기 전에 업데이트 주기가 끝날 때까지 기다리는 대신 쿼리를 즉시 업데이트해야 하는 경우에 유용합니다.
 
-쿼리를 실행하기 전에 [[!DNL Commerce Intelligence] 비용을 예상합니다](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=ko). 비용은 쿼리를 실행하는 데 필요한 시간과 리소스 수를 고려합니다. 해당 비용이 너무 높거나 반환된 행 수가 [!DNL Commerce Intelligence] 제한을 초과하는 경우 쿼리가 실패합니다. [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md)을 쿼리하여 최대한 간소화된 쿼리를 작성할 수 있도록 하려면 Adobe에서 다음 사항을 권장합니다.
+쿼리가 실행되기 전에 [!DNL Commerce Intelligence]에서 해당 비용을 추정합니다. 비용은 쿼리를 실행하는 데 필요한 시간과 리소스 수를 고려합니다. 해당 비용이 너무 높거나 반환된 행 수가 [!DNL Commerce Intelligence] 제한을 초과하는 경우 쿼리가 실패합니다. [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md)을 쿼리하여 최대한 간소화된 쿼리를 작성할 수 있도록 하려면 Adobe에서 다음 사항을 권장합니다.
 
 ## SELECT 사용 또는 모든 열 선택
 
@@ -84,11 +84,11 @@ FULL OUTER JOIN 쿼리를 다시 작성하는 방법을 살펴봅니다.
 
 쿼리를 작성할 때 가능한 &quot;가장 저렴한&quot; 연산자 사용을 고려하십시오. 모든 쿼리에는 계산 비용이 있으며 이는 쿼리를 구성하는 함수, 연산자 및 필터에 의해 결정됩니다. 일부 연산자는 계산 노력이 덜 필요하므로 다른 연산자보다 비용이 덜 든다.
 
-비교 연산자(>, &lt;, = 등)가 가장 저렴하고 그 뒤에 [LIKE가 있습니다. 가장 비싼 연산자인 및 POSIX 연산자](https://www.postgresql.org/docs/9.5/functions-matching.html)과(와) 비슷합니다.
+비교 연산자(>, &lt;, = 등)가 가장 저렴하고 [LIKE가 그 뒤를 잇습니다. 가장 비싼 연산자인 및 POSIX 연산자](https://www.postgresql.org/docs/9.5/functions-matching.html)과(와) 비슷합니다.
 
 ## 존재함 대 위치 사용
 
-`EXISTS`과(와) `IN`을(를) 사용하는 것은 반환하려는 결과의 유형에 따라 다릅니다. 단일 값에만 관심이 있는 경우 `EXISTS` 대신 `IN` 절을 사용하십시오. `IN`은(는) 쉼표로 구분된 값 목록과 함께 사용되므로 쿼리의 계산 비용이 증가합니다.
+`EXISTS`과(와) `IN`을(를) 사용하는 것은 반환하려는 결과의 유형에 따라 다릅니다. 단일 값에만 관심이 있는 경우 `IN` 대신 `EXISTS` 절을 사용하십시오. `IN`은(는) 쉼표로 구분된 값 목록과 함께 사용되므로 쿼리의 계산 비용이 증가합니다.
 
 `IN`개의 쿼리가 실행되면 시스템은 먼저 하위 쿼리(`IN` 문)를 처리한 다음 `IN` 문에 지정된 관계를 기반으로 전체 쿼리를 처리해야 합니다. `EXISTS` 쿼리는 쿼리를 여러 번 실행할 필요가 없기 때문에 훨씬 효율적입니다. 쿼리에 지정된 관계를 확인하는 동안 true/false 값이 반환됩니다.
 

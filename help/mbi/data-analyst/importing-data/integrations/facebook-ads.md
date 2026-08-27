@@ -20,9 +20,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 313
+source-wordcount: 321
 ht-degree: 0%
 
 ---
@@ -39,18 +39,18 @@ ht-degree: 0%
 
 [!DNL Facebook Ad] 데이터를 [!DNL Commerce Intelligence]에 연결하는 간단한 3단계 프로세스입니다.
 
-1. [&#x200B; [!DNL Facebook] 에서 데이터 소스로  [!DNL Commerce Intelligence]추가](#stepone)
-1. [&#x200B; [!DNL Commerce Intelligence] 데이터에 대한  [!DNL Facebook Ads] 액세스 허용](#steptwo)
+1. [&#x200B; [!DNL Commerce Intelligence]에서 데이터 소스로  [!DNL Facebook] 추가](#stepone)
+1. [&#x200B; [!DNL Facebook Ads] 데이터에 대한  [!DNL Commerce Intelligence] 액세스 허용](#steptwo)
 1. [데이터를 가져올  [!DNL Facebook Ads] 계정 선택](#stepthree)
 
 ## [!DNL Facebook]을(를) [!DNL Commerce Intelligence]의 데이터 소스로 추가 {#stepone}
 
-1. [!DNL Facebook] 계정에 [!DNL Commerce Intelligence] 통합을 추가하려면 `Connections` 아래의 **[!UICONTROL Manage Data** > **Integrations]** 페이지로 이동하십시오.
+1. [!DNL Commerce Intelligence] 계정에 [!DNL Facebook] 통합을 추가하려면 **[!UICONTROL Manage Data** > **Integrations]** 아래의 `Connections` 페이지로 이동하십시오.
 1. 오른쪽에 있는 **[!UICONTROL Add Integration]**&#x200B;을(를) 클릭합니다.
 1. [!DNL Facebook] 아이콘을 클릭합니다. [!DNL Facebook] 인증 페이지가 표시됩니다.
 1. **[!UICONTROL Authorize]**&#x200B;을(를) 클릭합니다.
 
-## [!DNL Commerce Intelligence] 데이터에 대한 [!DNL Facebook Ads] 액세스 허용 {#steptwo}
+## [!DNL Facebook Ads] 데이터에 대한 [!DNL Commerce Intelligence] 액세스 허용 {#steptwo}
 
 **[!DNL Facebook Authorize]**&#x200B;을(를) 클릭하면 작은 팝업 창이 표시됩니다.
 
@@ -66,15 +66,15 @@ ht-degree: 0%
 
 1. **[!UICONTROL Save Connections]**&#x200B;을(를) 클릭합니다.
 
-   연결이 성공하면 *연결이 성공합니다!* 메시지가 페이지 맨 위에 표시됩니다.
+   연결이 성공하면 *연결이 성공합니다!* 페이지 맨 위에 메시지가 표시됩니다.
 
 ## 다음은 무엇입니까? {#next}
 
-[!DNL Facebook]에서 [!DNL Google Analytics]개의 캠페인을 추적하고 있는지 확인하십시오. 이렇게 하면 `utm\_campaign`의 [!DNL Google Analytics] 필드가 [!DNL Facebook] 캠페인에 대해 올바르게 채워집니다.
+[!DNL Google Analytics]에서 [!DNL Facebook]개의 캠페인을 추적하고 있는지 확인하십시오. 이렇게 하면 [!DNL Google Analytics]의 `utm\_campaign` 필드가 [!DNL Facebook] 캠페인에 대해 올바르게 채워집니다.
 
 ## 관련 항목
 
-* [통합 재인증](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ko)
+* [통합 재인증](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
 * [&#x200B; [!DNL Google Adwords] 계정 연결](../integrations/google-ecommerce.md)
 * [&#x200B; [!DNL Google eCommerce]을(를) 통해 주문 참조 원본 추적](../integrations/google-ecommerce.md)
 * [데이터베이스에서 사용자 조회 소스 추적](../../analysis/google-track-user-acq.md)

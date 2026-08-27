@@ -22,9 +22,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 911
+source-wordcount: 927
 ht-degree: 0%
 
 ---
@@ -89,7 +89,7 @@ ht-degree: 0%
 
 위의 차원으로 지표를 세그먼트화하는 첫 번째 단계는 데이터베이스에서 이 데이터를 추적하고 있는지 확인하는 것입니다. 추적되지 않는 경우 기술 팀과 만나 이 데이터 추적을 시작하는 방법을 찾으십시오.
 
-데이터베이스에서 데이터가 추적되는지 확인한 후 [지원 팀에 문의](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)하여 [!DNL Commerce Intelligence] 지표 및 차트로 차원을 푸시합니다. *필드 관리* 도구를 사용하여 [!DNL Commerce Intelligence]에서 이러한 필드를 추적할 수도 있습니다.
+데이터베이스에서 데이터가 추적되는지 확인한 후 [지원 팀에 문의](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)하여 [!DNL Commerce Intelligence] 지표 및 차트로 차원을 푸시합니다. *필드 관리* 도구를 사용하여 [!DNL Commerce Intelligence]에서 이러한 필드를 추적할 수도 있습니다.
 
 ## 관련 항목
 

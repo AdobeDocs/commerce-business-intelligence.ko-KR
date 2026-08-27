@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 231
+source-wordcount: 244
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 특정 경우에 지표가 작업을 수행하는 데 사용하는 데이터 테이블을 변경하도록 결정할 수 있습니다. 예를 들어 새 사용자 테이블이 있는 경우 `Users\_Old` 테이블에서 사용자 관련 지표를 마이그레이션하여 `Users\_New` 테이블을 대신 사용할 수 있습니다.
 
 1. **[!UICONTROL Data]** > **[!UICONTROL Metrics]**(으)로 이동
-1. **[!UICONTROL Edit]** 테이블을 전환할 지표 옆의 `operational`을(를) 클릭합니다.
+1. `operational` 테이블을 전환할 지표 옆의 **[!UICONTROL Edit]**&#x200B;을(를) 클릭합니다.
 1. 편집기에서 **[!UICONTROL Change]**&#x200B;을(를) 클릭합니다.
 
    ![작동 테이블 설정을 표시하는 지표 정의 페이지](../../assets/change-metrics-1.png)
@@ -41,6 +41,6 @@ ht-degree: 0%
 
    ![사용 가능한 테이블을 표시하는 테이블 선택 드롭다운](../../assets/change-metrics-2.png)
 
-1. 새 테이블에 일치하는 열이 없는 경우 **데이터 테이블에서 만들거나** [에서 만든 계산 열 또는 차원인 경우 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ko)지원 팀에 문의[!DNL Commerce Intelligence]할 수 있습니다. **지표에서 차원을 삭제**&#x200B;할 수도 있습니다. 더 이상 필요하지 않은 차원을 삭제하려면 지표 편집기로 돌아가 `Dimensions`에서 삭제할 차원을 선택하면 됩니다.
+1. 새 테이블에 일치하는 열이 없는 경우 **데이터 테이블에서 만들거나** [!DNL Commerce Intelligence]에서 만든 계산 열 또는 차원인 경우 [지원 팀에 문의](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)할 수 있습니다. **지표에서 차원을 삭제**&#x200B;할 수도 있습니다. 더 이상 필요하지 않은 차원을 삭제하려면 지표 편집기로 돌아가 `Dimensions`에서 삭제할 차원을 선택하면 됩니다.
 
    ![작동 열 선택 드롭다운 메뉴](../../assets/change-metrics-3.png)

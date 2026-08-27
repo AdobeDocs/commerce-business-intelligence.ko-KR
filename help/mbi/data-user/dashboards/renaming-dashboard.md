@@ -1,6 +1,6 @@
 ---
 title: 대시보드 이름 변경
-description: 대시보드에서 차트를 제거하는 방법에 대해 알아봅니다.
+description: Commerce Intelligence 대시보드의 현재 이름이 더 이상 맞지 않으면 대시보드 옵션 메뉴에서 이름을 바꾸고 몇 가지 빠른 단계로 업데이트합니다.
 exl-id: 45c67f3c-4660-4bb5-ba10-55ed666525f4
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
@@ -17,14 +17,14 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 9ebcff62d51b4f2c7885abd4705870a5428c08ef
 workflow-type: tm+mt
-source-wordcount: 84
+source-wordcount: 97
 ht-degree: 0%
 
 ---
 
-# 대시보드에서 차트 제거
+# 대시보드 이름 바꾸기
 
 >[!NOTE]
 >
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 때로는 이름이 더 이상 맞지 않을 때도 있습니다. 대시보드 이름을 바꾸는 것은 빠르고 간단합니다.
 
-1. 대시보드에 있는 동안 화면 상단의 **[!UICONTROL Dashboard Options]** 메뉴 옆에 있는 `Global Search` 메뉴를 클릭합니다.
+1. 대시보드에 있는 동안 화면 상단의 `Global Search` 메뉴 옆에 있는 **[!UICONTROL Dashboard Options]** 메뉴를 클릭합니다.
 
 1. 드롭다운에서 **[!UICONTROL Rename]**&#x200B;을(를) 클릭합니다.
 
