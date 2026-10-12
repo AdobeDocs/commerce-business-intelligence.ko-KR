@@ -4,37 +4,52 @@ description: 다운로드 가능한 파일로 내보내어 Commerce Intelligence
 exl-id: 3c8dcc72-3623-4c4e-a941-f431a97571e0
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-TQID: https://experienceleague.adobe.com/EQmiSbzzvOONQ8-F1U9uMVpgXUKd2PEjcLXLVSgQSm8
+TQID: 'https://experienceleague.adobe.com/EQmiSbzzvOONQ8-F1U9uMVpgXUKd2PEjcLXLVSgQSm8'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 323
+source-wordcount: '323'
 ht-degree: 0%
-
 ---
-
 # Zendesk 데이터 감사
 
 [[!DNL Zendesk] 데이터](../integrations/exp-zendesk-data.md)에서 이상한 점을 발견했습니까? 문제를 정확히 파악하려면 데이터를 탐색해야 합니다. 이 작업은 [!DNL Zendesk] 데이터를 다운로드 가능한 파일로 내보내면 수행할 수 있습니다.
 
 ## 데이터 내보내기 활성화
 
-현재 모든 [!DNL Zendesk] 계정에 대해 데이터 내보내기를 사용할 수 없습니다. 이 기능을 활성화하려면 [지원 티켓을 제출](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)하고 [!DNL Zendesk] 하위 도메인 이름을 언급하십시오.
+현재 모든 [!DNL Zendesk] 계정에 대해 데이터 내보내기를 사용할 수 없습니다. 이 기능을 활성화하려면 [지원 티켓을 제출](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)하고 [!DNL Zendesk] 하위 도메인 이름을 언급하십시오.
 
 >[!NOTE]
 >
@@ -55,6 +70,6 @@ ht-degree: 0%
 
    이 다운로드 링크는 최소 3일 동안 유효합니다.
 
-이 프로세스는 티켓 데이터(댓글 포함), 사용자 데이터 및 계정 데이터를 포함하여 현재 [!DNL Zendesk] 계정에 저장된 모든 정보가 포함된 XML 파일을 만듭니다. 이제 [지원 티켓을 제출](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)할 수 있습니다(이 파일을 첨부해야 합니다!). 따라서 데이터를 자세히 살펴볼 수 있습니다. 파일이 너무 큰 경우 [!DNL Dropbox] 또는 [!DNL Google Drive]을(를) 통해 [!DNL Commerce Intelligence] 팀과 공유하십시오.
+이 프로세스는 티켓 데이터(댓글 포함), 사용자 데이터 및 계정 데이터를 포함하여 현재 [!DNL Zendesk] 계정에 저장된 모든 정보가 포함된 XML 파일을 만듭니다. 이제 [지원 티켓을 제출](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)할 수 있습니다(이 파일을 첨부해야 합니다!). 따라서 데이터를 자세히 살펴볼 수 있습니다. 파일이 너무 큰 경우 [!DNL Dropbox] 또는 [!DNL Google Drive]을(를) 통해 [!DNL Commerce Intelligence] 팀과 공유하십시오.
 
 [!DNL Zendesk] 파일 내보내기에 대한 자세한 내용은 공식 [[!DNL Zendesk] 내보내기 설명서](https://support.zendesk.com/hc/en-us/articles/4408886165402-Exporting-data-to-a-JSON-CSV-or-XML-file)를 참조하세요.

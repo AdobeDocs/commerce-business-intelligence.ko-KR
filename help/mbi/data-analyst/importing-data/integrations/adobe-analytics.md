@@ -1,32 +1,46 @@
 ---
 title: Adobe Analytics 연결
-description: ' [!DNL Adobe Analytics] 의 엔드 투 엔드 고객 여정 포커스와  [!DNL Commerce Intelligence]에서 의존하는 전자 상거래 포커스를 통합하는 방법을 알아봅니다.'
+description: '[!DNL Adobe Analytics]의 전체 고객 여정 포커스와 [!DNL Commerce Intelligence]에서 의존하는 전자 상거래 포커스를 통합하는 방법을 알아봅니다.'
 exl-id: 824e1ee4-6b88-42f7-b265-29330dbc4407
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-TQID: https://experienceleague.adobe.com/KkiKySM2q8ewqhQ1kdUjLuTM4iOpzrZb5Ok-UvBBpJE
+TQID: 'https://experienceleague.adobe.com/KkiKySM2q8ewqhQ1kdUjLuTM4iOpzrZb5Ok-UvBBpJE'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 327
+source-wordcount: '328'
 ht-degree: 0%
-
 ---
-
 # [!DNL Adobe Analytics] 연결
 
 >[!NOTE]
@@ -73,6 +87,6 @@ ht-degree: 0%
 
 1. 선택한 보고서 세트가 테이블에 표시됩니다. **[!UICONTROL Save]**&#x200B;을(를) 클릭하여 선택 내용을 확인합니다.
 
-1. 통합이 승인되었음을 [!DNL Commerce Intelligence] [지원 팀](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)에 알리고 초기 연결 프로세스를 실행합니다.
+1. 통합이 승인되었음을 [!DNL Commerce Intelligence] [지원 팀](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)에 알리고 초기 연결 프로세스를 실행합니다.
 
 초기 연결 프로세스가 실행되면 Data Warehouse 페이지의 `All Tables` 탭에서 테이블을 사용할 수 있습니다. 복제할 열을 선택하면 다음 전체 업데이트 후에 데이터가 표시됩니다.

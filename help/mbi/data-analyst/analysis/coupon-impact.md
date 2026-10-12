@@ -4,28 +4,37 @@ description: 고객 확보 및 유지에 대한 쿠폰 영향을 분석하는 �
 exl-id: b0619365-fa75-49b5-a393-87f3364a390f
 role: Admin, User
 feature: Data Warehouse Manager, Reports
-TQID: https://experienceleague.adobe.com/eILs8O8m45IOVLRYERopvcugIawdQ3c1YGTxr11W3mo
+TQID: 'https://experienceleague.adobe.com/eILs8O8m45IOVLRYERopvcugIawdQ3c1YGTxr11W3mo'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Troubleshooting
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 1422
+source-wordcount: '1422'
 ht-degree: 2%
-
 ---
-
 # 쿠폰 영향
 
 고객이 쿠폰을 사용하는 방법을 분석하면 비즈니스에 중요한 insight을 제공할 수 있습니다. 특히, 쿠폰을 통해 고객을 획득하고 유지하는 방법을 분석합니다. 이 주제에서는 다음 유형의 질문에 답변하는 데 도움이 되는 분석을 살펴봅니다.
@@ -166,4 +175,4 @@ ht-degree: 2%
 
 ## 요약 {#wrapup}
 
-고객이 쿠폰을 사용하는 방법을 더 잘 이해하기 위해 생성할 수 있는 다양한 분석이 있습니다. 고객이 쿠폰을 어떻게 사용하는지 또는 쿠폰을 사용하는 데 걸리는 시간을 분석하는 것에 대해 생각해 본 적이 있습니까? 최적의 할인 금액을 찾는 것은 어떻습니까? 어떤 금액이 반복 구매자를 격려하고, 더 높은 평균 주문 가격을 제공하며, 더 높은 생애 수익을 얻습니까? 이러한 유형의 질문에 대한 도움말을 보려면 [지원팀에 문의](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)하세요.
+고객이 쿠폰을 사용하는 방법을 더 잘 이해하기 위해 생성할 수 있는 다양한 분석이 있습니다. 고객이 쿠폰을 어떻게 사용하는지 또는 쿠폰을 사용하는 데 걸리는 시간을 분석하는 것에 대해 생각해 본 적이 있습니까? 최적의 할인 금액을 찾는 것은 어떻습니까? 어떤 금액이 반복 구매자를 격려하고, 더 높은 평균 주문 가격을 제공하며, 더 높은 생애 수익을 얻습니까? 이러한 유형의 질문에 대한 도움말을 보려면 [지원팀에 문의](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)하세요.

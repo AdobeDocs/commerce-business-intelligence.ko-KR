@@ -4,37 +4,52 @@ description: 업데이트 주기 상태를 확인하는 방법을 알아봅니�
 exl-id: a4a2e487-b826-4888-baf0-9d246a8ff153
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-TQID: https://experienceleague.adobe.com/qT3lojSuve8jHgNVKoJCUW82cN2QK497wFX8NVbptWI
+TQID: 'https://experienceleague.adobe.com/qT3lojSuve8jHgNVKoJCUW82cN2QK497wFX8NVbptWI'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 32bcb9f48faa4e766972b0690f86c9813c6a9d53
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 515
+source-wordcount: '515'
 ht-degree: 0%
-
 ---
-
 # 데이터 및 업데이트 정보
 
 * [데이터가 변경된 이유는 무엇입니까?](#datachange)
 * [정기 업데이트와 강제 업데이트의 차이점은 무엇입니까?](#regularforcedupdates)
 * [업데이트 주기가 오래 걸리는 이유는 무엇입니까?](#updatecycletime)
 * [업데이트 주기가 완료되면 알림을 받을 수 있습니까?](#notifyupdate)
-* [&#x200B; [!DNL Google ECommerce] 데이터가 내 데이터베이스와 다른 이유는 무엇입니까?](#ecommdatabase)
+* [ [!DNL Google ECommerce] 데이터가 내 데이터베이스와 다른 이유는 무엇입니까?](#ecommdatabase)
 * [데이터 불일치 문제를 해결하려면 어떻게 합니까?](#datadiscrepancy)
 
 ## 데이터가 변경된 이유는 무엇입니까? {#datachange}
@@ -63,8 +78,8 @@ ht-degree: 0%
 
 ## [!DNL Google ECommerce]데이터가 내 데이터베이스와 다른 이유는 무엇입니까? {#ecommdatabase}
 
-[!DNL Google Analytics]과(와) 데이터베이스 간의 불일치는 여러 가지 이유로 발생할 수 있습니다. 추적이 제대로 활성화되지 않음, 사용자가 시크릿 방문 및 클릭 이벤트가 제대로 작동하지 않는 것은 몇 가지 예에 불과합니다. 매출과 주문이 올바르게 표시되지 않으면 [이 항목을 참조](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies)하여 문제를 진단하십시오.
+[!DNL Google Analytics]과(와) 데이터베이스 간의 불일치는 여러 가지 이유로 발생할 수 있습니다. 추적이 제대로 활성화되지 않음, 사용자가 시크릿 방문 및 클릭 이벤트가 제대로 작동하지 않는 것은 몇 가지 예에 불과합니다. 매출과 주문이 올바르게 표시되지 않으면 [이 항목을 참조](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies)하여 문제를 진단하십시오.
 
 ## 데이터 불일치 문제를 해결하려면 어떻게 합니까? {#datadiscrepancy}
 
-Adobe은 일관되지 않은 데이터를 보는 것이 답답한 경험이 될 수 있다는 것을 알고 있습니다. [데이터 내보내기 자습서](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies)를 사용하여 문제를 진단해 보십시오. 여전히 문제가 있으면 [지원팀에 문의](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)하세요.
+Adobe은 일관되지 않은 데이터를 보는 것이 답답한 경험이 될 수 있다는 것을 알고 있습니다. [데이터 내보내기 자습서](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies)를 사용하여 문제를 진단해 보십시오. 여전히 문제가 있으면 [지원팀에 문의](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)하세요.

@@ -4,29 +4,41 @@ description: 표를 구성하는 방법과 표 데이터가 작동하는 방식�
 exl-id: 83895c48-a6ec-4b01-9890-164e0b21dcbc
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Data Import/Export
-TQID: https://experienceleague.adobe.com/zP44fYttORVvVtWgnykRswpsh9VwdqYbfwt1aJqWJdE
+TQID: 'https://experienceleague.adobe.com/zP44fYttORVvVtWgnykRswpsh9VwdqYbfwt1aJqWJdE'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 1442
+source-wordcount: '1464'
 ht-degree: 0%
-
 ---
-
 # 복제 방법 구성
 
 `Replication` 메서드와 [다시 확인](../data-warehouse-mgr/cfg-data-rechecks.md)은 데이터베이스 테이블에서 새 데이터나 업데이트된 데이터를 식별하는 데 사용됩니다. 이러한 매개 변수를 올바르게 설정하는 것은 데이터의 정확성과 최적화된 업데이트 시간을 모두 보장하는 데 중요합니다. 이 항목에서는 복제 방법을 중점적으로 다룹니다.
@@ -53,14 +65,14 @@ ht-degree: 0%
 * `datetime` 열은 null이 아닙니다.
 * 행은 테이블에서 삭제되지 않습니다
 
-이러한 기준 외에도 Adobe에서는 **복제에 사용되는** 열을 `datetime`인덱싱`Modified At`하는 것이 좋습니다. 이렇게 하면 복제 속도를 최적화할 수 있기 때문입니다.
+이러한 기준 외에도 Adobe에서는 `Modified At` 복제에 사용되는 `datetime` 열을 **인덱싱**&#x200B;하는 것이 좋습니다. 이렇게 하면 복제 속도를 최적화할 수 있기 때문입니다.
 
 업데이트가 실행되면 가장 최근 업데이트 후 발생한 `datetime` 열에 값이 있는 행을 검색하여 새 데이터나 변경된 데이터를 식별합니다. 새 행이 검색되면 Data Warehouse에 복제됩니다. [Data Warehouse 관리자](../data-warehouse-mgr/tour-dwm.md)에 있는 행은 현재 데이터베이스 값으로 덮어쓰여집니다.
 
 예를들어 테이블에 마지막으로 데이터가 변경된 시간을 나타내는 `modified\_at` 열이 있을 수 있습니다. 가장 최근 업데이트가 화요일 정오에 실행된 경우, 업데이트에서는 화요일 정오보다 큰 `modified\_at` 값을 가진 모든 행을 검색합니다. 화요일 정오 이후에 생성되거나 수정된 모든 검색된 행은 Data Warehouse에 복제됩니다.
 
 **알고 계십니까?**
-데이터베이스가 현재 `Incremental` 복제 메서드를 지원하지 않더라도 [&#x200B; 또는 &#x200B;](../../best-practices/mod-db-inc-replication.md)을(를) 사용할 수 있도록 `Modified At`데이터베이스를 변경`Single Auto Incrementing PK`할 수 있습니다.
+데이터베이스가 현재 `Incremental` 복제 메서드를 지원하지 않더라도 `Modified At` 또는 `Single Auto Incrementing PK`을(를) 사용할 수 있도록 [데이터베이스를 변경](../../best-practices/mod-db-inc-replication.md)할 수 있습니다.
 
 `Modified At`은(는) 가장 이상적인 복제 방법일 뿐만 아니라 가장 빠릅니다. 이 방법은 대규모 데이터 세트에서 눈에 띄는 속도 증가를 생성할 뿐만 아니라 재확인 옵션을 구성할 필요가 없습니다. 다른 방법은 작은 데이터 하위 집합이 변경된 경우에도 변경 사항을 식별하기 위해 전체 테이블을 반복해야 합니다. `Modified At`은(는) 작은 하위 집합만 반복합니다.
 
@@ -94,7 +106,7 @@ ht-degree: 0%
 
 새 행은 동기화 프로세스가 시작될 때 데이터베이스를 쿼리하고 행 수를 계산하여 감지됩니다. 로컬 데이터베이스에 [!DNL Commerce Intelligence]개 이상의 행이 있으면 테이블이 새로 고쳐집니다. 행 수가 동일하거나 [!DNL Commerce Intelligence]에 로컬 데이터베이스보다 *개 이상*&#x200B;개의 행이 있는 경우 테이블을 건너뜁니다.
 
-이렇게 하면 **`Full Table`에서** 복제가 호환되지 않는 중요한 문제가 발생합니다.
+이렇게 하면 **에서**`Full Table` 복제가 호환되지 않는 중요한 문제가 발생합니다.
 
 * 후속 업데이트 주기 사이에 로컬 데이터베이스 테이블에서 생성된 행보다 더 많은 행이 삭제되거나
 * 열 값은 변경되지만 추가 행은 만들어지지 않습니다
@@ -128,7 +140,7 @@ ht-degree: 0%
    >
    >**일부 증분 메서드를 사용하려면`Replication Key`**&#x200B;을(를) 설정해야 합니다. [!DNL Commerce Intelligence]은(는) 이 키를 사용하여 다음 업데이트 주기를 시작할 위치를 결정합니다.
    >
-   >예를 들어 `modified at` 테이블에 `orders` 메서드를 사용하려면 `date column`을(를) 복제 키로 설정해야 합니다. 복제 키에 대한 몇 가지 옵션이 있을 수 있지만 `created at`을(를) 선택하거나 순서를 만든 시간을 선택합니다. 마지막 업데이트 주기가 2015년 12월 1일 00:10:00에 중지되면 다음 주기는 이보다 큰 `created at` 날짜의 데이터 복제를 시작합니다.
+   >예를 들어 `orders` 테이블에 `modified at` 메서드를 사용하려면 `date column`을(를) 복제 키로 설정해야 합니다. 복제 키에 대한 몇 가지 옵션이 있을 수 있지만 `created at`을(를) 선택하거나 순서를 만든 시간을 선택합니다. 마지막 업데이트 주기가 2015년 12월 1일 00:10:00에 중지되면 다음 주기는 이보다 큰 `created at` 날짜의 데이터 복제를 시작합니다.
 
 1. 완료되면 **[!UICONTROL Save]**&#x200B;을(를) 클릭합니다.
 
@@ -151,6 +163,6 @@ ht-degree: 0%
 ## 관련 설명서
 
 * [데이터 재확인 이해](../data-warehouse-mgr/cfg-data-rechecks.md)
-* [지원할 데이터베이스 수정 &#x200B;](../../best-practices/mod-db-inc-replication.md)
+* [`Incremental` 복제를 지원하도록 데이터베이스를 수정하는 중입니다.](../../best-practices/mod-db-inc-replication.md)
 * [분석을 위해 데이터베이스 최적화](../../best-practices/opt-db-analysis.md)
 * [업데이트 시간 단축](../../best-practices/reduce-update-cycle-time.md)

@@ -4,31 +4,45 @@ description: 기본 분석을 이해하고 빌드하는 방법을 알아봅니�
 exl-id: 23cea7b3-2e66-40c3-b4bd-d197237782e3
 role: Admin, Developer, User
 feature: Data Warehouse Manager, Dashboards, Data Integration
-TQID: https://experienceleague.adobe.com/5AOJMiHxtu-nt3cWP-lF5g4Zufa2MuZr7xA8pX3OgB8
+TQID: 'https://experienceleague.adobe.com/5AOJMiHxtu-nt3cWP-lF5g4Zufa2MuZr7xA8pX3OgB8'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 06e518d4-11ae-5c20-98b0-ce8ab05d7166
+    internal-label: Dashboards
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+    internal-label: Data integration
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Insights
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 3891
+source-wordcount: '3891'
 ht-degree: 18%
-
 ---
-
 # 기본 분석
 
 [!DNL Adobe Commerce Intelligence] 플랫폼을 잘 알고 있고 도구에 대한 기본 사항을 이해하면 보고서 작성을 시작할 수 있습니다. 가장 일반적인 질문 중 하나는 &quot;무엇을 봐야 합니까?&quot;입니다.
@@ -64,7 +78,7 @@ ht-degree: 18%
 
 **손님 주문을 수락하시겠습니까?**
 
-*그럴 경우 이 테이블에 모든 고객이 포함되지 않을 수 있습니다. 고객 분석에 모든 고객이 포함되는지 확인하려면 [지원 팀](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)에 문의하십시오.*
+*그럴 경우 이 테이블에 모든 고객이 포함되지 않을 수 있습니다. 고객 분석에 모든 고객이 포함되는지 확인하려면 [지원 팀](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)에 문의하십시오.*
 
 *손님 주문을 수락할지 확실하지 않습니까? 자세한 내용은 [이 항목](../data-warehouse-mgr/guest-orders.md)을 참조하세요!*
 
@@ -78,7 +92,7 @@ ht-degree: 18%
 * **[!UICONTROL Created_at]**: 주문을 만들거나 수행한 날짜입니다.
 * **[!UICONTROL Customer_email]**: 주문한 고객의 이메일 주소입니다. 고객의 고유 식별자일 수도 있습니다.
 * **[!UICONTROL Customer's lifetime number of orders]**: `Customers` 테이블에서 이름이 같은 열의 복사본입니다.
-* **[!UICONTROL Customer's order number]**: 주문과 연결된 고객의 순차적 주문 번호입니다. 예를 들어 표시되는 행이 고객의 첫 번째 주문인 경우 이 열은 &quot;1&quot;이지만, 고객의 15번째 주문인 경우 이 열에는 이 주문에 대한 &quot;15&quot;가 표시됩니다. 이 차원이 `Customers` 테이블에 없는 경우 [지원 팀](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)에 이 차원을 빌드하도록 요청하십시오.
+* **[!UICONTROL Customer's order number]**: 주문과 연결된 고객의 순차적 주문 번호입니다. 예를 들어 표시되는 행이 고객의 첫 번째 주문인 경우 이 열은 &quot;1&quot;이지만, 고객의 15번째 주문인 경우 이 열에는 이 주문에 대한 &quot;15&quot;가 표시됩니다. 이 차원이 `Customers` 테이블에 없는 경우 [지원 팀](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)에 이 차원을 빌드하도록 요청하십시오.
 * **[!UICONTROL Customer's order number (previous-current)]**: **[!UICONTROL Customer's order number]** 열에 있는 두 값의 연결입니다. 이 메서드는 아래 샘플 보고서에서 두 주문 간의 경과 시간을 표시하는 데 사용됩니다. 예를 들어, 고객의 첫 번째 주문 일자와 두 번째 주문 일자 사이의 시간은 이 계산과 함께 &quot;1-2&quot;로 표시됩니다.
 * **[!UICONTROL Coupon_code]**: 각 주문에 사용된 쿠폰을 표시합니다.
 * **[!UICONTROL Seconds since previous order]**: 고객의 주문 사이의 시간(초)입니다.
@@ -106,7 +120,7 @@ ht-degree: 18%
 
 ## 마케팅 지출 테이블
 
-마케팅 지출을 분석할 때 분석에 [!DNL Facebook], [!DNL Google AdWords] 또는 다른 소스를 포함할 수 있습니다. 여러 마케팅 지출 소스가 있는 경우 [Managed Services 팀](https://business.adobe.com/kr/products/magento/fully-managed-service.html)에 문의하여 마케팅 캠페인에 대한 통합 테이블을 설정하십시오.
+마케팅 지출을 분석할 때 분석에 [!DNL Facebook], [!DNL Google AdWords] 또는 다른 소스를 포함할 수 있습니다. 여러 마케팅 지출 소스가 있는 경우 [Managed Services 팀](https://business.adobe.com/products/magento/fully-managed-service.html)에 문의하여 마케팅 캠페인에 대한 통합 테이블을 설정하십시오.
 
 **차원**
 
@@ -194,7 +208,7 @@ ht-degree: 18%
   * **[!UICONTROL Group By]**: `customer_email`
   * **[!UICONTROL Show Top/Bottom]**: 주문별로 정렬된 상위 25개
 
-  주문별 상위 25개 고객&rbrack;(../../assets/Top_25_customers_by_lifetime_orders.png)<!--{: width="929"}-->!&lbrack;
+  주문별 상위 25개 고객](../../assets/Top_25_customers_by_lifetime_orders.png)<!--{: width="929"}-->![
 
 ### 라이프타임 매출별 상위 고객
 

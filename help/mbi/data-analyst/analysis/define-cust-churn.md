@@ -4,29 +4,41 @@ description: 트랜잭션 고객에 대한 이탈을 정의하는 데 도움이 
 exl-id: fea8f7e9-c84c-4d49-a657-8b75140c113a
 role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports, Dashboards
-TQID: https://experienceleague.adobe.com/eDJBh7FlhuKjBa5ft4sqAfZavmBk4V9m-Iu-26cG2VI
+TQID: 'https://experienceleague.adobe.com/eDJBh7FlhuKjBa5ft4sqAfZavmBk4V9m-Iu-26cG2VI'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
+  - id: 06e518d4-11ae-5c20-98b0-ce8ab05d7166
+    internal-label: Dashboards
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Troubleshooting
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 593
+source-wordcount: '593'
 ht-degree: 16%
-
 ---
-
 # 트랜잭션 고객 이탈
 
 이 항목에서는 트랜잭션 고객에 대한 이탈을 정의하는 데 도움이 되는 대시보드를 설정하는 방법을 보여 줍니다.
@@ -53,8 +65,8 @@ ht-degree: 16%
 * 정의 선택: 조인된 열
 * [!UICONTROL table] 선택: `customer_entity`
 * [!UICONTROL column] 선택: `Customer's lifetime number of orders`
-* [!UICONTROL Path]&#x200B;: `sales_flat_order.customer_id = customer_entity.entity_id`
-* [!UICONTROL Filter]&#x200B;: `Orders we count`
+* [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
+* [!UICONTROL Filter]: `Orders we count`
 
 * `Seconds since created_at`
 * 정의 선택: `Age`
@@ -78,65 +90,65 @@ ht-degree: 16%
 
 * **초기 반복 순서 확률**
 * 지표 A: 모든 시간 반복 주문
-* [!UICONTROL Metric]&#x200B;: `Number of orders`
-* [!UICONTROL Filter]&#x200B;: `Customer's order number greater than 1`
+* [!UICONTROL Metric]: `Number of orders`
+* [!UICONTROL Filter]: `Customer's order number greater than 1`
 
 * 지표 B: 역대 주문
 * [!UICONTROL Metric]: 주문 수
 
 * [!UICONTROL Formula]: 초기 반복 순서 확률
-* &#x200B;
-  [!UICONTROL 공식]&#x200B;: `A/B`
-* &#x200B;
-  [!UICONTROL Format]&#x200B;: `Percent`
+* 
+  [!UICONTROL 공식]: `A/B`
+* 
+  [!UICONTROL Format]: `Percent`
 
-* [!UICONTROL Time period]&#x200B;: `All time`
-* &#x200B;
-  [!UICONTROL Interval]&#x200B;: `None`
-* &#x200B;
-  [!UICONTROL Chart type]&#x200B;: `Scalar`
+* [!UICONTROL Time period]: `All time`
+* 
+  [!UICONTROL Interval]: `None`
+* 
+  [!UICONTROL Chart type]: `Scalar`
 
 * **주문 이후 몇 달 동안 반복 주문 확률**
 * 지표 A: 이전 주문 이후 매월 주문 반복(숨기기)
-* [!UICONTROL Metric]&#x200B;: `Number of orders`
-* &#x200B;
-  [!UICONTROL Perspective]&#x200B;: `Cumulative`
-* [!UICONTROL Filter]&#x200B;: `Customer's order number greater than 1`
+* [!UICONTROL Metric]: `Number of orders`
+* 
+  [!UICONTROL Perspective]: `Cumulative`
+* [!UICONTROL Filter]: `Customer's order number greater than 1`
 
 * 지표 B: 주문 이후 개월별 마지막 주문(숨기기)
-* [!UICONTROL Metric]&#x200B;: `Number of orders`
-* &#x200B;
-  [!UICONTROL Perspective]&#x200B;: `Cumulative`
-* [!UICONTROL Filter]&#x200B;: `Is customer's last order? (Yes/No) = Yes`
+* [!UICONTROL Metric]: `Number of orders`
+* 
+  [!UICONTROL Perspective]: `Cumulative`
+* [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
 * 지표 C: 모든 시간 반복 주문 (숨기기)
-* [!UICONTROL Metric]&#x200B;: `Number of orders`
-* [!UICONTROL Filter]&#x200B;: `Customer's order number greater than 1`
+* [!UICONTROL Metric]: `Number of orders`
+* [!UICONTROL Filter]: `Customer's order number greater than 1`
 
-* &#x200B;
-  [!UICONTROL 그룹 기준]&#x200B;: `Independent`
+* 
+  [!UICONTROL 그룹 기준]: `Independent`
 
 * 지표 D: 역대 마지막 주문 수(숨기기)
-* [!UICONTROL Metric]&#x200B;: `Number of orders`
-* [!UICONTROL Filter]&#x200B;: `Is customer's last order? (Yes/No) = Yes`
+* [!UICONTROL Metric]: `Number of orders`
+* [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
-* &#x200B;
-  [!UICONTROL 그룹 기준]&#x200B;: `Independent`
+* 
+  [!UICONTROL 그룹 기준]: `Independent`
 
 * [!UICONTROL Formula]: 초기 반복 순서 확률
-* &#x200B;
-  [!UICONTROL 공식]&#x200B;: `(C-A)/(C+D-A-B)`
-* &#x200B;
-  [!UICONTROL Format]&#x200B;: `Percent`
+* 
+  [!UICONTROL 공식]: `(C-A)/(C+D-A-B)`
+* 
+  [!UICONTROL Format]: `Percent`
 
-* [!UICONTROL Time period]&#x200B;: `All time`
-* &#x200B;
-  [!UICONTROL Interval]&#x200B;: `None`
-* [!UICONTROL Group by]&#x200B;: `Months since previous order`
+* [!UICONTROL Time period]: `All time`
+* 
+  [!UICONTROL Interval]: `None`
+* [!UICONTROL Group by]: `Months since previous order`
 * Show top.bottom: 카테고리 이름별로 정렬된 상위 24개 카테고리
 
-* &#x200B;
-  [!UICONTROL Chart type]&#x200B;: `Line`
+* 
+  [!UICONTROL Chart type]: `Line`
 
 초기 반복 주문 확률 보고서는 총 반복 주문 / 총 주문 수를 나타냅니다. 모든 주문은 반복 주문을 할 수 있는 기회입니다. 반복 주문 수는 실제로 실행되는 주문의 하위 집합입니다.
 
@@ -148,4 +160,4 @@ ht-degree: 16%
 
 모든 보고서를 컴파일한 후 원하는 대로 대시보드에서 구성할 수 있습니다. 결과는 페이지 상단에 있는 이미지와 비슷할 수 있습니다
 
-이 분석을 작성하는 동안 질문이 있거나 Professional Services 팀에 문의하려는 경우 [지원 팀에 문의](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)하십시오.
+이 분석을 작성하는 동안 질문이 있거나 Professional Services 팀에 문의하려는 경우 [지원 팀에 문의](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)하십시오.

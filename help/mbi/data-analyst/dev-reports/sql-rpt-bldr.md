@@ -4,42 +4,56 @@ description: SQL Report Builder 사용의 원리에 대해 알아봅니다.
 exl-id: 3a485b00-c59d-4bc5-b78b-57e9e92dd9d6
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
-TQID: https://experienceleague.adobe.com/AH2H26Tjo9EXQdXg3fckTOgVkSbA6yqPJdVuO1Yzw2A
+TQID: 'https://experienceleague.adobe.com/AH2H26Tjo9EXQdXg3fckTOgVkSbA6yqPJdVuO1Yzw2A'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: c38ccf61-5a4f-5140-ad2b-c3434e82ed6d
+    internal-label: SQL Report Builder
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Optimization
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 1448
+source-wordcount: '1448'
 ht-degree: 0%
-
 ---
-
 # [!DNL SQL Report Builder] 사용 중
 
 >[!NOTE]
 >
 >SQL 차트를 만들고 편집하려면 [관리자 권한](../../administrator/user-management/user-management.md)이 필요합니다. `Standard`명의 사용자가 대시보드에서 이러한 차트를 다시 정렬할 수 있으며 `Read-only`명의 사용자가 기존 차트와 동일한 경험을 합니다. 또한 `Read-only`명의 사용자가 쿼리 텍스트에 액세스할 수 없습니다.
 
-자세한 내용은 [교육 비디오](https://experienceleague.adobe.com/ko/docs/commerce-learn/tutorials/mbi/sql-report-builder)를 참조하세요.
+자세한 내용은 [교육 비디오](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/mbi/sql-report-builder)를 참조하세요.
 
 [!DNL SQL] 또는 Structured Query Language는 데이터베이스와 통신하는 데 사용되는 프로그래밍 언어입니다. [!DNL Commerce Intelligence]에서 [!DNL SQL]은(는) Data Warehouse에서 데이터를 쿼리하거나 검색하는 데 사용됩니다. 대시보드의 보고서를 살펴보십시오. 각 보고서는 [!DNL SQL] 쿼리로 제공됩니다.
 
 [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md)을(를) 사용하여 Data Warehouse을 직접 쿼리하고 결과를 보고 차트로 변환할 수 있습니다. **[!UICONTROL Report Builder** > **[!DNL SQL Report Builder]]**&#x200B;을(를) 클릭하여 [!DNL SQL Report Builder]에서 보고서 만들기를 시작할 수 있습니다.
 
-자세한 내용은 [교육 비디오](https://experienceleague.adobe.com/ko/docs/commerce-learn/tutorials/mbi/sql-report-builder)를 참조하세요.
+자세한 내용은 [교육 비디오](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/mbi/sql-report-builder)를 참조하세요.
 
 [!DNL SQL Report Builder]을(를) 사용하면 Data Warehouse을 직접 쿼리하고 결과를 보고 차트로 빠르게 변환할 수 있습니다. [!DNL SQL]을(를) 사용하여 보고서를 작성하는 가장 좋은 방법은 업데이트 주기를 기다리지 않고 만든 열을 반복할 필요가 없다는 것입니다. 결과가 올바르게 표시되지 않으면 예상과 일치할 때까지 쿼리를 빠르게 편집하고 다시 실행할 수 있습니다.
 
@@ -149,7 +163,7 @@ ht-degree: 0%
 
 대부분의 경우 업데이트 주기 때문에 결과의 차이가 발생할 수 있습니다. [!DNL Commerce Intelligence]이(가) 데이터베이스에서 Data Warehouse으로 데이터를 복제하는 중이면 동일한 쿼리를 사용하더라도 다른 결과가 표시될 수 있습니다.
 
-연결 문제로 인해 불일치가 발생할 수도 있습니다. **[!DNL Manage Data** > **Connections]**&#x200B;을(를) 클릭하여 `Connections` 페이지로 이동하여 확인합니다. 해당 데이터베이스 통합에 오류가 있습니까? 이 경우 다시 실행하려면 [통합을 다시 인증](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)해야 할 수 있습니다.
+연결 문제로 인해 불일치가 발생할 수도 있습니다. **[!DNL Manage Data** > **Connections]**&#x200B;을(를) 클릭하여 `Connections` 페이지로 이동하여 확인합니다. 해당 데이터베이스 통합에 오류가 있습니까? 이 경우 다시 실행하려면 [통합을 다시 인증](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)해야 할 수 있습니다.
 
 모든 통합이 성공적으로 연결되었으며 업데이트 주기 중에 있지 않으면 다른 문제가 발생할 수 있습니다.
 

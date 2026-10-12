@@ -1,33 +1,48 @@
 ---
 title: 게스트 주문
-description: 게스트 주문이 데이터에 미치는 영향 및  [!DNL Commerce Intelligence] Data Warehouse에서 게스트 주문을 올바르게 고려해야 하는 옵션에 대해 알아봅니다.
+description: 게스트 주문이 데이터에 미치는 영향 및 [!DNL Commerce Intelligence] Data Warehouse에서 게스트 주문을 적절히 고려해야 하는 옵션에 대해 알아봅니다.
 exl-id: cd5120ca-454c-4cf4-acb4-3aebe06cdc9a
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-TQID: https://experienceleague.adobe.com/leSf21lcOaEbm1aehC8iZLdbtRJFKK9yVQwdvft-GKQ
+TQID: 'https://experienceleague.adobe.com/leSf21lcOaEbm1aehC8iZLdbtRJFKK9yVQwdvft-GKQ'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 566
+source-wordcount: '568'
 ht-degree: 0%
-
 ---
-
 # 게스트 주문
 
 주문을 검토하는 동안 많은 `customer\_id` 값이 null이거나 `customers` 테이블에 다시 연결할 값이 없는 경우 스토어에서 게스트 주문을 허용함을 나타냅니다. 즉, `customers` 테이블에 모든 고객이 포함되지 않을 수 있습니다.
@@ -36,13 +51,13 @@ ht-degree: 0%
 
 ## 게스트 주문이 데이터에 미치는 영향
 
-일반적인 상거래 데이터베이스에는 `orders` 테이블에 조인하는 `customers` 테이블이 있습니다. `orders` 테이블의 모든 행에는 `customer\_id` 테이블의 한 행에 고유한 `customers` 열이 있습니다.
+일반적인 상거래 데이터베이스에는 `customers` 테이블에 조인하는 `orders` 테이블이 있습니다. `orders` 테이블의 모든 행에는 `customers` 테이블의 한 행에 고유한 `customer\_id` 열이 있습니다.
 
 * **모든 고객이 등록되고** 게스트 주문이 허용되지 않으면 `orders` 테이블의 모든 레코드에 `customer\_id` 열의 값이 있는 것입니다. 따라서 모든 순서가 `customers` 테이블로 다시 연결됩니다.
 
   ![고객 정보를 보여주는 게스트 주문 데이터 테이블](../../assets/guest-orders-4.png)
 
-* **게스트 주문이 허용되는 경우**&#x200B;은(는) 일부 주문에 `customer\_id` 열의 값이 없음을 의미합니다. 등록된 고객에게만 `customer\_id` 테이블의 `orders` 열에 대한 값이 제공됩니다. 등록되지 않은 고객은 이 열에 대해 `NULL`(또는 빈) 값을 받습니다. 따라서 모든 주문 레코드에 `customers` 테이블에 일치하는 레코드가 있는 것은 아닙니다.
+* **게스트 주문이 허용되는 경우**&#x200B;은(는) 일부 주문에 `customer\_id` 열의 값이 없음을 의미합니다. 등록된 고객에게만 `orders` 테이블의 `customer\_id` 열에 대한 값이 제공됩니다. 등록되지 않은 고객은 이 열에 대해 `NULL`(또는 빈) 값을 받습니다. 따라서 모든 주문 레코드에 `customers` 테이블에 일치하는 레코드가 있는 것은 아닙니다.
 
   >[!NOTE]
   >
@@ -62,7 +77,7 @@ ht-degree: 0%
 
 모든 고객 지표가 게스트 주문을 설명하기 위해 `orders` 테이블을 기반으로 하는 게스트 주문 설정에서 `not counting customers twice`인지 확인해야 합니다. orders 테이블의 ID를 계산하면 모든 주문을 계산합니다. 대신 `orders` 테이블의 ID를 계산하고 필터 `Customer's order number = 1`을(를) 사용하는 경우 각 고유 고객 `only one time`을(를) 계산합니다. `Customer's lifetime revenue` 또는 `Customer's lifetime number of orders`과(와) 같은 모든 고객 수준 지표에 적용됩니다.
 
-위에서 `customer\_ids` 테이블에 null `orders`이(가) 있음을 확인할 수 있습니다. `customer\_email`을(를) 사용하여 고유 고객을 식별하면 `erin@test.com`에서 3개의 주문을 했음을 알 수 있습니다. 따라서 다음 조건에 따라 `New customers` 테이블에 `orders` 지표를 만들 수 있습니다.
+위에서 `orders` 테이블에 null `customer\_ids`이(가) 있음을 확인할 수 있습니다. `customer\_email`을(를) 사용하여 고유 고객을 식별하면 `erin@test.com`에서 3개의 주문을 했음을 알 수 있습니다. 따라서 다음 조건에 따라 `orders` 테이블에 `New customers` 지표를 만들 수 있습니다.
 
 * `Operation table = orders`
 * `Operation column = id`

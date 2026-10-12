@@ -4,31 +4,45 @@ description: 새로운 아키텍처로 이동하여 얻을 수 있는 이점에 
 exl-id: cbb10673-5704-4a90-9574-5ac114f389b9
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Import/Export
-TQID: https://experienceleague.adobe.com/EtbKFT7OKaTZQ55XNz0NwpxQNSXyazk47dGwKhETNjM
+TQID: 'https://experienceleague.adobe.com/EtbKFT7OKaTZQ55XNz0NwpxQNSXyazk47dGwKhETNjM'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Troubleshooting
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 409
+source-wordcount: '409'
 ht-degree: 0%
-
 ---
-
 # 새로운 아키텍처
 
 [!DNL Adobe Commerce Intelligence] 제품 및 엔지니어링 팀은 지난 한 해 동안 가장 광범위하고 많이 요청된 개선 사항을 만드는 데 주력했습니다. Adobe은 이러한 개선 사항을 실현하는 새로운 [!DNL Commerce Intelligence] 제품 아키텍처를 제공할 수 있음을 기쁘게 발표합니다.
@@ -63,7 +77,7 @@ ht-degree: 0%
 
 ### 도움말 보기
 
-[!DNL Adobe Commerce Intelligence] [서비스 팀](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)은(는) 추가 비용으로 재구현을 수행할 수 있습니다. [Adobe 계정 팀](../../guide-overview.md#Submitting-a-Support-Ticket)에 연락하여 새 계정에서 만들기 우선 순위를 지정할 대시보드/보고서 목록을 제공할 준비를 하십시오
+[!DNL Adobe Commerce Intelligence] [서비스 팀](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)은(는) 추가 비용으로 재구현을 수행할 수 있습니다. [Adobe 계정 팀](../../guide-overview.md#Submitting-a-Support-Ticket)에 연락하여 새 계정에서 만들기 우선 순위를 지정할 대시보드/보고서 목록을 제공할 준비를 하십시오
 
 ### 기존 아키텍처 유지
 

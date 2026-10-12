@@ -4,32 +4,46 @@ description: 순차적 비교 계산 열의 목적과 용도에 대해 알아봅
 exl-id: 625062b4-f05d-42aa-94c3-729b39c7d728
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-TQID: https://experienceleague.adobe.com/7fCAFSOningY5B-aM8A1w9icX47qjUBsIO47KoRDTDk
+TQID: 'https://experienceleague.adobe.com/7fCAFSOningY5B-aM8A1w9icX47qjUBsIO47KoRDTDk'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 413
-ht-degree: 0%
-
+source-wordcount: '424'
+ht-degree: 5%
 ---
-
 # 순차적 비교 계산 열
 
-이 항목에서는 `Sequential Comparison` 페이지에서 사용할 수 있는 **[!DNL Manage Data > Data Warehouse]** 계산 열의 목적과 용도에 대해 간략하게 설명합니다. 아래는 그것이 하는 일에 대한 설명이며, 그 뒤에 예제와 그것을 만드는 역학이 이어진다.
+이 항목에서는 **[!DNL Manage Data > Data Warehouse]** 페이지에서 사용할 수 있는 `Sequential Comparison` 계산 열의 목적과 용도에 대해 간략하게 설명합니다. 아래는 그것이 하는 일에 대한 설명이며, 그 뒤에 예제와 그것을 만드는 역학이 이어진다.
 
 **설명**
 
@@ -46,10 +60,10 @@ ht-degree: 0%
 | **`1`** | A | 2015-01-01 00:00:00 | NULL |
 | **`2`** | B | 2015-01-01 00:30:00 | NULL |
 | **`3`** | A | 2015-01-01 02:00:00 | 7200 |
-| **`4`** | A | 2015년 1월 2일 13일:00:0 | 126000 |
-| **`5`** | B | 2015년 1월 3일 13일:00:0 | 217800 |
+| **`4`** | A | 2015-01-02 13:00:00 | 126000 |
+| **`5`** | B | 2015-01-03 13:00:00 | 217800 |
 
-위의 예에서 `Seconds since owner's previous event`은(는) `Sequential Comparison` 계산 열입니다. `owner_id = A`의 경우 먼저 `timestamp` 열을 기반으로 시퀀스를 식별한 다음 현재 이벤트의 타임스탬프에서 이전 이벤트의 `timestamp`을(를) 뺍니다. 테이블의 세 번째 행인 `owner_id A`에 대한 두 번째 행에서 `Seconds since owner's previous event` 값은 &#39;2015-01-01 02:00&#39;과(와) &#39;2015-01-01 00:00:0&#39; 사이의 초 수입니다. 이 차이는 2시간 = 7,200초와 같습니다.
+위의 예에서 `Seconds since owner's previous event`은(는) `Sequential Comparison` 계산 열입니다. `owner_id = A`의 경우 먼저 `timestamp` 열을 기반으로 시퀀스를 식별한 다음 현재 이벤트의 타임스탬프에서 이전 이벤트의 `timestamp`을(를) 뺍니다. 테이블의 세 번째 행인 `owner_id A`에 대한 두 번째 행에서 `Seconds since owner's previous event` 값은 &#39;2015-01-01 02:00&#39;과(와) &#39;2015-01-01 00:00:00&#39; 사이의 초 수입니다. 이 차이는 2시간 = 7,200초와 같습니다.
 
 이 계산된 열 형식의 경우 소유자의 첫 번째 이벤트에 해당하는 행에 `NULL` 값이 있습니다.
 

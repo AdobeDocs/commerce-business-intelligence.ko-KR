@@ -4,35 +4,50 @@ description: SQL 쿼리를 Commerce Intelligence에서 사용하는 계산된 �
 exl-id: b3e3905f-6952-4f15-a582-bf892a971fae
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
-TQID: https://experienceleague.adobe.com/-VQfwFZeSlEcD053XRQ4mWF51jnTGaV04tUAqLu7-U8
+TQID: 'https://experienceleague.adobe.com/-VQfwFZeSlEcD053XRQ4mWF51jnTGaV04tUAqLu7-U8'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: c38ccf61-5a4f-5140-ad2b-c3434e82ed6d
+    internal-label: SQL Report Builder
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Reporting
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 942
+source-wordcount: '942'
 ht-degree: 0%
-
 ---
-
 # Commerce Intelligence에서 SQL 쿼리 번역
 
-SQL 쿼리가 [에서 사용하는 &#x200B;](../data-warehouse-mgr/creating-calculated-columns.md)계산된 열[, &#x200B;](../../data-user/reports/ess-manage-data-metrics.md)지표[&#x200B; 및 &#x200B;](../../tutorials/using-visual-report-builder.md)보고서[!DNL Commerce Intelligence]&#x200B;(으)로 변환되는 방식에 대해 궁금하셨습니까? SQL 사용자가 많은 경우 [!DNL Commerce Intelligence]에서 SQL을 변환하는 방법을 이해하면 [Data Warehouse 관리자](../data-warehouse-mgr/tour-dwm.md)에서 보다 효율적으로 작업하고 [!DNL Commerce Intelligence] 플랫폼을 최대한 활용할 수 있습니다.
+SQL 쿼리가 [!DNL Commerce Intelligence]에서 사용하는 [계산된 열](../data-warehouse-mgr/creating-calculated-columns.md), [지표](../../data-user/reports/ess-manage-data-metrics.md) 및 [보고서](../../tutorials/using-visual-report-builder.md)(으)로 변환되는 방식에 대해 궁금하셨습니까? SQL 사용자가 많은 경우 [!DNL Commerce Intelligence]에서 SQL을 변환하는 방법을 이해하면 [Data Warehouse 관리자](../data-warehouse-mgr/tour-dwm.md)에서 보다 효율적으로 작업하고 [!DNL Commerce Intelligence] 플랫폼을 최대한 활용할 수 있습니다.
 
-이 항목의 끝에 SQL 쿼리 절 및 **요소에 대한**&#x200B;변환 매트릭스[!DNL Commerce Intelligence]가 있습니다.
+이 항목의 끝에 SQL 쿼리 절 및 [!DNL Commerce Intelligence] 요소에 대한 **변환 매트릭스**&#x200B;가 있습니다.
 
 일반 쿼리를 보고 시작하십시오.
 
@@ -51,7 +66,7 @@ SQL 쿼리가 [에서 사용하는 &#x200B;](../data-warehouse-mgr/creating-calc
 
 ## 집계 함수
 
-쿼리의 집계 함수(예: `count`, `sum`, `average`, `max`, `min`)는 **에서**&#x200B;지표 집계&#x200B;**또는**&#x200B;열 집계[!DNL Commerce Intelligence] 형식을 사용합니다. 구별 요인은 응집을 수행하기 위해 가입이 필요한지 여부이다.
+쿼리의 집계 함수(예: `count`, `sum`, `average`, `max`, `min`)는 [!DNL Commerce Intelligence]에서 **지표 집계** 또는 **열 집계** 형식을 사용합니다. 구별 요인은 응집을 수행하기 위해 가입이 필요한지 여부이다.
 
 위의 각 예제를 참조하십시오.
 
@@ -59,7 +74,7 @@ SQL 쿼리가 [에서 사용하는 &#x200B;](../data-warehouse-mgr/creating-calc
 
 `within a single table`을(를) 집계할 때 지표가 필요합니다. 예를 들어, 위의 쿼리의 `SUM(b)` 집계 함수는 열 `B`을(를) 합산하는 지표로 표시될 가능성이 높습니다. 
 
-`Total Revenue`에서 [!DNL Commerce Intelligence] 지표를 정의하는 방법에 대한 특정 예를 살펴보십시오. 번역할 아래 쿼리를 참조하십시오.
+[!DNL Commerce Intelligence]에서 `Total Revenue` 지표를 정의하는 방법에 대한 특정 예를 살펴보십시오. 번역할 아래 쿼리를 참조하십시오.
 
 | | |
 |--- |--- |
@@ -98,7 +113,7 @@ SQL 쿼리가 [에서 사용하는 &#x200B;](../data-warehouse-mgr/creating-calc
 
 ![새 경로 만들기](../../assets/Create_new_path.png)
 
-여기서 결합하려는 두 테이블 간의 관계를 신중하게 고려해야 합니다. 이 경우 `Many` 고객과 연결된 주문이 `One`개 있을 수 있으므로 `orders` 테이블은 `Many` 쪽에 나열되는 반면 `customers` 테이블은 `One` 쪽에서 선택됩니다.
+여기서 결합하려는 두 테이블 간의 관계를 신중하게 고려해야 합니다. 이 경우 `One` 고객과 연결된 주문이 `Many`개 있을 수 있으므로 `orders` 테이블은 `Many` 쪽에 나열되는 반면 `customers` 테이블은 `One` 쪽에서 선택됩니다.
 
 >[!NOTE]
 >
@@ -108,7 +123,7 @@ SQL 쿼리가 [에서 사용하는 &#x200B;](../data-warehouse-mgr/creating-calc
 
 ![SQL을 사용한 고객 생애 가치 분석 애니메이션 데모](../../assets/Customer_LTV.gif)
 
-`Customer LTV` 테이블에 새 `customers` 열을 만들었으므로 이 열을 사용하여 [지표 집계](#aggregate)를 만들 준비가 되었습니다(예: 고객당 평균 LTV를 찾기 위해). `group by` 테이블에 빌드된 기존 지표를 사용하여 보고서에서 계산된 열을 기준으로 `filter` 또는 `customers`할 수도 있습니다.
+`customers` 테이블에 새 `Customer LTV` 열을 만들었으므로 이 열을 사용하여 [지표 집계](#aggregate)를 만들 준비가 되었습니다(예: 고객당 평균 LTV를 찾기 위해). `customers` 테이블에 빌드된 기존 지표를 사용하여 보고서에서 계산된 열을 기준으로 `group by` 또는 `filter`할 수도 있습니다.
 
 >[!NOTE]
 >
@@ -134,7 +149,7 @@ Data Warehouse 관리자를 사용하여 [계산된 열 만들기](../data-wareh
 
 >[!NOTE]
 >
->이전에 시작한 쿼리와 유일하게 다른 점은 group by로 &#39;coupon\_code&#39;를 추가한 것입니다._
+>이전에 시작한 쿼리와 유일하게 다른 점은 group by._로 &#39;coupon\_code&#39;를 추가한 것입니다.
 
 이전에 만든 것과 동일한 `Total Revenue` 지표를 사용하여 이제 쿠폰 코드로 세그먼트화된 매출 보고서를 만들 준비가 되었습니다! 9월부터 11월까지 데이터를 보고 이 시각적 보고서를 설정하는 방법을 보여 주는 아래 gif를 참조하십시오.
 

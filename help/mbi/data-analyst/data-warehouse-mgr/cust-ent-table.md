@@ -4,33 +4,51 @@ description: 등록된 모든 계정의 레코드에 액세스하는 방법을 �
 exl-id: 24bf0e66-eea0-45ea-8ce6-4ff99b678201
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-TQID: https://experienceleague.adobe.com/iTzls4nEtW9ep-3s536ZnRCCr2TeMD6AsDecZc3Cdys
+TQID: 'https://experienceleague.adobe.com/iTzls4nEtW9ep-3s536ZnRCCr2TeMD6AsDecZc3Cdys'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 610
+source-wordcount: '604'
 ht-degree: 0%
-
 ---
-
 # customer_entity 테이블
 
 `customer_entity` 테이블에 등록된 모든 계정의 레코드가 들어 있습니다. 구매 완료 여부와 관계없이 계정에 등록하면 계정이 등록된 것으로 간주됩니다. 각 행은 등록된 하나의 고유 계정에 해당하며, 해당 계정의 `entity_id`에 의해 식별됩니다.
@@ -45,7 +63,7 @@ ht-degree: 0%
 | `email` | 계정과 연결된 이메일 주소 |
 | `entity_id`(PK) | 테이블의 고유 식별자로, 인스턴스 내 다른 테이블의 `customer_id` 조인에 일반적으로 사용됩니다. |
 | `group_id` | `customer_group` 테이블에 연결된 외래 키입니다. 등록된 계정과 연결된 고객 그룹을 확인하려면 `customer_group.customer_group_id`에 참가하십시오. |
-| `store_id` | `store` 테이블에 연결된 외래 키입니다. `store`에 참가합니다.등록된 계정과 연결된 Commerce 스토어 보기를 확인하는 `store_id` |
+| `store_id` | `store` 테이블에 연결된 외래 키입니다. `store`.`store_id`에 참여 등록된 계정과 연결된 Commerce 스토어 보기를 확인하려면 |
 
 {style="table-layout:auto"}
 
@@ -53,16 +71,16 @@ ht-degree: 0%
 
 | **열 이름** | **설명** |
 |---|---|
-| `Customer's first 30 day revenue` | 고객의 첫 번째 주문 일자로부터 30일 이내에 이 고객이 수행한 모든 주문의 총 매출액 합계. ≤ `customer_entity.entity_id`을(를) `sales_order.customer_id`에 조인하고 `base_grand_total`이(가) 2592000 모든 주문에 대한 `sales_order.Seconds between customer's first order date and this order` 필드를 합하여 계산됨(30일 후 초 수) |
-| `Customer's first order date` | 해당 고객이 주문한 첫 번째 주문의 타임스탬프. `customer_entity.entity_id`에 `sales_order.customer_id`을(를) 조인하고 최소 `sales_order`을(를) 반환하여 계산되었습니다.`created_at` 값 |
-| `Customer's first order's billing region` | 고객의 첫 번째 주문과 연계된 청구 지역. `customer_entity.entity_id`을(를) `sales_order.customer_id`에 조인하고 `Billing address region` = 1인 `sales_order.Customer's order number`을(를) 반환하여 계산됨 |
-| `Customer's first order's coupon_code` | 고객의 첫 번째 주문과 연계된 쿠폰 코드. `customer_entity.entity_id`을(를) `sales_order.customer_id`에 조인하고 `sales_order.coupon_code` = 1인 `sales_order.Customer's order number`을(를) 반환하여 계산됨 |
-| `Customer's group code` | 등록된 고객의 그룹 이름. `customer_entity.group_id`에 `customer_group`을(를) 연결하여 계산되었습니다.`customer_group_id` 및 `customer_group_code` 필드 반환 |
+| `Customer's first 30 day revenue` | 고객의 첫 번째 주문 일자로부터 30일 이내에 이 고객이 수행한 모든 주문의 총 매출액 합계. ≤ `customer_entity.entity_id`을(를) `sales_order.customer_id`에 조인하고 `sales_order.Seconds between customer's first order date and this order`이(가) 2592000 모든 주문에 대한 `base_grand_total` 필드를 합하여 계산됨(30일 후 초 수) |
+| `Customer's first order date` | 해당 고객이 주문한 첫 번째 주문의 타임스탬프. `customer_entity.entity_id`을(를) `sales_order.customer_id`에 조인하고 최소 `sales_order`.`created_at`을(를) 반환하여 계산됨 값 |
+| `Customer's first order's billing region` | 고객의 첫 번째 주문과 연계된 청구 지역. `customer_entity.entity_id`을(를) `sales_order.customer_id`에 조인하고 `sales_order.Customer's order number` = 1인 `Billing address region`을(를) 반환하여 계산됨 |
+| `Customer's first order's coupon_code` | 고객의 첫 번째 주문과 연계된 쿠폰 코드. `customer_entity.entity_id`을(를) `sales_order.customer_id`에 조인하고 `sales_order.Customer's order number` = 1인 `sales_order.coupon_code`을(를) 반환하여 계산됨 |
+| `Customer's group code` | 등록된 고객의 그룹 이름. `customer_group`에 `customer_entity.group_id`을(를) 연결하여 계산됨.`customer_group_id` `customer_group_code` 필드 반환 |
 | `Customer's lifetime number of coupons` | 이 고객이 수행한 모든 주문에 적용된 총 쿠폰 수입니다. `customer_entity.entity_id`을(를) `sales_order.customer_id`에 조인하고 `sales_order.coupon_code`이(가) `NULL`이(가) 아닌 주문 수를 계산하여 계산됨 |
 | `Customer's lifetime number of orders` | 이 고객이 수행한 총 주문 수. `customer_entity.entity_id`을(를) `sales_order.customer_id`에 조인하고 `sales_order` 테이블의 행 수를 계산하여 계산됨 |
-| `Customer's lifetime revenue` | 이 고객이 수행한 모든 주문에 대한 총 매출액 합계. `customer_entity.entity_id`에 `sales_order.customer_id`을(를) 결합하고 이 고객이 주문한 모든 주문에 대한 `base_grand_total` 필드를 합하여 계산됨 |
+| `Customer's lifetime revenue` | 이 고객이 수행한 모든 주문에 대한 총 매출액 합계. `sales_order.customer_id`에 `customer_entity.entity_id`을(를) 결합하고 이 고객이 주문한 모든 주문에 대한 `base_grand_total` 필드를 합하여 계산됨 |
 | `Seconds since customer's first order date` | 고객의 첫 번째 주문 일자와 지금 사이의 경과 시간. 쿼리가 실행될 때 서버 타임스탬프에서 `Customer's first order date`을(를) 빼서 계산되며, 정수로 반환됩니다 |
-| `Store name` | 등록된 이 계정과 연결된 Commerce 스토어의 이름입니다. `customer_entity.store_id`에 `store.store_id`을(를) 조인하고 `name` 필드를 반환하여 계산됨 |
+| `Store name` | 등록된 이 계정과 연결된 Commerce 스토어의 이름입니다. `store.store_id`에 `customer_entity.store_id`을(를) 조인하고 `name` 필드를 반환하여 계산됨 |
 
 {style="table-layout:auto"}
 
@@ -84,9 +102,9 @@ ht-degree: 0%
 `customer_group`
 
 * 등록된 계정의 고객 그룹 이름을 반환하는 열을 만들려면 `customer_group` 테이블에 참가하십시오.
-   * 경로: `customer_entity.group_id`(많음) => `customer_group.customer_group_id`(하나)
+  * 경로: `customer_entity.group_id`(많음) => `customer_group.customer_group_id`(하나)
 
 `store`
 
 * 등록된 계정과 연결된 저장소 관련 세부 정보를 반환하는 열을 만들려면 `store` 테이블에 참가하십시오.
-   * 경로: `customer_entity.store_id`(많음) => `store.store_id`(하나)
+  * 경로: `customer_entity.store_id`(많음) => `store.store_id`(하나)

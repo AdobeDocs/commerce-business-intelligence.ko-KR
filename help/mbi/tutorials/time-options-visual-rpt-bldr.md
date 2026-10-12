@@ -4,31 +4,47 @@ description: 특정 기간 동안 보고서의 데이터를 분석하는 방법�
 exl-id: a1bb4838-f882-44b1-a29f-84b985032ceb
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-TQID: https://experienceleague.adobe.com/efTZeMr5AuiCzREc1J-3SdoZk39wJfzTyYyG-5wQwss
+TQID: 'https://experienceleague.adobe.com/efTZeMr5AuiCzREc1J-3SdoZk39wJfzTyYyG-5wQwss'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 1353
+source-wordcount: '1353'
 ht-degree: 0%
-
 ---
-
 # [!DNL Visual Report Builder]에서 [!DNL Time] 옵션 사용
 
 [!DNL Visual Report Builder]의 기능 중 하나는 전역 `Time Range` 및 `Interval` 설정입니다. 이러한 설정을 사용하여 특정 기간 동안 보고서의 데이터를 분석할 수 있습니다.
@@ -84,7 +100,7 @@ ht-degree: 0%
 
 ## 서로 다른 시간 범위에서 동일한 지표 비교 {#difftimerange}
 
-이 예제에서는 사용자 지정 차원 `Day number of the month`을(를) 사용합니다. 이 보고서를 만들려고 하는데 Data Warehouse에 이 차원이 없는 경우 [지원팀에 문의](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)하여 도움을 받으십시오.
+이 예제에서는 사용자 지정 차원 `Day number of the month`을(를) 사용합니다. 이 보고서를 만들려고 하는데 Data Warehouse에 이 차원이 없는 경우 [지원팀에 문의](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)하여 도움을 받으십시오.
 
 이 범주에서 가장 일반적인 두 가지 예는 (1) 성장 지표 (전년 대비 또는 전월 대비 매출)를 비교하는 것과 (2) 최근 재고 또는 품목 판매 트렌드를 더 잘 이해하는 것입니다.
 

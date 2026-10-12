@@ -4,39 +4,58 @@ description: 새 Adobe Commerce Intelligence 아키텍처에서 고급 열을 SQ
 exl-id: f16e4ee4-ed73-4ddb-b701-1fe3db14346a
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, SQL Report Builder, Commerce Tables
-TQID: https://experienceleague.adobe.com/DePK-zuSTUhzOSCc121Yev7BXUhjEkwEGYtAgdSaguM
+TQID: 'https://experienceleague.adobe.com/DePK-zuSTUhzOSCc121Yev7BXUhjEkwEGYtAgdSaguM'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: c38ccf61-5a4f-5140-ad2b-c3434e82ed6d
+    internal-label: SQL Report Builder
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 839
+source-wordcount: '846'
 ht-degree: 0%
-
 ---
-
 # SQL 계산 열 만들기
 
-이 항목에서는 `Calculation`Data Warehouse 관리자[를 사용하여 표에 추가할 수 있는 &#x200B;](../data-warehouse-mgr/tour-dwm.md) 열 유형의 용도와 사용에 대해 간략하게 설명합니다. 아래에서는 SQL 계산의 기능, 계산 사용 이유, SQL 계산 생성 프로세스에 대해 설명하고 두 가지 예를 포함합니다.
+이 항목에서는 [Data Warehouse 관리자](../data-warehouse-mgr/tour-dwm.md)를 사용하여 표에 추가할 수 있는 `Calculation` 열 유형의 용도와 사용에 대해 간략하게 설명합니다. 아래에서는 SQL 계산의 기능, 계산 사용 이유, SQL 계산 생성 프로세스에 대해 설명하고 두 가지 예를 포함합니다.
 
 **설명**
 
-이전에는 `advanced`(으)로 간주되는 열을 [!DNL Adobe Commerce Intelligence]의 고객 지원 팀의 분석가만 수행할 수 있었습니다. 이제 모든 기능을 최종 사용자가 사용할 수 있으며 새 `SQL Calculation` 아키텍처에서 [!DNL Commerce Intelligence] 열 형태로 고급 열을 만들 수 있습니다.
+이전에는 `advanced`(으)로 간주되는 열을 [!DNL Adobe Commerce Intelligence]의 고객 지원 팀의 분석가만 수행할 수 있었습니다. 이제 모든 기능을 최종 사용자가 사용할 수 있으며 새 [!DNL Commerce Intelligence] 아키텍처에서 `SQL Calculation` 열 형태로 고급 열을 만들 수 있습니다.
 
 이제 Data Warehouse 관리자에서 옵션으로 사용할 수 있는 `Calculation` 열 유형은 PostgreSQL 논리를 사용하여 테이블의 열을 변환할 수 있는 동일한 테이블 작업입니다. `Calculation` 열 유형에서 사용할 수 있는 함수 및 연산자에 대한 설명서는 PostgreSQL 웹 사이트 [여기](https://www.postgresql.org/docs/9.6/functions.html)에서 찾을 수 있습니다.
 
@@ -44,17 +63,17 @@ ht-degree: 0%
 
 **예 1: 고객의 마지막 주문입니까?**
 
-대부분의 계정에는 `Is customer's last order?` 테이블에 `orders`(이)라는 열이 있어 반복 구매율과 이탈된 고객에 대한 분석을 수행합니다. 계정이 새 아키텍처에 있는 경우 이 열은 `Calculation` 열을 사용하여 작성되며 아래 스크린샷에서 볼 수 있습니다.
+대부분의 계정에는 `orders` 테이블에 `Is customer's last order?`(이)라는 열이 있어 반복 구매율과 이탈된 고객에 대한 분석을 수행합니다. 계정이 새 아키텍처에 있는 경우 이 열은 `Calculation` 열을 사용하여 작성되며 아래 스크린샷에서 볼 수 있습니다.
 
 고객의 마지막 주문을 식별하기 위한 ![SQL 계산 열 정의](../../assets/Is_customer_s_last_order.png)
 
-`Is customer's last order?` 열은 각각 `Customer's lifetime number of orders` 및 `Customer's order number`(으)로 별칭이 지정된 입력 `A` 및 `B`을(를) 사용합니다.
+`Is customer's last order?` 열은 각각 `A` 및 `B`(으)로 별칭이 지정된 입력 `Customer's lifetime number of orders` 및 `Customer's order number`을(를) 사용합니다.
 
 PostgreSQL의 의미는 한 줄에 하나씩 표시됩니다.
 
 * case: 일련의 If - Then 문이 시작됩니다.
 * `A`이(가) null이거나 `B`이(가) null이면 null: 입력이 비어 있으면 출력도 비어 있어야 합니다. SQL 오류를 방지하기 위한 것입니다.
-* `A=B`일 때 `Yes`: `Customer's lifetime number of orders`이(가) 이 행의 `Customer's order number`과(와) 같으면 `Yes`을(를) 반환합니다. 따라서 고객이 4개의 주문을 했다면 4번째 주문의 행은 `Yes`에 대해 `Is customer's last order?`을(를) 반환합니다.
+* `A=B`일 때 `Yes`: `Customer's lifetime number of orders`이(가) 이 행의 `Customer's order number`과(와) 같으면 `Yes`을(를) 반환합니다. 따라서 고객이 4개의 주문을 했다면 4번째 주문의 행은 `Is customer's last order?`에 대해 `Yes`을(를) 반환합니다.
 * else `No`: 다른 when 문이 충족되지 않으면 `No`을(를) 반환합니다.
 * end: If - Then 문을 종료합니다.
 
@@ -64,17 +83,17 @@ PostgreSQL의 의미는 한 줄에 하나씩 표시됩니다.
 
 많은 클라이언트가 `product name` 또는 `category`과(와) 같은 필드로 슬라이스하여 항목 수준에서 매출을 분석하기를 원합니다. 대부분의 데이터베이스는 실제로 주문에서 제품의 수익을 제공하지 않습니다. 대신 주문에서 판매된 수량과 품목의 가격을 제공합니다.
 
-제품 매출 분석을 활성화하기 위해 대부분의 계정에 `Order item total value (quantity * price)` 테이블에 `Orders Items`(이)라는 열이 있습니다. 계정이 새 아키텍처에 있는 경우 이 열도 `Calculation` 열을 사용하여 작성되며 아래 스크린샷에서 볼 수 있습니다.
+제품 매출 분석을 활성화하기 위해 대부분의 계정에 `Orders Items` 테이블에 `Order item total value (quantity * price)`(이)라는 열이 있습니다. 계정이 새 아키텍처에 있는 경우 이 열도 `Calculation` 열을 사용하여 작성되며 아래 스크린샷에서 볼 수 있습니다.
 
 ![주문 항목 총 값에 대한 SQL 계산 열 정의](../../assets/Order_item_total_value.png)
 
-Commerce 스키마에서 `Order item total value (quantity * price)` 열은 각각 `qty ordered` 및 `base price`(으)로 별칭이 지정된 `A` 및 `B` 입력을 사용합니다.
+Commerce 스키마에서 `Order item total value (quantity * price)` 열은 각각 `A` 및 `B`(으)로 별칭이 지정된 `qty ordered` 및 `base price` 입력을 사용합니다.
 
 이 새 열에서 반환되는 값은 달러/센트 단위이므로 올바른 데이터 형식은 `Decimal(10,2)`입니다.
 
 **기계**
 
-아래와 같이 `Calculation`(으)로 이동하여 테이블에 새 **[!DNL Manage Data > Data Warehouse]** 열을 추가할 수 있습니다.
+아래와 같이 **[!DNL Manage Data > Data Warehouse]**(으)로 이동하여 테이블에 새 `Calculation` 열을 추가할 수 있습니다.
 
 ![계산된 열 결과를 보여 주는 표 보기](../../assets/blobid2.png)
 

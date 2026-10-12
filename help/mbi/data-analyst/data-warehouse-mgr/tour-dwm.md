@@ -4,33 +4,51 @@ description: 테이블 및 열 동기화 설정을 관리하고, 테이블의 �
 exl-id: b9577919-0db0-47f1-a426-1abe48443ac0
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-TQID: https://experienceleague.adobe.com/h1abSvMbiLAovsl4YtlBHmLTOW03Bk6WlMOwYvh4cIk
+TQID: 'https://experienceleague.adobe.com/h1abSvMbiLAovsl4YtlBHmLTOW03Bk6WlMOwYvh4cIk'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+    internal-label: Data integration
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Insights
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 1237
+source-wordcount: '1244'
 ht-degree: 0%
-
 ---
-
 # Data Warehouse Manager
 
 >[!NOTE]
@@ -83,7 +101,7 @@ Data Warehouse Manager는 데이터 소스를 쉽게 보고 관리할 수 있을
    데이터베이스에서 직접 가져온 테이블을 동기화하는 경우 `Primary Keys`이(가) 표시되지 않을 수 있습니다. 이 경우 데이터베이스 관리자에게 문의하여 기본 키를 테이블에 추가하도록 요청하십시오.
 1. 완료되면 ![단추](../../assets/button.png) 단추를 클릭합니다.
 
-*성공!* 메시지가 표시되고 선택한 열에 대해 상태가 `Pending`(으)로 변경됩니다. 다음 전체 업데이트가 완료되면 새로 동기화된 테이블 및 열을 보고서에서 사용할 수 있습니다. 초기 동기화 후에 새 [복제 메서드](./cfg-replication-methods.md)를 설정할 수도 있습니다.
+*성공!* 메시지가 표시되고 선택한 열의 상태가 `Pending`(으)로 변경됩니다. 다음 전체 업데이트가 완료되면 새로 동기화된 테이블 및 열을 보고서에서 사용할 수 있습니다. 초기 동기화 후에 새 [복제 메서드](./cfg-replication-methods.md)를 설정할 수도 있습니다.
 
 전체 프로세스를 간략하게 살펴보겠습니다.
 
@@ -105,7 +123,7 @@ Data Warehouse은 추가되는 즉시 새 소스, 테이블 또는 열을 자동
 
 모든 소스에서 데이터를 보고 관리할 수 있다는 것만으로도 비즈니스에 대한 통찰력을 훨씬 쉽게 얻을 수 있습니다. 그러나 Data Warehouse Manager 내에서는 테이블 내에 계산된 열을 만들어 한 단계 더 나아갈 수 있습니다. `Calculated` 열은 기존 데이터에서 새 정보를 가져옵니다.
 
-`user's lifetime revenue` 테이블에 `users`을(를) 추가하여 고부가가치 사용자를 찾는다고 가정합니다. 또는 성별에 따라 매출을 분할하려는 경우 `customer's gender` 표에 `orders`을(를) 추가할 수 있습니다.
+`users` 테이블에 `user's lifetime revenue`을(를) 추가하여 고부가가치 사용자를 찾는다고 가정합니다. 또는 성별에 따라 매출을 분할하려는 경우 `orders` 표에 `customer's gender`을(를) 추가할 수 있습니다.
 
 자세한 내용은 이 [자습서](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md)를 참조하세요.
 
@@ -135,7 +153,7 @@ Data Warehouse에 동기화할 테이블 및 열을 선택할 수 있는 것처�
 
 ## 그러면 새 열은 언제 사용할 수 있습니까? {#when}
 
-새 동기화된 열과 새/업데이트된 계산된 열은 다음 전체 업데이트가 완료된 후에 사용할 수 있도록 준비됩니다. 업데이트가 아직 진행되지 않은 경우 **[!UICONTROL Force update]** 또는 `Data Warehouse` 페이지의 맨 위에 표시된 `Integrations`을(를) 클릭하여 강제로 업데이트할 수 있습니다. 업데이트가 완료되면 **[!UICONTROL Email me when complete]**&#x200B;을(를) 클릭하여 전자 메일 알림을 예약할 수도 있습니다.
+새 동기화된 열과 새/업데이트된 계산된 열은 다음 전체 업데이트가 완료된 후에 사용할 수 있도록 준비됩니다. 업데이트가 아직 진행되지 않은 경우 `Data Warehouse` 또는 `Integrations` 페이지의 맨 위에 표시된 **[!UICONTROL Force update]**&#x200B;을(를) 클릭하여 강제로 업데이트할 수 있습니다. 업데이트가 완료되면 **[!UICONTROL Email me when complete]**&#x200B;을(를) 클릭하여 전자 메일 알림을 예약할 수도 있습니다.
 
 보고서에서 새 열을 사용할 준비가 되면 [먼저 지표에 열을 추가해야](../data-warehouse-mgr/manage-data-dimensions-metrics.md). 업데이트가 완료될 때까지 데이터를 사용할 수 없지만 보고서에서는 새 열을 사용할 수 있습니다. 보고서 내의 데이터는 업데이트가 완료되면 표시됩니다.
 

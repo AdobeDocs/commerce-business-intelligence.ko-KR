@@ -4,36 +4,52 @@ description: Google Analytics 지표와 상호 작용하는 방법을 알아봅�
 exl-id: db9fdaaa-47a9-4095-b1f8-9b6c74c25b7c
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-TQID: https://experienceleague.adobe.com/tUS-KM-3gcLLLeCY4tqS6pUDMeCvLkrFSKp-U-JT61E
+TQID: 'https://experienceleague.adobe.com/tUS-KM-3gcLLLeCY4tqS6pUDMeCvLkrFSKp-U-JT61E'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 269
+source-wordcount: '298'
 ht-degree: 0%
-
 ---
-
 # [!DNL Google Analytics]개의 데이터가 필요합니다.
 
-[!DNL Google Analytics] 통합을 연결한 후 [!DNL Google Analytics]에서 *지표`Visual Report Builder`*&#x200B;과(와) 즉시 상호 작용할 수 있습니다. `Visual Report Builder`을(를) 입력할 때 **[!UICONTROL Add a Metric]**&#x200B;을(를) 클릭하면 [!DNL Google Analytics] 프로필의 일련의 지표가 Data Warehouse의 지표 바로 아래에 드롭다운으로 표시됩니다.
+[!DNL Google Analytics] 통합을 연결한 후 `Visual Report Builder`*에서 [!DNL Google Analytics] 지표*&#x200B;과(와) 즉시 상호 작용할 수 있습니다. `Visual Report Builder`을(를) 입력할 때 **[!UICONTROL Add a Metric]**&#x200B;을(를) 클릭하면 [!DNL Google Analytics] 프로필의 일련의 지표가 Data Warehouse의 지표 바로 아래에 드롭다운으로 표시됩니다.
 
-[!DNL Google Analytics] 통합은 *live*&#x200B;입니다. 즉, 보고서에 지표를 추가할 때 `Report Builder`에서 [!DNL Google Analytics] *즉시*&#x200B;의 데이터를 요청합니다. 또한 액세스할 수 있는 지표가 [!DNL Google Analytics]에 있는 그대로 정의되었으며 이러한 값은 *계정에*&#x200B;웨어하우징[!DNL Commerce Intelligence]이 아닙니다. 보고서에 시각적으로만 표시됩니다.
+[!DNL Google Analytics] 통합은 *live*&#x200B;입니다. 즉, 보고서에 지표를 추가할 때 `Report Builder`에서 [!DNL Google Analytics] *즉시*&#x200B;의 데이터를 요청합니다. 또한 액세스할 수 있는 지표가 [!DNL Google Analytics]에 있는 그대로 정의되었으며 이러한 값은 [!DNL Commerce Intelligence] 계정에 *웨어하우징*&#x200B;이 아닙니다. 보고서에 시각적으로만 표시됩니다.
 
 +++지원되는 지표 및 차원 (Google Analytics 3 또는 Universal Analytics)
 
@@ -41,7 +57,7 @@ ht-degree: 0%
 >
 >2023년 7월 1일부터 표준 Universal Analytics([!DNL Google Analytics] 3) 속성은 더 이상 데이터를 처리하지 않습니다. 2023년 7월 1일 이후 일정 기간 동안 Universal Analytics 보고서를 볼 수 있습니다. 그러나 새 데이터는 [!DNL Google Analytics]개의 속성에만 전송됩니다.
 
-[!DNL Google Analytics]의 [!DNL Commerce Intelligence] 통합에서 [!DNL Google Analytics] [Core Reporting API](https://developers.google.com/analytics/devguides/reporting/core/v3/)를 사용하고 다음 지표 및 차원을 지원합니다.
+[!DNL Commerce Intelligence]의 [!DNL Google Analytics] 통합에서 [!DNL Google Analytics] [Core Reporting API](https://developers.google.com/analytics/devguides/reporting/core/v3/)를 사용하고 다음 지표 및 차원을 지원합니다.
 
 >[!NOTE]
 >
@@ -174,7 +190,7 @@ ht-degree: 0%
 
 +++지원되는 지표 및 차원 (Google Analytics 4)
 
-[!DNL Google Analytics]의 [!DNL Commerce Intelligence] 통합에서 [!DNL Google Analytics] [데이터 API v1(GA4)](https://developers.google.com/analytics/devguides/reporting/data/v1)을(를) 사용합니다.
+[!DNL Commerce Intelligence]의 [!DNL Google Analytics] 통합에서 [!DNL Google Analytics] [데이터 API v1(GA4)](https://developers.google.com/analytics/devguides/reporting/data/v1)을(를) 사용합니다.
 
 >[!NOTE]
 >

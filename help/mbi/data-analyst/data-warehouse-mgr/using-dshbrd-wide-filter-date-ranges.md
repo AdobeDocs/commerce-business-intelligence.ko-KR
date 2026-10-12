@@ -4,29 +4,43 @@ description: 특정 대시보드에 있는 모든 보고서를 일괄 편집하�
 exl-id: 379d0027-8a7a-4062-a66a-4f06c37b806c
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-TQID: https://experienceleague.adobe.com/6wixrQXkvGMF9c36wrGJ4Qj23HqJ--Mr0XMYMBhujjo
+TQID: 'https://experienceleague.adobe.com/6wixrQXkvGMF9c36wrGJ4Qj23HqJ--Mr0XMYMBhujjo'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 481
+source-wordcount: '481'
 ht-degree: 0%
-
 ---
-
 # 대시보드 전체 필터링
 
 대시보드 전체 필터링을 사용하면 특정 대시보드에 있는 모든 보고서를 일괄 편집할 수 있습니다. 서로 다른 기간 동안 또는 서로 다른 스토어에 대해 동일한 분석을 빠르게 볼 수 있습니다. 점포별로 전년도, 월, 주의 실적을 쉽게 비교할 수 있다. 새로 시작한 캠페인을 수용하도록 전체 대시보드를 업데이트할 수 있습니다.
@@ -59,11 +73,11 @@ ht-degree: 0%
 
 ## 필터 저장
 
-특정 스토어의 성능을 분석하려면 오른쪽 상단의 스토어 아이콘(![스토어 필터](../../assets/store-filter.png))을 클릭합니다. 기본적으로 `Store Filter`은(는) `All Stores`(으)로 설정되어 Commerce 사이트에서 사용할 수 있는 모든 [스토어 보기](https://experienceleague.adobe.com/ko/docs/commerce-admin/stores-sales/site-store/store-views)의 데이터를 표시합니다.
+특정 스토어의 성능을 분석하려면 오른쪽 상단의 스토어 아이콘(![스토어 필터](../../assets/store-filter.png))을 클릭합니다. 기본적으로 `Store Filter`은(는) `All Stores`(으)로 설정되어 Commerce 사이트에서 사용할 수 있는 모든 [스토어 보기](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-views)의 데이터를 표시합니다.
 
 >[!NOTE]
 >
->저장소 필터가 전체 [!DNL Commerce Intelligence] 계정에 대해 활성화되거나 비활성화됩니다. 대시보드에 필터의 영향을 받지 않는 보고서(예: [!DNL Adobe Commerce] 데이터에 작성되지 않은 보고서)가 포함되어 있는 경우 저장소 필터가 적용될 때 해당 보고서가 업데이트되지 않습니다. 저장소 선택에 따라 보고서를 업데이트해야 하거나 계정 저장소 필터가 잘못 비활성화되어 있다고 생각되는 경우 [지원 센터에 문의](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)할 수 있습니다.
+>저장소 필터가 전체 [!DNL Commerce Intelligence] 계정에 대해 활성화되거나 비활성화됩니다. 대시보드에 필터의 영향을 받지 않는 보고서(예: [!DNL Adobe Commerce] 데이터에 작성되지 않은 보고서)가 포함되어 있는 경우 저장소 필터가 적용될 때 해당 보고서가 업데이트되지 않습니다. 저장소 선택에 따라 보고서를 업데이트해야 하거나 계정 저장소 필터가 잘못 비활성화되어 있다고 생각되는 경우 [지원 센터에 문의](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)할 수 있습니다.
 
 `Store Filter`에서 스토어를 선택하면 필터가 대시보드 사이를 이동할 때 선택 내용을 유지합니다. 선택을 유지하면 `All Stores`을(를) 선택할 때까지 선택한 저장소의 데이터를 모든 곳에서 볼 수 있습니다.
 

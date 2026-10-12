@@ -4,39 +4,54 @@ description: insight을 비즈니스에 제공하는 기본 제공 대시보드�
 exl-id: fe61c92e-de87-4317-96d7-01d2a9846bf9
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-TQID: https://experienceleague.adobe.com/niQ01gOnBCdufbZDpw0mcck3AWN-2gXR1QyWD8LHLBQ
+TQID: 'https://experienceleague.adobe.com/niQ01gOnBCdufbZDpw0mcck3AWN-2gXR1QyWD8LHLBQ'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: 06e518d4-11ae-5c20-98b0-ce8ab05d7166
+    internal-label: Dashboards
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Insights
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 1989
+source-wordcount: '1989'
 ht-degree: 0%
-
 ---
-
 # 기본 제공 대시보드
 
 [!DNL Adobe Commerce Intelligence]에는 insight을 비즈니스에 제공할 수 있는 기본 제공 대시보드가 포함되어 있습니다. 대시보드를 사용하면 사용자 라이프타임 수익, 반복 구매 횟수, 지정된 기간 동안 구매한 상위 제품 등과 같은 필수 지표의 상태를 확인할 수 있습니다. 사전 구성된 이러한 대시보드는 정보에 입각한 비즈니스 결정을 내리는 데 도움을 주기 위해 작성되었습니다.
 
 >[!NOTE]
 >
->이러한 대시보드에 대한 액세스는 계정 유형 및 액세스 수준에 따라 다릅니다. 이 대시보드가 표시되지 않으면 [지원](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)에 문의하십시오.
+>이러한 대시보드에 대한 액세스는 계정 유형 및 액세스 수준에 따라 다릅니다. 이 대시보드가 표시되지 않으면 [지원](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)에 문의하십시오.
 
 ## 보고서 가용성
 
@@ -152,7 +167,7 @@ ht-degree: 0%
 
 ## 제품
 
-제품 대시보드에는 주문 제품, 총 상품 가격(GMV) 및 구매 및 환불 상위 제품에 대한 일반 제품 성능이 표시됩니다. 구매와 수익의 균형을 맞추고, 제품의 성공과 인기를 결정하는 데 도움이 될 수 있습니다. 이러한 차트를 채우려면 [환불을 추적하도록 구성](https://experienceleague.adobe.com/ko/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure)해야 합니다.
+제품 대시보드에는 주문 제품, 총 상품 가격(GMV) 및 구매 및 환불 상위 제품에 대한 일반 제품 성능이 표시됩니다. 구매와 수익의 균형을 맞추고, 제품의 성공과 인기를 결정하는 데 도움이 될 수 있습니다. 이러한 차트를 채우려면 [환불을 추적하도록 구성](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure)해야 합니다.
 
 >[!NOTE]
 >

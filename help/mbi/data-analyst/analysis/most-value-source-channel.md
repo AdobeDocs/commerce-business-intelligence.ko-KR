@@ -4,32 +4,41 @@ description: 가장 중요한 마케팅 채널을 파악하는 데 사용할 수
 exl-id: 8d25bc80-ea60-47db-b01b-04a23a24c14d
 role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports
-TQID: https://experienceleague.adobe.com/aV7qVf-LREVyXEtR2EMJqRSTo-rvfzLIwuulccXrqzE
+TQID: 'https://experienceleague.adobe.com/aV7qVf-LREVyXEtR2EMJqRSTo-rvfzLIwuulccXrqzE'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Beginner
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 974
+source-wordcount: '978'
 ht-degree: 0%
-
 ---
-
 # 성공적인 마케팅 소스 식별
 
 대상을 조사하고, 캠페인을 만들고, 몇 가지 마케팅 채널에 투자했습니다. 이제 시간이 좀 지났는데, 그 채널들은 어떻게 수행하고 있습니까? 어떤 채널에서 가장 새로운 사용자를 확보했습니까? 전체 매출에 가장 많은 기여를 한 소스는 무엇입니까?
 
-[!DNL Adobe Commerce Intelligence]을(를) 사용하면 [[!DNL [Google Analytics' UTM fields]]](https://support.google.com/analytics/answer/1191184?hl=en)에 해당하는지 또는 사용자 지정 데이터 필드에 해당하는지 여부에 관계없이 조회 원본별로 매출과 사용자를 쉽게 세그먼트화할 수 있습니다. 이 세그먼테이션을 사용하면 가장 성과가 좋은 채널을 찾아 마케팅 예산을 더 잘 투자할 수 있습니다.
+[!DNL Adobe Commerce Intelligence]을(를) 사용하면 [!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en)에 해당하는지 또는 사용자 지정 데이터 필드에 해당하는지 여부에 관계없이 조회 원본별로 매출과 사용자를 쉽게 세그먼트화할 수 있습니다. 이 세그먼테이션을 사용하면 가장 성과가 좋은 채널을 찾아 마케팅 예산을 더 잘 투자할 수 있습니다.
 
 이 주제에서는 가장 가치 있는 마케팅 채널을 파악하는 데 사용할 수 있는 몇 가지 보고서에 대해 알아봅니다.
 
@@ -131,7 +140,7 @@ Report Builder에서 이 보고서를 만들려면 `Revenue by user registration
 
 ## 관련 항목 {#related}
 
-* [&#x200B; [!DNL Google ECommerce]을(를) 통한 주문 조회 원본 추적](../importing-data/integrations/google-ecommerce.md)
-* [&#x200B; [!DNL Google Adwords] 계정 연결 중](../importing-data/integrations/google-adwords.md)
+* [ [!DNL Google ECommerce]을(를) 통한 주문 조회 원본 추적](../importing-data/integrations/google-ecommerce.md)
+* [ [!DNL Google Adwords] 계정 연결 중](../importing-data/integrations/google-adwords.md)
 * [주문 및 고객 데이터를 사용하여  [!DNL Google ECommerce] 차원 작성](../data-warehouse-mgr/bldg-google-ecomm-dim.md)
-* [&#x200B; [!DNL Google Analytics]의 UTM 태그 지정에 대한 우수 사례](../../best-practices/utm-tagging-google.md)
+* [ [!DNL Google Analytics]의 UTM 태그 지정에 대한 우수 사례](../../best-practices/utm-tagging-google.md)

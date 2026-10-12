@@ -4,27 +4,36 @@ description: Commerce 이탈률을 생성하고 분석하는 방법에 대해 �
 exl-id: 8775cf0a-114d-4b48-8bd2-fc1700c59a12
 role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports
-TQID: https://experienceleague.adobe.com/jtS4f7MMpKa8LrKDOvGOqNJfrl-MhR9vhEMQZa-B42o
+TQID: 'https://experienceleague.adobe.com/jtS4f7MMpKa8LrKDOvGOqNJfrl-MhR9vhEMQZa-B42o'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Beginner
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 338
-ht-degree: 2%
-
+source-wordcount: '409'
+ht-degree: 19%
 ---
-
 # 이탈률
 
 이 항목에서는 **상거래 고객**&#x200B;의 **이탈률**&#x200B;을 계산하는 방법을 보여 줍니다. SaaS 또는 기존 구독 회사와 달리, 상거래 고객은 일반적으로 더 이상 활성 고객에 포함해서는 안 된다는 것을 보여주는 구체적인 **&quot;이탈 이벤트&quot;**&#x200B;를 가지고 있지 않습니다. 이러한 이유로 아래 지침을 사용하면 마지막 주문 이후 경과된 결정된 시간을 기준으로 고객을 &quot;이탈됨&quot;으로 정의할 수 있습니다.
@@ -39,15 +48,15 @@ ht-degree: 2%
 
 * **`customer_entity`** 테이블
 * **`Customer's last order date`**
-   * [!UICONTROL definition] 선택: `Max`
-   * [!UICONTROL table] 선택: `sales_flat_order`
-   * [!UICONTROL column] 선택: `created_at`
-   * `sales_flat_order.customer_id = customer_entity.entity_id`
-   * [!UICONTROL Filter]: `Orders we count`
+  * [!UICONTROL definition] 선택: `Max`
+  * [!UICONTROL table] 선택: `sales_flat_order`
+  * [!UICONTROL column] 선택: `created_at`
+  * `sales_flat_order.customer_id = customer_entity.entity_id`
+  * [!UICONTROL Filter]: `Orders we count`
 
 * **`Seconds since customer's last order date`**
-   * [!UICONTROL definition] 선택: `Age`
-   * [!UICONTROL column] 선택: `Customer's last order date`
+  * [!UICONTROL definition] 선택: `Age`
+  * [!UICONTROL column] 선택: `Customer's last order date`
 
 >[!NOTE]
 >
@@ -56,7 +65,7 @@ ht-degree: 2%
 ## 지표
 
 * **새 고객(첫 주문 날짜별)**
-   * 카운트된 고객
+  * 카운트된 고객
 
 >[!NOTE]
 >
@@ -69,7 +78,7 @@ ht-degree: 2%
 * [!UICONTROL Filter]:
 
 * **새 고객(마지막 주문 날짜까지)**
-   * 카운트된 고객
+  * 카운트된 고객
 
   >[!NOTE]
   >
@@ -88,22 +97,22 @@ ht-degree: 2%
 ## 보고서
 
 * **이탈률**
-   * [!UICONTROL Metric]: 새 고객(첫 번째 주문 날짜별)
-   * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
-   * &#x200B;
-     [!UICONTROL Perspective]: `Cumulative`
-   * [!UICONTROL Metric]: `New customers (by last order date)`
-   * [!UICONTROL Filter]:
-   * 고객의 마지막 주문 날짜 이후 시간(초) >= [이탈된 고객에 대한 자체 정의된 컷오프&#x200B;]&#x200B;**`^`**
-   * `Lifetime number of orders Greater Than 0`
+  * [!UICONTROL Metric]: 새 고객(첫 번째 주문 날짜별)
+  * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
+  * 
+    [!UICONTROL Perspective]: `Cumulative`
+  * [!UICONTROL Metric]: `New customers (by last order date)`
+  * [!UICONTROL Filter]:
+  * 고객의 마지막 주문 날짜 이후 시간(초) >= [이탈된 고객에 대한 자체 정의된 컷오프&#x200B;]**`^`**
+  * `Lifetime number of orders Greater Than 0`
 
-   * [!UICONTROL Metric]: `New customers (by last order date)`
-   * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
-   * &#x200B;
-     [!UICONTROL Perspective]: Cumulative
-   * [!UICONTROL Formula]: `(B / ((A + B) - C)`
-   * &#x200B;
-     [!UICONTROL Format]: Percentage
+  * [!UICONTROL Metric]: `New customers (by last order date)`
+  * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
+  * 
+    [!UICONTROL Perspective]: Cumulative
+  * [!UICONTROL Formula]: `(B / ((A + B) - C)`
+  * 
+    [!UICONTROL Format]: Percentage
 
 * *지표 `A`:`New customers cumulative`*
 * *지표 `B`:`Churned customers by last order date`*

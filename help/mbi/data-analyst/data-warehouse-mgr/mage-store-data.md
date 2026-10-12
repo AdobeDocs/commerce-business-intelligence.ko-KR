@@ -4,29 +4,43 @@ description: 데이터가 생성되는 방법, 새 행이 삽입되는 원인 �
 exl-id: 436ecdc1-7112-4dec-9db7-1f3757a2a938
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-TQID: https://experienceleague.adobe.com/IUTQdZYcHkue-29jNZOxONAK4u5plphslzqtUXJ5JAs
+TQID: 'https://experienceleague.adobe.com/IUTQdZYcHkue-29jNZOxONAK4u5plphslzqtUXJ5JAs'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 964
-ht-degree: 2%
-
+source-wordcount: '964'
+ht-degree: 4%
 ---
-
 # [!DNL Adobe Commerce]에 데이터 저장 중
 
 [!DNL Adobe Commerce] 플랫폼은 수백 개의 테이블에 걸쳐 중요한 다양한 상거래 데이터를 기록하고 구성합니다. 이 항목에서는 다음을 설명합니다.
@@ -52,11 +66,11 @@ ht-degree: 2%
 | 207 | 4 | 12 | Shirts6 | 2016/09/22 09:24:02 |
 
 * `entity_id` - `catalog_product_entity` 테이블의 기본 키입니다. 즉, 테이블의 모든 행에 다른 `entity_id`이(가) 있어야 합니다. 이 테이블의 각 `entity_id`은(는) 하나의 제품에만 연결할 수 있으며 각 제품은 하나의 `entity_id`에만 연결할 수 있습니다.
-   * 위 표의 맨 위 줄 `entity_id` = 205는 &quot;Throwback Bellbottom&quot;에 대해 만들어진 새 행입니다. Commerce 플랫폼에 `entity_id` = 205가 나타나면 &quot;Throwback Bellbottom&quot; 제품을 참조합니다.
+  * 위 표의 맨 위 줄 `entity_id` = 205는 &quot;Throwback Bellbottom&quot;에 대해 만들어진 새 행입니다. Commerce 플랫폼에 `entity_id` = 205가 나타나면 &quot;Throwback Bellbottom&quot; 제품을 참조합니다.
 * `entity_type_id` - Commerce에는 여러 범주의 개체(예: 고객, 주소 및 제품 등)가 있으며, 이 열은 이 특정 행이 속한 범주를 나타내는 데 사용됩니다.
-   * `catalog_product_entity` 테이블인 각 행에는 동일한 엔터티 형식(product)이 있습니다. Adobe Commerce에서 제품에 대한 `entity_type_id`은(는) 4입니다. 따라서 만들어진 세 개의 새 제품이 모두 이 열에 대해 4를 반환합니다.
+  * `catalog_product_entity` 테이블인 각 행에는 동일한 엔터티 형식(product)이 있습니다. Adobe Commerce에서 제품에 대한 `entity_type_id`은(는) 4입니다. 따라서 만들어진 세 개의 새 제품이 모두 이 열에 대해 4를 반환합니다.
 * `attribute_set_id` - 특성 집합은 같은 설명자가 있는 제품을 식별하는 데 사용됩니다.
-   * 테이블의 맨 위 두 행은 `Throwback Bellbottoms` 및 `Straight Leg Jeans` 제품이며 둘 다 바지입니다. 이러한 제품에는 동일한 설명자(예: 이름, 인심, 허리줄)가 있으므로 동일한 `attribute_set_id`이(가) 있습니다. 세 번째 항목 `V-Neck T-Shirt`에는 바지와 같은 설명자가 없으므로 다른 `attribute_set_id`이(가) 있습니다. 셔츠에는 허리선이나 인심이 없습니다.
+  * 테이블의 맨 위 두 행은 `Throwback Bellbottoms` 및 `Straight Leg Jeans` 제품이며 둘 다 바지입니다. 이러한 제품에는 동일한 설명자(예: 이름, 인심, 허리줄)가 있으므로 동일한 `attribute_set_id`이(가) 있습니다. 세 번째 항목 `V-Neck T-Shirt`에는 바지와 같은 설명자가 없으므로 다른 `attribute_set_id`이(가) 있습니다. 셔츠에는 허리선이나 인심이 없습니다.
 * `sku` - Adobe Commerce에서 제품을 만들 때 사용자가 각 제품에 할당한 고유한 값입니다.
 * `created_at` - 이 열은 각 제품이 만들어진 시점의 타임스탬프를 반환합니다.
 
@@ -69,13 +83,13 @@ ht-degree: 2%
 | `214` | `1` | `sammy.customer@gmail.com` | `2016/09/23 15:27:12` |
 
 * `entity_id` - 이전 테이블과 마찬가지로 `entity_id`은(는) `customer_entity` 테이블의 기본 키입니다.
-   * `Sammy Customer`이(가) 계정을 만들고 위의 행을 `customer_entity` 테이블에 썼을 때 고객에게 `entity_id` = 214가 할당되었습니다. 모든 테이블에서 `entity_id` = 214로 식별된 고객은 항상 사용자 Sammy 고객을 참조합니다
+  * `Sammy Customer`이(가) 계정을 만들고 위의 행을 `customer_entity` 테이블에 썼을 때 고객에게 `entity_id` = 214가 할당되었습니다. 모든 테이블에서 `entity_id` = 214로 식별된 고객은 항상 사용자 Sammy 고객을 참조합니다
 * `entity_type_id` - 이 열은 이 테이블에 나열되는 엔터티 형식을 식별하며 `catalog_product_entity` 테이블과 동일한 방식으로 작동합니다
-   * `customer_entity` 테이블의 모든 행은 고객이며 Commerce은 기본적으로 고객을 `entity_type_id` 1로 정의합니다
+  * `customer_entity` 테이블의 모든 행은 고객이며 Commerce은 기본적으로 고객을 `entity_type_id` 1로 정의합니다
 * `email` - 이 필드는 새 고객이 계정을 만들 때 입력한 전자 메일로 채워집니다.
 * `created_at` - 이 열은 각 사용자가 가입했을 때의 타임스탬프를 반환합니다.
 
-## `sales\_flat\_order (or Sales\_order`이(가) 있는 경우 [!DNL Adobe Commerce 2.x]
+## [!DNL Adobe Commerce 2.x]이(가) 있는 경우 `sales\_flat\_order (or Sales\_order`
 
 계정 생성이 완료되면 `Sammy Customer`이(가) 구매를 시작할 준비가 되었습니다. 웹 사이트에서 고객이 두 쌍의 `Throwback Bellbottoms`과(와) 한 쌍의 `V-Neck T-Shirt`을(를) 장바구니에 추가합니다. 선택에 만족하면 고객이 체크아웃으로 이동하여 주문을 제출하고 [sales flat order table](../data-warehouse-mgr/sales-flat-order-table.md)에 다음 항목을 만듭니다.
 
@@ -84,11 +98,11 @@ ht-degree: 2%
 | 227 | 214 | 94.85 | 2016/09/23 15:41:39 |
 
 * `entity_id` - `sales_flat_order` 테이블의 기본 키입니다.
-   * Sammy 고객이 이 주문을 하고 위의 행이 `sales_flat_order` 테이블에 작성되면 해당 주문이 `entity_id` = 227로 할당되었습니다.
+  * Sammy 고객이 이 주문을 하고 위의 행이 `sales_flat_order` 테이블에 작성되면 해당 주문이 `entity_id` = 227로 할당되었습니다.
 * `customer_id` - 이 열은 이 특정 주문을 한 고객의 고유 식별자입니다.
-   * 이 주문과 연결된 `customer_id`은(는) 214입니다. 이 값은 `entity_id` 테이블에 있는 Sammy 고객의 `customer_entity`입니다.
+  * 이 주문과 연결된 `customer_id`은(는) 214입니다. 이 값은 `customer_entity` 테이블에 있는 Sammy 고객의 `entity_id`입니다.
 * `subtotal` - 이 열은 주문에 대해 고객에게 청구된 총 금액입니다.
-   * &#39;트로우백 벨바텀&#39;과 &#39;브이넥 티셔츠&#39; 두 켤레의 가격은 총 94.85달러였다
+  * &#39;트로우백 벨바텀&#39;과 &#39;브이넥 티셔츠&#39; 두 켤레의 가격은 총 94.85달러였다
 * `created_at` - 이 열은 각 순서가 만들어진 시점의 타임스탬프를 반환합니다.
 
 ## `sales\_flat\_order\_item ( or Sales\_order\_item`
@@ -103,13 +117,13 @@ ht-degree: 2%
 | 823 | `V-Neck T-Shirt` | 207 | 227 | 1 | 14.95 |
 
 * `item_id` - 이 열은 `sales_flat_order_item` 테이블의 기본 키입니다.
-   * `Sammy Customer`의 주문에 두 개의 개별 제품이 포함되어 있으므로 이 테이블에 두 개의 줄이 생성되었습니다.
+  * `Sammy Customer`의 주문에 두 개의 개별 제품이 포함되어 있으므로 이 테이블에 두 개의 줄이 생성되었습니다.
 * `name` - 이 열은 제품 이름입니다.
 * `product_id` - 이 열은 이 행이 참조하는 제품의 고유 식별자입니다.
-   * `product_id` 테이블에 `Throwback Bellbottoms`의 `entity_id`이(가) 205이므로 위의 첫 번째 행에 `catalog_product_entity` = 205가 있습니다.
+  * `catalog_product_entity` 테이블에 `Throwback Bellbottoms`의 `entity_id`이(가) 205이므로 위의 첫 번째 행에 `product_id` = 205가 있습니다.
 * `order_id` - 이 열은 이러한 특정 주문 항목을 포함하는 주문의 `entity_id`입니다.
-   * 위의 두 행은 모두 `order_id` 테이블에 `Sammy Customer` = 227이 있는 `entity_id`에서 수행한 주문의 일부이므로 `sales_flat_order` = 227이 있습니다
+  * 위의 두 행은 모두 `sales_flat_order` 테이블에 `entity_id` = 227이 있는 `Sammy Customer`에서 수행한 주문의 일부이므로 `order_id` = 227이 있습니다
 * `qty_ordered` - 이 열은 이 특정 주문에 포함된 제품의 단위 수입니다.
-   * `Sammy Customer`의 주문에는 두 쌍의 `Throwback Bellbottoms`이(가) 포함되어 있습니다.
+  * `Sammy Customer`의 주문에는 두 쌍의 `Throwback Bellbottoms`이(가) 포함되어 있습니다.
 * `price` - 이 열은 주문 항목의 단일 단위 가격입니다.
-   * `subtotal` 테이블의 `Sammy Customer` 순서에서 `sales_flat_order`은(는) 각각 $39.95에 있는 두 쌍의 `Throwback Bellbottoms`과(와) $14.95에 있는 한 쌍의 `V-Neck T-Shirt`을(를) 합한 94.85입니다.
+  * `sales_flat_order` 테이블의 `Sammy Customer` 순서에서 `subtotal`은(는) 각각 $39.95에 있는 두 쌍의 `Throwback Bellbottoms`과(와) $14.95에 있는 한 쌍의 `V-Neck T-Shirt`을(를) 합한 94.85입니다.

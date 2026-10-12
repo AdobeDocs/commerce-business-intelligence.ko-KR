@@ -4,32 +4,49 @@ description: 모든 데이터를 단일 Data Warehouse에 넣는 방법을 알�
 exl-id: 28db0e78-0222-431d-bbb9-6ef133686603
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-TQID: https://experienceleague.adobe.com/pdmp5wyeWdjrebZlZ9j4u3OJBb-LpADk6Uib-bWy1Vc
+TQID: 'https://experienceleague.adobe.com/pdmp5wyeWdjrebZlZ9j4u3OJBb-LpADk6Uib-bWy1Vc'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 32bcb9f48faa4e766972b0690f86c9813c6a9d53
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 1370
+source-wordcount: '1370'
 ht-degree: 0%
-
 ---
-
 # 파일 업로더 사용
 
 >[!NOTE]
@@ -92,7 +109,7 @@ ZIP 코드 및 ID와 같은 파일의 일부 값은 0으로 시작되거나 끝�
 
 숫자 서식을 변경하는 방법의 예로 `US ZIP codes`을(를) 사용하십시오. [!DNL Excel]에서 `ZIP codes`과(와) [숫자 형식을 변경](https://support.microsoft.com/en-us/office/display-numbers-as-postal-codes-61b55c9f-6fe3-4e54-96ca-9e85c38a5a1d?ui=en-us&rs=en-us&ad=us)하여 `ZIP code`을(를) 포함하는 열을 강조 표시합니다. 사용자 지정 숫자 형식을 선택할 수도 있고 `Type` 창에서 `00000`을(를) 입력합니다. 일부 코드는 `00000` 형식으로 지정되고 다른 코드는 `00000-0000`인 경우 이 메서드가 문제를 일으킬 수 있습니다.
 
-`Type`은(는) ID와 같은 다른 데이터 형식[&#128279;](https://support.microsoft.com/en-us/office/keeping-leading-zeros-and-large-numbers-1bf7b935-36e1-4985-842f-5dfa51f85fe7?correlationid=e1d4c2d3-cd5d-4a14-999d-437800274a90&ui=en-us&rs=en-us&ad=us)을(를) 수용하도록 형식이 다르게 될 수 있습니다. 예를 들어 `ID`이(가) 9자리 길이이면 `Type`은(는) `000000000` 또는 `000-000-000`일 수 있습니다. `123456`이(가) `000-123-456`(으)로 변경됩니다.
+`Type`은(는) ID와 같은 다른 데이터 형식](https://support.microsoft.com/en-us/office/keeping-leading-zeros-and-large-numbers-1bf7b935-36e1-4985-842f-5dfa51f85fe7?correlationid=e1d4c2d3-cd5d-4a14-999d-437800274a90&ui=en-us&rs=en-us&ad=us)을(를) 수용하도록 형식이 다르게 [될 수 있습니다. 예를 들어 `ID`이(가) 9자리 길이이면 `Type`은(는) `000000000` 또는 `000-000-000`일 수 있습니다. `123456`이(가) `000-123-456`(으)로 변경됩니다.
 
 [!DNL Google Docs] 및 [!DNL Apple Numbers] 리소스의 경우 이 페이지 하단에 있는 [관련](#related) 목록을 참조하십시오.
 

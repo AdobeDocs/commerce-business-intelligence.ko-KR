@@ -4,30 +4,45 @@ description: SQL Report Builder에 사용되는 용어를 숙지하고 SQL 시�
 exl-id: 9b9bc205-5b64-4e64-8d23-057072e5dd72
 role: Admin, Developer, Leader, User
 feature: SQL Report Builder, Data Warehouse Manager, Reports, Data Integration
-TQID: https://experienceleague.adobe.com/xWv7O8UJ6gXxysl6oG1t24ygF-PE4LTanwyrrvoJzQ4
+TQID: 'https://experienceleague.adobe.com/xWv7O8UJ6gXxysl6oG1t24ygF-PE4LTanwyrrvoJzQ4'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
+  - id: c38ccf61-5a4f-5140-ad2b-c3434e82ed6d
+    internal-label: SQL Report Builder
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 665
+source-wordcount: '676'
 ht-degree: 0%
-
 ---
-
 # SQL 쿼리에서 시각화 만들기
 
 이 자습서의 목표는 [!DNL SQL Report Builder]에서 사용되는 용어를 숙지하고 `SQL visualizations`을(를) 만드는 견고한 기반을 제공하는 것입니다.
@@ -40,7 +55,7 @@ ht-degree: 0%
 
 - `Series`: 측정하려는 열을 SQL Report Builder에서 시리즈라고 합니다. 일반적인 예로는 `revenue`, `items sold` 및 `marketing spend`이(가) 있습니다. 시각화를 만들려면 하나 이상의 열을 `Series`(으)로 설정해야 합니다.
 
-- `Category`: 데이터를 세그먼트화하는 데 사용할 열을 `Category`이라고 합니다. 이는 `Group By`의 [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md) 기능과 같습니다. 예를 들어 고객 생애 매출을 획득 소스로 분할하려면 획득 소스가 포함된 열이 `Category`(으)로 지정됩니다. 두 개 이상의 열을 `Category`(으)로 설정할 수 있습니다.
+- `Category`: 데이터를 세그먼트화하는 데 사용할 열을 `Category`이라고 합니다. 이는 [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md)의 `Group By` 기능과 같습니다. 예를 들어 고객 생애 매출을 획득 소스로 분할하려면 획득 소스가 포함된 열이 `Category`(으)로 지정됩니다. 두 개 이상의 열을 `Category`(으)로 설정할 수 있습니다.
 
 >[!NOTE]
 >
@@ -58,7 +73,7 @@ ht-degree: 0%
 
 - `EXTRACT` 함수는 타임스탬프의 일, 주, 월 또는 연도를 구문 분석하는 데 유용합니다. 보고서에 사용할 `time interval`이(가) `daily`, `weekly`, `monthly` 또는 `yearly`인 경우 유용합니다.
 
-시작하려면 [!DNL SQL Report Builder]을(를) 클릭하여 **[!UICONTROL Report Builder** > **SQL Report Builder]**&#x200B;을(를) 엽니다.
+시작하려면 **[!UICONTROL Report Builder** > **SQL Report Builder]**&#x200B;을(를) 클릭하여 [!DNL SQL Report Builder]을(를) 엽니다.
 
 예를 들어 각 제품에 대해 판매된 월별 총 항목 수를 반환하는 이 쿼리를 생각해 보십시오.
 
@@ -79,7 +94,7 @@ ht-degree: 0%
 
 ## 2단계: 시각화 만들기
 
-이러한 결과를 통해 *시각화를 만드는 방법을 알아보세요.* 시작하려면 **[!UICONTROL Chart]** 창에서 `Results` 탭을 클릭하십시오. `Chart settings` 탭이 표시됩니다.
+이 결과를 통해 *시각화를 만드는 방법*&#x200B;을 확인하세요. 시작하려면 `Results` 창에서 **[!UICONTROL Chart]** 탭을 클릭하십시오. `Chart settings` 탭이 표시됩니다.
 
 쿼리가 처음 실행될 때 쿼리의 모든 열이 시리즈로 표시되기 때문에 보고서가 무시될 수 있습니다.
 
@@ -91,11 +106,11 @@ ht-degree: 0%
 
 - `Category`: 이 예에서는 각 제품을 보고서에서 다른 줄로 볼 수 있습니다. 이렇게 하려면 `Product name`을(를) `Category`(으)로 설정합니다.
 
-- `Labels`: `year`을(를) 시간 경과에 따른 트렌드로 보려면 열 `month` 및 `Items Sold`을(를) x축의 레이블로 사용하십시오.
+- `Labels`: `Items Sold`을(를) 시간 경과에 따른 트렌드로 보려면 열 `year` 및 `month`을(를) x축의 레이블로 사용하십시오.
 
 >[!NOTE]
 >
->레이블의 열이 `ORDER BY`/`date`개인 경우 쿼리에 `time` 절이 있어야 합니다.
+>레이블의 열이 `date`/`time`개인 경우 쿼리에 `ORDER BY` 절이 있어야 합니다.
 
 다음은 쿼리 실행에서 보고서 설정에 이르기까지 이 시각화를 만드는 방법을 간략히 보여줍니다.
 

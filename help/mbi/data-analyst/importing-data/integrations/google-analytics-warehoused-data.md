@@ -4,30 +4,45 @@ description: Google Analytics 웨어하우스 데이터와 상호 작용하는 �
 exl-id: 2b1305cd-5f34-43d9-b77f-a4f5b1d82c66
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-TQID: https://experienceleague.adobe.com/-Pulnv7J-TmXxL0msB6nhuMKIWbCpS0163rewp9BOvc
+TQID: 'https://experienceleague.adobe.com/-Pulnv7J-TmXxL0msB6nhuMKIWbCpS0163rewp9BOvc'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 355
-ht-degree: 0%
-
+source-wordcount: '378'
+ht-degree: 1%
 ---
-
 # [!DNL Google Analytics Warehoused]개의 데이터가 필요합니다.
 
 >[!NOTE]
@@ -38,11 +53,11 @@ ht-degree: 0%
 >
 >일부 정보는 [[!DNL Stitch]](https://www.stitchdata.com/docs/integrations/saas/google-analytics)에 있는 친구의 사용 권한과 함께 사용되었습니다.
 
-[!DNL Google Analytics Warehoused]의 [!DNL Commerce Intelligence] 통합에서 [!DNL Google Analytics] [핵심 보고 API](https://developers.google.com/analytics/devguides/reporting/core/v3/)를 사용합니다.
+[!DNL Commerce Intelligence]의 [!DNL Google Analytics Warehoused] 통합에서 [!DNL Google Analytics] [핵심 보고 API](https://developers.google.com/analytics/devguides/reporting/core/v3/)를 사용합니다.
 
 >[!NOTE]
 >
->예기치 않거나 중요하지 않은 결과를 방지하려면 사용하는 모든 차원이 [에서 사용하는 &#x200B;](https://ga-dev-tools.google/dimensions-metrics-explorer/)하나 이상의 지표와 호환`Report Builder`되는지 확인하십시오.
+>예기치 않거나 중요하지 않은 결과를 방지하려면 사용하는 모든 차원이 `Report Builder`에서 사용하는 [하나 이상의 지표와 호환](https://ga-dev-tools.google/dimensions-metrics-explorer/)되는지 확인하십시오.
 
 단일 테이블(`report`)이 Data Warehouse에 만들어집니다.
 
@@ -73,10 +88,10 @@ ht-degree: 0%
 
 [!DNL Google Analytics] 광고 캠페인에서 조작 관점에서 수행할 수 있는 작업의 예를 살펴보십시오. 이름이 다른 4분기 광고 캠페인이 여러 개 있다고 가정해 봅시다. 캠페인은 특정 마케팅 이니셔티브의 결과였습니다. 웨어하우스된 데이터를 사용하여 해당 캠페인 이름을 찾고 Q4 이니셔티브 이름 `Operation Dumbo`을(를) 반환하는 열을 만들 수 있습니다.
 
-결합 측면을 사용하면 분석을 수행하기 위해 [!DNL Google Analytics] 데이터를 다른 데이터에 결합할 수 있습니다. 예를 들어, `Total Time On Site By Ad Campaign`의 [!DNL Google Analytics] 데이터를 가져와서 `Total Spent Per Campaign`의 [!DNL Facebook Ads] 데이터와 함께 참여하면 참여로 인해 비용이 얼마나 많이 소요되는지 전체적으로 파악할 수 있습니다.
+결합 측면을 사용하면 분석을 수행하기 위해 [!DNL Google Analytics] 데이터를 다른 데이터에 결합할 수 있습니다. 예를 들어, [!DNL Google Analytics]의 `Total Time On Site By Ad Campaign` 데이터를 가져와서 [!DNL Facebook Ads]의 `Total Spent Per Campaign` 데이터와 함께 참여하면 참여로 인해 비용이 얼마나 많이 소요되는지 전체적으로 파악할 수 있습니다.
 
 반면에 [!DNL Google Analytics Live] 통합을 사용하면 모든 [!DNL Google Analytics] 차트는 [!DNL Commerce Intelligence] Data Warehouse에 저장되지 않은 작은 사일로와 같습니다.
 
 ## 관련 항목:
 
-* [&#x200B; [!DNL Google Analytics Warehoused] 연결 중](../integrations/google-analytics-warehoused.md)
+* [ [!DNL Google Analytics Warehoused] 연결 중](../integrations/google-analytics-warehoused.md)
