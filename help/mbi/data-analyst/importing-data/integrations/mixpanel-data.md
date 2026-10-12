@@ -59,5 +59,5 @@ ht-degree: 0%
 
 ## 관련 설명서
 
-* [ [!DNL Mixpanel] 연결 중](../integrations/mixpanel.md)
+* [&#x200B; [!DNL Mixpanel] 연결 중](../integrations/mixpanel.md)
 * [통합 재인증](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

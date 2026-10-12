@@ -74,41 +74,41 @@ ht-degree: 13%
 >**[!UICONTROL Time Period:]**&#x200B;에서 각 보고서의 기간은 `All-time`(으)로 나열됩니다. 분석 요구 사항에 맞게 자유롭게 변경하십시오. Adobe에서는 `All time`, `Year-to-date` 또는 `Last 365 days`과(와) 같이 이 대시보드에 있는 모든 보고서를 동일한 기간에 포함하도록 권장합니다.
 
 * **[!UICONTROL Average LTV (all)]**
-  * [!UICONTROL Metric]: `Avg lifetime revenue`
-  * [!UICONTROL Time period]: `All time`
-  * 
-    [!UICONTROL 간격]: `None`
-  * [!UICONTROL Chart Type]: `Number (scalar)`
+  * [!UICONTROL Metric]&#x200B;: `Avg lifetime revenue`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL 간격]&#x200B;: `None`
+  * [!UICONTROL Chart Type]&#x200B;: `Number (scalar)`
 
 * **[!UICONTROL Average LTV (customers / non-guest checkout)]**
-  * [!UICONTROL Metric]: `Avg lifetime revenue`
+  * [!UICONTROL Metric]&#x200B;: `Avg lifetime revenue`
     * [!UICONTROL filters] 추가:
       * [`A`] `Customer's group code` **같지 않음** `Not Logged In`
       * [`B`] `Customer's lifetime number of orders` **다음보다 큼**`0`
 
-  * [!UICONTROL Time period]: `All time`
-  * 
-    [!UICONTROL 간격]: `None`
-  * [!UICONTROL Chart Type]: `Number (scalar)`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL 간격]&#x200B;: `None`
+  * [!UICONTROL Chart Type]&#x200B;: `Number (scalar)`
 
 * **[!UICONTROL Average and Median LTV]**
   * 지표 `1`: `Avg lifetime revenue`
   * 지표 `2`: `Median lifetime revenue`
-  * [!UICONTROL Time period]: `All time`
-  * [!UICONTROL Interval]: `By Month`
-  * 
-    [!UICONTROL 차트 유형]: `Line`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * [!UICONTROL Interval]&#x200B;: `By Month`
+  * &#x200B;
+    [!UICONTROL 차트 유형]&#x200B;: `Line`
   * `Multiple Y-Axes` 선택 취소
 
 * **수명 주문 수별 LTV**
   * 지표 `1`: `Avg lifetime revenue`
   * 지표 `2`: `New customers`
-  * [!UICONTROL Time period]: `All time`
-  * 
-    [!UICONTROL 간격]: `None`
-  * [!UICONTROL Group by]: `Customer's lifetime number of orders`
-  * 
-    [!UICONTROL 차트 유형]: `Line`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL 간격]&#x200B;: `None`
+  * [!UICONTROL Group by]&#x200B;: `Customer's lifetime number of orders`
+  * &#x200B;
+    [!UICONTROL 차트 유형]&#x200B;: `Line`
 
   >[!NOTE]
   >

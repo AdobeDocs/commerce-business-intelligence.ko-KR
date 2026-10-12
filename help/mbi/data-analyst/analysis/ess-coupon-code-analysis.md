@@ -88,64 +88,64 @@ Commerce 2.4.7부터 고객은 주문에 두 개 이상의 쿠폰 코드를 적�
 >각 보고서의 [!UICONTROL Time Period]**이(가) `All-time`(으)로 나열됩니다. 분석 요구 사항에 맞게 자유롭게 변경하십시오. Adobe에서는 `All time`, `Year-to-date` 또는 `Last 365 days`과(와) 같이 이 대시보드에 있는 모든 보고서를 동일한 기간에 포함하도록 권장합니다.
 
 * **쿠폰이 포함된 주문**
-  * 
-    [!UICONTROL 지표]: `Orders`
+  * &#x200B;
+    [!UICONTROL 지표]&#x200B;: `Orders`
     * 필터 추가:
       * [`A`] `coupon_code` **이(가) 아님** `[NULL]`
 
-  * [!UICONTROL Time period]: `All time`
-  * 
-    [!UICONTROL 간격]: `None`
-  * [!UICONTROL Chart type]:`Number (scalar)`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL 간격]&#x200B;: `None`
+  * [!UICONTROL Chart type]&#x200B;:`Number (scalar)`
 
 * **쿠폰 없는 주문**
-  * 
-    [!UICONTROL 지표]: `Orders`
+  * &#x200B;
+    [!UICONTROL 지표]&#x200B;: `Orders`
     * 필터 추가:
       * [`A`] `coupon_code` **IS** `[NULL]`
 
-  * [!UICONTROL Time period]: `All time`
-  * 
-    [!UICONTROL 간격]: `None`
-  * [!UICONTROL Chart type]:`Number (scalar)`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL 간격]&#x200B;: `None`
+  * [!UICONTROL Chart type]&#x200B;:`Number (scalar)`
 
 * **쿠폰이 포함된 주문 순 수익**
-  * 
-    [!UICONTROL 지표]: `Revenue`
+  * &#x200B;
+    [!UICONTROL 지표]&#x200B;: `Revenue`
     * 필터 추가:
       * [`A`] `coupon_code` **이(가) 아님** `[NULL]`
 
-  * [!UICONTROL Time period]: `All time`
-  * 
-    [!UICONTROL 간격]: `None`
-  * [!UICONTROL Chart type]: `Number (scalar)`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL 간격]&#x200B;: `None`
+  * [!UICONTROL Chart type]&#x200B;: `Number (scalar)`
 
 * **쿠폰 할인**
-  * [!UICONTROL Metric]: `Coupon discount amount`
-  * [!UICONTROL Time period]: `All time`
-  * 
-    [!UICONTROL 간격]: `None`
-  * [!UICONTROL Chart type]: `Number (scalar)`
+  * [!UICONTROL Metric]&#x200B;: `Coupon discount amount`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL 간격]&#x200B;: `None`
+  * [!UICONTROL Chart type]&#x200B;: `Number (scalar)`
 
 * **평균 라이프타임 수익: 쿠폰을 획득한 고객**
-  * [!UICONTROL Metric]: `Avg lifetime revenue`
+  * [!UICONTROL Metric]&#x200B;: `Avg lifetime revenue`
     * 필터 추가:
       * [`A`] `Customer's first order's coupon_code` **이(가) 아님** `[NULL]`
 
-  * [!UICONTROL Time period]: `All time`
-  * 
-    [!UICONTROL 간격]: `None`
-  * [!UICONTROL Chart type]: `Number (scalar)`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL 간격]&#x200B;: `None`
+  * [!UICONTROL Chart type]&#x200B;: `Number (scalar)`
 
 * **평균 라이프타임 수익: 쿠폰을 받지 않은 고객이 획득한 금액**
-  * [!UICONTROL Metric]: `Avg lifetime revenue`
+  * [!UICONTROL Metric]&#x200B;: `Avg lifetime revenue`
     * 필터 추가:
       * [A] `Customer's first order's coupon_code` **IS**`[NULL]`
 
-  * [!UICONTROL Time period]: `All time`
-  * 
-    [!UICONTROL 간격]: `None`
-  * [!UICONTROL Chart type]: `Number (scalar)`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL 간격]&#x200B;: `None`
+  * [!UICONTROL Chart type]&#x200B;: `Number (scalar)`
 
 * **쿠폰 사용 세부 정보(처음 주문)**
   * 지표 `1`: `Orders`
@@ -166,64 +166,64 @@ Commerce 2.4.7부터 고객은 주문에 두 개 이상의 쿠폰 코드를 적�
       * [`B`] `Customer's order number` **같음** `1`
 
   * 수식 만들기: `Gross revenue`
-    * [!UICONTROL Formula]: `(B – C)`
-    * 
-      [!UICONTROL Format]: `Currency`
+    * [!UICONTROL Formula]&#x200B;: `(B – C)`
+    * &#x200B;
+      [!UICONTROL Format]&#x200B;: `Currency`
 
   * 수식 만들기: **% 할인**
     * 수식: `(C / (B - C))`
-    * 
-      [!UICONTROL Format]: `Percentage`
+    * &#x200B;
+      [!UICONTROL Format]&#x200B;: `Percentage`
 
   * 수식 만들기: `Average order discount`
-    * [!UICONTROL Formula]: `(C / A)`
-    * 
-      [!UICONTROL Format]: `Percentage`
+    * [!UICONTROL Formula]&#x200B;: `(C / A)`
+    * &#x200B;
+      [!UICONTROL Format]&#x200B;: `Percentage`
 
-  * [!UICONTROL Time period]: `All time`
-  * 
-    [!UICONTROL 간격]: `None`
-  * 
-    [!UICONTROL 차트 유형]: `Table`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL 간격]&#x200B;: `None`
+  * &#x200B;
+    [!UICONTROL 차트 유형]&#x200B;: `Table`
 
 * **첫 주문 쿠폰별 평균 라이프타임 수익**
   * [!UICONTROL Metric]:**평균 라이프타임 수익**
     * 필터 추가:
       * [`A`] `coupon_code` **IS**`[NULL]`
 
-  * [!UICONTROL Time period]: `All time`
-  * 
-    [!UICONTROL 간격]: `None`
-  * [!UICONTROL Chart type]: `Number (scalar)`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL 간격]&#x200B;: `None`
+  * [!UICONTROL Chart type]&#x200B;: `Number (scalar)`
 
 * **쿠폰 사용 세부 정보(처음 주문)**
-  * [!UICONTROL Metric]: `Avg lifetime revenue`
+  * [!UICONTROL Metric]&#x200B;: `Avg lifetime revenue`
     * 필터 추가:
       * [`A`] `Customer's first order's coupon_code` **이(가) 아님** `[NULL]`
 
-  * [!UICONTROL Time period]: `All time`
-  * 
-    [!UICONTROL 간격]: `None`
-  * [!UICONTROL Group by]: `Customer's first order's coupon_code`
-  * 
-    [!UICONTROL 차트 유형]: **Column**
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL 간격]&#x200B;: `None`
+  * [!UICONTROL Group by]&#x200B;: `Customer's first order's coupon_code`
+  * &#x200B;
+    [!UICONTROL 차트 유형]&#x200B;: **Column**
 
 * **쿠폰으로 신규 고객/비쿠폰 고객 확보**
   * 지표 `1`: `New customers`
     * 필터 추가:
       * [`A`] `Customer's first order's coupon_code` **이(가) 아님** `[NULL]`
 
-    * [!UICONTROL Rename]: `Coupon acquisition customer`
+    * [!UICONTROL Rename]&#x200B;: `Coupon acquisition customer`
 
   * 지표 `2`: `New customers`
     * 필터 추가:
       * [`A`] `coupon_code` **IS**`[NULL]`
 
-    * [!UICONTROL Rename]: `Non-coupon acquisition customer`
+    * [!UICONTROL Rename]&#x200B;: `Non-coupon acquisition customer`
 
-  * [!UICONTROL Time period]: `All time`
-  * [!UICONTROL Interval]: `By Month`
-  * [!UICONTROL Chart type]: `Stacked Column`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * [!UICONTROL Interval]&#x200B;: `By Month`
+  * [!UICONTROL Chart type]&#x200B;: `Stacked Column`
 
 보고서를 작성한 후 대시보드에서 보고서를 구성하는 방법에 대한 자세한 내용은 이 항목 맨 위에 있는 이미지를 참조하십시오.
 

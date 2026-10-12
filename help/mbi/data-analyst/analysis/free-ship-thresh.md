@@ -66,7 +66,7 @@ ht-degree: 17%
   >버킷 크기는 클라이언트로서 적합한 항목에 따라 다릅니다. `average order value`(으)로 시작하여 해당 양보다 작거나 큰 버킷을 만들 수 있습니다. 아래 계산을 살펴볼 때 쿼리의 일부를 쉽게 복사하고, 편집하고, 추가 버킷을 만드는 방법을 알 수 있습니다. 이 예제는 50씩 증가하여 수행됩니다.
 
   * `Column type - Same table, Column definition - Calculation, Column Inputs-` `base_subtotal` 또는 `calculated column`, `Datatype`: `Integer`
-  * [!UICONTROL Calculation]: `case when A >= 0 and A<=200 then 0 - 200`
+  * [!UICONTROL Calculation]&#x200B;: `case when A >= 0 and A<=200 then 0 - 200`
     `A< 200` 및 `A <= 250`일 때 `201 - 250`
     `A<251` 및 `A<= 300`일 때 `251 - 300`
     `A<301` 및 `A<= 350`일 때 `301 - 350`
@@ -87,72 +87,72 @@ ht-degree: 17%
 ## 보고서
 
 * **배송 규칙 A의 평균 주문 가격**
-  * [!UICONTROL Metric]: `Average order value`
+  * [!UICONTROL Metric]&#x200B;: `Average order value`
 
 * 지표 `A`: `Average Order Value`
-* [!UICONTROL Time period]: `Time period with shipping rule A`
-* 
-  [!UICONTROL Interval]: `None`
-* 
-  [!UICONTROL Chart Type]: `Scalar`
+* [!UICONTROL Time period]&#x200B;: `Time period with shipping rule A`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* &#x200B;
+  [!UICONTROL Chart Type]&#x200B;: `Scalar`
 
 * **배달 규칙 A가 있는 소계 버킷별 주문 수**
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
 
   >[!NOTE]
   >
   >`Show top/bottom`에 상위 `X` `sorted by` `Order subtotal`(버킷)을 표시하여 끝 부분을 차단할 수 있습니다.
 
 * 지표 `A`: `Number of orders`
-* [!UICONTROL Time period]: `Time period with shipping rule A`
-* 
-  [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]: `Order subtotal (buckets)`
-* 
-  [!UICONTROL Chart Type]: `Column`
+* [!UICONTROL Time period]&#x200B;: `Time period with shipping rule A`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `Order subtotal (buckets)`
+* &#x200B;
+  [!UICONTROL Chart Type]&#x200B;: `Column`
 
 * 배송 규칙 A가 있는 소계별 주문 비율 **퍼센트**
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
 
-  * [!UICONTROL Metric]: `Number of orders`
-  * 
-    [!UICONTROL 그룹 기준]: `Independent`
-  * [!UICONTROL Formula]: `(A / B)`
-  * 
-    [!UICONTROL Format]: `%`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
+  * &#x200B;
+    [!UICONTROL 그룹 기준]&#x200B;: `Independent`
+  * [!UICONTROL Formula]&#x200B;: `(A / B)`
+  * &#x200B;
+    [!UICONTROL Format]&#x200B;: `%`
 
 * 지표 `A`: `Number of orders by subtotal (hide)`
 * 지표 `B`: `Total number of orders (hide)`
-* [!UICONTROL Formula]: `% of orders`
-* [!UICONTROL Time period]: `Time period with shipping rule A`
-* 
-  [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]: `Order subtotal (buckets)`
-* 
-  [!UICONTROL Chart Type]: `Line`
+* [!UICONTROL Formula]&#x200B;: `% of orders`
+* [!UICONTROL Time period]&#x200B;: `Time period with shipping rule A`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `Order subtotal (buckets)`
+* &#x200B;
+  [!UICONTROL Chart Type]&#x200B;: `Line`
 
 * 소계가 배송 규칙 A를 초과하는 주문의 **퍼센트**
-  * [!UICONTROL Metric]: `Number of orders`
-  * 
-    [!UICONTROL Perspective]: `Cumulative`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
+  * &#x200B;
+    [!UICONTROL Perspective]&#x200B;: `Cumulative`
 
-  * [!UICONTROL Metric]: `Number of orders`
-  * 
-    [!UICONTROL 그룹 기준]: `Independent`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
+  * &#x200B;
+    [!UICONTROL 그룹 기준]&#x200B;: `Independent`
 
-  * [!UICONTROL Formula]: `1- (A / B)`
-  * 
-    [!UICONTROL Format]: `%`
+  * [!UICONTROL Formula]&#x200B;: `1- (A / B)`
+  * &#x200B;
+    [!UICONTROL Format]&#x200B;: `%`
 
 * 지표 `A`: `Number of orders by subtotal`
 * 지표 `B`: `Total number of orders (hide)`
-* [!UICONTROL Formula]: `% of orders`
-* [!UICONTROL Time period]: `Time period with shipping rule A`
-* 
-  [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]: `Order subtotal (buckets)`
-* 
-  [!UICONTROL Chart Type]: `Line`
+* [!UICONTROL Formula]&#x200B;: `% of orders`
+* [!UICONTROL Time period]&#x200B;: `Time period with shipping rule A`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `Order subtotal (buckets)`
+* &#x200B;
+  [!UICONTROL Chart Type]&#x200B;: `Line`
 
 
 운송 규칙 B가 있는 기간 및 운송 B에 대해 위의 단계와 보고서를 반복합니다.

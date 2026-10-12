@@ -74,7 +74,7 @@ Report Builder를 사용하면 시간 경과에 따른 트렌드를 쉽게 확�
   * `created_at (month)` [!UICONTROL Calculation]: **to_char(A, &#39;mm-month&#39;)**
   * `created_at (day of the month)`&lt; [!UICONTROL Calculation]: **to_char(A, &#39;dd&#39;)**
   * `created_at (day of the week)` [!UICONTROL Calculation]: **to_char(A, &#39;d-Day&#39;)**
-  * **`created_at (hour of the day)` [!UICONTROL Calculation]: **to_char(A, &#39;hh24&#39;)**
+  * **`created_at (hour of the day)` [!UICONTROL Calculation]: &#x200B;** to_char(A, &#39;hh24&#39;)**
     ![Data Warehouse 관리자에서 계산된 열 인터페이스를 만듭니다](../../assets/new-arch-create-calc.png)
 
 ## 지표
@@ -88,26 +88,26 @@ Report Builder를 사용하면 시간 경과에 따른 트렌드를 쉽게 확�
 ## 보고서
 
 * **전년 대비 차트**
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
 
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
   * [!UICONTROL Time options]: `Time range (Custom)`: `2 years ago to 1 year ago`
 
   * [!UICONTROL Show top/bottom]: **`created_at (month-day)`**&#x200B;별로 정렬된 상위 100%*
 
 * 지표 `A`: `This year`
 * 지표 `B`: `Last year`
-* [!UICONTROL Time period]: `1 year ago to 0 years ago`
-* 
-  [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]: `created_at (month-day)`
-* 
-  [!UICONTROL Chart Type]: `Line`
+* [!UICONTROL Time period]&#x200B;: `1 year ago to 0 years ago`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `created_at (month-day)`
+* &#x200B;
+  [!UICONTROL Chart Type]&#x200B;: `Line`
 
 * **MoM 차트**
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
 
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
   * 시간 옵션: `Time range (Custom)`: `2 months ago to 1 month ago`
 
   * 위쪽/아래쪽 표시: **`created_at (day of month)`**&#x200B;별로 정렬된 위쪽 100%*
@@ -115,44 +115,44 @@ Report Builder를 사용하면 시간 경과에 따른 트렌드를 쉽게 확�
 * 지표 `A`: 이번 달*
 * 지표 `B`: 지난 달*
 * [!UICONTROL Time period]: 1개월 전부터 0개월 전까지입니다.
-* 
-  [!UICONTROL Interval]: None
-* [!UICONTROL Group by]: `created_at (day of month)`
-* 
-  [!UICONTROL Chart Type]: Line
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: None
+* [!UICONTROL Group by]&#x200B;: `created_at (day of month)`
+* &#x200B;
+  [!UICONTROL Chart Type]&#x200B;: Line
 
 * **너비 차트**
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
 
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
   * [!UICONTROL Time options]: `Time range (Custom)`: `2 weeks ago to 1 week ago`
 
   * [!UICONTROL Show top/bottom]: `created_at (day of week)`별로 정렬된 상위 100%
 
 * 지표 `A`: `This week`
 * 지표 `B`: `Last week`
-* [!UICONTROL Time period]: `1 week ago to 0 weeks ago`
-* 
-  [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]: `created_at (day of week)`
-* 
-  [!UICONTROL Chart Type]: `Line`
+* [!UICONTROL Time period]&#x200B;: `1 week ago to 0 weeks ago`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `created_at (day of week)`
+* &#x200B;
+  [!UICONTROL Chart Type]&#x200B;: `Line`
 
 * **DoD 차트**
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
 
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
   * [!UICONTROL Time options]: `Time range (Custom)`: `2 days ago to 1 day ago`
 
   * [!UICONTROL Show top/bottom]: `created_at (hour of day)`별로 정렬된 상위 100%
 
 * 지표 `A`: `Today`
 * 지표 B: `Yesterday`
-* [!UICONTROL Time period]: `1 day ago to 0 days ago`
-* 
-  [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]: `created_at (hour of day)`
-* 
-  [!UICONTROL Chart Type]: `Line`
+* [!UICONTROL Time period]&#x200B;: `1 day ago to 0 days ago`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `created_at (hour of day)`
+* &#x200B;
+  [!UICONTROL Chart Type]&#x200B;: `Line`
 
 모든 보고서를 컴파일한 후 원하는 대로 대시보드에서 구성할 수 있습니다. 결과는 이 페이지 상단에 있는 이미지와 비슷할 수 있습니다.

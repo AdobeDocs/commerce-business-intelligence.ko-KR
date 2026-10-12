@@ -1,6 +1,6 @@
 ---
 title: Bing 광고 지출 데이터 가져오기
-description: 분석을 위해 Bing 광고 지출 데이터를 [!DNL Commerce Intelligence](으)로 가져오는 방법을 알아봅니다.
+description: 분석을 위해 Bing 광고 지출 데이터를 [!DNL Commerce Intelligence] (으)로 가져오는 방법을 알아봅니다.
 exl-id: c8dec4b4-74ce-41b2-a77d-403fe44e2816
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export

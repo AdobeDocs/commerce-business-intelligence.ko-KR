@@ -43,15 +43,15 @@ ht-degree: 0%
 
 ## 이 항목에서
 
-* [ [!DNL Commerce Intelligence] IP 주소에 대한 액세스 허용](#allowlist)
-* [ [!DNL Commerce Intelligence]의  [!DNL MySQL] 사용자 만들기](#steptwo)
-* [ [!DNL Commerce Intelligence]에 연결 정보 입력](#stepthree)
+* [&#x200B; [!DNL Commerce Intelligence] IP 주소에 대한 액세스 허용](#allowlist)
+* [&#x200B; [!DNL Commerce Intelligence]의  [!DNL MySQL] 사용자 만들기](#steptwo)
+* [&#x200B; [!DNL Commerce Intelligence]에 연결 정보 입력](#stepthree)
 
 ## 이동
 
 * [`SSH tunnel`을(를) 통한 [!DNL MySQL]](../integrations/mysql-via-ssh-tunnel.md)
 * [SSH 호스트 키 확인](../integrations/ssh-host-key-verification.md)
-* [ [!DNL cPanel]을(를) 통한 [!DNL MySQL]](../integrations/mysql-via-cpanel.md)
+* [&#x200B; [!DNL cPanel]을(를) 통한 [!DNL MySQL]](../integrations/mysql-via-cpanel.md)
 
 >[!NOTE]
 >

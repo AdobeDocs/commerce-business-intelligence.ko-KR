@@ -52,7 +52,7 @@ ht-degree: 19%
   * [!UICONTROL table] 선택: `sales_flat_order`
   * [!UICONTROL column] 선택: `created_at`
   * `sales_flat_order.customer_id = customer_entity.entity_id`
-  * [!UICONTROL Filter]: `Orders we count`
+  * [!UICONTROL Filter]&#x200B;: `Orders we count`
 
 * **`Seconds since customer's last order date`**
   * [!UICONTROL definition] 선택: `Age`
@@ -98,21 +98,21 @@ ht-degree: 19%
 
 * **이탈률**
   * [!UICONTROL Metric]: 새 고객(첫 번째 주문 날짜별)
-  * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
-  * 
-    [!UICONTROL Perspective]: `Cumulative`
-  * [!UICONTROL Metric]: `New customers (by last order date)`
+  * [!UICONTROL Filter]&#x200B;: `Lifetime number of orders Greater Than 0`
+  * &#x200B;
+    [!UICONTROL Perspective]&#x200B;: `Cumulative`
+  * [!UICONTROL Metric]&#x200B;: `New customers (by last order date)`
   * [!UICONTROL Filter]:
-  * 고객의 마지막 주문 날짜 이후 시간(초) >= [이탈된 고객에 대한 자체 정의된 컷오프&#x200B;]**`^`**
+  * 고객의 마지막 주문 날짜 이후 시간(초) >= [이탈된 고객에 대한 자체 정의된 컷오프&#x200B;]&#x200B;**`^`**
   * `Lifetime number of orders Greater Than 0`
 
-  * [!UICONTROL Metric]: `New customers (by last order date)`
-  * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
-  * 
-    [!UICONTROL Perspective]: Cumulative
-  * [!UICONTROL Formula]: `(B / ((A + B) - C)`
-  * 
-    [!UICONTROL Format]: Percentage
+  * [!UICONTROL Metric]&#x200B;: `New customers (by last order date)`
+  * [!UICONTROL Filter]&#x200B;: `Lifetime number of orders Greater Than 0`
+  * &#x200B;
+    [!UICONTROL Perspective]&#x200B;: Cumulative
+  * [!UICONTROL Formula]&#x200B;: `(B / ((A + B) - C)`
+  * &#x200B;
+    [!UICONTROL Format]&#x200B;: Percentage
 
 * *지표 `A`:`New customers cumulative`*
 * *지표 `B`:`Churned customers by last order date`*

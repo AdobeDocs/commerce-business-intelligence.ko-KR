@@ -47,7 +47,7 @@ ht-degree: 2%
 
 ## 권장 지표 {#metrics}
 
-쿠폰 사용을 분석할 때 다음 지표를 사용하는 것이 좋습니다([ 또는 빌드](../../data-user/reports/ess-manage-data-metrics.md)).
+쿠폰 사용을 분석할 때 다음 지표를 사용하는 것이 좋습니다([&#x200B; 또는 빌드](../../data-user/reports/ess-manage-data-metrics.md)).
 
 ### 주문 수
 

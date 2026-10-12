@@ -43,16 +43,16 @@ ht-degree: 0%
 ---
 # [!DNL SSH Tunnel]을(를) 통해 [!DNL MySQL] 연결
 
-* [ [!DNL Commerce Intelligence] 공개 키 검색](#retrieve)
-* [ [!DNL Commerce Intelligence] IP 주소에 대한 액세스 허용](#allowlist)
-* [ [!DNL Commerce Intelligence]에 대한 Linux 사용자 만들기](#linux)
-* [ [!DNL Commerce Intelligence]의  [!DNL MySQL] 사용자 만들기](#mysql)
-* [ [!DNL Commerce Intelligence]에 연결 및 사용자 정보 입력](#finish)
+* [&#x200B; [!DNL Commerce Intelligence] 공개 키 검색](#retrieve)
+* [&#x200B; [!DNL Commerce Intelligence] IP 주소에 대한 액세스 허용](#allowlist)
+* [&#x200B; [!DNL Commerce Intelligence]에 대한 Linux 사용자 만들기](#linux)
+* [&#x200B; [!DNL Commerce Intelligence]의  [!DNL MySQL] 사용자 만들기](#mysql)
+* [&#x200B; [!DNL Commerce Intelligence]에 연결 및 사용자 정보 입력](#finish)
 
 ## 이동
 
 * [`direct connection`을(를) 통한 [!DNL MySQL]](../integrations/mysql-via-a-direct-connection.md)
-* [ [!DNL cPanel]을(를) 통한 [!DNL MySQL]](../integrations/mysql-via-cpanel.md)
+* [&#x200B; [!DNL cPanel]을(를) 통한 [!DNL MySQL]](../integrations/mysql-via-cpanel.md)
 
 `SSH tunnel`을(를) 통해 [!DNL MySQL] 데이터베이스를 [!DNL Commerce Intelligence]에 연결하려면 다음을 수행해야 합니다.
 

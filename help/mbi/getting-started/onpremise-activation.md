@@ -148,15 +148,15 @@ ht-degree: 0%
 
 [!UICONTROL Integration Name]: [[!DNL Commerce Intelligence] 인스턴스의 이름 선택]
 
-[!UICONTROL Host]: `mbi.internal`
+[!UICONTROL Host]&#x200B;: `mbi.internal`
 
-[!UICONTROL Port]: `3306`
+[!UICONTROL Port]&#x200B;: `3306`
 
-[!UICONTROL 사용자 이름]: `mbi`
+[!UICONTROL 사용자 이름]&#x200B;: `mbi`
 
 [!UICONTROL Password]: [이전 섹션에 표시된 입력 암호]
 
-[!UICONTROL Database Name]: `main`
+[!UICONTROL Database Name]&#x200B;: `main`
 
 [!UICONTROL Table Prefixes]: [테이블 접두사가 없으면 비워 둡니다]
 
@@ -166,7 +166,7 @@ ht-degree: 0%
 
 **입력:**
 
-[!UICONTROL Database Timezone]: `UTC`
+[!UICONTROL Database Timezone]&#x200B;: `UTC`
 
 [!UICONTROL Desired Timezone]: [데이터를 표시할 시간대를 선택하십시오]
 
@@ -182,13 +182,13 @@ ht-degree: 0%
 
 **입력:**
 
-[!UICONTROL Encryption Type]: `SSH Tunnel`
+[!UICONTROL Encryption Type]&#x200B;: `SSH Tunnel`
 
 [!UICONTROL Remote Address]: `ssh.us-3.magento.cloud` [이전 단계의 ]
 
 [!UICONTROL Username]: `vfbfui4vmfez6-master-7rqtwti—mymagento` [이전 단계의 ]
 
-[!UICONTROL Port]: `22`
+[!UICONTROL Port]&#x200B;: `22`
 
 ## 통합을 저장합니다.
 

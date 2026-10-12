@@ -77,5 +77,5 @@ ht-degree: 0%
 
 ## 관련 항목:
 
-* [ [!DNL Salesforce] 연결 중](../integrations/salesforce.md)
+* [&#x200B; [!DNL Salesforce] 연결 중](../integrations/salesforce.md)
 * [통합 재인증](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

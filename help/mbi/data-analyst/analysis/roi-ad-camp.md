@@ -73,7 +73,7 @@ ht-degree: 0%
 1. [!UICONTROL Data > Metrics]&#x200B;(으)로 이동
 1. `Add New Metric`을(를) 선택하고 [!DNL AdWords] 비용 데이터를 기록하는 [!DNL `Adwords...`] 테이블을 선택합니다.
 1. 지표 편집기에서 지표에 이름을 지정하십시오(예: [!UICONTROL AdWord Cost]).
-1. 드롭다운을 사용하여 `date` 열이 정렬한 [!DNL Adwords...] 테이블(변경)의 `adCost` 열에서 **Sum**을(를) 수행합니다.
+1. 드롭다운을 사용하여 `date` 열이 정렬한 [!DNL Adwords...] 테이블(변경)의 `adCost` 열에서 **Sum**&#x200B;을(를) 수행합니다.
    새 지표를 추가한 후 ![성공 메시지](../../assets/success-add-new-metric.png)<!--="500" height="303"}-->
 1. 맨 위에 있는 `Back to Metric List`을(를) 클릭하고 대시보드로 이동합니다.
 
@@ -159,10 +159,10 @@ ht-degree: 0%
 
 ## 관련 설명서
 
-* [ [!DNL Google Analytics] E-Commerce을 통해 주문 참조 소스 추적](../importing-data/integrations/google-ecommerce.md)
+* [&#x200B; [!DNL Google Analytics] E-Commerce을 통해 주문 참조 소스 추적](../importing-data/integrations/google-ecommerce.md)
 * [데이터베이스에서 사용자 조회 소스 추적](../analysis/google-track-user-acq.md)
 * [데이터베이스에서 사용자 장치, 브라우저 및 OS 데이터 추적](../analysis/track-usr-dev-browser.md)
 * [가장 가치 있는 확보 소스 및 채널 살펴보기](../analysis/most-value-source-channel.md)
-* [ [!DNL Google Adwords] 계정 연결](../importing-data/integrations/google-adwords.md)
-* [ [!DNL Google Analytics] UTM 속성은 어떻게 작동합니까?](../analysis/utm-attributes.md)
-* [ [!DNL Google Analytics]의 UTM 태그 지정에 대한 5가지 모범 사례](../../best-practices/utm-tagging-google.md)
+* [&#x200B; [!DNL Google Adwords] 계정 연결](../importing-data/integrations/google-adwords.md)
+* [&#x200B; [!DNL Google Analytics] UTM 속성은 어떻게 작동합니까?](../analysis/utm-attributes.md)
+* [&#x200B; [!DNL Google Analytics]의 UTM 태그 지정에 대한 5가지 모범 사례](../../best-practices/utm-tagging-google.md)

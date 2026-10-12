@@ -113,7 +113,7 @@ ht-degree: 54%
 
 * **`[!DNL Zendesk] user's`** 테이블
   * `User is agent? (Yes/No) `
-  * 
+  * &#x200B;
     * `Column type` - `Same Table > Calculation`
 
     * `Input columns` - `role`, `email`
@@ -127,23 +127,23 @@ ht-degree: 54%
 * **`[!DNL Zendesk] audits_~_events`** 테이블
   * 정의 선택: `Joined Column`
   * [!UICONTROL Create Path]:
-  * [!UICONTROL Many]: `[!DNL Zendesk] audits_~_events.author_id8`
-  * [!UICONTROL One]: `[!DNL Zendesk] users.id`
+  * [!UICONTROL Many]&#x200B;: `[!DNL Zendesk] audits_~_events.author_id8`
+  * [!UICONTROL One]&#x200B;: `[!DNL Zendesk] users.id`
 
   * [!UICONTROL table] 선택: `[!DNL Zendesk] users`
   * [!UICONTROL column] 선택: `User is agent? (Yes/No)`
-  * [!UICONTROL Path]: `[!DNL Zendesk] audits_~_events.author_id = [!DNL Zendesk] users.id`
+  * [!UICONTROL Path]&#x200B;: `[!DNL Zendesk] audits_~_events.author_id = [!DNL Zendesk] users.id`
 
 * **`Author is agent? (Yes/No)`**
 
 * **`[!DNL Zendesk] audits`** 테이블
   * 정의 선택: `Exists`
   * [!UICONTROL Create Path]:
-  * [!UICONTROL Many]: `[!DNL Zendesk] audits_~_events._id_of_parent`
-  * [!UICONTROL One]: `[!DNL Zendesk] audits._id`
+  * [!UICONTROL Many]&#x200B;: `[!DNL Zendesk] audits_~_events._id_of_parent`
+  * [!UICONTROL One]&#x200B;: `[!DNL Zendesk] audits._id`
 
   * [!UICONTROL table] 선택: `[!DNL Zendesk] audits_~_events`
-  * [!UICONTROL Path]: `[!DNL Zendesk] audits_~_events._id_of_parent = [!DNL Zendesk] audits._id`
+  * [!UICONTROL Path]&#x200B;: `[!DNL Zendesk] audits_~_events._id_of_parent = [!DNL Zendesk] audits._id`
   * [!UICONTROL Filter]:
   * `field_name` = `status`
   * `type` = `Change`
@@ -151,8 +151,8 @@ ht-degree: 54%
 
   * 정의 선택: `Exists`
   * [!UICONTROL table] 선택: `[!DNL Zendesk] audits_~_events`
-  * [!UICONTROL Path]: `[!DNL Zendesk] audits_~_events._id_of_parent = [!DNL Zendesk] audits._id`
-  * [!UICONTROL Filter]: `Author is agent? (Yes/No)`
+  * [!UICONTROL Path]&#x200B;: `[!DNL Zendesk] audits_~_events._id_of_parent = [!DNL Zendesk] audits._id`
+  * [!UICONTROL Filter]&#x200B;: `Author is agent? (Yes/No)`
   * `type` = `Comment`
   * `public` = `1`
 
@@ -162,33 +162,33 @@ ht-degree: 54%
 * **`[!DNL Zendesk] Tickets`** 테이블
   * 정의 선택: `Joined Column`
   * [!UICONTROL Create Path]:
-  * [!UICONTROL Many]: `[!DNL Zendesk] tickets.requester_id`
-  * [!UICONTROL One]: `[!DNL Zendesk] users.id`
+  * [!UICONTROL Many]&#x200B;: `[!DNL Zendesk] tickets.requester_id`
+  * [!UICONTROL One]&#x200B;: `[!DNL Zendesk] users.id`
 
   * [!UICONTROL table] 선택: `[!DNL Zendesk] users`
   * [!UICONTROL column] 선택: `email`
-  * [!UICONTROL Path]: `[!DNL Zendesk] tickets.requester_id = [!DNL Zendesk] users.id`
+  * [!UICONTROL Path]&#x200B;: `[!DNL Zendesk] tickets.requester_id = [!DNL Zendesk] users.id`
 
   * 정의 선택: `Joined Column`
   * [!UICONTROL table] 선택: `[!DNL Zendesk] users`
   * [!UICONTROL column] 선택: `role`
-  * [!UICONTROL Path]: `[!DNL Zendesk] tickets.requester_id = [!DNL Zendesk] users.id`
+  * [!UICONTROL Path]&#x200B;: `[!DNL Zendesk] tickets.requester_id = [!DNL Zendesk] users.id`
 
   * 정의 선택: `Max`
   * [!UICONTROL Create Path]:
-  * [!UICONTROL Many]: `[!DNL Zendesk] audits.ticket_id`
-  * [!UICONTROL One]: `[!DNL Zendesk] tickets.id`
+  * [!UICONTROL Many]&#x200B;: `[!DNL Zendesk] audits.ticket_id`
+  * [!UICONTROL One]&#x200B;: `[!DNL Zendesk] tickets.id`
 
   * [!UICONTROL table] 선택: `[!DNL Zendesk] audits`
   * [!UICONTROL column] 선택: `created_at`
-  * [!UICONTROL Path]: `[!DNL Zendesk] audits.ticket_id = [!DNL Zendesk] tickets.id`
+  * [!UICONTROL Path]&#x200B;: `[!DNL Zendesk] audits.ticket_id = [!DNL Zendesk] tickets.id`
   * [!UICONTROL Filter]:
   * `status`이(가) `solved = 1`(으)로 변경됨
 
   * 정의 선택: `Min`
   * [!UICONTROL table] 선택: `[!DNL Zendesk] audits`
   * [!UICONTROL column] 선택: `created_at`
-  * [!UICONTROL Path]: `[!DNL Zendesk] audits.ticket_id = [!DNL Zendesk] tickets.id`
+  * [!UICONTROL Path]&#x200B;: `[!DNL Zendesk] audits.ticket_id = [!DNL Zendesk] tickets.id`
   * [!UICONTROL Filter]:
   * `Is agent comment? = 1`
 
@@ -197,19 +197,19 @@ ht-degree: 54%
 * `Ticket's latest solved date`
 * `First agent response date`
 * `Seconds to resolution`
-  * 
+  * &#x200B;
     * `Column type` - `Same Table > Date Difference`
 
     * `Ticket's latest solved date` - `created_at`
 
 * **`Seconds to first response`**
-  * 
+  * &#x200B;
     * `Column type` - `Same Table > Date Difference`
 
     * `First agent response date` - `created_at`
 
 * **`Requester's ticket number`**
-  * 
+  * &#x200B;
     * `Column type` - `Same Table > Event Number`
 
     * `Event Owner` - `requester_id`
@@ -217,7 +217,7 @@ ht-degree: 54%
     * `Event Rank` - `created_at`
 
 * **`Ticket created_at (hour of day)`**
-  * 
+  * &#x200B;
     * `Column type` - &quot;같은 테이블 > 계산&quot;
 
     * `Input columns` - `created_at`
@@ -227,7 +227,7 @@ ht-degree: 54%
     * `Datatype` - 정수
 
 * **`Ticket created_at (day of week)`**
-  * 
+  * &#x200B;
     * `Column type` - &quot;같은 테이블 > 계산&quot;
 
     * `Input columns` - `created_at`
@@ -239,18 +239,18 @@ ht-degree: 54%
 * **`customer_entity`** 테이블
   * 정의 선택: `Count`
   * [!UICONTROL Create Path]:
-  * [!UICONTROL Many]: `[!DNL Zendesk] tickets.email`
-  * 
-    [!UICONTROL One]: `customer_entity.email`
+  * [!UICONTROL Many]&#x200B;: `[!DNL Zendesk] tickets.email`
+  * &#x200B;
+    [!UICONTROL One]&#x200B;: `customer_entity.email`
 
   * [!UICONTROL table] 선택: `[!DNL Zendesk] tickets`
-  * [!UICONTROL Path]: `[!DNL Zendesk] tickets.email = customer_entity.email`
+  * [!UICONTROL Path]&#x200B;: `[!DNL Zendesk] tickets.email = customer_entity.email`
   * [!UICONTROL Filter]:
   * `Tickets we count`
 
 * **`User's lifetime number of support tickets requested`**
 * **`Has user filed a support ticket? (Yes/No)`**
-  * 
+  * &#x200B;
     * `Column type` - &quot;같은 테이블 > 계산&quot;
 
     * `Input columns` - `User's lifetime number of support tickets requested`
@@ -263,7 +263,7 @@ ht-degree: 54%
   * 정의 선택: `Joined Column`
   * [!UICONTROL table] 선택: `customer_entity`
   * [!UICONTROL column] 선택: `User's lifetime number of support tickets requested`
-  * [!UICONTROL Path]: `[!DNL Zendesk] tickets.email = customer_entity.email`
+  * [!UICONTROL Path]&#x200B;: `[!DNL Zendesk] tickets.email = customer_entity.email`
 
 * **`Requester's lifetime number of support tickets`**
 
@@ -324,7 +324,7 @@ ht-degree: 54%
 ### 보고서
 
 * **[!UICONTROL New/Open/Pending tickets]**
-  * [!UICONTROL Metric]: `New Tickets`
+  * [!UICONTROL Metric]&#x200B;: `New Tickets`
   * [!UICONTROL Filter]:
   * `new, open, pending`의 상태
 
@@ -334,7 +334,7 @@ ht-degree: 54%
 * `Chart Type`: `Scalar`
 
 * **[!UICONTROL Closed/Solved tickets]**
-  * [!UICONTROL Metric]: `New Tickets`
+  * [!UICONTROL Metric]&#x200B;: `New Tickets`
   * [!UICONTROL Filter]:
   * `solved, closed`의 상태
 
@@ -344,7 +344,7 @@ ht-degree: 54%
 * `Chart Type`: `Scalar`
 
 * **[!UICONTROL Average time to first response]**
-  * [!UICONTROL Metric]: `Average time to first response`
+  * [!UICONTROL Metric]&#x200B;: `Average time to first response`
 
 * 지표 `A`: `Average time to first response`
 * `Time period`: `All time`
@@ -352,7 +352,7 @@ ht-degree: 54%
 * `Chart Type`: `Scalar`
 
 * **[!UICONTROL Average time to resolution]**
-  * [!UICONTROL Metric]: `Average time to resolution`
+  * [!UICONTROL Metric]&#x200B;: `Average time to resolution`
   * [!UICONTROL Filter]:
   * `solved, closed`의 상태
 
@@ -362,7 +362,7 @@ ht-degree: 54%
 * `Chart Type`: `Scalar`
 
 * **[!UICONTROL Tickets by status]**
-  * [!UICONTROL Metric]: `New Tickets`
+  * [!UICONTROL Metric]&#x200B;: `New Tickets`
 
 * 지표 `A`: `New tickets`
 * `Time period`: `All time`
@@ -371,9 +371,9 @@ ht-degree: 54%
 * `Chart Type`: `Stacked Column`
 
 * **[!UICONTROL Number of new and solved tickets]**
-  * [!UICONTROL Metric]: `New Tickets`
+  * [!UICONTROL Metric]&#x200B;: `New Tickets`
 
-  * [!UICONTROL Metric]: `New Tickets`
+  * [!UICONTROL Metric]&#x200B;: `New Tickets`
 
 * 지표 `A`: `New tickets`
 * 지표 `B`: `Solved tickets`
@@ -382,7 +382,7 @@ ht-degree: 54%
 * `Chart Type`: `Line`
 
 * **[!UICONTROL Time to first response]**
-  * [!UICONTROL Metric]: `Average time to first response`
+  * [!UICONTROL Metric]&#x200B;: `Average time to first response`
 
 * 지표 `A`: `Average time to first response`
 * `Time period`: `All time`
@@ -390,7 +390,7 @@ ht-degree: 54%
 * `Chart Type`: `Column`
 
 * **[!UICONTROL Time to resolution]**
-  * [!UICONTROL Metric]: `Average time to resolution`
+  * [!UICONTROL Metric]&#x200B;: `Average time to resolution`
   * [!UICONTROL Filter]:
   * `solved, closed`의 상태
 
@@ -400,7 +400,7 @@ ht-degree: 54%
 * `Chart Type`: `Column`
 
 * **[!UICONTROL Distinct users filing tickets]**
-  * [!UICONTROL Metric]: `Distinct users filing tickets`
+  * [!UICONTROL Metric]&#x200B;: `Distinct users filing tickets`
 
 * 지표 `A`: `Distinct users filing tickets`
 * `Time period`: `All time`
@@ -408,7 +408,7 @@ ht-degree: 54%
 * `Chart Type`: `Column`
 
 * **[!UICONTROL Peak ticket days]**
-  * [!UICONTROL Metric]: `New Tickets`
+  * [!UICONTROL Metric]&#x200B;: `New Tickets`
 
 * 지표 `A`: `New tickets`
 * `Time period`: `All time`
@@ -417,7 +417,7 @@ ht-degree: 54%
 * `Chart Type`: `Pie`
 
 * **[!UICONTROL Peak ticket hours]**
-  * [!UICONTROL Metric]:`New Tickets`
+  * [!UICONTROL Metric]&#x200B;:`New Tickets`
 
   * `Show top/bottom`: `Top 100% sorted by created_at (hour of the day)`
 
@@ -428,7 +428,7 @@ ht-degree: 54%
 * `Chart Type`: `Pie`
 
 * **[!UICONTROL Avg LTV of users who have and have not filed tickets]**
-  * [!UICONTROL Metric]: `Average lifetime revenue`
+  * [!UICONTROL Metric]&#x200B;: `Average lifetime revenue`
 
 * 지표 `A`: `Average lifetime revenue`
 * `Time period`: `All time`
@@ -437,8 +437,8 @@ ht-degree: 54%
 * `Chart Type`: `Column`
 
 * **[!UICONTROL Number of new users who have and have not filed tickets]**
-  * 
-    [!UICONTROL 지표]: Users
+  * &#x200B;
+    [!UICONTROL 지표]&#x200B;: Users
 
 * 지표 `A`: `New users`
 * `Time period`: `All time`

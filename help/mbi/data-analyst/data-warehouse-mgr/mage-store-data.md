@@ -93,7 +93,7 @@ ht-degree: 4%
 
 계정 생성이 완료되면 `Sammy Customer`이(가) 구매를 시작할 준비가 되었습니다. 웹 사이트에서 고객이 두 쌍의 `Throwback Bellbottoms`과(와) 한 쌍의 `V-Neck T-Shirt`을(를) 장바구니에 추가합니다. 선택에 만족하면 고객이 체크아웃으로 이동하여 주문을 제출하고 [sales flat order table](../data-warehouse-mgr/sales-flat-order-table.md)에 다음 항목을 만듭니다.
 
-| **`entity id`** | **`customer id**` | **`subtotal`** | **`created at`** |
+| **`entity id`** | **`customer id**` | &#x200B;**`subtotal`**&#x200B; | &#x200B;**`created at`** |
 |---|---|---|---|
 | 227 | 214 | 94.85 | 2016/09/23 15:41:39 |
 

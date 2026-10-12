@@ -65,8 +65,8 @@ ht-degree: 16%
 * 정의 선택: 조인된 열
 * [!UICONTROL table] 선택: `customer_entity`
 * [!UICONTROL column] 선택: `Customer's lifetime number of orders`
-* [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
-* [!UICONTROL Filter]: `Orders we count`
+* [!UICONTROL Path]&#x200B;: `sales_flat_order.customer_id = customer_entity.entity_id`
+* [!UICONTROL Filter]&#x200B;: `Orders we count`
 
 * `Seconds since created_at`
 * 정의 선택: `Age`
@@ -90,65 +90,65 @@ ht-degree: 16%
 
 * **초기 반복 순서 확률**
 * 지표 A: 모든 시간 반복 주문
-* [!UICONTROL Metric]: `Number of orders`
-* [!UICONTROL Filter]: `Customer's order number greater than 1`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* [!UICONTROL Filter]&#x200B;: `Customer's order number greater than 1`
 
 * 지표 B: 역대 주문
 * [!UICONTROL Metric]: 주문 수
 
 * [!UICONTROL Formula]: 초기 반복 순서 확률
-* 
-  [!UICONTROL 공식]: `A/B`
-* 
-  [!UICONTROL Format]: `Percent`
+* &#x200B;
+  [!UICONTROL 공식]&#x200B;: `A/B`
+* &#x200B;
+  [!UICONTROL Format]&#x200B;: `Percent`
 
-* [!UICONTROL Time period]: `All time`
-* 
-  [!UICONTROL Interval]: `None`
-* 
-  [!UICONTROL Chart type]: `Scalar`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* &#x200B;
+  [!UICONTROL Chart type]&#x200B;: `Scalar`
 
 * **주문 이후 몇 달 동안 반복 주문 확률**
 * 지표 A: 이전 주문 이후 매월 주문 반복(숨기기)
-* [!UICONTROL Metric]: `Number of orders`
-* 
-  [!UICONTROL Perspective]: `Cumulative`
-* [!UICONTROL Filter]: `Customer's order number greater than 1`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* &#x200B;
+  [!UICONTROL Perspective]&#x200B;: `Cumulative`
+* [!UICONTROL Filter]&#x200B;: `Customer's order number greater than 1`
 
 * 지표 B: 주문 이후 개월별 마지막 주문(숨기기)
-* [!UICONTROL Metric]: `Number of orders`
-* 
-  [!UICONTROL Perspective]: `Cumulative`
-* [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* &#x200B;
+  [!UICONTROL Perspective]&#x200B;: `Cumulative`
+* [!UICONTROL Filter]&#x200B;: `Is customer's last order? (Yes/No) = Yes`
 
 * 지표 C: 모든 시간 반복 주문 (숨기기)
-* [!UICONTROL Metric]: `Number of orders`
-* [!UICONTROL Filter]: `Customer's order number greater than 1`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* [!UICONTROL Filter]&#x200B;: `Customer's order number greater than 1`
 
-* 
-  [!UICONTROL 그룹 기준]: `Independent`
+* &#x200B;
+  [!UICONTROL 그룹 기준]&#x200B;: `Independent`
 
 * 지표 D: 역대 마지막 주문 수(숨기기)
-* [!UICONTROL Metric]: `Number of orders`
-* [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* [!UICONTROL Filter]&#x200B;: `Is customer's last order? (Yes/No) = Yes`
 
-* 
-  [!UICONTROL 그룹 기준]: `Independent`
+* &#x200B;
+  [!UICONTROL 그룹 기준]&#x200B;: `Independent`
 
 * [!UICONTROL Formula]: 초기 반복 순서 확률
-* 
-  [!UICONTROL 공식]: `(C-A)/(C+D-A-B)`
-* 
-  [!UICONTROL Format]: `Percent`
+* &#x200B;
+  [!UICONTROL 공식]&#x200B;: `(C-A)/(C+D-A-B)`
+* &#x200B;
+  [!UICONTROL Format]&#x200B;: `Percent`
 
-* [!UICONTROL Time period]: `All time`
-* 
-  [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]: `Months since previous order`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `Months since previous order`
 * Show top.bottom: 카테고리 이름별로 정렬된 상위 24개 카테고리
 
-* 
-  [!UICONTROL Chart type]: `Line`
+* &#x200B;
+  [!UICONTROL Chart type]&#x200B;: `Line`
 
 초기 반복 주문 확률 보고서는 총 반복 주문 / 총 주문 수를 나타냅니다. 모든 주문은 반복 주문을 할 수 있는 기회입니다. 반복 주문 수는 실제로 실행되는 주문의 하위 집합입니다.
 

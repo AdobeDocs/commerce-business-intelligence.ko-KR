@@ -80,48 +80,48 @@ ht-degree: 6%
 
 * **목표를 달성하는 데 남은 수익**
 * 지표 `A`: `Revenue`
-* 
-  [!UICONTROL 지표]: `Revenue`
+* &#x200B;
+  [!UICONTROL 지표]&#x200B;: `Revenue`
 
 * 지표 `B`: `Target Revenue`
-* [!UICONTROL Metric]: `Monthly Revenue Target`
+* [!UICONTROL Metric]&#x200B;: `Monthly Revenue Target`
 
-* [!UICONTROL Formula]: `Revenue left to achieve target`
-* 
-  [!UICONTROL 공식]: `(B-A)`
-* 
-  [!UICONTROL Format]: `Number`
+* [!UICONTROL Formula]&#x200B;: `Revenue left to achieve target`
+* &#x200B;
+  [!UICONTROL 공식]&#x200B;: `(B-A)`
+* &#x200B;
+  [!UICONTROL Format]&#x200B;: `Number`
 
 * [!UICONTROL Time period]: (원하는 적절한 기간)
-* 
-  [!UICONTROL Interval]: `Month`
-* 
-  [!UICONTROL 차트 유형]: `Scalar`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `Month`
+* &#x200B;
+  [!UICONTROL 차트 유형]&#x200B;: `Scalar`
 
 * **매출 목표**
 * 지표 `A`: `Revenue`
-* 
-  [!UICONTROL 지표]: `Revenue`
+* &#x200B;
+  [!UICONTROL 지표]&#x200B;: `Revenue`
 
 * 지표 `B`: `Target Revenue`
-* [!UICONTROL Metric]: `Monthly Revenue Target`
+* [!UICONTROL Metric]&#x200B;: `Monthly Revenue Target`
 
 * 지표 `C`: `Revenue (amount change since previous year)`(숨기기)
-* 
-  [!UICONTROL 지표]: `Revenue`
-* [!UICONTROL Perspective]: `Amount change vs. Previous year`
+* &#x200B;
+  [!UICONTROL 지표]&#x200B;: `Revenue`
+* [!UICONTROL Perspective]&#x200B;: `Amount change vs. Previous year`
 
 * [!UICONTROL Formula]: (작년 이번 달)
-* 
-  [!UICONTROL 공식]: `(A-C)`
-* 
-  [!UICONTROL Format]: `Currency`
+* &#x200B;
+  [!UICONTROL 공식]&#x200B;: `(A-C)`
+* &#x200B;
+  [!UICONTROL Format]&#x200B;: `Currency`
 
 * `Multiple Y-Axes` 끄기
 * [!UICONTROL Time period]: (원하는 적절한 기간)*
-* 
-  [!UICONTROL Interval]: `Month`
-* [!UICONTROL Chart Type]: `Line Chart`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `Month`
+* [!UICONTROL Chart Type]&#x200B;: `Line Chart`
 
 매출 목표에 대한 위의 보고서를 완료하면 주문, 등록된 계정 또는 목표 파일 업로드에 포함한 다른 모든 값에 대한 동일한 보고서를 생성할 수 있습니다.
 

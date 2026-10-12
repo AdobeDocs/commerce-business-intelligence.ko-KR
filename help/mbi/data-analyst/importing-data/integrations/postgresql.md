@@ -45,11 +45,11 @@ ht-degree: 0%
 
 `SSH tunnel`을(를) 통해 [!DNL PostgreSQL] 데이터베이스를 [!DNL Commerce Intelligence]에 연결하려면 다음을 수행해야 합니다.
 
-1. [ [!DNL Commerce Intelligence] 공개 키 검색](#retrieve)
-1. [ [!DNL Commerce Intelligence] IP 주소에 대한 액세스 허용](#allowlist)
-1. [ [!DNL Commerce Intelligence]의  [!DNL Linux] 사용자 만들기](#linux)
-1. [ [!DNL Commerce Intelligence]의  [!DNL PostgreSQL] 사용자 만들기](#postgres)
-1. [ [!DNL Commerce Intelligence]에 연결 및 사용자 정보 입력](#finish)
+1. [&#x200B; [!DNL Commerce Intelligence] 공개 키 검색](#retrieve)
+1. [&#x200B; [!DNL Commerce Intelligence] IP 주소에 대한 액세스 허용](#allowlist)
+1. [&#x200B; [!DNL Commerce Intelligence]의  [!DNL Linux] 사용자 만들기](#linux)
+1. [&#x200B; [!DNL Commerce Intelligence]의  [!DNL PostgreSQL] 사용자 만들기](#postgres)
+1. [&#x200B; [!DNL Commerce Intelligence]에 연결 및 사용자 정보 입력](#finish)
 
 ## [!DNL Commerce Intelligence] [!DNL public key] 검색 중 {#retrieve}
 
