@@ -4,35 +4,48 @@ description: 이벤트 번호 계산 열의 목적과 용도에 대해 알아봅
 exl-id: c234621e-2e68-4e63-8b0d-7034d1b5fe1f
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-TQID: https://experienceleague.adobe.com/vLN8AubwPn0Cq0CmmVq4nHbWNjWrCZNBvfhSDsE6lBw
+TQID: 'https://experienceleague.adobe.com/vLN8AubwPn0Cq0CmmVq4nHbWNjWrCZNBvfhSDsE6lBw'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 399
-ht-degree: 1%
-
+source-wordcount: '401'
+ht-degree: 7%
 ---
-
 # 이벤트 번호 계산 열
 
-이 항목에서는 `Event Number` 페이지에서 사용할 수 있는 **[!DNL Manage Data > Data Warehouse]** 계산 열의 목적과 용도에 대해 간략하게 설명합니다. 아래는 그것이 하는 일에 대한 설명이며, 그 다음은 예시, 그리고 그것을 만드는 역학이다.
+이 항목에서는 **[!DNL Manage Data > Data Warehouse]** 페이지에서 사용할 수 있는 `Event Number` 계산 열의 목적과 용도에 대해 간략하게 설명합니다. 아래는 그것이 하는 일에 대한 설명이며, 그 다음은 예시, 그리고 그것을 만드는 역학이다.
 
 **설명**
 
-`Event Number` 열 형식은 **또는**&#x200B;과(와) 같은 특정 `customer`이벤트 소유자`user`에 대해 이벤트가 발생한 시퀀스를 식별합니다. SQL에 익숙한 경우 이 열 형식은 `RANK` 함수와 동일합니다. 데이터에 있는 처음 이벤트, 반복 이벤트 또는 n번째 이벤트 간의 동작 차이를 관찰하는 데 사용할 수 있습니다.
+`Event Number` 열 형식은 `customer` 또는 `user`과(와) 같은 특정 **이벤트 소유자**&#x200B;에 대해 이벤트가 발생한 시퀀스를 식별합니다. SQL에 익숙한 경우 이 열 형식은 `RANK` 함수와 동일합니다. 데이터에 있는 처음 이벤트, 반복 이벤트 또는 n번째 이벤트 간의 동작 차이를 관찰하는 데 사용할 수 있습니다.
 
 동률인 경우 이 열에는 연결된 이벤트에 대해 동일한 **순위**&#x200B;가 포함되어 있으며 후속 숫자를 건너뜁니다. 예를 들어, 숫자가 5,8,10,10,12인 경우 순위는 1,2,3,3,5가 됩니다.
 
@@ -42,11 +55,11 @@ ht-degree: 1%
 
 | **`event_id`** | **`owner_id`** | **`timestamp`** | **`Owner's event number`** |
 |--- |--- |--- |--- |
-| ** 1 | A | 2015-01-01 00:00:00 | 1 |
-| ** 2 | B | 2015-01-01 00:30:00 | 1 |
-| ** 3 | A | 2015-01-01 02:00:00 | 2 |
-| **4 | A | 2015년 1월 2일 13일:00:0 | 3 |
-| ** 5 | B | 2015년 1월 3일 13일:00:0 | 2 |
+| **1 | A | 2015-01-01 00:00:00 | 1 |
+| **2 | B | 2015-01-01 00:30:00 | 1 |
+| **3 | A | 2015-01-01 02:00:00 | 2 |
+| **4 | A | 2015-01-02 13:00:00 | 3 |
+| **5 | B | 2015-01-03 13:00:00 | 2 |
 
 위의 예에서 `Owner's event number` 열은 `Event Number` 열입니다. `timestamp` 열을 기준으로 발생한 순서대로 소유자의 이벤트에 등급을 매깁니다.
 
@@ -60,7 +73,7 @@ ht-degree: 1%
 
 1. 이 열을 생성할 테이블로 이동합니다.
 
-1. **[!UICONTROL Create a Column]**&#x200B;을(를) 클릭하고 `EVENT_NUMBER (…)` 섹션 아래에서 `Same Table` 열 형식을 선택합니다.
+1. **[!UICONTROL Create a Column]**&#x200B;을(를) 클릭하고 `Same Table` 섹션 아래에서 `EVENT_NUMBER (…)` 열 형식을 선택합니다.
 
 1. 첫 번째 드롭다운 `Event Owner`은(는) 등급을 결정할 엔터티를 지정합니다. `Customer's order number`의 경우 `customer_id` 또는 `customer_email`과(와) 같은 고객 식별자는 `Event Owner`입니다.
 

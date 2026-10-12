@@ -4,26 +4,36 @@ description: 사용자 확보 소스로 데이터를 세그먼트화하는 방�
 exl-id: 2ce3e4f9-4741-4ada-b822-ec6a5ca94497
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
-TQID: https://experienceleague.adobe.com/nqiC-AsuhdcOrxqFsW9ZqRZvlL8Ndu9xmNrTi-pvgv8
+TQID: 'https://experienceleague.adobe.com/nqiC-AsuhdcOrxqFsW9ZqRZvlL8Ndu9xmNrTi-pvgv8'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
+  - id: 06e518d4-11ae-5c20-98b0-ce8ab05d7166
+    internal-label: Dashboards
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Beginner
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 751
-ht-degree: 1%
-
+source-wordcount: '791'
+ht-degree: 3%
 ---
-
 # 사용자 획득 소스별 세그멘테이션
 
 >[!NOTE]
@@ -40,7 +50,7 @@ ht-degree: 1%
 
 ### (옵션 1) [!DNL Google Analytics E-Commerce]을(를) 통해 주문 참조 원본 데이터 추적
 
-[!DNL Google Analytics E-Commerce]을(를) 사용하여 주문 및 판매 데이터를 추적하는 경우 [[!DNL [Google Analytics E-Commerce Connector]]](../importing-data/integrations/google-ecommerce.md)을(를) 사용하여 각 주문의 조회 원본 데이터를 동기화할 수 있습니다. 이를 통해 조회 소스(예: `utm_source` 또는 `utm_medium`)별로 매출 및 주문을 세그먼트화할 수 있습니다. 또한 [!DNL Commerce Intelligence]과(와) 같은 `User's first order source` 사용자 지정 차원을 통해 고객 확보 소스에 대한 감을 얻을 수 있습니다.
+[!DNL Google Analytics E-Commerce]을(를) 사용하여 주문 및 판매 데이터를 추적하는 경우 [[!DNL [Google Analytics E-Commerce Connector]]](../importing-data/integrations/google-ecommerce.md)을(를) 사용하여 각 주문의 조회 원본 데이터를 동기화할 수 있습니다. 이를 통해 조회 소스(예: `utm_source` 또는 `utm_medium`)별로 매출 및 주문을 세그먼트화할 수 있습니다. 또한 `User's first order source`과(와) 같은 [!DNL Commerce Intelligence] 사용자 지정 차원을 통해 고객 확보 소스에 대한 감을 얻을 수 있습니다.
 
 ### (옵션 2) [!DNL Google Analytics]의 획득 원본 데이터를 데이터베이스에 저장 중
 
@@ -64,7 +74,7 @@ ht-degree: 1%
 
 문자열로 인코딩된 획득 소스 데이터가 분명히 있습니다. 이를 테스트하여 방문자의 최신 획득 소스 및 관련 캠페인 데이터인지 확인합니다. 이제 데이터를 추출하는 방법을 알아야 합니다.
 
-이 코드는 github에서 호스팅된 [PHP 라이브러리](https://github.com/RJMetrics/referral-grabber-php)로 변환되었습니다. 라이브러리를 사용하려면 `include`에 대한 참조를 `ReferralGrabber.php`한 다음
+이 코드는 github에서 호스팅된 [PHP 라이브러리](https://github.com/RJMetrics/referral-grabber-php)로 변환되었습니다. 라이브러리를 사용하려면 `ReferralGrabber.php`에 대한 참조를 `include`한 다음
 
 `$data = ReferralGrabber::parseGoogleCookie($_COOKIE['__utmz']);`
 
@@ -80,10 +90,10 @@ SQL 데이터베이스를 사용하고 있고 다음 구조의 `users` 테이블
 
 | ID | 이메일 | JOIN_DATE | ACQ_SOURCE | ACQ_MEDIUM |
 |--- |--- |--- |--- |--- |
-| 1 | john@abc.com | 2012년 1월 24일 | google | 유기 |
-| 2 | jim@abc.com | 2012년 1월 24일 | google | cpc |
-| 3 | joe@def.com | 2012년 1월 25일 | 직접 | - |
-| 4 | jess@ghi.com | 2012년 1월 26일 | 참조 | techcrunch.com |
+| 1 | john@abc.com | 2012-01-24 | google | 유기 |
+| 2 | jim@abc.com | 2012-01-24 | google | cpc |
+| 3 | joe@def.com | 2012-01-25 | 직접 | - |
+| 4 | jess@ghi.com | 2012-01-26 | 참조 | techcrunch.com |
 | 5 | jen@ghi.net | 2012-01-30 | 기타 | 유기 |
 | ... | ... | ... | ... | ... |
 

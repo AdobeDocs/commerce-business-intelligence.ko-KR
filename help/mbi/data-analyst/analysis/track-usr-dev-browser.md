@@ -4,25 +4,34 @@ description: 모바일 장치를 통해 실제로 로그인하는 사용자 수�
 exl-id: 57b1bc45-b139-4370-86ea-2fbd021aa14d
 role: Admin, User
 feature: Reports, Dashboards
-TQID: https://experienceleague.adobe.com/-j-LqjbuqLjdmDWNGxAERaDJNMapTMn7uDar1HsshSc
+TQID: 'https://experienceleague.adobe.com/-j-LqjbuqLjdmDWNGxAERaDJNMapTMn7uDar1HsshSc'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
+  - id: 06e518d4-11ae-5c20-98b0-ce8ab05d7166
+    internal-label: Dashboards
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Beginner
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 432
+source-wordcount: '439'
 ht-degree: 0%
-
 ---
-
 # [!UICONTROL Google Analytics] 추적
 
 [!UICONTROL Google Analytics]을(를) 사용하면 [참조 원본 정보를 저장](../analysis/google-track-user-acq.md)하여 가장 중요한 사용자의 출처를 파악할 수 있습니다. 이 항목에서는 사용자가 작업 중인 플랫폼(예: 장치 또는 브라우저)에 대해 설명합니다. 이를 통해 모바일 장치를 통해 실제로 로그인하는 사용자 수와 해당 사용자의 라이프타임 값에 미치는 영향을 파악할 수 있습니다.
@@ -43,7 +52,7 @@ ht-degree: 0%
 
 ### 이 데이터를 언제 기록해야 합니까?
 
-[!DNL Adobe]은(는) 사용자가 만들어지거나 순서가 지정될 때마다 이 정보를 저장하기 위해 `Platform` 및 `User-Agent` 데이터베이스 테이블에 `Customers` 또는 `Orders`이라는 새 필드를 추가할 것을 권장합니다. SQL 데이터베이스를 사용하는 경우 이 필드는 `VARCHAR(255)`이어야 합니다. 
+[!DNL Adobe]은(는) 사용자가 만들어지거나 순서가 지정될 때마다 이 정보를 저장하기 위해 `Customers` 및 `Orders` 데이터베이스 테이블에 `Platform` 또는 `User-Agent`이라는 새 필드를 추가할 것을 권장합니다. SQL 데이터베이스를 사용하는 경우 이 필드는 `VARCHAR(255)`이어야 합니다. 
 
 >[!NOTE]
 >

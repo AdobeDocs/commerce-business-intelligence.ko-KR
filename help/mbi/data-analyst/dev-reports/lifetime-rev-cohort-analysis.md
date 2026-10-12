@@ -4,27 +4,38 @@ description: Commerce Intelligence 집단 분석의 힘에 대해 알아봅니�
 exl-id: f2b55745-d364-4ba6-9857-ce9cee05c3ae
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-TQID: https://experienceleague.adobe.com/j6-YcGwVWr3-ZmGEBtOCCL8YgDmXM81b5uHC310fxwQ
+TQID: 'https://experienceleague.adobe.com/j6-YcGwVWr3-ZmGEBtOCCL8YgDmXM81b5uHC310fxwQ'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Beginner
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 937
+source-wordcount: '939'
 ht-degree: 0%
-
 ---
-
 # [!DNL Lifetime Revenue Cohort] 분석
 
 [!DNL Adobe Commerce Intelligence]에서 데이터를 보는 방법에는 여러 가지가 있으며 계산 및 시각화만큼 해석과 이해가 중요하다는 것을 알고 있습니다. 이 항목에서는 [!DNL Commerce Intelligence] `cohort` 분석의 기능을 살펴봅니다.
@@ -47,7 +58,7 @@ ht-degree: 0%
 
 대부분의 비즈니스에서 `lifetime revenue cohort` 분석 차트는 초기 기간 동안 많은 양의 지출을 보여 준 다음 시간이 지남에 따라 더 느리게 증가합니다. 이러한 초기 급증은 고객이 다른 어느 시기보다 인수 후 곧 첫 구매에 나설 가능성이 높기 때문입니다. 인수 이벤트 자체가 구매인 경우 고객의 100%가 첫 번째 기간에 구매합니다. 구매 전에 등록을 할 수 있는 경우에는 이러한 효과가 덜 극단적입니다.
 
-예를 들어, [!DNL Groupon]에 등록한 사람 중 다수가 즉시 구매하지 않기 때문에 [!DNL Amazon]은(는) [!DNL Groupon]보다 초기 점프가 훨씬 낮을 수 있습니다. 환불 건수가 많지 않은 한, 이 차트는 초기 점프 후 오른쪽으로 기울어질 것이다. 고객이 처음 가입할 때 가장 활발하게 움직이기 때문에 시간이 지날수록 성장률이 낮아지는 경향이 있다. 이는 몇 명이 더 구매하러 다시 오는지에 상관없이 코호트 내 사람들의 수가 일정하게 유지되기 때문에 평균이 하락하게 된다. 구독사업에서는 사람들이 일회성 구매를 하는 사업에서보다 경사도가 덜 공격적으로 붕괴될 것이다.
+예를 들어, [!DNL Groupon]에 등록한 사람 중 다수가 즉시 구매하지 않기 때문에 [!DNL Groupon]은(는) [!DNL Amazon]보다 초기 점프가 훨씬 낮을 수 있습니다. 환불 건수가 많지 않은 한, 이 차트는 초기 점프 후 오른쪽으로 기울어질 것이다. 고객이 처음 가입할 때 가장 활발하게 움직이기 때문에 시간이 지날수록 성장률이 낮아지는 경향이 있다. 이는 몇 명이 더 구매하러 다시 오는지에 상관없이 코호트 내 사람들의 수가 일정하게 유지되기 때문에 평균이 하락하게 된다. 구독사업에서는 사람들이 일회성 구매를 하는 사업에서보다 경사도가 덜 공격적으로 붕괴될 것이다.
 
 간혹 구독 비즈니스는 시간이 지날수록 기울기가 커지기도 한다. 이를 직접 눈으로 확인하는 경우는 드물지만, 그럴 경우 비즈니스에 좋은 시그널이 된다. 이는 이탈하는 고객이 0명이라는 의미가 아니라 이탈하는 고객을 만회하는 수준 이상으로 유지되는 고객을 위한 업그레이드를 의미한다.
 

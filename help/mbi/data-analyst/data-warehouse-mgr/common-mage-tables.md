@@ -1,31 +1,44 @@
 ---
 title: 일반 Commerce 표
-description: ' [!DNL Commerce Intelligence] 고객이 사용하는 보다 일반적인 테이블에 대해 알아봅니다.'
+description: '[!DNL Commerce Intelligence] 고객이 사용하는 보다 일반적인 테이블 중 일부에 대해 알아봅니다.'
 exl-id: 8b316130-55c6-4771-ae6e-97ac605fc6cc
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-TQID: https://experienceleague.adobe.com/uYdgYNMbJGRz8kQ3mCF2McpZpflHSAa37Lk-CLaDlBw
+TQID: 'https://experienceleague.adobe.com/uYdgYNMbJGRz8kQ3mCF2McpZpflHSAa37Lk-CLaDlBw'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 461
+source-wordcount: '465'
 ht-degree: 0%
-
 ---
-
 # 일반 Commerce 표
 
 [!DNL Adobe Commerce] 인스턴스를 [[!DNL Adobe Commerce Intelligence]](../importing-data/integrations/magento.md)에 처음 연결하면 [!DNL Commerce Intelligence]에서 일부 상거래 테이블(일반적으로 4~6개 테이블)의 데이터를 자동으로 복제하여 초기 대시보드 및 보고서 세트를 구성합니다. 시작점은 훌륭하지만 대부분의 스토어 인스턴스는 수백 개의 추가 테이블을 생성하지 않더라도 수십 개의 테이블을 생성하여 비즈니스의 성능에 중요한 insight을 제공할 수 있습니다.
@@ -41,7 +54,7 @@ ht-degree: 0%
 | `quote` | [`quote`](../data-warehouse-mgr/sales-flat-quote-table.md) 테이블의 각 행은 체크아웃 프로세스에서 만들어진 장바구니를 나타냅니다(해당 장바구니가 결국 주문으로 변환되었는지 여부). 이 테이블의 잠재적 크기 때문에 Adobe에서는 60일 이상 된 전환되지 않은 장바구니가 있는 경우와 같이 특정 기준이 충족되는 경우 레코드를 주기적으로 삭제할 것을 권장합니다. |
 | `quote_item` | [`quote_item`](../data-warehouse-mgr/sales-flat-quote-item-table.md) 테이블의 각 행은 장바구니가 주문으로 변환되었는지 여부에 관계없이 장바구니에 추가된 항목을 나타냅니다. 이 테이블의 잠재적 크기 때문에 Adobe에서는 60일 이상 된 전환되지 않은 장바구니가 있는 경우와 같이 특정 기준이 충족되는 경우 레코드를 주기적으로 삭제할 것을 권장합니다. |
 | `sales_order` | [`sales_order`](../data-warehouse-mgr/sales-flat-order-table.md) 테이블의 각 행은 사이트에 배치된 순서를 나타냅니다. 이 표에는 주문 날짜, 주문한 고객, 주문 총액, 할인 및 쿠폰 코드 사용량 등의 주문 수준 정보가 포함되어 있습니다. |
-| `sales_order_address` | `sales_order_address` 테이블의 각 행에는 특정 주문에 대한 배송 및 청구 정보가 포함되어 있습니다. `sales_order` 테이블에서 지정된 순서에 대한 `billing_address_id` 및 `shipping_address_id`이(가) `entity_id` 테이블의 특정 행(`sales_order_address`)을 참조합니다. |
+| `sales_order_address` | `sales_order_address` 테이블의 각 행에는 특정 주문에 대한 배송 및 청구 정보가 포함되어 있습니다. `sales_order` 테이블에서 지정된 순서에 대한 `billing_address_id` 및 `shipping_address_id`이(가) `sales_order_address` 테이블의 특정 행(`entity_id`)을 참조합니다. |
 | `sales_order_item` | [`sales_order_item`](../data-warehouse-mgr/sales-flat-quote-item-table.md) 테이블의 각 행은 특정 순서에서 특정 항목을 식별합니다. 각 행에는 제품, 구매 수량, 주어진 품목과 연관된 주문 등의 세부 사항이 포함됩니다. |
 
 {style="table-layout:auto"}

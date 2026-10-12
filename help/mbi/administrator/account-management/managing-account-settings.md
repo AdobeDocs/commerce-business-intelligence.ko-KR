@@ -6,26 +6,37 @@ role: Admin, User
 feature: Accounts
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b6935462-7263-4ced-a703-60de6a5aeb2d
+    internal-label: Administration
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
+  - id: 9e444628-408e-5d74-8cd4-c552f0d5d47f
+    internal-label: Accounts
 subfeature_v2:
   - id: a763c1a2-1d0a-40d7-9617-8139636fd12e
+    internal-label: Access management
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4e01225a6bd285afbe988b9c24e07e2ea34649fc
+    internal-label: Administration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 349
+source-wordcount: '354'
 ht-degree: 0%
-
 ---
-
 # 계정 설정 사용자 지정
 
 >[!NOTE]
@@ -38,7 +49,7 @@ ht-degree: 0%
 
 * **[!UICONTROL Currency:]** 계정의 모든 통화 값에 대한 *기본 통화*&#x200B;입니다. 십진수 또는 통화 값이 Data Warehouse에 동기화될 때마다 이 설정은 보고서 내에서 해당 값 앞에 배치된 기호를 결정합니다.
 
-* **[!UICONTROL Blackout Hours:]** 이 설정을 사용하면 선택한 시간 동안 Data Warehouse에서 연결된 데이터베이스에 액세스하지 않습니다. 모든 시간은 0시 및 동부 표준시(EST)로 표시됩니다. 예를 들어 오전 9:00시부터 오후 1:00시(EST) 사이에 프로덕션 데이터베이스에 액세스하지 않으려면 **9, 10, 11, 12** 숫자 배열을 입력해야 합니다.
+* **[!UICONTROL Blackout Hours:]** 이 설정을 사용하면 선택한 시간 동안 Data Warehouse에서 연결된 데이터베이스에 액세스하지 않습니다. 모든 시간은 0시 및 동부 표준시(EST)로 표시됩니다. 예를 들어 오전 9시부터 오후 1시(EST) 사이에 프로덕션 데이터베이스에 액세스하지 않으려면 **9, 10, 11, 12** 자릿수 배열을 입력해야 합니다.
 
 * **[!UICONTROL Forced update hours:]** 이 설정을 사용하면 지정한 *시간 동안* 계정에서 Data Warehouse 업데이트가 자동으로 시작됩니다. 일시 중단 시간과 마찬가지로 ET에도 있습니다. 예를 들어 Data Warehouse 업데이트가 **자정** 및 **정오** EST에 자동으로 시작되도록 하려면 다음 숫자 배열을 입력해야 합니다. **0, 12**.
 

@@ -4,27 +4,36 @@ description: 분석을 생성하여 현재 고객의 라이프타임 값을 이�
 exl-id: e6f02cf6-f542-4768-969c-3ec998a7caa9
 role: Admin, User
 feature: Data Warehouse Manager, Reports
-TQID: https://experienceleague.adobe.com/bGbpknj6UfM8k995EnptIRfwZsvYTNo8-kzF9HrALQk
+TQID: 'https://experienceleague.adobe.com/bGbpknj6UfM8k995EnptIRfwZsvYTNo8-kzF9HrALQk'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Beginner
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 338
-ht-degree: 0%
-
+source-wordcount: '392'
+ht-degree: 13%
 ---
-
 # 예상 라이프타임 값 분석
 
 더 많은 주문을 할수록 고객의 생애 가치를 예측하는 것은 모든 규모의 비즈니스에서 가장 중요한 측면 중 하나입니다.
@@ -37,18 +46,18 @@ ht-degree: 0%
 
 첫 번째 단계는 다음 단계로 새 지표를 구성하는 것입니다.
 * **[!UICONTROL Manage Data > Metrics]**(으)로 이동
-   * 기존 **[!UICONTROL Avg lifetime revenue]** 보기
+  * 기존 **[!UICONTROL Avg lifetime revenue]** 보기
 
   >[!NOTE]
   >
   >이 지표가 구성된 테이블(게스트 체크아웃을 수락하는 스토어의 기능에 따라 `customer_entity` 또는 `sales_order`일 수 있음).
 
-   * **[!UICONTROL Create New Metric]**&#x200B;을(를) 클릭하고 위에서 테이블을 선택합니다.
-   * 이 지표는 **에 의해 정렬된** 열에서 `Customer's lifetime revenue`중간값`created_at`을 수행합니다.
-      * [!UICONTROL Filters]:
-         * `Customers we count (Saved Filter Set)`(또는 `Registered accounts we count`) 추가
+  * **[!UICONTROL Create New Metric]**&#x200B;을(를) 클릭하고 위에서 테이블을 선택합니다.
+  * 이 지표는 `created_at`에 의해 정렬된 `Customer's lifetime revenue` 열에서 **중간값**&#x200B;을 수행합니다.
+    * [!UICONTROL Filters]:
+      * `Customers we count (Saved Filter Set)`(또는 `Registered accounts we count`) 추가
 
-   * 지표에 `Median lifetime revenue`과(와) 같은 이름을 지정하십시오.
+  * 지표에 `Median lifetime revenue`과(와) 같은 이름을 지정하십시오.
 
 ## 대시보드 만들기
 
@@ -65,41 +74,41 @@ ht-degree: 0%
 >**[!UICONTROL Time Period:]**&#x200B;에서 각 보고서의 기간은 `All-time`(으)로 나열됩니다. 분석 요구 사항에 맞게 자유롭게 변경하십시오. Adobe에서는 `All time`, `Year-to-date` 또는 `Last 365 days`과(와) 같이 이 대시보드에 있는 모든 보고서를 동일한 기간에 포함하도록 권장합니다.
 
 * **[!UICONTROL Average LTV (all)]**
-   * [!UICONTROL Metric]: `Avg lifetime revenue`
-   * [!UICONTROL Time period]: `All time`
-   * &#x200B;
-     [!UICONTROL 간격]: `None`
-   * [!UICONTROL Chart Type]: `Number (scalar)`
+  * [!UICONTROL Metric]&#x200B;: `Avg lifetime revenue`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL 간격]&#x200B;: `None`
+  * [!UICONTROL Chart Type]&#x200B;: `Number (scalar)`
 
 * **[!UICONTROL Average LTV (customers / non-guest checkout)]**
-   * [!UICONTROL Metric]: `Avg lifetime revenue`
-      * [!UICONTROL filters] 추가:
-         * [`A`] `Customer's group code` **같지 않음** `Not Logged In`
-         * [`B`] `Customer's lifetime number of orders` **다음보다 큼**`0`
+  * [!UICONTROL Metric]&#x200B;: `Avg lifetime revenue`
+    * [!UICONTROL filters] 추가:
+      * [`A`] `Customer's group code` **같지 않음** `Not Logged In`
+      * [`B`] `Customer's lifetime number of orders` **다음보다 큼**`0`
 
-   * [!UICONTROL Time period]: `All time`
-   * &#x200B;
-     [!UICONTROL 간격]: `None`
-   * [!UICONTROL Chart Type]: `Number (scalar)`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL 간격]&#x200B;: `None`
+  * [!UICONTROL Chart Type]&#x200B;: `Number (scalar)`
 
 * **[!UICONTROL Average and Median LTV]**
-   * 지표 `1`: `Avg lifetime revenue`
-   * 지표 `2`: `Median lifetime revenue`
-   * [!UICONTROL Time period]: `All time`
-   * [!UICONTROL Interval]: `By Month`
-   * &#x200B;
-     [!UICONTROL 차트 유형]: `Line`
-   * `Multiple Y-Axes` 선택 취소
+  * 지표 `1`: `Avg lifetime revenue`
+  * 지표 `2`: `Median lifetime revenue`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * [!UICONTROL Interval]&#x200B;: `By Month`
+  * &#x200B;
+    [!UICONTROL 차트 유형]&#x200B;: `Line`
+  * `Multiple Y-Axes` 선택 취소
 
 * **수명 주문 수별 LTV**
-   * 지표 `1`: `Avg lifetime revenue`
-   * 지표 `2`: `New customers`
-   * [!UICONTROL Time period]: `All time`
-   * &#x200B;
-     [!UICONTROL 간격]: `None`
-   * [!UICONTROL Group by]: `Customer's lifetime number of orders`
-   * &#x200B;
-     [!UICONTROL 차트 유형]: `Line`
+  * 지표 `1`: `Avg lifetime revenue`
+  * 지표 `2`: `New customers`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL 간격]&#x200B;: `None`
+  * [!UICONTROL Group by]&#x200B;: `Customer's lifetime number of orders`
+  * &#x200B;
+    [!UICONTROL 차트 유형]&#x200B;: `Line`
 
   >[!NOTE]
   >

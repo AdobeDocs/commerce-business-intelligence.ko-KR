@@ -4,27 +4,37 @@ description: 페이지 보기 수, 세션 및 사용자를 포함하여 웹 사�
 exl-id: 2b57d5b3-3bbf-4ec9-86a6-9fa850c1c459
 role: Admin, User
 feature: Reports, Data Integration
-TQID: https://experienceleague.adobe.com/HcoHrBbXXjQGsd80DA06Dwq2dDmhUiuRbRLj-QONlw4
+TQID: 'https://experienceleague.adobe.com/HcoHrBbXXjQGsd80DA06Dwq2dDmhUiuRbRLj-QONlw4'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 756
+source-wordcount: '756'
 ht-degree: 0%
-
 ---
-
 # 웹 사이트 활동 분석
 
 [!DNL Adobe Commerce Intelligence]을(를) 사용하면 광고 비용 데이터를 나머지 데이터와 쉽게 통합할 수 있습니다. 이를 통해 웹 사이트 활동을 이해할 수 있을 뿐만 아니라, 등록된 사용자가 되거나 구매하는 웹 사이트 방문자의 비율을 도출할 수 있습니다.
@@ -35,7 +45,7 @@ ht-degree: 0%
 
 **광고 비용 데이터를 가져옵니다** - [[!DNL [Google AdWords]]](../importing-data/integrations/google-adwords.md)을(를) [!DNL Adobe Commerce Intelligence]에 연결합니다. 이렇게 하면 [!DNL AdWords] 지출이 Commerce Intelligence에서 자동으로 동기화됩니다.
 
-**사용자 확보 채널 데이터 추적** - [!DNL Google AdWords] 데이터를 데이터베이스의 특정 주문에 연결하려면 [을(를) 통해 &#x200B;](../analysis/google-track-user-acq.md)사용자 확보 추적[!DNL Google Analytics E-commerce]해야 합니다. 이렇게 하면 각 주문을 utm 소스 및 미디어와 연결할 수 있습니다.
+**사용자 확보 채널 데이터 추적** - [!DNL Google AdWords] 데이터를 데이터베이스의 특정 주문에 연결하려면 [!DNL Google Analytics E-commerce]을(를) 통해 [사용자 확보 추적](../analysis/google-track-user-acq.md)해야 합니다. 이렇게 하면 각 주문을 utm 소스 및 미디어와 연결할 수 있습니다.
 
 ## 사용자 확보 캠페인
 
@@ -73,7 +83,7 @@ ht-degree: 0%
 **이제 재방문자와 비교하여 새 방문자의 평균 세션 길이를 살펴봅니다.**
 
 1. 보고서를 만듭니다.
-1. 드롭다운 아래의 **섹션 위로 마우스를 가져간 후** UICONTROL 지표 추가[!DNL Google Analytics]를 클릭하고 `Average Session Length`을(를) 선택합니다.
+1. 드롭다운 아래의 [!DNL Google Analytics] 섹션 위로 마우스를 가져간 후 **UICONTROL 지표 추가**&#x200B;를 클릭하고 `Average Session Length`을(를) 선택합니다.
 1. 13개월 전부터 1개월 전까지 기간을 이동 범위로 변경하고 시간 간격을 `by month`(으)로 조정하시겠습니까?
 1. `Group by`을(를) 추가하고 `New or returning visitor`을(를) 선택합니다.  `Show All` 상자를 선택한 다음 **[!UICONTROL Apply]**&#x200B;을(를) 클릭합니다.
 1. 보고서에 `Average session length`과(와) 같은 이름을 지정하고 **[!UICONTROL Save]**&#x200B;을(를) 클릭합니다.
@@ -93,25 +103,25 @@ ht-degree: 0%
 1. 다음 지표를 추가합니다.
 
 * `New users`
-   * 지표 이름 아래의 **[!UICONTROL Hide]** 클릭
+  * 지표 이름 아래의 **[!UICONTROL Hide]** 클릭
 
 * `Number of orders`
-   * `Customer's order number` = 1에 대한 필터를 추가하고 **[!UICONTROL Apply]** 클릭
-   * 지표 이름을 클릭하고 `Number of first orders`을(를) 호출한 다음 **[!UICONTROL Hide]**&#x200B;을(를) 클릭하여 지표의 이름을 변경합니다.
+  * `Customer's order number` = 1에 대한 필터를 추가하고 **[!UICONTROL Apply]** 클릭
+  * 지표 이름을 클릭하고 `Number of first orders`을(를) 호출한 다음 **[!UICONTROL Hide]**&#x200B;을(를) 클릭하여 지표의 이름을 변경합니다.
 
 * `Number of orders`
-   * **[!UICONTROL Hide]** 지표
+  * **[!UICONTROL Hide]** 지표
 
 * `Users`
-   * **[!UICONTROL Hide]** 지표
-   * 기간을 `24 months ago to now`(으)로 변경하고 시간 간격을 `by month`(으)로 조정합니다.
-   * **[!UICONTROL Formula]**&#x200B;을(를) 클릭하여 다음 수식을 추가하십시오.
-   * A/D를 클릭한 다음 **[!UICONTROL Apply]** 클릭
-   * 수식 이름 바꾸기 `Registration conversion`
-   * B/D를 클릭한 다음 **[!UICONTROL Apply]** 클릭
-   * 수식 이름 바꾸기 `First order conversion`
-   * C/D를 클릭한 다음 **[!UICONTROL Apply]**&#x200B;을(를) 클릭합니다.
-   * 수식 이름 바꾸기 `Any order conversion`
+  * **[!UICONTROL Hide]** 지표
+  * 기간을 `24 months ago to now`(으)로 변경하고 시간 간격을 `by month`(으)로 조정합니다.
+  * **[!UICONTROL Formula]**&#x200B;을(를) 클릭하여 다음 수식을 추가하십시오.
+  * A/D를 클릭한 다음 **[!UICONTROL Apply]** 클릭
+  * 수식 이름 바꾸기 `Registration conversion`
+  * B/D를 클릭한 다음 **[!UICONTROL Apply]** 클릭
+  * 수식 이름 바꾸기 `First order conversion`
+  * C/D를 클릭한 다음 **[!UICONTROL Apply]**&#x200B;을(를) 클릭합니다.
+  * 수식 이름 바꾸기 `Any order conversion`
 
 * 이제 보고서에 `Conversion by month`과(와) 같은 이름을 지정한 다음 **[!UICONTROL Save]**&#x200B;을(를) 클릭합니다.
 

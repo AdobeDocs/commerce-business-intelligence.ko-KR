@@ -4,33 +4,46 @@ description: 변경 가능한 값으로 데이터 열을 구성하는 방법에 
 exl-id: c31ef32e-ba5a-4902-b632-fbab551cc632
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
-TQID: https://experienceleague.adobe.com/aw43nDwCdBOJ-9D2BKJGV7PV-7c3jGXxhUEgE2utY5A
+TQID: 'https://experienceleague.adobe.com/aw43nDwCdBOJ-9D2BKJGV7PV-7c3jGXxhUEgE2utY5A'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 569
+source-wordcount: '571'
 ht-degree: 0%
-
 ---
-
 # 데이터 검사 구성
 
-데이터베이스 테이블에는 변경 가능한 값이 있는 데이터 열이 있을 수 있습니다. 예를 들어 `orders` 테이블에 `status` 열이 있을 수 있습니다. 주문이 데이터베이스에 처음 기록되면 상태 열에 _보류 중_ 값이 포함될 수 있습니다. 이 [&#x200B; 값으로 &#x200B;](../data-warehouse-mgr/tour-dwm.md)Data Warehouse`pending`에서 순서가 복제됩니다.
+데이터베이스 테이블에는 변경 가능한 값이 있는 데이터 열이 있을 수 있습니다. 예를 들어 `orders` 테이블에 `status` 열이 있을 수 있습니다. 주문이 데이터베이스에 처음 기록되면 상태 열에 _보류 중_ 값이 포함될 수 있습니다. 이 `pending` 값으로 [Data Warehouse](../data-warehouse-mgr/tour-dwm.md)에서 순서가 복제됩니다.
 
 주문 상태가 항상 `pending` 상태는 아니지만 변경될 수 있습니다. 결국 `complete` 또는 `cancelled`이(가) 될 수 있습니다. Data Warehouse에서 이 변경 사항을 동기화하려면 열에 새 값을 다시 선택해야 합니다.
 
@@ -51,7 +64,7 @@ ht-degree: 0%
 ## 빈도 다시 확인 {#frequency}
 
 **알고 계십니까?**
-`primary key` 열에 대해 다시 검사를 설정해도 변경된 값에 대한 열은 검사하지 않습니다. 테이블에서 삭제된 행이 확인되고 삭제된 모든 항목은 Data Warehouse에서 삭제됩니다.
+`primary key` 열에 대해 다시 검사를 설정하면 변경된 값에 대한 열을 검사하지 않습니다. 테이블에서 삭제된 행이 확인되고 삭제된 모든 항목은 Data Warehouse에서 삭제됩니다.
 
 열에 다시 확인 표시가 있으면 다시 확인하는 빈도를 설정할 수도 있습니다. 특정 열이 자주 변경되지 않는 경우 재검사를 덜 자주 선택하면 [업데이트 주기를 최적화](../../best-practices/reduce-update-cycle-time.md)할 수 있습니다.
 
@@ -67,13 +80,13 @@ ht-degree: 0%
 
 ## 재확인 빈도 관리 {#manage}
 
-테이블 이름을 클릭한 다음 개별 열을 선택하여 Data Warehouse에서 빈도를 다시 확인할 수 있습니다. 동기화 상태 및 재확인 빈도(변경 **개?** 열이 테이블의 각 열에 대해 표시됩니다.
+테이블 이름을 클릭한 다음 개별 열을 선택하여 Data Warehouse에서 빈도를 다시 확인할 수 있습니다. 동기화 상태 및 재확인 빈도(**변경?** 열)은 테이블의 각 열에 대해 표시됩니다.
 
 재확인 빈도를 변경하려면 변경할 열 옆에 있는 확인란을 클릭합니다. 그런 다음 **[!UICONTROL Set Recheck Frequency]** 드롭다운을 클릭하고 원하는 빈도를 설정합니다.
 
 ![구성 옵션 다시 확인을 보여 주는 Data Warehouse 관리자](../../assets/dwm-recheck.png)
 
-`Paused` 열에 `Changes?`이(가) 표시되는 경우가 있습니다. 이 값은 테이블의 [복제 메서드](../../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md)이(가) `Paused`(으)로 설정된 경우 표시됩니다.
+`Changes?` 열에 `Paused`이(가) 표시되는 경우가 있습니다. 이 값은 테이블의 [복제 메서드](../../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md)이(가) `Paused`(으)로 설정된 경우 표시됩니다.
 
 [!DNL Adobe]에서는 이러한 열을 검토하여 업데이트를 최적화하고 변경 가능한 열을 다시 확인하는 것이 좋습니다. 데이터가 변경되는 빈도를 고려할 때 열에 대한 재확인 빈도가 높은 경우 업데이트를 최적화하기 위해 열을 줄이는 것이 좋습니다.
 

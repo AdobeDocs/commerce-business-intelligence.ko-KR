@@ -4,29 +4,43 @@ description: 위쪽/아래쪽 표시 기능을 사용하여 데이터의 순서�
 exl-id: d47119f4-cdc5-4fa7-a606-d4b8555a8843
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-TQID: https://experienceleague.adobe.com/EbxcX2kLo3aKcj1KkCZLfkRlCbQ5q00m9zf-afGv1Ic
+TQID: 'https://experienceleague.adobe.com/EbxcX2kLo3aKcj1KkCZLfkRlCbQ5q00m9zf-afGv1Ic'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 665
+source-wordcount: '667'
 ht-degree: 0%
-
 ---
-
 # `Show Top/Bottom` 기능을 사용하여 데이터 순서 지정
 
 `Visual Report Builder`에서 시간에 따른 트렌드를 분석하는 것보다 더 많은 작업을 수행할 수 있습니다. 예를 들어, 획득 및 마케팅 채널의 가치를 보여주는 보고서를 작성할 수 있지만, 상위 5명의 성과자만 표시하는 보고서를 작성할 수도 있습니다. 마찬가지로, 가장 많은 매출을 창출하는 상태를 보여 주는 보고서를 만들어 마케팅 활동에 다시 집중할 수 있습니다.
@@ -59,7 +73,7 @@ ht-degree: 0%
 
 참조 소스별로 그룹화된 `Revenue` 및 `Number of orders` 지표를 모두 사용하여 보고서를 작성했다고 가정해 보겠습니다. `Revenue`은(는) `Revenue` 또는 참조 원본으로만 정렬할 수 있으며 `Number of orders`은(는) `Number of orders` 또는 참조 원본으로만 정렬할 수 있습니다.
 
-즉, 상위 `Revenue`개의 수익 생성 조회 원본에서만 `5`을(를) 표시할 수 있지만 상위 `5`개의 수익 생성 조회 원본에서도 주문 수를 표시할 수 없습니다. 간단히 말해, 여러 지표가 있을 때 가장 좋은 방법은 그룹화별로 각 지표를 정렬하는 것입니다.
+즉, 상위 `5`개의 수익 생성 조회 원본에서만 `Revenue`을(를) 표시할 수 있지만 상위 `5`개의 수익 생성 조회 원본에서도 주문 수를 표시할 수 없습니다. 간단히 말해, 여러 지표가 있을 때 가장 좋은 방법은 그룹화별로 각 지표를 정렬하는 것입니다.
 
 다음은 `Revenue` 지표를 그룹화별로 정렬하지 않고 자체적으로 정렬한 차트의 예입니다. 보시다시피 그룹별로 지표를 정렬하지 않으면 이상한 (그리고 궁극적으로 도움이 되지 않는) 보고서가 작성되었습니다.
 
@@ -71,7 +85,7 @@ ht-degree: 0%
 
 ## 기본적으로 값은 어떻게 정렬됩니까? {#defaultsorting}
 
-`Group by`과(와) `Time Interval`의 `None`이(가) 있는 보고서에 하나의 지표만 포함된 경우 `Visual Report Builder`의 기본 순서는 지표를 기반으로 최상위 값을 표시하는 것입니다. 이 경우 필요에 따라 `Show Top/Bottom` 기능이 필요하지 않을 수 있습니다.
+`Group by`과(와) `None`의 `Time Interval`이(가) 있는 보고서에 하나의 지표만 포함된 경우 `Visual Report Builder`의 기본 순서는 지표를 기반으로 최상위 값을 표시하는 것입니다. 이 경우 필요에 따라 `Show Top/Bottom` 기능이 필요하지 않을 수 있습니다.
 
 이 예에서는 sales rep 가 마감한 opportunity 를 살펴봅니다. 이 테이블은 지표를 기준으로 최상위 항목에서 최하위 항목까지 자동으로 정렬됩니다(이 경우 `Won Opportunities`).
 

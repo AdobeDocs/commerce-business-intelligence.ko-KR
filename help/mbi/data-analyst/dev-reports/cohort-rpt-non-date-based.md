@@ -4,27 +4,38 @@ description: 유사한 활동이나 속성으로 사용자를 그룹화하는 �
 exl-id: c7b85ce9-113c-4ffc-855f-3d53fe2347d8
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-TQID: https://experienceleague.adobe.com/2JOFQPEaz-wQd4Ml-9vc0ZkmSIDD10e6xX-XkodZtXc
+TQID: 'https://experienceleague.adobe.com/2JOFQPEaz-wQd4Ml-9vc0ZkmSIDD10e6xX-XkodZtXc'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Beginner
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 462
-ht-degree: 0%
-
+source-wordcount: '474'
+ht-degree: 1%
 ---
-
 # 비날짜 기반 집단의 [!DNL Cohort Report Builder]
 
 [`Cohort Report Builder`](../dev-reports/cohort-rpt-bldr.md)은(는) 상인이 시간의 흐름에 따라 다양한 사용자 하위 집합이 어떻게 동작하는지 학습하는 데 유용합니다. 이전에는 `Cohort Report Builder`이(가) 일반 `cohort date`(예: 주어진 달에 첫 번째 구매한 모든 고객 집합)별로 사용자를 그룹화하는 데 최적화되었습니다. 이제 `Non-Date Based Cohort` 기능을 사용하여 유사한 활동이나 특성으로 사용자를 그룹화할 수 있습니다. 이 기능에 대한 몇 가지 사용 사례를 살펴보십시오.
@@ -41,7 +52,7 @@ ht-degree: 0%
 
 1. 왼쪽 탭에서 **[!UICONTROL Report Builder]**&#x200B;을(를) 클릭하거나 대시보드에서 **[!UICONTROL Add Report** > **Create Report]**&#x200B;을(를) 클릭합니다.
 
-1. `Report Builder Selection` 화면에서 **[!UICONTROL Create Report]** 옵션 옆의 `Visual Report Builder`을(를) 클릭합니다.
+1. `Report Builder Selection` 화면에서 `Visual Report Builder` 옵션 옆의 **[!UICONTROL Create Report]**&#x200B;을(를) 클릭합니다.
 
 ### 지표 추가
 
@@ -89,13 +100,13 @@ ht-degree: 0%
 
 #### 5. `Time range after cohort occurrence`
 
-월별, 주별 또는 연도별로 시간 경과에 따라 `cohorts`을(를) 보시겠습니까? 여기에서 이러한 항목을 선택할 수 있습니다. 해당 섹션 아래에서 `time range`이(가) 발생한 후 `cohort action timestamp`을(를) 선택합니다. 예를 들어 작업 시간 범위 동안 첫 번째 주문을 한 고객에 대한 12개월의 데이터를 보여줍니다.
+월별, 주별 또는 연도별로 시간 경과에 따라 `cohorts`을(를) 보시겠습니까? 여기에서 이러한 항목을 선택할 수 있습니다. 해당 섹션 아래에서 `cohort action timestamp`이(가) 발생한 후 `time range`을(를) 선택합니다. 예를 들어 작업 시간 범위 동안 첫 번째 주문을 한 고객에 대한 12개월의 데이터를 보여줍니다.
 
 ![집단 우선 작업 시간 범위](../../assets/5-cohort-first-action-time-range.png)<!--{: width="400" height="557"}-->
 
 >[!NOTE]
 >
->[!UICONTROL Filters] 보기와 `Standard` 보기 사이를 전환할 때 지표에 적용된 `Cohort`이(가) 그대로 유지됩니다.
+>`Standard` 보기와 `Cohort` 보기 사이를 전환할 때 지표에 적용된 [!UICONTROL Filters]이(가) 그대로 유지됩니다.
 
 ### 관련 항목
 
